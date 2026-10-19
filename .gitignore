@@ -1,0 +1,7 @@
+.env
+*.parquet
+*.sqlite*
+*.duckdb*
+*.pdf
+*.tex
+__pycache__/

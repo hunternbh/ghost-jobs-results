@@ -1,0 +1,18 @@
+[
+  {
+    "id": "peer_iv",
+    "reason": "Not estimated as a causal test: common industry shocks and the leave-one-out peer algebra do not establish an exclusion restriction."
+  },
+  {
+    "id": "morale",
+    "reason": "No independent employee satisfaction or worker-flow file supplied; net employment is reported separately."
+  },
+  {
+    "id": "reprisk",
+    "reason": "No RepRisk or employee-related ESG outcome file supplied."
+  },
+  {
+    "id": "national_prevalence",
+    "reason": "Review sample does not identify the national share of ghost vacancies; no scaled vacancy correction estimated."
+  }
+]

@@ -1,0 +1,4116 @@
+[
+  {
+    "id": "capex_fe",
+    "family": "outcomes",
+    "outcome": "capex_lead",
+    "measure": "ghost_eb",
+    "spec": "fe",
+    "n": 4054,
+    "firms": 338,
+    "years": 16,
+    "r2_within": -0.00179667215602608,
+    "coefficients": {
+      "ghost_eb": {
+        "b": 0.010143839740835922,
+        "se": 0.007543323400473402,
+        "p": 0.1787903090076851,
+        "ci_low": -0.0046456404383225895,
+        "ci_high": 0.024933319919994434
+      }
+    },
+    "controls": [
+      "ghost_eb"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.06508259236806707,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "capex_core",
+    "family": "outcomes",
+    "outcome": "capex_lead",
+    "measure": "ghost_eb",
+    "spec": "core",
+    "n": 3178,
+    "firms": 304,
+    "years": 16,
+    "r2_within": 0.38936808218418917,
+    "coefficients": {
+      "ghost_eb": {
+        "b": 0.008124710025255598,
+        "se": 0.005406520890778625,
+        "p": 0.13301133792771563,
+        "ci_low": -0.0024763751806858424,
+        "ci_high": 0.018725795231197037
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "capex"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.06643789497811571,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "capex_extended",
+    "family": "outcomes",
+    "outcome": "capex_lead",
+    "measure": "ghost_eb",
+    "spec": "extended",
+    "n": 1241,
+    "firms": 140,
+    "years": 15,
+    "r2_within": 0.44544527563388514,
+    "coefficients": {
+      "ghost_eb": {
+        "b": 0.007224188553962744,
+        "se": 0.011186236874295664,
+        "p": 0.5185398238252614,
+        "ci_low": -0.014725122577958147,
+        "ci_high": 0.029173499685883633
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "dividend",
+      "rd_ratio",
+      "capex",
+      "advertising",
+      "loss"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.057970570989532295,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "capex_raw_core",
+    "family": "outcomes",
+    "outcome": "capex_lead",
+    "measure": "ghost_raw",
+    "spec": "core",
+    "n": 3178,
+    "firms": 304,
+    "years": 16,
+    "r2_within": 0.38882785079279225,
+    "coefficients": {
+      "ghost_raw": {
+        "b": -0.00029319316112165895,
+        "se": 0.0023592254568315213,
+        "p": 0.9011061587038527,
+        "ci_low": -0.004919153292072932,
+        "ci_high": 0.004332766969829613
+      }
+    },
+    "controls": [
+      "ghost_raw",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "capex"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.09513376971723338,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "capex_yen_eb_core",
+    "family": "measure_comparison",
+    "outcome": "capex_lead",
+    "measure": "ghost_eb_full_prior",
+    "spec": "core",
+    "n": 3178,
+    "firms": 304,
+    "years": 16,
+    "r2_within": 0.38878104331535435,
+    "coefficients": {
+      "ghost_eb_full_prior": {
+        "b": 0.003229874580186876,
+        "se": 0.006217447986507105,
+        "p": 0.6034624775771492,
+        "ci_low": -0.008961273331752208,
+        "ci_high": 0.015421022492125961
+      }
+    },
+    "controls": [
+      "ghost_eb_full_prior",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "capex"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.05233693464915024,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "rd_ratio_fe",
+    "family": "outcomes",
+    "outcome": "rd_ratio_lead",
+    "measure": "ghost_eb",
+    "spec": "fe",
+    "n": 2691,
+    "firms": 232,
+    "years": 16,
+    "r2_within": -0.00018821898176923924,
+    "coefficients": {
+      "ghost_eb": {
+        "b": 0.0013487833073977048,
+        "se": 0.023915760300248515,
+        "p": 0.9550299530734668,
+        "ci_low": -0.04554848021906167,
+        "ci_high": 0.048246046833857074
+      }
+    },
+    "controls": [
+      "ghost_eb"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.0628496438966828,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "rd_ratio_core",
+    "family": "outcomes",
+    "outcome": "rd_ratio_lead",
+    "measure": "ghost_eb",
+    "spec": "core",
+    "n": 2103,
+    "firms": 208,
+    "years": 16,
+    "r2_within": 0.41592999235717343,
+    "coefficients": {
+      "ghost_eb": {
+        "b": 0.002464554842107565,
+        "se": 0.005871007750747081,
+        "p": 0.6746914342847818,
+        "ci_low": -0.009049849625384894,
+        "ci_high": 0.013978959309600024
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "rd_ratio"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.061650895758510904,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "rd_ratio_extended",
+    "family": "outcomes",
+    "outcome": "rd_ratio_lead",
+    "measure": "ghost_eb",
+    "spec": "extended",
+    "n": 1238,
+    "firms": 140,
+    "years": 15,
+    "r2_within": 0.4103376525539584,
+    "coefficients": {
+      "ghost_eb": {
+        "b": -0.002114495246848349,
+        "se": 0.008342313688227973,
+        "p": 0.7999564679567782,
+        "ci_low": -0.01848359392316214,
+        "ci_high": 0.014254603429465443
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "dividend",
+      "rd_ratio",
+      "capex",
+      "advertising",
+      "loss"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.05803561514830654,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "rd_ratio_raw_core",
+    "family": "outcomes",
+    "outcome": "rd_ratio_lead",
+    "measure": "ghost_raw",
+    "spec": "core",
+    "n": 2103,
+    "firms": 208,
+    "years": 16,
+    "r2_within": 0.4157970862413126,
+    "coefficients": {
+      "ghost_raw": {
+        "b": 0.004847354763048528,
+        "se": 0.003803389222653005,
+        "p": 0.2026504011255261,
+        "ci_low": -0.0026119714235598454,
+        "ci_high": 0.012306680949656902
+      }
+    },
+    "controls": [
+      "ghost_raw",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "rd_ratio"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.08604173836151502,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "rd_ratio_yen_eb_core",
+    "family": "measure_comparison",
+    "outcome": "rd_ratio_lead",
+    "measure": "ghost_eb_full_prior",
+    "spec": "core",
+    "n": 2103,
+    "firms": 208,
+    "years": 16,
+    "r2_within": 0.41590148741209243,
+    "coefficients": {
+      "ghost_eb_full_prior": {
+        "b": 0.0025129016868894473,
+        "se": 0.00911243756988023,
+        "p": 0.7827581167943292,
+        "ci_low": -0.015358696566583055,
+        "ci_high": 0.02038449994036195
+      }
+    },
+    "controls": [
+      "ghost_eb_full_prior",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "rd_ratio"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.048482910315421436,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "log_revenue_fe",
+    "family": "outcomes",
+    "outcome": "log_revenue_lead",
+    "measure": "ghost_eb",
+    "spec": "fe",
+    "n": 4061,
+    "firms": 338,
+    "years": 16,
+    "r2_within": 0.01365960212956796,
+    "coefficients": {
+      "ghost_eb": {
+        "b": 0.5326630749429264,
+        "se": 0.27736553576515655,
+        "p": 0.0548793424190562,
+        "ci_low": -0.011140941014980199,
+        "ci_high": 1.0764670909008331
+      }
+    },
+    "controls": [
+      "ghost_eb"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.0650345338267267,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "log_revenue_core",
+    "family": "outcomes",
+    "outcome": "log_revenue_lead",
+    "measure": "ghost_eb",
+    "spec": "core",
+    "n": 3184,
+    "firms": 304,
+    "years": 16,
+    "r2_within": 0.8236087376794043,
+    "coefficients": {
+      "ghost_eb": {
+        "b": 0.002565436836527237,
+        "se": 0.06592074048151274,
+        "p": 0.9689592874599585,
+        "ci_low": -0.12669156121443262,
+        "ci_high": 0.1318224348874871
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "log_revenue"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.06638369206569146,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "log_revenue_extended",
+    "family": "outcomes",
+    "outcome": "log_revenue_lead",
+    "measure": "ghost_eb",
+    "spec": "extended",
+    "n": 1241,
+    "firms": 140,
+    "years": 15,
+    "r2_within": 0.8643411468007034,
+    "coefficients": {
+      "ghost_eb": {
+        "b": -0.2626589530012712,
+        "se": 0.1738045328132037,
+        "p": 0.13102299234926937,
+        "ci_low": -0.6036931908530746,
+        "ci_high": 0.07837528485053225
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "dividend",
+      "rd_ratio",
+      "capex",
+      "advertising",
+      "loss",
+      "log_revenue"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.057970570989532295,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "log_revenue_raw_core",
+    "family": "outcomes",
+    "outcome": "log_revenue_lead",
+    "measure": "ghost_raw",
+    "spec": "core",
+    "n": 3184,
+    "firms": 304,
+    "years": 16,
+    "r2_within": 0.8235450432765236,
+    "coefficients": {
+      "ghost_raw": {
+        "b": -0.02937300640499498,
+        "se": 0.03605484633852908,
+        "p": 0.4153258322450047,
+        "ci_low": -0.10006913586085095,
+        "ci_high": 0.041323123050861
+      }
+    },
+    "controls": [
+      "ghost_raw",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "log_revenue"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.0950587025526816,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "log_revenue_yen_eb_core",
+    "family": "measure_comparison",
+    "outcome": "log_revenue_lead",
+    "measure": "ghost_eb_full_prior",
+    "spec": "core",
+    "n": 3184,
+    "firms": 304,
+    "years": 16,
+    "r2_within": 0.8234560410503907,
+    "coefficients": {
+      "ghost_eb_full_prior": {
+        "b": -0.11411592353785152,
+        "se": 0.09707360525150643,
+        "p": 0.2398683190758499,
+        "ci_low": -0.3044572745776279,
+        "ci_high": 0.07622542750192485
+      }
+    },
+    "controls": [
+      "ghost_eb_full_prior",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "log_revenue"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.052298297722635285,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "log_bve_fe",
+    "family": "outcomes",
+    "outcome": "log_bve_lead",
+    "measure": "ghost_eb",
+    "spec": "fe",
+    "n": 3351,
+    "firms": 310,
+    "years": 16,
+    "r2_within": 0.0201027451877116,
+    "coefficients": {
+      "ghost_eb": {
+        "b": 1.105821533459221,
+        "se": 0.2983930300496755,
+        "p": 0.0002143954272354704,
+        "ci_low": 0.5207478429102964,
+        "ci_high": 1.6908952240081456
+      }
+    },
+    "controls": [
+      "ghost_eb"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.06448705897675397,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "log_bve_core",
+    "family": "outcomes",
+    "outcome": "log_bve_lead",
+    "measure": "ghost_eb",
+    "spec": "core",
+    "n": 3101,
+    "firms": 297,
+    "years": 16,
+    "r2_within": 0.617425681480127,
+    "coefficients": {
+      "ghost_eb": {
+        "b": 0.2396230701343334,
+        "se": 0.1323605111590803,
+        "p": 0.07034439503724972,
+        "ci_low": -0.01991163906254892,
+        "ci_high": 0.49915777933121575
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "log_bve"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.06508695695124106,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "log_bve_extended",
+    "family": "outcomes",
+    "outcome": "log_bve_lead",
+    "measure": "ghost_eb",
+    "spec": "extended",
+    "n": 1195,
+    "firms": 135,
+    "years": 15,
+    "r2_within": 0.5536665788429971,
+    "coefficients": {
+      "ghost_eb": {
+        "b": 0.20693284175337792,
+        "se": 0.2822491822880846,
+        "p": 0.46362895927984465,
+        "ci_low": -0.3469130636240909,
+        "ci_high": 0.7607787471308467
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "dividend",
+      "rd_ratio",
+      "capex",
+      "advertising",
+      "loss",
+      "log_bve"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.05276680819958567,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "log_bve_raw_core",
+    "family": "outcomes",
+    "outcome": "log_bve_lead",
+    "measure": "ghost_raw",
+    "spec": "core",
+    "n": 3101,
+    "firms": 297,
+    "years": 16,
+    "r2_within": 0.616621313479719,
+    "coefficients": {
+      "ghost_raw": {
+        "b": 0.03576540646130319,
+        "se": 0.062229168657058485,
+        "p": 0.5655156273814103,
+        "ci_low": -0.08625459066278197,
+        "ci_high": 0.15778540358538834
+      }
+    },
+    "controls": [
+      "ghost_raw",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "log_bve"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.09523734706459079,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "log_bve_yen_eb_core",
+    "family": "measure_comparison",
+    "outcome": "log_bve_lead",
+    "measure": "ghost_eb_full_prior",
+    "spec": "core",
+    "n": 3101,
+    "firms": 297,
+    "years": 16,
+    "r2_within": 0.6168228142183672,
+    "coefficients": {
+      "ghost_eb_full_prior": {
+        "b": 0.1371565326097955,
+        "se": 0.17595256577562696,
+        "p": 0.43574647450705306,
+        "ci_low": -0.20785420806450006,
+        "ci_high": 0.48216727328409104
+      }
+    },
+    "controls": [
+      "ghost_eb_full_prior",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "log_bve"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.052507108127042255,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "d_emp_fe",
+    "family": "outcomes",
+    "outcome": "d_emp_lead",
+    "measure": "ghost_eb",
+    "spec": "fe",
+    "n": 3932,
+    "firms": 336,
+    "years": 16,
+    "r2_within": -0.0006626065451629248,
+    "coefficients": {
+      "ghost_eb": {
+        "b": 0.0430590028485839,
+        "se": 0.06246914002064849,
+        "p": 0.49068899286480333,
+        "ci_low": -0.07941967039831893,
+        "ci_high": 0.16553767609548672
+      }
+    },
+    "controls": [
+      "ghost_eb"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.06564142480202909,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "d_emp_core",
+    "family": "outcomes",
+    "outcome": "d_emp_lead",
+    "measure": "ghost_eb",
+    "spec": "core",
+    "n": 3035,
+    "firms": 300,
+    "years": 15,
+    "r2_within": 0.11985874298544374,
+    "coefficients": {
+      "ghost_eb": {
+        "b": 0.03431710519345271,
+        "se": 0.04676625012790328,
+        "p": 0.46313362226024996,
+        "ci_low": -0.05738395643154366,
+        "ci_high": 0.12601816681844907
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "d_emp"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.06707920077503542,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "d_emp_extended",
+    "family": "outcomes",
+    "outcome": "d_emp_lead",
+    "measure": "ghost_eb",
+    "spec": "extended",
+    "n": 1225,
+    "firms": 138,
+    "years": 15,
+    "r2_within": 0.20401493812929183,
+    "coefficients": {
+      "ghost_eb": {
+        "b": -0.05887981593975808,
+        "se": 0.09837883299027057,
+        "p": 0.549633531016983,
+        "ci_low": -0.25191899581734467,
+        "ci_high": 0.13415936393782849
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "dividend",
+      "rd_ratio",
+      "capex",
+      "advertising",
+      "loss",
+      "d_emp"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.05818143187350972,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "d_emp_raw_core",
+    "family": "outcomes",
+    "outcome": "d_emp_lead",
+    "measure": "ghost_raw",
+    "spec": "core",
+    "n": 3035,
+    "firms": 300,
+    "years": 15,
+    "r2_within": 0.11977515778338232,
+    "coefficients": {
+      "ghost_raw": {
+        "b": -0.031159952118224764,
+        "se": 0.029725045866702653,
+        "p": 0.2946063552652527,
+        "ci_low": -0.08944596511634566,
+        "ci_high": 0.027126060879896132
+      }
+    },
+    "controls": [
+      "ghost_raw",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "d_emp"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.09092586232372636,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "d_emp_yen_eb_core",
+    "family": "measure_comparison",
+    "outcome": "d_emp_lead",
+    "measure": "ghost_eb_full_prior",
+    "spec": "core",
+    "n": 3035,
+    "firms": 300,
+    "years": 15,
+    "r2_within": 0.11960667964064786,
+    "coefficients": {
+      "ghost_eb_full_prior": {
+        "b": -0.03181841174733895,
+        "se": 0.07466509136450944,
+        "p": 0.670033484010236,
+        "ci_low": -0.17822459410592092,
+        "ci_high": 0.114587770611243
+      }
+    },
+    "controls": [
+      "ghost_eb_full_prior",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "d_emp"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.051687746568756854,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "log_sales_per_emp_fe",
+    "family": "outcomes",
+    "outcome": "log_sales_per_emp_lead",
+    "measure": "ghost_eb",
+    "spec": "fe",
+    "n": 4010,
+    "firms": 337,
+    "years": 16,
+    "r2_within": -1.627656708169667e-05,
+    "coefficients": {
+      "ghost_eb": {
+        "b": -0.00047963632683307447,
+        "se": 0.08666100568124659,
+        "p": 0.9955843311312497,
+        "ci_low": -0.1703883210301476,
+        "ci_high": 0.16942904837648146
+      }
+    },
+    "controls": [
+      "ghost_eb"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.06530632790083195,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "log_sales_per_emp_core",
+    "family": "outcomes",
+    "outcome": "log_sales_per_emp_lead",
+    "measure": "ghost_eb",
+    "spec": "core",
+    "n": 3175,
+    "firms": 303,
+    "years": 16,
+    "r2_within": 0.5595155435355494,
+    "coefficients": {
+      "ghost_eb": {
+        "b": -0.0750163337898781,
+        "se": 0.0548797002951861,
+        "p": 0.17175719895165775,
+        "ci_low": -0.1826242694653714,
+        "ci_high": 0.03259160188561522
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "log_sales_per_emp"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.06645699108466893,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "log_sales_per_emp_extended",
+    "family": "outcomes",
+    "outcome": "log_sales_per_emp_lead",
+    "measure": "ghost_eb",
+    "spec": "extended",
+    "n": 1240,
+    "firms": 140,
+    "years": 15,
+    "r2_within": 0.6008543798808359,
+    "coefficients": {
+      "ghost_eb": {
+        "b": -0.14514504619693103,
+        "se": 0.14736319705914985,
+        "p": 0.32487157865616095,
+        "ci_low": -0.4342974645522025,
+        "ci_high": 0.14400737215834042
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "dividend",
+      "rd_ratio",
+      "capex",
+      "advertising",
+      "loss",
+      "log_sales_per_emp"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.057993509784209044,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "log_sales_per_emp_raw_core",
+    "family": "outcomes",
+    "outcome": "log_sales_per_emp_lead",
+    "measure": "ghost_raw",
+    "spec": "core",
+    "n": 3175,
+    "firms": 303,
+    "years": 16,
+    "r2_within": 0.5598044764368091,
+    "coefficients": {
+      "ghost_raw": {
+        "b": 0.004381015407966701,
+        "se": 0.031159586954856197,
+        "p": 0.8881964550823578,
+        "ci_low": -0.056716600116133095,
+        "ci_high": 0.06547863093206649
+      }
+    },
+    "controls": [
+      "ghost_raw",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "log_sales_per_emp"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.09515266450467846,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "log_sales_per_emp_yen_eb_core",
+    "family": "measure_comparison",
+    "outcome": "log_sales_per_emp_lead",
+    "measure": "ghost_eb_full_prior",
+    "spec": "core",
+    "n": 3175,
+    "firms": 303,
+    "years": 16,
+    "r2_within": 0.5593925072450989,
+    "coefficients": {
+      "ghost_eb_full_prior": {
+        "b": -0.08874548466891229,
+        "se": 0.08183589901193197,
+        "p": 0.2782649354291543,
+        "ci_low": -0.24920904604872174,
+        "ci_high": 0.07171807671089718
+      }
+    },
+    "controls": [
+      "ghost_eb_full_prior",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "log_sales_per_emp"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.052337833551783904,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "opinc_per_emp_fe",
+    "family": "outcomes",
+    "outcome": "opinc_per_emp_lead",
+    "measure": "ghost_eb",
+    "spec": "fe",
+    "n": 4010,
+    "firms": 337,
+    "years": 16,
+    "r2_within": -0.0013790801925432916,
+    "coefficients": {
+      "ghost_eb": {
+        "b": -31.578999823818144,
+        "se": 24.9482760878913,
+        "p": 0.20567290712339129,
+        "ci_low": -80.49291147746592,
+        "ci_high": 17.334911829829643
+      }
+    },
+    "controls": [
+      "ghost_eb"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.06530632790083195,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "opinc_per_emp_core",
+    "family": "outcomes",
+    "outcome": "opinc_per_emp_lead",
+    "measure": "ghost_eb",
+    "spec": "core",
+    "n": 3175,
+    "firms": 303,
+    "years": 16,
+    "r2_within": 0.2859013429299745,
+    "coefficients": {
+      "ghost_eb": {
+        "b": -38.815867630982346,
+        "se": 26.78886323975481,
+        "p": 0.14746005697799724,
+        "ci_low": -91.34338248288078,
+        "ci_high": 13.711647220916092
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "opinc_per_emp"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.06645699108466893,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "opinc_per_emp_extended",
+    "family": "outcomes",
+    "outcome": "opinc_per_emp_lead",
+    "measure": "ghost_eb",
+    "spec": "extended",
+    "n": 1240,
+    "firms": 140,
+    "years": 15,
+    "r2_within": 0.27381236766561867,
+    "coefficients": {
+      "ghost_eb": {
+        "b": 15.355602282112443,
+        "se": 50.10866735360542,
+        "p": 0.7593244615452175,
+        "ci_low": -82.96638472010436,
+        "ci_high": 113.67758928432924
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "dividend",
+      "rd_ratio",
+      "capex",
+      "advertising",
+      "loss",
+      "opinc_per_emp"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.057993509784209044,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "opinc_per_emp_raw_core",
+    "family": "outcomes",
+    "outcome": "opinc_per_emp_lead",
+    "measure": "ghost_raw",
+    "spec": "core",
+    "n": 3175,
+    "firms": 303,
+    "years": 16,
+    "r2_within": 0.2859764894587644,
+    "coefficients": {
+      "ghost_raw": {
+        "b": -14.425478728546741,
+        "se": 12.184042893996127,
+        "p": 0.23652570600561812,
+        "ci_low": -38.31590992537295,
+        "ci_high": 9.464952468279469
+      }
+    },
+    "controls": [
+      "ghost_raw",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "opinc_per_emp"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.09515266450467846,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "opinc_per_emp_yen_eb_core",
+    "family": "measure_comparison",
+    "outcome": "opinc_per_emp_lead",
+    "measure": "ghost_eb_full_prior",
+    "spec": "core",
+    "n": 3175,
+    "firms": 303,
+    "years": 16,
+    "r2_within": 0.28562508640144024,
+    "coefficients": {
+      "ghost_eb_full_prior": {
+        "b": -61.37654347061276,
+        "se": 37.08177704178418,
+        "p": 0.09800067545440244,
+        "ci_low": -134.08636982138302,
+        "ci_high": 11.333282880157498
+      }
+    },
+    "controls": [
+      "ghost_eb_full_prior",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "opinc_per_emp"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.052337833551783904,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "asset_turnover_fe",
+    "family": "outcomes",
+    "outcome": "asset_turnover_lead",
+    "measure": "ghost_eb",
+    "spec": "fe",
+    "n": 4061,
+    "firms": 338,
+    "years": 16,
+    "r2_within": 0.0009611930400844626,
+    "coefficients": {
+      "ghost_eb": {
+        "b": -0.03867207577537293,
+        "se": 0.08961893405538819,
+        "p": 0.6661177323742742,
+        "ci_low": -0.21437932833919038,
+        "ci_high": 0.1370351767884445
+      }
+    },
+    "controls": [
+      "ghost_eb"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.0650345338267267,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "asset_turnover_core",
+    "family": "outcomes",
+    "outcome": "asset_turnover_lead",
+    "measure": "ghost_eb",
+    "spec": "core",
+    "n": 3184,
+    "firms": 304,
+    "years": 16,
+    "r2_within": 0.45249167877174157,
+    "coefficients": {
+      "ghost_eb": {
+        "b": -0.062420106439326314,
+        "se": 0.05421237054249182,
+        "p": 0.2496641556615235,
+        "ci_low": -0.16871941771491278,
+        "ci_high": 0.043879204836260136
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "asset_turnover"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.06638369206569146,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "asset_turnover_extended",
+    "family": "outcomes",
+    "outcome": "asset_turnover_lead",
+    "measure": "ghost_eb",
+    "spec": "extended",
+    "n": 1241,
+    "firms": 140,
+    "years": 15,
+    "r2_within": 0.43034648966192035,
+    "coefficients": {
+      "ghost_eb": {
+        "b": -0.22240530154137214,
+        "se": 0.11233042756281884,
+        "p": 0.047967177101053235,
+        "ci_low": -0.44281705525593457,
+        "ci_high": -0.001993547826809716
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "dividend",
+      "rd_ratio",
+      "capex",
+      "advertising",
+      "loss",
+      "asset_turnover"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.057970570989532295,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "asset_turnover_raw_core",
+    "family": "outcomes",
+    "outcome": "asset_turnover_lead",
+    "measure": "ghost_raw",
+    "spec": "core",
+    "n": 3184,
+    "firms": 304,
+    "years": 16,
+    "r2_within": 0.45266481314044005,
+    "coefficients": {
+      "ghost_raw": {
+        "b": -0.03609280277289244,
+        "se": 0.0341929428507716,
+        "p": 0.2912571669642997,
+        "ci_low": -0.10313813281751077,
+        "ci_high": 0.0309525272717259
+      }
+    },
+    "controls": [
+      "ghost_raw",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "asset_turnover"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.0950587025526816,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "asset_turnover_yen_eb_core",
+    "family": "measure_comparison",
+    "outcome": "asset_turnover_lead",
+    "measure": "ghost_eb_full_prior",
+    "spec": "core",
+    "n": 3184,
+    "firms": 304,
+    "years": 16,
+    "r2_within": 0.4541719696057581,
+    "coefficients": {
+      "ghost_eb_full_prior": {
+        "b": -0.18743750583666566,
+        "se": 0.08345442044525368,
+        "p": 0.024780968556701307,
+        "ci_low": -0.35107446410766496,
+        "ci_high": -0.023800547565666325
+      }
+    },
+    "controls": [
+      "ghost_eb_full_prior",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "asset_turnover"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.052298297722635285,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "fixed_turnover_fe",
+    "family": "outcomes",
+    "outcome": "fixed_turnover_lead",
+    "measure": "ghost_eb",
+    "spec": "fe",
+    "n": 3967,
+    "firms": 332,
+    "years": 16,
+    "r2_within": 0.002322164958858286,
+    "coefficients": {
+      "ghost_eb": {
+        "b": -2.494013232751604,
+        "se": 2.075439786991132,
+        "p": 0.22956639615935465,
+        "ci_low": -6.563161375089422,
+        "ci_high": 1.5751349095862133
+      }
+    },
+    "controls": [
+      "ghost_eb"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.06547746227495055,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "fixed_turnover_core",
+    "family": "outcomes",
+    "outcome": "fixed_turnover_lead",
+    "measure": "ghost_eb",
+    "spec": "core",
+    "n": 3181,
+    "firms": 304,
+    "years": 16,
+    "r2_within": 0.4822057422710041,
+    "coefficients": {
+      "ghost_eb": {
+        "b": -1.4950414210279257,
+        "se": 1.3787993470038573,
+        "p": 0.27832037477431054,
+        "ci_low": -4.198584630018609,
+        "ci_high": 1.208501787962758
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "fixed_turnover"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.0664113545491867,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "fixed_turnover_extended",
+    "family": "outcomes",
+    "outcome": "fixed_turnover_lead",
+    "measure": "ghost_eb",
+    "spec": "extended",
+    "n": 1240,
+    "firms": 140,
+    "years": 15,
+    "r2_within": 0.3999949304358831,
+    "coefficients": {
+      "ghost_eb": {
+        "b": -3.8505001165204855,
+        "se": 2.797587986292825,
+        "p": 0.1689957707496409,
+        "ci_low": -9.339858029090268,
+        "ci_high": 1.638857796049296
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "dividend",
+      "rd_ratio",
+      "capex",
+      "advertising",
+      "loss",
+      "fixed_turnover"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.05798899295089865,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "fixed_turnover_raw_core",
+    "family": "outcomes",
+    "outcome": "fixed_turnover_lead",
+    "measure": "ghost_raw",
+    "spec": "core",
+    "n": 3181,
+    "firms": 304,
+    "years": 16,
+    "r2_within": 0.4819360485760241,
+    "coefficients": {
+      "ghost_raw": {
+        "b": -0.29967262970214886,
+        "se": 0.9011975665034874,
+        "p": 0.7395156789870787,
+        "ci_low": -2.066736536552561,
+        "ci_high": 1.4673912771482633
+      }
+    },
+    "controls": [
+      "ghost_raw",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "fixed_turnover"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.09509583285891302,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "fixed_turnover_yen_eb_core",
+    "family": "measure_comparison",
+    "outcome": "fixed_turnover_lead",
+    "measure": "ghost_eb_full_prior",
+    "spec": "core",
+    "n": 3181,
+    "firms": 304,
+    "years": 16,
+    "r2_within": 0.4824946348678697,
+    "coefficients": {
+      "ghost_eb_full_prior": {
+        "b": -2.481721651849947,
+        "se": 2.2440227999210136,
+        "p": 0.2688520216578558,
+        "ci_low": -6.881790896682382,
+        "ci_high": 1.9183475929824874
+      }
+    },
+    "controls": [
+      "ghost_eb_full_prior",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "fixed_turnover"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.05231600147641995,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "roa_fe",
+    "family": "outcomes",
+    "outcome": "roa_lead",
+    "measure": "ghost_eb",
+    "spec": "fe",
+    "n": 4061,
+    "firms": 338,
+    "years": 16,
+    "r2_within": -0.00028765734343583205,
+    "coefficients": {
+      "ghost_eb": {
+        "b": -0.020028909024766204,
+        "se": 0.028488540824847246,
+        "p": 0.48206785579055306,
+        "ci_low": -0.0758836599281006,
+        "ci_high": 0.03582584187856819
+      }
+    },
+    "controls": [
+      "ghost_eb"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.0650345338267267,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "roa_core",
+    "family": "outcomes",
+    "outcome": "roa_lead",
+    "measure": "ghost_eb",
+    "spec": "core",
+    "n": 3184,
+    "firms": 304,
+    "years": 16,
+    "r2_within": 0.21269847486873428,
+    "coefficients": {
+      "ghost_eb": {
+        "b": -0.013107907523764908,
+        "se": 0.018909987991601485,
+        "p": 0.4882568168143163,
+        "ci_low": -0.05018650013544209,
+        "ci_high": 0.023970685087912273
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.06638369206569146,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "roa_extended",
+    "family": "outcomes",
+    "outcome": "roa_lead",
+    "measure": "ghost_eb",
+    "spec": "extended",
+    "n": 1241,
+    "firms": 140,
+    "years": 15,
+    "r2_within": 0.19934852519149682,
+    "coefficients": {
+      "ghost_eb": {
+        "b": -0.0485137058752804,
+        "se": 0.049281035807278245,
+        "p": 0.3251256757459839,
+        "ci_low": -0.14521153196216022,
+        "ci_high": 0.04818412021159942
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "dividend",
+      "rd_ratio",
+      "capex",
+      "advertising",
+      "loss"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.057970570989532295,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "roa_raw_core",
+    "family": "outcomes",
+    "outcome": "roa_lead",
+    "measure": "ghost_raw",
+    "spec": "core",
+    "n": 3184,
+    "firms": 304,
+    "years": 16,
+    "r2_within": 0.21365362083821882,
+    "coefficients": {
+      "ghost_raw": {
+        "b": -0.020980812469074035,
+        "se": 0.014179010651548456,
+        "p": 0.13906104582888335,
+        "ci_low": -0.048782932693523316,
+        "ci_high": 0.006821307755375247
+      }
+    },
+    "controls": [
+      "ghost_raw",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.0950587025526816,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "roa_yen_eb_core",
+    "family": "measure_comparison",
+    "outcome": "roa_lead",
+    "measure": "ghost_eb_full_prior",
+    "spec": "core",
+    "n": 3184,
+    "firms": 304,
+    "years": 16,
+    "r2_within": 0.21425095369635827,
+    "coefficients": {
+      "ghost_eb_full_prior": {
+        "b": -0.0677229778212148,
+        "se": 0.03149616184160357,
+        "p": 0.03162319562868116,
+        "ci_low": -0.12948046567762922,
+        "ci_high": -0.005965489964800383
+      }
+    },
+    "controls": [
+      "ghost_eb_full_prior",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.052298297722635285,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "staff_per_emp_fe",
+    "family": "outcomes",
+    "outcome": "staff_per_emp_lead",
+    "measure": "ghost_eb",
+    "spec": "fe",
+    "n": 651,
+    "firms": 60,
+    "years": 16,
+    "r2_within": 0.0001839213793556338,
+    "coefficients": {
+      "ghost_eb": {
+        "b": -19.588655758045114,
+        "se": 10.062415879794406,
+        "p": 0.052055507715224006,
+        "ci_low": -39.352228916222714,
+        "ci_high": 0.17491740013248958
+      }
+    },
+    "controls": [
+      "ghost_eb"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.05687972051821927,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "staff_per_emp_core",
+    "family": "outcomes",
+    "outcome": "staff_per_emp_lead",
+    "measure": "ghost_eb",
+    "spec": "core",
+    "n": 485,
+    "firms": 51,
+    "years": 16,
+    "r2_within": 0.23943189862753445,
+    "coefficients": {
+      "ghost_eb": {
+        "b": -16.15870423178404,
+        "se": 7.431074415562875,
+        "p": 0.030237670976075375,
+        "ci_low": -30.766253968140333,
+        "ci_high": -1.5511544954277436
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "staff_per_emp"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.06013217098064872,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "staff_per_emp_extended",
+    "family": "outcomes",
+    "outcome": "staff_per_emp_lead",
+    "measure": "ghost_eb",
+    "spec": "extended",
+    "n": 85,
+    "firms": 11,
+    "years": 15,
+    "r2_within": 0.5593139567634995,
+    "coefficients": {
+      "ghost_eb": {
+        "b": -9.124903499854884,
+        "se": 15.081415607702931,
+        "p": 0.5480004072142456,
+        "ci_low": -39.448121914878975,
+        "ci_high": 21.198314915169206
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "dividend",
+      "rd_ratio",
+      "capex",
+      "advertising",
+      "loss",
+      "staff_per_emp"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.05238210808898117,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "staff_per_emp_raw_core",
+    "family": "outcomes",
+    "outcome": "staff_per_emp_lead",
+    "measure": "ghost_raw",
+    "spec": "core",
+    "n": 485,
+    "firms": 51,
+    "years": 16,
+    "r2_within": 0.2406142889995586,
+    "coefficients": {
+      "ghost_raw": {
+        "b": -2.3484663487206987,
+        "se": 4.865597891283095,
+        "p": 0.6295881379029047,
+        "ci_low": -11.912959882142609,
+        "ci_high": 7.216027184701211
+      }
+    },
+    "controls": [
+      "ghost_raw",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "staff_per_emp"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.0934845247591655,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "staff_per_emp_yen_eb_core",
+    "family": "measure_comparison",
+    "outcome": "staff_per_emp_lead",
+    "measure": "ghost_eb_full_prior",
+    "spec": "core",
+    "n": 485,
+    "firms": 51,
+    "years": 16,
+    "r2_within": 0.24000880060894114,
+    "coefficients": {
+      "ghost_eb_full_prior": {
+        "b": -13.601714725896064,
+        "se": 8.411966171181415,
+        "p": 0.10665479588858646,
+        "ci_low": -30.137441237897576,
+        "ci_high": 2.9340117861054456
+      }
+    },
+    "controls": [
+      "ghost_eb_full_prior",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "staff_per_emp"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.048712346445799644,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "sga_per_emp_fe",
+    "family": "outcomes",
+    "outcome": "sga_per_emp_lead",
+    "measure": "ghost_eb",
+    "spec": "fe",
+    "n": 3568,
+    "firms": 306,
+    "years": 16,
+    "r2_within": 0.0006695925121421586,
+    "coefficients": {
+      "ghost_eb": {
+        "b": 3.1462760751318832,
+        "se": 11.231038732685922,
+        "p": 0.7793870680318263,
+        "ci_low": -18.874366329123323,
+        "ci_high": 25.16691847938709
+      }
+    },
+    "controls": [
+      "ghost_eb"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.06297350924024546,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "sga_per_emp_core",
+    "family": "outcomes",
+    "outcome": "sga_per_emp_lead",
+    "measure": "ghost_eb",
+    "spec": "core",
+    "n": 2760,
+    "firms": 273,
+    "years": 16,
+    "r2_within": 0.4821175112848942,
+    "coefficients": {
+      "ghost_eb": {
+        "b": 1.8051325548559025,
+        "se": 6.44181685001913,
+        "p": 0.7793314464858088,
+        "ci_low": -10.82679894714515,
+        "ci_high": 14.437064056856954
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "sga_per_emp"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.06338430780208622,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "sga_per_emp_extended",
+    "family": "outcomes",
+    "outcome": "sga_per_emp_lead",
+    "measure": "ghost_eb",
+    "spec": "extended",
+    "n": 1220,
+    "firms": 138,
+    "years": 15,
+    "r2_within": 0.5016900260018534,
+    "coefficients": {
+      "ghost_eb": {
+        "b": -2.0996742607238117,
+        "se": 14.409680357237212,
+        "p": 0.8841759581397611,
+        "ci_low": -30.374536192755244,
+        "ci_high": 26.17518767130762
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "dividend",
+      "rd_ratio",
+      "capex",
+      "advertising",
+      "loss",
+      "sga_per_emp"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.05815677562315655,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "sga_per_emp_raw_core",
+    "family": "outcomes",
+    "outcome": "sga_per_emp_lead",
+    "measure": "ghost_raw",
+    "spec": "core",
+    "n": 2760,
+    "firms": 273,
+    "years": 16,
+    "r2_within": 0.482405039681847,
+    "coefficients": {
+      "ghost_raw": {
+        "b": 3.854521734794294,
+        "se": 3.7136598515951738,
+        "p": 0.29940410004622453,
+        "ci_low": -3.4276935096428893,
+        "ci_high": 11.136736979231477
+      }
+    },
+    "controls": [
+      "ghost_raw",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "sga_per_emp"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.09300358241370282,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "sga_per_emp_yen_eb_core",
+    "family": "measure_comparison",
+    "outcome": "sga_per_emp_lead",
+    "measure": "ghost_eb_full_prior",
+    "spec": "core",
+    "n": 2760,
+    "firms": 273,
+    "years": 16,
+    "r2_within": 0.48276172040062637,
+    "coefficients": {
+      "ghost_eb_full_prior": {
+        "b": 11.265227986325918,
+        "se": 9.951376189408474,
+        "p": 0.25773313011449195,
+        "ci_low": -8.248692589494052,
+        "ci_high": 30.77914856214589
+      }
+    },
+    "controls": [
+      "ghost_eb_full_prior",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "sga_per_emp"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.051822401091340085,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "sga_per_sales_fe",
+    "family": "outcomes",
+    "outcome": "sga_per_sales_lead",
+    "measure": "ghost_eb",
+    "spec": "fe",
+    "n": 3618,
+    "firms": 307,
+    "years": 16,
+    "r2_within": -0.00018913076353777036,
+    "coefficients": {
+      "ghost_eb": {
+        "b": 0.005508300370105803,
+        "se": 0.04354015727224399,
+        "p": 0.8993353150918415,
+        "ci_low": -0.07986019829861152,
+        "ci_high": 0.09087679903882312
+      }
+    },
+    "controls": [
+      "ghost_eb"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.06269876715592959,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "sga_per_sales_core",
+    "family": "outcomes",
+    "outcome": "sga_per_sales_lead",
+    "measure": "ghost_eb",
+    "spec": "core",
+    "n": 2768,
+    "firms": 274,
+    "years": 16,
+    "r2_within": 0.41629234579756613,
+    "coefficients": {
+      "ghost_eb": {
+        "b": 0.0291427647943033,
+        "se": 0.02510329452493704,
+        "p": 0.24578898800842228,
+        "ci_low": -0.020082890510478547,
+        "ci_high": 0.07836842009908515
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "sga_per_sales"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.06331259648876963,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "sga_per_sales_extended",
+    "family": "outcomes",
+    "outcome": "sga_per_sales_lead",
+    "measure": "ghost_eb",
+    "spec": "extended",
+    "n": 1221,
+    "firms": 138,
+    "years": 15,
+    "r2_within": 0.4231486863780167,
+    "coefficients": {
+      "ghost_eb": {
+        "b": 0.0035640952081278134,
+        "se": 0.044656267933054807,
+        "p": 0.9364020809375452,
+        "ci_low": -0.08406091854720475,
+        "ci_high": 0.09118910896346037
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "dividend",
+      "rd_ratio",
+      "capex",
+      "advertising",
+      "loss",
+      "sga_per_sales"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.05813340662291386,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "sga_per_sales_raw_core",
+    "family": "outcomes",
+    "outcome": "sga_per_sales_lead",
+    "measure": "ghost_raw",
+    "spec": "core",
+    "n": 2768,
+    "firms": 274,
+    "years": 16,
+    "r2_within": 0.41609849971258495,
+    "coefficients": {
+      "ghost_raw": {
+        "b": 0.008826573835586543,
+        "se": 0.014840382891312969,
+        "p": 0.5520534908879012,
+        "ci_low": -0.02027429067735874,
+        "ci_high": 0.03792743834853183
+      }
+    },
+    "controls": [
+      "ghost_raw",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "sga_per_sales"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.09291313653061725,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "sga_per_sales_yen_eb_core",
+    "family": "measure_comparison",
+    "outcome": "sga_per_sales_lead",
+    "measure": "ghost_eb_full_prior",
+    "spec": "core",
+    "n": 2768,
+    "firms": 274,
+    "years": 16,
+    "r2_within": 0.41669258686071187,
+    "coefficients": {
+      "ghost_eb_full_prior": {
+        "b": 0.04869647624549309,
+        "se": 0.04365128793796859,
+        "p": 0.2647106611827505,
+        "ci_low": -0.03690038640971302,
+        "ci_high": 0.1342933389006992
+      }
+    },
+    "controls": [
+      "ghost_eb_full_prior",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "sga_per_sales"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.05178139572055388,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "capex_interaction_size_core",
+    "family": "heterogeneity",
+    "outcome": "capex_lead",
+    "measure": "ghost_eb",
+    "spec": "core",
+    "n": 3178,
+    "firms": 304,
+    "years": 16,
+    "r2_within": 0.3893742966540482,
+    "coefficients": {
+      "ghost_eb": {
+        "b": -0.017057697263430774,
+        "se": 0.035562300277634386,
+        "p": 0.6315082810744942,
+        "ci_low": -0.0867881281857405,
+        "ci_high": 0.05267273365887895
+      },
+      "ghost_x_size": {
+        "b": 0.003054321829658515,
+        "se": 0.004223109919521662,
+        "p": 0.46959180509234555,
+        "ci_low": -0.005226336964107092,
+        "ci_high": 0.011334980623424123
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "capex",
+      "ghost_x_size"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.06643789497811571,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": [
+      {
+        "quantile": 0.25,
+        "moderator": "log_assets",
+        "value": 7.681128533709851,
+        "b": 0.006402941293492125,
+        "se": 0.006030187664359017,
+        "ci_low": -0.005421029065438818,
+        "ci_high": 0.01822691165242307
+      },
+      {
+        "quantile": 0.5,
+        "moderator": "log_assets",
+        "value": 8.874383888882328,
+        "b": 0.010047527173152347,
+        "se": 0.005865516224874863,
+        "ci_low": -0.0014535560174519548,
+        "ci_high": 0.02154861036375665
+      },
+      {
+        "quantile": 0.75,
+        "moderator": "log_assets",
+        "value": 10.14667571382379,
+        "b": 0.013933515867767123,
+        "se": 0.009394738220511428,
+        "ci_low": -0.004487653162475725,
+        "ci_high": 0.03235468489800997
+      }
+    ]
+  },
+  {
+    "id": "capex_interaction_size_extended",
+    "family": "heterogeneity",
+    "outcome": "capex_lead",
+    "measure": "ghost_eb",
+    "spec": "extended",
+    "n": 1241,
+    "firms": 140,
+    "years": 15,
+    "r2_within": 0.4455017133438448,
+    "coefficients": {
+      "ghost_eb": {
+        "b": -0.06429327889703203,
+        "se": 0.08189722946170445,
+        "p": 0.4325982366714079,
+        "ci_low": -0.224989827122342,
+        "ci_high": 0.09640326932827796
+      },
+      "ghost_x_size": {
+        "b": 0.008703832480801662,
+        "se": 0.009326153521428697,
+        "p": 0.35088941734380064,
+        "ci_low": -0.009595695952131488,
+        "ci_high": 0.027003360913734814
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "dividend",
+      "rd_ratio",
+      "capex",
+      "advertising",
+      "loss",
+      "ghost_x_size"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.057970570989532295,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": [
+      {
+        "quantile": 0.25,
+        "moderator": "log_assets",
+        "value": 7.396140182743344,
+        "b": 8.14862580918313e-05,
+        "se": 0.015589193183034599,
+        "ci_low": -0.030507210705126,
+        "ci_high": 0.030670183221309662
+      },
+      {
+        "quantile": 0.5,
+        "moderator": "log_assets",
+        "value": 8.518692067539973,
+        "b": 0.009851989814369855,
+        "se": 0.009677849411675094,
+        "ci_low": -0.009137626866469784,
+        "ci_high": 0.028841606495209494
+      },
+      {
+        "quantile": 0.75,
+        "moderator": "log_assets",
+        "value": 9.632728147280256,
+        "b": 0.019548373229998278,
+        "se": 0.012733709804974378,
+        "ci_low": -0.005437370795921551,
+        "ci_high": 0.044534117255918104
+      }
+    ]
+  },
+  {
+    "id": "capex_interaction_analysts_core",
+    "family": "heterogeneity",
+    "outcome": "capex_lead",
+    "measure": "ghost_eb",
+    "spec": "core",
+    "n": 2915,
+    "firms": 293,
+    "years": 16,
+    "r2_within": 0.35794870973953397,
+    "coefficients": {
+      "ghost_eb": {
+        "b": -0.004030156126946842,
+        "se": 0.00946868533899724,
+        "p": 0.6704127632328886,
+        "ci_low": -0.022597088326249584,
+        "ci_high": 0.0145367760723559
+      },
+      "ghost_x_analysts": {
+        "b": 0.0010690549041288415,
+        "se": 0.0007445524739865588,
+        "p": 0.1511695320314207,
+        "ci_low": -0.0003909213025359332,
+        "ci_high": 0.002529031110793616
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "capex",
+      "analyst_following",
+      "ghost_x_analysts"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.0656563643996776,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": [
+      {
+        "quantile": 0.25,
+        "moderator": "analyst_following",
+        "value": 7.0,
+        "b": 0.003453228201955049,
+        "se": 0.0062072108467297665,
+        "ci_low": -0.008718351992324945,
+        "ci_high": 0.015624808396235043
+      },
+      {
+        "quantile": 0.5,
+        "moderator": "analyst_following",
+        "value": 14.0,
+        "b": 0.01093661253085694,
+        "se": 0.006459880248231354,
+        "ci_low": -0.0017304214121284887,
+        "ci_high": 0.023603646473842367
+      },
+      {
+        "quantile": 0.75,
+        "moderator": "analyst_following",
+        "value": 20.0,
+        "b": 0.017350941955629987,
+        "se": 0.009365541451394014,
+        "ci_low": -0.0010137377134282165,
+        "ci_high": 0.03571562162468819
+      }
+    ]
+  },
+  {
+    "id": "capex_interaction_analysts_extended",
+    "family": "heterogeneity",
+    "outcome": "capex_lead",
+    "measure": "ghost_eb",
+    "spec": "extended",
+    "n": 1148,
+    "firms": 135,
+    "years": 15,
+    "r2_within": 0.440901276877821,
+    "coefficients": {
+      "ghost_eb": {
+        "b": -0.016282727156615592,
+        "se": 0.020845856759209604,
+        "p": 0.4349303754856163,
+        "ci_low": -0.057190070392114545,
+        "ci_high": 0.02462461607888336
+      },
+      "ghost_x_analysts": {
+        "b": 0.0017180893375592218,
+        "se": 0.0011921217533403673,
+        "p": 0.1498448616497436,
+        "ci_low": -0.0006212980191563707,
+        "ci_high": 0.004057476694274814
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "dividend",
+      "rd_ratio",
+      "capex",
+      "advertising",
+      "loss",
+      "analyst_following",
+      "ghost_x_analysts"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.058729842650856644,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": [
+      {
+        "quantile": 0.25,
+        "moderator": "analyst_following",
+        "value": 9.0,
+        "b": -0.0008199231185825953,
+        "se": 0.013387544654601109,
+        "ci_low": -0.027091277210296194,
+        "ci_high": 0.025451430973131003
+      },
+      {
+        "quantile": 0.5,
+        "moderator": "analyst_following",
+        "value": 15.0,
+        "b": 0.009488612906772734,
+        "se": 0.011701053022930574,
+        "ci_low": -0.013473215803593137,
+        "ci_high": 0.0324504416171386
+      },
+      {
+        "quantile": 0.75,
+        "moderator": "analyst_following",
+        "value": 21.0,
+        "b": 0.019797148932128063,
+        "se": 0.014033033870001637,
+        "ci_low": -0.007740895667642328,
+        "ci_high": 0.04733519353189845
+      }
+    ]
+  },
+  {
+    "id": "capex_interaction_leverage_core",
+    "family": "heterogeneity",
+    "outcome": "capex_lead",
+    "measure": "ghost_eb",
+    "spec": "core",
+    "n": 3178,
+    "firms": 304,
+    "years": 16,
+    "r2_within": 0.39016736060556145,
+    "coefficients": {
+      "ghost_eb": {
+        "b": -0.007660624887204858,
+        "se": 0.010340529874289125,
+        "p": 0.4588545924414726,
+        "ci_low": -0.027936298802277097,
+        "ci_high": 0.012615049027867383
+      },
+      "ghost_x_leverage": {
+        "b": 0.06777760307426567,
+        "se": 0.029214348386820608,
+        "p": 0.020410570818478545,
+        "ci_low": 0.010494213467191711,
+        "ci_high": 0.12506099268133963
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "capex",
+      "ghost_x_leverage"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.06643789497811571,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": [
+      {
+        "quantile": 0.25,
+        "moderator": "leverage",
+        "value": 0.1020355227766884,
+        "b": -0.0007449017249712775,
+        "se": 0.00783024038128046,
+        "ci_low": -0.01609840899950908,
+        "ci_high": 0.014608605549566528
+      },
+      {
+        "quantile": 0.5,
+        "moderator": "leverage",
+        "value": 0.25147209980902474,
+        "b": 0.009383551277903341,
+        "se": 0.005155734730049681,
+        "ci_low": -0.0007257949016401741,
+        "ci_high": 0.019492897457446857
+      },
+      {
+        "quantile": 0.75,
+        "moderator": "leverage",
+        "value": 0.3890583678876008,
+        "b": 0.018708818744202577,
+        "se": 0.005320611135180107,
+        "ci_low": 0.008276183500427846,
+        "ci_high": 0.02914145398797731
+      }
+    ]
+  },
+  {
+    "id": "capex_interaction_leverage_extended",
+    "family": "heterogeneity",
+    "outcome": "capex_lead",
+    "measure": "ghost_eb",
+    "spec": "extended",
+    "n": 1241,
+    "firms": 140,
+    "years": 15,
+    "r2_within": 0.44707324425897255,
+    "coefficients": {
+      "ghost_eb": {
+        "b": -0.019737387713803366,
+        "se": 0.01592086475250795,
+        "p": 0.21535015361749318,
+        "ci_low": -0.050976881739500116,
+        "ci_high": 0.01150210631189338
+      },
+      "ghost_x_leverage": {
+        "b": 0.12060636957085485,
+        "se": 0.04634596936857983,
+        "p": 0.00938730738577876,
+        "ci_low": 0.029667550875293505,
+        "ci_high": 0.21154518826641622
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "dividend",
+      "rd_ratio",
+      "capex",
+      "advertising",
+      "loss",
+      "ghost_x_leverage"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.057970570989532295,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": [
+      {
+        "quantile": 0.25,
+        "moderator": "leverage",
+        "value": 0.05896125917699629,
+        "b": -0.012626284299139593,
+        "se": 0.01384872029708148,
+        "ci_low": -0.03979987202251198,
+        "ci_high": 0.014547303424232789
+      },
+      {
+        "quantile": 0.5,
+        "moderator": "leverage",
+        "value": 0.2399977833661783,
+        "b": 0.009207873643043898,
+        "se": 0.009782973003106482,
+        "ci_low": -0.009988013730847345,
+        "ci_high": 0.02840376101693514
+      },
+      {
+        "quantile": 0.75,
+        "moderator": "leverage",
+        "value": 0.39468971038535505,
+        "b": 0.027864705362746434,
+        "se": 0.011187510777487595,
+        "ci_low": 0.005912871619501582,
+        "ci_high": 0.049816539105991285
+      }
+    ]
+  },
+  {
+    "id": "capex_ghost_no_internal",
+    "family": "robustness",
+    "outcome": "capex_lead",
+    "measure": "ghost_no_internal",
+    "spec": "core",
+    "n": 3178,
+    "firms": 304,
+    "years": 16,
+    "r2_within": 0.38881256105649886,
+    "coefficients": {
+      "ghost_no_internal": {
+        "b": -0.00010124519794856188,
+        "se": 0.002394043039433317,
+        "p": 0.9662701051301332,
+        "ci_low": -0.004795475509905902,
+        "ci_high": 0.004592985114008778
+      }
+    },
+    "controls": [
+      "ghost_no_internal",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "capex"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.09388985012544,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "capex_ghost_two_points",
+    "family": "robustness",
+    "outcome": "capex_lead",
+    "measure": "ghost_two_points",
+    "spec": "core",
+    "n": 3178,
+    "firms": 304,
+    "years": 16,
+    "r2_within": 0.3888747828513597,
+    "coefficients": {
+      "ghost_two_points": {
+        "b": 0.002965916294421077,
+        "se": 0.0033563633252594897,
+        "p": 0.37694906871903244,
+        "ci_low": -0.0036152279038488304,
+        "ci_high": 0.009547060492690985
+      }
+    },
+    "controls": [
+      "ghost_two_points",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "capex"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.06973310685188278,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "capex_ghost_no_silence",
+    "family": "robustness",
+    "outcome": "capex_lead",
+    "measure": "ghost_no_silence",
+    "spec": "core",
+    "n": 3178,
+    "firms": 304,
+    "years": 16,
+    "r2_within": 0.38884382849391486,
+    "coefficients": {
+      "ghost_no_silence": {
+        "b": 0.000680131115062006,
+        "se": 0.0047102909147494895,
+        "p": 0.8852006682219399,
+        "ci_low": -0.008555789052600543,
+        "ci_high": 0.009916051282724554
+      }
+    },
+    "controls": [
+      "ghost_no_silence",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "capex"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.041410600292400894,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "capex_ghost_direct",
+    "family": "robustness",
+    "outcome": "capex_lead",
+    "measure": "ghost_direct",
+    "spec": "core",
+    "n": 3178,
+    "firms": 304,
+    "years": 16,
+    "r2_within": 0.38912569069962166,
+    "coefficients": {
+      "ghost_direct": {
+        "b": 0.0047191547343515316,
+        "se": 0.0054137529456862905,
+        "p": 0.3834468153883184,
+        "ci_low": -0.005896111056820047,
+        "ci_high": 0.015334420525523109
+      }
+    },
+    "controls": [
+      "ghost_direct",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "capex"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.033831859788194356,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "capex_ghost_still_listed",
+    "family": "robustness",
+    "outcome": "capex_lead",
+    "measure": "ghost_still_listed",
+    "spec": "core",
+    "n": 3178,
+    "firms": 304,
+    "years": 16,
+    "r2_within": 0.3888175579363995,
+    "coefficients": {
+      "ghost_still_listed": {
+        "b": -0.00015351929656720267,
+        "se": 0.002350748490464395,
+        "p": 0.947934496733253,
+        "ci_low": -0.0047628578247241385,
+        "ci_high": 0.004455819231589733
+      }
+    },
+    "controls": [
+      "ghost_still_listed",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "capex"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.09556141127294768,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "capex_ghost_roll_past",
+    "family": "robustness",
+    "outcome": "capex_lead",
+    "measure": "ghost_roll_past",
+    "spec": "core",
+    "n": 3178,
+    "firms": 304,
+    "years": 16,
+    "r2_within": 0.3888291649707637,
+    "coefficients": {
+      "ghost_roll_past": {
+        "b": 0.000756630858193709,
+        "se": 0.0034021674500860507,
+        "p": 0.8240209948240187,
+        "ci_low": -0.00591432589049067,
+        "ci_high": 0.007427587606878088
+      }
+    },
+    "controls": [
+      "ghost_roll_past",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "capex"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.07904626809094471,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "capex_ghost_roll_center",
+    "family": "robustness",
+    "outcome": "capex_lead",
+    "measure": "ghost_roll_center",
+    "spec": "core",
+    "n": 3178,
+    "firms": 304,
+    "years": 16,
+    "r2_within": 0.38868702226201124,
+    "coefficients": {
+      "ghost_roll_center": {
+        "b": 0.006319584000973384,
+        "se": 0.0057332931854287795,
+        "p": 0.27044133819625943,
+        "ci_low": -0.004922235053686877,
+        "ci_high": 0.017561403055633647
+      }
+    },
+    "controls": [
+      "ghost_roll_center",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "capex"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.06226960093138022,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "capex_ghost_english_80",
+    "family": "robustness",
+    "outcome": "capex_lead",
+    "measure": "ghost_english_80",
+    "spec": "core",
+    "n": 3176,
+    "firms": 304,
+    "years": 16,
+    "r2_within": 0.38906045178119675,
+    "coefficients": {
+      "ghost_english_80": {
+        "b": -0.0004774609784681874,
+        "se": 0.002352327887092182,
+        "p": 0.8391699835976779,
+        "ci_low": -0.00508989775564367,
+        "ci_high": 0.0041349757987072955
+      }
+    },
+    "controls": [
+      "ghost_english_80",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "capex"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.09586706142457728,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "capex_min_5",
+    "family": "robustness",
+    "outcome": "capex_lead",
+    "measure": "ghost_eb",
+    "spec": "core",
+    "n": 2823,
+    "firms": 295,
+    "years": 16,
+    "r2_within": 0.38923403795523503,
+    "coefficients": {
+      "ghost_eb": {
+        "b": 0.007500660097621835,
+        "se": 0.007239995560857414,
+        "p": 0.30030050828562105,
+        "ci_low": -0.006696327349531118,
+        "ci_high": 0.021697647544774788
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "capex"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.05209722275092441,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "capex_min_10",
+    "family": "robustness",
+    "outcome": "capex_lead",
+    "measure": "ghost_eb",
+    "spec": "core",
+    "n": 2493,
+    "firms": 290,
+    "years": 16,
+    "r2_within": 0.3919913027130103,
+    "coefficients": {
+      "ghost_eb": {
+        "b": 0.012574875212006894,
+        "se": 0.00813698856261553,
+        "p": 0.12239541850452074,
+        "ci_low": -0.0033821847367941082,
+        "ci_high": 0.028531935160807896
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "capex"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.047668294561834516,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "capex_min_20",
+    "family": "robustness",
+    "outcome": "capex_lead",
+    "measure": "ghost_eb",
+    "spec": "core",
+    "n": 1822,
+    "firms": 268,
+    "years": 15,
+    "r2_within": 0.4047495092065023,
+    "coefficients": {
+      "ghost_eb": {
+        "b": 0.02361696046126102,
+        "se": 0.00974945872276683,
+        "p": 0.015534211264221132,
+        "ci_low": 0.004493273786574877,
+        "ci_high": 0.04274064713594716
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "capex"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.04575015190312007,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "capex_no_covid",
+    "family": "robustness",
+    "outcome": "capex_lead",
+    "measure": "ghost_eb",
+    "spec": "core",
+    "n": 2727,
+    "firms": 299,
+    "years": 14,
+    "r2_within": 0.3757139854376874,
+    "coefficients": {
+      "ghost_eb": {
+        "b": 0.004569301296342282,
+        "se": 0.005414491686197876,
+        "p": 0.3988078998748041,
+        "ci_low": -0.0060482441937912655,
+        "ci_high": 0.01518684678647583
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "capex"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.06678678962027669,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "capex_us_domicile",
+    "family": "robustness",
+    "outcome": "capex_lead",
+    "measure": "ghost_eb",
+    "spec": "core",
+    "n": 2773,
+    "firms": 268,
+    "years": 16,
+    "r2_within": 0.3548921277591083,
+    "coefficients": {
+      "ghost_eb": {
+        "b": 0.009886761398332838,
+        "se": 0.005367252243192491,
+        "p": 0.06558662165828581,
+        "ci_low": -0.0006379900532756146,
+        "ci_high": 0.02041151284994129
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "capex"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.06786961569164075,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "capex_balanced_10years",
+    "family": "robustness",
+    "outcome": "capex_lead",
+    "measure": "ghost_eb",
+    "spec": "core",
+    "n": 2998,
+    "firms": 258,
+    "years": 16,
+    "r2_within": 0.40561730610443936,
+    "coefficients": {
+      "ghost_eb": {
+        "b": 0.0065114872668584805,
+        "se": 0.006100930952799024,
+        "p": 0.28593386453607544,
+        "ci_low": -0.0054514448989085,
+        "ci_high": 0.018474419432625462
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "capex"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.05870520712886535,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "capex_balanced_2013_2023",
+    "family": "robustness",
+    "outcome": "capex_lead",
+    "measure": "ghost_eb",
+    "spec": "core",
+    "n": 1298,
+    "firms": 118,
+    "years": 11,
+    "r2_within": 0.3614625721406033,
+    "coefficients": {
+      "ghost_eb": {
+        "b": 0.01906213696917777,
+        "se": 0.007367570125301351,
+        "p": 0.009793495279623228,
+        "ci_low": 0.0046069212165152015,
+        "ci_high": 0.03351735272184034
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "capex"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.04902742404788814,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "capex_normal_fiscal_periods",
+    "family": "robustness",
+    "outcome": "capex_lead",
+    "measure": "ghost_eb",
+    "spec": "core",
+    "n": 3174,
+    "firms": 304,
+    "years": 16,
+    "r2_within": 0.38934939307071814,
+    "coefficients": {
+      "ghost_eb": {
+        "b": 0.008179476418571209,
+        "se": 0.005412463020324845,
+        "p": 0.13084080677604762,
+        "ci_low": -0.002433266420329469,
+        "ci_high": 0.018792219257471886
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "capex"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.06646714770131903,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "capex_institutional_ownership",
+    "family": "robustness",
+    "outcome": "capex_lead",
+    "measure": "ghost_eb",
+    "spec": "extended",
+    "n": 1051,
+    "firms": 128,
+    "years": 15,
+    "r2_within": 0.4285618243285698,
+    "coefficients": {
+      "ghost_eb": {
+        "b": 0.008708334678069555,
+        "se": 0.012863086430328049,
+        "p": 0.4985792626802776,
+        "ci_low": -0.01653691527449032,
+        "ci_high": 0.03395358463062943
+      },
+      "institutional_ownership": {
+        "b": -0.0043643090289209535,
+        "se": 0.007799532472363558,
+        "p": 0.5759190540707284,
+        "ci_low": -0.019671766367750615,
+        "ci_high": 0.010943148309908706
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "dividend",
+      "rd_ratio",
+      "capex",
+      "advertising",
+      "loss",
+      "institutional_ownership"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.05286685037083761,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "capex_past_placebo",
+    "family": "robustness",
+    "outcome": "capex_lag",
+    "measure": "ghost_eb",
+    "spec": "extended",
+    "n": 1339,
+    "firms": 141,
+    "years": 16,
+    "r2_within": 0.38882300508028267,
+    "coefficients": {
+      "ghost_eb": {
+        "b": -0.00910930860503533,
+        "se": 0.00891988324580263,
+        "p": 0.3073532463470777,
+        "ci_low": -0.02661003179002373,
+        "ci_high": 0.008391414579953068
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "dividend",
+      "rd_ratio",
+      "capex",
+      "advertising",
+      "loss"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.0577154244529501,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "d_xsga_sales_interaction",
+    "family": "cost_adjustment",
+    "outcome": "d_xsga",
+    "measure": "ghost_eb",
+    "spec": "core",
+    "n": 2893,
+    "firms": 273,
+    "years": 16,
+    "r2_within": 0.4517755759199432,
+    "coefficients": {
+      "ghost_eb": {
+        "b": 0.056885869032369994,
+        "se": 0.05220320398459464,
+        "p": 0.27594609994998986,
+        "ci_low": -0.04547823836191051,
+        "ci_high": 0.1592499764266505
+      },
+      "ghost_x_sales_change": {
+        "b": -0.051419194981139414,
+        "se": 0.3653624470116908,
+        "p": 0.8880904012322589,
+        "ci_low": -0.7678503315600115,
+        "ci_high": 0.6650119415977326
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "d_sale",
+      "ghost_x_sales_change"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.06341971216112166,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "d_xsga_downturn_interaction",
+    "family": "cost_adjustment",
+    "outcome": "d_xsga",
+    "measure": "ghost_eb",
+    "spec": "core",
+    "n": 2893,
+    "firms": 273,
+    "years": 16,
+    "r2_within": 0.4540956516059107,
+    "coefficients": {
+      "ghost_eb": {
+        "b": -0.015696427266348355,
+        "se": 0.05311892105143572,
+        "p": 0.7676386691717842,
+        "ci_low": -0.1198561814225208,
+        "ci_high": 0.08846332688982408
+      },
+      "ghost_x_sales_decline": {
+        "b": -3.1917262514269877,
+        "se": 1.6259662576799143,
+        "p": 0.04975609376631706,
+        "ci_low": -6.380048647926305,
+        "ci_high": -0.003403854927670036
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "d_sale",
+      "sales_decline",
+      "ghost_x_sales_change",
+      "ghost_x_sales_decline"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.06341971216112166,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "d_emp_sales_interaction",
+    "family": "cost_adjustment",
+    "outcome": "d_emp",
+    "measure": "ghost_eb",
+    "spec": "core",
+    "n": 3292,
+    "firms": 301,
+    "years": 16,
+    "r2_within": 0.2178086636510892,
+    "coefficients": {
+      "ghost_eb": {
+        "b": 0.027040515397895242,
+        "se": 0.045689568639892895,
+        "p": 0.5540086583761373,
+        "ci_low": -0.06254592713382805,
+        "ci_high": 0.11662695792961854
+      },
+      "ghost_x_sales_change": {
+        "b": 0.05289168823131867,
+        "se": 0.33659875767001374,
+        "p": 0.8751485747300802,
+        "ci_low": -0.6070988995092101,
+        "ci_high": 0.7128822759718474
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "d_sale",
+      "ghost_x_sales_change"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.06679677969326367,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "d_emp_downturn_interaction",
+    "family": "cost_adjustment",
+    "outcome": "d_emp",
+    "measure": "ghost_eb",
+    "spec": "core",
+    "n": 3292,
+    "firms": 301,
+    "years": 16,
+    "r2_within": 0.21772236083144159,
+    "coefficients": {
+      "ghost_eb": {
+        "b": 0.024459834155989752,
+        "se": 0.05200606326823874,
+        "p": 0.6381562876289407,
+        "ci_low": -0.07751178909743056,
+        "ci_high": 0.12643145740941006
+      },
+      "ghost_x_sales_decline": {
+        "b": -0.06279968420183113,
+        "se": 1.0121626523464382,
+        "p": 0.9505311354553148,
+        "ci_low": -2.047411903817528,
+        "ci_high": 1.9218125354138653
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "d_sale",
+      "sales_decline",
+      "ghost_x_sales_change",
+      "ghost_x_sales_decline"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.06679677969326367,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "change_sga_levels_interaction",
+    "family": "cost_adjustment",
+    "outcome": "change_sga",
+    "measure": "ghost_eb",
+    "spec": "core",
+    "n": 2276,
+    "firms": 210,
+    "years": 16,
+    "r2_within": 0.30425474506297845,
+    "coefficients": {
+      "ghost_eb": {
+        "b": 62.357208572181435,
+        "se": 285.8095907194324,
+        "p": 0.8273126309120477,
+        "ci_low": -498.15120013110413,
+        "ci_high": 622.865617275467
+      },
+      "ghost_x_sale_difference": {
+        "b": -1.1361250251170776,
+        "se": 0.9732130085855538,
+        "p": 0.2431866271272713,
+        "ci_low": -3.0447176423155504,
+        "ci_high": 0.772467592081395
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "roa",
+      "log_assets",
+      "capex",
+      "advertising",
+      "change_sale",
+      "ghost_x_sale_difference"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.05973259055408246,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "change_emp_levels_interaction",
+    "family": "cost_adjustment",
+    "outcome": "change_emp",
+    "measure": "ghost_eb",
+    "spec": "core",
+    "n": 2259,
+    "firms": 215,
+    "years": 16,
+    "r2_within": 0.07718533519540671,
+    "coefficients": {
+      "ghost_eb": {
+        "b": -0.5171083017955157,
+        "se": 4.3675148946360505,
+        "p": 0.9057634769537151,
+        "ci_low": -9.08240731357133,
+        "ci_high": 8.0481907099803
+      },
+      "ghost_x_sale_difference": {
+        "b": -0.00031152584336228083,
+        "se": 0.00736759404241284,
+        "p": 0.9662770701914556,
+        "ci_low": -0.014760393790703933,
+        "ci_high": 0.014137342103979371
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "roa",
+      "log_assets",
+      "capex",
+      "advertising",
+      "change_sale",
+      "ghost_x_sale_difference"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.05993664415200355,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "change_sga_per_emp_levels_interaction",
+    "family": "cost_adjustment",
+    "outcome": "change_sga_per_emp",
+    "measure": "ghost_eb",
+    "spec": "core",
+    "n": 2193,
+    "firms": 209,
+    "years": 16,
+    "r2_within": 0.01766708215748014,
+    "coefficients": {
+      "ghost_eb": {
+        "b": 3.67148601607501,
+        "se": 13.092184223413305,
+        "p": 0.7791745639653456,
+        "ci_low": -22.004563018278958,
+        "ci_high": 29.34753505042898
+      },
+      "ghost_x_sale_difference": {
+        "b": -0.001932048669464422,
+        "se": 0.003673657676783479,
+        "p": 0.5990034893949892,
+        "ci_low": -0.009136729953725461,
+        "ci_high": 0.0052726326147966174
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "roa",
+      "log_assets",
+      "capex",
+      "advertising",
+      "change_sale",
+      "ghost_x_sale_difference"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.059773555853465506,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "change_sga_per_sales_levels_interaction",
+    "family": "cost_adjustment",
+    "outcome": "change_sga_per_sales",
+    "measure": "ghost_eb",
+    "spec": "core",
+    "n": 2276,
+    "firms": 210,
+    "years": 16,
+    "r2_within": 0.030983798951219166,
+    "coefficients": {
+      "ghost_eb": {
+        "b": -0.19790144602999774,
+        "se": 0.2006580727019598,
+        "p": 0.32412125732272384,
+        "ci_low": -0.5914170615855702,
+        "ci_high": 0.19561416952557473
+      },
+      "ghost_x_sale_difference": {
+        "b": -5.142432861888153e-05,
+        "se": 3.817267782644106e-05,
+        "p": 0.17808120334122127,
+        "ci_low": -0.00012628573145208932,
+        "ci_high": 2.3437074214326246e-05
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "roa",
+      "log_assets",
+      "capex",
+      "advertising",
+      "change_sale",
+      "ghost_x_sale_difference"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.05973259055408246,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "change_pension_per_emp_levels_interaction",
+    "family": "cost_adjustment",
+    "outcome": "change_pension_per_emp",
+    "measure": "ghost_eb",
+    "spec": "core",
+    "n": 1987,
+    "firms": 197,
+    "years": 16,
+    "r2_within": 0.002486985573786904,
+    "coefficients": {
+      "ghost_eb": {
+        "b": -0.07279076988524384,
+        "se": 0.9674536329900162,
+        "p": 0.9400326342660609,
+        "ci_low": -1.9702640335076507,
+        "ci_high": 1.8246824937371628
+      },
+      "ghost_x_sale_difference": {
+        "b": -0.0008683551972797342,
+        "se": 0.000555017975517246,
+        "p": 0.1178666493379529,
+        "ci_low": -0.001956915654817111,
+        "ci_high": 0.0002202052602576428
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "roa",
+      "log_assets",
+      "capex",
+      "advertising",
+      "change_sale",
+      "ghost_x_sale_difference"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.060558813483541855,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "change_pension_per_sales_levels_interaction",
+    "family": "cost_adjustment",
+    "outcome": "change_pension_per_sales",
+    "measure": "ghost_eb",
+    "spec": "core",
+    "n": 2052,
+    "firms": 199,
+    "years": 16,
+    "r2_within": 0.0013854922500258215,
+    "coefficients": {
+      "ghost_eb": {
+        "b": -0.008054593968174222,
+        "se": 0.006384207559164291,
+        "p": 0.20723779546495524,
+        "ci_low": -0.02057568770709827,
+        "ci_high": 0.004466499770749826
+      },
+      "ghost_x_sale_difference": {
+        "b": -4.071213076999499e-07,
+        "se": 7.575966570537798e-07,
+        "p": 0.5910667940846678,
+        "ci_low": -1.8929656621256079e-06,
+        "ci_high": 1.078723046725708e-06
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "roa",
+      "log_assets",
+      "capex",
+      "advertising",
+      "change_sale",
+      "ghost_x_sale_difference"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.06029273057609781,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "change_sales_per_emp_notebook_formula",
+    "family": "cost_adjustment",
+    "outcome": "change_sales_per_emp",
+    "measure": "ghost_eb",
+    "spec": "core",
+    "n": 2259,
+    "firms": 215,
+    "years": 16,
+    "r2_within": 0.004905391501258127,
+    "coefficients": {
+      "ghost_eb": {
+        "b": 46.472436448065956,
+        "se": 36.555532283324354,
+        "p": 0.20377396807185114,
+        "ci_low": -25.2179611313208,
+        "ci_high": 118.1628340274527
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "roa",
+      "log_assets",
+      "capex",
+      "advertising"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.05993664415200355,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "employment_change_yen_core",
+    "family": "cost_adjustment",
+    "outcome": "change_emp",
+    "measure": "ghost_eb",
+    "spec": "core",
+    "n": 1634,
+    "firms": 162,
+    "years": 16,
+    "r2_within": 0.03969698953515177,
+    "coefficients": {
+      "ghost_eb": {
+        "b": 1.8146204711753515,
+        "se": 4.441786863686334,
+        "p": 0.6829421612764089,
+        "ci_low": -6.898404810524869,
+        "ci_high": 10.527645752875571
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "emp",
+      "leverage",
+      "loss",
+      "ppe",
+      "roa",
+      "capex",
+      "rd_ratio",
+      "advertising"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.05990934340771053,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "employment_change_yen_extended",
+    "family": "cost_adjustment",
+    "outcome": "change_emp",
+    "measure": "ghost_eb",
+    "spec": "core",
+    "n": 1323,
+    "firms": 139,
+    "years": 16,
+    "r2_within": 0.14336941290840632,
+    "coefficients": {
+      "ghost_eb": {
+        "b": 5.978631153474679,
+        "se": 5.410586131191376,
+        "p": 0.2693946460907265,
+        "ci_low": -4.637027887300667,
+        "ci_high": 16.594290194250025
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "emp",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "dividend",
+      "rd_ratio",
+      "capex",
+      "advertising",
+      "loss"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.057904998935907497,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "determinants_within",
+    "family": "determinants",
+    "outcome": "ghost_raw",
+    "measure": "log_assets",
+    "spec": "fe",
+    "n": 3219,
+    "firms": 303,
+    "years": 17,
+    "r2_within": 0.00210562334770914,
+    "coefficients": {
+      "log_assets": {
+        "b": -0.03304275186395068,
+        "se": 0.04194974289832366,
+        "p": 0.4309514821692038,
+        "ci_low": -0.11529712642495152,
+        "ci_high": 0.04921162269705016
+      },
+      "log_assets_sq": {
+        "b": 0.002019855981986798,
+        "se": 0.002244098600774415,
+        "p": 0.3681554551242696,
+        "ci_low": -0.002380336107564551,
+        "ci_high": 0.006420048071538146
+      },
+      "market_to_book": {
+        "b": -0.00020240017869139904,
+        "se": 0.0002468707228163586,
+        "p": 0.4123616881434506,
+        "ci_low": -0.0006864602825137093,
+        "ci_high": 0.0002816599251309113
+      },
+      "acquisition": {
+        "b": 0.005735582792731372,
+        "se": 0.004146265382086755,
+        "p": 0.16667557782153403,
+        "ci_low": -0.002394347028152077,
+        "ci_high": 0.013865512613614822
+      },
+      "high_tech": {
+        "b": -0.010459631601848126,
+        "se": 0.035699409439929136,
+        "p": 0.7695494744953323,
+        "ci_low": -0.08045845383052505,
+        "ci_high": 0.0595391906268288
+      }
+    },
+    "controls": [
+      "log_assets",
+      "log_assets_sq",
+      "market_to_book",
+      "acquisition",
+      "high_tech"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 1.6357466660874234,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "peer_ghost_capex",
+    "family": "peers",
+    "outcome": "capex_lead",
+    "measure": "peer_ghost",
+    "spec": "core",
+    "n": 3065,
+    "firms": 295,
+    "years": 16,
+    "r2_within": 0.3992289534624234,
+    "coefficients": {
+      "peer_ghost": {
+        "b": 0.005435168559689237,
+        "se": 0.014492858822316454,
+        "p": 0.7076716265416179,
+        "ci_low": -0.02298282946183487,
+        "ci_high": 0.033853166581213345
+      }
+    },
+    "controls": [
+      "peer_ghost",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "capex"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.03235005210479998,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "capex_core_common_sample",
+    "family": "robustness",
+    "outcome": "capex_lead",
+    "measure": "ghost_eb",
+    "spec": "core",
+    "n": 1241,
+    "firms": 140,
+    "years": 15,
+    "r2_within": 0.43982767253628796,
+    "coefficients": {
+      "ghost_eb": {
+        "b": 0.009085828952945798,
+        "se": 0.011348967840079247,
+        "p": 0.42354721820929553,
+        "ci_low": -0.01318269530721596,
+        "ci_high": 0.031354353213107554
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "capex"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.057970570989532295,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "capex_extended_common_sample",
+    "family": "robustness",
+    "outcome": "capex_lead",
+    "measure": "ghost_eb",
+    "spec": "extended",
+    "n": 1241,
+    "firms": 140,
+    "years": 15,
+    "r2_within": 0.44544527563388514,
+    "coefficients": {
+      "ghost_eb": {
+        "b": 0.007224188553962744,
+        "se": 0.011186236874295664,
+        "p": 0.5185398238252614,
+        "ci_low": -0.014725122577958147,
+        "ci_high": 0.029173499685883633
+      }
+    },
+    "controls": [
+      "ghost_eb",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "dividend",
+      "rd_ratio",
+      "capex",
+      "advertising",
+      "loss"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.057970570989532295,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": []
+  },
+  {
+    "id": "capex_ghost_lower",
+    "family": "robustness",
+    "outcome": "capex_lead",
+    "measure": "ghost_lower",
+    "spec": "core",
+    "n": 3184,
+    "firms": 304,
+    "years": 16,
+    "r2_within": 0.3889473020282238,
+    "coefficients": {
+      "ghost_lower": {
+        "b": -0.0002861998161988737,
+        "se": 0.0023575247834560524,
+        "p": 0.9033839916537711,
+        "ci_low": -0.004908821153151496,
+        "ci_high": 0.0043364215207537474
+      }
+    },
+    "controls": [
+      "ghost_lower",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "capex"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.09508405563718676,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": [],
+    "interpretation": "Unresolved scored reviews set to zero/one only to form bounds; no claim that either is their actual classification."
+  },
+  {
+    "id": "capex_ghost_upper",
+    "family": "robustness",
+    "outcome": "capex_lead",
+    "measure": "ghost_upper",
+    "spec": "core",
+    "n": 3184,
+    "firms": 304,
+    "years": 16,
+    "r2_within": 0.3889489691467738,
+    "coefficients": {
+      "ghost_upper": {
+        "b": -0.00030477383509369503,
+        "se": 0.0023573669630484735,
+        "p": 0.8971406846107768,
+        "ci_low": -0.0049270857186787,
+        "ci_high": 0.00431753804849131
+      }
+    },
+    "controls": [
+      "ghost_upper",
+      "log_assets",
+      "roa",
+      "ppe",
+      "leverage",
+      "btm",
+      "capex"
+    ],
+    "dropped_controls": [],
+    "measure_sd": 0.09511862570779245,
+    "firm_effects": true,
+    "year_effects": true,
+    "cluster": "gvkey",
+    "marginal_effects": [],
+    "interpretation": "Unresolved scored reviews set to zero/one only to form bounds; no claim that either is their actual classification."
+  }
+]

@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-19",
+  "authors": [
+    "Hunter Ng",
+    "Yen H. Tong",
+    "Svenja Dube",
+    "Loujaina Abdelwahed"
+  ],
+  "measure": "Yen scoring: seven 3-point features, four 1-point features, threshold 3; accepted and declined offer override; all eligible outcomes in denominator.",
+  "model": "GPT-6 Luna, low reasoning effort; named structured feature answers; literal ghost/recruiter checks; exact normalized-text deduplication only for extraction.",
+  "sample": {
+    "eligible_reviews": 425987,
+    "classified_reviews": 425976,
+    "flagged_reviews": 19565,
+    "unclassified_reviews": 11,
+    "complete_firm_years": 4500,
+    "incomplete_firm_years": 11,
+    "analysis_firm_years_usd": 4405,
+    "analysis_firms_usd": 338,
+    "analysis_reviews_usd": 399200,
+    "analysis_flagged_usd": 18426,
+    "review_weighted_rate_complete_usd": 0.04615731462925852,
+    "predictor_years": [
+      2008,
+      2024
+    ],
+    "models_estimated": 108,
+    "model_status_count": 4,
+    "independent_human_validation": "Not completed. Results are provisional machine-coded associations; the pilot is an implementation check, not a human accuracy estimate.",
+    "scope": "English nonempty financially and fiscally linked narratives; USD financial levels; direct RCID-GVKEY links; no national prevalence inference.",
+    "evidence_exact_match_share": 0.9843936696822648,
+    "jackknife_fits": 304
+  },
+  "preparation": {
+    "raw_reviews": 6289805,
+    "raw_platform_employers": 662264,
+    "fiscal_matched_reviews": 446894,
+    "fiscal_matched_firms": 344,
+    "fiscal_matched_firm_years": 4513,
+    "english_nonempty_reviews": 425987,
+    "english_firms": 344,
+    "english_firm_years": 4511,
+    "english_no_offer_reviews": 171491,
+    "unique_no_offer_texts": 171244,
+    "mean_no_offer_characters": 411.12940599378663,
+    "financial_rows": 5766,
+    "analyst_matched_financial_rows": 4742,
+    "english_outcomes": {
+      "ACCEPT_OFFER": 213053,
+      "NO_OFFER": 171491,
+      "DECLINE_OFFER": 41443
+    },
+    "language_counts": {
+      "en": 425993,
+      "pt": 7254,
+      "es": 5696,
+      "fr": 3465,
+      "it": 1990,
+      "de": 1880,
+      "nl": 546,
+      "th": 28,
+      "zh": 9,
+      "ca": 4,
+      "sv": 4,
+      "ru": 4,
+      "ja": 3,
+      "ro": 3,
+      "sl": 2,
+      "cs": 2,
+      "pl": 2,
+      "war": 2,
+      "id": 1,
+      "la": 1,
+      "fi": 1,
+      "gl": 1,
+      "et": 1,
+      "ceb": 1,
+      "sk": 1
+    },
+    "financial_nonmissing": {
+      "capex": 5660,
+      "rd_ratio": 3501,
+      "advertising": 3101,
+      "btm": 4559,
+      "staff_per_emp": 1165,
+      "opinc_per_emp": 5517,
+      "analyst_following": 4742,
+      "institutional_ownership": 4407,
+      "pension_per_emp": 4905
+    },
+    "currency_counts": {
+      "USD": 5662,
+      "CAD": 104
+    },
+    "language_model": "fastText lid.176.ftz; highest probability language en, nonempty narrative; >=0.8 sensitivity",
+    "language_model_sha256": "8f3472cfe8738a7b6099e8e999c3cbfae0dcd15696aac7d7738a8039db603e83",
+    "financial_assignment": "Direct RCID-GVKEY; review posted after previous fiscal end and on/before current fiscal end; first/gap year start one calendar year before fiscal end.",
+    "institutional_ownership_link": "Exact CUSIP8; latest ownership snapshot on/before fiscal year end and within 366 days; ambiguous same-date values and shares outside [0,1] excluded.",
+    "ambiguous_ownership_security_dates": 0
+  },
+  "estimation": "Firm and fiscal-year fixed effects; firm-clustered standard errors; one-year-ahead outcomes with explicit consecutive-year links; primary past-information EB, raw-share and full-firm-prior sensitivities.",
+  "limits": "Provisional automated classifications, independent human validation pending. Observational associations, not verified employer intent or national prevalence."
+}
