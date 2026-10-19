@@ -197,7 +197,7 @@
     7379
   ],
   "high_tech_note": "Explicit selected-SIC industry proxy; not an occupation-skill measure or a claim of a validated high-skill classification.",
-  "study_focus": "Identification and validation of perceived ghost recruitment; existing financial-outcome regressions are supplementary.",
+  "study_focus": "Identify ghost recruitment, then validate by checking whether ghost-adjusted postings recover the positive Lourie hiring/performance relations. Existing company-outcome regressions are supplementary.",
   "confirmed_benchmark": {
     "confirmed_by_user": true,
     "reference_id": "gutierrez2020",
@@ -236,15 +236,20 @@
     },
     "our_proposed_extension": {
       "status": "NOT ESTIMATED: active-posting histories missing",
-      "equation": "DeltaY[i,t+1] = alpha + beta*P[i,t+3m] + gamma*G[i,t] + delta*P[i,t+3m]*G[i,t] + theta*X[i,t] + industry FE + year FE + error",
-      "novel_prediction": "delta < 0 if higher perceived ghost intensity weakens the otherwise positive information in postings",
-      "information_timing": "Ghost intensity uses reviews posted by fiscal year-end t. Raw share primary; past-information smoothing as sensitivity; full-sample priors must not introduce future reviews.",
-      "comparison": "Establish baseline posting slope first; hold common sample fixed; formally test slope difference rather than comparing separate p-values.",
-      "caveat": "A negative interaction would be convergent validity, not proof of employer intent or individual posting falsity. A null coefficient on ghost intensity alone is insufficient."
+      "design": "Signal recovery: construct original and ghost-adjusted posting counts, then apply the same Lourie future-activity specification to each signal.",
+      "adjustment": "Remove individually linked ghost postings when such links are available. With only an aggregate measure, N_adj[i,w] = N_raw[i,w]*(1-q_hat[i,w]) is a proxy adjustment requiring an explicit mapping from the review population to the posting population.",
+      "measurement_warning": "An interview-review share is not automatically the fraction of advertised vacancies that are ghost jobs. Raw feature scores are not calibrated posting probabilities.",
+      "posting_change_construction": "Adjust the level of postings in each time window first; average active postings over the first three months, compare the corresponding windows one year apart, then apply benchmark asset scaling and ranking. Do not multiply the already-computed posting change by a single current ghost share.",
+      "equation": "DeltaY[i,t+1] = alpha_m + beta_m*P_m[i,t+3m] + theta_m*X[i,t] + industry FE_m + year FE_m + error_m, for m in {raw, adjusted}",
+      "prediction": "The adjusted hiring signal should reproduce the positive relations with employment, SG&A, revenue, and operating earnings. Preferably it improves correspondence with realized activity relative to the original signal.",
+      "information_timing": "Use only ghost evidence available by each relevant measurement date. Fix classification and discounting rules independently of future outcomes; avoid full-sample priors that contain future reviews.",
+      "comparison": "Use the same firms, periods, outcome definitions, controls, effects and clustering for original and adjusted signals. Report confidence intervals and comparable-unit estimates; assess predictive correspondence on a prespecified held-out sample. A bigger coefficient or a smaller p-value alone is not sufficient.",
+      "primary_test_is_not": "An interaction between raw posting changes and ghost intensity, or a regression of future outcomes on ghost intensity alone.",
+      "caveat": "Recovery of the expected hiring pattern is evidence consistent with the measure, alongside independent coding and external hiring checks, rather than proof about every vacancy."
     },
     "additional_external_check": "Matched hires per posting over six months by company, occupation/role, seniority and location, following the logic described in Revelio’s article; separate common review-source evidence from independent worker-start evidence.",
     "data_needed": [
-      "Time-stamped active-posting counts and identifiers aligned to the financial firm, including the corresponding three-month windows in adjacent fiscal years",
+      "Time-stamped active-posting counts and identifiers aligned to the financial firm, including corresponding three-month windows in adjacent fiscal years and a defensible link to the ghost measure",
       "Posting opening/closing dates, occupation/skills and geography for duration and composition checks",
       "Worker position starts for independent hiring-conversion checks",
       "Independent human labels of narratives for classification precision/recall"
@@ -260,6 +265,7 @@
       "Interview-review counts are not active-posting counts",
       "Compustat net employment change is not gross hiring or departures",
       "A significant or insignificant investment coefficient does not validate ghost-job identification"
-    ]
+    ],
+    "user_confirmed_validation_logic": "Identify and remove or discount suspected ghost jobs, then test whether the remaining hiring signal reproduces the positive Lourie posting-to-hiring/performance results."
   }
 }
