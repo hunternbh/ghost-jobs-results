@@ -11,3 +11,6 @@ The main linked sample contains 399,200 English interview reviews across 338 com
 Files include the HTML report, displayed tables, model coefficients and confidence intervals, analysis specification, and statuses for unavailable tests. No raw reviews, private emails, API credentials, or financial microdata are published.
 
 The acquisition-variable reference is Adams et al. (2025), *Post-Acquisition Accounting Integration and M&A Outcomes*, [SSRN 5203945](https://doi.org/10.2139/ssrn.5203945), previously circulated under a longer title. This is cited as a working paper; a Management Science publication has not been established.
+
+
+The study’s primary focus is identification and validation. Gutiérrez, Lourie, Nekrasov, and Shevlin (2020), DOI 10.1287/mnsc.2019.3450, is the confirmed benchmark. Its posting-informativeness interaction has not been estimated because active-posting histories are missing. See validation_protocol.json and classification_stability.json. Existing company-outcome tables remain supplementary.

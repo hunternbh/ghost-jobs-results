@@ -1,0 +1,64 @@
+{
+  "confirmed_by_user": true,
+  "reference_id": "gutierrez2020",
+  "doi": "10.1287/mnsc.2019.3450",
+  "publisher_url": "https://pubsonline.informs.org/doi/10.1287/mnsc.2019.3450",
+  "bibliographic_correction": "The supplied manuscript prints the issue-wide page range 2801–3294. INFORMS gives article pages 3133–3141.",
+  "original_future_performance_test": {
+    "source_pdf_pages": [
+      10,
+      11,
+      24
+    ],
+    "dependent_variables": [
+      "Change in employment",
+      "Change in SG&A",
+      "Change in revenue",
+      "Change in operating income after depreciation"
+    ],
+    "dependent_scaling": "(Y[t+1] - Y[t]) / total assets[t]",
+    "posting_measure": "Change in average active postings during the first three months of fiscal t+1 relative to the corresponding months of t, scaled by assets[t], then ranked following the manuscript’s convention",
+    "controls": [
+      "lagged asset-scaled change in earnings",
+      "lagged asset-scaled change in revenue",
+      "lagged asset-scaled change in SG&A",
+      "lagged asset-scaled change in employees",
+      "lagged asset-scaled change in capital expenditure",
+      "lagged asset-scaled change in R&D",
+      "lagged asset-scaled change in advertising",
+      "book-to-market level"
+    ],
+    "fixed_effects": [
+      "industry",
+      "year"
+    ],
+    "standard_errors": "clustered by firm"
+  },
+  "our_proposed_extension": {
+    "status": "NOT ESTIMATED: active-posting histories missing",
+    "equation": "DeltaY[i,t+1] = alpha + beta*P[i,t+3m] + gamma*G[i,t] + delta*P[i,t+3m]*G[i,t] + theta*X[i,t] + industry FE + year FE + error",
+    "novel_prediction": "delta < 0 if higher perceived ghost intensity weakens the otherwise positive information in postings",
+    "information_timing": "Ghost intensity uses reviews posted by fiscal year-end t. Raw share primary; past-information smoothing as sensitivity; full-sample priors must not introduce future reviews.",
+    "comparison": "Establish baseline posting slope first; hold common sample fixed; formally test slope difference rather than comparing separate p-values.",
+    "caveat": "A negative interaction would be convergent validity, not proof of employer intent or individual posting falsity. A null coefficient on ghost intensity alone is insufficient."
+  },
+  "additional_external_check": "Matched hires per posting over six months by company, occupation/role, seniority and location, following the logic described in Revelio’s article; separate common review-source evidence from independent worker-start evidence.",
+  "data_needed": [
+    "Time-stamped active-posting counts and identifiers aligned to the financial firm, including the corresponding three-month windows in adjacent fiscal years",
+    "Posting opening/closing dates, occupation/skills and geography for duration and composition checks",
+    "Worker position starts for independent hiring-conversion checks",
+    "Independent human labels of narratives for classification precision/recall"
+  ],
+  "data_currently_supplied": [
+    "Interview reviews",
+    "Interview questions",
+    "Employer responses",
+    "Company reference records",
+    "Annual financial statements and selected analyst/ownership files"
+  ],
+  "not_substitutes": [
+    "Interview-review counts are not active-posting counts",
+    "Compustat net employment change is not gross hiring or departures",
+    "A significant or insignificant investment coefficient does not validate ghost-job identification"
+  ]
+}

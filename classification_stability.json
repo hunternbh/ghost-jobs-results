@@ -1,0 +1,110 @@
+{
+  "shared_unique_texts": 20631,
+  "shared_complete_feature_texts": 20631,
+  "paired_old_flag_rate": 0.2634869856041879,
+  "paired_new_flag_rate": 0.1563181619892395,
+  "paired_flag_contingency": {
+    "False": {
+      "False": 15074,
+      "True": 2332
+    },
+    "True": {
+      "False": 121,
+      "True": 3104
+    }
+  },
+  "feature_changes": [
+    {
+      "feature": "still_listed",
+      "old_yes": 221,
+      "new_yes": 93,
+      "old_yes_new_no": 129,
+      "old_no_new_yes": 1
+    },
+    {
+      "feature": "known_fake",
+      "old_yes": 222,
+      "new_yes": 28,
+      "old_yes_new_no": 202,
+      "old_no_new_yes": 8
+    },
+    {
+      "feature": "future_role",
+      "old_yes": 354,
+      "new_yes": 69,
+      "old_yes_new_no": 299,
+      "old_no_new_yes": 14
+    },
+    {
+      "feature": "no_hiring_intent",
+      "old_yes": 443,
+      "new_yes": 201,
+      "old_yes_new_no": 304,
+      "old_no_new_yes": 62
+    },
+    {
+      "feature": "not_real_or_delayed",
+      "old_yes": 1350,
+      "new_yes": 260,
+      "old_yes_new_no": 1107,
+      "old_no_new_yes": 17
+    },
+    {
+      "feature": "delay",
+      "old_yes": 5192,
+      "new_yes": 2115,
+      "old_yes_new_no": 3097,
+      "old_no_new_yes": 20
+    },
+    {
+      "feature": "generic_questions",
+      "old_yes": 4701,
+      "new_yes": 553,
+      "old_yes_new_no": 4154,
+      "old_no_new_yes": 6
+    },
+    {
+      "feature": "scheduling_delay",
+      "old_yes": 1108,
+      "new_yes": 394,
+      "old_yes_new_no": 769,
+      "old_no_new_yes": 55
+    },
+    {
+      "feature": "no_follow_up",
+      "old_yes": 4094,
+      "new_yes": 2595,
+      "old_yes_new_no": 1633,
+      "old_no_new_yes": 134
+    },
+    {
+      "feature": "clueless_interviewer",
+      "old_yes": 2237,
+      "new_yes": 1095,
+      "old_yes_new_no": 1163,
+      "old_no_new_yes": 21
+    },
+    {
+      "feature": "mentions_ghosting",
+      "old_yes": 843,
+      "new_yes": 844,
+      "old_yes_new_no": 7,
+      "old_no_new_yes": 8
+    },
+    {
+      "feature": "mentions_recruiter",
+      "old_yes": 6903,
+      "new_yes": 5193,
+      "old_yes_new_no": 1794,
+      "old_no_new_yes": 84
+    },
+    {
+      "feature": "internal_hire",
+      "old_yes": 467,
+      "new_yes": 136,
+      "old_yes_new_no": 331,
+      "old_no_new_yes": 0
+    }
+  ],
+  "interpretation": "Distinct identical no-offer-queue narratives, compared on narrative scores before offer overrides. Model and prompt both differ. Neither coding is human ground truth; this is a stability check, not classification accuracy."
+}
