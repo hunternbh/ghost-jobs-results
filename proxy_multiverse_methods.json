@@ -1,0 +1,418 @@
+{
+  "design": {
+    "status": "Exploratory fixed-menu analysis chosen after all prior results; not a preregistered or untouched-data confirmation.",
+    "bases": [
+      "all interview reviews",
+      "accepted or declined offer reports",
+      "accepted-offer reports",
+      "sum of reported interview rounds"
+    ],
+    "rounds_rule": "Review rounds clipped to 0\u201310 before summing; an annual round sum is missing unless at least 80% of reviews report numeric rounds. No missing round values are imputed as actual zero.",
+    "windows": [
+      "one year",
+      "trailing two-year mean with consecutive years"
+    ],
+    "transforms": [
+      "log1p level",
+      "change in log1p",
+      "change divided by current assets",
+      "sign-based five-group rank of asset-scaled change",
+      "change in reviews or effort per employee"
+    ],
+    "candidates": 40,
+    "settings": [
+      "Core controls, industry/year effects",
+      "Core controls, firm/year effects",
+      "Full financial controls, industry/year effects",
+      "Core controls, industry/year effects, at least ten reviews per activity year",
+      "Core controls, industry/year effects, fewer than 250 collected reviews"
+    ],
+    "outcomes": [
+      "future asset-scaled employment change",
+      "future asset-scaled SG&A change",
+      "future asset-scaled revenue change",
+      "future asset-scaled operating earnings change"
+    ],
+    "fits": 1600,
+    "common_rules": "Original deduplicated reviews and unchanged ghost labels; unambiguous company links; USD; December fiscal year ends; consecutive years; boundary review years excluded; at least five reviews in both activity years. Ghost score is previous-year raw share. Baseline and interaction use the same complete observations per candidate/outcome/setting.",
+    "core_controls": "Asset-scaled past changes in operating earnings, sales, SG&A, employment and capex; book-to-market; log assets; previous-year offer share. Full adds R&D and advertising changes.",
+    "inference": "Company-clustered errors; report all fits and failures; Holm and Benjamini-Hochberg adjustments across every tested outcome/candidate/setting in each coefficient family.",
+    "prediction": "Nested company-group cross-validation: five outer company folds, four inner folds; compare all 40 candidates plus controls-only; choose by inner mean squared prediction error, never p-values. Outer evaluation compares controls-only, selected proxy, and selected proxy plus ghost main effect/interaction.",
+    "preprocessing": "For prediction, clipping, scaling and rank cutoffs use each training fold only. All 40 candidates use a common complete-case prediction sample. Financial outcome metrics apply training-only clipping to test outcomes as well.",
+    "prediction_limit": "Internal validation on repeatedly studied data, not fresh confirmation. Negative predictive relationships are reported and do not count as reproducing a positive Lourie recruitment signal. If controls-only is selected there is no proxy-based interaction claim.",
+    "uncertainty": "2000 company-cluster resamples of paired outer-fold prediction errors; intervals conditional on the fitted cross-validation models.",
+    "reporting": "Retain all earlier results. No redefining labels, cherry-picking proxies, or claiming exact job-posting replication. Offer-based proxies measure reported recruitment outcomes, not advertisements. Capped selective reviews remain a coverage limitation.",
+    "api_calls": 0
+  },
+  "prediction_design": {
+    "status": "Internal exploratory model selection after prior data analyses, not fresh confirmation.",
+    "common_sample_company_years": 1033,
+    "common_sample_companies": 171,
+    "predictor_count": 40,
+    "outer_folds": 5,
+    "inner_folds": 4,
+    "seed": 2026101907,
+    "selection": "Inner-fold squared prediction error. Controls-only is an explicit candidate.",
+    "preprocessing": "Training-only clipping of each continuous variable and target at the 1st/99th percentiles, training-only standardization and sign-rank thresholds.",
+    "evaluation": "Paired outer-test errors; 2000 company-level bootstrap draws. Report 95% intervals plus 98.75% intervals adjusting for four outcomes separately for proxy and ghost improvement.",
+    "negative_slopes": "Retained and reported. A proxy that predicts worse growth does not establish the positive Lourie hiring signal."
+  },
+  "catalog": [
+    {
+      "id": "reviews_w1_log_level",
+      "base": "reviews",
+      "window": 1,
+      "transform": "log_level",
+      "raw_column": "raw_reviews_w1_log_level",
+      "ranked": false
+    },
+    {
+      "id": "reviews_w1_log_change",
+      "base": "reviews",
+      "window": 1,
+      "transform": "log_change",
+      "raw_column": "raw_reviews_w1_log_change",
+      "ranked": false
+    },
+    {
+      "id": "reviews_w1_asset_change",
+      "base": "reviews",
+      "window": 1,
+      "transform": "asset_change",
+      "raw_column": "raw_reviews_w1_asset_change",
+      "ranked": false
+    },
+    {
+      "id": "reviews_w1_rank_change",
+      "base": "reviews",
+      "window": 1,
+      "transform": "rank_change",
+      "raw_column": "raw_reviews_w1_rank_change",
+      "ranked": true
+    },
+    {
+      "id": "reviews_w1_employee_change",
+      "base": "reviews",
+      "window": 1,
+      "transform": "employee_change",
+      "raw_column": "raw_reviews_w1_employee_change",
+      "ranked": false
+    },
+    {
+      "id": "reviews_w2_log_level",
+      "base": "reviews",
+      "window": 2,
+      "transform": "log_level",
+      "raw_column": "raw_reviews_w2_log_level",
+      "ranked": false
+    },
+    {
+      "id": "reviews_w2_log_change",
+      "base": "reviews",
+      "window": 2,
+      "transform": "log_change",
+      "raw_column": "raw_reviews_w2_log_change",
+      "ranked": false
+    },
+    {
+      "id": "reviews_w2_asset_change",
+      "base": "reviews",
+      "window": 2,
+      "transform": "asset_change",
+      "raw_column": "raw_reviews_w2_asset_change",
+      "ranked": false
+    },
+    {
+      "id": "reviews_w2_rank_change",
+      "base": "reviews",
+      "window": 2,
+      "transform": "rank_change",
+      "raw_column": "raw_reviews_w2_rank_change",
+      "ranked": true
+    },
+    {
+      "id": "reviews_w2_employee_change",
+      "base": "reviews",
+      "window": 2,
+      "transform": "employee_change",
+      "raw_column": "raw_reviews_w2_employee_change",
+      "ranked": false
+    },
+    {
+      "id": "offers_w1_log_level",
+      "base": "offers",
+      "window": 1,
+      "transform": "log_level",
+      "raw_column": "raw_offers_w1_log_level",
+      "ranked": false
+    },
+    {
+      "id": "offers_w1_log_change",
+      "base": "offers",
+      "window": 1,
+      "transform": "log_change",
+      "raw_column": "raw_offers_w1_log_change",
+      "ranked": false
+    },
+    {
+      "id": "offers_w1_asset_change",
+      "base": "offers",
+      "window": 1,
+      "transform": "asset_change",
+      "raw_column": "raw_offers_w1_asset_change",
+      "ranked": false
+    },
+    {
+      "id": "offers_w1_rank_change",
+      "base": "offers",
+      "window": 1,
+      "transform": "rank_change",
+      "raw_column": "raw_offers_w1_rank_change",
+      "ranked": true
+    },
+    {
+      "id": "offers_w1_employee_change",
+      "base": "offers",
+      "window": 1,
+      "transform": "employee_change",
+      "raw_column": "raw_offers_w1_employee_change",
+      "ranked": false
+    },
+    {
+      "id": "offers_w2_log_level",
+      "base": "offers",
+      "window": 2,
+      "transform": "log_level",
+      "raw_column": "raw_offers_w2_log_level",
+      "ranked": false
+    },
+    {
+      "id": "offers_w2_log_change",
+      "base": "offers",
+      "window": 2,
+      "transform": "log_change",
+      "raw_column": "raw_offers_w2_log_change",
+      "ranked": false
+    },
+    {
+      "id": "offers_w2_asset_change",
+      "base": "offers",
+      "window": 2,
+      "transform": "asset_change",
+      "raw_column": "raw_offers_w2_asset_change",
+      "ranked": false
+    },
+    {
+      "id": "offers_w2_rank_change",
+      "base": "offers",
+      "window": 2,
+      "transform": "rank_change",
+      "raw_column": "raw_offers_w2_rank_change",
+      "ranked": true
+    },
+    {
+      "id": "offers_w2_employee_change",
+      "base": "offers",
+      "window": 2,
+      "transform": "employee_change",
+      "raw_column": "raw_offers_w2_employee_change",
+      "ranked": false
+    },
+    {
+      "id": "accepted_w1_log_level",
+      "base": "accepted",
+      "window": 1,
+      "transform": "log_level",
+      "raw_column": "raw_accepted_w1_log_level",
+      "ranked": false
+    },
+    {
+      "id": "accepted_w1_log_change",
+      "base": "accepted",
+      "window": 1,
+      "transform": "log_change",
+      "raw_column": "raw_accepted_w1_log_change",
+      "ranked": false
+    },
+    {
+      "id": "accepted_w1_asset_change",
+      "base": "accepted",
+      "window": 1,
+      "transform": "asset_change",
+      "raw_column": "raw_accepted_w1_asset_change",
+      "ranked": false
+    },
+    {
+      "id": "accepted_w1_rank_change",
+      "base": "accepted",
+      "window": 1,
+      "transform": "rank_change",
+      "raw_column": "raw_accepted_w1_rank_change",
+      "ranked": true
+    },
+    {
+      "id": "accepted_w1_employee_change",
+      "base": "accepted",
+      "window": 1,
+      "transform": "employee_change",
+      "raw_column": "raw_accepted_w1_employee_change",
+      "ranked": false
+    },
+    {
+      "id": "accepted_w2_log_level",
+      "base": "accepted",
+      "window": 2,
+      "transform": "log_level",
+      "raw_column": "raw_accepted_w2_log_level",
+      "ranked": false
+    },
+    {
+      "id": "accepted_w2_log_change",
+      "base": "accepted",
+      "window": 2,
+      "transform": "log_change",
+      "raw_column": "raw_accepted_w2_log_change",
+      "ranked": false
+    },
+    {
+      "id": "accepted_w2_asset_change",
+      "base": "accepted",
+      "window": 2,
+      "transform": "asset_change",
+      "raw_column": "raw_accepted_w2_asset_change",
+      "ranked": false
+    },
+    {
+      "id": "accepted_w2_rank_change",
+      "base": "accepted",
+      "window": 2,
+      "transform": "rank_change",
+      "raw_column": "raw_accepted_w2_rank_change",
+      "ranked": true
+    },
+    {
+      "id": "accepted_w2_employee_change",
+      "base": "accepted",
+      "window": 2,
+      "transform": "employee_change",
+      "raw_column": "raw_accepted_w2_employee_change",
+      "ranked": false
+    },
+    {
+      "id": "rounds_w1_log_level",
+      "base": "rounds",
+      "window": 1,
+      "transform": "log_level",
+      "raw_column": "raw_rounds_w1_log_level",
+      "ranked": false
+    },
+    {
+      "id": "rounds_w1_log_change",
+      "base": "rounds",
+      "window": 1,
+      "transform": "log_change",
+      "raw_column": "raw_rounds_w1_log_change",
+      "ranked": false
+    },
+    {
+      "id": "rounds_w1_asset_change",
+      "base": "rounds",
+      "window": 1,
+      "transform": "asset_change",
+      "raw_column": "raw_rounds_w1_asset_change",
+      "ranked": false
+    },
+    {
+      "id": "rounds_w1_rank_change",
+      "base": "rounds",
+      "window": 1,
+      "transform": "rank_change",
+      "raw_column": "raw_rounds_w1_rank_change",
+      "ranked": true
+    },
+    {
+      "id": "rounds_w1_employee_change",
+      "base": "rounds",
+      "window": 1,
+      "transform": "employee_change",
+      "raw_column": "raw_rounds_w1_employee_change",
+      "ranked": false
+    },
+    {
+      "id": "rounds_w2_log_level",
+      "base": "rounds",
+      "window": 2,
+      "transform": "log_level",
+      "raw_column": "raw_rounds_w2_log_level",
+      "ranked": false
+    },
+    {
+      "id": "rounds_w2_log_change",
+      "base": "rounds",
+      "window": 2,
+      "transform": "log_change",
+      "raw_column": "raw_rounds_w2_log_change",
+      "ranked": false
+    },
+    {
+      "id": "rounds_w2_asset_change",
+      "base": "rounds",
+      "window": 2,
+      "transform": "asset_change",
+      "raw_column": "raw_rounds_w2_asset_change",
+      "ranked": false
+    },
+    {
+      "id": "rounds_w2_rank_change",
+      "base": "rounds",
+      "window": 2,
+      "transform": "rank_change",
+      "raw_column": "raw_rounds_w2_rank_change",
+      "ranked": true
+    },
+    {
+      "id": "rounds_w2_employee_change",
+      "base": "rounds",
+      "window": 2,
+      "transform": "employee_change",
+      "raw_column": "raw_rounds_w2_employee_change",
+      "ranked": false
+    }
+  ],
+  "screen_summary": {
+    "fits": 1600,
+    "failed_fits": 0,
+    "positive_baselines_fdr05": 0,
+    "negative_interactions_fdr05": 0,
+    "matched_positive_baseline_negative_interaction_fdr05": []
+  },
+  "verification": {
+    "all_1600_fits_and_40_proxies_present": true,
+    "all_multiplicity_adjustments_recomputed": true,
+    "same_samples_baseline_interaction": true,
+    "all_20_nested_choices_minimize_inner_prediction_error": true,
+    "all_820_inner_candidate_scores_recorded": true,
+    "company_test_folds_disjoint": true,
+    "outer_error_metrics_independently_recomputed": true,
+    "prior_original_data_hash": "9bb815ce0f6fc4cdad4c02e7b474ce410d013f3e5facc9d863fb393d8af7780a",
+    "api_calls": 0
+  },
+  "nominal_pattern_counts": [
+    [
+      "Positive recruitment-to-growth coefficient",
+      "1",
+      "0"
+    ],
+    [
+      "Negative ghost interaction",
+      "3",
+      "0"
+    ],
+    [
+      "Both patterns in the same comparison",
+      "0",
+      "0"
+    ]
+  ],
+  "interpretation": "No robust positive recruitment signal paired with negative ghost interaction; held-out-company prediction does not rescue the proposed economic check."
+}

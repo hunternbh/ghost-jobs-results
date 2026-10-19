@@ -122,5 +122,13 @@
     "methods": "ranked_lourie_methods.json",
     "finding": "Ranked interview counts do not reproduce a consistent positive growth signal; ghost interactions are inconclusive after correction. Exact posting-based test remains unestimated.",
     "main_validation_unchanged": "Separate-review check remains the main validation section."
+  },
+  "review_proxy_multiverse": {
+    "status": "Completed exploratory comparison, 40 proxies and 1600 fits plus nested firm-group prediction.",
+    "results": "proxy_multiverse_results.json",
+    "prediction": "proxy_multiverse_prediction.json",
+    "methods": "proxy_multiverse_methods.json",
+    "finding": "No robust positive recruitment signal paired with negative ghost interaction; held-out-company prediction does not rescue the proposed economic check.",
+    "main_validation_unchanged": true
   }
 }
