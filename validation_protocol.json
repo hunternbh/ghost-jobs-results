@@ -139,5 +139,18 @@
     "all_results": "review_proxy_audit_results.json",
     "methods_and_findings": "review_proxy_audit.json",
     "interpretation": "Separate-review agreement reproduced. Review-based economic interaction remains inconclusive; these results do not establish that the ghost-job measure is invalid."
+  },
+  "company_groups_and_timing_search": {
+    "planned_fits": 3328,
+    "completed_fits": 3264,
+    "unavailable_for_coverage": 64,
+    "nominal_joint_patterns": 1,
+    "adjusted_joint_patterns": 0,
+    "status": "Completed exploratory search; all model records retained.",
+    "methods": "lourie_heterogeneity_methods.json",
+    "results": "lourie_heterogeneity_results.json",
+    "inference": "lourie_heterogeneity_inference.json",
+    "original_measure_unchanged": true,
+    "main_validation_unchanged": true
   }
 }

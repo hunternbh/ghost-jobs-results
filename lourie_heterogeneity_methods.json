@@ -1,0 +1,2567 @@
+{
+  "design": {
+    "status": "Exploratory menu fixed after earlier analyses; this is not preregistered or fresh confirmation.",
+    "source": "Original interview dataset, original saved smoothed current-year ghost measure; no Loujaina data or new labels.",
+    "primary_ghost": "Saved p_it_ebayes at year t, unchanged. Its original smoothing uses full company history; these tests are associations, not a real-time ghost-score forecasting exercise.",
+    "proxies": [
+      "reviews_w1_log_change",
+      "reviews_w1_rank_change",
+      "offers_w1_log_change",
+      "offers_w1_rank_change",
+      "accepted_w1_log_change",
+      "accepted_w1_rank_change",
+      "rounds_w1_log_change",
+      "rounds_w1_rank_change"
+    ],
+    "cuts": [
+      {
+        "id": "size",
+        "high": "Above annual median assets",
+        "low": "Below or at annual median assets",
+        "rule": "median"
+      },
+      {
+        "id": "leverage",
+        "high": "Higher debt/assets",
+        "low": "Lower debt/assets",
+        "rule": "median"
+      },
+      {
+        "id": "labor_intensity",
+        "high": "More employees per unit of assets",
+        "low": "Fewer employees per unit of assets",
+        "rule": "median"
+      },
+      {
+        "id": "past_sales_growth",
+        "high": "Higher preceding sales growth",
+        "low": "Lower preceding sales growth",
+        "rule": "median"
+      },
+      {
+        "id": "past_employment_growth",
+        "high": "Higher preceding employment growth",
+        "low": "Lower preceding employment growth",
+        "rule": "median"
+      },
+      {
+        "id": "growth_regime",
+        "high": "Both preceding sales and employment increased",
+        "low": "Other preceding growth patterns",
+        "rule": "binary"
+      },
+      {
+        "id": "coverage",
+        "high": "Higher minimum review count in the two activity years",
+        "low": "Lower minimum review count",
+        "rule": "median"
+      },
+      {
+        "id": "offer_rate",
+        "high": "Higher previous-year reported offer share",
+        "low": "Lower previous-year reported offer share",
+        "rule": "median"
+      },
+      {
+        "id": "manufacturing",
+        "high": "Manufacturing SIC 20–39",
+        "low": "Other industries",
+        "rule": "binary_industry"
+      },
+      {
+        "id": "services",
+        "high": "Services SIC 70–89",
+        "low": "Other industries",
+        "rule": "binary_industry"
+      },
+      {
+        "id": "finance",
+        "high": "Financial SIC 60–69",
+        "low": "Other industries",
+        "rule": "binary_industry"
+      },
+      {
+        "id": "later_era",
+        "high": "2017 onward",
+        "low": "Before 2017",
+        "rule": "binary_year"
+      },
+      {
+        "id": "pandemic_era",
+        "high": "2020 onward",
+        "low": "Before 2020",
+        "rule": "binary_year"
+      },
+      {
+        "id": "collection",
+        "high": "At least 250 collected company reviews",
+        "low": "Fewer than 250 collected company reviews",
+        "rule": "binary"
+      },
+      {
+        "id": "research_intensity",
+        "high": "Higher reported R&D/assets",
+        "low": "Lower reported R&D/assets",
+        "rule": "median"
+      },
+      {
+        "id": "profitability",
+        "high": "Higher operating earnings/assets",
+        "low": "Lower operating earnings/assets",
+        "rule": "median"
+      }
+    ],
+    "subgroup_rule": "Annual medians use eligible activity panel, never future outcomes; ties are in lower group. Growth uses t versus t-1 financial information. Missing moderator is missing, not the low group.",
+    "families": {
+      "reference": 64,
+      "subgroup": 2048,
+      "pooled_heterogeneity": 512,
+      "timing_horizon": 576,
+      "between_company": 64,
+      "within_between_decomposition": 64
+    },
+    "planned_model_fits": 3328,
+    "controls": "Original operating-change control set: current changes in oiadp, sale, xsga, emp, capx scaled by previous assets, plus original notebook book-to-market construction. Retain missing values. Industry/year effects and company-clustered errors except firm-average cross sections (industry effects, HC3 errors).",
+    "timing": "Activity at t-1 or t predicts financial changes t to t+h for h=1,2,3. Activity at t+1 overlaps the outcome window: explicitly a contemporaneous diagnostic, not an advance forecast.",
+    "cross_section": "Average eligible company-years within company; require at least three eligible years. Fit one observation per company, use industry effects and HC3.",
+    "within_between": "Decompose activity and ghost measure into company means and annual deviations, including all four between/within products, decomposed controls, and industry/year effects.",
+    "minimum_coverage": "At least 80 observations, 30 companies, and 3 years for panel/subgroup models; at least 50 companies for firm-average models. Report unestimable fits explicitly.",
+    "scaling": "Winsorize financial changes and controls at original USD universe 1st/99th percentiles. Clip proxy log changes at eligible panel 1st/99th percentiles; sign rank follows original negative/zero/positive rule. Standardize recruitment proxy and controls for numerical stability without redefining ghost scores.",
+    "inference": "Two-sided t tests. Holm and BH across every new recruitment-slope test, across every ghost-interaction test, and across every heterogeneity contrast. Joint required pattern is positive baseline and negative ghost interaction on the identical sample, with p=max(two-sided baseline p, two-sided interaction p); set joint p=1 if signs differ. Holm/BH also across all such pairs.",
+    "stability": "Every nominal joint pattern will be rerun in both halves of one fixed company hash partition. These are internal stability checks, not untouched confirmation.",
+    "interpretation": "A subgroup difference alone does not reproduce the full Lourie pattern. Do not interpret significance in one subgroup and absence in another as a significant difference. Use pooled triple-interaction contrasts.",
+    "reporting": "Report all specifications, failures, coefficient uncertainty and adjustments. Preserve every previous result and the main separate-review validation.",
+    "api_calls": 0
+  },
+  "hc3_singleton_amendment": {
+    "reason": "HC3 covariance is undefined for one-company industries with industry effects. These observations are perfectly absorbed and do not identify recruitment slopes.",
+    "action": "Exclude one-company industries from firm-average cross sections only, record the count in each result, retain the initial failed fits, and rerun the fixed menu. No changes to ghost labels, subgroup rules, proxies, timing, or tests.",
+    "status": "Numerical correction after first attempt, before corrected fits"
+  },
+  "summary": {
+    "families": [
+      {
+        "family": "reference",
+        "planned_fits": 64,
+        "completed_fits": 64,
+        "unestimable_fits": 0,
+        "joint_comparisons": 32,
+        "joint_nominal05": 0,
+        "joint_holm05": 0,
+        "joint_fdr05": 0
+      },
+      {
+        "family": "subgroup",
+        "planned_fits": 2048,
+        "completed_fits": 1984,
+        "unestimable_fits": 64,
+        "joint_comparisons": 992,
+        "joint_nominal05": 0,
+        "joint_holm05": 0,
+        "joint_fdr05": 0
+      },
+      {
+        "family": "pooled_heterogeneity",
+        "planned_fits": 512,
+        "completed_fits": 512,
+        "unestimable_fits": 0,
+        "joint_comparisons": 0,
+        "joint_nominal05": 0,
+        "joint_holm05": 0,
+        "joint_fdr05": 0
+      },
+      {
+        "family": "timing_horizon",
+        "planned_fits": 576,
+        "completed_fits": 576,
+        "unestimable_fits": 0,
+        "joint_comparisons": 288,
+        "joint_nominal05": 1,
+        "joint_holm05": 0,
+        "joint_fdr05": 0
+      },
+      {
+        "family": "between_company",
+        "planned_fits": 64,
+        "completed_fits": 64,
+        "unestimable_fits": 0,
+        "joint_comparisons": 32,
+        "joint_nominal05": 0,
+        "joint_holm05": 0,
+        "joint_fdr05": 0
+      },
+      {
+        "family": "within_between_decomposition",
+        "planned_fits": 64,
+        "completed_fits": 64,
+        "unestimable_fits": 0,
+        "joint_comparisons": 64,
+        "joint_nominal05": 0,
+        "joint_holm05": 0,
+        "joint_fdr05": 0
+      }
+    ],
+    "inference": [
+      {
+        "family": "recruitment",
+        "tests": 1408,
+        "expected_sign_nominal05": 31,
+        "expected_sign_holm05": 0,
+        "expected_sign_fdr05": 0,
+        "minimum_p": 0.001828503223688505,
+        "minimum_fdr_q": 0.1607695028373323
+      },
+      {
+        "family": "ghost_interaction",
+        "tests": 2496,
+        "expected_sign_nominal05": 34,
+        "expected_sign_holm05": 0,
+        "expected_sign_fdr05": 0,
+        "minimum_p": 0.007031871814909136,
+        "minimum_fdr_q": 0.9984259304415162
+      },
+      {
+        "family": "heterogeneity",
+        "tests": 512,
+        "expected_sign_nominal05": 19,
+        "expected_sign_holm05": 0,
+        "expected_sign_fdr05": 0,
+        "minimum_p": 0.0038308397580267693,
+        "minimum_fdr_q": 0.9657210334124283
+      }
+    ],
+    "planned_fits": 3328,
+    "completed_fits": 3264,
+    "unestimable_fits": 64,
+    "nominal_joint_patterns": 1,
+    "holm_joint_patterns": 0,
+    "fdr_joint_patterns": 0,
+    "api_calls": 0
+  },
+  "construction": {
+    "eligible_company_years": 1498,
+    "original_saved_ghost_missing_in_eligible": 0,
+    "horizon_one_matches_prior_audit": true,
+    "proxy_standardization": {
+      "reviews_w1_log_change": {
+        "mean": 0.056069543134625484,
+        "sd": 0.44145076633801933
+      },
+      "reviews_w1_rank_change": {
+        "mean": 0.5224662162162163,
+        "sd": 0.38330047693084435
+      },
+      "offers_w1_log_change": {
+        "mean": 0.03915113007663333,
+        "sd": 0.5083305730442277
+      },
+      "offers_w1_rank_change": {
+        "mean": 0.5239864864864865,
+        "sd": 0.3783842603307299
+      },
+      "accepted_w1_log_change": {
+        "mean": 0.024539240373528507,
+        "sd": 0.5471925909325812
+      },
+      "accepted_w1_rank_change": {
+        "mean": 0.5160472972972973,
+        "sd": 0.3771840692384688
+      },
+      "rounds_w1_log_change": {
+        "mean": 0.05257195023332392,
+        "sd": 0.5265539235470321
+      },
+      "rounds_w1_rank_change": {
+        "mean": 0.5216216216216216,
+        "sd": 0.3882202183180106
+      }
+    },
+    "annual_subgroup_cutoffs": {
+      "size": {
+        "2011": 8.926251835034533,
+        "2012": 8.151651626341637,
+        "2013": 8.457193925546534,
+        "2014": 8.732878916931131,
+        "2015": 8.612041965208377,
+        "2016": 8.693357162464284,
+        "2017": 8.806680882756659,
+        "2018": 8.761393485256058,
+        "2019": 9.015413502609693,
+        "2020": 8.98249149615223,
+        "2021": 9.098693471675649,
+        "2022": 9.157174377812067,
+        "2023": 9.384540791422
+      },
+      "leverage": {
+        "2011": 0.17852625790486665,
+        "2012": 0.18436737242436282,
+        "2013": 0.22837705560883123,
+        "2014": 0.2696050201959175,
+        "2015": 0.31567724049779683,
+        "2016": 0.30827889215566157,
+        "2017": 0.32120039265315437,
+        "2018": 0.30922799022374164,
+        "2019": 0.3333908038660959,
+        "2020": 0.3754618564530436,
+        "2021": 0.3773630912522406,
+        "2022": 0.3680582337061319,
+        "2023": 0.35947970043358296
+      },
+      "labor_intensity": {
+        "2011": 0.0013626278919447728,
+        "2012": 0.0018912664480511395,
+        "2013": 0.002377187972669131,
+        "2014": 0.0019187689436869814,
+        "2015": 0.001954304640847943,
+        "2016": 0.0020002683693395532,
+        "2017": 0.001955148419648673,
+        "2018": 0.002069939345661,
+        "2019": 0.0017349714262929721,
+        "2020": 0.0014980315836857602,
+        "2021": 0.00139813022757751,
+        "2022": 0.0015590241767050412,
+        "2023": 0.0013345195729537367
+      },
+      "past_sales_growth": {
+        "2011": 0.011514665444546287,
+        "2012": 0.030757400999615533,
+        "2013": 0.04239813403788484,
+        "2014": 0.05581155249378361,
+        "2015": 0.036037603140149616,
+        "2016": 0.05128041194366155,
+        "2017": 0.07325803372573966,
+        "2018": 0.07568436932132039,
+        "2019": 0.06140687548327027,
+        "2020": 0.01335692678001673,
+        "2021": 0.16428077089989696,
+        "2022": 0.10217917675544794,
+        "2023": 0.04694514095813411
+      },
+      "past_employment_growth": {
+        "2011": 0.016846569005396977,
+        "2012": 0.013299734005319983,
+        "2013": 0.024005732712289563,
+        "2014": 0.02505773278659159,
+        "2015": 0.022368421052631572,
+        "2016": 0.031224637759574125,
+        "2017": 0.02251344086021507,
+        "2018": 0.035098522167487683,
+        "2019": 0.013648097475347228,
+        "2020": 0.0,
+        "2021": 0.047619047619047616,
+        "2022": 0.03720596525393325,
+        "2023": 0.021323938438716897
+      },
+      "coverage": {
+        "2011": 6.0,
+        "2012": 6.0,
+        "2013": 7.0,
+        "2014": 9.0,
+        "2015": 12.0,
+        "2016": 16.0,
+        "2017": 15.0,
+        "2018": 13.0,
+        "2019": 12.0,
+        "2020": 11.0,
+        "2021": 12.0,
+        "2022": 19.0,
+        "2023": 18.0
+      },
+      "offer_rate": {
+        "2011": 0.5714285714285714,
+        "2012": 0.42857142857142855,
+        "2013": 0.6,
+        "2014": 0.6821052631578948,
+        "2015": 0.7333333333333333,
+        "2016": 0.6842105263157895,
+        "2017": 0.6875,
+        "2018": 0.631578947368421,
+        "2019": 0.6111111111111112,
+        "2020": 0.6,
+        "2021": 0.5555555555555556,
+        "2022": 0.53125,
+        "2023": 0.5294117647058824
+      },
+      "research_intensity": {
+        "2011": 0.013506145230778898,
+        "2012": 0.016015443463339645,
+        "2013": 0.012075209770194044,
+        "2014": 0.01045647661357596,
+        "2015": 0.006826805947609083,
+        "2016": 0.009089127174090552,
+        "2017": 0.012380816849295576,
+        "2018": 0.01587019250255682,
+        "2019": 0.014642267398289176,
+        "2020": 0.014052104706833303,
+        "2021": 0.016367033958373606,
+        "2022": 0.017442614446894048,
+        "2023": 0.01841831438147875
+      },
+      "profitability": {
+        "2011": 0.07138879983802116,
+        "2012": 0.07037324423189599,
+        "2013": 0.08716404581115271,
+        "2014": 0.06428484505758258,
+        "2015": 0.0660468323503182,
+        "2016": 0.0688339222614841,
+        "2017": 0.06854649621791344,
+        "2018": 0.06898089171974522,
+        "2019": 0.05821747327543056,
+        "2020": 0.051533150525923395,
+        "2021": 0.06669636174010778,
+        "2022": 0.07115781352208114,
+        "2023": 0.06281927668849016
+      }
+    },
+    "planned_fits": 3328,
+    "api_calls": 0
+  },
+  "subgroup_coverage": [
+    {
+      "cut": "size",
+      "side": 0,
+      "label": "Below or at annual median assets",
+      "company_years": 744,
+      "firms": 132
+    },
+    {
+      "cut": "size",
+      "side": 1,
+      "label": "Above annual median assets",
+      "company_years": 736,
+      "firms": 120
+    },
+    {
+      "cut": "leverage",
+      "side": 0,
+      "label": "Lower debt/assets",
+      "company_years": 742,
+      "firms": 150
+    },
+    {
+      "cut": "leverage",
+      "side": 1,
+      "label": "Higher debt/assets",
+      "company_years": 736,
+      "firms": 140
+    },
+    {
+      "cut": "labor_intensity",
+      "side": 0,
+      "label": "Fewer employees per unit of assets",
+      "company_years": 732,
+      "firms": 126
+    },
+    {
+      "cut": "labor_intensity",
+      "side": 1,
+      "label": "More employees per unit of assets",
+      "company_years": 726,
+      "firms": 126
+    },
+    {
+      "cut": "past_sales_growth",
+      "side": 0,
+      "label": "Lower preceding sales growth",
+      "company_years": 738,
+      "firms": 183
+    },
+    {
+      "cut": "past_sales_growth",
+      "side": 1,
+      "label": "Higher preceding sales growth",
+      "company_years": 732,
+      "firms": 207
+    },
+    {
+      "cut": "past_employment_growth",
+      "side": 0,
+      "label": "Lower preceding employment growth",
+      "company_years": 731,
+      "firms": 186
+    },
+    {
+      "cut": "past_employment_growth",
+      "side": 1,
+      "label": "Higher preceding employment growth",
+      "company_years": 704,
+      "firms": 197
+    },
+    {
+      "cut": "growth_regime",
+      "side": 0,
+      "label": "Other preceding growth patterns",
+      "company_years": 685,
+      "firms": 178
+    },
+    {
+      "cut": "growth_regime",
+      "side": 1,
+      "label": "Both preceding sales and employment increased",
+      "company_years": 750,
+      "firms": 199
+    },
+    {
+      "cut": "coverage",
+      "side": 0,
+      "label": "Lower minimum review count",
+      "company_years": 782,
+      "firms": 168
+    },
+    {
+      "cut": "coverage",
+      "side": 1,
+      "label": "Higher minimum review count in the two activity years",
+      "company_years": 716,
+      "firms": 186
+    },
+    {
+      "cut": "offer_rate",
+      "side": 0,
+      "label": "Lower previous-year reported offer share",
+      "company_years": 768,
+      "firms": 199
+    },
+    {
+      "cut": "offer_rate",
+      "side": 1,
+      "label": "Higher previous-year reported offer share",
+      "company_years": 730,
+      "firms": 183
+    },
+    {
+      "cut": "manufacturing",
+      "side": 0,
+      "label": "Other industries",
+      "company_years": 1056,
+      "firms": 163
+    },
+    {
+      "cut": "manufacturing",
+      "side": 1,
+      "label": "Manufacturing SIC 20–39",
+      "company_years": 442,
+      "firms": 66
+    },
+    {
+      "cut": "services",
+      "side": 0,
+      "label": "Other industries",
+      "company_years": 1087,
+      "firms": 158
+    },
+    {
+      "cut": "services",
+      "side": 1,
+      "label": "Services SIC 70–89",
+      "company_years": 411,
+      "firms": 73
+    },
+    {
+      "cut": "finance",
+      "side": 0,
+      "label": "Other industries",
+      "company_years": 1201,
+      "firms": 183
+    },
+    {
+      "cut": "finance",
+      "side": 1,
+      "label": "Financial SIC 60–69",
+      "company_years": 297,
+      "firms": 46
+    },
+    {
+      "cut": "later_era",
+      "side": 0,
+      "label": "Before 2017",
+      "company_years": 399,
+      "firms": 134
+    },
+    {
+      "cut": "later_era",
+      "side": 1,
+      "label": "2017 onward",
+      "company_years": 1099,
+      "firms": 222
+    },
+    {
+      "cut": "pandemic_era",
+      "side": 0,
+      "label": "Before 2020",
+      "company_years": 837,
+      "firms": 179
+    },
+    {
+      "cut": "pandemic_era",
+      "side": 1,
+      "label": "2020 onward",
+      "company_years": 661,
+      "firms": 206
+    },
+    {
+      "cut": "collection",
+      "side": 0,
+      "label": "Fewer than 250 collected company reviews",
+      "company_years": 1165,
+      "firms": 176
+    },
+    {
+      "cut": "collection",
+      "side": 1,
+      "label": "At least 250 collected company reviews",
+      "company_years": 333,
+      "firms": 51
+    },
+    {
+      "cut": "research_intensity",
+      "side": 0,
+      "label": "Lower reported R&D/assets",
+      "company_years": 439,
+      "firms": 74
+    },
+    {
+      "cut": "research_intensity",
+      "side": 1,
+      "label": "Higher reported R&D/assets",
+      "company_years": 431,
+      "firms": 81
+    },
+    {
+      "cut": "profitability",
+      "side": 0,
+      "label": "Lower operating earnings/assets",
+      "company_years": 744,
+      "firms": 167
+    },
+    {
+      "cut": "profitability",
+      "side": 1,
+      "label": "Higher operating earnings/assets",
+      "company_years": 736,
+      "firms": 147
+    }
+  ],
+  "verification": {
+    "planned_fits": 3328,
+    "completed_fits": 3264,
+    "unestimable_fits": 64,
+    "independently_reproduced_models": 106,
+    "independently_reproduced_coefficients": 270,
+    "max_coefficient_difference": 1.6644671751997464e-15,
+    "max_se_difference": 1.8318679906315083e-15,
+    "max_p_difference": 2.0650148258027912e-14,
+    "all_new_p_value_adjustments_recomputed": true,
+    "all_joint_samples_matched": true,
+    "non_cross_section_results_unchanged_after_hc3_correction": true,
+    "singleton_removal_max_slope_difference": 1.214306433183765e-15,
+    "source_files_unchanged": [
+      {
+        "file": "new_merged2.csv",
+        "unchanged": true
+      },
+      {
+        "file": "ghost_compustat_merged2.csv",
+        "unchanged": true
+      },
+      {
+        "file": "compustat.csv",
+        "unchanged": true
+      }
+    ],
+    "checks": [
+      {
+        "model_id": 0,
+        "term": "P",
+        "coefficient_abs_difference": 1.8634724839594607e-19,
+        "se_abs_difference": 3.8624702394796095e-19,
+        "p_abs_difference": 8.326672684688674e-15
+      },
+      {
+        "model_id": 1,
+        "term": "P",
+        "coefficient_abs_difference": 1.8973538018496328e-19,
+        "se_abs_difference": 3.2526065174565133e-19,
+        "p_abs_difference": 3.1086244689504383e-15
+      },
+      {
+        "model_id": 1,
+        "term": "G",
+        "coefficient_abs_difference": 1.6263032587282567e-19,
+        "se_abs_difference": 2.0599841277224584e-18,
+        "p_abs_difference": 2.7755575615628914e-15
+      },
+      {
+        "model_id": 1,
+        "term": "PG",
+        "coefficient_abs_difference": 1.8804131429045468e-18,
+        "se_abs_difference": 5.421010862427522e-20,
+        "p_abs_difference": 3.9968028886505635e-15
+      },
+      {
+        "model_id": 2,
+        "term": "P",
+        "coefficient_abs_difference": 1.1926223897340549e-18,
+        "se_abs_difference": 2.6020852139652106e-18,
+        "p_abs_difference": 1.3322676295501878e-15
+      },
+      {
+        "model_id": 3,
+        "term": "P",
+        "coefficient_abs_difference": 4.87890977618477e-18,
+        "se_abs_difference": 1.3010426069826053e-18,
+        "p_abs_difference": 1.9984014443252818e-15
+      },
+      {
+        "model_id": 3,
+        "term": "G",
+        "coefficient_abs_difference": 1.5005358067199381e-16,
+        "se_abs_difference": 1.0408340855860843e-17,
+        "p_abs_difference": 7.216449660063518e-15
+      },
+      {
+        "model_id": 3,
+        "term": "PG",
+        "coefficient_abs_difference": 2.5153490401663703e-17,
+        "se_abs_difference": 9.71445146547012e-17,
+        "p_abs_difference": 3.3306690738754696e-16
+      },
+      {
+        "model_id": 4,
+        "term": "P",
+        "coefficient_abs_difference": 7.052735132018206e-17,
+        "se_abs_difference": 6.938893903907228e-18,
+        "p_abs_difference": 1.2212453270876722e-14
+      },
+      {
+        "model_id": 5,
+        "term": "P",
+        "coefficient_abs_difference": 2.168404344971009e-17,
+        "se_abs_difference": 8.673617379884035e-18,
+        "p_abs_difference": 2.1094237467877974e-15
+      },
+      {
+        "model_id": 5,
+        "term": "G",
+        "coefficient_abs_difference": 5.898059818321144e-17,
+        "se_abs_difference": 1.1796119636642288e-16,
+        "p_abs_difference": 4.440892098500626e-16
+      },
+      {
+        "model_id": 5,
+        "term": "PG",
+        "coefficient_abs_difference": 3.0878077872387166e-16,
+        "se_abs_difference": 3.469446951953614e-17,
+        "p_abs_difference": 3.774758283725532e-15
+      },
+      {
+        "model_id": 6,
+        "term": "P",
+        "coefficient_abs_difference": 1.734723475976807e-18,
+        "se_abs_difference": 2.3852447794681098e-18,
+        "p_abs_difference": 4.440892098500626e-16
+      },
+      {
+        "model_id": 7,
+        "term": "P",
+        "coefficient_abs_difference": 1.3010426069826053e-17,
+        "se_abs_difference": 6.071532165918825e-18,
+        "p_abs_difference": 3.469446951953614e-16
+      },
+      {
+        "model_id": 7,
+        "term": "G",
+        "coefficient_abs_difference": 4.683753385137379e-17,
+        "se_abs_difference": 5.204170427930421e-17,
+        "p_abs_difference": 1.1102230246251565e-15
+      },
+      {
+        "model_id": 7,
+        "term": "PG",
+        "coefficient_abs_difference": 6.08237418764368e-17,
+        "se_abs_difference": 2.0816681711721685e-17,
+        "p_abs_difference": 2.7755575615628914e-15
+      },
+      {
+        "model_id": 8,
+        "term": "P",
+        "coefficient_abs_difference": 1.3552527156068805e-20,
+        "se_abs_difference": 1.7618285302889447e-19,
+        "p_abs_difference": 1.4432899320127035e-15
+      },
+      {
+        "model_id": 9,
+        "term": "P",
+        "coefficient_abs_difference": 2.574980159653073e-19,
+        "se_abs_difference": 4.0657581468206416e-20,
+        "p_abs_difference": 1.3322676295501878e-15
+      },
+      {
+        "model_id": 9,
+        "term": "G",
+        "coefficient_abs_difference": 3.577867169202165e-18,
+        "se_abs_difference": 9.75781955236954e-19,
+        "p_abs_difference": 2.942091015256665e-15
+      },
+      {
+        "model_id": 9,
+        "term": "PG",
+        "coefficient_abs_difference": 1.6263032587282567e-19,
+        "se_abs_difference": 1.2468324983583301e-18,
+        "p_abs_difference": 1.1102230246251565e-15
+      },
+      {
+        "model_id": 10,
+        "term": "P",
+        "coefficient_abs_difference": 3.686287386450715e-18,
+        "se_abs_difference": 3.469446951953614e-18,
+        "p_abs_difference": 1.3322676295501878e-15
+      },
+      {
+        "model_id": 11,
+        "term": "P",
+        "coefficient_abs_difference": 1.734723475976807e-18,
+        "se_abs_difference": 2.6020852139652106e-18,
+        "p_abs_difference": 2.220446049250313e-16
+      },
+      {
+        "model_id": 11,
+        "term": "G",
+        "coefficient_abs_difference": 2.949029909160572e-17,
+        "se_abs_difference": 3.2959746043559335e-17,
+        "p_abs_difference": 5.551115123125783e-16
+      },
+      {
+        "model_id": 11,
+        "term": "PG",
+        "coefficient_abs_difference": 9.540979117872439e-17,
+        "se_abs_difference": 1.734723475976807e-18,
+        "p_abs_difference": 5.10702591327572e-15
+      },
+      {
+        "model_id": 12,
+        "term": "P",
+        "coefficient_abs_difference": 6.895525817007808e-17,
+        "se_abs_difference": 0.0,
+        "p_abs_difference": 8.548717289613705e-15
+      },
+      {
+        "model_id": 13,
+        "term": "P",
+        "coefficient_abs_difference": 1.0484235007934828e-16,
+        "se_abs_difference": 1.3877787807814457e-17,
+        "p_abs_difference": 7.882583474838611e-15
+      },
+      {
+        "model_id": 13,
+        "term": "G",
+        "coefficient_abs_difference": 2.393918396847994e-16,
+        "se_abs_difference": 6.938893903907228e-17,
+        "p_abs_difference": 3.4416913763379853e-15
+      },
+      {
+        "model_id": 13,
+        "term": "PG",
+        "coefficient_abs_difference": 1.4224732503009818e-16,
+        "se_abs_difference": 1.249000902703301e-16,
+        "p_abs_difference": 2.3314683517128287e-15
+      },
+      {
+        "model_id": 14,
+        "term": "P",
+        "coefficient_abs_difference": 6.938893903907228e-18,
+        "se_abs_difference": 6.505213034913027e-19,
+        "p_abs_difference": 4.85722573273506e-16
+      },
+      {
+        "model_id": 15,
+        "term": "P",
+        "coefficient_abs_difference": 1.8214596497756474e-17,
+        "se_abs_difference": 3.0357660829594124e-18,
+        "p_abs_difference": 2.1371793224034263e-15
+      },
+      {
+        "model_id": 15,
+        "term": "G",
+        "coefficient_abs_difference": 1.9081958235744878e-17,
+        "se_abs_difference": 0.0,
+        "p_abs_difference": 7.771561172376096e-16
+      },
+      {
+        "model_id": 15,
+        "term": "PG",
+        "coefficient_abs_difference": 3.8163916471489756e-17,
+        "se_abs_difference": 2.42861286636753e-17,
+        "p_abs_difference": 9.992007221626409e-16
+      },
+      {
+        "model_id": 16,
+        "term": "P",
+        "coefficient_abs_difference": 1.7448878713438587e-19,
+        "se_abs_difference": 1.9651164376299768e-19,
+        "p_abs_difference": 6.217248937900877e-15
+      },
+      {
+        "model_id": 17,
+        "term": "P",
+        "coefficient_abs_difference": 1.0079692072326174e-19,
+        "se_abs_difference": 1.4907779871675686e-19,
+        "p_abs_difference": 1.2212453270876722e-15
+      },
+      {
+        "model_id": 17,
+        "term": "G",
+        "coefficient_abs_difference": 7.589415207398531e-19,
+        "se_abs_difference": 3.957337929572091e-18,
+        "p_abs_difference": 3.885780586188048e-15
+      },
+      {
+        "model_id": 17,
+        "term": "PG",
+        "coefficient_abs_difference": 2.1141942363467336e-18,
+        "se_abs_difference": 1.4094628242311558e-18,
+        "p_abs_difference": 3.1086244689504383e-15
+      },
+      {
+        "model_id": 18,
+        "term": "P",
+        "coefficient_abs_difference": 1.951563910473908e-18,
+        "se_abs_difference": 3.686287386450715e-18,
+        "p_abs_difference": 3.3306690738754696e-16
+      },
+      {
+        "model_id": 19,
+        "term": "P",
+        "coefficient_abs_difference": 1.0950441942103595e-17,
+        "se_abs_difference": 3.903127820947816e-18,
+        "p_abs_difference": 2.886579864025407e-15
+      },
+      {
+        "model_id": 19,
+        "term": "G",
+        "coefficient_abs_difference": 5.984795992119984e-17,
+        "se_abs_difference": 5.204170427930421e-18,
+        "p_abs_difference": 2.7755575615628914e-15
+      },
+      {
+        "model_id": 19,
+        "term": "PG",
+        "coefficient_abs_difference": 3.252606517456513e-17,
+        "se_abs_difference": 6.938893903907228e-17,
+        "p_abs_difference": 7.771561172376096e-16
+      },
+      {
+        "model_id": 20,
+        "term": "P",
+        "coefficient_abs_difference": 3.122502256758253e-17,
+        "se_abs_difference": 1.6479873021779667e-17,
+        "p_abs_difference": 1.8318679906315083e-15
+      },
+      {
+        "model_id": 21,
+        "term": "P",
+        "coefficient_abs_difference": 4.423544863740858e-17,
+        "se_abs_difference": 5.898059818321144e-17,
+        "p_abs_difference": 4.107825191113079e-15
+      },
+      {
+        "model_id": 21,
+        "term": "G",
+        "coefficient_abs_difference": 5.2562121322097255e-16,
+        "se_abs_difference": 1.1102230246251565e-16,
+        "p_abs_difference": 6.772360450213455e-15
+      },
+      {
+        "model_id": 21,
+        "term": "PG",
+        "coefficient_abs_difference": 4.5102810375396984e-17,
+        "se_abs_difference": 0.0,
+        "p_abs_difference": 5.551115123125783e-16
+      },
+      {
+        "model_id": 22,
+        "term": "P",
+        "coefficient_abs_difference": 0.0,
+        "se_abs_difference": 6.7220534694101275e-18,
+        "p_abs_difference": 2.96637714392034e-16
+      },
+      {
+        "model_id": 23,
+        "term": "P",
+        "coefficient_abs_difference": 1.0842021724855044e-17,
+        "se_abs_difference": 1.734723475976807e-17,
+        "p_abs_difference": 5.384581669432009e-15
+      },
+      {
+        "model_id": 23,
+        "term": "G",
+        "coefficient_abs_difference": 6.938893903907228e-18,
+        "se_abs_difference": 3.469446951953614e-17,
+        "p_abs_difference": 1.2212453270876722e-15
+      },
+      {
+        "model_id": 23,
+        "term": "PG",
+        "coefficient_abs_difference": 2.0816681711721685e-17,
+        "se_abs_difference": 1.9081958235744878e-17,
+        "p_abs_difference": 1.1102230246251565e-16
+      },
+      {
+        "model_id": 24,
+        "term": "P",
+        "coefficient_abs_difference": 1.6263032587282567e-19,
+        "se_abs_difference": 3.1848438816761693e-19,
+        "p_abs_difference": 6.106226635438361e-15
+      },
+      {
+        "model_id": 25,
+        "term": "P",
+        "coefficient_abs_difference": 9.486769009248164e-20,
+        "se_abs_difference": 4.0657581468206416e-19,
+        "p_abs_difference": 1.2212453270876722e-15
+      },
+      {
+        "model_id": 25,
+        "term": "G",
+        "coefficient_abs_difference": 1.0299920638612292e-18,
+        "se_abs_difference": 8.51098705401121e-18,
+        "p_abs_difference": 1.1712852909795402e-14
+      },
+      {
+        "model_id": 25,
+        "term": "PG",
+        "coefficient_abs_difference": 1.0638733817514012e-18,
+        "se_abs_difference": 9.75781955236954e-19,
+        "p_abs_difference": 1.5543122344752192e-15
+      },
+      {
+        "model_id": 26,
+        "term": "P",
+        "coefficient_abs_difference": 1.3660947373317356e-17,
+        "se_abs_difference": 6.5052130349130266e-18,
+        "p_abs_difference": 4.107825191113079e-15
+      },
+      {
+        "model_id": 27,
+        "term": "P",
+        "coefficient_abs_difference": 2.8189256484623115e-18,
+        "se_abs_difference": 7.37257477290143e-18,
+        "p_abs_difference": 1.5543122344752192e-15
+      },
+      {
+        "model_id": 27,
+        "term": "G",
+        "coefficient_abs_difference": 3.8163916471489756e-17,
+        "se_abs_difference": 6.245004513516506e-17,
+        "p_abs_difference": 5.551115123125783e-16
+      },
+      {
+        "model_id": 27,
+        "term": "PG",
+        "coefficient_abs_difference": 9.454242944073599e-17,
+        "se_abs_difference": 3.469446951953614e-17,
+        "p_abs_difference": 3.552713678800501e-15
+      },
+      {
+        "model_id": 28,
+        "term": "P",
+        "coefficient_abs_difference": 5.811323644522304e-17,
+        "se_abs_difference": 5.204170427930421e-18,
+        "p_abs_difference": 7.605027718682322e-15
+      },
+      {
+        "model_id": 29,
+        "term": "P",
+        "coefficient_abs_difference": 1.3590474232105798e-16,
+        "se_abs_difference": 5.0306980803327406e-17,
+        "p_abs_difference": 1.1213252548714081e-14
+      },
+      {
+        "model_id": 29,
+        "term": "G",
+        "coefficient_abs_difference": 3.5735303605122226e-16,
+        "se_abs_difference": 1.0408340855860843e-16,
+        "p_abs_difference": 4.9960036108132044e-15
+      },
+      {
+        "model_id": 29,
+        "term": "PG",
+        "coefficient_abs_difference": 3.0531133177191805e-16,
+        "se_abs_difference": 1.3183898417423734e-16,
+        "p_abs_difference": 3.1086244689504383e-15
+      },
+      {
+        "model_id": 30,
+        "term": "P",
+        "coefficient_abs_difference": 6.938893903907228e-18,
+        "se_abs_difference": 4.336808689942018e-19,
+        "p_abs_difference": 5.4643789493269423e-17
+      },
+      {
+        "model_id": 31,
+        "term": "P",
+        "coefficient_abs_difference": 1.474514954580286e-17,
+        "se_abs_difference": 5.637851296924623e-18,
+        "p_abs_difference": 3.469446951953614e-16
+      },
+      {
+        "model_id": 31,
+        "term": "G",
+        "coefficient_abs_difference": 3.8163916471489756e-17,
+        "se_abs_difference": 3.122502256758253e-17,
+        "p_abs_difference": 4.996003610813204e-16
+      },
+      {
+        "model_id": 31,
+        "term": "PG",
+        "coefficient_abs_difference": 7.979727989493313e-17,
+        "se_abs_difference": 6.938893903907228e-18,
+        "p_abs_difference": 3.552713678800501e-15
+      },
+      {
+        "model_id": 32,
+        "term": "P",
+        "coefficient_abs_difference": 2.507217523872729e-19,
+        "se_abs_difference": 9.486769009248164e-20,
+        "p_abs_difference": 6.661338147750939e-15
+      },
+      {
+        "model_id": 33,
+        "term": "P",
+        "coefficient_abs_difference": 6.614533224668035e-19,
+        "se_abs_difference": 2.710505431213761e-19,
+        "p_abs_difference": 8.770761894538737e-15
+      },
+      {
+        "model_id": 33,
+        "term": "G",
+        "coefficient_abs_difference": 1.463672932855431e-18,
+        "se_abs_difference": 6.830473686658678e-18,
+        "p_abs_difference": 6.9111383282915995e-15
+      },
+      {
+        "model_id": 33,
+        "term": "PG",
+        "coefficient_abs_difference": 7.453889935837843e-19,
+        "se_abs_difference": 3.0899761915836876e-18,
+        "p_abs_difference": 2.6645352591003757e-15
+      },
+      {
+        "model_id": 34,
+        "term": "P",
+        "coefficient_abs_difference": 2.873135757086587e-17,
+        "se_abs_difference": 1.951563910473908e-18,
+        "p_abs_difference": 1.354472090042691e-14
+      },
+      {
+        "model_id": 35,
+        "term": "P",
+        "coefficient_abs_difference": 5.2583805365546965e-18,
+        "se_abs_difference": 1.1275702593849246e-17,
+        "p_abs_difference": 1.1102230246251565e-15
+      },
+      {
+        "model_id": 35,
+        "term": "G",
+        "coefficient_abs_difference": 2.0816681711721685e-17,
+        "se_abs_difference": 2.949029909160572e-17,
+        "p_abs_difference": 1.6653345369377348e-15
+      },
+      {
+        "model_id": 35,
+        "term": "PG",
+        "coefficient_abs_difference": 1.3877787807814457e-17,
+        "se_abs_difference": 7.28583859910259e-17,
+        "p_abs_difference": 1.1102230246251565e-16
+      },
+      {
+        "model_id": 36,
+        "term": "P",
+        "coefficient_abs_difference": 4.7704895589362195e-17,
+        "se_abs_difference": 1.6479873021779667e-17,
+        "p_abs_difference": 5.134781488891349e-15
+      },
+      {
+        "model_id": 37,
+        "term": "P",
+        "coefficient_abs_difference": 4.553649124439119e-18,
+        "se_abs_difference": 6.938893903907228e-18,
+        "p_abs_difference": 4.440892098500626e-16
+      },
+      {
+        "model_id": 37,
+        "term": "G",
+        "coefficient_abs_difference": 2.5934115965853266e-16,
+        "se_abs_difference": 1.457167719820518e-16,
+        "p_abs_difference": 3.4416913763379853e-15
+      },
+      {
+        "model_id": 37,
+        "term": "PG",
+        "coefficient_abs_difference": 1.6653345369377348e-16,
+        "se_abs_difference": 1.1102230246251565e-16,
+        "p_abs_difference": 2.4424906541753444e-15
+      },
+      {
+        "model_id": 38,
+        "term": "P",
+        "coefficient_abs_difference": 0.0,
+        "se_abs_difference": 4.7704895589362195e-18,
+        "p_abs_difference": 4.40619762898109e-16
+      },
+      {
+        "model_id": 39,
+        "term": "P",
+        "coefficient_abs_difference": 1.5178830414797062e-18,
+        "se_abs_difference": 9.540979117872439e-18,
+        "p_abs_difference": 1.1102230246251565e-15
+      },
+      {
+        "model_id": 39,
+        "term": "G",
+        "coefficient_abs_difference": 3.8163916471489756e-17,
+        "se_abs_difference": 6.245004513516506e-17,
+        "p_abs_difference": 4.996003610813204e-16
+      },
+      {
+        "model_id": 39,
+        "term": "PG",
+        "coefficient_abs_difference": 2.6020852139652106e-17,
+        "se_abs_difference": 1.214306433183765e-17,
+        "p_abs_difference": 1.2212453270876722e-15
+      },
+      {
+        "model_id": 40,
+        "term": "P",
+        "coefficient_abs_difference": 6.047815243395704e-19,
+        "se_abs_difference": 1.3552527156068805e-20,
+        "p_abs_difference": 1.3211653993039363e-14
+      },
+      {
+        "model_id": 41,
+        "term": "P",
+        "coefficient_abs_difference": 1.2197274440461925e-19,
+        "se_abs_difference": 1.4907779871675686e-19,
+        "p_abs_difference": 1.7763568394002505e-15
+      },
+      {
+        "model_id": 41,
+        "term": "G",
+        "coefficient_abs_difference": 5.963111948670274e-19,
+        "se_abs_difference": 9.053088140253962e-18,
+        "p_abs_difference": 1.0769163338864018e-14
+      },
+      {
+        "model_id": 41,
+        "term": "PG",
+        "coefficient_abs_difference": 7.047314121155779e-19,
+        "se_abs_difference": 2.7647155398380363e-18,
+        "p_abs_difference": 3.552713678800501e-15
+      },
+      {
+        "model_id": 42,
+        "term": "P",
+        "coefficient_abs_difference": 4.336808689942018e-18,
+        "se_abs_difference": 2.3852447794681098e-18,
+        "p_abs_difference": 6.106226635438361e-16
+      },
+      {
+        "model_id": 43,
+        "term": "P",
+        "coefficient_abs_difference": 3.0357660829594124e-18,
+        "se_abs_difference": 2.6020852139652106e-18,
+        "p_abs_difference": 1.1102230246251565e-15
+      },
+      {
+        "model_id": 43,
+        "term": "G",
+        "coefficient_abs_difference": 5.204170427930421e-18,
+        "se_abs_difference": 1.4224732503009818e-16,
+        "p_abs_difference": 3.1086244689504383e-15
+      },
+      {
+        "model_id": 43,
+        "term": "PG",
+        "coefficient_abs_difference": 1.9949319973733282e-17,
+        "se_abs_difference": 3.122502256758253e-17,
+        "p_abs_difference": 6.661338147750939e-16
+      },
+      {
+        "model_id": 44,
+        "term": "P",
+        "coefficient_abs_difference": 5.377642775528102e-17,
+        "se_abs_difference": 6.938893903907228e-18,
+        "p_abs_difference": 1.7139067942650854e-15
+      },
+      {
+        "model_id": 45,
+        "term": "P",
+        "coefficient_abs_difference": 3.2959746043559335e-17,
+        "se_abs_difference": 5.551115123125783e-17,
+        "p_abs_difference": 4.496403249731884e-15
+      },
+      {
+        "model_id": 45,
+        "term": "G",
+        "coefficient_abs_difference": 7.19910242530375e-17,
+        "se_abs_difference": 2.914335439641036e-16,
+        "p_abs_difference": 5.551115123125783e-16
+      },
+      {
+        "model_id": 45,
+        "term": "PG",
+        "coefficient_abs_difference": 2.0036056147532122e-16,
+        "se_abs_difference": 2.0816681711721685e-16,
+        "p_abs_difference": 2.3314683517128287e-15
+      },
+      {
+        "model_id": 46,
+        "term": "P",
+        "coefficient_abs_difference": 3.469446951953614e-18,
+        "se_abs_difference": 4.7704895589362195e-18,
+        "p_abs_difference": 2.5326962749261384e-16
+      },
+      {
+        "model_id": 47,
+        "term": "P",
+        "coefficient_abs_difference": 2.6020852139652106e-18,
+        "se_abs_difference": 2.5153490401663703e-17,
+        "p_abs_difference": 3.7192471324942744e-15
+      },
+      {
+        "model_id": 47,
+        "term": "G",
+        "coefficient_abs_difference": 1.9081958235744878e-17,
+        "se_abs_difference": 2.42861286636753e-17,
+        "p_abs_difference": 5.551115123125783e-17
+      },
+      {
+        "model_id": 47,
+        "term": "PG",
+        "coefficient_abs_difference": 5.204170427930421e-18,
+        "se_abs_difference": 1.3530843112619095e-16,
+        "p_abs_difference": 6.661338147750939e-16
+      },
+      {
+        "model_id": 48,
+        "term": "P",
+        "coefficient_abs_difference": 1.7787691892340307e-19,
+        "se_abs_difference": 9.486769009248164e-20,
+        "p_abs_difference": 4.440892098500626e-15
+      },
+      {
+        "model_id": 49,
+        "term": "P",
+        "coefficient_abs_difference": 3.1848438816761693e-19,
+        "se_abs_difference": 2.574980159653073e-19,
+        "p_abs_difference": 2.3314683517128287e-15
+      },
+      {
+        "model_id": 49,
+        "term": "G",
+        "coefficient_abs_difference": 4.87890977618477e-19,
+        "se_abs_difference": 2.2768245622195593e-18,
+        "p_abs_difference": 2.55351295663786e-15
+      },
+      {
+        "model_id": 49,
+        "term": "PG",
+        "coefficient_abs_difference": 2.0057740190981832e-18,
+        "se_abs_difference": 1.6263032587282567e-19,
+        "p_abs_difference": 3.885780586188048e-15
+      },
+      {
+        "model_id": 50,
+        "term": "P",
+        "coefficient_abs_difference": 8.72782748850831e-18,
+        "se_abs_difference": 3.903127820947816e-18,
+        "p_abs_difference": 5.218048215738236e-15
+      },
+      {
+        "model_id": 51,
+        "term": "P",
+        "coefficient_abs_difference": 8.185726402265558e-18,
+        "se_abs_difference": 2.168404344971009e-18,
+        "p_abs_difference": 2.4424906541753444e-15
+      },
+      {
+        "model_id": 51,
+        "term": "G",
+        "coefficient_abs_difference": 2.6020852139652106e-17,
+        "se_abs_difference": 8.847089727481716e-17,
+        "p_abs_difference": 7.771561172376096e-16
+      },
+      {
+        "model_id": 51,
+        "term": "PG",
+        "coefficient_abs_difference": 4.163336342344337e-17,
+        "se_abs_difference": 3.122502256758253e-17,
+        "p_abs_difference": 2.220446049250313e-15
+      },
+      {
+        "model_id": 52,
+        "term": "P",
+        "coefficient_abs_difference": 4.466912950640278e-17,
+        "se_abs_difference": 5.204170427930421e-18,
+        "p_abs_difference": 7.771561172376096e-15
+      },
+      {
+        "model_id": 53,
+        "term": "P",
+        "coefficient_abs_difference": 7.632783294297951e-17,
+        "se_abs_difference": 2.7755575615628914e-17,
+        "p_abs_difference": 6.8833827526759706e-15
+      },
+      {
+        "model_id": 53,
+        "term": "G",
+        "coefficient_abs_difference": 1.0408340855860843e-17,
+        "se_abs_difference": 0.0,
+        "p_abs_difference": 1.1102230246251565e-16
+      },
+      {
+        "model_id": 53,
+        "term": "PG",
+        "coefficient_abs_difference": 3.469446951953614e-16,
+        "se_abs_difference": 9.71445146547012e-17,
+        "p_abs_difference": 4.551914400963142e-15
+      },
+      {
+        "model_id": 54,
+        "term": "P",
+        "coefficient_abs_difference": 8.673617379884035e-19,
+        "se_abs_difference": 1.951563910473908e-18,
+        "p_abs_difference": 5.4643789493269423e-17
+      },
+      {
+        "model_id": 55,
+        "term": "P",
+        "coefficient_abs_difference": 8.673617379884035e-19,
+        "se_abs_difference": 1.3877787807814457e-17,
+        "p_abs_difference": 1.9984014443252818e-15
+      },
+      {
+        "model_id": 55,
+        "term": "G",
+        "coefficient_abs_difference": 8.673617379884035e-18,
+        "se_abs_difference": 3.469446951953614e-18,
+        "p_abs_difference": 2.220446049250313e-16
+      },
+      {
+        "model_id": 55,
+        "term": "PG",
+        "coefficient_abs_difference": 8.023096076392733e-18,
+        "se_abs_difference": 6.591949208711867e-17,
+        "p_abs_difference": 1.1102230246251565e-16
+      },
+      {
+        "model_id": 56,
+        "term": "P",
+        "coefficient_abs_difference": 1.2027867851011065e-19,
+        "se_abs_difference": 7.453889935837843e-20,
+        "p_abs_difference": 2.6645352591003757e-15
+      },
+      {
+        "model_id": 57,
+        "term": "P",
+        "coefficient_abs_difference": 5.421010862427522e-20,
+        "se_abs_difference": 3.5236570605778894e-19,
+        "p_abs_difference": 1.3322676295501878e-15
+      },
+      {
+        "model_id": 57,
+        "term": "G",
+        "coefficient_abs_difference": 1.463672932855431e-18,
+        "se_abs_difference": 7.047314121155779e-19,
+        "p_abs_difference": 2.3314683517128287e-15
+      },
+      {
+        "model_id": 57,
+        "term": "PG",
+        "coefficient_abs_difference": 5.963111948670274e-19,
+        "se_abs_difference": 1.8431436932253575e-18,
+        "p_abs_difference": 2.7200464103316335e-15
+      },
+      {
+        "model_id": 58,
+        "term": "P",
+        "coefficient_abs_difference": 1.5178830414797062e-18,
+        "se_abs_difference": 6.938893903907228e-18,
+        "p_abs_difference": 1.4432899320127035e-15
+      },
+      {
+        "model_id": 59,
+        "term": "P",
+        "coefficient_abs_difference": 2.6020852139652106e-18,
+        "se_abs_difference": 2.42861286636753e-17,
+        "p_abs_difference": 3.219646771412954e-15
+      },
+      {
+        "model_id": 59,
+        "term": "G",
+        "coefficient_abs_difference": 1.734723475976807e-18,
+        "se_abs_difference": 1.214306433183765e-17,
+        "p_abs_difference": 2.220446049250313e-16
+      },
+      {
+        "model_id": 59,
+        "term": "PG",
+        "coefficient_abs_difference": 7.28583859910259e-17,
+        "se_abs_difference": 3.469446951953614e-17,
+        "p_abs_difference": 3.219646771412954e-15
+      },
+      {
+        "model_id": 60,
+        "term": "P",
+        "coefficient_abs_difference": 4.206704429243757e-17,
+        "se_abs_difference": 8.673617379884035e-18,
+        "p_abs_difference": 4.773959005888173e-15
+      },
+      {
+        "model_id": 61,
+        "term": "P",
+        "coefficient_abs_difference": 2.6237692574149207e-17,
+        "se_abs_difference": 1.5612511283791264e-17,
+        "p_abs_difference": 1.9984014443252818e-15
+      },
+      {
+        "model_id": 61,
+        "term": "G",
+        "coefficient_abs_difference": 4.3021142204224816e-16,
+        "se_abs_difference": 8.326672684688674e-17,
+        "p_abs_difference": 6.217248937900877e-15
+      },
+      {
+        "model_id": 61,
+        "term": "PG",
+        "coefficient_abs_difference": 1.3010426069826053e-16,
+        "se_abs_difference": 4.85722573273506e-17,
+        "p_abs_difference": 1.9984014443252818e-15
+      },
+      {
+        "model_id": 62,
+        "term": "P",
+        "coefficient_abs_difference": 3.0357660829594124e-18,
+        "se_abs_difference": 3.0357660829594124e-18,
+        "p_abs_difference": 1.8735013540549517e-16
+      },
+      {
+        "model_id": 63,
+        "term": "P",
+        "coefficient_abs_difference": 1.9949319973733282e-17,
+        "se_abs_difference": 9.974659986866641e-18,
+        "p_abs_difference": 0.0
+      },
+      {
+        "model_id": 63,
+        "term": "G",
+        "coefficient_abs_difference": 2.6020852139652106e-18,
+        "se_abs_difference": 1.0408340855860843e-17,
+        "p_abs_difference": 1.1102230246251565e-16
+      },
+      {
+        "model_id": 63,
+        "term": "PG",
+        "coefficient_abs_difference": 3.122502256758253e-17,
+        "se_abs_difference": 3.469446951953614e-17,
+        "p_abs_difference": 2.1094237467877974e-15
+      },
+      {
+        "model_id": 64,
+        "term": "P",
+        "coefficient_abs_difference": 4.70950318673391e-19,
+        "se_abs_difference": 3.5236570605778894e-19,
+        "p_abs_difference": 8.43769498715119e-15
+      },
+      {
+        "model_id": 411,
+        "term": "P",
+        "coefficient_abs_difference": 3.122502256758253e-17,
+        "se_abs_difference": 3.469446951953614e-18,
+        "p_abs_difference": 3.497202527569243e-15
+      },
+      {
+        "model_id": 411,
+        "term": "G",
+        "coefficient_abs_difference": 1.734723475976807e-17,
+        "se_abs_difference": 1.1449174941446927e-16,
+        "p_abs_difference": 3.0531133177191805e-15
+      },
+      {
+        "model_id": 411,
+        "term": "PG",
+        "coefficient_abs_difference": 1.0061396160665481e-16,
+        "se_abs_difference": 7.632783294297951e-17,
+        "p_abs_difference": 3.2751579226442118e-15
+      },
+      {
+        "model_id": 758,
+        "term": "P",
+        "coefficient_abs_difference": 9.974659986866641e-18,
+        "se_abs_difference": 3.469446951953614e-18,
+        "p_abs_difference": 3.6637359812630166e-15
+      },
+      {
+        "model_id": 1105,
+        "term": "P",
+        "coefficient_abs_difference": 4.607859233063394e-19,
+        "se_abs_difference": 1.5449880957918438e-18,
+        "p_abs_difference": 4.6629367034256575e-15
+      },
+      {
+        "model_id": 1105,
+        "term": "G",
+        "coefficient_abs_difference": 2.358139725155972e-18,
+        "se_abs_difference": 2.168404344971009e-18,
+        "p_abs_difference": 2.1094237467877974e-15
+      },
+      {
+        "model_id": 1105,
+        "term": "PG",
+        "coefficient_abs_difference": 6.505213034913027e-19,
+        "se_abs_difference": 1.22514845490862e-17,
+        "p_abs_difference": 6.2727600891321345e-15
+      },
+      {
+        "model_id": 1453,
+        "term": "P",
+        "coefficient_abs_difference": 6.071532165918825e-17,
+        "se_abs_difference": 2.42861286636753e-17,
+        "p_abs_difference": 2.609024107869118e-15
+      },
+      {
+        "model_id": 1453,
+        "term": "G",
+        "coefficient_abs_difference": 4.440892098500626e-16,
+        "se_abs_difference": 7.91033905045424e-16,
+        "p_abs_difference": 1.942890293094024e-15
+      },
+      {
+        "model_id": 1453,
+        "term": "PG",
+        "coefficient_abs_difference": 1.734723475976807e-16,
+        "se_abs_difference": 4.3021142204224816e-16,
+        "p_abs_difference": 9.992007221626409e-16
+      },
+      {
+        "model_id": 1896,
+        "term": "P",
+        "coefficient_abs_difference": 4.0657581468206416e-20,
+        "se_abs_difference": 1.0164395367051604e-19,
+        "p_abs_difference": 1.1102230246251565e-16
+      },
+      {
+        "model_id": 2243,
+        "term": "P",
+        "coefficient_abs_difference": 1.0408340855860843e-17,
+        "se_abs_difference": 2.949029909160572e-17,
+        "p_abs_difference": 5.384581669432009e-15
+      },
+      {
+        "model_id": 2243,
+        "term": "G",
+        "coefficient_abs_difference": 8.326672684688674e-17,
+        "se_abs_difference": 6.245004513516506e-17,
+        "p_abs_difference": 8.881784197001252e-16
+      },
+      {
+        "model_id": 2243,
+        "term": "PG",
+        "coefficient_abs_difference": 1.3877787807814457e-17,
+        "se_abs_difference": 4.163336342344337e-17,
+        "p_abs_difference": 0.0
+      },
+      {
+        "model_id": 2591,
+        "term": "P",
+        "coefficient_abs_difference": 1.1926223897340549e-17,
+        "se_abs_difference": 2.5153490401663703e-17,
+        "p_abs_difference": 3.9968028886505635e-15
+      },
+      {
+        "model_id": 2591,
+        "term": "G",
+        "coefficient_abs_difference": 7.112366251504909e-17,
+        "se_abs_difference": 8.326672684688674e-17,
+        "p_abs_difference": 2.6645352591003757e-15
+      },
+      {
+        "model_id": 2591,
+        "term": "PG",
+        "coefficient_abs_difference": 3.2959746043559335e-17,
+        "se_abs_difference": 1.1102230246251565e-16,
+        "p_abs_difference": 3.3306690738754696e-15
+      },
+      {
+        "model_id": 192,
+        "term": "P",
+        "coefficient_abs_difference": 2.1006417091906648e-19,
+        "se_abs_difference": 1.0842021724855044e-19,
+        "p_abs_difference": 1.4432899320127035e-15
+      },
+      {
+        "model_id": 192,
+        "term": "G",
+        "coefficient_abs_difference": 7.806255641895632e-18,
+        "se_abs_difference": 4.7704895589362195e-18,
+        "p_abs_difference": 1.2989609388114332e-14
+      },
+      {
+        "model_id": 192,
+        "term": "PG",
+        "coefficient_abs_difference": 1.2265037076242269e-18,
+        "se_abs_difference": 2.168404344971009e-18,
+        "p_abs_difference": 1.4432899320127035e-15
+      },
+      {
+        "model_id": 192,
+        "term": "PH",
+        "coefficient_abs_difference": 1.0164395367051604e-20,
+        "se_abs_difference": 4.87890977618477e-19,
+        "p_abs_difference": 3.3306690738754696e-16
+      },
+      {
+        "model_id": 192,
+        "term": "GH",
+        "coefficient_abs_difference": 3.957337929572091e-18,
+        "se_abs_difference": 5.5294310796760726e-18,
+        "p_abs_difference": 1.887379141862766e-15
+      },
+      {
+        "model_id": 192,
+        "term": "PGH",
+        "coefficient_abs_difference": 1.4094628242311558e-18,
+        "se_abs_difference": 2.927345865710862e-18,
+        "p_abs_difference": 2.220446049250313e-15
+      },
+      {
+        "model_id": 192,
+        "term": "H",
+        "coefficient_abs_difference": 1.3552527156068805e-19,
+        "se_abs_difference": 1.4907779871675686e-18,
+        "p_abs_difference": 8.548717289613705e-15
+      },
+      {
+        "model_id": 521,
+        "term": "P",
+        "coefficient_abs_difference": 2.7755575615628914e-17,
+        "se_abs_difference": 4.423544863740858e-17,
+        "p_abs_difference": 1.4932499681208355e-14
+      },
+      {
+        "model_id": 521,
+        "term": "G",
+        "coefficient_abs_difference": 4.163336342344337e-17,
+        "se_abs_difference": 9.367506770274758e-17,
+        "p_abs_difference": 1.3322676295501878e-15
+      },
+      {
+        "model_id": 521,
+        "term": "PG",
+        "coefficient_abs_difference": 1.3183898417423734e-16,
+        "se_abs_difference": 4.163336342344337e-17,
+        "p_abs_difference": 4.718447854656915e-15
+      },
+      {
+        "model_id": 521,
+        "term": "PH",
+        "coefficient_abs_difference": 1.734723475976807e-17,
+        "se_abs_difference": 4.85722573273506e-17,
+        "p_abs_difference": 7.66053886991358e-15
+      },
+      {
+        "model_id": 521,
+        "term": "GH",
+        "coefficient_abs_difference": 3.400058012914542e-16,
+        "se_abs_difference": 1.3877787807814457e-16,
+        "p_abs_difference": 2.1510571102112408e-16
+      },
+      {
+        "model_id": 521,
+        "term": "PGH",
+        "coefficient_abs_difference": 1.8388068845354155e-16,
+        "se_abs_difference": 6.245004513516506e-17,
+        "p_abs_difference": 4.163336342344337e-15
+      },
+      {
+        "model_id": 521,
+        "term": "H",
+        "coefficient_abs_difference": 3.642919299551295e-17,
+        "se_abs_difference": 1.9949319973733282e-17,
+        "p_abs_difference": 6.38378239159465e-15
+      },
+      {
+        "model_id": 850,
+        "term": "P",
+        "coefficient_abs_difference": 2.0599841277224584e-16,
+        "se_abs_difference": 5.0306980803327406e-17,
+        "p_abs_difference": 1.354472090042691e-14
+      },
+      {
+        "model_id": 850,
+        "term": "G",
+        "coefficient_abs_difference": 1.5855372570428017e-15,
+        "se_abs_difference": 2.7755575615628914e-17,
+        "p_abs_difference": 1.3988810110276972e-14
+      },
+      {
+        "model_id": 850,
+        "term": "PG",
+        "coefficient_abs_difference": 1.2108369862318114e-15,
+        "se_abs_difference": 1.249000902703301e-16,
+        "p_abs_difference": 1.0103029524088925e-14
+      },
+      {
+        "model_id": 850,
+        "term": "PH",
+        "coefficient_abs_difference": 1.4894227344519617e-17,
+        "se_abs_difference": 1.0061396160665481e-16,
+        "p_abs_difference": 7.771561172376096e-16
+      },
+      {
+        "model_id": 850,
+        "term": "GH",
+        "coefficient_abs_difference": 1.6644671751997464e-15,
+        "se_abs_difference": 8.049116928532385e-16,
+        "p_abs_difference": 1.2212453270876722e-14
+      },
+      {
+        "model_id": 850,
+        "term": "PGH",
+        "coefficient_abs_difference": 2.7755575615628914e-16,
+        "se_abs_difference": 8.049116928532385e-16,
+        "p_abs_difference": 3.9968028886505635e-15
+      },
+      {
+        "model_id": 850,
+        "term": "H",
+        "coefficient_abs_difference": 3.191891195797325e-16,
+        "se_abs_difference": 3.8163916471489756e-17,
+        "p_abs_difference": 9.992007221626409e-15
+      },
+      {
+        "model_id": 1179,
+        "term": "P",
+        "coefficient_abs_difference": 1.9949319973733282e-17,
+        "se_abs_difference": 2.211772431870429e-17,
+        "p_abs_difference": 7.4593109467002705e-16
+      },
+      {
+        "model_id": 1179,
+        "term": "G",
+        "coefficient_abs_difference": 4.336808689942018e-17,
+        "se_abs_difference": 7.28583859910259e-17,
+        "p_abs_difference": 2.220446049250313e-15
+      },
+      {
+        "model_id": 1179,
+        "term": "PG",
+        "coefficient_abs_difference": 6.245004513516506e-17,
+        "se_abs_difference": 5.898059818321144e-17,
+        "p_abs_difference": 2.220446049250313e-16
+      },
+      {
+        "model_id": 1179,
+        "term": "PH",
+        "coefficient_abs_difference": 4.0766001685454967e-17,
+        "se_abs_difference": 2.6020852139652106e-17,
+        "p_abs_difference": 8.326672684688674e-16
+      },
+      {
+        "model_id": 1179,
+        "term": "GH",
+        "coefficient_abs_difference": 2.393918396847994e-16,
+        "se_abs_difference": 2.5673907444456745e-16,
+        "p_abs_difference": 2.3314683517128287e-15
+      },
+      {
+        "model_id": 1179,
+        "term": "PGH",
+        "coefficient_abs_difference": 2.7755575615628914e-16,
+        "se_abs_difference": 2.220446049250313e-16,
+        "p_abs_difference": 4.996003610813204e-16
+      },
+      {
+        "model_id": 1179,
+        "term": "H",
+        "coefficient_abs_difference": 3.599551212651875e-17,
+        "se_abs_difference": 4.85722573273506e-17,
+        "p_abs_difference": 1.4432899320127035e-15
+      },
+      {
+        "model_id": 1636,
+        "term": "P",
+        "coefficient_abs_difference": 2.286988957586611e-19,
+        "se_abs_difference": 1.8973538018496328e-19,
+        "p_abs_difference": 2.4424906541753444e-15
+      },
+      {
+        "model_id": 1636,
+        "term": "G",
+        "coefficient_abs_difference": 2.032879073410321e-18,
+        "se_abs_difference": 5.421010862427522e-19,
+        "p_abs_difference": 3.885780586188048e-15
+      },
+      {
+        "model_id": 1636,
+        "term": "PG",
+        "coefficient_abs_difference": 1.4094628242311558e-18,
+        "se_abs_difference": 1.2468324983583301e-18,
+        "p_abs_difference": 4.107825191113079e-15
+      },
+      {
+        "model_id": 1636,
+        "term": "PH",
+        "coefficient_abs_difference": 5.963111948670274e-19,
+        "se_abs_difference": 1.1926223897340549e-18,
+        "p_abs_difference": 3.0531133177191805e-15
+      },
+      {
+        "model_id": 1636,
+        "term": "GH",
+        "coefficient_abs_difference": 8.673617379884035e-19,
+        "se_abs_difference": 1.3986208025063007e-17,
+        "p_abs_difference": 7.993605777301127e-15
+      },
+      {
+        "model_id": 1636,
+        "term": "PGH",
+        "coefficient_abs_difference": 2.6020852139652106e-18,
+        "se_abs_difference": 6.5052130349130266e-18,
+        "p_abs_difference": 4.107825191113079e-15
+      },
+      {
+        "model_id": 1965,
+        "term": "P",
+        "coefficient_abs_difference": 1.3010426069826053e-17,
+        "se_abs_difference": 5.0306980803327406e-17,
+        "p_abs_difference": 3.1086244689504383e-15
+      },
+      {
+        "model_id": 1965,
+        "term": "G",
+        "coefficient_abs_difference": 8.326672684688674e-17,
+        "se_abs_difference": 1.8735013540549517e-16,
+        "p_abs_difference": 6.661338147750939e-16
+      },
+      {
+        "model_id": 1965,
+        "term": "PG",
+        "coefficient_abs_difference": 2.688821387764051e-17,
+        "se_abs_difference": 4.163336342344337e-17,
+        "p_abs_difference": 7.771561172376096e-16
+      },
+      {
+        "model_id": 1965,
+        "term": "PH",
+        "coefficient_abs_difference": 7.24247051220317e-17,
+        "se_abs_difference": 6.331740687315346e-17,
+        "p_abs_difference": 8.659739592076221e-15
+      },
+      {
+        "model_id": 1965,
+        "term": "GH",
+        "coefficient_abs_difference": 2.983724378680108e-16,
+        "se_abs_difference": 2.706168622523819e-16,
+        "p_abs_difference": 2.886579864025407e-15
+      },
+      {
+        "model_id": 1965,
+        "term": "PGH",
+        "coefficient_abs_difference": 2.671474153004283e-16,
+        "se_abs_difference": 3.0531133177191805e-16,
+        "p_abs_difference": 2.6645352591003757e-15
+      },
+      {
+        "model_id": 2294,
+        "term": "P",
+        "coefficient_abs_difference": 3.8163916471489756e-17,
+        "se_abs_difference": 2.949029909160572e-17,
+        "p_abs_difference": 7.771561172376096e-16
+      },
+      {
+        "model_id": 2294,
+        "term": "G",
+        "coefficient_abs_difference": 1.0061396160665481e-16,
+        "se_abs_difference": 1.3877787807814457e-16,
+        "p_abs_difference": 1.2212453270876722e-15
+      },
+      {
+        "model_id": 2294,
+        "term": "PG",
+        "coefficient_abs_difference": 1.6393136847980827e-16,
+        "se_abs_difference": 5.551115123125783e-17,
+        "p_abs_difference": 1.6653345369377348e-15
+      },
+      {
+        "model_id": 2294,
+        "term": "PH",
+        "coefficient_abs_difference": 5.0306980803327406e-17,
+        "se_abs_difference": 3.469446951953614e-18,
+        "p_abs_difference": 1.9984014443252818e-15
+      },
+      {
+        "model_id": 2294,
+        "term": "GH",
+        "coefficient_abs_difference": 6.973588373426765e-16,
+        "se_abs_difference": 8.326672684688674e-17,
+        "p_abs_difference": 3.885780586188048e-15
+      },
+      {
+        "model_id": 2294,
+        "term": "PGH",
+        "coefficient_abs_difference": 6.245004513516506e-17,
+        "se_abs_difference": 7.216449660063518e-16,
+        "p_abs_difference": 3.3306690738754696e-16
+      },
+      {
+        "model_id": 2294,
+        "term": "H",
+        "coefficient_abs_difference": 5.898059818321144e-17,
+        "se_abs_difference": 1.942890293094024e-16,
+        "p_abs_difference": 4.107825191113079e-15
+      },
+      {
+        "model_id": 2623,
+        "term": "P",
+        "coefficient_abs_difference": 8.500145032286355e-17,
+        "se_abs_difference": 2.688821387764051e-17,
+        "p_abs_difference": 4.510281037539698e-16
+      },
+      {
+        "model_id": 2623,
+        "term": "G",
+        "coefficient_abs_difference": 4.163336342344337e-17,
+        "se_abs_difference": 8.326672684688674e-17,
+        "p_abs_difference": 1.8318679906315083e-15
+      },
+      {
+        "model_id": 2623,
+        "term": "PG",
+        "coefficient_abs_difference": 2.8449465006019636e-16,
+        "se_abs_difference": 1.6306400674181987e-16,
+        "p_abs_difference": 3.0531133177191805e-16
+      },
+      {
+        "model_id": 2623,
+        "term": "PH",
+        "coefficient_abs_difference": 6.591949208711867e-17,
+        "se_abs_difference": 3.209238430557093e-17,
+        "p_abs_difference": 4.3021142204224816e-16
+      },
+      {
+        "model_id": 2623,
+        "term": "GH",
+        "coefficient_abs_difference": 5.551115123125783e-17,
+        "se_abs_difference": 9.020562075079397e-17,
+        "p_abs_difference": 1.6653345369377348e-15
+      },
+      {
+        "model_id": 2623,
+        "term": "PGH",
+        "coefficient_abs_difference": 3.400058012914542e-16,
+        "se_abs_difference": 1.8735013540549517e-16,
+        "p_abs_difference": 2.0816681711721685e-16
+      },
+      {
+        "model_id": 2623,
+        "term": "H",
+        "coefficient_abs_difference": 1.0408340855860843e-17,
+        "se_abs_difference": 2.862293735361732e-17,
+        "p_abs_difference": 2.255140518769849e-16
+      },
+      {
+        "model_id": 2624,
+        "term": "P",
+        "coefficient_abs_difference": 1.6940658945086007e-19,
+        "se_abs_difference": 2.0328790734103208e-20,
+        "p_abs_difference": 1.5543122344752192e-15
+      },
+      {
+        "model_id": 2706,
+        "term": "P",
+        "coefficient_abs_difference": 5.4643789493269423e-17,
+        "se_abs_difference": 7.37257477290143e-18,
+        "p_abs_difference": 6.106226635438361e-15
+      },
+      {
+        "model_id": 2788,
+        "term": "P",
+        "coefficient_abs_difference": 5.204170427930421e-17,
+        "se_abs_difference": 7.806255641895632e-17,
+        "p_abs_difference": 7.216449660063518e-16
+      },
+      {
+        "model_id": 2870,
+        "term": "P",
+        "coefficient_abs_difference": 8.673617379884035e-19,
+        "se_abs_difference": 1.951563910473908e-18,
+        "p_abs_difference": 5.4643789493269423e-17
+      },
+      {
+        "model_id": 2952,
+        "term": "P",
+        "coefficient_abs_difference": 1.0740377771184528e-18,
+        "se_abs_difference": 4.336808689942018e-19,
+        "p_abs_difference": 6.661338147750939e-15
+      },
+      {
+        "model_id": 3034,
+        "term": "P",
+        "coefficient_abs_difference": 3.211948935988307e-18,
+        "se_abs_difference": 1.951563910473908e-18,
+        "p_abs_difference": 1.887379141862766e-15
+      },
+      {
+        "model_id": 3116,
+        "term": "P",
+        "coefficient_abs_difference": 1.1275702593849246e-17,
+        "se_abs_difference": 3.469446951953614e-18,
+        "p_abs_difference": 6.106226635438361e-16
+      },
+      {
+        "model_id": 3199,
+        "term": "P",
+        "coefficient_abs_difference": 5.204170427930421e-18,
+        "se_abs_difference": 2.0816681711721685e-17,
+        "p_abs_difference": 8.881784197001252e-16
+      },
+      {
+        "model_id": 3199,
+        "term": "G",
+        "coefficient_abs_difference": 2.3765711620882257e-16,
+        "se_abs_difference": 1.3183898417423734e-16,
+        "p_abs_difference": 3.219646771412954e-15
+      },
+      {
+        "model_id": 3199,
+        "term": "PG",
+        "coefficient_abs_difference": 2.7755575615628914e-17,
+        "se_abs_difference": 2.7755575615628914e-17,
+        "p_abs_difference": 5.551115123125783e-17
+      },
+      {
+        "model_id": 3200,
+        "term": "P",
+        "coefficient_abs_difference": 3.3118988237643143e-19,
+        "se_abs_difference": 9.486769009248164e-20,
+        "p_abs_difference": 3.9968028886505635e-15
+      },
+      {
+        "model_id": 3217,
+        "term": "P",
+        "coefficient_abs_difference": 2.964615315390051e-19,
+        "se_abs_difference": 3.5236570605778894e-19,
+        "p_abs_difference": 7.771561172376096e-16
+      },
+      {
+        "model_id": 3217,
+        "term": "G",
+        "coefficient_abs_difference": 1.3552527156068805e-18,
+        "se_abs_difference": 1.0299920638612292e-18,
+        "p_abs_difference": 1.9984014443252818e-15
+      },
+      {
+        "model_id": 3217,
+        "term": "PG",
+        "coefficient_abs_difference": 1.1655173354219173e-18,
+        "se_abs_difference": 3.469446951953614e-18,
+        "p_abs_difference": 7.771561172376096e-16
+      },
+      {
+        "model_id": 3236,
+        "term": "P",
+        "coefficient_abs_difference": 8.673617379884035e-18,
+        "se_abs_difference": 6.938893903907228e-18,
+        "p_abs_difference": 1.3877787807814457e-15
+      },
+      {
+        "model_id": 3253,
+        "term": "P",
+        "coefficient_abs_difference": 2.222614453595284e-17,
+        "se_abs_difference": 1.9081958235744878e-17,
+        "p_abs_difference": 1.3322676295501878e-15
+      },
+      {
+        "model_id": 3253,
+        "term": "G",
+        "coefficient_abs_difference": 1.214306433183765e-17,
+        "se_abs_difference": 3.469446951953614e-18,
+        "p_abs_difference": 4.440892098500626e-16
+      },
+      {
+        "model_id": 3253,
+        "term": "PG",
+        "coefficient_abs_difference": 2.0816681711721685e-17,
+        "se_abs_difference": 2.0816681711721685e-16,
+        "p_abs_difference": 7.771561172376096e-16
+      },
+      {
+        "model_id": 3272,
+        "term": "P",
+        "coefficient_abs_difference": 1.734723475976807e-17,
+        "se_abs_difference": 5.204170427930421e-17,
+        "p_abs_difference": 6.106226635438361e-16
+      },
+      {
+        "model_id": 3289,
+        "term": "P",
+        "coefficient_abs_difference": 4.163336342344337e-17,
+        "se_abs_difference": 1.1102230246251565e-16,
+        "p_abs_difference": 1.887379141862766e-15
+      },
+      {
+        "model_id": 3289,
+        "term": "G",
+        "coefficient_abs_difference": 2.0816681711721685e-16,
+        "se_abs_difference": 1.3877787807814457e-16,
+        "p_abs_difference": 4.440892098500626e-16
+      },
+      {
+        "model_id": 3289,
+        "term": "PG",
+        "coefficient_abs_difference": 2.0816681711721685e-17,
+        "se_abs_difference": 8.881784197001252e-16,
+        "p_abs_difference": 5.551115123125783e-16
+      },
+      {
+        "model_id": 3308,
+        "term": "P",
+        "coefficient_abs_difference": 6.071532165918825e-18,
+        "se_abs_difference": 5.204170427930421e-18,
+        "p_abs_difference": 6.661338147750939e-16
+      },
+      {
+        "model_id": 3325,
+        "term": "P",
+        "coefficient_abs_difference": 1.734723475976807e-18,
+        "se_abs_difference": 5.377642775528102e-17,
+        "p_abs_difference": 1.8318679906315083e-15
+      },
+      {
+        "model_id": 3325,
+        "term": "G",
+        "coefficient_abs_difference": 1.5612511283791264e-17,
+        "se_abs_difference": 6.938893903907228e-18,
+        "p_abs_difference": 4.440892098500626e-16
+      },
+      {
+        "model_id": 3325,
+        "term": "PG",
+        "coefficient_abs_difference": 1.6653345369377348e-16,
+        "se_abs_difference": 1.8041124150158794e-16,
+        "p_abs_difference": 1.8318679906315083e-15
+      },
+      {
+        "model_id": 3202,
+        "term": "P_B",
+        "coefficient_abs_difference": 1.0164395367051604e-19,
+        "se_abs_difference": 4.0657581468206416e-20,
+        "p_abs_difference": 1.7763568394002505e-15
+      },
+      {
+        "model_id": 3202,
+        "term": "P_W",
+        "coefficient_abs_difference": 3.3203691532368573e-19,
+        "se_abs_difference": 4.743384504624082e-20,
+        "p_abs_difference": 4.440892098500626e-15
+      },
+      {
+        "model_id": 3219,
+        "term": "P_B",
+        "coefficient_abs_difference": 2.574980159653073e-19,
+        "se_abs_difference": 7.589415207398531e-19,
+        "p_abs_difference": 1.609823385706477e-15
+      },
+      {
+        "model_id": 3219,
+        "term": "P_W",
+        "coefficient_abs_difference": 9.486769009248164e-20,
+        "se_abs_difference": 1.0842021724855044e-19,
+        "p_abs_difference": 7.771561172376096e-16
+      },
+      {
+        "model_id": 3219,
+        "term": "G_B",
+        "coefficient_abs_difference": 2.2768245622195593e-18,
+        "se_abs_difference": 8.131516293641283e-19,
+        "p_abs_difference": 1.7763568394002505e-15
+      },
+      {
+        "model_id": 3219,
+        "term": "G_W",
+        "coefficient_abs_difference": 3.74049749507499e-18,
+        "se_abs_difference": 1.1926223897340549e-18,
+        "p_abs_difference": 4.218847493575595e-15
+      },
+      {
+        "model_id": 3219,
+        "term": "PG_BB",
+        "coefficient_abs_difference": 2.0599841277224584e-18,
+        "se_abs_difference": 2.710505431213761e-18,
+        "p_abs_difference": 2.7755575615628914e-15
+      },
+      {
+        "model_id": 3219,
+        "term": "PG_BW",
+        "coefficient_abs_difference": 2.168404344971009e-18,
+        "se_abs_difference": 4.119968255444917e-18,
+        "p_abs_difference": 1.6930901125533637e-15
+      },
+      {
+        "model_id": 3219,
+        "term": "PG_WB",
+        "coefficient_abs_difference": 5.421010862427522e-20,
+        "se_abs_difference": 1.734723475976807e-18,
+        "p_abs_difference": 7.771561172376096e-16
+      },
+      {
+        "model_id": 3219,
+        "term": "PG_WW",
+        "coefficient_abs_difference": 2.710505431213761e-20,
+        "se_abs_difference": 1.6263032587282567e-19,
+        "p_abs_difference": 3.3306690738754696e-16
+      },
+      {
+        "model_id": 3238,
+        "term": "P_B",
+        "coefficient_abs_difference": 3.06287113727155e-17,
+        "se_abs_difference": 1.3010426069826053e-18,
+        "p_abs_difference": 9.103828801926284e-15
+      },
+      {
+        "model_id": 3238,
+        "term": "P_W",
+        "coefficient_abs_difference": 1.929879867024198e-17,
+        "se_abs_difference": 6.505213034913027e-19,
+        "p_abs_difference": 9.769962616701378e-15
+      },
+      {
+        "model_id": 3255,
+        "term": "P_B",
+        "coefficient_abs_difference": 1.3010426069826053e-18,
+        "se_abs_difference": 3.2959746043559335e-17,
+        "p_abs_difference": 1.9984014443252818e-15
+      },
+      {
+        "model_id": 3255,
+        "term": "P_W",
+        "coefficient_abs_difference": 1.0408340855860843e-17,
+        "se_abs_difference": 1.3010426069826053e-17,
+        "p_abs_difference": 2.6367796834847468e-15
+      },
+      {
+        "model_id": 3255,
+        "term": "G_B",
+        "coefficient_abs_difference": 6.678685382510707e-17,
+        "se_abs_difference": 5.204170427930421e-18,
+        "p_abs_difference": 3.774758283725532e-15
+      },
+      {
+        "model_id": 3255,
+        "term": "G_W",
+        "coefficient_abs_difference": 3.2786273695961654e-16,
+        "se_abs_difference": 5.204170427930421e-17,
+        "p_abs_difference": 8.770761894538737e-15
+      },
+      {
+        "model_id": 3255,
+        "term": "PG_BB",
+        "coefficient_abs_difference": 3.5388358909926865e-16,
+        "se_abs_difference": 4.510281037539698e-16,
+        "p_abs_difference": 1.0158540675320182e-14
+      },
+      {
+        "model_id": 3255,
+        "term": "PG_BW",
+        "coefficient_abs_difference": 2.7755575615628914e-17,
+        "se_abs_difference": 5.828670879282072e-16,
+        "p_abs_difference": 1.1171619185290638e-15
+      },
+      {
+        "model_id": 3255,
+        "term": "PG_WB",
+        "coefficient_abs_difference": 1.1449174941446927e-16,
+        "se_abs_difference": 8.673617379884035e-17,
+        "p_abs_difference": 3.7192471324942744e-15
+      },
+      {
+        "model_id": 3255,
+        "term": "PG_WW",
+        "coefficient_abs_difference": 2.5673907444456745e-16,
+        "se_abs_difference": 2.7755575615628914e-17,
+        "p_abs_difference": 7.216449660063518e-15
+      },
+      {
+        "model_id": 3274,
+        "term": "P_B",
+        "coefficient_abs_difference": 2.647621705209602e-16,
+        "se_abs_difference": 1.5612511283791264e-17,
+        "p_abs_difference": 2.0650148258027912e-14
+      },
+      {
+        "model_id": 3274,
+        "term": "P_W",
+        "coefficient_abs_difference": 8.673617379884035e-18,
+        "se_abs_difference": 1.0408340855860843e-17,
+        "p_abs_difference": 1.2490009027033011e-15
+      },
+      {
+        "model_id": 3291,
+        "term": "P_B",
+        "coefficient_abs_difference": 7.047314121155779e-17,
+        "se_abs_difference": 4.163336342344337e-17,
+        "p_abs_difference": 3.1086244689504383e-15
+      },
+      {
+        "model_id": 3291,
+        "term": "P_W",
+        "coefficient_abs_difference": 3.2959746043559335e-17,
+        "se_abs_difference": 4.5102810375396984e-17,
+        "p_abs_difference": 4.996003610813204e-16
+      },
+      {
+        "model_id": 3291,
+        "term": "G_B",
+        "coefficient_abs_difference": 2.220446049250313e-16,
+        "se_abs_difference": 1.8041124150158794e-16,
+        "p_abs_difference": 4.440892098500626e-16
+      },
+      {
+        "model_id": 3291,
+        "term": "G_W",
+        "coefficient_abs_difference": 4.3021142204224816e-16,
+        "se_abs_difference": 1.1102230246251565e-16,
+        "p_abs_difference": 3.6637359812630166e-15
+      },
+      {
+        "model_id": 3291,
+        "term": "PG_BB",
+        "coefficient_abs_difference": 9.159339953157541e-16,
+        "se_abs_difference": 2.220446049250313e-16,
+        "p_abs_difference": 5.551115123125783e-15
+      },
+      {
+        "model_id": 3291,
+        "term": "PG_BW",
+        "coefficient_abs_difference": 2.220446049250313e-16,
+        "se_abs_difference": 1.8318679906315083e-15,
+        "p_abs_difference": 1.942890293094024e-15
+      },
+      {
+        "model_id": 3291,
+        "term": "PG_WB",
+        "coefficient_abs_difference": 3.122502256758253e-16,
+        "se_abs_difference": 1.1102230246251565e-16,
+        "p_abs_difference": 3.219646771412954e-15
+      },
+      {
+        "model_id": 3291,
+        "term": "PG_WW",
+        "coefficient_abs_difference": 1.3877787807814457e-16,
+        "se_abs_difference": 2.7755575615628914e-17,
+        "p_abs_difference": 1.1102230246251565e-15
+      },
+      {
+        "model_id": 3310,
+        "term": "P_B",
+        "coefficient_abs_difference": 3.480288973678469e-17,
+        "se_abs_difference": 1.734723475976807e-18,
+        "p_abs_difference": 7.993605777301127e-15
+      },
+      {
+        "model_id": 3310,
+        "term": "P_W",
+        "coefficient_abs_difference": 6.071532165918825e-18,
+        "se_abs_difference": 2.168404344971009e-18,
+        "p_abs_difference": 8.543513119185775e-17
+      },
+      {
+        "model_id": 3327,
+        "term": "P_B",
+        "coefficient_abs_difference": 9.128982292327947e-17,
+        "se_abs_difference": 3.8163916471489756e-17,
+        "p_abs_difference": 9.880984919163893e-15
+      },
+      {
+        "model_id": 3327,
+        "term": "P_W",
+        "coefficient_abs_difference": 2.0816681711721685e-17,
+        "se_abs_difference": 6.071532165918825e-18,
+        "p_abs_difference": 7.632783294297951e-17
+      },
+      {
+        "model_id": 3327,
+        "term": "G_B",
+        "coefficient_abs_difference": 7.632783294297951e-17,
+        "se_abs_difference": 1.0755285551056204e-16,
+        "p_abs_difference": 1.3322676295501878e-15
+      },
+      {
+        "model_id": 3327,
+        "term": "G_W",
+        "coefficient_abs_difference": 8.326672684688674e-17,
+        "se_abs_difference": 8.326672684688674e-17,
+        "p_abs_difference": 0.0
+      },
+      {
+        "model_id": 3327,
+        "term": "PG_BB",
+        "coefficient_abs_difference": 6.591949208711867e-17,
+        "se_abs_difference": 3.0531133177191805e-16,
+        "p_abs_difference": 1.1102230246251565e-16
+      },
+      {
+        "model_id": 3327,
+        "term": "PG_BW",
+        "coefficient_abs_difference": 2.0816681711721685e-16,
+        "se_abs_difference": 1.5265566588595902e-16,
+        "p_abs_difference": 1.7763568394002505e-15
+      },
+      {
+        "model_id": 3327,
+        "term": "PG_WB",
+        "coefficient_abs_difference": 3.8163916471489756e-17,
+        "se_abs_difference": 7.979727989493313e-17,
+        "p_abs_difference": 1.0547118733938987e-15
+      },
+      {
+        "model_id": 3327,
+        "term": "PG_WW",
+        "coefficient_abs_difference": 5.204170427930421e-17,
+        "se_abs_difference": 2.7755575615628914e-17,
+        "p_abs_difference": 1.5543122344752192e-15
+      },
+      {
+        "model_id": 2746,
+        "term": "P",
+        "coefficient_abs_difference": 5.724587470723463e-17,
+        "se_abs_difference": 2.0816681711721685e-17,
+        "p_abs_difference": 4.787836793695988e-16
+      },
+      {
+        "model_id": 2747,
+        "term": "P",
+        "coefficient_abs_difference": 3.469446951953614e-17,
+        "se_abs_difference": 4.336808689942018e-18,
+        "p_abs_difference": 2.0296264668928643e-16
+      },
+      {
+        "model_id": 2747,
+        "term": "G",
+        "coefficient_abs_difference": 1.0408340855860843e-17,
+        "se_abs_difference": 2.0816681711721685e-17,
+        "p_abs_difference": 1.1102230246251565e-16
+      },
+      {
+        "model_id": 2747,
+        "term": "PG",
+        "coefficient_abs_difference": 1.3877787807814457e-17,
+        "se_abs_difference": 9.71445146547012e-17,
+        "p_abs_difference": 5.759281940243e-16
+      }
+    ],
+    "api_calls": 0
+  },
+  "interpretation": "One unadjusted delayed SG&A pattern; none survives the search adjustment. Exact Lourie implementation still lacks dated advertisement counts. Separate-review evidence and original measure are unchanged."
+}
