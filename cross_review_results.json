@@ -1,0 +1,386 @@
+[
+  {
+    "id": "primary_fold_0_year",
+    "family": "primary",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "weighted": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_firm_years": 1995,
+    "firms": 745,
+    "test_reviews": 22689,
+    "test_target_reports": 1002,
+    "b": 0.03939603899610364,
+    "se": 0.021505696283786218,
+    "p": 0.0671183972258784,
+    "ci95": [
+      -0.0027801721545682653,
+      0.08157225014677555
+    ],
+    "effect_10pp_predictor_in_target_percentage_points": 0.3939603899610364,
+    "effect_ci95_percentage_points": [
+      -0.027801721545682653,
+      0.8157225014677555
+    ],
+    "holm_p_family": 0.2684735889035136
+  },
+  {
+    "id": "primary_fold_0_firm",
+    "family": "primary",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "weighted": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_firm_years": 1995,
+    "firms": 745,
+    "test_reviews": 22689,
+    "test_target_reports": 1002,
+    "b": -0.02326166476165743,
+    "se": 0.03380718104529996,
+    "p": 0.4915389114650113,
+    "ci95": [
+      -0.08958762928710015,
+      0.043064299763785285
+    ],
+    "effect_10pp_predictor_in_target_percentage_points": -0.2326166476165743,
+    "effect_ci95_percentage_points": [
+      -0.8958762928710016,
+      0.43064299763785285
+    ],
+    "holm_p_family": 0.9830778229300225
+  },
+  {
+    "id": "process_only_fold_0",
+    "family": "sensitivity",
+    "predictor": "process_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "weighted": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_firm_years": 1995,
+    "firms": 745,
+    "test_reviews": 22689,
+    "test_target_reports": 1002,
+    "b": -0.027177385390214515,
+    "se": 0.03477567682450958,
+    "p": 0.43465522904211035,
+    "ci95": [
+      -0.09540343193103806,
+      0.04104866115060904
+    ],
+    "effect_10pp_predictor_in_target_percentage_points": -0.27177385390214515,
+    "effect_ci95_percentage_points": [
+      -0.9540343193103806,
+      0.4104866115060904
+    ],
+    "holm_p_family": 1.0
+  },
+  {
+    "id": "broader_target_fold_0",
+    "family": "sensitivity",
+    "predictor": "ghost_share",
+    "target": "target_broad",
+    "firm_effects": true,
+    "year_effects": true,
+    "weighted": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_firm_years": 1995,
+    "firms": 745,
+    "test_reviews": 22689,
+    "test_target_reports": 1773,
+    "b": -0.05084627368190887,
+    "se": 0.04570899449572426,
+    "p": 0.2661869100109455,
+    "ci95": [
+      -0.14052228492208724,
+      0.038829737558269496
+    ],
+    "effect_10pp_predictor_in_target_percentage_points": -0.5084627368190887,
+    "effect_ci95_percentage_points": [
+      -1.4052228492208725,
+      0.38829737558269495
+    ],
+    "holm_p_family": 1.0
+  },
+  {
+    "id": "unweighted_fold_0",
+    "family": "sensitivity",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "weighted": false,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_firm_years": 1995,
+    "firms": 745,
+    "test_reviews": 22689,
+    "test_target_reports": 1002,
+    "b": -0.01520697767546735,
+    "se": 0.03573316671490218,
+    "p": 0.6704951882258641,
+    "ci95": [
+      -0.08531151389037979,
+      0.05489755853944509
+    ],
+    "effect_10pp_predictor_in_target_percentage_points": -0.1520697767546735,
+    "effect_ci95_percentage_points": [
+      -0.8531151389037979,
+      0.5489755853944509
+    ],
+    "holm_p_family": 1.0
+  },
+  {
+    "id": "primary_fold_1_year",
+    "family": "primary",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "weighted": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_firm_years": 1995,
+    "firms": 739,
+    "test_reviews": 22949,
+    "test_target_reports": 1016,
+    "b": 0.030149730076583125,
+    "se": 0.02103294667734455,
+    "p": 0.15188676645205207,
+    "ci95": [
+      -0.011099354049213753,
+      0.07139881420238
+    ],
+    "effect_10pp_predictor_in_target_percentage_points": 0.30149730076583126,
+    "effect_ci95_percentage_points": [
+      -0.11099354049213753,
+      0.7139881420238001
+    ],
+    "holm_p_family": 0.4556602993561562
+  },
+  {
+    "id": "primary_fold_1_firm",
+    "family": "primary",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "weighted": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_firm_years": 1995,
+    "firms": 739,
+    "test_reviews": 22949,
+    "test_target_reports": 1016,
+    "b": -0.01484152685568217,
+    "se": 0.03757607197520725,
+    "p": 0.6929309914757324,
+    "ci95": [
+      -0.08856134760138651,
+      0.058878293890022165
+    ],
+    "effect_10pp_predictor_in_target_percentage_points": -0.1484152685568217,
+    "effect_ci95_percentage_points": [
+      -0.8856134760138651,
+      0.5887829389002217
+    ],
+    "holm_p_family": 0.9830778229300225
+  },
+  {
+    "id": "process_only_fold_1",
+    "family": "sensitivity",
+    "predictor": "process_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "weighted": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_firm_years": 1995,
+    "firms": 739,
+    "test_reviews": 22949,
+    "test_target_reports": 1016,
+    "b": -0.02387813016802795,
+    "se": 0.03785526959089998,
+    "p": 0.5283045511482951,
+    "ci95": [
+      -0.09814570370159889,
+      0.05038944336554299
+    ],
+    "effect_10pp_predictor_in_target_percentage_points": -0.2387813016802795,
+    "effect_ci95_percentage_points": [
+      -0.981457037015989,
+      0.5038944336554299
+    ],
+    "holm_p_family": 1.0
+  },
+  {
+    "id": "broader_target_fold_1",
+    "family": "sensitivity",
+    "predictor": "ghost_share",
+    "target": "target_broad",
+    "firm_effects": true,
+    "year_effects": true,
+    "weighted": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_firm_years": 1995,
+    "firms": 739,
+    "test_reviews": 22949,
+    "test_target_reports": 1797,
+    "b": 0.021371593510484187,
+    "se": 0.05020697877911912,
+    "p": 0.6704224742363556,
+    "ci95": [
+      -0.07712857644400528,
+      0.11987176346497366
+    ],
+    "effect_10pp_predictor_in_target_percentage_points": 0.21371593510484188,
+    "effect_ci95_percentage_points": [
+      -0.7712857644400528,
+      1.1987176346497366
+    ],
+    "holm_p_family": 1.0
+  },
+  {
+    "id": "unweighted_fold_1",
+    "family": "sensitivity",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "weighted": false,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_firm_years": 1995,
+    "firms": 739,
+    "test_reviews": 22949,
+    "test_target_reports": 1016,
+    "b": -0.030712609565763476,
+    "se": 0.040219654419695855,
+    "p": 0.4452380833075859,
+    "ci95": [
+      -0.10961882723083649,
+      0.04819360809930953
+    ],
+    "effect_10pp_predictor_in_target_percentage_points": -0.30712609565763477,
+    "effect_ci95_percentage_points": [
+      -1.096188272308365,
+      0.4819360809930953
+    ],
+    "holm_p_family": 1.0
+  },
+  {
+    "id": "next_year_year_effects",
+    "family": "sensitivity",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "weighted": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_firm_years": 4220,
+    "firms": 1005,
+    "test_reviews": 54648,
+    "test_target_reports": 2608,
+    "b": 0.06382913227502318,
+    "se": 0.01643496105031686,
+    "p": 0.00010444359418169181,
+    "ci95": [
+      0.03160791499757592,
+      0.09605034955247044
+    ],
+    "effect_10pp_predictor_in_target_percentage_points": 0.6382913227502318,
+    "effect_ci95_percentage_points": [
+      0.3160791499757592,
+      0.9605034955247044
+    ],
+    "holm_p_family": 0.0008355487534535345
+  },
+  {
+    "id": "next_year_firm_effects",
+    "family": "sensitivity",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "weighted": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_firm_years": 4220,
+    "firms": 1005,
+    "test_reviews": 54648,
+    "test_target_reports": 2608,
+    "b": -0.012988515273995428,
+    "se": 0.022960067585179277,
+    "p": 0.5716372983406295,
+    "ci95": [
+      -0.058006469568970806,
+      0.03202943902097995
+    ],
+    "effect_10pp_predictor_in_target_percentage_points": -0.12988515273995427,
+    "effect_ci95_percentage_points": [
+      -0.5800646956897081,
+      0.32029439020979944
+    ],
+    "holm_p_family": 1.0
+  }
+]

@@ -1,0 +1,104 @@
+{
+  "design": {
+    "status": "Exploratory design chosen after inconclusive operating-outcome tests, fixed before these fits.",
+    "question": "Do ghost reports from one set of applicants correspond to reports of unavailability from different applicants at the same firm in the same year?",
+    "source": "Original new_merged2.csv only; no new API labels or Loujaina data.",
+    "separation": "Normalize narrative text; assign identical narratives to the same deterministic SHA256 fold across all companies and years. Deduplicate within company, year, narrative and offer status. Exclude empty or very short narratives.",
+    "primary_target": "Held-out no-offer reviews with known_fake OR future_role OR no_hiring_intent. These are automated narrative features, not independently verified employer intent.",
+    "primary_predictor": "Share of original stored ghost flags in the other review fold, using all reported offer outcomes.",
+    "sample": "At least 10 training reviews and at least 5 held-out no-offer reviews in each firm-year. Both fold directions reported.",
+    "primary_models": [
+      "Year effects with training no-offer share, negative-experience share, log review count and mean narrative length controls.",
+      "Firm and year effects with the same controls."
+    ],
+    "weights": "Held-out no-offer review count; firm-clustered errors; two-sided 95% intervals; Holm correction over four primary fits.",
+    "sensitivity": [
+      "Process-only predictor excluding all four unavailability flags and internal hiring.",
+      "Broader target additionally includes not_real_or_delayed.",
+      "Unweighted firm-year fits.",
+      "Consecutive next-year reports using all prior-year reviews with no temporal overlap."
+    ],
+    "diagnostics": "Held-out AUROC, low/high predictor quartile target rates, target and sample counts. Quartiles use predictor only, never target labels.",
+    "limits": "Tests cross-applicant convergence within one review platform and one automated coding system. Does not establish classification precision, vacancy prevalence, employer intent, causal effects, or the Lourie posting interaction.",
+    "reporting": "Report every planned fit. Do not change models, thresholds or fold seed based on outcomes. Retain all earlier results."
+  },
+  "checks": {
+    "source_sha256": "9bb815ce0f6fc4cdad4c02e7b474ce410d013f3e5facc9d863fb393d8af7780a",
+    "original_rows": 218717,
+    "deduplicated_usable_reviews": 217755,
+    "excluded_empty_short_or_invalid": 193,
+    "duplicate_records_removed": 769,
+    "firms": 1196,
+    "strict_reports": 4023,
+    "broad_reports": 7140,
+    "review_text_overlap_between_folds": 0,
+    "temporal_repeated_company_narratives_removed": 50,
+    "planned_models": 12,
+    "completed_models": 12,
+    "failed_models": [],
+    "api_calls": 0,
+    "ground_truth": "Automated narrative features; not verified vacancy status.",
+    "analysis_status": "Exploratory cross-applicant convergence check; retains previous inconclusive economic tests."
+  },
+  "held_out_descriptives": [
+    {
+      "id": "fold_0",
+      "firm_years": 1995,
+      "firms": 745,
+      "no_offer_reviews": 22689,
+      "target_reports": 1002,
+      "held_out_auc": 0.5542948777595821,
+      "low_quartile": {
+        "training_share_cutoff": 0.058823529411764705,
+        "firm_years": 510,
+        "target_reports": 189,
+        "test_no_offer_reviews": 5292,
+        "target_rate": 0.03571428571428571
+      },
+      "high_quartile": {
+        "training_share_cutoff": 0.2,
+        "firm_years": 526,
+        "target_reports": 346,
+        "test_no_offer_reviews": 6180,
+        "target_rate": 0.05598705501618123
+      }
+    },
+    {
+      "id": "fold_1",
+      "firm_years": 1995,
+      "firms": 739,
+      "no_offer_reviews": 22949,
+      "target_reports": 1016,
+      "held_out_auc": 0.5508578424773227,
+      "low_quartile": {
+        "training_share_cutoff": 0.05714285714285714,
+        "firm_years": 500,
+        "target_reports": 192,
+        "test_no_offer_reviews": 5226,
+        "target_rate": 0.03673938002296211
+      },
+      "high_quartile": {
+        "training_share_cutoff": 0.19047619047619047,
+        "firm_years": 500,
+        "target_reports": 348,
+        "test_no_offer_reviews": 6176,
+        "target_rate": 0.056347150259067356
+      }
+    }
+  ],
+  "interpretation": "Limited cross-company convergence, modest ranking, no clear within-company evidence. Does not establish a powerful or independently validated classifier.",
+  "verification": {
+    "completed_models": 12,
+    "all_primary_adjusted_p_above_05": true,
+    "auc_independently_verified": true,
+    "same_year_effects": [
+      0.3939603899610364,
+      -0.2326166476165743,
+      0.30149730076583126,
+      -0.1484152685568217
+    ],
+    "temporal_implementation_correction": "Excluded 50 repeated company narratives across years before final temporal fit, to avoid narrative reuse. Same-year fits unchanged.",
+    "temporal_within_firm_significant": false,
+    "api_calls": 0
+  }
+}

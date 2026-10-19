@@ -96,5 +96,11 @@
     "human_validation": "200-review blinded sample prepared; human coding not completed.",
     "results": "original_interview_results.json",
     "methods": "original_interview_methods.json"
+  },
+  "exploratory_cross_review_check": {
+    "status": "Completed after inconclusive operating checks; retained those results.",
+    "results": "cross_review_results.json",
+    "methods": "cross_review_methods.json",
+    "finding": "Limited agreement across companies; no clear within-company evidence; not classification accuracy or Lourie replication."
   }
 }
