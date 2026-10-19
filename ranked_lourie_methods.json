@@ -1,0 +1,73 @@
+{
+  "design": {
+    "status": "Exploratory additional specification, fixed after previous interview-activity results and before these fits.",
+    "source": "Original saved interview panel and original financial data; original labels unchanged.",
+    "paper_basis": "Guti\u00e9rrez, Lourie, Nekrasov and Shevlin (2020), Table 3 and methods on manuscript pages 9\u201310: changes scaled by assets; two negative quantile groups, a zero group, two positive groups; ranks 0, .25, .5, .75, 1.",
+    "main_predictor": "Annual change in retained interview-review count divided by current assets, then assigned sign-based five-category rank. Negative and positive changes are split at their pooled median among eligible predictor observations; ties share a rank.",
+    "timing_difference": "Annual review counts for year t versus t-1 replace active-posting counts for the first three months of t+1 versus t. This is an adaptation, not a replication or an observed-posting test.",
+    "ghost_measure": "Previous-year raw ghost share is main, avoiding current shared reviews and the full-history smoothing prior. Current saved smoothed share is separately reported.",
+    "outcomes": [
+      "(employment[t+1]-employment[t])/assets[t]",
+      "(SG&A[t+1]-SG&A[t])/assets[t]",
+      "(revenue[t+1]-revenue[t])/assets[t]",
+      "(operating income after depreciation[t+1]-operating income after depreciation[t])/assets[t]"
+    ],
+    "main_sample": "Original unique USD firm-years with December year end, interior consecutive interview years, at least five reviews in both activity years, and consecutive annual financial records.",
+    "controls": "Core: asset-scaled current changes in earnings, sales, SG&A, employment and capex plus book-to-market. Full adds R&D and advertising changes with no zero imputation.",
+    "specifications": [
+      "Core controls, industry and year effects",
+      "Full benchmark controls, industry and year effects",
+      "Core controls on full-control sample",
+      "Core controls, firm and year effects",
+      "Current original smoothed ghost share",
+      "Rebuilt annual review counts and previous-year raw ghost share"
+    ],
+    "inference": "Same observations for baseline and augmented fit within each outcome/specification. Firm-clustered errors, two-sided 95% intervals, Holm adjustment across four outcomes per specification and coefficient family.",
+    "reporting": "All 48 fits reported. No selection based on significance. The earlier log-change adaptation and all other checks remain unchanged.",
+    "limits": "Capped interview-review counts are not advertisement counts or actual interview volume. No claim of independent classifier accuracy, causal ghost effects, or exact Lourie replication."
+  },
+  "ranks": {
+    "main": {
+      "negative_median": -0.0005403871874197862,
+      "positive_median": 0.0007270381043087645,
+      "ranking_sample_rows": 1368,
+      "rank_distribution": {
+        "0.0": 305,
+        "0.25": 304,
+        "0.5": 73,
+        "0.75": 343,
+        "1.0": 343
+      }
+    },
+    "rebuilt": {
+      "negative_median": -0.000551480725748635,
+      "positive_median": 0.0007413109150640298,
+      "ranking_sample_rows": 1368,
+      "rank_distribution": {
+        "0.0": 306,
+        "0.25": 305,
+        "0.5": 73,
+        "0.75": 342,
+        "1.0": 342
+      }
+    }
+  },
+  "verification": {
+    "all_48_models_completed": true,
+    "same_samples_baseline_and_augmented": true,
+    "rank_values_valid": true,
+    "independent_OLS_max_coefficient_difference": 6.841315708383533e-17,
+    "all_interaction_Holm_p_above_05": true,
+    "api_calls": 0
+  },
+  "public_data_access": {
+    "paper_doi": "10.1287/mnsc.2019.3450",
+    "appendix_url": "https://pubsonline.informs.org/doi/suppl/10.1287/mnsc.2019.3450/suppl_file/mnsc.2019.3450.sm1.pdf",
+    "section": "A.3, page 4",
+    "observed_public_material": "Online Appendix PDF with robustness tables and data-access instructions; no downloadable company posting-history file located.",
+    "appendix_instruction": "Researchers are directed to Eagle Alpha for access; the appendix states that provider permission is required for sharing.",
+    "posting_data_obtained": false,
+    "external_messages_sent": false
+  },
+  "finding": "Ranked interview counts do not reproduce a consistent positive growth signal; ghost interactions are inconclusive after correction. Exact posting-based test remains unestimated."
+}

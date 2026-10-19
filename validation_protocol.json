@@ -114,5 +114,13 @@
     "additional_tests": "cross_review_additional_results.json",
     "limitations": "Convergent evidence in automated review reports, not independent vacancy ground truth; adjusted associations remain inconclusive.",
     "lourie_role": "Supplementary economic benchmark; exact posting-based tests still require posting histories."
+  },
+  "ranked_interview_operating_check": {
+    "status": "COMPLETED exploratory Lourie-motivated adaptation; not exact posting replication.",
+    "fits": 48,
+    "results": "ranked_lourie_results.json",
+    "methods": "ranked_lourie_methods.json",
+    "finding": "Ranked interview counts do not reproduce a consistent positive growth signal; ghost interactions are inconclusive after correction. Exact posting-based test remains unestimated.",
+    "main_validation_unchanged": "Separate-review check remains the main validation section."
   }
 }
