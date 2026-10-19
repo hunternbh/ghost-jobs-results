@@ -1,0 +1,3795 @@
+{
+  "models": [
+    {
+      "spec": "reference",
+      "description": "Original delayed-rounds specification",
+      "kind": "baseline",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 749,
+      "firms": 150,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 689,
+      "p_value_df": 689,
+      "terms": {
+        "P": {
+          "b": 0.006216621289465648,
+          "se": 0.0029964739108529924,
+          "p": 0.03839008100444522,
+          "ci95": [
+            0.0003333054522914958,
+            0.012099937126639801
+          ]
+        }
+      },
+      "holm_p_followup": 0.9981421061155757,
+      "fdr_q_followup": 0.09727503421258672,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.38712235530356653
+    },
+    {
+      "spec": "reference",
+      "description": "Original delayed-rounds specification",
+      "kind": "interaction",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 749,
+      "firms": 150,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 687,
+      "p_value_df": 687,
+      "terms": {
+        "P": {
+          "b": 0.016271498452109213,
+          "se": 0.006311370636137915,
+          "p": 0.010140942694418953,
+          "ci95": [
+            0.003879607802612435,
+            0.028663389101605992
+          ]
+        },
+        "G": {
+          "b": 0.021693686380240072,
+          "se": 0.03560004507163324,
+          "p": 0.5424790684551823,
+          "ci95": [
+            -0.04820426306339894,
+            0.09159163582387908
+          ]
+        },
+        "PG": {
+          "b": -0.07410326285445279,
+          "se": 0.03653938463464232,
+          "p": 0.04294175187539768,
+          "ci95": [
+            -0.14584553325761598,
+            -0.0023609924512895952
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.14631315774479958,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.9980926856187334
+    },
+    {
+      "spec": "firm_year",
+      "description": "Company and year effects",
+      "kind": "baseline",
+      "effects": "firm_year",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 749,
+      "firms": 150,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 582,
+      "p_value_df": 582,
+      "terms": {
+        "P": {
+          "b": -0.001057951867374179,
+          "se": 0.0024653157825545147,
+          "p": 0.6679842061586189,
+          "ci95": [
+            -0.005899951379835014,
+            0.0037840476450866556
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.6679842061586189,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.9095143612757941
+    },
+    {
+      "spec": "firm_year",
+      "description": "Company and year effects",
+      "kind": "interaction",
+      "effects": "firm_year",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 749,
+      "firms": 150,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 580,
+      "p_value_df": 580,
+      "terms": {
+        "P": {
+          "b": 0.006923847163206663,
+          "se": 0.004659783308174886,
+          "p": 0.13785599644165164,
+          "ci95": [
+            -0.0022282585406886877,
+            0.016075952867102013
+          ]
+        },
+        "G": {
+          "b": 0.015383182318298452,
+          "se": 0.037693511605943184,
+          "p": 0.6833419094145169,
+          "ci95": [
+            -0.05864923072618619,
+            0.0894155953627831
+          ]
+        },
+        "PG": {
+          "b": -0.05913768767197794,
+          "se": 0.03674638730168339,
+          "p": 0.10808460556246988,
+          "ci95": [
+            -0.13130988937742738,
+            0.013034514033471487
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.19341455732231452,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.9980926856187334
+    },
+    {
+      "spec": "industry_year",
+      "description": "Industry-by-year effects",
+      "kind": "baseline",
+      "effects": "industry_by_year",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 749,
+      "firms": 150,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 435,
+      "p_value_df": 435,
+      "terms": {
+        "P": {
+          "b": 0.004879145271242241,
+          "se": 0.0036051002242567342,
+          "p": 0.17663049571728484,
+          "ci95": [
+            -0.002206435618636259,
+            0.01196472616112074
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.24021747417550737,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.6448131008210753
+    },
+    {
+      "spec": "industry_year",
+      "description": "Industry-by-year effects",
+      "kind": "interaction",
+      "effects": "industry_by_year",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 749,
+      "firms": 150,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 433,
+      "p_value_df": 433,
+      "terms": {
+        "P": {
+          "b": 0.012651493059337176,
+          "se": 0.007528582103799272,
+          "p": 0.09358874833604411,
+          "ci95": [
+            -0.0021456170336877686,
+            0.027448603152362118
+          ]
+        },
+        "G": {
+          "b": -0.0031438992086477227,
+          "se": 0.04971125767380126,
+          "p": 0.9496020258363363,
+          "ci95": [
+            -0.10084927619998837,
+            0.09456147778269292
+          ]
+        },
+        "PG": {
+          "b": -0.054995629037439236,
+          "se": 0.04876497658553929,
+          "p": 0.2600420065315931,
+          "ci95": [
+            -0.15084113052381679,
+            0.04084987244893831
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.3045848311236095,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.9980926856187334
+    },
+    {
+      "spec": "two_way_errors",
+      "description": "Company and year clustered errors",
+      "kind": "baseline",
+      "effects": "industry_year_additive",
+      "covariance": "two_way",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 749,
+      "firms": 150,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 689,
+      "p_value_df": 10,
+      "terms": {
+        "P": {
+          "b": 0.006216621289465648,
+          "se": 0.002813207541384203,
+          "p": 0.05157829100855382,
+          "ci95": [
+            -5.159573219327973e-05,
+            0.012484838311124576
+          ]
+        }
+      },
+      "holm_p_followup": 0.9981421061155757,
+      "fdr_q_followup": 0.10268835544084279,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.4064256592040143
+    },
+    {
+      "spec": "two_way_errors",
+      "description": "Company and year clustered errors",
+      "kind": "interaction",
+      "effects": "industry_year_additive",
+      "covariance": "two_way",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 749,
+      "firms": 150,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 687,
+      "p_value_df": 10,
+      "terms": {
+        "P": {
+          "b": 0.016271498452109213,
+          "se": 0.004206001734716042,
+          "p": 0.003116068146033555,
+          "ci95": [
+            0.0068999425754667325,
+            0.025643054328751694
+          ]
+        },
+        "G": {
+          "b": 0.021693686380240072,
+          "se": 0.024868882947267863,
+          "p": 0.4034912002777671,
+          "ci95": [
+            -0.03371763792006638,
+            0.07710501068054652
+          ]
+        },
+        "PG": {
+          "b": -0.07410326285445279,
+          "se": 0.02557540325037017,
+          "p": 0.01590311232928447,
+          "ci95": [
+            -0.1310888124918186,
+            -0.017117713217086973
+          ]
+        }
+      },
+      "holm_p_followup": 0.5407058191956721,
+      "fdr_q_followup": 0.14631315774479958,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.9980926856187334
+    },
+    {
+      "spec": "full_controls",
+      "description": "Add R&D and advertising changes",
+      "kind": "baseline",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm",
+        "std_c_xrd",
+        "std_c_xad"
+      ],
+      "n": 308,
+      "firms": 63,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 259,
+      "p_value_df": 259,
+      "terms": {
+        "P": {
+          "b": 0.010567804820127634,
+          "se": 0.005839376336648946,
+          "p": 0.07149385799561882,
+          "ci95": [
+            -0.0009308939326157749,
+            0.022066503572871043
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.12153955859255199,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.4598760337404681
+    },
+    {
+      "spec": "full_controls",
+      "description": "Add R&D and advertising changes",
+      "kind": "interaction",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm",
+        "std_c_xrd",
+        "std_c_xad"
+      ],
+      "n": 308,
+      "firms": 63,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 257,
+      "p_value_df": 257,
+      "terms": {
+        "P": {
+          "b": 0.020887760768771108,
+          "se": 0.012143979465336924,
+          "p": 0.08663451178296287,
+          "ci95": [
+            -0.003026618947862176,
+            0.04480214048540439
+          ]
+        },
+        "G": {
+          "b": 0.026595083736641628,
+          "se": 0.06976060455744922,
+          "p": 0.7033449207679531,
+          "ci95": [
+            -0.11078011451781736,
+            0.1639702819911006
+          ]
+        },
+        "PG": {
+          "b": -0.07792610638965981,
+          "se": 0.07030887060798241,
+          "p": 0.2687513215796554,
+          "ci95": [
+            -0.21638097070874074,
+            0.0605287579294211
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.3045848311236095,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.9980926856187334
+    },
+    {
+      "spec": "core_full_sample",
+      "description": "Original controls on full-control sample",
+      "kind": "baseline",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 308,
+      "firms": 63,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 261,
+      "p_value_df": 261,
+      "terms": {
+        "P": {
+          "b": 0.010272994558603548,
+          "se": 0.005630864653383068,
+          "p": 0.06923365332477194,
+          "ci95": [
+            -0.0008147113221688308,
+            0.021360700439375928
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.12153955859255199,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.4598760337404681
+    },
+    {
+      "spec": "core_full_sample",
+      "description": "Original controls on full-control sample",
+      "kind": "interaction",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 308,
+      "firms": 63,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 259,
+      "p_value_df": 259,
+      "terms": {
+        "P": {
+          "b": 0.02125909193840095,
+          "se": 0.012253641834419546,
+          "p": 0.08394451663019604,
+          "ci95": [
+            -0.0028703575018904047,
+            0.045388541378692304
+          ]
+        },
+        "G": {
+          "b": 0.00616643836978642,
+          "se": 0.07402555307669291,
+          "p": 0.9336761663757026,
+          "ci95": [
+            -0.139602131039218,
+            0.15193500777879085
+          ]
+        },
+        "PG": {
+          "b": -0.08227063188654843,
+          "se": 0.07027041301780677,
+          "p": 0.24276649126989847,
+          "ci95": [
+            -0.2206447088322926,
+            0.05610344505919573
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.3045848311236095,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.9980926856187334
+    },
+    {
+      "spec": "size_leverage",
+      "description": "Add company size and leverage",
+      "kind": "baseline",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm",
+        "std_log_assets",
+        "std_leverage"
+      ],
+      "n": 747,
+      "firms": 150,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 685,
+      "p_value_df": 685,
+      "terms": {
+        "P": {
+          "b": 0.005503337058068451,
+          "se": 0.0028555709243614762,
+          "p": 0.05436442346868148,
+          "ci95": [
+            -0.00010338563527950706,
+            0.011110059751416409
+          ]
+        }
+      },
+      "holm_p_followup": 0.9981421061155757,
+      "fdr_q_followup": 0.10268835544084279,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.4147804160943846
+    },
+    {
+      "spec": "size_leverage",
+      "description": "Add company size and leverage",
+      "kind": "interaction",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm",
+        "std_log_assets",
+        "std_leverage"
+      ],
+      "n": 747,
+      "firms": 150,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 683,
+      "p_value_df": 683,
+      "terms": {
+        "P": {
+          "b": 0.014868232810350875,
+          "se": 0.0058863157146959765,
+          "p": 0.01176528157435794,
+          "ci95": [
+            0.003310785341865281,
+            0.026425680278836468
+          ]
+        },
+        "G": {
+          "b": 0.010239190320239872,
+          "se": 0.03702028211011953,
+          "p": 0.7821837962273952,
+          "ci95": [
+            -0.06244803654528719,
+            0.08292641718576693
+          ]
+        },
+        "PG": {
+          "b": -0.06890584710723917,
+          "se": 0.034784365616944195,
+          "p": 0.047998360246891636,
+          "ci95": [
+            -0.13720297859455236,
+            -0.0006087156199259813
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.14631315774479958,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.9980926856187334
+    },
+    {
+      "spec": "review_volume",
+      "description": "Control for review-count growth",
+      "kind": "baseline",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm",
+        "C_volume"
+      ],
+      "n": 749,
+      "firms": 150,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 688,
+      "p_value_df": 688,
+      "terms": {
+        "P": {
+          "b": 0.008427492680817626,
+          "se": 0.003958702910641446,
+          "p": 0.033621095204413004,
+          "ci95": [
+            0.0006549040346606185,
+            0.016200081326974633
+          ]
+        }
+      },
+      "holm_p_followup": 0.9750117609279771,
+      "fdr_q_followup": 0.09727503421258672,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.38712235530356653
+    },
+    {
+      "spec": "review_volume",
+      "description": "Control for review-count growth",
+      "kind": "interaction",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm",
+        "C_volume"
+      ],
+      "n": 749,
+      "firms": 150,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 686,
+      "p_value_df": 686,
+      "terms": {
+        "P": {
+          "b": 0.019093787062899572,
+          "se": 0.007194280243927335,
+          "p": 0.008138139424726076,
+          "ci95": [
+            0.0049683349899503244,
+            0.033219239135848816
+          ]
+        },
+        "G": {
+          "b": 0.02310242695166792,
+          "se": 0.03554341690054022,
+          "p": 0.5159242452984596,
+          "ci95": [
+            -0.04668451696968237,
+            0.09288937087301821
+          ]
+        },
+        "PG": {
+          "b": -0.07573852738099057,
+          "se": 0.03678924281048969,
+          "p": 0.03989869983693512,
+          "ci95": [
+            -0.14797156091597302,
+            -0.003505493846008137
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.14631315774479958,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.9980926856187334
+    },
+    {
+      "spec": "review_volume_interaction",
+      "description": "Control for review-count growth and its ghost interaction",
+      "kind": "baseline",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm",
+        "C_volume"
+      ],
+      "n": 749,
+      "firms": 150,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 688,
+      "p_value_df": 688,
+      "terms": {
+        "P": {
+          "b": 0.008427492680817626,
+          "se": 0.003958702910641446,
+          "p": 0.033621095204413004,
+          "ci95": [
+            0.0006549040346606185,
+            0.016200081326974633
+          ]
+        }
+      },
+      "holm_p_followup": 0.9750117609279771,
+      "fdr_q_followup": 0.09727503421258672,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.38712235530356653
+    },
+    {
+      "spec": "review_volume_interaction",
+      "description": "Control for review-count growth and its ghost interaction",
+      "kind": "interaction",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm",
+        "C_volume",
+        "CG_volume"
+      ],
+      "n": 749,
+      "firms": 150,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 685,
+      "p_value_df": 685,
+      "terms": {
+        "P": {
+          "b": 0.024744848405385836,
+          "se": 0.010547347411815658,
+          "p": 0.019256546130289563,
+          "ci95": [
+            0.0040358365633231495,
+            0.04545386024744852
+          ]
+        },
+        "G": {
+          "b": 0.018618983067101844,
+          "se": 0.03698383461530674,
+          "p": 0.6148198170467106,
+          "ci95": [
+            -0.0539963048445562,
+            0.09123427097875988
+          ]
+        },
+        "PG": {
+          "b": -0.11773309018312234,
+          "se": 0.06631910932979196,
+          "p": 0.0763003541153969,
+          "ci95": [
+            -0.24794622973773278,
+            0.012480049371488111
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.16524357791876085,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.9980926856187334
+    },
+    {
+      "spec": "lag_saved_ghost",
+      "description": "Use previous-year saved ghost measure",
+      "kind": "baseline",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 749,
+      "firms": 150,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 689,
+      "p_value_df": 689,
+      "terms": {
+        "P": {
+          "b": 0.006216621289465648,
+          "se": 0.0029964739108529924,
+          "p": 0.03839008100444522,
+          "ci95": [
+            0.0003333054522914958,
+            0.012099937126639801
+          ]
+        }
+      },
+      "holm_p_followup": 0.9981421061155757,
+      "fdr_q_followup": 0.09727503421258672,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.38712235530356653
+    },
+    {
+      "spec": "lag_saved_ghost",
+      "description": "Use previous-year saved ghost measure",
+      "kind": "interaction",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 749,
+      "firms": 150,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 687,
+      "p_value_df": 687,
+      "terms": {
+        "P": {
+          "b": 0.016673222469785396,
+          "se": 0.00660765920440131,
+          "p": 0.011849833545849238,
+          "ci95": [
+            0.0036995920128380638,
+            0.029646852926732727
+          ]
+        },
+        "G": {
+          "b": 0.03048111697809571,
+          "se": 0.04085000297880932,
+          "p": 0.4558189356948695,
+          "ci95": [
+            -0.04972472088643264,
+            0.11068695484262406
+          ]
+        },
+        "PG": {
+          "b": -0.0786994486891778,
+          "se": 0.04022157875126685,
+          "p": 0.05079364114068871,
+          "ci95": [
+            -0.1576714239336579,
+            0.0002725265553022854
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.14631315774479958,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.9980926856187334
+    },
+    {
+      "spec": "current_raw_ghost",
+      "description": "Use current-year original raw ghost share",
+      "kind": "baseline",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 749,
+      "firms": 150,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 689,
+      "p_value_df": 689,
+      "terms": {
+        "P": {
+          "b": 0.006216621289465648,
+          "se": 0.0029964739108529924,
+          "p": 0.03839008100444522,
+          "ci95": [
+            0.0003333054522914958,
+            0.012099937126639801
+          ]
+        }
+      },
+      "holm_p_followup": 0.9981421061155757,
+      "fdr_q_followup": 0.09727503421258672,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.38712235530356653
+    },
+    {
+      "spec": "current_raw_ghost",
+      "description": "Use current-year original raw ghost share",
+      "kind": "interaction",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 749,
+      "firms": 150,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 687,
+      "p_value_df": 687,
+      "terms": {
+        "P": {
+          "b": 0.0134276870844972,
+          "se": 0.005328729916067307,
+          "p": 0.01196554915333382,
+          "ci95": [
+            0.002965135884839645,
+            0.023890238284154756
+          ]
+        },
+        "G": {
+          "b": -0.0008022685093741697,
+          "se": 0.023520443500248896,
+          "p": 0.9727998104203188,
+          "ci95": [
+            -0.04698284966774913,
+            0.04537831264900079
+          ]
+        },
+        "PG": {
+          "b": -0.05186995047666367,
+          "se": 0.027090099135488245,
+          "p": 0.05594326619654101,
+          "ci95": [
+            -0.10505927582682553,
+            0.0013193748734981817
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.14631315774479958,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.9980926856187334
+    },
+    {
+      "spec": "lag_raw_ghost",
+      "description": "Use previous-year original raw ghost share",
+      "kind": "baseline",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 749,
+      "firms": 150,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 689,
+      "p_value_df": 689,
+      "terms": {
+        "P": {
+          "b": 0.006216621289465648,
+          "se": 0.0029964739108529924,
+          "p": 0.03839008100444522,
+          "ci95": [
+            0.0003333054522914958,
+            0.012099937126639801
+          ]
+        }
+      },
+      "holm_p_followup": 0.9981421061155757,
+      "fdr_q_followup": 0.09727503421258672,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.38712235530356653
+    },
+    {
+      "spec": "lag_raw_ghost",
+      "description": "Use previous-year original raw ghost share",
+      "kind": "interaction",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 749,
+      "firms": 150,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 687,
+      "p_value_df": 687,
+      "terms": {
+        "P": {
+          "b": 0.012759008665032044,
+          "se": 0.004797707585519109,
+          "p": 0.008010517994313428,
+          "ci95": [
+            0.003339078954741004,
+            0.022178938375323084
+          ]
+        },
+        "G": {
+          "b": 0.00860679720574959,
+          "se": 0.02913926254389595,
+          "p": 0.7678022432590444,
+          "ci95": [
+            -0.048605902834933844,
+            0.06581949724643302
+          ]
+        },
+        "PG": {
+          "b": -0.05000903340251009,
+          "se": 0.028925709355810642,
+          "p": 0.08428012062717312,
+          "ci95": [
+            -0.1068024381890926,
+            0.006784371384072417
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.16856024125434624,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.9980926856187334
+    },
+    {
+      "spec": "activity_year_controls",
+      "description": "Use activity-year financial controls and saved ghost measure",
+      "kind": "baseline",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "prior_c_oiadp",
+        "prior_c_sale",
+        "prior_c_xsga",
+        "prior_c_emp",
+        "prior_c_capx",
+        "prior_btm"
+      ],
+      "n": 725,
+      "firms": 144,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 666,
+      "p_value_df": 666,
+      "terms": {
+        "P": {
+          "b": 0.0021641532069003318,
+          "se": 0.0025858174575228896,
+          "p": 0.4029310330198317,
+          "ci95": [
+            -0.0029131829584170973,
+            0.00724148937221776
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.44192435879594444,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.797492056259003
+    },
+    {
+      "spec": "activity_year_controls",
+      "description": "Use activity-year financial controls and saved ghost measure",
+      "kind": "interaction",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "prior_c_oiadp",
+        "prior_c_sale",
+        "prior_c_xsga",
+        "prior_c_emp",
+        "prior_c_capx",
+        "prior_btm"
+      ],
+      "n": 725,
+      "firms": 144,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 664,
+      "p_value_df": 664,
+      "terms": {
+        "P": {
+          "b": 0.009023383342929384,
+          "se": 0.006317714794700744,
+          "p": 0.1536852155188495,
+          "ci95": [
+            -0.00338172190352465,
+            0.02142848858938342
+          ]
+        },
+        "G": {
+          "b": 0.02619161076251722,
+          "se": 0.04411027495900356,
+          "p": 0.5528643428879678,
+          "ci95": [
+            -0.06042081494803346,
+            0.1128040364730679
+          ]
+        },
+        "PG": {
+          "b": -0.0519610036244767,
+          "se": 0.038670240660895513,
+          "p": 0.1795060618803481,
+          "ci95": [
+            -0.1278916875652097,
+            0.023969680316256306
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.26535678712747107,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.9980926856187334
+    },
+    {
+      "spec": "higher_coverage",
+      "description": "At least ten reviews in all three review years",
+      "kind": "baseline",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 452,
+      "firms": 126,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 396,
+      "p_value_df": 396,
+      "terms": {
+        "P": {
+          "b": 0.004142158470391928,
+          "se": 0.0043309372222290095,
+          "p": 0.3394478403740131,
+          "ci95": [
+            -0.00437234547751151,
+            0.012656662418295366
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.39797333009367053,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.7589692486796648
+    },
+    {
+      "spec": "higher_coverage",
+      "description": "At least ten reviews in all three review years",
+      "kind": "interaction",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 452,
+      "firms": 126,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 394,
+      "p_value_df": 394,
+      "terms": {
+        "P": {
+          "b": 0.01891906018429961,
+          "se": 0.009176133149911612,
+          "p": 0.03988516106801981,
+          "ci95": [
+            0.000878753035569918,
+            0.036959367333029305
+          ]
+        },
+        "G": {
+          "b": 0.040394840524413084,
+          "se": 0.04570992126886624,
+          "p": 0.37738548027961866,
+          "ci95": [
+            -0.04947101102358263,
+            0.1302606920724088
+          ]
+        },
+        "PG": {
+          "b": -0.10458951793037949,
+          "se": 0.05385336373442491,
+          "p": 0.052835299692753045,
+          "ci95": [
+            -0.21046540343566386,
+            0.0012863675749048842
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.14631315774479958,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.9980926856187334
+    },
+    {
+      "spec": "lower_collection",
+      "description": "Fewer than 250 collected company reviews",
+      "kind": "baseline",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 601,
+      "firms": 119,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 546,
+      "p_value_df": 546,
+      "terms": {
+        "P": {
+          "b": 0.008048792623227384,
+          "se": 0.0032898780149417687,
+          "p": 0.0147381254499586,
+          "ci95": [
+            0.0015864250759859404,
+            0.014511160170468827
+          ]
+        }
+      },
+      "holm_p_followup": 0.5010962652985924,
+      "fdr_q_followup": 0.09727503421258672,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.3427802725619403
+    },
+    {
+      "spec": "lower_collection",
+      "description": "Fewer than 250 collected company reviews",
+      "kind": "interaction",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 601,
+      "firms": 119,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 544,
+      "p_value_df": 544,
+      "terms": {
+        "P": {
+          "b": 0.016334834033527392,
+          "se": 0.008204660523376393,
+          "p": 0.04698931855888621,
+          "ci95": [
+            0.000218137695988007,
+            0.03245153037106678
+          ]
+        },
+        "G": {
+          "b": 0.013771404097711784,
+          "se": 0.041640523569910964,
+          "p": 0.7409824234379618,
+          "ci95": [
+            -0.06802450589762722,
+            0.09556731409305079
+          ]
+        },
+        "PG": {
+          "b": -0.06270829675741386,
+          "se": 0.0482619520605736,
+          "p": 0.194380409257388,
+          "ci95": [
+            -0.15751090605502038,
+            0.03209431254019264
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.2753722464479663,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.9980926856187334
+    },
+    {
+      "spec": "nonfinancial_nonutility",
+      "description": "Exclude finance and utilities",
+      "kind": "baseline",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 653,
+      "firms": 128,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 600,
+      "p_value_df": 600,
+      "terms": {
+        "P": {
+          "b": 0.007434567927551175,
+          "se": 0.003309509783380425,
+          "p": 0.025039654327255457,
+          "ci95": [
+            0.0009349368675692759,
+            0.013934198987533074
+          ]
+        }
+      },
+      "holm_p_followup": 0.82630859279943,
+      "fdr_q_followup": 0.09727503421258672,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.3753854023796638
+    },
+    {
+      "spec": "nonfinancial_nonutility",
+      "description": "Exclude finance and utilities",
+      "kind": "interaction",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 653,
+      "firms": 128,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 598,
+      "p_value_df": 598,
+      "terms": {
+        "P": {
+          "b": 0.018807994631055532,
+          "se": 0.006937185584702262,
+          "p": 0.006896933551196115,
+          "ci95": [
+            0.005183786018228852,
+            0.03243220324388221
+          ]
+        },
+        "G": {
+          "b": 0.022876861619515354,
+          "se": 0.038654337459972,
+          "p": 0.5541869776575199,
+          "ci95": [
+            -0.05303789529668761,
+            0.09879161853571831
+          ]
+        },
+        "PG": {
+          "b": -0.08299047267435558,
+          "se": 0.03869686071784029,
+          "p": 0.03238469454507971,
+          "ci95": [
+            -0.15898874267075813,
+            -0.006992202677953044
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.14631315774479958,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.9980926856187334
+    },
+    {
+      "spec": "stable_companies",
+      "description": "At least five eligible observed years",
+      "kind": "baseline",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 712,
+      "firms": 126,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 656,
+      "p_value_df": 656,
+      "terms": {
+        "P": {
+          "b": 0.006860264352398749,
+          "se": 0.0030612339271639385,
+          "p": 0.025359001544514332,
+          "ci95": [
+            0.0008492657614698872,
+            0.01287126294332761
+          ]
+        }
+      },
+      "holm_p_followup": 0.82630859279943,
+      "fdr_q_followup": 0.09727503421258672,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.3753854023796638
+    },
+    {
+      "spec": "stable_companies",
+      "description": "At least five eligible observed years",
+      "kind": "interaction",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 712,
+      "firms": 126,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 654,
+      "p_value_df": 654,
+      "terms": {
+        "P": {
+          "b": 0.015504921996071465,
+          "se": 0.006261093422997935,
+          "p": 0.013523676067395612,
+          "ci95": [
+            0.003210651981713412,
+            0.02779919201042952
+          ]
+        },
+        "G": {
+          "b": 0.0171757942714,
+          "se": 0.037079996663633374,
+          "p": 0.643368549863006,
+          "ci95": [
+            -0.055634410003738276,
+            0.08998599854653827
+          ]
+        },
+        "PG": {
+          "b": -0.06421902996996823,
+          "se": 0.03272004457465263,
+          "p": 0.050106690463064846,
+          "ci95": [
+            -0.12846804139743168,
+            2.998145749523451e-05
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.14631315774479958,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.9980926856187334
+    },
+    {
+      "spec": "no_pandemic_window",
+      "description": "Entire measurement/outcome window excludes 2020\u20132021",
+      "kind": "baseline",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 269,
+      "firms": 95,
+      "years": [
+        2012,
+        2017
+      ],
+      "df_resid": 221,
+      "p_value_df": 221,
+      "terms": {
+        "P": {
+          "b": 0.008050887504988793,
+          "se": 0.0038142051507053837,
+          "p": 0.03591662465653612,
+          "ci95": [
+            0.0005340187873029093,
+            0.015567756222674678
+          ]
+        }
+      },
+      "holm_p_followup": 0.9750117609279771,
+      "fdr_q_followup": 0.09727503421258672,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.38712235530356653
+    },
+    {
+      "spec": "no_pandemic_window",
+      "description": "Entire measurement/outcome window excludes 2020\u20132021",
+      "kind": "interaction",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 269,
+      "firms": 95,
+      "years": [
+        2012,
+        2017
+      ],
+      "df_resid": 219,
+      "p_value_df": 219,
+      "terms": {
+        "P": {
+          "b": 0.010149433924167004,
+          "se": 0.007795075530801101,
+          "p": 0.194273390265959,
+          "ci95": [
+            -0.005213532523125813,
+            0.025512400371459822
+          ]
+        },
+        "G": {
+          "b": 0.05723874867026943,
+          "se": 0.0682110814195864,
+          "p": 0.40230495549781303,
+          "ci95": [
+            -0.07719542724527415,
+            0.191672924585813
+          ]
+        },
+        "PG": {
+          "b": -0.018300955678807213,
+          "se": 0.056314033242017426,
+          "p": 0.7455061599988192,
+          "ci95": [
+            -0.12928777034023417,
+            0.09268585898261975
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.7455061599988192,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.9980926856187334
+    },
+    {
+      "spec": "even_years",
+      "description": "Nonoverlapping outcome windows: even predictor years",
+      "kind": "baseline",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 401,
+      "firms": 147,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 347,
+      "p_value_df": 347,
+      "terms": {
+        "P": {
+          "b": 0.002261419338181679,
+          "se": 0.003848884529493063,
+          "p": 0.5572152519974106,
+          "ci95": [
+            -0.005308659140209631,
+            0.009831497816572988
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.5741005626639988,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.8678417478303568
+    },
+    {
+      "spec": "even_years",
+      "description": "Nonoverlapping outcome windows: even predictor years",
+      "kind": "interaction",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 401,
+      "firms": 147,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 345,
+      "p_value_df": 345,
+      "terms": {
+        "P": {
+          "b": 0.011947521540177364,
+          "se": 0.006265487549972034,
+          "p": 0.057366782947238786,
+          "ci95": [
+            -0.00037583979340692804,
+            0.024270882873761654
+          ]
+        },
+        "G": {
+          "b": -0.015569179457315618,
+          "se": 0.05260481596289666,
+          "p": 0.7674349466481748,
+          "ci95": [
+            -0.11903569340807303,
+            0.0878973344934418
+          ]
+        },
+        "PG": {
+          "b": -0.0703722157027098,
+          "se": 0.04190446627156428,
+          "p": 0.09398942137855804,
+          "ci95": [
+            -0.1527925980331778,
+            0.012048166627758206
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.17753557371505407,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.9980926856187334
+    },
+    {
+      "spec": "odd_years",
+      "description": "Nonoverlapping outcome windows: odd predictor years",
+      "kind": "baseline",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 348,
+      "firms": 138,
+      "years": [
+        2013,
+        2021
+      ],
+      "df_resid": 295,
+      "p_value_df": 295,
+      "terms": {
+        "P": {
+          "b": 0.01195275337190108,
+          "se": 0.005342299765751271,
+          "p": 0.026008166424489554,
+          "ci95": [
+            0.0014389038117321503,
+            0.022466602932070007
+          ]
+        }
+      },
+      "holm_p_followup": 0.82630859279943,
+      "fdr_q_followup": 0.09727503421258672,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.3753854023796638
+    },
+    {
+      "spec": "odd_years",
+      "description": "Nonoverlapping outcome windows: odd predictor years",
+      "kind": "interaction",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 348,
+      "firms": 138,
+      "years": [
+        2013,
+        2021
+      ],
+      "df_resid": 293,
+      "p_value_df": 293,
+      "terms": {
+        "P": {
+          "b": 0.022449917079575665,
+          "se": 0.012110977210357044,
+          "p": 0.06478946315970832,
+          "ci95": [
+            -0.0013856178737310099,
+            0.04628545203288234
+          ]
+        },
+        "G": {
+          "b": 0.05775913843114422,
+          "se": 0.05931772914174628,
+          "p": 0.330996436881964,
+          "ci95": [
+            -0.05898369592079898,
+            0.17450197278308743
+          ]
+        },
+        "PG": {
+          "b": -0.08037845331825236,
+          "se": 0.07113144478364782,
+          "p": 0.259400890303806,
+          "ci95": [
+            -0.22037178407689043,
+            0.05961487744038571
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.3045848311236095,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.9980926856187334
+    },
+    {
+      "spec": "equal_company_weights",
+      "description": "Give each company equal total weight",
+      "kind": "baseline",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": true,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 749,
+      "firms": 150,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 689,
+      "p_value_df": 689,
+      "terms": {
+        "P": {
+          "b": 0.007327733588216101,
+          "se": 0.0037457304602667206,
+          "p": 0.05083466963465946,
+          "ci95": [
+            -2.6682300023540828e-05,
+            0.014682149476455743
+          ]
+        }
+      },
+      "holm_p_followup": 0.9981421061155757,
+      "fdr_q_followup": 0.10268835544084279,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.4064256592040143
+    },
+    {
+      "spec": "equal_company_weights",
+      "description": "Give each company equal total weight",
+      "kind": "interaction",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": true,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 749,
+      "firms": 150,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 687,
+      "p_value_df": 687,
+      "terms": {
+        "P": {
+          "b": 0.020207611005190283,
+          "se": 0.008266270455459364,
+          "p": 0.014752108879812405,
+          "ci95": [
+            0.003977424969736545,
+            0.036437797040644024
+          ]
+        },
+        "G": {
+          "b": 0.02573270708655362,
+          "se": 0.04359739744835056,
+          "p": 0.5552272434355303,
+          "ci95": [
+            -0.059867428435388254,
+            0.11133284260849549
+          ]
+        },
+        "PG": {
+          "b": -0.093051025200035,
+          "se": 0.05905084387716347,
+          "p": 0.11553731088427228,
+          "ci95": [
+            -0.20899281380240634,
+            0.02289076340233634
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.19641342850326288,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.9980926856187334
+    },
+    {
+      "spec": "raw_asset_proxy",
+      "description": "Unranked asset-scaled round-count change",
+      "kind": "baseline",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 749,
+      "firms": 150,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 689,
+      "p_value_df": 689,
+      "terms": {
+        "P": {
+          "b": 0.0038535213361998834,
+          "se": 0.005418749385885933,
+          "p": 0.47723451064348116,
+          "ci95": [
+            -0.006785721663444732,
+            0.0144927643358445
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.5070616675586987,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.833330838274146
+    },
+    {
+      "spec": "raw_asset_proxy",
+      "description": "Unranked asset-scaled round-count change",
+      "kind": "interaction",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 749,
+      "firms": 150,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 687,
+      "p_value_df": 687,
+      "terms": {
+        "P": {
+          "b": 0.01547549507371449,
+          "se": 0.007807784091907208,
+          "p": 0.047870613706937806,
+          "ci95": [
+            0.0001455117373214427,
+            0.030805478410107535
+          ]
+        },
+        "G": {
+          "b": 0.03672796924712969,
+          "se": 0.03805089758068996,
+          "p": 0.3347679341903147,
+          "ci95": [
+            -0.03798204053034203,
+            0.11143797902460141
+          ]
+        },
+        "PG": {
+          "b": -0.08897816817696938,
+          "se": 0.04561120566336701,
+          "p": 0.05148748561342147,
+          "ci95": [
+            -0.17853226118742482,
+            0.0005759248334860495
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.14631315774479958,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.9980926856187334
+    },
+    {
+      "spec": "log_total_proxy",
+      "description": "Change in log total reported rounds",
+      "kind": "baseline",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 749,
+      "firms": 150,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 689,
+      "p_value_df": 689,
+      "terms": {
+        "P": {
+          "b": 0.0039008136537765368,
+          "se": 0.0027845459131809205,
+          "p": 0.161700284988239,
+          "ci95": [
+            -0.0015663999972485047,
+            0.009368027304801577
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.22907540373333857,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.625125498533621
+    },
+    {
+      "spec": "log_total_proxy",
+      "description": "Change in log total reported rounds",
+      "kind": "interaction",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 749,
+      "firms": 150,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 687,
+      "p_value_df": 687,
+      "terms": {
+        "P": {
+          "b": 0.010039845244438178,
+          "se": 0.004952568858630957,
+          "p": 0.043027638470253496,
+          "ci95": [
+            0.0003158573393620221,
+            0.019763833149514333
+          ]
+        },
+        "G": {
+          "b": 0.01959242350638651,
+          "se": 0.03679611241448918,
+          "p": 0.594580253098725,
+          "ci95": [
+            -0.052653912139964024,
+            0.09183875915273705
+          ]
+        },
+        "PG": {
+          "b": -0.04713156634128213,
+          "se": 0.03207259910941867,
+          "p": 0.14214754550787156,
+          "ci95": [
+            -0.11010364703852152,
+            0.015840514355957264
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.23014364510798252,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.9980926856187334
+    },
+    {
+      "spec": "mean_rounds_proxy",
+      "description": "Change in average rounds per reporting review",
+      "kind": "baseline",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 749,
+      "firms": 150,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 689,
+      "p_value_df": 689,
+      "terms": {
+        "P": {
+          "b": 0.0022262962386493815,
+          "se": 0.0020334841214892257,
+          "p": 0.2739786854183443,
+          "ci95": [
+            -0.0017662729251495778,
+            0.006218865402448341
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.33268840372227526,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.7316245636541713
+    },
+    {
+      "spec": "mean_rounds_proxy",
+      "description": "Change in average rounds per reporting review",
+      "kind": "interaction",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 749,
+      "firms": 150,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 687,
+      "p_value_df": 687,
+      "terms": {
+        "P": {
+          "b": 0.007572597554361036,
+          "se": 0.004841353243523144,
+          "p": 0.11824308665973622,
+          "ci95": [
+            -0.0019330270473398832,
+            0.017078222156061956
+          ]
+        },
+        "G": {
+          "b": 0.014840668532230823,
+          "se": 0.035713292569314686,
+          "p": 0.6778688789027916,
+          "ci95": [
+            -0.055279633659884454,
+            0.08496097072434611
+          ]
+        },
+        "PG": {
+          "b": -0.040164232333371,
+          "se": 0.03257740030356201,
+          "p": 0.21803987581137665,
+          "ci95": [
+            -0.10412745133609067,
+            0.02379898666934866
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.2851290683687233,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.9980926856187334
+    },
+    {
+      "spec": "mean_rounds_volume",
+      "description": "Average-round change controlling for review-volume growth",
+      "kind": "baseline",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm",
+        "C_volume"
+      ],
+      "n": 749,
+      "firms": 150,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 688,
+      "p_value_df": 688,
+      "terms": {
+        "P": {
+          "b": 0.0022768496079059127,
+          "se": 0.002042829435772371,
+          "p": 0.2654295441289943,
+          "ci95": [
+            -0.0017340785261143452,
+            0.006287777741926171
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.33268840372227526,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.7131146650777964
+    },
+    {
+      "spec": "mean_rounds_volume",
+      "description": "Average-round change controlling for review-volume growth",
+      "kind": "interaction",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm",
+        "C_volume"
+      ],
+      "n": 749,
+      "firms": 150,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 686,
+      "p_value_df": 686,
+      "terms": {
+        "P": {
+          "b": 0.007761037764459492,
+          "se": 0.004911549966494433,
+          "p": 0.11453103789031507,
+          "ci95": [
+            -0.0018824375108016014,
+            0.017404513039720584
+          ]
+        },
+        "G": {
+          "b": 0.012703407243623822,
+          "se": 0.03551928769766352,
+          "p": 0.7207166539790325,
+          "ci95": [
+            -0.05703616072249023,
+            0.08244297520973787
+          ]
+        },
+        "PG": {
+          "b": -0.04118300854276584,
+          "se": 0.0328873345152097,
+          "p": 0.21090726575855168,
+          "ci95": [
+            -0.10575492564229332,
+            0.023388908556761637
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.2851290683687233,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.9980926856187334
+    },
+    {
+      "spec": "uncapped_rounds",
+      "description": "Remove the ten-round cap",
+      "kind": "baseline",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 749,
+      "firms": 150,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 689,
+      "p_value_df": 689,
+      "terms": {
+        "P": {
+          "b": 0.006142845253065996,
+          "se": 0.0029861966847301654,
+          "p": 0.04005442585224159,
+          "ci95": [
+            0.0002797078552874456,
+            0.012005982650844547
+          ]
+        }
+      },
+      "holm_p_followup": 0.9981421061155757,
+      "fdr_q_followup": 0.09727503421258672,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.3927122546779314
+    },
+    {
+      "spec": "uncapped_rounds",
+      "description": "Remove the ten-round cap",
+      "kind": "interaction",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 749,
+      "firms": 150,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 687,
+      "p_value_df": 687,
+      "terms": {
+        "P": {
+          "b": 0.016246623666206828,
+          "se": 0.006310312383075668,
+          "p": 0.010243393099497913,
+          "ci95": [
+            0.0038568108151761666,
+            0.02863643651723749
+          ]
+        },
+        "G": {
+          "b": 0.021896992044858336,
+          "se": 0.03561756160321721,
+          "p": 0.5389030709346072,
+          "ci95": [
+            -0.048035349760830244,
+            0.09182933385054692
+          ]
+        },
+        "PG": {
+          "b": -0.07444985312082225,
+          "se": 0.036554862291130016,
+          "p": 0.04206697370263694,
+          "ci95": [
+            -0.14622251271165376,
+            -0.0026771935299907262
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.14631315774479958,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.9980926856187334
+    },
+    {
+      "spec": "six_round_cap",
+      "description": "Cap rounds at six per review",
+      "kind": "baseline",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 749,
+      "firms": 150,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 689,
+      "p_value_df": 689,
+      "terms": {
+        "P": {
+          "b": 0.006156963068933732,
+          "se": 0.0030893533771099266,
+          "p": 0.04665962504810892,
+          "ci95": [
+            9.128648007789616e-05,
+            0.012222639657789566
+          ]
+        }
+      },
+      "holm_p_followup": 0.9981421061155757,
+      "fdr_q_followup": 0.10268835544084279,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.4062358040286029
+    },
+    {
+      "spec": "six_round_cap",
+      "description": "Cap rounds at six per review",
+      "kind": "interaction",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 749,
+      "firms": 150,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 687,
+      "p_value_df": 687,
+      "terms": {
+        "P": {
+          "b": 0.016209478301654073,
+          "se": 0.006385093116654646,
+          "p": 0.011347883922168067,
+          "ci95": [
+            0.003672839233843518,
+            0.028746117369464627
+          ]
+        },
+        "G": {
+          "b": 0.022577261417020524,
+          "se": 0.03567256359411329,
+          "p": 0.5270077976129207,
+          "ci95": [
+            -0.04746307256595934,
+            0.09261759540000039
+          ]
+        },
+        "PG": {
+          "b": -0.07452499488806155,
+          "se": 0.037374458784634475,
+          "p": 0.04654595844067017,
+          "ci95": [
+            -0.14790686913443313,
+            -0.0011431206416899764
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.14631315774479958,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.9980926856187334
+    },
+    {
+      "spec": "log_sga_outcome",
+      "description": "Two-year log operating-expense growth",
+      "kind": "baseline",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 744,
+      "firms": 149,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 684,
+      "p_value_df": 684,
+      "terms": {
+        "P": {
+          "b": 0.011705696949239472,
+          "se": 0.00709665768405514,
+          "p": 0.09951129601708483,
+          "ci95": [
+            -0.0022281522527212005,
+            0.025639546151200142
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.1518671400612284,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.5270431903429817
+    },
+    {
+      "spec": "log_sga_outcome",
+      "description": "Two-year log operating-expense growth",
+      "kind": "interaction",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 744,
+      "firms": 149,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 682,
+      "p_value_df": 682,
+      "terms": {
+        "P": {
+          "b": 0.024113435921076478,
+          "se": 0.014444272706227576,
+          "p": 0.0954947521209414,
+          "ci95": [
+            -0.004247149143909241,
+            0.0524740209860622
+          ]
+        },
+        "G": {
+          "b": -0.06890887976910674,
+          "se": 0.1076337448739426,
+          "p": 0.5222469997236441,
+          "ci95": [
+            -0.2802421908637059,
+            0.14242443132549237
+          ]
+        },
+        "PG": {
+          "b": -0.08896065828596389,
+          "se": 0.08445518654361103,
+          "p": 0.2925548049879411,
+          "ci95": [
+            -0.25478406461895564,
+            0.07686274804702786
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.31083948029968744,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.9980926856187334
+    },
+    {
+      "spec": "percent_sga_outcome",
+      "description": "Two-year percentage operating-expense growth",
+      "kind": "baseline",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 744,
+      "firms": 149,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 684,
+      "p_value_df": 684,
+      "terms": {
+        "P": {
+          "b": 0.015797097895827127,
+          "se": 0.009668159408225723,
+          "p": 0.10273365357083099,
+          "ci95": [
+            -0.0031857361723023232,
+            0.03477993196395658
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.1518671400612284,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.5371042282971888
+    },
+    {
+      "spec": "percent_sga_outcome",
+      "description": "Two-year percentage operating-expense growth",
+      "kind": "interaction",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 744,
+      "firms": 149,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 682,
+      "p_value_df": 682,
+      "terms": {
+        "P": {
+          "b": 0.03293093390812417,
+          "se": 0.02116361726016931,
+          "p": 0.12016811396328458,
+          "ci95": [
+            -0.00862273790333734,
+            0.07448460571958568
+          ]
+        },
+        "G": {
+          "b": -0.09338613156412692,
+          "se": 0.13266045704656645,
+          "p": 0.48170511254406134,
+          "ci95": [
+            -0.3538581022440299,
+            0.16708583911577604
+          ]
+        },
+        "PG": {
+          "b": -0.12288813879491696,
+          "se": 0.1155560548480644,
+          "p": 0.2879541137964248,
+          "ci95": [
+            -0.34977649724301807,
+            0.10400021965318416
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.31083948029968744,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.9980926856187334
+    },
+    {
+      "spec": "unwinsorized",
+      "description": "Unwinsorized outcome and financial controls",
+      "kind": "baseline",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "unwinstd_c_oiadp",
+        "unwinstd_c_sale",
+        "unwinstd_c_xsga",
+        "unwinstd_c_emp",
+        "unwinstd_c_capx",
+        "unwinstd_btm"
+      ],
+      "n": 749,
+      "firms": 150,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 689,
+      "p_value_df": 689,
+      "terms": {
+        "P": {
+          "b": 0.006537230175787938,
+          "se": 0.0030099002261337405,
+          "p": 0.030202889591158882,
+          "ci95": [
+            0.0006275529366205901,
+            0.012446907414955286
+          ]
+        }
+      },
+      "holm_p_followup": 0.9060866877347664,
+      "fdr_q_followup": 0.09727503421258672,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.38542094504823987
+    },
+    {
+      "spec": "unwinsorized",
+      "description": "Unwinsorized outcome and financial controls",
+      "kind": "interaction",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "unwinstd_c_oiadp",
+        "unwinstd_c_sale",
+        "unwinstd_c_xsga",
+        "unwinstd_c_emp",
+        "unwinstd_c_capx",
+        "unwinstd_btm"
+      ],
+      "n": 749,
+      "firms": 150,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 687,
+      "p_value_df": 687,
+      "terms": {
+        "P": {
+          "b": 0.014908324507762775,
+          "se": 0.006051457464764163,
+          "p": 0.01399921968389557,
+          "ci95": [
+            0.0030267533726335387,
+            0.02678989564289201
+          ]
+        },
+        "G": {
+          "b": 0.039836464229928384,
+          "se": 0.03944945060114069,
+          "p": 0.3129416732995606,
+          "ci95": [
+            -0.03761949679903788,
+            0.11729242525889465
+          ]
+        },
+        "PG": {
+          "b": -0.06222628529155928,
+          "se": 0.0352264216427608,
+          "p": 0.0777616837264757,
+          "ci95": [
+            -0.1313906538790579,
+            0.00693808329593934
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.16524357791876085,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.9980926856187334
+    },
+    {
+      "spec": "trim_instead",
+      "description": "Trim extreme outcome/controls rather than winsorize",
+      "kind": "baseline",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 676,
+      "firms": 147,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 617,
+      "p_value_df": 617,
+      "terms": {
+        "P": {
+          "b": 0.006361114302270771,
+          "se": 0.0030882765297021823,
+          "p": 0.03984022453109873,
+          "ci95": [
+            0.0002963066451525708,
+            0.01242592195938897
+          ]
+        }
+      },
+      "holm_p_followup": 0.9981421061155757,
+      "fdr_q_followup": 0.09727503421258672,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.3927122546779314
+    },
+    {
+      "spec": "trim_instead",
+      "description": "Trim extreme outcome/controls rather than winsorize",
+      "kind": "interaction",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 676,
+      "firms": 147,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 615,
+      "p_value_df": 615,
+      "terms": {
+        "P": {
+          "b": 0.017195885738243474,
+          "se": 0.0068048569009564325,
+          "p": 0.011753656468339459,
+          "ci95": [
+            0.0038323117108137357,
+            0.030559459765673213
+          ]
+        },
+        "G": {
+          "b": 0.002701987722759716,
+          "se": 0.0352977810836855,
+          "p": 0.9390077258024643,
+          "ci95": [
+            -0.06661681168499001,
+            0.07202078713050944
+          ]
+        },
+        "PG": {
+          "b": -0.07978543405050877,
+          "se": 0.04071534577150776,
+          "p": 0.05049486127545054,
+          "ci95": [
+            -0.15974340307017587,
+            0.00017253496915833888
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.14631315774479958,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.9980926856187334
+    },
+    {
+      "spec": "prior_outcome",
+      "description": "Financial outcome ending before the activity window; timing diagnostic",
+      "kind": "baseline",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 830,
+      "firms": 150,
+      "years": [
+        2014,
+        2023
+      ],
+      "df_resid": 770,
+      "p_value_df": 770,
+      "terms": {
+        "P": {
+          "b": 0.0051123050852483285,
+          "se": 0.00567691680777786,
+          "p": 0.36811315934388794,
+          "ci95": [
+            -0.0060317643104719106,
+            0.016256374480968568
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.417194913923073,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.783185836179707
+    },
+    {
+      "spec": "prior_outcome",
+      "description": "Financial outcome ending before the activity window; timing diagnostic",
+      "kind": "interaction",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 830,
+      "firms": 150,
+      "years": [
+        2014,
+        2023
+      ],
+      "df_resid": 768,
+      "p_value_df": 768,
+      "terms": {
+        "P": {
+          "b": 0.010058204457468656,
+          "se": 0.007891782459801789,
+          "p": 0.20286602871877865,
+          "ci95": [
+            -0.005433819632911202,
+            0.025550228547848514
+          ]
+        },
+        "G": {
+          "b": 0.04564438653415822,
+          "se": 0.1013974228251789,
+          "p": 0.6527269287012099,
+          "ci95": [
+            -0.1534046020956624,
+            0.24469337516397885
+          ]
+        },
+        "PG": {
+          "b": -0.03682578769327784,
+          "se": 0.045067204510092794,
+          "p": 0.4141072569818808,
+          "ci95": [
+            -0.12529530918766138,
+            0.05164373380110571
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.42665596173890746,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.9980926856187334
+    },
+    {
+      "spec": "positive_round_coverage",
+      "description": "Treat zero rounds as unavailable; require 80 percent positive-count coverage",
+      "kind": "baseline",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 634,
+      "firms": 139,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 574,
+      "p_value_df": 574,
+      "terms": {
+        "P": {
+          "b": 0.005137237390774708,
+          "se": 0.003079875467799568,
+          "p": 0.09586078389919583,
+          "ci95": [
+            -0.0009119627743829992,
+            0.011186437555932415
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.1518671400612284,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.5177200388862936
+    },
+    {
+      "spec": "positive_round_coverage",
+      "description": "Treat zero rounds as unavailable; require 80 percent positive-count coverage",
+      "kind": "interaction",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 634,
+      "firms": 139,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 572,
+      "p_value_df": 572,
+      "terms": {
+        "P": {
+          "b": 0.014303780909692677,
+          "se": 0.006485340669064904,
+          "p": 0.027812069354935225,
+          "ci95": [
+            0.0015657939049143772,
+            0.02704176791447098
+          ]
+        },
+        "G": {
+          "b": 0.01877296170330564,
+          "se": 0.03781443600656984,
+          "p": 0.6197679592987799,
+          "ci95": [
+            -0.055499126537535956,
+            0.09304504994414724
+          ]
+        },
+        "PG": {
+          "b": -0.06631625798666617,
+          "se": 0.036286032696423366,
+          "p": 0.06813079954883837,
+          "ci95": [
+            -0.137586378791075,
+            0.004953862817742669
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.16524357791876085,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.9980926856187334
+    },
+    {
+      "spec": "positive_mean_rounds",
+      "description": "Average positive rounds with 80 percent positive-count coverage",
+      "kind": "baseline",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 634,
+      "firms": 139,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 574,
+      "p_value_df": 574,
+      "terms": {
+        "P": {
+          "b": 0.002115252538362205,
+          "se": 0.001843238230273907,
+          "p": 0.25162247814098154,
+          "ci95": [
+            -0.0015050616995261777,
+            0.005735566776250587
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.3290447791074374,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.708895236195204
+    },
+    {
+      "spec": "positive_mean_rounds",
+      "description": "Average positive rounds with 80 percent positive-count coverage",
+      "kind": "interaction",
+      "effects": "industry_year_additive",
+      "covariance": "company",
+      "equal_company_weight": false,
+      "controls": [
+        "c_oiadp",
+        "c_sale",
+        "c_xsga",
+        "c_emp",
+        "c_capx",
+        "btm"
+      ],
+      "n": 634,
+      "firms": 139,
+      "years": [
+        2012,
+        2022
+      ],
+      "df_resid": 572,
+      "p_value_df": 572,
+      "terms": {
+        "P": {
+          "b": 0.007910995820140912,
+          "se": 0.004653834408083795,
+          "p": 0.0896956903124137,
+          "ci95": [
+            -0.0012296931949064525,
+            0.017051684835188277
+          ]
+        },
+        "G": {
+          "b": 0.012339408205765554,
+          "se": 0.038171197579495525,
+          "p": 0.7466127815252352,
+          "ci95": [
+            -0.06263340255862959,
+            0.0873122189701607
+          ]
+        },
+        "PG": {
+          "b": -0.04037962341694919,
+          "se": 0.028832124680803903,
+          "p": 0.16190343990371758,
+          "ci95": [
+            -0.09700937476618433,
+            0.01625012793228596
+          ]
+        }
+      },
+      "holm_p_followup": 1.0,
+      "fdr_q_followup": 0.2502144071239272,
+      "holm_p_including_prior_search": 1.0,
+      "fdr_q_including_prior_search": 0.9980926856187334
+    }
+  ],
+  "paired_patterns": [
+    {
+      "spec": "reference",
+      "description": "Original delayed-rounds specification",
+      "n": 749,
+      "firms": 150,
+      "positive_baseline": true,
+      "negative_interaction": true,
+      "baseline_p": 0.03839008100444522,
+      "interaction_p": 0.04294175187539768,
+      "joint_p": 0.04294175187539768,
+      "both_nominal05": true,
+      "role": "operating sensitivity",
+      "joint_holm_including_prior_search": 1.0,
+      "joint_fdr_including_prior_search": 1.0
+    },
+    {
+      "spec": "firm_year",
+      "description": "Company and year effects",
+      "n": 749,
+      "firms": 150,
+      "positive_baseline": false,
+      "negative_interaction": true,
+      "baseline_p": 0.6679842061586189,
+      "interaction_p": 0.10808460556246988,
+      "joint_p": 1.0,
+      "both_nominal05": false,
+      "role": "operating sensitivity",
+      "joint_holm_including_prior_search": 1.0,
+      "joint_fdr_including_prior_search": 1.0
+    },
+    {
+      "spec": "industry_year",
+      "description": "Industry-by-year effects",
+      "n": 749,
+      "firms": 150,
+      "positive_baseline": true,
+      "negative_interaction": true,
+      "baseline_p": 0.17663049571728484,
+      "interaction_p": 0.2600420065315931,
+      "joint_p": 0.2600420065315931,
+      "both_nominal05": false,
+      "role": "operating sensitivity",
+      "joint_holm_including_prior_search": 1.0,
+      "joint_fdr_including_prior_search": 1.0
+    },
+    {
+      "spec": "two_way_errors",
+      "description": "Company and year clustered errors",
+      "n": 749,
+      "firms": 150,
+      "positive_baseline": true,
+      "negative_interaction": true,
+      "baseline_p": 0.05157829100855382,
+      "interaction_p": 0.01590311232928447,
+      "joint_p": 0.05157829100855382,
+      "both_nominal05": false,
+      "role": "operating sensitivity",
+      "joint_holm_including_prior_search": 1.0,
+      "joint_fdr_including_prior_search": 1.0
+    },
+    {
+      "spec": "full_controls",
+      "description": "Add R&D and advertising changes",
+      "n": 308,
+      "firms": 63,
+      "positive_baseline": true,
+      "negative_interaction": true,
+      "baseline_p": 0.07149385799561882,
+      "interaction_p": 0.2687513215796554,
+      "joint_p": 0.2687513215796554,
+      "both_nominal05": false,
+      "role": "operating sensitivity",
+      "joint_holm_including_prior_search": 1.0,
+      "joint_fdr_including_prior_search": 1.0
+    },
+    {
+      "spec": "core_full_sample",
+      "description": "Original controls on full-control sample",
+      "n": 308,
+      "firms": 63,
+      "positive_baseline": true,
+      "negative_interaction": true,
+      "baseline_p": 0.06923365332477194,
+      "interaction_p": 0.24276649126989847,
+      "joint_p": 0.24276649126989847,
+      "both_nominal05": false,
+      "role": "operating sensitivity",
+      "joint_holm_including_prior_search": 1.0,
+      "joint_fdr_including_prior_search": 1.0
+    },
+    {
+      "spec": "size_leverage",
+      "description": "Add company size and leverage",
+      "n": 747,
+      "firms": 150,
+      "positive_baseline": true,
+      "negative_interaction": true,
+      "baseline_p": 0.05436442346868148,
+      "interaction_p": 0.047998360246891636,
+      "joint_p": 0.05436442346868148,
+      "both_nominal05": false,
+      "role": "operating sensitivity",
+      "joint_holm_including_prior_search": 1.0,
+      "joint_fdr_including_prior_search": 1.0
+    },
+    {
+      "spec": "review_volume",
+      "description": "Control for review-count growth",
+      "n": 749,
+      "firms": 150,
+      "positive_baseline": true,
+      "negative_interaction": true,
+      "baseline_p": 0.033621095204413004,
+      "interaction_p": 0.03989869983693512,
+      "joint_p": 0.03989869983693512,
+      "both_nominal05": true,
+      "role": "operating sensitivity",
+      "joint_holm_including_prior_search": 1.0,
+      "joint_fdr_including_prior_search": 1.0
+    },
+    {
+      "spec": "review_volume_interaction",
+      "description": "Control for review-count growth and its ghost interaction",
+      "n": 749,
+      "firms": 150,
+      "positive_baseline": true,
+      "negative_interaction": true,
+      "baseline_p": 0.033621095204413004,
+      "interaction_p": 0.0763003541153969,
+      "joint_p": 0.0763003541153969,
+      "both_nominal05": false,
+      "role": "operating sensitivity",
+      "joint_holm_including_prior_search": 1.0,
+      "joint_fdr_including_prior_search": 1.0
+    },
+    {
+      "spec": "lag_saved_ghost",
+      "description": "Use previous-year saved ghost measure",
+      "n": 749,
+      "firms": 150,
+      "positive_baseline": true,
+      "negative_interaction": true,
+      "baseline_p": 0.03839008100444522,
+      "interaction_p": 0.05079364114068871,
+      "joint_p": 0.05079364114068871,
+      "both_nominal05": false,
+      "role": "operating sensitivity",
+      "joint_holm_including_prior_search": 1.0,
+      "joint_fdr_including_prior_search": 1.0
+    },
+    {
+      "spec": "current_raw_ghost",
+      "description": "Use current-year original raw ghost share",
+      "n": 749,
+      "firms": 150,
+      "positive_baseline": true,
+      "negative_interaction": true,
+      "baseline_p": 0.03839008100444522,
+      "interaction_p": 0.05594326619654101,
+      "joint_p": 0.05594326619654101,
+      "both_nominal05": false,
+      "role": "operating sensitivity",
+      "joint_holm_including_prior_search": 1.0,
+      "joint_fdr_including_prior_search": 1.0
+    },
+    {
+      "spec": "lag_raw_ghost",
+      "description": "Use previous-year original raw ghost share",
+      "n": 749,
+      "firms": 150,
+      "positive_baseline": true,
+      "negative_interaction": true,
+      "baseline_p": 0.03839008100444522,
+      "interaction_p": 0.08428012062717312,
+      "joint_p": 0.08428012062717312,
+      "both_nominal05": false,
+      "role": "operating sensitivity",
+      "joint_holm_including_prior_search": 1.0,
+      "joint_fdr_including_prior_search": 1.0
+    },
+    {
+      "spec": "activity_year_controls",
+      "description": "Use activity-year financial controls and saved ghost measure",
+      "n": 725,
+      "firms": 144,
+      "positive_baseline": true,
+      "negative_interaction": true,
+      "baseline_p": 0.4029310330198317,
+      "interaction_p": 0.1795060618803481,
+      "joint_p": 0.4029310330198317,
+      "both_nominal05": false,
+      "role": "operating sensitivity",
+      "joint_holm_including_prior_search": 1.0,
+      "joint_fdr_including_prior_search": 1.0
+    },
+    {
+      "spec": "higher_coverage",
+      "description": "At least ten reviews in all three review years",
+      "n": 452,
+      "firms": 126,
+      "positive_baseline": true,
+      "negative_interaction": true,
+      "baseline_p": 0.3394478403740131,
+      "interaction_p": 0.052835299692753045,
+      "joint_p": 0.3394478403740131,
+      "both_nominal05": false,
+      "role": "operating sensitivity",
+      "joint_holm_including_prior_search": 1.0,
+      "joint_fdr_including_prior_search": 1.0
+    },
+    {
+      "spec": "lower_collection",
+      "description": "Fewer than 250 collected company reviews",
+      "n": 601,
+      "firms": 119,
+      "positive_baseline": true,
+      "negative_interaction": true,
+      "baseline_p": 0.0147381254499586,
+      "interaction_p": 0.194380409257388,
+      "joint_p": 0.194380409257388,
+      "both_nominal05": false,
+      "role": "operating sensitivity",
+      "joint_holm_including_prior_search": 1.0,
+      "joint_fdr_including_prior_search": 1.0
+    },
+    {
+      "spec": "nonfinancial_nonutility",
+      "description": "Exclude finance and utilities",
+      "n": 653,
+      "firms": 128,
+      "positive_baseline": true,
+      "negative_interaction": true,
+      "baseline_p": 0.025039654327255457,
+      "interaction_p": 0.03238469454507971,
+      "joint_p": 0.03238469454507971,
+      "both_nominal05": true,
+      "role": "operating sensitivity",
+      "joint_holm_including_prior_search": 1.0,
+      "joint_fdr_including_prior_search": 1.0
+    },
+    {
+      "spec": "stable_companies",
+      "description": "At least five eligible observed years",
+      "n": 712,
+      "firms": 126,
+      "positive_baseline": true,
+      "negative_interaction": true,
+      "baseline_p": 0.025359001544514332,
+      "interaction_p": 0.050106690463064846,
+      "joint_p": 0.050106690463064846,
+      "both_nominal05": false,
+      "role": "operating sensitivity",
+      "joint_holm_including_prior_search": 1.0,
+      "joint_fdr_including_prior_search": 1.0
+    },
+    {
+      "spec": "no_pandemic_window",
+      "description": "Entire measurement/outcome window excludes 2020\u20132021",
+      "n": 269,
+      "firms": 95,
+      "positive_baseline": true,
+      "negative_interaction": true,
+      "baseline_p": 0.03591662465653612,
+      "interaction_p": 0.7455061599988192,
+      "joint_p": 0.7455061599988192,
+      "both_nominal05": false,
+      "role": "operating sensitivity",
+      "joint_holm_including_prior_search": 1.0,
+      "joint_fdr_including_prior_search": 1.0
+    },
+    {
+      "spec": "even_years",
+      "description": "Nonoverlapping outcome windows: even predictor years",
+      "n": 401,
+      "firms": 147,
+      "positive_baseline": true,
+      "negative_interaction": true,
+      "baseline_p": 0.5572152519974106,
+      "interaction_p": 0.09398942137855804,
+      "joint_p": 0.5572152519974106,
+      "both_nominal05": false,
+      "role": "operating sensitivity",
+      "joint_holm_including_prior_search": 1.0,
+      "joint_fdr_including_prior_search": 1.0
+    },
+    {
+      "spec": "odd_years",
+      "description": "Nonoverlapping outcome windows: odd predictor years",
+      "n": 348,
+      "firms": 138,
+      "positive_baseline": true,
+      "negative_interaction": true,
+      "baseline_p": 0.026008166424489554,
+      "interaction_p": 0.259400890303806,
+      "joint_p": 0.259400890303806,
+      "both_nominal05": false,
+      "role": "operating sensitivity",
+      "joint_holm_including_prior_search": 1.0,
+      "joint_fdr_including_prior_search": 1.0
+    },
+    {
+      "spec": "equal_company_weights",
+      "description": "Give each company equal total weight",
+      "n": 749,
+      "firms": 150,
+      "positive_baseline": true,
+      "negative_interaction": true,
+      "baseline_p": 0.05083466963465946,
+      "interaction_p": 0.11553731088427228,
+      "joint_p": 0.11553731088427228,
+      "both_nominal05": false,
+      "role": "operating sensitivity",
+      "joint_holm_including_prior_search": 1.0,
+      "joint_fdr_including_prior_search": 1.0
+    },
+    {
+      "spec": "raw_asset_proxy",
+      "description": "Unranked asset-scaled round-count change",
+      "n": 749,
+      "firms": 150,
+      "positive_baseline": true,
+      "negative_interaction": true,
+      "baseline_p": 0.47723451064348116,
+      "interaction_p": 0.05148748561342147,
+      "joint_p": 0.47723451064348116,
+      "both_nominal05": false,
+      "role": "operating sensitivity",
+      "joint_holm_including_prior_search": 1.0,
+      "joint_fdr_including_prior_search": 1.0
+    },
+    {
+      "spec": "log_total_proxy",
+      "description": "Change in log total reported rounds",
+      "n": 749,
+      "firms": 150,
+      "positive_baseline": true,
+      "negative_interaction": true,
+      "baseline_p": 0.161700284988239,
+      "interaction_p": 0.14214754550787156,
+      "joint_p": 0.161700284988239,
+      "both_nominal05": false,
+      "role": "operating sensitivity",
+      "joint_holm_including_prior_search": 1.0,
+      "joint_fdr_including_prior_search": 1.0
+    },
+    {
+      "spec": "mean_rounds_proxy",
+      "description": "Change in average rounds per reporting review",
+      "n": 749,
+      "firms": 150,
+      "positive_baseline": true,
+      "negative_interaction": true,
+      "baseline_p": 0.2739786854183443,
+      "interaction_p": 0.21803987581137665,
+      "joint_p": 0.2739786854183443,
+      "both_nominal05": false,
+      "role": "operating sensitivity",
+      "joint_holm_including_prior_search": 1.0,
+      "joint_fdr_including_prior_search": 1.0
+    },
+    {
+      "spec": "mean_rounds_volume",
+      "description": "Average-round change controlling for review-volume growth",
+      "n": 749,
+      "firms": 150,
+      "positive_baseline": true,
+      "negative_interaction": true,
+      "baseline_p": 0.2654295441289943,
+      "interaction_p": 0.21090726575855168,
+      "joint_p": 0.2654295441289943,
+      "both_nominal05": false,
+      "role": "operating sensitivity",
+      "joint_holm_including_prior_search": 1.0,
+      "joint_fdr_including_prior_search": 1.0
+    },
+    {
+      "spec": "uncapped_rounds",
+      "description": "Remove the ten-round cap",
+      "n": 749,
+      "firms": 150,
+      "positive_baseline": true,
+      "negative_interaction": true,
+      "baseline_p": 0.04005442585224159,
+      "interaction_p": 0.04206697370263694,
+      "joint_p": 0.04206697370263694,
+      "both_nominal05": true,
+      "role": "operating sensitivity",
+      "joint_holm_including_prior_search": 1.0,
+      "joint_fdr_including_prior_search": 1.0
+    },
+    {
+      "spec": "six_round_cap",
+      "description": "Cap rounds at six per review",
+      "n": 749,
+      "firms": 150,
+      "positive_baseline": true,
+      "negative_interaction": true,
+      "baseline_p": 0.04665962504810892,
+      "interaction_p": 0.04654595844067017,
+      "joint_p": 0.04665962504810892,
+      "both_nominal05": true,
+      "role": "operating sensitivity",
+      "joint_holm_including_prior_search": 1.0,
+      "joint_fdr_including_prior_search": 1.0
+    },
+    {
+      "spec": "log_sga_outcome",
+      "description": "Two-year log operating-expense growth",
+      "n": 744,
+      "firms": 149,
+      "positive_baseline": true,
+      "negative_interaction": true,
+      "baseline_p": 0.09951129601708483,
+      "interaction_p": 0.2925548049879411,
+      "joint_p": 0.2925548049879411,
+      "both_nominal05": false,
+      "role": "operating sensitivity",
+      "joint_holm_including_prior_search": 1.0,
+      "joint_fdr_including_prior_search": 1.0
+    },
+    {
+      "spec": "percent_sga_outcome",
+      "description": "Two-year percentage operating-expense growth",
+      "n": 744,
+      "firms": 149,
+      "positive_baseline": true,
+      "negative_interaction": true,
+      "baseline_p": 0.10273365357083099,
+      "interaction_p": 0.2879541137964248,
+      "joint_p": 0.2879541137964248,
+      "both_nominal05": false,
+      "role": "operating sensitivity",
+      "joint_holm_including_prior_search": 1.0,
+      "joint_fdr_including_prior_search": 1.0
+    },
+    {
+      "spec": "unwinsorized",
+      "description": "Unwinsorized outcome and financial controls",
+      "n": 749,
+      "firms": 150,
+      "positive_baseline": true,
+      "negative_interaction": true,
+      "baseline_p": 0.030202889591158882,
+      "interaction_p": 0.0777616837264757,
+      "joint_p": 0.0777616837264757,
+      "both_nominal05": false,
+      "role": "operating sensitivity",
+      "joint_holm_including_prior_search": 1.0,
+      "joint_fdr_including_prior_search": 1.0
+    },
+    {
+      "spec": "trim_instead",
+      "description": "Trim extreme outcome/controls rather than winsorize",
+      "n": 676,
+      "firms": 147,
+      "positive_baseline": true,
+      "negative_interaction": true,
+      "baseline_p": 0.03984022453109873,
+      "interaction_p": 0.05049486127545054,
+      "joint_p": 0.05049486127545054,
+      "both_nominal05": false,
+      "role": "operating sensitivity",
+      "joint_holm_including_prior_search": 1.0,
+      "joint_fdr_including_prior_search": 1.0
+    },
+    {
+      "spec": "prior_outcome",
+      "description": "Financial outcome ending before the activity window; timing diagnostic",
+      "n": 830,
+      "firms": 150,
+      "positive_baseline": true,
+      "negative_interaction": true,
+      "baseline_p": 0.36811315934388794,
+      "interaction_p": 0.4141072569818808,
+      "joint_p": 0.4141072569818808,
+      "both_nominal05": false,
+      "role": "reverse-time diagnostic",
+      "joint_holm_including_prior_search": 1.0,
+      "joint_fdr_including_prior_search": 1.0
+    },
+    {
+      "spec": "positive_round_coverage",
+      "description": "Treat zero rounds as unavailable; require 80 percent positive-count coverage",
+      "n": 634,
+      "firms": 139,
+      "positive_baseline": true,
+      "negative_interaction": true,
+      "baseline_p": 0.09586078389919583,
+      "interaction_p": 0.06813079954883837,
+      "joint_p": 0.09586078389919583,
+      "both_nominal05": false,
+      "role": "operating sensitivity",
+      "joint_holm_including_prior_search": 1.0,
+      "joint_fdr_including_prior_search": 1.0
+    },
+    {
+      "spec": "positive_mean_rounds",
+      "description": "Average positive rounds with 80 percent positive-count coverage",
+      "n": 634,
+      "firms": 139,
+      "positive_baseline": true,
+      "negative_interaction": true,
+      "baseline_p": 0.25162247814098154,
+      "interaction_p": 0.16190343990371758,
+      "joint_p": 0.25162247814098154,
+      "both_nominal05": false,
+      "role": "operating sensitivity",
+      "joint_holm_including_prior_search": 1.0,
+      "joint_fdr_including_prior_search": 1.0
+    }
+  ]
+}

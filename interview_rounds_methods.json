@@ -1,0 +1,528 @@
+{
+  "design": {
+    "status": "Focused exploratory follow-up after selection from the prior 3,328-model search. Reuses examined data; not independent confirmation.",
+    "selected_result": "Ranked change in total reported interview rounds at t-1, saved smoothed ghost score at t, and SG&A change t to t+2 divided by assets at t.",
+    "original_measure": "Retain original feature extraction, scoring weights, flags and saved smoothed measure; raw-share/timing variants are labeled sensitivity checks, not replacement labels.",
+    "specifications": [
+      {
+        "id": "reference",
+        "description": "Original delayed-rounds specification"
+      },
+      {
+        "id": "firm_year",
+        "description": "Company and year effects"
+      },
+      {
+        "id": "industry_year",
+        "description": "Industry-by-year effects"
+      },
+      {
+        "id": "two_way_errors",
+        "description": "Company and year clustered errors"
+      },
+      {
+        "id": "full_controls",
+        "description": "Add R&D and advertising changes"
+      },
+      {
+        "id": "core_full_sample",
+        "description": "Original controls on full-control sample"
+      },
+      {
+        "id": "size_leverage",
+        "description": "Add company size and leverage"
+      },
+      {
+        "id": "review_volume",
+        "description": "Control for review-count growth"
+      },
+      {
+        "id": "review_volume_interaction",
+        "description": "Control for review-count growth and its ghost interaction"
+      },
+      {
+        "id": "lag_saved_ghost",
+        "description": "Use previous-year saved ghost measure"
+      },
+      {
+        "id": "current_raw_ghost",
+        "description": "Use current-year original raw ghost share"
+      },
+      {
+        "id": "lag_raw_ghost",
+        "description": "Use previous-year original raw ghost share"
+      },
+      {
+        "id": "activity_year_controls",
+        "description": "Use activity-year financial controls and saved ghost measure"
+      },
+      {
+        "id": "higher_coverage",
+        "description": "At least ten reviews in all three review years"
+      },
+      {
+        "id": "lower_collection",
+        "description": "Fewer than 250 collected company reviews"
+      },
+      {
+        "id": "nonfinancial_nonutility",
+        "description": "Exclude finance and utilities"
+      },
+      {
+        "id": "stable_companies",
+        "description": "At least five eligible observed years"
+      },
+      {
+        "id": "no_pandemic_window",
+        "description": "Entire measurement/outcome window excludes 2020\u20132021"
+      },
+      {
+        "id": "even_years",
+        "description": "Nonoverlapping outcome windows: even predictor years"
+      },
+      {
+        "id": "odd_years",
+        "description": "Nonoverlapping outcome windows: odd predictor years"
+      },
+      {
+        "id": "equal_company_weights",
+        "description": "Give each company equal total weight"
+      },
+      {
+        "id": "raw_asset_proxy",
+        "description": "Unranked asset-scaled round-count change"
+      },
+      {
+        "id": "log_total_proxy",
+        "description": "Change in log total reported rounds"
+      },
+      {
+        "id": "mean_rounds_proxy",
+        "description": "Change in average rounds per reporting review"
+      },
+      {
+        "id": "mean_rounds_volume",
+        "description": "Average-round change controlling for review-volume growth"
+      },
+      {
+        "id": "uncapped_rounds",
+        "description": "Remove the ten-round cap"
+      },
+      {
+        "id": "six_round_cap",
+        "description": "Cap rounds at six per review"
+      },
+      {
+        "id": "log_sga_outcome",
+        "description": "Two-year log operating-expense growth"
+      },
+      {
+        "id": "percent_sga_outcome",
+        "description": "Two-year percentage operating-expense growth"
+      },
+      {
+        "id": "unwinsorized",
+        "description": "Unwinsorized outcome and financial controls"
+      },
+      {
+        "id": "trim_instead",
+        "description": "Trim extreme outcome/controls rather than winsorize"
+      },
+      {
+        "id": "prior_outcome",
+        "description": "Financial outcome ending before the activity window; timing diagnostic"
+      },
+      {
+        "id": "positive_round_coverage",
+        "description": "Treat zero rounds as unavailable; require 80 percent positive-count coverage"
+      },
+      {
+        "id": "positive_mean_rounds",
+        "description": "Average positive rounds with 80 percent positive-count coverage"
+      }
+    ],
+    "controls": "Original six financial controls; add full benchmark, size/debt and review-volume controls separately; hold full-control sample fixed in a companion fit.",
+    "influence": "Leave each of the original candidate companies, industries and years out in turn. Report every omission and full ranges, with no deletion selected for significance.",
+    "resampling": "1,999 restricted-null company wild-bootstrap draws for each original coefficient; 2,000 company bootstrap draws for original baseline, interaction and marginal slopes; fixed seeds.",
+    "multiplicity": "Report nominal intervals and p-values. Adjust over the entire fixed robustness menu, then append every new paired-pattern test to all 1,408 prior paired comparisons, and new individual tests to the full prior coefficient families. Earlier model selection is not erased by this follow-up.",
+    "proxy_audit": "Rebuild capped rounds from original deduplicated reviews. Compare total-round growth, average rounds per reporting review, and review-count growth. Missing rounds remain missing for coverage checks; do not invent hires or vacancies.",
+    "minimum": "At least 80 observations and 30 companies for planned fits; company clustered errors except explicitly two-way model.",
+    "reporting": "Keep all earlier results; publish aggregate estimates only, no source narratives or omitted-company identifiers.",
+    "api_calls": 0
+  },
+  "initial_32_setting_design": {
+    "status": "Focused exploratory follow-up after selection from the prior 3,328-model search. Reuses examined data; not independent confirmation.",
+    "selected_result": "Ranked change in total reported interview rounds at t-1, saved smoothed ghost score at t, and SG&A change t to t+2 divided by assets at t.",
+    "original_measure": "Retain original feature extraction, scoring weights, flags and saved smoothed measure; raw-share/timing variants are labeled sensitivity checks, not replacement labels.",
+    "specifications": [
+      {
+        "id": "reference",
+        "description": "Original delayed-rounds specification"
+      },
+      {
+        "id": "firm_year",
+        "description": "Company and year effects"
+      },
+      {
+        "id": "industry_year",
+        "description": "Industry-by-year effects"
+      },
+      {
+        "id": "two_way_errors",
+        "description": "Company and year clustered errors"
+      },
+      {
+        "id": "full_controls",
+        "description": "Add R&D and advertising changes"
+      },
+      {
+        "id": "core_full_sample",
+        "description": "Original controls on full-control sample"
+      },
+      {
+        "id": "size_leverage",
+        "description": "Add company size and leverage"
+      },
+      {
+        "id": "review_volume",
+        "description": "Control for review-count growth"
+      },
+      {
+        "id": "review_volume_interaction",
+        "description": "Control for review-count growth and its ghost interaction"
+      },
+      {
+        "id": "lag_saved_ghost",
+        "description": "Use previous-year saved ghost measure"
+      },
+      {
+        "id": "current_raw_ghost",
+        "description": "Use current-year original raw ghost share"
+      },
+      {
+        "id": "lag_raw_ghost",
+        "description": "Use previous-year original raw ghost share"
+      },
+      {
+        "id": "activity_year_controls",
+        "description": "Use activity-year financial controls and saved ghost measure"
+      },
+      {
+        "id": "higher_coverage",
+        "description": "At least ten reviews in all three review years"
+      },
+      {
+        "id": "lower_collection",
+        "description": "Fewer than 250 collected company reviews"
+      },
+      {
+        "id": "nonfinancial_nonutility",
+        "description": "Exclude finance and utilities"
+      },
+      {
+        "id": "stable_companies",
+        "description": "At least five eligible observed years"
+      },
+      {
+        "id": "no_pandemic_window",
+        "description": "Entire measurement/outcome window excludes 2020\u20132021"
+      },
+      {
+        "id": "even_years",
+        "description": "Nonoverlapping outcome windows: even predictor years"
+      },
+      {
+        "id": "odd_years",
+        "description": "Nonoverlapping outcome windows: odd predictor years"
+      },
+      {
+        "id": "equal_company_weights",
+        "description": "Give each company equal total weight"
+      },
+      {
+        "id": "raw_asset_proxy",
+        "description": "Unranked asset-scaled round-count change"
+      },
+      {
+        "id": "log_total_proxy",
+        "description": "Change in log total reported rounds"
+      },
+      {
+        "id": "mean_rounds_proxy",
+        "description": "Change in average rounds per reporting review"
+      },
+      {
+        "id": "mean_rounds_volume",
+        "description": "Average-round change controlling for review-volume growth"
+      },
+      {
+        "id": "uncapped_rounds",
+        "description": "Remove the ten-round cap"
+      },
+      {
+        "id": "six_round_cap",
+        "description": "Cap rounds at six per review"
+      },
+      {
+        "id": "log_sga_outcome",
+        "description": "Two-year log operating-expense growth"
+      },
+      {
+        "id": "percent_sga_outcome",
+        "description": "Two-year percentage operating-expense growth"
+      },
+      {
+        "id": "unwinsorized",
+        "description": "Unwinsorized outcome and financial controls"
+      },
+      {
+        "id": "trim_instead",
+        "description": "Trim extreme outcome/controls rather than winsorize"
+      },
+      {
+        "id": "prior_outcome",
+        "description": "Financial outcome ending before the activity window; timing diagnostic"
+      }
+    ],
+    "controls": "Original six financial controls; add full benchmark, size/debt and review-volume controls separately; hold full-control sample fixed in a companion fit.",
+    "influence": "Leave each of the original candidate companies, industries and years out in turn. Report every omission and full ranges, with no deletion selected for significance.",
+    "resampling": "1,999 restricted-null company wild-bootstrap draws for each original coefficient; 2,000 company bootstrap draws for original baseline, interaction and marginal slopes; fixed seeds.",
+    "multiplicity": "Report nominal intervals and p-values. Adjust over the entire fixed robustness menu, then append every new paired-pattern test to all 1,408 prior paired comparisons, and new individual tests to the full prior coefficient families. Earlier model selection is not erased by this follow-up.",
+    "proxy_audit": "Rebuild capped rounds from original deduplicated reviews. Compare total-round growth, average rounds per reporting review, and review-count growth. Missing rounds remain missing for coverage checks; do not invent hires or vacancies.",
+    "minimum": "At least 80 observations and 30 companies for planned fits; company clustered errors except explicitly two-way model.",
+    "reporting": "Keep all earlier results; publish aggregate estimates only, no source narratives or omitted-company identifiers.",
+    "api_calls": 0
+  },
+  "zero_rounds_amendment": {
+    "Reason": "Source-prompt review found no explicit missing-versus-zero convention for the integer rounds field. There are 21,701 zero-coded deduplicated review records.",
+    "Checks": [
+      "Treat zero round counts as unavailable and require at least 80 percent positive round coverage in both activity years.",
+      "Use average positive reported rounds under the same coverage requirement."
+    ],
+    "Status": "Additional measurement checks specified before fitting these two definitions, after the original 32-specification analysis.",
+    "GhostClassifications": "Unchanged"
+  },
+  "summary": {
+    "fixed_specifications": 34,
+    "fixed_models": 68,
+    "completed_fixed_models": 68,
+    "unavailable_fixed_models": [],
+    "future_sensitivity_pairs": 33,
+    "nominal_future_patterns": [
+      "reference",
+      "review_volume",
+      "nonfinancial_nonutility",
+      "uncapped_rounds",
+      "six_round_cap"
+    ],
+    "search_adjusted_future_patterns": [],
+    "negative_interactions_nominal": [
+      "reference",
+      "two_way_errors",
+      "size_leverage",
+      "review_volume",
+      "nonfinancial_nonutility",
+      "uncapped_rounds",
+      "six_round_cap"
+    ],
+    "influence": [
+      {
+        "omitted_group": "company",
+        "kind": "baseline",
+        "fits": 150,
+        "coefficient_range": [
+          0.004336917322363253,
+          0.00706550043876224
+        ],
+        "expected_sign_count": 150,
+        "nominal05_count": 138
+      },
+      {
+        "omitted_group": "company",
+        "kind": "interaction",
+        "fits": 150,
+        "coefficient_range": [
+          -0.08258071833956357,
+          -0.054913826648536196
+        ],
+        "expected_sign_count": 150,
+        "nominal05_count": 134
+      },
+      {
+        "omitted_group": "industry",
+        "kind": "baseline",
+        "fits": 43,
+        "coefficient_range": [
+          0.004379131934435626,
+          0.009673080059753406
+        ],
+        "expected_sign_count": 43,
+        "nominal05_count": 35
+      },
+      {
+        "omitted_group": "industry",
+        "kind": "interaction",
+        "fits": 43,
+        "coefficient_range": [
+          -0.08474023277618101,
+          -0.04332401586460201
+        ],
+        "expected_sign_count": 43,
+        "nominal05_count": 36
+      },
+      {
+        "omitted_group": "year",
+        "kind": "baseline",
+        "fits": 11,
+        "coefficient_range": [
+          0.0036913162286197738,
+          0.007576821012892204
+        ],
+        "expected_sign_count": 11,
+        "nominal05_count": 8
+      },
+      {
+        "omitted_group": "year",
+        "kind": "interaction",
+        "fits": 11,
+        "coefficient_range": [
+          -0.08462674333304647,
+          -0.058089342758396764
+        ],
+        "expected_sign_count": 11,
+        "nominal05_count": 4
+      }
+    ],
+    "wild_bootstrap": [
+      {
+        "kind": "baseline",
+        "target": "P",
+        "draws": 1999,
+        "companies": 150,
+        "observed_t": 2.074645558217455,
+        "restricted_null_company_wild_p": 0.04,
+        "status": "Conditional on the selected specification; does not correct for earlier selection."
+      },
+      {
+        "kind": "interaction",
+        "target": "PG",
+        "draws": 1999,
+        "companies": 150,
+        "observed_t": -2.0280380634598,
+        "restricted_null_company_wild_p": 0.033,
+        "status": "Conditional on the selected specification; does not correct for earlier selection."
+      }
+    ],
+    "company_bootstrap": {
+      "draws": 2000,
+      "companies": 150,
+      "ghost_quartiles": [
+        0.067348679,
+        0.176371308
+      ],
+      "intervals": {
+        "baseline": [
+          0.00026843877750630193,
+          0.01128814583225144
+        ],
+        "interaction": [
+          -0.15111537838866954,
+          -0.009844352711821361
+        ],
+        "slope_low": [
+          0.0032246632172711442,
+          0.018963459407289367
+        ],
+        "slope_high": [
+          -0.003254973274588975,
+          0.007753672015488956
+        ]
+      },
+      "positive_baseline_fraction": 0.9835,
+      "negative_interaction_fraction": 0.989,
+      "both_expected_sign_fraction": 0.9725,
+      "status": "Company resampling conditional on the selected specification and fixed preprocessing; not an adjustment for selection."
+    },
+    "original_measure_and_source_labels_unchanged": true,
+    "api_calls": 0
+  },
+  "proxy_audit": {
+    "deduplicated_reviews": 217947,
+    "numeric_round_reports": 217750,
+    "missing_round_reports": 197,
+    "zero_round_reports": 21701,
+    "round_reports_above10": 135,
+    "reference_total_round_proxy_matches_rebuilt": true,
+    "reference_proxy_correlations": {
+      "P": {
+        "P": 1.0,
+        "C_volume": 0.7596773838634095,
+        "P_logmean": 0.3705478346886155,
+        "P_logtotal": 0.8369564365287605,
+        "P_asset": 0.5252922863940552
+      },
+      "C_volume": {
+        "P": 0.7596773838634095,
+        "C_volume": 1.0,
+        "P_logmean": 0.02732127393982125,
+        "P_logtotal": 0.8808481947824945,
+        "P_asset": 0.48821571235927375
+      },
+      "P_logmean": {
+        "P": 0.3705478346886155,
+        "C_volume": 0.02732127393982125,
+        "P_logmean": 1.0,
+        "P_logtotal": 0.4900658940692503,
+        "P_asset": 0.1932868466572053
+      },
+      "P_logtotal": {
+        "P": 0.8369564365287605,
+        "C_volume": 0.8808481947824945,
+        "P_logmean": 0.4900658940692503,
+        "P_logtotal": 1.0,
+        "P_asset": 0.5124411197852219
+      },
+      "P_asset": {
+        "P": 0.5252922863940552,
+        "C_volume": 0.48821571235927375,
+        "P_logmean": 0.1932868466572053,
+        "P_logtotal": 0.5124411197852219,
+        "P_asset": 1.0
+      }
+    },
+    "original_reference_sample": {
+      "n": 749,
+      "companies": 150,
+      "years": [
+        2012,
+        2022
+      ]
+    }
+  },
+  "verification": {
+    "fixed_models_independently_verified": 68,
+    "coefficients_independently_verified": 136,
+    "max_b_difference": 8.604228440844963e-16,
+    "max_se_difference": 4.163336342344337e-16,
+    "max_p_difference": 2.2870594307278225e-14,
+    "company_wild_bootstrap_independently_recomputed": [
+      {
+        "kind": "baseline",
+        "recomputed_p": 0.04,
+        "matches": true
+      },
+      {
+        "kind": "interaction",
+        "recomputed_p": 0.033,
+        "matches": true
+      }
+    ],
+    "all_multiplicity_adjustments_verified": true,
+    "baseline_and_interaction_samples_matched": true,
+    "source_files_unchanged": true,
+    "api_calls": 0
+  },
+  "paper_role": "Supplementary exploratory economic evidence motivated by Lourie; separate-review agreement remains the main validation.",
+  "selection": "Result chosen from earlier 3,328-model menu, with 3,264 estimable models. Multiplicity adjustment retains that search burden.",
+  "original_ghost_measure_unchanged": true
+}

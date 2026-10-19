@@ -152,5 +152,18 @@
     "inference": "lourie_heterogeneity_inference.json",
     "original_measure_unchanged": true,
     "main_validation_unchanged": true
+  },
+  "interview_rounds_followup": {
+    "status": "Completed exploratory robustness follow-up",
+    "settings": 34,
+    "fixed_model_fits": 68,
+    "omission_fits": 408,
+    "company_wild_bootstrap_draws_per_coefficient": 1999,
+    "company_bootstrap_draws": 2000,
+    "paper_role": "Supplementary exploratory economic evidence motivated by Lourie; separate-review agreement remains the main validation.",
+    "results": "interview_rounds_results.json",
+    "stability": "interview_rounds_stability.json",
+    "methods": "interview_rounds_methods.json",
+    "main_validation_unchanged": true
   }
 }
