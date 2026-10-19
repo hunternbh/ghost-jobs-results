@@ -102,5 +102,17 @@
     "results": "cross_review_results.json",
     "methods": "cross_review_methods.json",
     "finding": "Limited agreement across companies; no clear within-company evidence; not classification accuracy or Lourie replication."
+  },
+  "current_main_validation": {
+    "source": "Latest user instruction: emphasize separate-review agreement.",
+    "status": "Main validation section; retains exploratory status and all previous results.",
+    "descriptive_gap_pp": 1.994026976900038,
+    "conditional_bootstrap_ci95_pp": [
+      1.3389204702841673,
+      2.656405349378914
+    ],
+    "additional_tests": "cross_review_additional_results.json",
+    "limitations": "Convergent evidence in automated review reports, not independent vacancy ground truth; adjusted associations remain inconclusive.",
+    "lourie_role": "Supplementary economic benchmark; exact posting-based tests still require posting histories."
   }
 }

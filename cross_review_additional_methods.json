@@ -1,0 +1,578 @@
+{
+  "design": {
+    "status": "Further exploratory tests requested after the original cross-review results. Menu fixed before these fits.",
+    "source": "Original dataset and unchanged original labels.",
+    "repeated_splits": "20 additional deterministic narrative-hash splits, both directions, both year and firm/year effects. Report all 80 fits, raw gaps and ranking statistics. Splits reuse observations and are not independent replications.",
+    "uncertainty": "2000 firm-cluster bootstrap draws for the original two raw high-low gaps and their mean, preserving the same firm weights across both split directions. Quartile groups fixed.",
+    "additional_controls": "Add held-out no-offer negative-experience share and mean narrative length; original training-composition controls retained.",
+    "alternative_predictor": "Ghost share among training no-offer reviews, rather than all training reviews.",
+    "coverage": "Require at least 20 training and 10 held-out no-offer reviews.",
+    "period": "Exclude 2020 and 2021.",
+    "component_targets": "Separate known-fake, future-role, and no-hiring-intent features, so no target component is selected after observing estimates.",
+    "inference": "Firm-clustered errors. Holm adjustment separately across 16 general sensitivity fits and 12 component fits. Repeated-split distributions are stability diagnostics; no treating the number of favorable splits as independent statistical evidence.",
+    "reporting": "Preserve original estimates and all planned additional fits. No new labels, external ground truth, or causal claims."
+  },
+  "bootstrap": {
+    "draws": 2000,
+    "cluster": "company; paired weights across original directions",
+    "group_cutoffs": "Fixed at original observed quartiles; no reclassification during resampling.",
+    "fold_results": [
+      {
+        "fold": 0,
+        "low_rate": 0.03571428571428571,
+        "high_rate": 0.05598705501618123,
+        "gap_pp": 2.0272769301895517,
+        "auc": 0.5542948777595821,
+        "n_company_years": 1995,
+        "firms": 745,
+        "gap_ci95_pp": [
+          1.2023999940766905,
+          2.8294291028342355
+        ]
+      },
+      {
+        "fold": 1,
+        "low_rate": 0.03673938002296211,
+        "high_rate": 0.056347150259067356,
+        "gap_pp": 1.9607770236105244,
+        "auc": 0.5508578424773227,
+        "n_company_years": 1995,
+        "firms": 739,
+        "gap_ci95_pp": [
+          1.0796319107699281,
+          2.8272535303419604
+        ]
+      }
+    ],
+    "average_gap_pp": 1.994026976900038,
+    "average_gap_ci95_pp": [
+      1.3389204702841673,
+      2.656405349378914
+    ]
+  },
+  "stability_summary": {
+    "partitions": 20,
+    "directions": 40,
+    "all_partitions_reported": true,
+    "raw_gap_positive_directions": 40,
+    "gap_pp_median": 2.2814868178466323,
+    "gap_pp_range": [
+      1.625530273814115,
+      2.953736253374261
+    ],
+    "auc_median": 0.5613374473601442,
+    "auc_range": [
+      0.5450253547145013,
+      0.5735877269461963
+    ],
+    "year_effect_pp_median": 0.5287538825242051,
+    "year_effect_pp_range": [
+      0.16175810641284816,
+      0.728868311313622
+    ],
+    "firm_effect_pp_median": 0.11977038966144798,
+    "firm_effect_pp_range": [
+      -0.5312884636272059,
+      0.5544248501282414
+    ],
+    "interval_warning": "Ranges describe stability across overlapping review partitions, not confidence intervals or independent replications."
+  },
+  "all_repeated_directions": [
+    {
+      "seed_index": 0,
+      "fold": 0,
+      "low_rate": 0.03197674418604651,
+      "high_rate": 0.0587383327969102,
+      "gap_pp": 2.676158861086369,
+      "auc": 0.5735877269461963,
+      "n_company_years": 2054,
+      "firms": 748,
+      "year_effect_pp": 0.7258056841707816,
+      "firm_effect_pp": 0.38366262722227645
+    },
+    {
+      "seed_index": 0,
+      "fold": 1,
+      "low_rate": 0.03397147147147147,
+      "high_rate": 0.05302279484638256,
+      "gap_pp": 1.905132337491109,
+      "auc": 0.5450253547145013,
+      "n_company_years": 2000,
+      "firms": 741,
+      "year_effect_pp": 0.19966025711420715,
+      "firm_effect_pp": -0.19648339869178472
+    },
+    {
+      "seed_index": 1,
+      "fold": 0,
+      "low_rate": 0.03724247226624406,
+      "high_rate": 0.056910569105691054,
+      "gap_pp": 1.9668096839446993,
+      "auc": 0.5472296256473058,
+      "n_company_years": 2055,
+      "firms": 754,
+      "year_effect_pp": 0.5923595445319237,
+      "firm_effect_pp": 0.12808878332830215
+    },
+    {
+      "seed_index": 1,
+      "fold": 1,
+      "low_rate": 0.03162055335968379,
+      "high_rate": 0.05801150369761709,
+      "gap_pp": 2.6390950337933297,
+      "auc": 0.5685420741470079,
+      "n_company_years": 2045,
+      "firms": 744,
+      "year_effect_pp": 0.43696990236057304,
+      "firm_effect_pp": -0.07086013728533072
+    },
+    {
+      "seed_index": 2,
+      "fold": 0,
+      "low_rate": 0.03279002876318313,
+      "high_rate": 0.055892884944729875,
+      "gap_pp": 2.310285618154675,
+      "auc": 0.5572782038949022,
+      "n_company_years": 2015,
+      "firms": 739,
+      "year_effect_pp": 0.494182944047645,
+      "firm_effect_pp": -0.03163504886706482
+    },
+    {
+      "seed_index": 2,
+      "fold": 1,
+      "low_rate": 0.0327130264446621,
+      "high_rate": 0.054136874361593465,
+      "gap_pp": 2.1423847916931367,
+      "auc": 0.5553211148793559,
+      "n_company_years": 1983,
+      "firms": 735,
+      "year_effect_pp": 0.16175810641284816,
+      "firm_effect_pp": -0.03418678051680462
+    },
+    {
+      "seed_index": 3,
+      "fold": 0,
+      "low_rate": 0.030581613508442778,
+      "high_rate": 0.05477929501429025,
+      "gap_pp": 2.419768150584747,
+      "auc": 0.5633039495914495,
+      "n_company_years": 2032,
+      "firms": 749,
+      "year_effect_pp": 0.7050650240278693,
+      "firm_effect_pp": 0.4656678133512359
+    },
+    {
+      "seed_index": 3,
+      "fold": 1,
+      "low_rate": 0.03188239786177931,
+      "high_rate": 0.05955678670360111,
+      "gap_pp": 2.76743888418218,
+      "auc": 0.5661825999423872,
+      "n_company_years": 1990,
+      "firms": 745,
+      "year_effect_pp": 0.5787623037844914,
+      "firm_effect_pp": 0.04863873685318901
+    },
+    {
+      "seed_index": 4,
+      "fold": 0,
+      "low_rate": 0.028833792470156105,
+      "high_rate": 0.054027504911591355,
+      "gap_pp": 2.519371244143525,
+      "auc": 0.5641840371801423,
+      "n_company_years": 2043,
+      "firms": 744,
+      "year_effect_pp": 0.4460395484281837,
+      "firm_effect_pp": -0.07616378608266522
+    },
+    {
+      "seed_index": 4,
+      "fold": 1,
+      "low_rate": 0.03635675061541375,
+      "high_rate": 0.05881383855024712,
+      "gap_pp": 2.2457087934833373,
+      "auc": 0.5559058929748156,
+      "n_company_years": 1993,
+      "firms": 737,
+      "year_effect_pp": 0.728868311313622,
+      "firm_effect_pp": 0.5544248501282414
+    },
+    {
+      "seed_index": 5,
+      "fold": 0,
+      "low_rate": 0.033973412112259974,
+      "high_rate": 0.05967245013783039,
+      "gap_pp": 2.5699038025570413,
+      "auc": 0.5660123211498542,
+      "n_company_years": 2007,
+      "firms": 750,
+      "year_effect_pp": 0.5901355837393786,
+      "firm_effect_pp": 0.34232942275096023
+    },
+    {
+      "seed_index": 5,
+      "fold": 1,
+      "low_rate": 0.03430775477060495,
+      "high_rate": 0.056749220928325406,
+      "gap_pp": 2.2441466157720455,
+      "auc": 0.5648779482348515,
+      "n_company_years": 2013,
+      "firms": 757,
+      "year_effect_pp": 0.5681072974918511,
+      "firm_effect_pp": -0.23697316217428815
+    },
+    {
+      "seed_index": 6,
+      "fold": 0,
+      "low_rate": 0.034035351635953365,
+      "high_rate": 0.0577881102623713,
+      "gap_pp": 2.375275862641794,
+      "auc": 0.562733439646051,
+      "n_company_years": 2031,
+      "firms": 748,
+      "year_effect_pp": 0.48320854640715677,
+      "firm_effect_pp": -0.24599522455352174
+    },
+    {
+      "seed_index": 6,
+      "fold": 1,
+      "low_rate": 0.03144278606965174,
+      "high_rate": 0.056259904912836764,
+      "gap_pp": 2.481711884318502,
+      "auc": 0.5629790512865369,
+      "n_company_years": 2023,
+      "firms": 745,
+      "year_effect_pp": 0.584495915273342,
+      "firm_effect_pp": 0.23533112097061107
+    },
+    {
+      "seed_index": 7,
+      "fold": 0,
+      "low_rate": 0.033327486405893704,
+      "high_rate": 0.05393561436035732,
+      "gap_pp": 2.0608127954463615,
+      "auc": 0.5628753578593658,
+      "n_company_years": 2028,
+      "firms": 740,
+      "year_effect_pp": 0.5356085663710007,
+      "firm_effect_pp": 0.28093053488147823
+    },
+    {
+      "seed_index": 7,
+      "fold": 1,
+      "low_rate": 0.033948779035139966,
+      "high_rate": 0.05645809876146051,
+      "gap_pp": 2.2509319726320545,
+      "auc": 0.5534995037191657,
+      "n_company_years": 1977,
+      "firms": 745,
+      "year_effect_pp": 0.16742176767281758,
+      "firm_effect_pp": -0.5312884636272059
+    },
+    {
+      "seed_index": 8,
+      "fold": 0,
+      "low_rate": 0.036571428571428574,
+      "high_rate": 0.05488402482848742,
+      "gap_pp": 1.8312596257058846,
+      "auc": 0.5532301692715441,
+      "n_company_years": 2052,
+      "firms": 758,
+      "year_effect_pp": 0.583879464803337,
+      "firm_effect_pp": 0.17462046294342243
+    },
+    {
+      "seed_index": 8,
+      "fold": 1,
+      "low_rate": 0.02890749601275917,
+      "high_rate": 0.05844485854650178,
+      "gap_pp": 2.953736253374261,
+      "auc": 0.5711035423793774,
+      "n_company_years": 1986,
+      "firms": 737,
+      "year_effect_pp": 0.480633666705946,
+      "firm_effect_pp": 0.2524546246566094
+    },
+    {
+      "seed_index": 9,
+      "fold": 0,
+      "low_rate": 0.03502371397300255,
+      "high_rate": 0.057752341311134235,
+      "gap_pp": 2.2728627338131684,
+      "auc": 0.5604538918380296,
+      "n_company_years": 2030,
+      "firms": 737,
+      "year_effect_pp": 0.5042988248948536,
+      "firm_effect_pp": -0.013412163777410967
+    },
+    {
+      "seed_index": 9,
+      "fold": 1,
+      "low_rate": 0.03278995690462807,
+      "high_rate": 0.05423728813559322,
+      "gap_pp": 2.1447331230965148,
+      "auc": 0.5554714973224583,
+      "n_company_years": 2040,
+      "firms": 742,
+      "year_effect_pp": 0.4673678481152529,
+      "firm_effect_pp": 0.03428411084565974
+    },
+    {
+      "seed_index": 10,
+      "fold": 0,
+      "low_rate": 0.03367524675827366,
+      "high_rate": 0.0521724818959842,
+      "gap_pp": 1.8497235137710546,
+      "auc": 0.5494862834303199,
+      "n_company_years": 2024,
+      "firms": 746,
+      "year_effect_pp": 0.23653658786174214,
+      "firm_effect_pp": -0.17060839005589656
+    },
+    {
+      "seed_index": 10,
+      "fold": 1,
+      "low_rate": 0.035364936042136946,
+      "high_rate": 0.05644090305444887,
+      "gap_pp": 2.1075967012311922,
+      "auc": 0.554043006127134,
+      "n_company_years": 2022,
+      "firms": 754,
+      "year_effect_pp": 0.5970996811279126,
+      "firm_effect_pp": 0.3439848715235982
+    },
+    {
+      "seed_index": 11,
+      "fold": 0,
+      "low_rate": 0.03249684058494313,
+      "high_rate": 0.0531060481888215,
+      "gap_pp": 2.0609207603878374,
+      "auc": 0.553159107943364,
+      "n_company_years": 2025,
+      "firms": 743,
+      "year_effect_pp": 0.5509845578040431,
+      "firm_effect_pp": 0.25161878242419866
+    },
+    {
+      "seed_index": 11,
+      "fold": 1,
+      "low_rate": 0.03189734188817599,
+      "high_rate": 0.05829892650701899,
+      "gap_pp": 2.6401584618843,
+      "auc": 0.5724849514683745,
+      "n_company_years": 2035,
+      "firms": 750,
+      "year_effect_pp": 0.5447452610481708,
+      "firm_effect_pp": 0.2532531344196315
+    },
+    {
+      "seed_index": 12,
+      "fold": 0,
+      "low_rate": 0.03186792090612402,
+      "high_rate": 0.05701900633544515,
+      "gap_pp": 2.515108542932113,
+      "auc": 0.5571219488417913,
+      "n_company_years": 2024,
+      "firms": 742,
+      "year_effect_pp": 0.6745134900698592,
+      "firm_effect_pp": 0.2044450101763413
+    },
+    {
+      "seed_index": 12,
+      "fold": 1,
+      "low_rate": 0.03374469726185885,
+      "high_rate": 0.05,
+      "gap_pp": 1.625530273814115,
+      "auc": 0.5468966471366764,
+      "n_company_years": 2034,
+      "firms": 750,
+      "year_effect_pp": 0.17733806669315227,
+      "firm_effect_pp": -0.28316512587362047
+    },
+    {
+      "seed_index": 13,
+      "fold": 0,
+      "low_rate": 0.029957479706223426,
+      "high_rate": 0.05632869449966865,
+      "gap_pp": 2.637121479344523,
+      "auc": 0.5637416111737377,
+      "n_company_years": 1985,
+      "firms": 742,
+      "year_effect_pp": 0.582935666744082,
+      "firm_effect_pp": 0.1522917854907968
+    },
+    {
+      "seed_index": 13,
+      "fold": 1,
+      "low_rate": 0.035384904950122344,
+      "high_rate": 0.05501883084984444,
+      "gap_pp": 1.96339258997221,
+      "auc": 0.5572088074391326,
+      "n_company_years": 2017,
+      "firms": 750,
+      "year_effect_pp": 0.45362398293645073,
+      "firm_effect_pp": -0.04614257707298759
+    },
+    {
+      "seed_index": 14,
+      "fold": 0,
+      "low_rate": 0.035315607874974626,
+      "high_rate": 0.05877413937867338,
+      "gap_pp": 2.3458531503698756,
+      "auc": 0.5623059121418964,
+      "n_company_years": 2006,
+      "firms": 741,
+      "year_effect_pp": 0.5161250088953104,
+      "firm_effect_pp": -0.0596621429180736
+    },
+    {
+      "seed_index": 14,
+      "fold": 1,
+      "low_rate": 0.03416856492027335,
+      "high_rate": 0.056981006331222925,
+      "gap_pp": 2.2812441410949575,
+      "auc": 0.5600830964203025,
+      "n_company_years": 2014,
+      "firms": 744,
+      "year_effect_pp": 0.7186105640385507,
+      "firm_effect_pp": 0.41173640403141415
+    },
+    {
+      "seed_index": 15,
+      "fold": 0,
+      "low_rate": 0.03500583430571762,
+      "high_rate": 0.05782312925170068,
+      "gap_pp": 2.2817294945983067,
+      "auc": 0.5614567235661266,
+      "n_company_years": 2003,
+      "firms": 749,
+      "year_effect_pp": 0.5518218493717784,
+      "firm_effect_pp": 0.2928969669461388
+    },
+    {
+      "seed_index": 15,
+      "fold": 1,
+      "low_rate": 0.034764031850844826,
+      "high_rate": 0.057987967914438505,
+      "gap_pp": 2.322393606359368,
+      "auc": 0.5633778819897416,
+      "n_company_years": 2008,
+      "firms": 745,
+      "year_effect_pp": 0.6798535031526955,
+      "firm_effect_pp": 0.30528999400359785
+    },
+    {
+      "seed_index": 16,
+      "fold": 0,
+      "low_rate": 0.0277231616201337,
+      "high_rate": 0.04700032082130253,
+      "gap_pp": 1.927715920116883,
+      "auc": 0.5581849024192393,
+      "n_company_years": 2020,
+      "firms": 761,
+      "year_effect_pp": 0.5218991986774093,
+      "firm_effect_pp": 0.061389667675915055
+    },
+    {
+      "seed_index": 16,
+      "fold": 1,
+      "low_rate": 0.03832752613240418,
+      "high_rate": 0.06109979633401222,
+      "gap_pp": 2.277227020160804,
+      "auc": 0.5618268463574253,
+      "n_company_years": 2001,
+      "firms": 735,
+      "year_effect_pp": 0.5159797927799016,
+      "firm_effect_pp": 0.11145199599459382
+    },
+    {
+      "seed_index": 17,
+      "fold": 0,
+      "low_rate": 0.034119711444726065,
+      "high_rate": 0.051232788984950366,
+      "gap_pp": 1.71130775402243,
+      "auc": 0.5477119475229799,
+      "n_company_years": 2057,
+      "firms": 754,
+      "year_effect_pp": 0.3369385697884239,
+      "firm_effect_pp": 0.16719594527817416
+    },
+    {
+      "seed_index": 17,
+      "fold": 1,
+      "low_rate": 0.03299307327743347,
+      "high_rate": 0.05707112970711297,
+      "gap_pp": 2.40780564296795,
+      "auc": 0.563728553453232,
+      "n_company_years": 1992,
+      "firms": 744,
+      "year_effect_pp": 0.3550592675086506,
+      "firm_effect_pp": -0.227347626425313
+    },
+    {
+      "seed_index": 18,
+      "fold": 0,
+      "low_rate": 0.035693724812895795,
+      "high_rate": 0.057458563535911604,
+      "gap_pp": 2.176483872301581,
+      "auc": 0.5628450605650681,
+      "n_company_years": 2008,
+      "firms": 737,
+      "year_effect_pp": 0.6755728065952584,
+      "firm_effect_pp": 0.29834153348123993
+    },
+    {
+      "seed_index": 18,
+      "fold": 1,
+      "low_rate": 0.034293049697414264,
+      "high_rate": 0.05907949790794979,
+      "gap_pp": 2.4786448210535528,
+      "auc": 0.5578409908084604,
+      "n_company_years": 2066,
+      "firms": 772,
+      "year_effect_pp": 0.4360199293420277,
+      "firm_effect_pp": 0.2739269133614488
+    },
+    {
+      "seed_index": 19,
+      "fold": 0,
+      "low_rate": 0.03171806167400881,
+      "high_rate": 0.055384615384615386,
+      "gap_pp": 2.3666553710606575,
+      "auc": 0.5612181711541618,
+      "n_company_years": 2046,
+      "firms": 745,
+      "year_effect_pp": 0.2624499127572142,
+      "firm_effect_pp": -0.08928367166176393
+    },
+    {
+      "seed_index": 19,
+      "fold": 1,
+      "low_rate": 0.03178294573643411,
+      "high_rate": 0.055238715985008964,
+      "gap_pp": 2.3455770248574854,
+      "auc": 0.5628337594106634,
+      "n_company_years": 2033,
+      "firms": 740,
+      "year_effect_pp": 0.5654347759672622,
+      "firm_effect_pp": 0.07349715605150098
+    }
+  ],
+  "verification": {
+    "models_completed": 108,
+    "all_planned_tests_present": true,
+    "all_original_gaps_reproduced": true,
+    "paired_bootstrap_average_gap_pp": 1.994026976900038,
+    "paired_bootstrap_ci95_pp": [
+      1.3389204702841673,
+      2.656405349378914
+    ],
+    "independent_linearized_cluster_se_pp": 0.3414470830258566,
+    "bootstrap_ci_contains_point_estimate": true,
+    "repeated_splits_not_independent_replications": true,
+    "all_adjusted_sensitivity_and_component_p_above_05": true,
+    "api_calls": 0
+  },
+  "meaning_of_56_vs_36": "Unavailability reports per 1,000 comparison-group no-offer reviews in higher- versus lower-scoring company-years; score is constructed from different reviews. Not vacancy prevalence or classification precision."
+}

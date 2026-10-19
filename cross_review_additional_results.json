@@ -1,0 +1,2522 @@
+[
+  {
+    "id": "test_composition_0_year",
+    "family": "sensitivity",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length",
+      "test_negative_share",
+      "log_test_length"
+    ],
+    "n_company_years": 1995,
+    "firms": 745,
+    "test_reviews": 22689,
+    "effect_pp_per_10pp": 0.19832077643326285,
+    "ci95_pp": [
+      -0.20585388847992248,
+      0.6024954413464482
+    ],
+    "p": 0.33601343091688735,
+    "holm_p_family": 1.0
+  },
+  {
+    "id": "no_offer_predictor_0_year",
+    "family": "sensitivity",
+    "predictor": "ghost_among_no_offer",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 1985,
+    "firms": 740,
+    "test_reviews": 22635,
+    "effect_pp_per_10pp": 0.12780442294059444,
+    "ci95_pp": [
+      -0.054136148913240256,
+      0.30974499479442913
+    ],
+    "p": 0.16847510921199202,
+    "holm_p_family": 1.0
+  },
+  {
+    "id": "higher_coverage_0_year",
+    "family": "sensitivity",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 587,
+    "firms": 328,
+    "test_reviews": 11973,
+    "effect_pp_per_10pp": 0.34986546898518206,
+    "ci95_pp": [
+      -0.3867680006286487,
+      1.086498938599013
+    ],
+    "p": 0.3512834560200969,
+    "holm_p_family": 1.0
+  },
+  {
+    "id": "exclude_pandemic_0_year",
+    "family": "sensitivity",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 1569,
+    "firms": 696,
+    "test_reviews": 18420,
+    "effect_pp_per_10pp": 0.2531350678887579,
+    "ci95_pp": [
+      -0.22089010865117448,
+      0.7271602444286904
+    ],
+    "p": 0.2950502905543303,
+    "holm_p_family": 1.0
+  },
+  {
+    "id": "component_known_fake_0_year",
+    "family": "component",
+    "predictor": "ghost_share",
+    "target": "target_known_fake",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 1995,
+    "firms": 745,
+    "test_reviews": 22689,
+    "effect_pp_per_10pp": -0.04933870035248776,
+    "ci95_pp": [
+      -0.29390174020809223,
+      0.1952243395031167
+    ],
+    "p": 0.6924060926778655,
+    "holm_p_family": 1.0
+  },
+  {
+    "id": "component_future_role_0_year",
+    "family": "component",
+    "predictor": "ghost_share",
+    "target": "target_future_role",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 1995,
+    "firms": 745,
+    "test_reviews": 22689,
+    "effect_pp_per_10pp": 0.3031520074281795,
+    "ci95_pp": [
+      0.05523489299669022,
+      0.5510691218596687
+    ],
+    "p": 0.0165723891172437,
+    "holm_p_family": 0.1988686694069244
+  },
+  {
+    "id": "component_no_hiring_intent_0_year",
+    "family": "component",
+    "predictor": "ghost_share",
+    "target": "target_no_hiring_intent",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 1995,
+    "firms": 745,
+    "test_reviews": 22689,
+    "effect_pp_per_10pp": 0.1755598570263635,
+    "ci95_pp": [
+      -0.14160160969319147,
+      0.49272132374591854
+    ],
+    "p": 0.2778004972976529,
+    "holm_p_family": 1.0
+  },
+  {
+    "id": "test_composition_0_firm",
+    "family": "sensitivity",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length",
+      "test_negative_share",
+      "log_test_length"
+    ],
+    "n_company_years": 1995,
+    "firms": 745,
+    "test_reviews": 22689,
+    "effect_pp_per_10pp": -0.26977671696266453,
+    "ci95_pp": [
+      -0.902884047444054,
+      0.36333061351872487
+    ],
+    "p": 0.40332130523178106,
+    "holm_p_family": 1.0
+  },
+  {
+    "id": "no_offer_predictor_0_firm",
+    "family": "sensitivity",
+    "predictor": "ghost_among_no_offer",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 1985,
+    "firms": 740,
+    "test_reviews": 22635,
+    "effect_pp_per_10pp": -0.14758931699557343,
+    "ci95_pp": [
+      -0.4500511200587437,
+      0.1548724860675969
+    ],
+    "p": 0.33859018218801173,
+    "holm_p_family": 1.0
+  },
+  {
+    "id": "higher_coverage_0_firm",
+    "family": "sensitivity",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 587,
+    "firms": 328,
+    "test_reviews": 11973,
+    "effect_pp_per_10pp": -0.25857599841279993,
+    "ci95_pp": [
+      -2.212507963769777,
+      1.695355966944177
+    ],
+    "p": 0.7945690336019949,
+    "holm_p_family": 1.0
+  },
+  {
+    "id": "exclude_pandemic_0_firm",
+    "family": "sensitivity",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 1569,
+    "firms": 696,
+    "test_reviews": 18420,
+    "effect_pp_per_10pp": -0.33207344026565666,
+    "ci95_pp": [
+      -1.164629288384225,
+      0.5004824078529118
+    ],
+    "p": 0.4339276508479843,
+    "holm_p_family": 1.0
+  },
+  {
+    "id": "component_known_fake_0_firm",
+    "family": "component",
+    "predictor": "ghost_share",
+    "target": "target_known_fake",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 1995,
+    "firms": 745,
+    "test_reviews": 22689,
+    "effect_pp_per_10pp": -0.290701214018824,
+    "ci95_pp": [
+      -0.6840994249402205,
+      0.10269699690257254
+    ],
+    "p": 0.14738630695326646,
+    "holm_p_family": 1.0
+  },
+  {
+    "id": "component_future_role_0_firm",
+    "family": "component",
+    "predictor": "ghost_share",
+    "target": "target_future_role",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 1995,
+    "firms": 745,
+    "test_reviews": 22689,
+    "effect_pp_per_10pp": 0.03546189216200758,
+    "ci95_pp": [
+      -0.3545173388090622,
+      0.42544112313307736
+    ],
+    "p": 0.8584380940462346,
+    "holm_p_family": 1.0
+  },
+  {
+    "id": "component_no_hiring_intent_0_firm",
+    "family": "component",
+    "predictor": "ghost_share",
+    "target": "target_no_hiring_intent",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 1995,
+    "firms": 745,
+    "test_reviews": 22689,
+    "effect_pp_per_10pp": -0.08589808574194055,
+    "ci95_pp": [
+      -0.6199099282393354,
+      0.4481137567554543
+    ],
+    "p": 0.7523759715463443,
+    "holm_p_family": 1.0
+  },
+  {
+    "id": "test_composition_1_year",
+    "family": "sensitivity",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length",
+      "test_negative_share",
+      "log_test_length"
+    ],
+    "n_company_years": 1995,
+    "firms": 739,
+    "test_reviews": 22949,
+    "effect_pp_per_10pp": 0.10533552867163018,
+    "ci95_pp": [
+      -0.29354122819912787,
+      0.5042122855423882
+    ],
+    "p": 0.6045821700999041,
+    "holm_p_family": 1.0
+  },
+  {
+    "id": "no_offer_predictor_1_year",
+    "family": "sensitivity",
+    "predictor": "ghost_among_no_offer",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 1988,
+    "firms": 736,
+    "test_reviews": 22908,
+    "effect_pp_per_10pp": 0.12282611557745031,
+    "ci95_pp": [
+      -0.07121170427708796,
+      0.3168639354319886
+    ],
+    "p": 0.21459773188295092,
+    "holm_p_family": 1.0
+  },
+  {
+    "id": "higher_coverage_1_year",
+    "family": "sensitivity",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 607,
+    "firms": 335,
+    "test_reviews": 12216,
+    "effect_pp_per_10pp": 0.5036743750313953,
+    "ci95_pp": [
+      -0.15423459988487465,
+      1.1615833499476655
+    ],
+    "p": 0.1332273580724757,
+    "holm_p_family": 1.0
+  },
+  {
+    "id": "exclude_pandemic_1_year",
+    "family": "sensitivity",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 1566,
+    "firms": 693,
+    "test_reviews": 18451,
+    "effect_pp_per_10pp": 0.09330764516076721,
+    "ci95_pp": [
+      -0.3485803866590672,
+      0.5351956769806017
+    ],
+    "p": 0.6787972321611978,
+    "holm_p_family": 1.0
+  },
+  {
+    "id": "component_known_fake_1_year",
+    "family": "component",
+    "predictor": "ghost_share",
+    "target": "target_known_fake",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 1995,
+    "firms": 739,
+    "test_reviews": 22949,
+    "effect_pp_per_10pp": 0.19010874091512922,
+    "ci95_pp": [
+      -0.05485927887454483,
+      0.4350767607048033
+    ],
+    "p": 0.12817590517318483,
+    "holm_p_family": 1.0
+  },
+  {
+    "id": "component_future_role_1_year",
+    "family": "component",
+    "predictor": "ghost_share",
+    "target": "target_future_role",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 1995,
+    "firms": 739,
+    "test_reviews": 22949,
+    "effect_pp_per_10pp": 0.12109802906478526,
+    "ci95_pp": [
+      -0.1059256511699864,
+      0.34812170929955694
+    ],
+    "p": 0.29563513708061306,
+    "holm_p_family": 1.0
+  },
+  {
+    "id": "component_no_hiring_intent_1_year",
+    "family": "component",
+    "predictor": "ghost_share",
+    "target": "target_no_hiring_intent",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 1995,
+    "firms": 739,
+    "test_reviews": 22949,
+    "effect_pp_per_10pp": 0.006371609786848021,
+    "ci95_pp": [
+      -0.28070023261876104,
+      0.29344345219245704
+    ],
+    "p": 0.9652847192249562,
+    "holm_p_family": 1.0
+  },
+  {
+    "id": "test_composition_1_firm",
+    "family": "sensitivity",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length",
+      "test_negative_share",
+      "log_test_length"
+    ],
+    "n_company_years": 1995,
+    "firms": 739,
+    "test_reviews": 22949,
+    "effect_pp_per_10pp": -0.2538552093429759,
+    "ci95_pp": [
+      -0.986228571465368,
+      0.47851815277941623
+    ],
+    "p": 0.4966137558970454,
+    "holm_p_family": 1.0
+  },
+  {
+    "id": "no_offer_predictor_1_firm",
+    "family": "sensitivity",
+    "predictor": "ghost_among_no_offer",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 1988,
+    "firms": 736,
+    "test_reviews": 22908,
+    "effect_pp_per_10pp": -0.12218036805885861,
+    "ci95_pp": [
+      -0.4601525484245318,
+      0.21579181230681463
+    ],
+    "p": 0.478307987471782,
+    "holm_p_family": 1.0
+  },
+  {
+    "id": "higher_coverage_1_firm",
+    "family": "sensitivity",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 607,
+    "firms": 335,
+    "test_reviews": 12216,
+    "effect_pp_per_10pp": 1.3731107000116225,
+    "ci95_pp": [
+      -0.4282843690483465,
+      3.1745057690715917
+    ],
+    "p": 0.1345706234134903,
+    "holm_p_family": 1.0
+  },
+  {
+    "id": "exclude_pandemic_1_firm",
+    "family": "sensitivity",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 1566,
+    "firms": 693,
+    "test_reviews": 18451,
+    "effect_pp_per_10pp": -0.17652999646245474,
+    "ci95_pp": [
+      -1.1669029889947506,
+      0.8138429960698411
+    ],
+    "p": 0.7265373977879321,
+    "holm_p_family": 1.0
+  },
+  {
+    "id": "component_known_fake_1_firm",
+    "family": "component",
+    "predictor": "ghost_share",
+    "target": "target_known_fake",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 1995,
+    "firms": 739,
+    "test_reviews": 22949,
+    "effect_pp_per_10pp": 0.049986874080186205,
+    "ci95_pp": [
+      -0.38218630864603703,
+      0.48216005680640944
+    ],
+    "p": 0.8205241118917124,
+    "holm_p_family": 1.0
+  },
+  {
+    "id": "component_future_role_1_firm",
+    "family": "component",
+    "predictor": "ghost_share",
+    "target": "target_future_role",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 1995,
+    "firms": 739,
+    "test_reviews": 22949,
+    "effect_pp_per_10pp": -0.13978022972567342,
+    "ci95_pp": [
+      -0.5727709988226153,
+      0.2932105393712684
+    ],
+    "p": 0.5266256792263003,
+    "holm_p_family": 1.0
+  },
+  {
+    "id": "component_no_hiring_intent_1_firm",
+    "family": "component",
+    "predictor": "ghost_share",
+    "target": "target_no_hiring_intent",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 1995,
+    "firms": 739,
+    "test_reviews": 22949,
+    "effect_pp_per_10pp": -0.04698175287020301,
+    "ci95_pp": [
+      -0.5680423907327029,
+      0.4740788849922969
+    ],
+    "p": 0.8596203498246794,
+    "holm_p_family": 1.0
+  },
+  {
+    "id": "repeated_0_0_year",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2054,
+    "firms": 748,
+    "test_reviews": 23053,
+    "effect_pp_per_10pp": 0.7258056841707816,
+    "ci95_pp": [
+      0.3083458707266854,
+      1.143265497614878
+    ],
+    "p": 0.0006631062212667069
+  },
+  {
+    "id": "repeated_0_0_firm",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2054,
+    "firms": 748,
+    "test_reviews": 23053,
+    "effect_pp_per_10pp": 0.38366262722227645,
+    "ci95_pp": [
+      -0.39004803228060014,
+      1.157373286725153
+    ],
+    "p": 0.33083119524146387
+  },
+  {
+    "id": "repeated_0_1_year",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2000,
+    "firms": 741,
+    "test_reviews": 22917,
+    "effect_pp_per_10pp": 0.19966025711420715,
+    "ci95_pp": [
+      -0.21532422528069184,
+      0.6146447395091061
+    ],
+    "p": 0.3455055095079469
+  },
+  {
+    "id": "repeated_0_1_firm",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2000,
+    "firms": 741,
+    "test_reviews": 22917,
+    "effect_pp_per_10pp": -0.19648339869178472,
+    "ci95_pp": [
+      -0.9081447108656895,
+      0.51517791348212
+    ],
+    "p": 0.5881522539572961
+  },
+  {
+    "id": "repeated_1_0_year",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2055,
+    "firms": 754,
+    "test_reviews": 23126,
+    "effect_pp_per_10pp": 0.5923595445319237,
+    "ci95_pp": [
+      0.15281117732364916,
+      1.0319079117401984
+    ],
+    "p": 0.008282286138895334
+  },
+  {
+    "id": "repeated_1_0_firm",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2055,
+    "firms": 754,
+    "test_reviews": 23126,
+    "effect_pp_per_10pp": 0.12808878332830215,
+    "ci95_pp": [
+      -0.6396311035579187,
+      0.895808670214523
+    ],
+    "p": 0.7434829645782577
+  },
+  {
+    "id": "repeated_1_1_year",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2045,
+    "firms": 744,
+    "test_reviews": 23125,
+    "effect_pp_per_10pp": 0.43696990236057304,
+    "ci95_pp": [
+      0.04815059026599393,
+      0.8257892144551521
+    ],
+    "p": 0.02763652690181768
+  },
+  {
+    "id": "repeated_1_1_firm",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2045,
+    "firms": 744,
+    "test_reviews": 23125,
+    "effect_pp_per_10pp": -0.07086013728533072,
+    "ci95_pp": [
+      -0.7278126706198369,
+      0.5860923960491755
+    ],
+    "p": 0.8324488890542261
+  },
+  {
+    "id": "repeated_2_0_year",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2015,
+    "firms": 739,
+    "test_reviews": 22914,
+    "effect_pp_per_10pp": 0.494182944047645,
+    "ci95_pp": [
+      0.08314772664962576,
+      0.9052181614456642
+    ],
+    "p": 0.018476006009375955
+  },
+  {
+    "id": "repeated_2_0_firm",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2015,
+    "firms": 739,
+    "test_reviews": 22914,
+    "effect_pp_per_10pp": -0.03163504886706482,
+    "ci95_pp": [
+      -0.7270759020391937,
+      0.6638058043050641
+    ],
+    "p": 0.9289029943904141
+  },
+  {
+    "id": "repeated_2_1_year",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 1983,
+    "firms": 735,
+    "test_reviews": 22785,
+    "effect_pp_per_10pp": 0.16175810641284816,
+    "ci95_pp": [
+      -0.23418417249911444,
+      0.5577003853248107
+    ],
+    "p": 0.42310312419864593
+  },
+  {
+    "id": "repeated_2_1_firm",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 1983,
+    "firms": 735,
+    "test_reviews": 22785,
+    "effect_pp_per_10pp": -0.03418678051680462,
+    "ci95_pp": [
+      -0.6955035690539206,
+      0.6271300080203114
+    ],
+    "p": 0.9192334596231856
+  },
+  {
+    "id": "repeated_3_0_year",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2032,
+    "firms": 749,
+    "test_reviews": 23194,
+    "effect_pp_per_10pp": 0.7050650240278693,
+    "ci95_pp": [
+      0.29743671854188625,
+      1.1126933295138524
+    ],
+    "p": 0.0007068976280570816
+  },
+  {
+    "id": "repeated_3_0_firm",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2032,
+    "firms": 749,
+    "test_reviews": 23194,
+    "effect_pp_per_10pp": 0.4656678133512359,
+    "ci95_pp": [
+      -0.20695127654507406,
+      1.138286903247546
+    ],
+    "p": 0.17463533888817326
+  },
+  {
+    "id": "repeated_3_1_year",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 1990,
+    "firms": 745,
+    "test_reviews": 22630,
+    "effect_pp_per_10pp": 0.5787623037844914,
+    "ci95_pp": [
+      0.12433928854331068,
+      1.0331853190256723
+    ],
+    "p": 0.012578183001745733
+  },
+  {
+    "id": "repeated_3_1_firm",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 1990,
+    "firms": 745,
+    "test_reviews": 22630,
+    "effect_pp_per_10pp": 0.04863873685318901,
+    "ci95_pp": [
+      -0.7135136788907138,
+      0.8107911525970919
+    ],
+    "p": 0.9003828617880328
+  },
+  {
+    "id": "repeated_4_0_year",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2043,
+    "firms": 744,
+    "test_reviews": 23070,
+    "effect_pp_per_10pp": 0.4460395484281837,
+    "ci95_pp": [
+      0.015224144127523945,
+      0.8768549527288436
+    ],
+    "p": 0.04244240762759744
+  },
+  {
+    "id": "repeated_4_0_firm",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2043,
+    "firms": 744,
+    "test_reviews": 23070,
+    "effect_pp_per_10pp": -0.07616378608266522,
+    "ci95_pp": [
+      -0.8232003987112224,
+      0.6708728265458919
+    ],
+    "p": 0.8414997162172384
+  },
+  {
+    "id": "repeated_4_1_year",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 1993,
+    "firms": 737,
+    "test_reviews": 22874,
+    "effect_pp_per_10pp": 0.728868311313622,
+    "ci95_pp": [
+      0.33078765936846455,
+      1.1269489632587795
+    ],
+    "p": 0.00033770710645816745
+  },
+  {
+    "id": "repeated_4_1_firm",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 1993,
+    "firms": 737,
+    "test_reviews": 22874,
+    "effect_pp_per_10pp": 0.5544248501282414,
+    "ci95_pp": [
+      -0.12588082284012836,
+      1.234730523096611
+    ],
+    "p": 0.11010602104838696
+  },
+  {
+    "id": "repeated_5_0_year",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2007,
+    "firms": 750,
+    "test_reviews": 22958,
+    "effect_pp_per_10pp": 0.5901355837393786,
+    "ci95_pp": [
+      0.13540816733858851,
+      1.0448630001401686
+    ],
+    "p": 0.01099807919421585
+  },
+  {
+    "id": "repeated_5_0_firm",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2007,
+    "firms": 750,
+    "test_reviews": 22958,
+    "effect_pp_per_10pp": 0.34232942275096023,
+    "ci95_pp": [
+      -0.4206057767640473,
+      1.1052646222659679
+    ],
+    "p": 0.37886925741301175
+  },
+  {
+    "id": "repeated_5_1_year",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2013,
+    "firms": 757,
+    "test_reviews": 22760,
+    "effect_pp_per_10pp": 0.5681072974918511,
+    "ci95_pp": [
+      0.1540622635157155,
+      0.9821523314679868
+    ],
+    "p": 0.0071858351341760355
+  },
+  {
+    "id": "repeated_5_1_firm",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2013,
+    "firms": 757,
+    "test_reviews": 22760,
+    "effect_pp_per_10pp": -0.23697316217428815,
+    "ci95_pp": [
+      -0.9011514271787141,
+      0.42720510283013774
+    ],
+    "p": 0.484069768767135
+  },
+  {
+    "id": "repeated_6_0_year",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2031,
+    "firms": 748,
+    "test_reviews": 23011,
+    "effect_pp_per_10pp": 0.48320854640715677,
+    "ci95_pp": [
+      0.07039914666984184,
+      0.8960179461444717
+    ],
+    "p": 0.021801706164738602
+  },
+  {
+    "id": "repeated_6_0_firm",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2031,
+    "firms": 748,
+    "test_reviews": 23011,
+    "effect_pp_per_10pp": -0.24599522455352174,
+    "ci95_pp": [
+      -0.9408425985977377,
+      0.4488521494906943
+    ],
+    "p": 0.487467568068319
+  },
+  {
+    "id": "repeated_6_1_year",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2023,
+    "firms": 745,
+    "test_reviews": 23077,
+    "effect_pp_per_10pp": 0.584495915273342,
+    "ci95_pp": [
+      0.18443686910553758,
+      0.9845549614411464
+    ],
+    "p": 0.004209756503087808
+  },
+  {
+    "id": "repeated_6_1_firm",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2023,
+    "firms": 745,
+    "test_reviews": 23077,
+    "effect_pp_per_10pp": 0.23533112097061107,
+    "ci95_pp": [
+      -0.43586508943084884,
+      0.906527331372071
+    ],
+    "p": 0.49167248544801695
+  },
+  {
+    "id": "repeated_7_0_year",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2028,
+    "firms": 740,
+    "test_reviews": 22993,
+    "effect_pp_per_10pp": 0.5356085663710007,
+    "ci95_pp": [
+      0.13273438167850218,
+      0.9384827510634994
+    ],
+    "p": 0.009193966290967156
+  },
+  {
+    "id": "repeated_7_0_firm",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2028,
+    "firms": 740,
+    "test_reviews": 22993,
+    "effect_pp_per_10pp": 0.28093053488147823,
+    "ci95_pp": [
+      -0.45635887011999954,
+      1.018219939882956
+    ],
+    "p": 0.4548880146864999
+  },
+  {
+    "id": "repeated_7_1_year",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 1977,
+    "firms": 745,
+    "test_reviews": 22691,
+    "effect_pp_per_10pp": 0.16742176767281758,
+    "ci95_pp": [
+      -0.21873729655722152,
+      0.5535808319028567
+    ],
+    "p": 0.39527309572542507
+  },
+  {
+    "id": "repeated_7_1_firm",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 1977,
+    "firms": 745,
+    "test_reviews": 22691,
+    "effect_pp_per_10pp": -0.5312884636272059,
+    "ci95_pp": [
+      -1.250238017231216,
+      0.187661089976804
+    ],
+    "p": 0.14736789190546473
+  },
+  {
+    "id": "repeated_8_0_year",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2052,
+    "firms": 758,
+    "test_reviews": 23297,
+    "effect_pp_per_10pp": 0.583879464803337,
+    "ci95_pp": [
+      0.17537993411699848,
+      0.9923789954896756
+    ],
+    "p": 0.0051094341933911065
+  },
+  {
+    "id": "repeated_8_0_firm",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2052,
+    "firms": 758,
+    "test_reviews": 23297,
+    "effect_pp_per_10pp": 0.17462046294342243,
+    "ci95_pp": [
+      -0.5226269882081622,
+      0.871867914095007
+    ],
+    "p": 0.6232816314836493
+  },
+  {
+    "id": "repeated_8_1_year",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 1986,
+    "firms": 737,
+    "test_reviews": 22664,
+    "effect_pp_per_10pp": 0.480633666705946,
+    "ci95_pp": [
+      0.06100583842700791,
+      0.9002614949848841
+    ],
+    "p": 0.024796163836292618
+  },
+  {
+    "id": "repeated_8_1_firm",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 1986,
+    "firms": 737,
+    "test_reviews": 22664,
+    "effect_pp_per_10pp": 0.2524546246566094,
+    "ci95_pp": [
+      -0.4700380880338213,
+      0.9749473373470401
+    ],
+    "p": 0.49313990085534243
+  },
+  {
+    "id": "repeated_9_0_year",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2030,
+    "firms": 737,
+    "test_reviews": 23119,
+    "effect_pp_per_10pp": 0.5042988248948536,
+    "ci95_pp": [
+      0.09547974823751824,
+      0.913117901552189
+    ],
+    "p": 0.015644184602652062
+  },
+  {
+    "id": "repeated_9_0_firm",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2030,
+    "firms": 737,
+    "test_reviews": 23119,
+    "effect_pp_per_10pp": -0.013412163777410967,
+    "ci95_pp": [
+      -0.7254915680744636,
+      0.6986672405196417
+    ],
+    "p": 0.9705295524712123
+  },
+  {
+    "id": "repeated_9_1_year",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2040,
+    "firms": 742,
+    "test_reviews": 23016,
+    "effect_pp_per_10pp": 0.4673678481152529,
+    "ci95_pp": [
+      0.05228558737217309,
+      0.8824501088583326
+    ],
+    "p": 0.027344182289262893
+  },
+  {
+    "id": "repeated_9_1_firm",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2040,
+    "firms": 742,
+    "test_reviews": 23016,
+    "effect_pp_per_10pp": 0.03428411084565974,
+    "ci95_pp": [
+      -0.6643714277494938,
+      0.7329396494408131
+    ],
+    "p": 0.9233216013692168
+  },
+  {
+    "id": "repeated_10_0_year",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2024,
+    "firms": 746,
+    "test_reviews": 23072,
+    "effect_pp_per_10pp": 0.23653658786174214,
+    "ci95_pp": [
+      -0.17787260007044076,
+      0.6509457757939251
+    ],
+    "p": 0.26311029442515427
+  },
+  {
+    "id": "repeated_10_0_firm",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2024,
+    "firms": 746,
+    "test_reviews": 23072,
+    "effect_pp_per_10pp": -0.17060839005589656,
+    "ci95_pp": [
+      -0.877811102499616,
+      0.536594322387823
+    ],
+    "p": 0.6360926606400347
+  },
+  {
+    "id": "repeated_10_1_year",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2022,
+    "firms": 754,
+    "test_reviews": 22916,
+    "effect_pp_per_10pp": 0.5970996811279126,
+    "ci95_pp": [
+      0.1988753984312499,
+      0.9953239638245753
+    ],
+    "p": 0.003313773517884715
+  },
+  {
+    "id": "repeated_10_1_firm",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2022,
+    "firms": 754,
+    "test_reviews": 22916,
+    "effect_pp_per_10pp": 0.3439848715235982,
+    "ci95_pp": [
+      -0.29782915210997885,
+      0.9857988951571752
+    ],
+    "p": 0.29324370986555603
+  },
+  {
+    "id": "repeated_11_0_year",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2025,
+    "firms": 743,
+    "test_reviews": 23091,
+    "effect_pp_per_10pp": 0.5509845578040431,
+    "ci95_pp": [
+      0.1180783204124803,
+      0.9838907951956057
+    ],
+    "p": 0.012637688971003792
+  },
+  {
+    "id": "repeated_11_0_firm",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2025,
+    "firms": 743,
+    "test_reviews": 23091,
+    "effect_pp_per_10pp": 0.25161878242419866,
+    "ci95_pp": [
+      -0.4764908179727895,
+      0.9797283828211869
+    ],
+    "p": 0.49791505451245854
+  },
+  {
+    "id": "repeated_11_1_year",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2035,
+    "firms": 750,
+    "test_reviews": 22948,
+    "effect_pp_per_10pp": 0.5447452610481708,
+    "ci95_pp": [
+      0.14423002722610698,
+      0.9452604948702346
+    ],
+    "p": 0.00770589441908607
+  },
+  {
+    "id": "repeated_11_1_firm",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2035,
+    "firms": 750,
+    "test_reviews": 22948,
+    "effect_pp_per_10pp": 0.2532531344196315,
+    "ci95_pp": [
+      -0.4772230878674306,
+      0.9837293567066936
+    ],
+    "p": 0.49652682727414466
+  },
+  {
+    "id": "repeated_12_0_year",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2024,
+    "firms": 742,
+    "test_reviews": 23124,
+    "effect_pp_per_10pp": 0.6745134900698592,
+    "ci95_pp": [
+      0.26324983295208126,
+      1.085777147187637
+    ],
+    "p": 0.001318417087180481
+  },
+  {
+    "id": "repeated_12_0_firm",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2024,
+    "firms": 742,
+    "test_reviews": 23124,
+    "effect_pp_per_10pp": 0.2044450101763413,
+    "ci95_pp": [
+      -0.523019592345232,
+      0.9319096126979147
+    ],
+    "p": 0.5814899808684424
+  },
+  {
+    "id": "repeated_12_1_year",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2034,
+    "firms": 750,
+    "test_reviews": 22979,
+    "effect_pp_per_10pp": 0.17733806669315227,
+    "ci95_pp": [
+      -0.24609124319419015,
+      0.6007673765804946
+    ],
+    "p": 0.41154222238177596
+  },
+  {
+    "id": "repeated_12_1_firm",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2034,
+    "firms": 750,
+    "test_reviews": 22979,
+    "effect_pp_per_10pp": -0.28316512587362047,
+    "ci95_pp": [
+      -0.9582531035738819,
+      0.391922851826641
+    ],
+    "p": 0.41072456652024525
+  },
+  {
+    "id": "repeated_13_0_year",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 1985,
+    "firms": 742,
+    "test_reviews": 22652,
+    "effect_pp_per_10pp": 0.582935666744082,
+    "ci95_pp": [
+      0.12587891558612846,
+      1.0399924179020357
+    ],
+    "p": 0.01245451581546112
+  },
+  {
+    "id": "repeated_13_0_firm",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 1985,
+    "firms": 742,
+    "test_reviews": 22652,
+    "effect_pp_per_10pp": 0.1522917854907968,
+    "ci95_pp": [
+      -0.5318216428661414,
+      0.836405213847735
+    ],
+    "p": 0.6623750398211016
+  },
+  {
+    "id": "repeated_13_1_year",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2017,
+    "firms": 750,
+    "test_reviews": 23004,
+    "effect_pp_per_10pp": 0.45362398293645073,
+    "ci95_pp": [
+      0.031031755885302104,
+      0.8762162099875993
+    ],
+    "p": 0.03540164920928132
+  },
+  {
+    "id": "repeated_13_1_firm",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2017,
+    "firms": 750,
+    "test_reviews": 23004,
+    "effect_pp_per_10pp": -0.04614257707298759,
+    "ci95_pp": [
+      -0.7216451177740847,
+      0.6293599636281095
+    ],
+    "p": 0.8934146622131607
+  },
+  {
+    "id": "repeated_14_0_year",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2006,
+    "firms": 741,
+    "test_reviews": 22859,
+    "effect_pp_per_10pp": 0.5161250088953104,
+    "ci95_pp": [
+      0.0967635007818924,
+      0.9354865170087284
+    ],
+    "p": 0.015882391609971416
+  },
+  {
+    "id": "repeated_14_0_firm",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2006,
+    "firms": 741,
+    "test_reviews": 22859,
+    "effect_pp_per_10pp": -0.0596621429180736,
+    "ci95_pp": [
+      -0.6577832482000502,
+      0.538458962363903
+    ],
+    "p": 0.8448809395391024
+  },
+  {
+    "id": "repeated_14_1_year",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2014,
+    "firms": 744,
+    "test_reviews": 22930,
+    "effect_pp_per_10pp": 0.7186105640385507,
+    "ci95_pp": [
+      0.30446255205429507,
+      1.1327585760228063
+    ],
+    "p": 0.0006799073719929381
+  },
+  {
+    "id": "repeated_14_1_firm",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2014,
+    "firms": 744,
+    "test_reviews": 22930,
+    "effect_pp_per_10pp": 0.41173640403141415,
+    "ci95_pp": [
+      -0.28524280957849374,
+      1.1087156176413222
+    ],
+    "p": 0.24669443088058146
+  },
+  {
+    "id": "repeated_15_0_year",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2003,
+    "firms": 749,
+    "test_reviews": 22810,
+    "effect_pp_per_10pp": 0.5518218493717784,
+    "ci95_pp": [
+      0.09747112770961866,
+      1.0061725710339382
+    ],
+    "p": 0.017318029064572294
+  },
+  {
+    "id": "repeated_15_0_firm",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2003,
+    "firms": 749,
+    "test_reviews": 22810,
+    "effect_pp_per_10pp": 0.2928969669461388,
+    "ci95_pp": [
+      -0.388267914849853,
+      0.9740618487421306
+    ],
+    "p": 0.39905683530975766
+  },
+  {
+    "id": "repeated_15_1_year",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2008,
+    "firms": 745,
+    "test_reviews": 22921,
+    "effect_pp_per_10pp": 0.6798535031526955,
+    "ci95_pp": [
+      0.29062444268062937,
+      1.0690825636247618
+    ],
+    "p": 0.000626154685437345
+  },
+  {
+    "id": "repeated_15_1_firm",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2008,
+    "firms": 745,
+    "test_reviews": 22921,
+    "effect_pp_per_10pp": 0.30528999400359785,
+    "ci95_pp": [
+      -0.34078128403700253,
+      0.9513612720441983
+    ],
+    "p": 0.3540810577482718
+  },
+  {
+    "id": "repeated_16_0_year",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2020,
+    "firms": 761,
+    "test_reviews": 23010,
+    "effect_pp_per_10pp": 0.5218991986774093,
+    "ci95_pp": [
+      0.14563761611585574,
+      0.8981607812389627
+    ],
+    "p": 0.006579838751384884
+  },
+  {
+    "id": "repeated_16_0_firm",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2020,
+    "firms": 761,
+    "test_reviews": 23010,
+    "effect_pp_per_10pp": 0.061389667675915055,
+    "ci95_pp": [
+      -0.6153930352556666,
+      0.7381723706074966
+    ],
+    "p": 0.8587848813639843
+  },
+  {
+    "id": "repeated_16_1_year",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2001,
+    "firms": 735,
+    "test_reviews": 22795,
+    "effect_pp_per_10pp": 0.5159797927799016,
+    "ci95_pp": [
+      0.051409874889438434,
+      0.9805497106703648
+    ],
+    "p": 0.029509684185443124
+  },
+  {
+    "id": "repeated_16_1_firm",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2001,
+    "firms": 735,
+    "test_reviews": 22795,
+    "effect_pp_per_10pp": 0.11145199599459382,
+    "ci95_pp": [
+      -0.695783136317777,
+      0.9186871283069646
+    ],
+    "p": 0.7865376760400388
+  },
+  {
+    "id": "repeated_17_0_year",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2057,
+    "firms": 754,
+    "test_reviews": 23188,
+    "effect_pp_per_10pp": 0.3369385697884239,
+    "ci95_pp": [
+      -0.03154791383658685,
+      0.7054250534134345
+    ],
+    "p": 0.07308487825749704
+  },
+  {
+    "id": "repeated_17_0_firm",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2057,
+    "firms": 754,
+    "test_reviews": 23188,
+    "effect_pp_per_10pp": 0.16719594527817416,
+    "ci95_pp": [
+      -0.4808840377648557,
+      0.8152759283212041
+    ],
+    "p": 0.6128586175590498
+  },
+  {
+    "id": "repeated_17_1_year",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 1992,
+    "firms": 744,
+    "test_reviews": 22658,
+    "effect_pp_per_10pp": 0.3550592675086506,
+    "ci95_pp": [
+      -0.13820257900519184,
+      0.8483211140224931
+    ],
+    "p": 0.15820034594252733
+  },
+  {
+    "id": "repeated_17_1_firm",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 1992,
+    "firms": 744,
+    "test_reviews": 22658,
+    "effect_pp_per_10pp": -0.227347626425313,
+    "ci95_pp": [
+      -0.9299375136731514,
+      0.4752422608225254
+    ],
+    "p": 0.5256511667206621
+  },
+  {
+    "id": "repeated_18_0_year",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2008,
+    "firms": 737,
+    "test_reviews": 22872,
+    "effect_pp_per_10pp": 0.6755728065952584,
+    "ci95_pp": [
+      0.29001549954296135,
+      1.0611301136475557
+    ],
+    "p": 0.000601756586982022
+  },
+  {
+    "id": "repeated_18_0_firm",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2008,
+    "firms": 737,
+    "test_reviews": 22872,
+    "effect_pp_per_10pp": 0.29834153348123993,
+    "ci95_pp": [
+      -0.3112231707658388,
+      0.9079062377283187
+    ],
+    "p": 0.337139804715212
+  },
+  {
+    "id": "repeated_18_1_year",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2066,
+    "firms": 772,
+    "test_reviews": 23234,
+    "effect_pp_per_10pp": 0.4360199293420277,
+    "ci95_pp": [
+      0.02470956475857114,
+      0.8473302939254843
+    ],
+    "p": 0.0377472523796312
+  },
+  {
+    "id": "repeated_18_1_firm",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2066,
+    "firms": 772,
+    "test_reviews": 23234,
+    "effect_pp_per_10pp": 0.2739269133614488,
+    "ci95_pp": [
+      -0.38229050926417196,
+      0.9301443359870697
+    ],
+    "p": 0.412979066834491
+  },
+  {
+    "id": "repeated_19_0_year",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2046,
+    "firms": 745,
+    "test_reviews": 23173,
+    "effect_pp_per_10pp": 0.2624499127572142,
+    "ci95_pp": [
+      -0.15039756102057028,
+      0.6752973865349986
+    ],
+    "p": 0.21264916853300556
+  },
+  {
+    "id": "repeated_19_0_firm",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2046,
+    "firms": 745,
+    "test_reviews": 23173,
+    "effect_pp_per_10pp": -0.08928367166176393,
+    "ci95_pp": [
+      -0.7560195551405344,
+      0.5774522118170065
+    ],
+    "p": 0.7928165919826291
+  },
+  {
+    "id": "repeated_19_1_year",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": false,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2033,
+    "firms": 740,
+    "test_reviews": 23015,
+    "effect_pp_per_10pp": 0.5654347759672622,
+    "ci95_pp": [
+      0.11379941144185578,
+      1.0170701404926685
+    ],
+    "p": 0.014160857824593545
+  },
+  {
+    "id": "repeated_19_1_firm",
+    "family": "repeated_split",
+    "predictor": "ghost_share",
+    "target": "target_strict",
+    "firm_effects": true,
+    "year_effects": true,
+    "controls": [
+      "training_no_offer_share",
+      "training_negative_share",
+      "log_training_reviews",
+      "log_training_length"
+    ],
+    "n_company_years": 2033,
+    "firms": 740,
+    "test_reviews": 23015,
+    "effect_pp_per_10pp": 0.07349715605150098,
+    "ci95_pp": [
+      -0.6195240786660924,
+      0.7665183907690943
+    ],
+    "p": 0.8352169551920586
+  }
+]
