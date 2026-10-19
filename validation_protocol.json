@@ -35,7 +35,7 @@
     "standard_errors": "clustered by firm"
   },
   "our_proposed_extension": {
-    "status": "NOT ESTIMATED: posting and hiring histories missing; existing interview classification and supporting outcome tables are available",
+    "status": "NOT ESTIMATED: original dataset audited; jobs_count is undated profile metadata repeated over review years, not historical posting counts.",
     "measures": {
       "G_B": "Broader ghost-intensity proxy based on Revelio postings and subsequent hiring (research-plan label HJPR)",
       "G_I": "Interview-stage perceived ghost-intensity proxy (research-plan label HJPR_Int)"
@@ -74,5 +74,17 @@
     "Compustat net employment change is not gross hiring or departures",
     "A significant or insignificant investment coefficient does not validate ghost-job identification"
   ],
-  "design_basis": "Verified two-measure research specification: Lourie baseline, broader and interview-stage ghost proxies, and posting interactions."
+  "design_basis": "Verified two-measure research specification: Lourie baseline, broader and interview-stage ghost proxies, and posting interactions.",
+  "requested_validation_source": "Original interview-based dataset and original financial links, per user instruction. Existing displayed supporting tables retain their separately reported sample.",
+  "original_dataset_check": {
+    "data_files_inspected": 117,
+    "analyst_linked_companies": 410,
+    "companies_with_single_repeated_jobs_count_entry": 408,
+    "companies_with_conflicting_entries": 2,
+    "dated_posting_history_found": false,
+    "matched_hiring_history_found": false,
+    "baseline_and_interactions_estimated": false,
+    "minimum_for_interview_check": "Monthly active-posting counts, observation dates, and employer identifiers matching the original panel. Gross hiring histories are not required for this interaction when annual employment outcomes are available.",
+    "additional_for_broader_proxy": "Matched subsequent hires or a documented delivered posting-to-hire proxy with non-overlapping validation windows."
+  }
 }
