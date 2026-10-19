@@ -197,7 +197,7 @@
     7379
   ],
   "high_tech_note": "Explicit selected-SIC industry proxy; not an occupation-skill measure or a claim of a validated high-skill classification.",
-  "study_focus": "Identify ghost recruitment, then validate by checking whether ghost-adjusted postings recover the positive Lourie hiring/performance relations. Existing company-outcome regressions are supplementary.",
+  "study_focus": "Measure broader and interview-stage ghost recruitment, replicate the Lourie posting-to-operations baseline, and test whether each ghost proxy attenuates that relation through posting interactions. Existing company-outcome tables are additional evidence.",
   "confirmed_benchmark": {
     "confirmed_by_user": true,
     "reference_id": "gutierrez2020",
@@ -235,21 +235,29 @@
       "standard_errors": "clustered by firm"
     },
     "our_proposed_extension": {
-      "status": "NOT ESTIMATED: active-posting histories missing",
-      "design": "Signal recovery: construct original and ghost-adjusted posting counts, then apply the same Lourie future-activity specification to each signal.",
-      "adjustment": "Remove individually linked ghost postings when such links are available. With only an aggregate measure, N_adj[i,w] = N_raw[i,w]*(1-q_hat[i,w]) is a proxy adjustment requiring an explicit mapping from the review population to the posting population.",
-      "measurement_warning": "An interview-review share is not automatically the fraction of advertised vacancies that are ghost jobs. Raw feature scores are not calibrated posting probabilities.",
-      "posting_change_construction": "Adjust the level of postings in each time window first; average active postings over the first three months, compare the corresponding windows one year apart, then apply benchmark asset scaling and ranking. Do not multiply the already-computed posting change by a single current ghost share.",
-      "equation": "DeltaY[i,t+1] = alpha_m + beta_m*P_m[i,t+3m] + theta_m*X[i,t] + industry FE_m + year FE_m + error_m, for m in {raw, adjusted}",
-      "prediction": "The adjusted hiring signal should reproduce the positive relations with employment, SG&A, revenue, and operating earnings. Preferably it improves correspondence with realized activity relative to the original signal.",
-      "information_timing": "Use only ghost evidence available by each relevant measurement date. Fix classification and discounting rules independently of future outcomes; avoid full-sample priors that contain future reviews.",
-      "comparison": "Use the same firms, periods, outcome definitions, controls, effects and clustering for original and adjusted signals. Report confidence intervals and comparable-unit estimates; assess predictive correspondence on a prespecified held-out sample. A bigger coefficient or a smaller p-value alone is not sufficient.",
-      "primary_test_is_not": "An interaction between raw posting changes and ghost intensity, or a regression of future outcomes on ghost intensity alone.",
-      "caveat": "Recovery of the expected hiring pattern is evidence consistent with the measure, alongside independent coding and external hiring checks, rather than proof about every vacancy."
+      "status": "NOT ESTIMATED: posting and hiring histories missing; existing interview classification and supporting outcome tables are available",
+      "measures": {
+        "G_B": "Broader ghost-intensity proxy based on Revelio postings and subsequent hiring (research-plan label HJPR)",
+        "G_I": "Interview-stage perceived ghost-intensity proxy (research-plan label HJPR_Int)"
+      },
+      "orientation": "Higher G means more ghost activity. The raw hires/postings ratio has the opposite orientation; define the delivered proxy before estimation and do not assume a bounded 1-minus-ratio transformation.",
+      "baseline": "Replicate the positive JP-to-future-operations relation using the Lourie variables, timing, controls, industry/year effects and firm-clustered errors.",
+      "equation": "DeltaY = alpha + beta*JP + gamma_k*G_k + delta_k*(JP*G_k) + theta*X + industry FE + year FE + error, k in {broader, interview}",
+      "joint_comparison": "Where common coverage permits, include both ghost main effects and both JP interactions; distinguish this from the separate specifications.",
+      "predictions": {
+        "baseline_beta": "positive",
+        "broader_delta": "negative when higher values mean more ghost intensity",
+        "interview_delta": "negative when higher values mean more ghost intensity",
+        "relative_delta_ordering": "Not prespecified by the research plan; compare on a common sample."
+      },
+      "timing": "Define proxy measurement windows in advance and avoid using the same subsequent hiring observations as both proxy inputs and independent validation outcomes.",
+      "priority": "Employment, SG&A, revenue and operating earnings first; market reactions later after event-window and news-control choices.",
+      "supporting_tests": "Existing growth, morale, productivity, monitoring and cost tests remain additional analyses.",
+      "not_the_design": "Do not mechanically remove or discount posting counts using the interview-review share."
     },
     "additional_external_check": "Matched hires per posting over six months by company, occupation/role, seniority and location, following the logic described in Revelio’s article; separate common review-source evidence from independent worker-start evidence.",
     "data_needed": [
-      "Time-stamped active-posting counts and identifiers aligned to the financial firm, including corresponding three-month windows in adjacent fiscal years and a defensible link to the ghost measure",
+      "Revelio posting histories and subsequent hiring evidence, with firm links, occupation/location information, coverage dates and the delivered broader ghost-proxy definition",
       "Posting opening/closing dates, occupation/skills and geography for duration and composition checks",
       "Worker position starts for independent hiring-conversion checks",
       "Independent human labels of narratives for classification precision/recall"
@@ -266,6 +274,6 @@
       "Compustat net employment change is not gross hiring or departures",
       "A significant or insignificant investment coefficient does not validate ghost-job identification"
     ],
-    "user_confirmed_validation_logic": "Identify and remove or discount suspected ghost jobs, then test whether the remaining hiring signal reproduces the positive Lourie posting-to-hiring/performance results."
+    "design_basis": "Verified two-measure research specification: Lourie baseline, broader and interview-stage ghost proxies, and posting interactions."
   }
 }
