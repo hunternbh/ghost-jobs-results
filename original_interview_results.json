@@ -1,0 +1,8246 @@
+[
+  {
+    "spec": "primary_core",
+    "outcome": "employment",
+    "kind": "baseline",
+    "n": 1008,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": 0.00012799171475297598,
+        "se": 6.462805338542818e-05,
+        "p": 0.04794361526060755,
+        "ci95": [
+          1.1609583838848893e-06,
+          0.00025482247112206707
+        ]
+      }
+    },
+    "within_r2": -0.08326480293979066,
+    "holm_p_across_four_outcomes": 0.14383084578182265
+  },
+  {
+    "spec": "primary_core",
+    "outcome": "employment",
+    "kind": "interaction",
+    "n": 1008,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": 0.00019932791447108115,
+        "se": 0.00013076136298102113,
+        "p": 0.12775237963335165,
+        "ci95": [
+          -5.728831669259352e-05,
+          0.0004559441456347558
+        ]
+      },
+      "ghost": {
+        "b": 0.0004674303939426994,
+        "se": 0.0003429412084218678,
+        "p": 0.17320578111185833,
+        "ci95": [
+          -0.00020558400732741453,
+          0.0011404447952128134
+        ]
+      },
+      "activity_x_ghost": {
+        "b": -0.0005778375112416326,
+        "se": 0.0007111828300971832,
+        "p": 0.41670823927366674,
+        "ci95": [
+          -0.001973517805231407,
+          0.0008178427827481416
+        ]
+      }
+    },
+    "within_r2": -0.08409437467105851,
+    "interaction_effect_10pp_doubling_count": -4.0052644173891335e-05,
+    "ghost_percentiles": {
+      "0.25": 0.06964556825,
+      "0.5": 0.1221539495,
+      "0.75": 0.17831835125
+    },
+    "slope_at_0.25": {
+      "b": 0.0001590840926444919,
+      "se": 8.957530499435792e-05
+    },
+    "slope_at_0.75": {
+      "b": 9.628888217606988e-05,
+      "se": 6.05384444107379e-05
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "primary_core",
+    "outcome": "employment",
+    "kind": "direct",
+    "n": 1008,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "ghost": {
+        "b": 0.0004861595310866606,
+        "se": 0.0003561692535329996,
+        "p": 0.1725873921323608,
+        "ci95": [
+          -0.0002128127178777528,
+          0.001185131780051074
+        ]
+      }
+    },
+    "within_r2": -0.09281112757937593,
+    "holm_p_across_four_outcomes": 0.6903495685294432
+  },
+  {
+    "spec": "primary_core",
+    "outcome": "sga",
+    "kind": "baseline",
+    "n": 1007,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": 0.001228065863208099,
+        "se": 0.0028175699455193514,
+        "p": 0.6630377911631004,
+        "ci95": [
+          -0.0043013442303739,
+          0.006757475956790098
+        ]
+      }
+    },
+    "within_r2": -0.018351753644089364,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "primary_core",
+    "outcome": "sga",
+    "kind": "interaction",
+    "n": 1007,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": 0.0011656672033257035,
+        "se": 0.004696735791561718,
+        "p": 0.8040439588331791,
+        "ci95": [
+          -0.008051583576519318,
+          0.010382917983170726
+        ]
+      },
+      "ghost": {
+        "b": 0.008802706574913503,
+        "se": 0.014625943173258847,
+        "p": 0.5474147418246695,
+        "ci95": [
+          -0.019900416637146694,
+          0.0375058297869737
+        ]
+      },
+      "activity_x_ghost": {
+        "b": -0.0001372698396528018,
+        "se": 0.033179630744806836,
+        "p": 0.9966998978370115,
+        "ci95": [
+          -0.06525163669567098,
+          0.06497709701636538
+        ]
+      }
+    },
+    "within_r2": -0.018098783344361546,
+    "interaction_effect_10pp_doubling_count": -9.514820233125534e-06,
+    "ghost_percentiles": {
+      "0.25": 0.0697343065,
+      "0.5": 0.122424242,
+      "0.75": 0.1784360105
+    },
+    "slope_at_0.25": {
+      "b": 0.0011560947862541491,
+      "se": 0.003139459182026551
+    },
+    "slope_at_0.75": {
+      "b": 0.0011411733207760829,
+      "se": 0.003491009741165441
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "primary_core",
+    "outcome": "sga",
+    "kind": "direct",
+    "n": 1007,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "ghost": {
+        "b": 0.009169384834481783,
+        "se": 0.014442078952612195,
+        "p": 0.5256422422485364,
+        "ci95": [
+          -0.019172831570783873,
+          0.037511601239747436
+        ]
+      }
+    },
+    "within_r2": -0.01746017385233367,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "primary_core",
+    "outcome": "revenue",
+    "kind": "baseline",
+    "n": 1009,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": -0.00026437712856836016,
+        "se": 0.010209555780563623,
+        "p": 0.9793464846349369,
+        "ci95": [
+          -0.02030031920136551,
+          0.019771564944228787
+        ]
+      }
+    },
+    "within_r2": 0.01250071405699793,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "primary_core",
+    "outcome": "revenue",
+    "kind": "interaction",
+    "n": 1009,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": 0.009124143498861101,
+        "se": 0.02015643824311248,
+        "p": 0.6508927266128675,
+        "ci95": [
+          -0.0304323591708835,
+          0.0486806461686057
+        ]
+      },
+      "ghost": {
+        "b": 0.024727448841076173,
+        "se": 0.056007474323392765,
+        "p": 0.6589500314887025,
+        "ci95": [
+          -0.08518580968593406,
+          0.13464070736808642
+        ]
+      },
+      "activity_x_ghost": {
+        "b": -0.07344219218855845,
+        "se": 0.14073097753437827,
+        "p": 0.6018883685174122,
+        "ci95": [
+          -0.3496231930881893,
+          0.20273880871107236
+        ]
+      }
+    },
+    "within_r2": 0.011665765110769888,
+    "interaction_effect_10pp_doubling_count": -0.005090624844964093,
+    "ghost_percentiles": {
+      "0.25": 0.069650881,
+      "0.5": 0.122424242,
+      "0.75": 0.178671329
+    },
+    "slope_at_0.25": {
+      "b": 0.004008830110356687,
+      "se": 0.012761830601892074
+    },
+    "slope_at_0.75": {
+      "b": -0.003997870584142055,
+      "se": 0.01294755245654396
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "primary_core",
+    "outcome": "revenue",
+    "kind": "direct",
+    "n": 1009,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "ghost": {
+        "b": 0.021924128074971367,
+        "se": 0.05696053063509201,
+        "p": 0.700397582215808,
+        "ci95": [
+          -0.08985917736650076,
+          0.13370743351644349
+        ]
+      }
+    },
+    "within_r2": 0.012094721655072305,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "primary_core",
+    "outcome": "earnings",
+    "kind": "baseline",
+    "n": 1009,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": -0.009248033499021719,
+        "se": 0.003900214470256443,
+        "p": 0.017931392897266443,
+        "ci95": [
+          -0.01690208553391146,
+          -0.001593981464131979
+        ]
+      }
+    },
+    "within_r2": 0.03693955983452901,
+    "holm_p_across_four_outcomes": 0.07172557158906577
+  },
+  {
+    "spec": "primary_core",
+    "outcome": "earnings",
+    "kind": "interaction",
+    "n": 1009,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": -0.006610932306801744,
+        "se": 0.005324764635835852,
+        "p": 0.2147124091811165,
+        "ci95": [
+          -0.017060648868465367,
+          0.0038387842548618795
+        ]
+      },
+      "ghost": {
+        "b": -0.012762557453614877,
+        "se": 0.018348928716773412,
+        "p": 0.48688287446687545,
+        "ci95": [
+          -0.0487718681769524,
+          0.02324675326972265
+        ]
+      },
+      "activity_x_ghost": {
+        "b": -0.01927966992295138,
+        "se": 0.04054815509926296,
+        "p": 0.6345575851893865,
+        "ci95": [
+          -0.09885440361804188,
+          0.06029506377213911
+        ]
+      }
+    },
+    "within_r2": 0.03813253034429609,
+    "interaction_effect_10pp_doubling_count": -0.0013363648849220127,
+    "ghost_percentiles": {
+      "0.25": 0.069650881,
+      "0.5": 0.122424242,
+      "0.75": 0.178671329
+    },
+    "slope_at_0.25": {
+      "b": -0.007953778302324509,
+      "se": 0.0037990238596349434
+    },
+    "slope_at_0.75": {
+      "b": -0.010055656554616795,
+      "se": 0.004966865555460604
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "primary_core",
+    "outcome": "earnings",
+    "kind": "direct",
+    "n": 1009,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "ghost": {
+        "b": -0.016356861475811287,
+        "se": 0.018344733469396662,
+        "p": 0.37281324451137915,
+        "ci95": [
+          -0.05235784183515887,
+          0.019644118883536295
+        ]
+      }
+    },
+    "within_r2": 0.02871798289255345,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "full_benchmark_controls",
+    "outcome": "employment",
+    "kind": "baseline",
+    "n": 403,
+    "firms": 70,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "lagchange_xrd",
+      "lagchange_xad",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": 7.132220996897002e-05,
+        "se": 6.563049975513797e-05,
+        "p": 0.2779047157522709,
+        "ci95": [
+          -5.7756284087223534e-05,
+          0.00020040070402516357
+        ]
+      }
+    },
+    "within_r2": 0.0056253704373477875,
+    "holm_p_across_four_outcomes": 0.8337141472568126
+  },
+  {
+    "spec": "full_benchmark_controls",
+    "outcome": "employment",
+    "kind": "interaction",
+    "n": 403,
+    "firms": 70,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "lagchange_xrd",
+      "lagchange_xad",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": 0.00011055389041398768,
+        "se": 0.00014156056889458982,
+        "p": 0.43535231890376996,
+        "ci95": [
+          -0.00016786525030784024,
+          0.00038897303113581564
+        ]
+      },
+      "ghost": {
+        "b": 0.00013085710861791461,
+        "se": 0.00043842526084980285,
+        "p": 0.7655215369668011,
+        "ci95": [
+          -0.0007314309236337734,
+          0.0009931451408696026
+        ]
+      },
+      "activity_x_ghost": {
+        "b": -0.000322329776735998,
+        "se": 0.0008999982290085122,
+        "p": 0.7204513992529695,
+        "ci95": [
+          -0.002092432394494646,
+          0.00144777284102265
+        ]
+      }
+    },
+    "within_r2": 0.006578173024466838,
+    "interaction_effect_10pp_doubling_count": -2.2342197595507363e-05,
+    "ghost_percentiles": {
+      "0.25": 0.074677667,
+      "0.5": 0.130793651,
+      "0.75": 0.1818180975
+    },
+    "slope_at_0.25": {
+      "b": 8.648305468271248e-05,
+      "se": 8.776903287366467e-05
+    },
+    "slope_at_0.75": {
+      "b": 5.1948503640248766e-05,
+      "se": 7.605055566661604e-05
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "full_benchmark_controls",
+    "outcome": "employment",
+    "kind": "direct",
+    "n": 403,
+    "firms": 70,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "lagchange_xrd",
+      "lagchange_xad",
+      "btm"
+    ],
+    "terms": {
+      "ghost": {
+        "b": 0.0001481995550656046,
+        "se": 0.000443280064081772,
+        "p": 0.738334088567158,
+        "ci95": [
+          -0.0007236195432238112,
+          0.0010200186533550204
+        ]
+      }
+    },
+    "within_r2": 0.0023562951943784105,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "full_benchmark_controls",
+    "outcome": "sga",
+    "kind": "baseline",
+    "n": 402,
+    "firms": 70,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "lagchange_xrd",
+      "lagchange_xad",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": 0.0002491355003609962,
+        "se": 0.006698473406107155,
+        "p": 0.9703524215818334,
+        "ci95": [
+          -0.012925187567383438,
+          0.013423458568105432
+        ]
+      }
+    },
+    "within_r2": 0.00856880357519707,
+    "holm_p_across_four_outcomes": 0.9703524215818334
+  },
+  {
+    "spec": "full_benchmark_controls",
+    "outcome": "sga",
+    "kind": "interaction",
+    "n": 402,
+    "firms": 70,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "lagchange_xrd",
+      "lagchange_xad",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": -0.00011562256706285914,
+        "se": 0.00990498213827506,
+        "p": 0.9906930562705094,
+        "ci95": [
+          -0.019596783265839853,
+          0.019365538131714138
+        ]
+      },
+      "ghost": {
+        "b": 0.0033226150452836394,
+        "se": 0.030518408230380423,
+        "p": 0.9133663767057442,
+        "ci95": [
+          -0.056701119142939425,
+          0.06334634923350671
+        ]
+      },
+      "activity_x_ghost": {
+        "b": 0.002687440508136686,
+        "se": 0.0804493360007284,
+        "p": 0.9733704722347207,
+        "ci95": [
+          -0.15554065327952454,
+          0.1609155342957979
+        ]
+      }
+    },
+    "within_r2": 0.008784011874791164,
+    "interaction_effect_10pp_doubling_count": 0.00018627918111375306,
+    "ghost_percentiles": {
+      "0.25": 0.074605914,
+      "0.5": 0.130172095,
+      "0.75": 0.181474194
+    },
+    "slope_at_0.25": {
+      "b": 8.487638836730276e-05,
+      "se": 0.006529817042185263
+    },
+    "slope_at_0.75": {
+      "b": 0.0003720785330741964,
+      "se": 0.009418054430282768
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "full_benchmark_controls",
+    "outcome": "sga",
+    "kind": "direct",
+    "n": 402,
+    "firms": 70,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "lagchange_xrd",
+      "lagchange_xad",
+      "btm"
+    ],
+    "terms": {
+      "ghost": {
+        "b": 0.003506505602305127,
+        "se": 0.029502115375192876,
+        "p": 0.9054575699105902,
+        "ci95": [
+          -0.05451722242806988,
+          0.06153023363268014
+        ]
+      }
+    },
+    "within_r2": 0.008878205880900936,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "full_benchmark_controls",
+    "outcome": "revenue",
+    "kind": "baseline",
+    "n": 403,
+    "firms": 70,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "lagchange_xrd",
+      "lagchange_xad",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": -0.01751952934036726,
+        "se": 0.01917543648654284,
+        "p": 0.3615309035197035,
+        "ci95": [
+          -0.05523273392950904,
+          0.020193675248774516
+        ]
+      }
+    },
+    "within_r2": 0.005071049508677095,
+    "holm_p_across_four_outcomes": 0.8337141472568126
+  },
+  {
+    "spec": "full_benchmark_controls",
+    "outcome": "revenue",
+    "kind": "interaction",
+    "n": 403,
+    "firms": 70,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "lagchange_xrd",
+      "lagchange_xad",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": -0.007711099717589356,
+        "se": 0.031637954520879745,
+        "p": 0.8075836070249035,
+        "ci95": [
+          -0.06993614007087279,
+          0.05451394063569407
+        ]
+      },
+      "ghost": {
+        "b": -0.03479700708115857,
+        "se": 0.10710326679595027,
+        "p": 0.7454573864219052,
+        "ci95": [
+          -0.2454460581741484,
+          0.17585204401183127
+        ]
+      },
+      "activity_x_ghost": {
+        "b": -0.07636713614427729,
+        "se": 0.20228080445742955,
+        "p": 0.7060090210948496,
+        "ci95": [
+          -0.4742098984426848,
+          0.32147562615413017
+        ]
+      }
+    },
+    "within_r2": 0.005267984431609363,
+    "interaction_effect_10pp_doubling_count": -0.00529336651058433,
+    "ghost_percentiles": {
+      "0.25": 0.074677667,
+      "0.5": 0.130793651,
+      "0.75": 0.1818180975
+    },
+    "slope_at_0.25": {
+      "b": -0.01341401928031536,
+      "se": 0.021954151488510678
+    },
+    "slope_at_0.75": {
+      "b": -0.021596027122865336,
+      "se": 0.02311891668045957
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "full_benchmark_controls",
+    "outcome": "revenue",
+    "kind": "direct",
+    "n": 403,
+    "firms": 70,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "lagchange_xrd",
+      "lagchange_xad",
+      "btm"
+    ],
+    "terms": {
+      "ghost": {
+        "b": -0.04306889500045036,
+        "se": 0.10238462302650768,
+        "p": 0.6742623753570299,
+        "ci95": [
+          -0.2444333978471331,
+          0.1582956078462324
+        ]
+      }
+    },
+    "within_r2": 0.005607977392818042,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "full_benchmark_controls",
+    "outcome": "earnings",
+    "kind": "baseline",
+    "n": 403,
+    "firms": 70,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "lagchange_xrd",
+      "lagchange_xad",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": -0.014877154587603345,
+        "se": 0.005386182142335565,
+        "p": 0.006045391592176843,
+        "ci95": [
+          -0.02547040440649733,
+          -0.004283904768709358
+        ]
+      }
+    },
+    "within_r2": 0.07190363377060427,
+    "holm_p_across_four_outcomes": 0.024181566368707372
+  },
+  {
+    "spec": "full_benchmark_controls",
+    "outcome": "earnings",
+    "kind": "interaction",
+    "n": 403,
+    "firms": 70,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "lagchange_xrd",
+      "lagchange_xad",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": -0.00771641663708909,
+        "se": 0.010607469464598368,
+        "p": 0.46743729822572294,
+        "ci95": [
+          -0.028579023764400347,
+          0.013146190490222167
+        ]
+      },
+      "ghost": {
+        "b": -0.046857265449589416,
+        "se": 0.03684567796637437,
+        "p": 0.2043205732464274,
+        "ci95": [
+          -0.11932477585038438,
+          0.02561024495120555
+        ]
+      },
+      "activity_x_ghost": {
+        "b": -0.054411744163658474,
+        "se": 0.07918106320170913,
+        "p": 0.4924248785216993,
+        "ci95": [
+          -0.21014383644195633,
+          0.1013203481146394
+        ]
+      }
+    },
+    "within_r2": 0.07716599001222146,
+    "interaction_effect_10pp_doubling_count": -0.0037715347056388932,
+    "ghost_percentiles": {
+      "0.25": 0.074677667,
+      "0.5": 0.130793651,
+      "0.75": 0.1818180975
+    },
+    "slope_at_0.25": {
+      "b": -0.01177975874863197,
+      "se": 0.0063117175353755404
+    },
+    "slope_at_0.75": {
+      "b": -0.017609456442582203,
+      "se": 0.007595758221056139
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "full_benchmark_controls",
+    "outcome": "earnings",
+    "kind": "direct",
+    "n": 403,
+    "firms": 70,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "lagchange_xrd",
+      "lagchange_xad",
+      "btm"
+    ],
+    "terms": {
+      "ghost": {
+        "b": -0.0535625025594637,
+        "se": 0.034677468353213184,
+        "p": 0.12334633218998135,
+        "ci95": [
+          -0.12176425950804842,
+          0.01463925438912101
+        ]
+      }
+    },
+    "within_r2": 0.04200694072782585,
+    "holm_p_across_four_outcomes": 0.4933853287599254
+  },
+  {
+    "spec": "firm_effects",
+    "outcome": "employment",
+    "kind": "baseline",
+    "n": 1008,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "firm and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": 0.00013360133359269422,
+        "se": 6.661753316541773e-05,
+        "p": 0.04523756354328397,
+        "ci95": [
+          2.8405978944322533e-06,
+          0.0002643620692909562
+        ]
+      }
+    },
+    "within_r2": 0.021294460861343678,
+    "holm_p_across_four_outcomes": 0.13571269062985192
+  },
+  {
+    "spec": "firm_effects",
+    "outcome": "employment",
+    "kind": "interaction",
+    "n": 1008,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "firm and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": 0.00015909657004696667,
+        "se": 0.0001577266238109865,
+        "p": 0.3134233624224148,
+        "ci95": [
+          -0.00015049945889083674,
+          0.0004686925989847701
+        ]
+      },
+      "ghost": {
+        "b": 2.8936937334190553e-05,
+        "se": 0.0005985674536492902,
+        "p": 0.9614541513085975,
+        "ci95": [
+          -0.0011459700138429692,
+          0.0012038438885113502
+        ]
+      },
+      "activity_x_ghost": {
+        "b": -0.0001971587255663566,
+        "se": 0.0009996264955297774,
+        "p": 0.843694619220026,
+        "ci95": [
+          -0.002159290329980215,
+          0.0017649728788475016
+        ]
+      }
+    },
+    "within_r2": 0.021459114429145165,
+    "interaction_effect_10pp_doubling_count": -1.366600147491121e-05,
+    "ghost_percentiles": {
+      "0.25": 0.06964556825,
+      "0.5": 0.1221539495,
+      "0.75": 0.17831835125
+    },
+    "slope_at_0.25": {
+      "b": 0.00014536533856945196,
+      "se": 9.852586051771853e-05
+    },
+    "slope_at_0.75": {
+      "b": 0.00012393955116942273,
+      "se": 7.348395572376558e-05
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "firm_effects",
+    "outcome": "employment",
+    "kind": "direct",
+    "n": 1008,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "firm and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "ghost": {
+        "b": 4.9695456627782194e-05,
+        "se": 0.0006020700492998897,
+        "p": 0.9342366450597481,
+        "ci95": [
+          -0.0011320823554214184,
+          0.0012314732686769829
+        ]
+      }
+    },
+    "within_r2": 0.012251601261296652,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "firm_effects",
+    "outcome": "sga",
+    "kind": "baseline",
+    "n": 1007,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "firm and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": 0.0019555130183393273,
+        "se": 0.0031350903287653584,
+        "p": 0.5329651608249982,
+        "ci95": [
+          -0.004198234148128078,
+          0.008109260184806732
+        ]
+      }
+    },
+    "within_r2": 0.04636054402267298,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "firm_effects",
+    "outcome": "sga",
+    "kind": "interaction",
+    "n": 1007,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "firm and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": 0.0003911455954468809,
+        "se": 0.005439113175547593,
+        "p": 0.9426883353836168,
+        "ci95": [
+          -0.010285117206985946,
+          0.01106740839787971
+        ]
+      },
+      "ghost": {
+        "b": 0.01438850200173287,
+        "se": 0.02431104152617954,
+        "p": 0.5541142405590304,
+        "ci95": [
+          -0.03333087061606886,
+          0.0621078746195346
+        ]
+      },
+      "activity_x_ghost": {
+        "b": 0.01173930836487654,
+        "se": 0.03756535729052089,
+        "p": 0.7547374955629086,
+        "ci95": [
+          -0.06199654043192843,
+          0.08547515716168151
+        ]
+      }
+    },
+    "within_r2": 0.04626539769526894,
+    "interaction_effect_10pp_doubling_count": 0.0008137068494837957,
+    "ghost_percentiles": {
+      "0.25": 0.0697343065,
+      "0.5": 0.122424242,
+      "0.75": 0.1784360105
+    },
+    "slope_at_0.25": {
+      "b": 0.0012097781230611952,
+      "se": 0.0036051789783412723
+    },
+    "slope_at_0.75": {
+      "b": 0.002485860946104729,
+      "se": 0.0038096327956468655
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "firm_effects",
+    "outcome": "sga",
+    "kind": "direct",
+    "n": 1007,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "firm and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "ghost": {
+        "b": 0.015037385346398278,
+        "se": 0.024150600429296797,
+        "p": 0.5336872768766767,
+        "ci95": [
+          -0.03236689120559471,
+          0.06244166189839127
+        ]
+      }
+    },
+    "within_r2": 0.04634272469977474,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "firm_effects",
+    "outcome": "revenue",
+    "kind": "baseline",
+    "n": 1009,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "firm and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": -0.00029600436663878454,
+        "se": 0.01096746437164788,
+        "p": 0.9784748059274746,
+        "ci95": [
+          -0.021823537226162853,
+          0.021231528492885284
+        ]
+      }
+    },
+    "within_r2": 0.034358685823804525,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "firm_effects",
+    "outcome": "revenue",
+    "kind": "interaction",
+    "n": 1009,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "firm and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": 0.003074022372755541,
+        "se": 0.023880758754660752,
+        "p": 0.8976077548852537,
+        "ci95": [
+          -0.04380059242581029,
+          0.04994863717132138
+        ]
+      },
+      "ghost": {
+        "b": -0.03632474508501295,
+        "se": 0.09168483003747364,
+        "p": 0.6920668736205242,
+        "ci95": [
+          -0.21628934064208605,
+          0.14363985047206018
+        ]
+      },
+      "activity_x_ghost": {
+        "b": -0.0252519641227149,
+        "se": 0.17683831390610324,
+        "p": 0.8864856602925698,
+        "ci95": [
+          -0.3723610292548547,
+          0.3218571010094249
+        ]
+      }
+    },
+    "within_r2": 0.034942033770831826,
+    "interaction_effect_10pp_doubling_count": -0.0017503327735260725,
+    "ghost_percentiles": {
+      "0.25": 0.069650881,
+      "0.5": 0.122424242,
+      "0.75": 0.178671329
+    },
+    "slope_at_0.25": {
+      "b": 0.001315200824628056,
+      "se": 0.014125932006478964
+    },
+    "slope_at_0.75": {
+      "b": -0.0014377796169102487,
+      "se": 0.0151118679127187
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "firm_effects",
+    "outcome": "revenue",
+    "kind": "direct",
+    "n": 1009,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "firm and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "ghost": {
+        "b": -0.03688055581683052,
+        "se": 0.09014988020854696,
+        "p": 0.6825708924838494,
+        "ci95": [
+          -0.21383162150605137,
+          0.1400705098723903
+        ]
+      }
+    },
+    "within_r2": 0.03510370521787243,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "firm_effects",
+    "outcome": "earnings",
+    "kind": "baseline",
+    "n": 1009,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "firm and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": -0.009957649421260985,
+        "se": 0.004152716776959772,
+        "p": 0.01671310756186415,
+        "ci95": [
+          -0.018108826743833517,
+          -0.001806472098688455
+        ]
+      }
+    },
+    "within_r2": 0.05928483915094329,
+    "holm_p_across_four_outcomes": 0.0668524302474566
+  },
+  {
+    "spec": "firm_effects",
+    "outcome": "earnings",
+    "kind": "interaction",
+    "n": 1009,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "firm and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": -0.008213905537034508,
+        "se": 0.005749793539386583,
+        "p": 0.15351249676952683,
+        "ci95": [
+          -0.019499952186512386,
+          0.003072141112443371
+        ]
+      },
+      "ghost": {
+        "b": -0.03335329589656593,
+        "se": 0.031986278049206965,
+        "p": 0.29737713931382403,
+        "ci95": [
+          -0.09613792002848445,
+          0.029431328235352598
+        ]
+      },
+      "activity_x_ghost": {
+        "b": -0.012775610907274025,
+        "se": 0.0485028424858799,
+        "p": 0.7923090637086314,
+        "ci95": [
+          -0.10797995853787055,
+          0.0824287367233225
+        ]
+      }
+    },
+    "within_r2": 0.0614518107647013,
+    "interaction_effect_10pp_doubling_count": -0.0008855378680307876,
+    "ghost_percentiles": {
+      "0.25": 0.069650881,
+      "0.5": 0.122424242,
+      "0.75": 0.178671329
+    },
+    "slope_at_0.25": {
+      "b": -0.009103738092039352,
+      "se": 0.003846129661699483
+    },
+    "slope_at_0.75": {
+      "b": -0.010496540916624053,
+      "se": 0.005658996964273443
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "firm_effects",
+    "outcome": "earnings",
+    "kind": "direct",
+    "n": 1009,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "firm and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "ghost": {
+        "b": -0.03531489374954951,
+        "se": 0.03163011353050523,
+        "p": 0.26453615575602946,
+        "ci95": [
+          -0.09740019307713868,
+          0.026770405578039648
+        ]
+      }
+    },
+    "within_r2": 0.05375445097086351,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "raw_ghost_share",
+    "outcome": "employment",
+    "kind": "baseline",
+    "n": 1008,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "raw_share",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": 0.00012799171475297598,
+        "se": 6.462805338542818e-05,
+        "p": 0.04794361526060755,
+        "ci95": [
+          1.1609583838848893e-06,
+          0.00025482247112206707
+        ]
+      }
+    },
+    "within_r2": -0.08326480293979066,
+    "holm_p_across_four_outcomes": 0.14383084578182265
+  },
+  {
+    "spec": "raw_ghost_share",
+    "outcome": "employment",
+    "kind": "interaction",
+    "n": 1008,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "raw_share",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": 0.00017445791232974437,
+        "se": 9.932719604649239e-05,
+        "p": 0.07934465772295114,
+        "ci95": [
+          -2.046947386770469e-05,
+          0.00036938529852719343
+        ]
+      },
+      "raw_share": {
+        "b": 0.00022392190884030575,
+        "se": 0.00022501036993845516,
+        "p": 0.319911924508586,
+        "ci95": [
+          -0.0002176558767532202,
+          0.0006654996944338317
+        ]
+      },
+      "activity_x_ghost": {
+        "b": -0.0003683759225764245,
+        "se": 0.00045179932456969666,
+        "p": 0.41507574086772053,
+        "ci95": [
+          -0.0012550219261837508,
+          0.0005182700810309018
+        ]
+      }
+    },
+    "within_r2": -0.08425706590492665,
+    "interaction_effect_10pp_doubling_count": -2.5533873212001734e-05,
+    "ghost_percentiles": {
+      "0.25": 0.047619048,
+      "0.5": 0.125,
+      "0.75": 0.2
+    },
+    "slope_at_0.25": {
+      "b": 0.00015691620159053333,
+      "se": 8.360127962835784e-05
+    },
+    "slope_at_0.75": {
+      "b": 0.00010078272781445947,
+      "se": 6.32815679215719e-05
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "raw_ghost_share",
+    "outcome": "employment",
+    "kind": "direct",
+    "n": 1008,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "raw_share",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "raw_share": {
+        "b": 0.00026044933495944874,
+        "se": 0.0002214016540707561,
+        "p": 0.2397443471914625,
+        "ci95": [
+          -0.00017404525022781346,
+          0.0006949439201467109
+        ]
+      }
+    },
+    "within_r2": -0.09285403295287109,
+    "holm_p_across_four_outcomes": 0.95897738876585
+  },
+  {
+    "spec": "raw_ghost_share",
+    "outcome": "sga",
+    "kind": "baseline",
+    "n": 1007,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "raw_share",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": 0.001228065863208099,
+        "se": 0.0028175699455193514,
+        "p": 0.6630377911631004,
+        "ci95": [
+          -0.0043013442303739,
+          0.006757475956790098
+        ]
+      }
+    },
+    "within_r2": -0.018351753644089364,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "raw_ghost_share",
+    "outcome": "sga",
+    "kind": "interaction",
+    "n": 1007,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "raw_share",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": 0.0027535979656581745,
+        "se": 0.003996948844877772,
+        "p": 0.4910397509909608,
+        "ci95": [
+          -0.0050903348192431214,
+          0.010597530750559471
+        ]
+      },
+      "raw_share": {
+        "b": 0.003663085143492953,
+        "se": 0.010757026154890697,
+        "p": 0.7335335475031572,
+        "ci95": [
+          -0.017447365202280275,
+          0.024773535489266182
+        ]
+      },
+      "activity_x_ghost": {
+        "b": -0.0117495507487569,
+        "se": 0.02443899257537994,
+        "p": 0.6307909021947331,
+        "ci95": [
+          -0.05971058866337756,
+          0.03621148716586376
+        ]
+      }
+    },
+    "within_r2": -0.018327268279964226,
+    "interaction_effect_10pp_doubling_count": -0.0008144167974346839,
+    "ghost_percentiles": {
+      "0.25": 0.047619048,
+      "0.5": 0.125,
+      "0.75": 0.2
+    },
+    "slope_at_0.25": {
+      "b": 0.002194095544574684,
+      "se": 0.003273616039574264
+    },
+    "slope_at_0.75": {
+      "b": 0.0004036878159067946,
+      "se": 0.0034770652204117462
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "raw_ghost_share",
+    "outcome": "sga",
+    "kind": "direct",
+    "n": 1007,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "raw_share",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "raw_share": {
+        "b": 0.004249189190535629,
+        "se": 0.010845073578785502,
+        "p": 0.6952881502936569,
+        "ci95": [
+          -0.01703399471321749,
+          0.025532373094288748
+        ]
+      }
+    },
+    "within_r2": -0.017656517555204143,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "raw_ghost_share",
+    "outcome": "revenue",
+    "kind": "baseline",
+    "n": 1009,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "raw_share",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": -0.00026437712856836016,
+        "se": 0.010209555780563623,
+        "p": 0.9793464846349369,
+        "ci95": [
+          -0.02030031920136551,
+          0.019771564944228787
+        ]
+      }
+    },
+    "within_r2": 0.01250071405699793,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "raw_ghost_share",
+    "outcome": "revenue",
+    "kind": "interaction",
+    "n": 1009,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "raw_share",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": 0.005982232846830958,
+        "se": 0.016506159023192458,
+        "p": 0.7171159461571731,
+        "ci95": [
+          -0.026410688739464096,
+          0.03837515443312601
+        ]
+      },
+      "raw_share": {
+        "b": -0.002773194878337741,
+        "se": 0.041841002451148315,
+        "p": 0.947169419384951,
+        "ci95": [
+          -0.08488510895766106,
+          0.07933871920098558
+        ]
+      },
+      "activity_x_ghost": {
+        "b": -0.04660863947929952,
+        "se": 0.10382267324572915,
+        "p": 0.6535882599166142,
+        "ci95": [
+          -0.25035802227653225,
+          0.15714074331793323
+        ]
+      }
+    },
+    "within_r2": 0.012075818241852443,
+    "interaction_effect_10pp_doubling_count": -0.0032306647044811417,
+    "ghost_percentiles": {
+      "0.25": 0.047619048,
+      "0.5": 0.125,
+      "0.75": 0.2
+    },
+    "slope_at_0.25": {
+      "b": 0.0037627738062514997,
+      "se": 0.013031587842328904
+    },
+    "slope_at_0.75": {
+      "b": -0.0033394950490289455,
+      "se": 0.013034969246855193
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "raw_ghost_share",
+    "outcome": "revenue",
+    "kind": "direct",
+    "n": 1009,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "raw_share",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "raw_share": {
+        "b": -0.0012398163842549021,
+        "se": 0.04169781266207198,
+        "p": 0.9762859585426801,
+        "ci95": [
+          -0.08307050295047295,
+          0.08059087018196316
+        ]
+      }
+    },
+    "within_r2": 0.012555970559099183,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "raw_ghost_share",
+    "outcome": "earnings",
+    "kind": "baseline",
+    "n": 1009,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "raw_share",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": -0.009248033499021719,
+        "se": 0.003900214470256443,
+        "p": 0.017931392897266443,
+        "ci95": [
+          -0.01690208553391146,
+          -0.001593981464131979
+        ]
+      }
+    },
+    "within_r2": 0.03693955983452901,
+    "holm_p_across_four_outcomes": 0.07172557158906577
+  },
+  {
+    "spec": "raw_ghost_share",
+    "outcome": "earnings",
+    "kind": "interaction",
+    "n": 1009,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "raw_share",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": -0.008074496765758108,
+        "se": 0.004628272982354829,
+        "p": 0.0813788280960662,
+        "ci95": [
+          -0.017157365989708625,
+          0.001008372458192408
+        ]
+      },
+      "raw_share": {
+        "b": -0.01415998591547342,
+        "se": 0.01393819425919195,
+        "p": 0.30993080173292986,
+        "ci95": [
+          -0.04151334129379984,
+          0.013193369462853006
+        ]
+      },
+      "activity_x_ghost": {
+        "b": -0.0075840149372997006,
+        "se": 0.029267104303626064,
+        "p": 0.7955905180456806,
+        "ci95": [
+          -0.06501997041508206,
+          0.049851940540482656
+        ]
+      }
+    },
+    "within_r2": 0.03859855729030026,
+    "interaction_effect_10pp_doubling_count": -0.0005256838571113798,
+    "ghost_percentiles": {
+      "0.25": 0.047619048,
+      "0.5": 0.125,
+      "0.75": 0.2
+    },
+    "slope_at_0.25": {
+      "b": -0.0084356403370901,
+      "se": 0.003965586023889304
+    },
+    "slope_at_0.75": {
+      "b": -0.009591299753218048,
+      "se": 0.004858656119022134
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "raw_ghost_share",
+    "outcome": "earnings",
+    "kind": "direct",
+    "n": 1009,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "raw_share",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "raw_share": {
+        "b": -0.015624142721671347,
+        "se": 0.01382804727741138,
+        "p": 0.2588092795703862,
+        "ci95": [
+          -0.042761264079836804,
+          0.011512978636494113
+        ]
+      }
+    },
+    "within_r2": 0.029138012643023625,
+    "holm_p_across_four_outcomes": 0.95897738876585
+  },
+  {
+    "spec": "unannualized_activity",
+    "outcome": "employment",
+    "kind": "baseline",
+    "n": 1008,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": 0.00012799171475297598,
+        "se": 6.462805338542818e-05,
+        "p": 0.04794361526060755,
+        "ci95": [
+          1.1609583838848893e-06,
+          0.00025482247112206707
+        ]
+      }
+    },
+    "within_r2": -0.08326480293979066,
+    "holm_p_across_four_outcomes": 0.14383084578182265
+  },
+  {
+    "spec": "unannualized_activity",
+    "outcome": "employment",
+    "kind": "interaction",
+    "n": 1008,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": 0.00019932791447108115,
+        "se": 0.00013076136298102113,
+        "p": 0.12775237963335165,
+        "ci95": [
+          -5.728831669259352e-05,
+          0.0004559441456347558
+        ]
+      },
+      "ghost": {
+        "b": 0.0004674303939426994,
+        "se": 0.0003429412084218678,
+        "p": 0.17320578111185833,
+        "ci95": [
+          -0.00020558400732741453,
+          0.0011404447952128134
+        ]
+      },
+      "activity_x_ghost": {
+        "b": -0.0005778375112416326,
+        "se": 0.0007111828300971832,
+        "p": 0.41670823927366674,
+        "ci95": [
+          -0.001973517805231407,
+          0.0008178427827481416
+        ]
+      }
+    },
+    "within_r2": -0.08409437467105851,
+    "interaction_effect_10pp_doubling_count": -4.0052644173891335e-05,
+    "ghost_percentiles": {
+      "0.25": 0.06964556825,
+      "0.5": 0.1221539495,
+      "0.75": 0.17831835125
+    },
+    "slope_at_0.25": {
+      "b": 0.0001590840926444919,
+      "se": 8.957530499435792e-05
+    },
+    "slope_at_0.75": {
+      "b": 9.628888217606988e-05,
+      "se": 6.05384444107379e-05
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "unannualized_activity",
+    "outcome": "employment",
+    "kind": "direct",
+    "n": 1008,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "ghost": {
+        "b": 0.0004861595310866606,
+        "se": 0.0003561692535329996,
+        "p": 0.1725873921323608,
+        "ci95": [
+          -0.0002128127178777528,
+          0.001185131780051074
+        ]
+      }
+    },
+    "within_r2": -0.09281112757937593,
+    "holm_p_across_four_outcomes": 0.6903495685294432
+  },
+  {
+    "spec": "unannualized_activity",
+    "outcome": "sga",
+    "kind": "baseline",
+    "n": 1007,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": 0.001228065863208099,
+        "se": 0.0028175699455193514,
+        "p": 0.6630377911631004,
+        "ci95": [
+          -0.0043013442303739,
+          0.006757475956790098
+        ]
+      }
+    },
+    "within_r2": -0.018351753644089364,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "unannualized_activity",
+    "outcome": "sga",
+    "kind": "interaction",
+    "n": 1007,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": 0.0011656672033257035,
+        "se": 0.004696735791561718,
+        "p": 0.8040439588331791,
+        "ci95": [
+          -0.008051583576519318,
+          0.010382917983170726
+        ]
+      },
+      "ghost": {
+        "b": 0.008802706574913503,
+        "se": 0.014625943173258847,
+        "p": 0.5474147418246695,
+        "ci95": [
+          -0.019900416637146694,
+          0.0375058297869737
+        ]
+      },
+      "activity_x_ghost": {
+        "b": -0.0001372698396528018,
+        "se": 0.033179630744806836,
+        "p": 0.9966998978370115,
+        "ci95": [
+          -0.06525163669567098,
+          0.06497709701636538
+        ]
+      }
+    },
+    "within_r2": -0.018098783344361546,
+    "interaction_effect_10pp_doubling_count": -9.514820233125534e-06,
+    "ghost_percentiles": {
+      "0.25": 0.0697343065,
+      "0.5": 0.122424242,
+      "0.75": 0.1784360105
+    },
+    "slope_at_0.25": {
+      "b": 0.0011560947862541491,
+      "se": 0.003139459182026551
+    },
+    "slope_at_0.75": {
+      "b": 0.0011411733207760829,
+      "se": 0.003491009741165441
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "unannualized_activity",
+    "outcome": "sga",
+    "kind": "direct",
+    "n": 1007,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "ghost": {
+        "b": 0.009169384834481783,
+        "se": 0.014442078952612195,
+        "p": 0.5256422422485364,
+        "ci95": [
+          -0.019172831570783873,
+          0.037511601239747436
+        ]
+      }
+    },
+    "within_r2": -0.01746017385233367,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "unannualized_activity",
+    "outcome": "revenue",
+    "kind": "baseline",
+    "n": 1009,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": -0.00026437712856836016,
+        "se": 0.010209555780563623,
+        "p": 0.9793464846349369,
+        "ci95": [
+          -0.02030031920136551,
+          0.019771564944228787
+        ]
+      }
+    },
+    "within_r2": 0.01250071405699793,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "unannualized_activity",
+    "outcome": "revenue",
+    "kind": "interaction",
+    "n": 1009,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": 0.009124143498861101,
+        "se": 0.02015643824311248,
+        "p": 0.6508927266128675,
+        "ci95": [
+          -0.0304323591708835,
+          0.0486806461686057
+        ]
+      },
+      "ghost": {
+        "b": 0.024727448841076173,
+        "se": 0.056007474323392765,
+        "p": 0.6589500314887025,
+        "ci95": [
+          -0.08518580968593406,
+          0.13464070736808642
+        ]
+      },
+      "activity_x_ghost": {
+        "b": -0.07344219218855845,
+        "se": 0.14073097753437827,
+        "p": 0.6018883685174122,
+        "ci95": [
+          -0.3496231930881893,
+          0.20273880871107236
+        ]
+      }
+    },
+    "within_r2": 0.011665765110769888,
+    "interaction_effect_10pp_doubling_count": -0.005090624844964093,
+    "ghost_percentiles": {
+      "0.25": 0.069650881,
+      "0.5": 0.122424242,
+      "0.75": 0.178671329
+    },
+    "slope_at_0.25": {
+      "b": 0.004008830110356687,
+      "se": 0.012761830601892074
+    },
+    "slope_at_0.75": {
+      "b": -0.003997870584142055,
+      "se": 0.01294755245654396
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "unannualized_activity",
+    "outcome": "revenue",
+    "kind": "direct",
+    "n": 1009,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "ghost": {
+        "b": 0.021924128074971367,
+        "se": 0.05696053063509201,
+        "p": 0.700397582215808,
+        "ci95": [
+          -0.08985917736650076,
+          0.13370743351644349
+        ]
+      }
+    },
+    "within_r2": 0.012094721655072305,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "unannualized_activity",
+    "outcome": "earnings",
+    "kind": "baseline",
+    "n": 1009,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": -0.009248033499021719,
+        "se": 0.003900214470256443,
+        "p": 0.017931392897266443,
+        "ci95": [
+          -0.01690208553391146,
+          -0.001593981464131979
+        ]
+      }
+    },
+    "within_r2": 0.03693955983452901,
+    "holm_p_across_four_outcomes": 0.07172557158906577
+  },
+  {
+    "spec": "unannualized_activity",
+    "outcome": "earnings",
+    "kind": "interaction",
+    "n": 1009,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": -0.006610932306801744,
+        "se": 0.005324764635835852,
+        "p": 0.2147124091811165,
+        "ci95": [
+          -0.017060648868465367,
+          0.0038387842548618795
+        ]
+      },
+      "ghost": {
+        "b": -0.012762557453614877,
+        "se": 0.018348928716773412,
+        "p": 0.48688287446687545,
+        "ci95": [
+          -0.0487718681769524,
+          0.02324675326972265
+        ]
+      },
+      "activity_x_ghost": {
+        "b": -0.01927966992295138,
+        "se": 0.04054815509926296,
+        "p": 0.6345575851893865,
+        "ci95": [
+          -0.09885440361804188,
+          0.06029506377213911
+        ]
+      }
+    },
+    "within_r2": 0.03813253034429609,
+    "interaction_effect_10pp_doubling_count": -0.0013363648849220127,
+    "ghost_percentiles": {
+      "0.25": 0.069650881,
+      "0.5": 0.122424242,
+      "0.75": 0.178671329
+    },
+    "slope_at_0.25": {
+      "b": -0.007953778302324509,
+      "se": 0.0037990238596349434
+    },
+    "slope_at_0.75": {
+      "b": -0.010055656554616795,
+      "se": 0.004966865555460604
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "unannualized_activity",
+    "outcome": "earnings",
+    "kind": "direct",
+    "n": 1009,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "ghost": {
+        "b": -0.016356861475811287,
+        "se": 0.018344733469396662,
+        "p": 0.37281324451137915,
+        "ci95": [
+          -0.05235784183515887,
+          0.019644118883536295
+        ]
+      }
+    },
+    "within_r2": 0.02871798289255345,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "all_fiscal_year_ends",
+    "outcome": "employment",
+    "kind": "baseline",
+    "n": 1406,
+    "firms": 229,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": 0.00012379287791322097,
+        "se": 5.1923405594576063e-05,
+        "p": 0.017257607468750456,
+        "ci95": [
+          2.1932730984682757e-05,
+          0.00022565302484175919
+        ]
+      }
+    },
+    "within_r2": -0.07062338220648123,
+    "holm_p_across_four_outcomes": 0.05177282240625137
+  },
+  {
+    "spec": "all_fiscal_year_ends",
+    "outcome": "employment",
+    "kind": "interaction",
+    "n": 1406,
+    "firms": 229,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": 0.000178121085013509,
+        "se": 0.00010472435246589308,
+        "p": 0.08920266615535129,
+        "ci95": [
+          -2.7320993857645707e-05,
+          0.0003835631638846637
+        ]
+      },
+      "ghost": {
+        "b": 0.0003469053390950571,
+        "se": 0.000319171466017198,
+        "p": 0.27728000547664816,
+        "ci95": [
+          -0.00027922648173699533,
+          0.0009730371599271095
+        ]
+      },
+      "activity_x_ghost": {
+        "b": -0.0004454101464604574,
+        "se": 0.000591830036699512,
+        "p": 0.45182405594287695,
+        "ci95": [
+          -0.0016064275241285432,
+          0.0007156072312076285
+        ]
+      }
+    },
+    "within_r2": -0.07170135325230431,
+    "interaction_effect_10pp_doubling_count": -3.0873478721185835e-05,
+    "ghost_percentiles": {
+      "0.25": 0.06738440025,
+      "0.5": 0.1180906145,
+      "0.75": 0.173472815
+    },
+    "slope_at_0.25": {
+      "b": 0.00014810738942900643,
+      "se": 7.187855017127797e-05
+    },
+    "slope_at_0.75": {
+      "b": 0.00010085453307745118,
+      "se": 4.980103256596147e-05
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "all_fiscal_year_ends",
+    "outcome": "employment",
+    "kind": "direct",
+    "n": 1406,
+    "firms": 229,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "ghost": {
+        "b": 0.00035748228852174193,
+        "se": 0.0003343461080429209,
+        "p": 0.2851731762781581,
+        "ci95": [
+          -0.00029841736405794935,
+          0.0010133819411014332
+        ]
+      }
+    },
+    "within_r2": -0.0789081484949481,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "all_fiscal_year_ends",
+    "outcome": "sga",
+    "kind": "baseline",
+    "n": 1404,
+    "firms": 229,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": 0.0009273426792125918,
+        "se": 0.00231292325282347,
+        "p": 0.6885286561440918,
+        "ci95": [
+          -0.0036100142023612744,
+          0.005464699560786458
+        ]
+      }
+    },
+    "within_r2": -0.04150640455300669,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "all_fiscal_year_ends",
+    "outcome": "sga",
+    "kind": "interaction",
+    "n": 1404,
+    "firms": 229,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": -0.0009797838576766072,
+        "se": 0.004098315355881638,
+        "p": 0.8110881011645508,
+        "ci95": [
+          -0.009019628949779729,
+          0.007060061234426515
+        ]
+      },
+      "ghost": {
+        "b": 0.010807086968442304,
+        "se": 0.012867794488185208,
+        "p": 0.40113994421043325,
+        "ci95": [
+          -0.01443623019443912,
+          0.03605040413132373
+        ]
+      },
+      "activity_x_ghost": {
+        "b": 0.01422301684758541,
+        "se": 0.029960771615810514,
+        "p": 0.6350633281168385,
+        "ci95": [
+          -0.04455234368812869,
+          0.0729983773832995
+        ]
+      }
+    },
+    "within_r2": -0.041215078460587584,
+    "interaction_effect_10pp_doubling_count": 0.0009858644026960429,
+    "ghost_percentiles": {
+      "0.25": 0.06745584275,
+      "0.5": 0.118273688,
+      "0.75": 0.17368717925
+    },
+    "slope_at_0.25": {
+      "b": -2.035826977528517e-05,
+      "se": 0.0026591982556471443
+    },
+    "slope_at_0.75": {
+      "b": 0.0014905718190057298,
+      "se": 0.002884247755233848
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "all_fiscal_year_ends",
+    "outcome": "sga",
+    "kind": "direct",
+    "n": 1404,
+    "firms": 229,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "ghost": {
+        "b": 0.011802731688179255,
+        "se": 0.012680145080199049,
+        "p": 0.3521230417095876,
+        "ci95": [
+          -0.01307243157924083,
+          0.03667789495559934
+        ]
+      }
+    },
+    "within_r2": -0.040575446584134145,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "all_fiscal_year_ends",
+    "outcome": "revenue",
+    "kind": "baseline",
+    "n": 1407,
+    "firms": 229,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": -0.002030761249180733,
+        "se": 0.008616835211165361,
+        "p": 0.8137219361797149,
+        "ci95": [
+          -0.01893472771923762,
+          0.014873205220876151
+        ]
+      }
+    },
+    "within_r2": -0.010229530531544517,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "all_fiscal_year_ends",
+    "outcome": "revenue",
+    "kind": "interaction",
+    "n": 1407,
+    "firms": 229,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": -0.0003759159322757202,
+        "se": 0.016992370081235,
+        "p": 0.9823534350464181,
+        "ci95": [
+          -0.033710526122502,
+          0.03295869425795056
+        ]
+      },
+      "ghost": {
+        "b": 0.046707474974762644,
+        "se": 0.049011714315807565,
+        "p": 0.3407694442183076,
+        "ci95": [
+          -0.04944076000726613,
+          0.14285570995679142
+        ]
+      },
+      "activity_x_ghost": {
+        "b": -0.01573510336353584,
+        "se": 0.11596695075172214,
+        "p": 0.8920898613660344,
+        "ci95": [
+          -0.2432320964125989,
+          0.21176188968552723
+        ]
+      }
+    },
+    "within_r2": -0.011055215194643253,
+    "interaction_effect_10pp_doubling_count": -0.0010906742532254179,
+    "ghost_percentiles": {
+      "0.25": 0.0674201215,
+      "0.5": 0.118131868,
+      "0.75": 0.17388507949999998
+    },
+    "slope_at_0.25": {
+      "b": -0.0014367785128603654,
+      "se": 0.011011430739659784
+    },
+    "slope_at_0.75": {
+      "b": -0.003112015631584867,
+      "se": 0.010282491140545927
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "all_fiscal_year_ends",
+    "outcome": "revenue",
+    "kind": "direct",
+    "n": 1407,
+    "firms": 229,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "ghost": {
+        "b": 0.045254300879562025,
+        "se": 0.04882629979247575,
+        "p": 0.3541752210459672,
+        "ci95": [
+          -0.05053006940519036,
+          0.1410386711643144
+        ]
+      }
+    },
+    "within_r2": -0.011208874936836422,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "all_fiscal_year_ends",
+    "outcome": "earnings",
+    "kind": "baseline",
+    "n": 1407,
+    "firms": 229,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": -0.008336265396768315,
+        "se": 0.003322932500838321,
+        "p": 0.012234777789104345,
+        "ci95": [
+          -0.014854985808602277,
+          -0.0018175449849343528
+        ]
+      }
+    },
+    "within_r2": 0.024982219434817377,
+    "holm_p_across_four_outcomes": 0.04893911115641738
+  },
+  {
+    "spec": "all_fiscal_year_ends",
+    "outcome": "earnings",
+    "kind": "interaction",
+    "n": 1407,
+    "firms": 229,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": -0.009023851007731022,
+        "se": 0.005204431840490999,
+        "p": 0.08317020766505376,
+        "ci95": [
+          -0.019233592546726526,
+          0.0011858905312644805
+        ]
+      },
+      "ghost": {
+        "b": -0.010753731369975698,
+        "se": 0.015273495289133795,
+        "p": 0.4815068329207087,
+        "ci95": [
+          -0.04071635631702656,
+          0.019208893577075163
+        ]
+      },
+      "activity_x_ghost": {
+        "b": 0.006016358528486788,
+        "se": 0.036401993989052,
+        "p": 0.8687521106199395,
+        "ci95": [
+          -0.06539488510444472,
+          0.07742760216141828
+        ]
+      }
+    },
+    "within_r2": 0.025526130317862772,
+    "interaction_effect_10pp_doubling_count": 0.0004170221951258399,
+    "ghost_percentiles": {
+      "0.25": 0.0674201215,
+      "0.5": 0.118131868,
+      "0.75": 0.17388507949999998
+    },
+    "slope_at_0.25": {
+      "b": -0.008618227384752881,
+      "se": 0.003643609808890723
+    },
+    "slope_at_0.75": {
+      "b": -0.007977696026704595,
+      "se": 0.0039998788103989815
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "all_fiscal_year_ends",
+    "outcome": "earnings",
+    "kind": "direct",
+    "n": 1407,
+    "firms": 229,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "ghost": {
+        "b": -0.012700078873516464,
+        "se": 0.015148841406215256,
+        "p": 0.4019820217422919,
+        "ci95": [
+          -0.042418125106901475,
+          0.017017967359868543
+        ]
+      }
+    },
+    "within_r2": 0.016031967924635238,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "lower_collection_count",
+    "outcome": "employment",
+    "kind": "baseline",
+    "n": 800,
+    "firms": 130,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": 0.0001524920060818489,
+        "se": 8.05792895332052e-05,
+        "p": 0.05881997811662916,
+        "ci95": [
+          -5.698187603510877e-06,
+          0.0003106821997672087
+        ]
+      }
+    },
+    "within_r2": 0.0017411749751007344,
+    "holm_p_across_four_outcomes": 0.1764599343498875
+  },
+  {
+    "spec": "lower_collection_count",
+    "outcome": "employment",
+    "kind": "interaction",
+    "n": 800,
+    "firms": 130,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": 0.0003231535722549595,
+        "se": 0.00016239678442815457,
+        "p": 0.04696889962648565,
+        "ci95": [
+          4.340983284575103e-06,
+          0.000641966161225344
+        ]
+      },
+      "ghost": {
+        "b": 0.00016543977304770257,
+        "se": 0.0003751651670448039,
+        "p": 0.659357190043339,
+        "ci95": [
+          -0.0005710734443674844,
+          0.0009019529904628895
+        ]
+      },
+      "activity_x_ghost": {
+        "b": -0.0012976716150936351,
+        "se": 0.000865621482970052,
+        "p": 0.13426805921746657,
+        "ci95": [
+          -0.0029970342411815747,
+          0.00040169101099430445
+        ]
+      }
+    },
+    "within_r2": 0.006828893882202758,
+    "interaction_effect_10pp_doubling_count": -8.994774212948236e-05,
+    "ghost_percentiles": {
+      "0.25": 0.06903211575,
+      "0.5": 0.12161955199999999,
+      "0.75": 0.17691568325
+    },
+    "slope_at_0.25": {
+      "b": 0.00023357255511632626,
+      "se": 0.00011300309801186436
+    },
+    "slope_at_0.75": {
+      "b": 9.357511183653803e-05,
+      "se": 7.623807565571083e-05
+    },
+    "holm_p_across_four_outcomes": 0.5370722368698663
+  },
+  {
+    "spec": "lower_collection_count",
+    "outcome": "employment",
+    "kind": "direct",
+    "n": 800,
+    "firms": 130,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "ghost": {
+        "b": 0.00017661364124011295,
+        "se": 0.00039084740819065,
+        "p": 0.651491894320338,
+        "ci95": [
+          -0.0005906831115765218,
+          0.0009439103940567477
+        ]
+      }
+    },
+    "within_r2": -0.009156815556319087,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "lower_collection_count",
+    "outcome": "sga",
+    "kind": "baseline",
+    "n": 799,
+    "firms": 130,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": -0.0009963047905712638,
+        "se": 0.0028160645790361537,
+        "p": 0.7235942961260867,
+        "ci95": [
+          -0.006524707725445397,
+          0.004532098144302869
+        ]
+      }
+    },
+    "within_r2": -0.009663090423793541,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "lower_collection_count",
+    "outcome": "sga",
+    "kind": "interaction",
+    "n": 799,
+    "firms": 130,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": 0.00312182568453839,
+        "se": 0.005794293361485976,
+        "p": 0.5902035235478625,
+        "ci95": [
+          -0.008253385705007235,
+          0.014497037074084014
+        ]
+      },
+      "ghost": {
+        "b": 0.021298718553988526,
+        "se": 0.01810306269961884,
+        "p": 0.239763187680668,
+        "ci95": [
+          -0.014240760060458432,
+          0.05683819716843548
+        ]
+      },
+      "activity_x_ghost": {
+        "b": -0.032682309704776764,
+        "se": 0.03714815581207863,
+        "p": 0.37926257649991696,
+        "ci95": [
+          -0.10561063741129845,
+          0.04024601800174491
+        ]
+      }
+    },
+    "within_r2": -0.0071403080500545,
+    "interaction_effect_10pp_doubling_count": -0.002265365082605295,
+    "ghost_percentiles": {
+      "0.25": 0.06938973,
+      "0.5": 0.121720117,
+      "0.75": 0.1769715665
+    },
+    "slope_at_0.25": {
+      "b": 0.0008540090383475506,
+      "se": 0.003776112045820088
+    },
+    "slope_at_0.75": {
+      "b": -0.002662013860754107,
+      "se": 0.003253732840005152
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "lower_collection_count",
+    "outcome": "sga",
+    "kind": "direct",
+    "n": 799,
+    "firms": 130,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "ghost": {
+        "b": 0.019457214289989394,
+        "se": 0.017862988175911282,
+        "p": 0.2763984142176425,
+        "ci95": [
+          -0.015610801192500016,
+          0.054525229772478805
+        ]
+      }
+    },
+    "within_r2": -0.009975213845285325,
+    "holm_p_across_four_outcomes": 0.8291952426529274
+  },
+  {
+    "spec": "lower_collection_count",
+    "outcome": "revenue",
+    "kind": "baseline",
+    "n": 801,
+    "firms": 130,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": -0.001996348810048529,
+        "se": 0.011042491030621679,
+        "p": 0.856583292527055,
+        "ci95": [
+          -0.023674499291098026,
+          0.019681801671000965
+        ]
+      }
+    },
+    "within_r2": 0.03808845812999129,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "lower_collection_count",
+    "outcome": "revenue",
+    "kind": "interaction",
+    "n": 801,
+    "firms": 130,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": 0.013708150235714395,
+        "se": 0.023856911158884143,
+        "p": 0.5657368910883342,
+        "ci95": [
+          -0.03312693254244703,
+          0.06054323301387582
+        ]
+      },
+      "ghost": {
+        "b": 0.028160547134703034,
+        "se": 0.06593714955472922,
+        "p": 0.6694437486300389,
+        "ci95": [
+          -0.1012850393867415,
+          0.15760613365614756
+        ]
+      },
+      "activity_x_ghost": {
+        "b": -0.12038225976928331,
+        "se": 0.15908082106650243,
+        "p": 0.449447964781307,
+        "ci95": [
+          -0.4326843584545521,
+          0.19191983891598552
+        ]
+      }
+    },
+    "within_r2": 0.037699381847266955,
+    "interaction_effect_10pp_doubling_count": -0.008344262394851365,
+    "ghost_percentiles": {
+      "0.25": 0.06918239,
+      "0.5": 0.121720117,
+      "0.75": 0.177083333
+    },
+    "slope_at_0.25": {
+      "b": 0.005379817791274527,
+      "se": 0.015089516064329062
+    },
+    "slope_at_0.75": {
+      "b": -0.007609541558302107,
+      "se": 0.01336716788904945
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "lower_collection_count",
+    "outcome": "revenue",
+    "kind": "direct",
+    "n": 801,
+    "firms": 130,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "ghost": {
+        "b": 0.02278250057119519,
+        "se": 0.0685312305374656,
+        "p": 0.7396509190472303,
+        "ci95": [
+          -0.11175510730395782,
+          0.1573201084463482
+        ]
+      }
+    },
+    "within_r2": 0.037385322802770515,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "lower_collection_count",
+    "outcome": "earnings",
+    "kind": "baseline",
+    "n": 801,
+    "firms": 130,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": -0.008258710640397661,
+        "se": 0.003924290510222058,
+        "p": 0.03566880790980985,
+        "ci95": [
+          -0.015962711483689163,
+          -0.0005547097971061576
+        ]
+      }
+    },
+    "within_r2": 0.006675300311517529,
+    "holm_p_across_four_outcomes": 0.1426752316392394
+  },
+  {
+    "spec": "lower_collection_count",
+    "outcome": "earnings",
+    "kind": "interaction",
+    "n": 801,
+    "firms": 130,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": -0.007972909530223997,
+        "se": 0.005767085909767722,
+        "p": 0.16723880245367595,
+        "ci95": [
+          -0.01929465793989419,
+          0.0033488388794461962
+        ]
+      },
+      "ghost": {
+        "b": -0.033693314093091294,
+        "se": 0.022900096929516806,
+        "p": 0.14162922485491197,
+        "ci95": [
+          -0.0786500114701714,
+          0.011263383283988807
+        ]
+      },
+      "activity_x_ghost": {
+        "b": 0.0006005649095509401,
+        "se": 0.045380400018040286,
+        "p": 0.9894446491027179,
+        "ci95": [
+          -0.08848870474468562,
+          0.08968983456378751
+        ]
+      }
+    },
+    "within_r2": 0.009859652273132125,
+    "interaction_effect_10pp_doubling_count": 4.1627987379847276e-05,
+    "ghost_percentiles": {
+      "0.25": 0.06918239,
+      "0.5": 0.121720117,
+      "0.75": 0.177083333
+    },
+    "slope_at_0.25": {
+      "b": -0.00793136101443113,
+      "se": 0.0038821041563283885
+    },
+    "slope_at_0.75": {
+      "b": -0.007866559494357873,
+      "se": 0.00510414845232542
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "lower_collection_count",
+    "outcome": "earnings",
+    "kind": "direct",
+    "n": 801,
+    "firms": 130,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "ghost": {
+        "b": -0.03676707754631741,
+        "se": 0.022725943812443836,
+        "p": 0.10611963365042366,
+        "ci95": [
+          -0.08138168745850652,
+          0.007847532365871691
+        ]
+      }
+    },
+    "within_r2": 0.000417234056296234,
+    "holm_p_across_four_outcomes": 0.42447853460169466
+  },
+  {
+    "spec": "employment_percentage_growth",
+    "outcome": "employment",
+    "kind": "baseline",
+    "n": 1008,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": 0.021955502418946324,
+        "se": 0.009479935554718825,
+        "p": 0.020771215067755155,
+        "ci95": [
+          0.0033513926902395096,
+          0.040559612147653135
+        ]
+      }
+    },
+    "within_r2": 0.00456214233479646,
+    "holm_p_across_four_outcomes": 0.07172557158906577
+  },
+  {
+    "spec": "employment_percentage_growth",
+    "outcome": "employment",
+    "kind": "interaction",
+    "n": 1008,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": 0.037211490959753526,
+        "se": 0.015600448363018325,
+        "p": 0.01726219093274594,
+        "ci95": [
+          0.006595962243045907,
+          0.06782701967646115
+        ]
+      },
+      "ghost": {
+        "b": 0.06161297546861184,
+        "se": 0.059236492858896865,
+        "p": 0.298550860220955,
+        "ci95": [
+          -0.05463730824103672,
+          0.1778632591782604
+        ]
+      },
+      "activity_x_ghost": {
+        "b": -0.12091745419802909,
+        "se": 0.10603517981533564,
+        "p": 0.2544285122961585,
+        "ci95": [
+          -0.32900910753238083,
+          0.08717419913632264
+        ]
+      }
+    },
+    "within_r2": 0.003495685945214655,
+    "interaction_effect_10pp_doubling_count": -0.008381359245785019,
+    "ghost_percentiles": {
+      "0.25": 0.06964556825,
+      "0.5": 0.1221539495,
+      "0.75": 0.17831835125
+    },
+    "slope_at_0.25": {
+      "b": 0.028790126150788443,
+      "se": 0.010637057565113088
+    },
+    "slope_at_0.75": {
+      "b": 0.01564968988981359,
+      "se": 0.011305951501889667
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "employment_percentage_growth",
+    "outcome": "employment",
+    "kind": "direct",
+    "n": 1008,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "ghost": {
+        "b": 0.06408717248281492,
+        "se": 0.0595645769212688,
+        "p": 0.2822336634254826,
+        "ci95": [
+          -0.05280665222632887,
+          0.1809809971919587
+        ]
+      }
+    },
+    "within_r2": -4.325934419613375e-05,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "employment_percentage_growth",
+    "outcome": "sga",
+    "kind": "baseline",
+    "n": 1007,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": 0.001228065863208099,
+        "se": 0.0028175699455193514,
+        "p": 0.6630377911631004,
+        "ci95": [
+          -0.0043013442303739,
+          0.006757475956790098
+        ]
+      }
+    },
+    "within_r2": -0.018351753644089364,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "employment_percentage_growth",
+    "outcome": "sga",
+    "kind": "interaction",
+    "n": 1007,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": 0.0011656672033257035,
+        "se": 0.004696735791561718,
+        "p": 0.8040439588331791,
+        "ci95": [
+          -0.008051583576519318,
+          0.010382917983170726
+        ]
+      },
+      "ghost": {
+        "b": 0.008802706574913503,
+        "se": 0.014625943173258847,
+        "p": 0.5474147418246695,
+        "ci95": [
+          -0.019900416637146694,
+          0.0375058297869737
+        ]
+      },
+      "activity_x_ghost": {
+        "b": -0.0001372698396528018,
+        "se": 0.033179630744806836,
+        "p": 0.9966998978370115,
+        "ci95": [
+          -0.06525163669567098,
+          0.06497709701636538
+        ]
+      }
+    },
+    "within_r2": -0.018098783344361546,
+    "interaction_effect_10pp_doubling_count": -9.514820233125534e-06,
+    "ghost_percentiles": {
+      "0.25": 0.0697343065,
+      "0.5": 0.122424242,
+      "0.75": 0.1784360105
+    },
+    "slope_at_0.25": {
+      "b": 0.0011560947862541491,
+      "se": 0.003139459182026551
+    },
+    "slope_at_0.75": {
+      "b": 0.0011411733207760829,
+      "se": 0.003491009741165441
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "employment_percentage_growth",
+    "outcome": "sga",
+    "kind": "direct",
+    "n": 1007,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "ghost": {
+        "b": 0.009169384834481783,
+        "se": 0.014442078952612195,
+        "p": 0.5256422422485364,
+        "ci95": [
+          -0.019172831570783873,
+          0.037511601239747436
+        ]
+      }
+    },
+    "within_r2": -0.01746017385233367,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "employment_percentage_growth",
+    "outcome": "revenue",
+    "kind": "baseline",
+    "n": 1009,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": -0.00026437712856836016,
+        "se": 0.010209555780563623,
+        "p": 0.9793464846349369,
+        "ci95": [
+          -0.02030031920136551,
+          0.019771564944228787
+        ]
+      }
+    },
+    "within_r2": 0.01250071405699793,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "employment_percentage_growth",
+    "outcome": "revenue",
+    "kind": "interaction",
+    "n": 1009,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": 0.009124143498861101,
+        "se": 0.02015643824311248,
+        "p": 0.6508927266128675,
+        "ci95": [
+          -0.0304323591708835,
+          0.0486806461686057
+        ]
+      },
+      "ghost": {
+        "b": 0.024727448841076173,
+        "se": 0.056007474323392765,
+        "p": 0.6589500314887025,
+        "ci95": [
+          -0.08518580968593406,
+          0.13464070736808642
+        ]
+      },
+      "activity_x_ghost": {
+        "b": -0.07344219218855845,
+        "se": 0.14073097753437827,
+        "p": 0.6018883685174122,
+        "ci95": [
+          -0.3496231930881893,
+          0.20273880871107236
+        ]
+      }
+    },
+    "within_r2": 0.011665765110769888,
+    "interaction_effect_10pp_doubling_count": -0.005090624844964093,
+    "ghost_percentiles": {
+      "0.25": 0.069650881,
+      "0.5": 0.122424242,
+      "0.75": 0.178671329
+    },
+    "slope_at_0.25": {
+      "b": 0.004008830110356687,
+      "se": 0.012761830601892074
+    },
+    "slope_at_0.75": {
+      "b": -0.003997870584142055,
+      "se": 0.01294755245654396
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "employment_percentage_growth",
+    "outcome": "revenue",
+    "kind": "direct",
+    "n": 1009,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "ghost": {
+        "b": 0.021924128074971367,
+        "se": 0.05696053063509201,
+        "p": 0.700397582215808,
+        "ci95": [
+          -0.08985917736650076,
+          0.13370743351644349
+        ]
+      }
+    },
+    "within_r2": 0.012094721655072305,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "employment_percentage_growth",
+    "outcome": "earnings",
+    "kind": "baseline",
+    "n": 1009,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": -0.009248033499021719,
+        "se": 0.003900214470256443,
+        "p": 0.017931392897266443,
+        "ci95": [
+          -0.01690208553391146,
+          -0.001593981464131979
+        ]
+      }
+    },
+    "within_r2": 0.03693955983452901,
+    "holm_p_across_four_outcomes": 0.07172557158906577
+  },
+  {
+    "spec": "employment_percentage_growth",
+    "outcome": "earnings",
+    "kind": "interaction",
+    "n": 1009,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": -0.006610932306801744,
+        "se": 0.005324764635835852,
+        "p": 0.2147124091811165,
+        "ci95": [
+          -0.017060648868465367,
+          0.0038387842548618795
+        ]
+      },
+      "ghost": {
+        "b": -0.012762557453614877,
+        "se": 0.018348928716773412,
+        "p": 0.48688287446687545,
+        "ci95": [
+          -0.0487718681769524,
+          0.02324675326972265
+        ]
+      },
+      "activity_x_ghost": {
+        "b": -0.01927966992295138,
+        "se": 0.04054815509926296,
+        "p": 0.6345575851893865,
+        "ci95": [
+          -0.09885440361804188,
+          0.06029506377213911
+        ]
+      }
+    },
+    "within_r2": 0.03813253034429609,
+    "interaction_effect_10pp_doubling_count": -0.0013363648849220127,
+    "ghost_percentiles": {
+      "0.25": 0.069650881,
+      "0.5": 0.122424242,
+      "0.75": 0.178671329
+    },
+    "slope_at_0.25": {
+      "b": -0.007953778302324509,
+      "se": 0.0037990238596349434
+    },
+    "slope_at_0.75": {
+      "b": -0.010055656554616795,
+      "se": 0.004966865555460604
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "employment_percentage_growth",
+    "outcome": "earnings",
+    "kind": "direct",
+    "n": 1009,
+    "firms": 168,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "ghost": {
+        "b": -0.016356861475811287,
+        "se": 0.018344733469396662,
+        "p": 0.37281324451137915,
+        "ci95": [
+          -0.05235784183515887,
+          0.019644118883536295
+        ]
+      }
+    },
+    "within_r2": 0.02871798289255345,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "rebuilt_original_labels",
+    "outcome": "employment",
+    "kind": "baseline",
+    "n": 1061,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": 6.127730329603391e-05,
+        "se": 7.693208349477322e-05,
+        "p": 0.42592430911091456,
+        "ci95": [
+          -8.969008118445359e-05,
+          0.0002122446877765214
+        ]
+      }
+    },
+    "within_r2": -0.06568058388427112,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "rebuilt_original_labels",
+    "outcome": "employment",
+    "kind": "interaction",
+    "n": 1061,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": 9.40244930484647e-05,
+        "se": 0.0001565522289296498,
+        "p": 0.548246512580707,
+        "ci95": [
+          -0.00021318593468179275,
+          0.00040123492077872214
+        ]
+      },
+      "ghost": {
+        "b": 0.00048713528536774905,
+        "se": 0.0003388101709234499,
+        "p": 0.1508102335169723,
+        "ci95": [
+          -0.00017772920260787748,
+          0.0011519997733433756
+        ]
+      },
+      "activity_x_ghost": {
+        "b": -0.00028450233240202583,
+        "se": 0.0007724665412607206,
+        "p": 0.712725089668519,
+        "ci95": [
+          -0.0018003528454896352,
+          0.0012313481806855834
+        ]
+      }
+    },
+    "within_r2": -0.0675846927722834,
+    "interaction_effect_10pp_doubling_count": -1.9720198956719258e-05,
+    "ghost_percentiles": {
+      "0.25": 0.07047175305765871,
+      "0.5": 0.12188365650969529,
+      "0.75": 0.17685979971387697
+    },
+    "slope_at_0.25": {
+      "b": 7.39751149351012e-05,
+      "se": 0.00010967272945219192
+    },
+    "slope_at_0.75": {
+      "b": 4.3707467521711564e-05,
+      "se": 6.644036380330544e-05
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "rebuilt_original_labels",
+    "outcome": "employment",
+    "kind": "direct",
+    "n": 1061,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "ghost": {
+        "b": 0.0004996508127254797,
+        "se": 0.00034709340942168246,
+        "p": 0.15031476747772066,
+        "ci95": [
+          -0.00018146663282461316,
+          0.0011807682582755726
+        ]
+      }
+    },
+    "within_r2": -0.07037541100425115,
+    "holm_p_across_four_outcomes": 0.6012590699108826
+  },
+  {
+    "spec": "rebuilt_original_labels",
+    "outcome": "sga",
+    "kind": "baseline",
+    "n": 1060,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": 0.001243171322999645,
+        "se": 0.0028437374265452694,
+        "p": 0.6620892992954986,
+        "ci95": [
+          -0.004337232922243027,
+          0.006823575568242316
+        ]
+      }
+    },
+    "within_r2": -0.009899176949637933,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "rebuilt_original_labels",
+    "outcome": "sga",
+    "kind": "interaction",
+    "n": 1060,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": 0.0029893766294505826,
+        "se": 0.004878837876451658,
+        "p": 0.5401996023267017,
+        "ci95": [
+          -0.006584627634236163,
+          0.012563380893137327
+        ]
+      },
+      "ghost": {
+        "b": 0.007673571483878781,
+        "se": 0.01398077370659573,
+        "p": 0.5832206692556975,
+        "ci95": [
+          -0.019761647817553834,
+          0.0351087907853114
+        ]
+      },
+      "activity_x_ghost": {
+        "b": -0.013725341919596061,
+        "se": 0.03370498793482532,
+        "p": 0.6839341617393868,
+        "ci95": [
+          -0.0798664407564812,
+          0.052415756917289065
+        ]
+      }
+    },
+    "within_r2": -0.009557602499490558,
+    "interaction_effect_10pp_doubling_count": -0.0009513682053789237,
+    "ghost_percentiles": {
+      "0.25": 0.07053204869386254,
+      "0.5": 0.12193552495488472,
+      "0.75": 0.17691568311874106
+    },
+    "slope_at_0.25": {
+      "b": 0.0020213001448377206,
+      "se": 0.003246982811056226
+    },
+    "slope_at_0.75": {
+      "b": 0.0005611483877069525,
+      "se": 0.003453062676765878
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "rebuilt_original_labels",
+    "outcome": "sga",
+    "kind": "direct",
+    "n": 1060,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "ghost": {
+        "b": 0.00768844182916832,
+        "se": 0.013822210489436972,
+        "p": 0.5781729499915633,
+        "ci95": [
+          -0.019435553998954934,
+          0.03481243765729158
+        ]
+      }
+    },
+    "within_r2": -0.008866572636465175,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "rebuilt_original_labels",
+    "outcome": "revenue",
+    "kind": "baseline",
+    "n": 1062,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": -0.0010565639315173484,
+        "se": 0.010171019399182645,
+        "p": 0.9172855719601251,
+        "ci95": [
+          -0.02101560125925037,
+          0.01890247339621567
+        ]
+      }
+    },
+    "within_r2": 0.017428892445853994,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "rebuilt_original_labels",
+    "outcome": "revenue",
+    "kind": "interaction",
+    "n": 1062,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": 0.007536980976361706,
+        "se": 0.02012550812945476,
+        "p": 0.7081128808021091,
+        "ci95": [
+          -0.03195628234496885,
+          0.04703024429769226
+        ]
+      },
+      "ghost": {
+        "b": 0.014252485431814966,
+        "se": 0.05693136628045081,
+        "p": 0.8023721535394627,
+        "ci95": [
+          -0.09746670323633604,
+          0.12597167409996596
+        ]
+      },
+      "activity_x_ghost": {
+        "b": -0.06570321343102489,
+        "se": 0.13649396229258826,
+        "p": 0.6303638983682895,
+        "ci95": [
+          -0.3335519534438811,
+          0.2021455265818313
+        ]
+      }
+    },
+    "within_r2": 0.01702690522754846,
+    "interaction_effect_10pp_doubling_count": -0.004554199714344323,
+    "ghost_percentiles": {
+      "0.25": 0.07049185160305999,
+      "0.5": 0.12193552495488472,
+      "0.75": 0.17702744992846925
+    },
+    "slope_at_0.25": {
+      "b": 0.002905439805337722,
+      "se": 0.012846114481199569
+    },
+    "slope_at_0.75": {
+      "b": -0.004094291349438581,
+      "se": 0.012395729345394563
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "rebuilt_original_labels",
+    "outcome": "revenue",
+    "kind": "direct",
+    "n": 1062,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "ghost": {
+        "b": 0.01213604911702787,
+        "se": 0.057385725309997256,
+        "p": 0.832554338197972,
+        "ci95": [
+          -0.10047447580570618,
+          0.12474657403976191
+        ]
+      }
+    },
+    "within_r2": 0.01731097177839558,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "rebuilt_original_labels",
+    "outcome": "earnings",
+    "kind": "baseline",
+    "n": 1062,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": -0.008279341096112449,
+        "se": 0.004058307876932208,
+        "p": 0.04160352690600826,
+        "ci95": [
+          -0.016243136584461644,
+          -0.00031554560776325506
+        ]
+      }
+    },
+    "within_r2": 0.03171501810162469,
+    "holm_p_across_four_outcomes": 0.16641410762403305
+  },
+  {
+    "spec": "rebuilt_original_labels",
+    "outcome": "earnings",
+    "kind": "interaction",
+    "n": 1062,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": -0.007332647420187091,
+        "se": 0.005633420550393512,
+        "p": 0.19334276804322748,
+        "ci95": [
+          -0.018387382523787847,
+          0.003722087683413663
+        ]
+      },
+      "ghost": {
+        "b": -0.009608494939398846,
+        "se": 0.01923229608179133,
+        "p": 0.6174656438364741,
+        "ci95": [
+          -0.047348964822012264,
+          0.028131974943214573
+        ]
+      },
+      "activity_x_ghost": {
+        "b": -0.006370234432456413,
+        "se": 0.039005981491730665,
+        "p": 0.8703041085184166,
+        "ci95": [
+          -0.08291356880448647,
+          0.07017309993957366
+        ]
+      }
+    },
+    "within_r2": 0.03268644188114611,
+    "interaction_effect_10pp_doubling_count": -0.0004415510036363046,
+    "ghost_percentiles": {
+      "0.25": 0.07049185160305999,
+      "0.5": 0.12193552495488472,
+      "0.75": 0.17702744992846925
+    },
+    "slope_at_0.25": {
+      "b": -0.007781697040476512,
+      "se": 0.004118930691762827
+    },
+    "slope_at_0.75": {
+      "b": -0.008460353777211379,
+      "se": 0.0048309535965005675
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "rebuilt_original_labels",
+    "outcome": "earnings",
+    "kind": "direct",
+    "n": 1062,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "ghost": {
+        "b": -0.012644657746886756,
+        "se": 0.01911001953384074,
+        "p": 0.5083310755085072,
+        "ci95": [
+          -0.05014508698019307,
+          0.024855771486419556
+        ]
+      }
+    },
+    "within_r2": 0.02499989112712564,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "direct_evidence_measure",
+    "outcome": "employment",
+    "kind": "baseline",
+    "n": 1061,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "direct_share",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": 6.127730329603391e-05,
+        "se": 7.693208349477322e-05,
+        "p": 0.42592430911091456,
+        "ci95": [
+          -8.969008118445359e-05,
+          0.0002122446877765214
+        ]
+      }
+    },
+    "within_r2": -0.06568058388427112,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "direct_evidence_measure",
+    "outcome": "employment",
+    "kind": "interaction",
+    "n": 1061,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "direct_share",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": -1.6619634161861103e-06,
+        "se": 9.785333136105509e-05,
+        "p": 0.9864526021162391,
+        "ci95": [
+          -0.00019368454902733812,
+          0.00019036062219496592
+        ]
+      },
+      "direct_share": {
+        "b": 0.0007635921450570879,
+        "se": 0.0005906083023122735,
+        "p": 0.1963488877552873,
+        "ci95": [
+          -0.00039538866546800057,
+          0.0019225729555821763
+        ]
+      },
+      "activity_x_ghost": {
+        "b": 0.0014004759226774667,
+        "se": 0.0010212786590458377,
+        "p": 0.17059169996011248,
+        "ci95": [
+          -0.0006036313060879884,
+          0.0034045831514429217
+        ]
+      }
+    },
+    "within_r2": -0.06374481225120965,
+    "interaction_effect_10pp_doubling_count": 9.70735937245974e-05,
+    "ghost_percentiles": {
+      "0.25": 0.0,
+      "0.5": 0.0,
+      "0.75": 0.06666666666666667
+    },
+    "slope_at_0.25": {
+      "b": -1.6619634161861103e-06,
+      "se": 9.785333136105509e-05
+    },
+    "slope_at_0.75": {
+      "b": 9.170309809564501e-05,
+      "se": 7.415611455207621e-05
+    },
+    "holm_p_across_four_outcomes": 0.5381365730657435
+  },
+  {
+    "spec": "direct_evidence_measure",
+    "outcome": "employment",
+    "kind": "direct",
+    "n": 1061,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "direct_share",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "direct_share": {
+        "b": 0.0006865110991092086,
+        "se": 0.0005603551152457407,
+        "p": 0.22081342153776418,
+        "ci95": [
+          -0.0004130996521667404,
+          0.0017861218503851576
+        ]
+      }
+    },
+    "within_r2": -0.06847754634452818,
+    "holm_p_across_four_outcomes": 0.8832536861510567
+  },
+  {
+    "spec": "direct_evidence_measure",
+    "outcome": "sga",
+    "kind": "baseline",
+    "n": 1060,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "direct_share",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": 0.001243171322999645,
+        "se": 0.0028437374265452694,
+        "p": 0.6620892992954986,
+        "ci95": [
+          -0.004337232922243027,
+          0.006823575568242316
+        ]
+      }
+    },
+    "within_r2": -0.009899176949637933,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "direct_evidence_measure",
+    "outcome": "sga",
+    "kind": "interaction",
+    "n": 1060,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "direct_share",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": 0.0038987849877645114,
+        "se": 0.0032819468195988003,
+        "p": 0.23513732875768914,
+        "ci95": [
+          -0.0025415546258331003,
+          0.010339124601362123
+        ]
+      },
+      "direct_share": {
+        "b": -0.0016318604458155411,
+        "se": 0.01681699974201022,
+        "p": 0.9227170807012338,
+        "ci95": [
+          -0.034632757649131346,
+          0.03136903675750026
+        ]
+      },
+      "activity_x_ghost": {
+        "b": -0.06039926958532996,
+        "se": 0.04032858144193895,
+        "p": 0.13453414326643587,
+        "ci95": [
+          -0.1395381998902602,
+          0.018739660719600287
+        ]
+      }
+    },
+    "within_r2": -0.00907778347358823,
+    "interaction_effect_10pp_doubling_count": -0.004186558342095152,
+    "ghost_percentiles": {
+      "0.25": 0.0,
+      "0.5": 0.0,
+      "0.75": 0.06666666666666667
+    },
+    "slope_at_0.25": {
+      "b": 0.0038987849877645114,
+      "se": 0.0032819468195988003
+    },
+    "slope_at_0.75": {
+      "b": -0.00012783298459081906,
+      "se": 0.0030799195517321023
+    },
+    "holm_p_across_four_outcomes": 0.5381365730657435
+  },
+  {
+    "spec": "direct_evidence_measure",
+    "outcome": "sga",
+    "kind": "direct",
+    "n": 1060,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "direct_share",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "direct_share": {
+        "b": 0.002051514206062064,
+        "se": 0.017210041947184538,
+        "p": 0.905137390714357,
+        "ci95": [
+          -0.03172058804444232,
+          0.035823616456566454
+        ]
+      }
+    },
+    "within_r2": -0.009075768519174465,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "direct_evidence_measure",
+    "outcome": "revenue",
+    "kind": "baseline",
+    "n": 1062,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "direct_share",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": -0.0010565639315173484,
+        "se": 0.010171019399182645,
+        "p": 0.9172855719601251,
+        "ci95": [
+          -0.02101560125925037,
+          0.01890247339621567
+        ]
+      }
+    },
+    "within_r2": 0.017428892445853994,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "direct_evidence_measure",
+    "outcome": "revenue",
+    "kind": "interaction",
+    "n": 1062,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "direct_share",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": -0.003528975175463982,
+        "se": 0.012683584935498387,
+        "p": 0.7808922642375531,
+        "ci95": [
+          -0.028418590706859266,
+          0.0213606403559313
+        ]
+      },
+      "direct_share": {
+        "b": 0.02327367632834529,
+        "se": 0.066596904365219,
+        "p": 0.7268097308019293,
+        "ci95": [
+          -0.10741266776607922,
+          0.1539600204227698
+        ]
+      },
+      "activity_x_ghost": {
+        "b": 0.055286681351345686,
+        "se": 0.1836562539416836,
+        "p": 0.7634517949978207,
+        "ci95": [
+          -0.3051109171029581,
+          0.4156842798056495
+        ]
+      }
+    },
+    "within_r2": 0.017876778821839467,
+    "interaction_effect_10pp_doubling_count": 0.0038321807301201372,
+    "ghost_percentiles": {
+      "0.25": 0.0,
+      "0.5": 0.0,
+      "0.75": 0.06666666666666667
+    },
+    "slope_at_0.25": {
+      "b": -0.003528975175463982,
+      "se": 0.012683584935498387
+    },
+    "slope_at_0.75": {
+      "b": 0.0001568035812923971,
+      "se": 0.011110071826242048
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "direct_evidence_measure",
+    "outcome": "revenue",
+    "kind": "direct",
+    "n": 1062,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "direct_share",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "direct_share": {
+        "b": 0.019823161198071884,
+        "se": 0.06453838742193674,
+        "p": 0.7587909742968637,
+        "ci95": [
+          -0.10682334620409133,
+          0.14646966860023508
+        ]
+      }
+    },
+    "within_r2": 0.01766194775357366,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "direct_evidence_measure",
+    "outcome": "earnings",
+    "kind": "baseline",
+    "n": 1062,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "direct_share",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": -0.008279341096112449,
+        "se": 0.004058307876932208,
+        "p": 0.04160352690600826,
+        "ci95": [
+          -0.016243136584461644,
+          -0.00031554560776325506
+        ]
+      }
+    },
+    "within_r2": 0.03171501810162469,
+    "holm_p_across_four_outcomes": 0.16641410762403305
+  },
+  {
+    "spec": "direct_evidence_measure",
+    "outcome": "earnings",
+    "kind": "interaction",
+    "n": 1062,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "direct_share",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": -0.009976474092447696,
+        "se": 0.003880258620164442,
+        "p": 0.010282243976672089,
+        "ci95": [
+          -0.01759089428275018,
+          -0.002362053902145214
+        ]
+      },
+      "direct_share": {
+        "b": 0.016377984552832837,
+        "se": 0.02356694546469208,
+        "p": 0.4872451136227821,
+        "ci95": [
+          -0.029868578611171936,
+          0.0626245477168376
+        ]
+      },
+      "activity_x_ghost": {
+        "b": 0.037931918926642556,
+        "se": 0.05759063007580072,
+        "p": 0.5102744406132383,
+        "ci95": [
+          -0.07508097514762774,
+          0.15094481300091286
+        ]
+      }
+    },
+    "within_r2": 0.032533244232974656,
+    "interaction_effect_10pp_doubling_count": 0.0026292402657230717,
+    "ghost_percentiles": {
+      "0.25": 0.0,
+      "0.5": 0.0,
+      "0.75": 0.06666666666666667
+    },
+    "slope_at_0.25": {
+      "b": -0.009976474092447696,
+      "se": 0.003880258620164442
+    },
+    "slope_at_0.75": {
+      "b": -0.007447679497338192,
+      "se": 0.004670391292468744
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "direct_evidence_measure",
+    "outcome": "earnings",
+    "kind": "direct",
+    "n": 1062,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "direct_share",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "direct_share": {
+        "b": 0.013123214603810085,
+        "se": 0.02299405223271507,
+        "p": 0.5683164881603235,
+        "ci95": [
+          -0.03199902229463529,
+          0.05824545150225546
+        ]
+      }
+    },
+    "within_r2": 0.024661322430790222,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "omit_silence_measure",
+    "outcome": "employment",
+    "kind": "baseline",
+    "n": 1061,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "no_silence_share",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": 6.127730329603391e-05,
+        "se": 7.693208349477322e-05,
+        "p": 0.42592430911091456,
+        "ci95": [
+          -8.969008118445359e-05,
+          0.0002122446877765214
+        ]
+      }
+    },
+    "within_r2": -0.06568058388427112,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "omit_silence_measure",
+    "outcome": "employment",
+    "kind": "interaction",
+    "n": 1061,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "no_silence_share",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": 1.634196119804695e-05,
+        "se": 0.00010919874390698975,
+        "p": 0.881068418646349,
+        "ci95": [
+          -0.0001979443064113925,
+          0.0002306282288074864
+        ]
+      },
+      "no_silence_share": {
+        "b": 0.0006737231175441422,
+        "se": 0.0004986523398476501,
+        "p": 0.1769744263450601,
+        "ci95": [
+          -0.0003048078152995551,
+          0.0016522540503878394
+        ]
+      },
+      "activity_x_ghost": {
+        "b": 0.000691915161059503,
+        "se": 0.0009645232388247522,
+        "p": 0.47331731428808854,
+        "ci95": [
+          -0.0012008180103620265,
+          0.0025846483324810324
+        ]
+      }
+    },
+    "within_r2": -0.06661426597936937,
+    "interaction_effect_10pp_doubling_count": 4.79599043075075e-05,
+    "ghost_percentiles": {
+      "0.25": 0.0,
+      "0.5": 0.045454545454545456,
+      "0.75": 0.09090909090909091
+    },
+    "slope_at_0.25": {
+      "b": 1.634196119804695e-05,
+      "se": 0.00010919874390698975
+    },
+    "slope_at_0.75": {
+      "b": 7.924333947618359e-05,
+      "se": 7.365670629923599e-05
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "omit_silence_measure",
+    "outcome": "employment",
+    "kind": "direct",
+    "n": 1061,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "no_silence_share",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "no_silence_share": {
+        "b": 0.0006331810973850199,
+        "se": 0.00046359787971467085,
+        "p": 0.17231036828910318,
+        "ci95": [
+          -0.0002765584569321139,
+          0.0015429206517021538
+        ]
+      }
+    },
+    "within_r2": -0.0690852564231641,
+    "holm_p_across_four_outcomes": 0.6892414731564127
+  },
+  {
+    "spec": "omit_silence_measure",
+    "outcome": "sga",
+    "kind": "baseline",
+    "n": 1060,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "no_silence_share",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": 0.001243171322999645,
+        "se": 0.0028437374265452694,
+        "p": 0.6620892992954986,
+        "ci95": [
+          -0.004337232922243027,
+          0.006823575568242316
+        ]
+      }
+    },
+    "within_r2": -0.009899176949637933,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "omit_silence_measure",
+    "outcome": "sga",
+    "kind": "interaction",
+    "n": 1060,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "no_silence_share",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": 0.004581789946663944,
+        "se": 0.0034707811241636017,
+        "p": 0.18710440967726458,
+        "ci95": [
+          -0.0022291093130657512,
+          0.01139268920639364
+        ]
+      },
+      "no_silence_share": {
+        "b": 0.01172380414405916,
+        "se": 0.015848362791358254,
+        "p": 0.4596272236427038,
+        "ci95": [
+          -0.0193762850122692,
+          0.042823893300387515
+        ]
+      },
+      "activity_x_ghost": {
+        "b": -0.05583134405142069,
+        "se": 0.03680864847066294,
+        "p": 0.12963523066382515,
+        "ci95": [
+          -0.1280629218006235,
+          0.016400233697782124
+        ]
+      }
+    },
+    "within_r2": -0.006851033766132719,
+    "interaction_effect_10pp_doubling_count": -0.0038699338716114526,
+    "ghost_percentiles": {
+      "0.25": 0.0,
+      "0.5": 0.045454545454545456,
+      "0.75": 0.09090909090909091
+    },
+    "slope_at_0.25": {
+      "b": 0.004581789946663944,
+      "se": 0.0034707811241636017
+    },
+    "slope_at_0.75": {
+      "b": -0.0004937867852833925,
+      "se": 0.003164730901343578
+    },
+    "holm_p_across_four_outcomes": 0.5185409226553006
+  },
+  {
+    "spec": "omit_silence_measure",
+    "outcome": "sga",
+    "kind": "direct",
+    "n": 1060,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "no_silence_share",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "no_silence_share": {
+        "b": 0.015884126911987113,
+        "se": 0.016717446181575283,
+        "p": 0.34226515491499,
+        "ci95": [
+          -0.016921330712352207,
+          0.048689584536326436
+        ]
+      }
+    },
+    "within_r2": -0.007633480108738544,
+    "holm_p_across_four_outcomes": 0.8300481638175757
+  },
+  {
+    "spec": "omit_silence_measure",
+    "outcome": "revenue",
+    "kind": "baseline",
+    "n": 1062,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "no_silence_share",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": -0.0010565639315173484,
+        "se": 0.010171019399182645,
+        "p": 0.9172855719601251,
+        "ci95": [
+          -0.02101560125925037,
+          0.01890247339621567
+        ]
+      }
+    },
+    "within_r2": 0.017428892445853994,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "omit_silence_measure",
+    "outcome": "revenue",
+    "kind": "interaction",
+    "n": 1062,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "no_silence_share",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": -0.00401972570509009,
+        "se": 0.01382183240325105,
+        "p": 0.7712461921564141,
+        "ci95": [
+          -0.03114297959630409,
+          0.023103528186123913
+        ]
+      },
+      "no_silence_share": {
+        "b": 0.06894621366044061,
+        "se": 0.06266202750600562,
+        "p": 0.27147295237757224,
+        "ci95": [
+          -0.0540185302170688,
+          0.19191095753795
+        ]
+      },
+      "activity_x_ghost": {
+        "b": 0.043808133792404315,
+        "se": 0.15257269932608522,
+        "p": 0.7740728334561274,
+        "ci95": [
+          -0.2555926938226012,
+          0.34320896140740986
+        ]
+      }
+    },
+    "within_r2": 0.018532148130619874,
+    "interaction_effect_10pp_doubling_count": 0.0030365484423797912,
+    "ghost_percentiles": {
+      "0.25": 0.0,
+      "0.5": 0.045454545454545456,
+      "0.75": 0.09090909090909091
+    },
+    "slope_at_0.25": {
+      "b": -0.00401972570509009,
+      "se": 0.01382183240325105
+    },
+    "slope_at_0.75": {
+      "b": -3.7168087598788216e-05,
+      "se": 0.011102945449794536
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "omit_silence_measure",
+    "outcome": "revenue",
+    "kind": "direct",
+    "n": 1062,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "no_silence_share",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "no_silence_share": {
+        "b": 0.06546277466292194,
+        "se": 0.060146054112292846,
+        "p": 0.27668272127252524,
+        "ci95": [
+          -0.052564464498530555,
+          0.18349001382437444
+        ]
+      }
+    },
+    "within_r2": 0.01843141112418023,
+    "holm_p_across_four_outcomes": 0.8300481638175757
+  },
+  {
+    "spec": "omit_silence_measure",
+    "outcome": "earnings",
+    "kind": "baseline",
+    "n": 1062,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "no_silence_share",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": -0.008279341096112449,
+        "se": 0.004058307876932208,
+        "p": 0.04160352690600826,
+        "ci95": [
+          -0.016243136584461644,
+          -0.00031554560776325506
+        ]
+      }
+    },
+    "within_r2": 0.03171501810162469,
+    "holm_p_across_four_outcomes": 0.16641410762403305
+  },
+  {
+    "spec": "omit_silence_measure",
+    "outcome": "earnings",
+    "kind": "interaction",
+    "n": 1062,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "no_silence_share",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": -0.010925348544993772,
+        "se": 0.004113935217290048,
+        "p": 0.008040969791021176,
+        "ci95": [
+          -0.018998323685708036,
+          -0.0028523734042795092
+        ]
+      },
+      "no_silence_share": {
+        "b": 0.01421613022228078,
+        "se": 0.022681961346337477,
+        "p": 0.5309606544986958,
+        "ci95": [
+          -0.030293785568820085,
+          0.05872604601338164
+        ]
+      },
+      "activity_x_ghost": {
+        "b": 0.0424807160445791,
+        "se": 0.053656679936624464,
+        "p": 0.42871627443414495,
+        "ci95": [
+          -0.06281239636057209,
+          0.14777382844973028
+        ]
+      }
+    },
+    "within_r2": 0.03272181737198443,
+    "interaction_effect_10pp_doubling_count": 0.0029445388554467634,
+    "ghost_percentiles": {
+      "0.25": 0.0,
+      "0.5": 0.045454545454545456,
+      "0.75": 0.09090909090909091
+    },
+    "slope_at_0.25": {
+      "b": -0.010925348544993772,
+      "se": 0.004113935217290048
+    },
+    "slope_at_0.75": {
+      "b": -0.007063465268213854,
+      "se": 0.0048805666450153756
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "omit_silence_measure",
+    "outcome": "earnings",
+    "kind": "direct",
+    "n": 1062,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "no_silence_share",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "no_silence_share": {
+        "b": 0.00955236739991083,
+        "se": 0.022532045568908397,
+        "p": 0.6716966578900139,
+        "ci95": [
+          -0.034663253564902574,
+          0.05376798836472424
+        ]
+      }
+    },
+    "within_r2": 0.024348847111315908,
+    "holm_p_across_four_outcomes": 0.8300481638175757
+  },
+  {
+    "spec": "deduplicate_reviews",
+    "outcome": "employment",
+    "kind": "baseline",
+    "n": 1061,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": 6.190599164249182e-05,
+        "se": 7.669408966391e-05,
+        "p": 0.41975488187790594,
+        "ci95": [
+          -8.859436653978873e-05,
+          0.00021240634982477237
+        ]
+      }
+    },
+    "within_r2": -0.06565313160885267,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "deduplicate_reviews",
+    "outcome": "employment",
+    "kind": "interaction",
+    "n": 1061,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": 9.528404505558637e-05,
+        "se": 0.00015625896243833548,
+        "p": 0.5421448475025953,
+        "ci95": [
+          -0.00021135089087329843,
+          0.0004019189809844712
+        ]
+      },
+      "ghost": {
+        "b": 0.00048485342808440027,
+        "se": 0.0003382070267761919,
+        "p": 0.15200073741595316,
+        "ci95": [
+          -0.00017882747935245665,
+          0.0011485343355212571
+        ]
+      },
+      "activity_x_ghost": {
+        "b": -0.0002890626931886387,
+        "se": 0.0007725414182215703,
+        "p": 0.7083567242990088,
+        "ci95": [
+          -0.0018050601411575145,
+          0.001226934754780237
+        ]
+      }
+    },
+    "within_r2": -0.06753577789215814,
+    "interaction_effect_10pp_doubling_count": -2.0036299078876942e-05,
+    "ghost_percentiles": {
+      "0.25": 0.07076400071569154,
+      "0.5": 0.12198739340007415,
+      "0.75": 0.17685979971387697
+    },
+    "slope_at_0.25": {
+      "b": 7.482881242790582e-05,
+      "se": 0.00010919600633248413
+    },
+    "slope_at_0.75": {
+      "b": 4.416047503348986e-05,
+      "se": 6.627044054068268e-05
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "deduplicate_reviews",
+    "outcome": "employment",
+    "kind": "direct",
+    "n": 1061,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "ghost": {
+        "b": 0.0004973578439385509,
+        "se": 0.0003466900992181355,
+        "p": 0.15171780390927325,
+        "ci95": [
+          -0.0001829681673516351,
+          0.001177683855228737
+        ]
+      }
+    },
+    "within_r2": -0.07036081495313207,
+    "holm_p_across_four_outcomes": 0.606871215637093
+  },
+  {
+    "spec": "deduplicate_reviews",
+    "outcome": "sga",
+    "kind": "baseline",
+    "n": 1060,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": 0.0013439974193557923,
+        "se": 0.0028423348130043255,
+        "p": 0.6364239493779895,
+        "ci95": [
+          -0.004233654409125312,
+          0.006921649247836897
+        ]
+      }
+    },
+    "within_r2": -0.00993727719800841,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "deduplicate_reviews",
+    "outcome": "sga",
+    "kind": "interaction",
+    "n": 1060,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": 0.0030325012783875395,
+        "se": 0.004880427676282258,
+        "p": 0.5345054211123181,
+        "ci95": [
+          -0.006544622734457102,
+          0.01260962529123218
+        ]
+      },
+      "ghost": {
+        "b": 0.007320215022726673,
+        "se": 0.013960414313094822,
+        "p": 0.6001484572470827,
+        "ci95": [
+          -0.020075051952943165,
+          0.03471548199839651
+        ]
+      },
+      "activity_x_ghost": {
+        "b": -0.013267181328577477,
+        "se": 0.03371422183190424,
+        "p": 0.6940207063020902,
+        "ci95": [
+          -0.07942640033511013,
+          0.05289203767795518
+        ]
+      }
+    },
+    "within_r2": -0.009627468445054577,
+    "interaction_effect_10pp_doubling_count": -0.0009196109331881028,
+    "ghost_percentiles": {
+      "0.25": 0.07082299123037702,
+      "0.5": 0.12200165425971878,
+      "0.75": 0.17691568311874106
+    },
+    "slope_at_0.25": {
+      "b": 0.002092879811501875,
+      "se": 0.003241987916613508
+    },
+    "slope_at_0.75": {
+      "b": 0.0006853288305820487,
+      "se": 0.0034509826666375126
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "deduplicate_reviews",
+    "outcome": "sga",
+    "kind": "direct",
+    "n": 1060,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "ghost": {
+        "b": 0.007379841527123159,
+        "se": 0.013803083903903553,
+        "p": 0.593010091409522,
+        "ci95": [
+          -0.01970662127206734,
+          0.03446630432631366
+        ]
+      }
+    },
+    "within_r2": -0.008888894262877312,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "deduplicate_reviews",
+    "outcome": "revenue",
+    "kind": "baseline",
+    "n": 1062,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": -0.00031266944440444446,
+        "se": 0.010204000658929522,
+        "p": 0.9755612938812457,
+        "ci95": [
+          -0.02033642734424221,
+          0.019711088455433318
+        ]
+      }
+    },
+    "within_r2": 0.017465253579790008,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "deduplicate_reviews",
+    "outcome": "revenue",
+    "kind": "interaction",
+    "n": 1062,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": 0.008099070637762603,
+        "se": 0.02018894907358314,
+        "p": 0.6883857572294784,
+        "ci95": [
+          -0.031518685933412866,
+          0.047716827208938065
+        ]
+      },
+      "ghost": {
+        "b": 0.012135284901387784,
+        "se": 0.056618096281600395,
+        "p": 0.8303290753860012,
+        "ci95": [
+          -0.09896915881345865,
+          0.12323972861623421
+        ]
+      },
+      "activity_x_ghost": {
+        "b": -0.06419358139057113,
+        "se": 0.1360799138901783,
+        "p": 0.6372196758989824,
+        "ci95": [
+          -0.33122981408788676,
+          0.2028426513067445
+        ]
+      }
+    },
+    "within_r2": 0.01707964670000217,
+    "interaction_effect_10pp_doubling_count": -0.0044495599950919755,
+    "ghost_percentiles": {
+      "0.25": 0.0707836642205867,
+      "0.5": 0.12200165425971878,
+      "0.75": 0.17702744992846925
+    },
+    "slope_at_0.25": {
+      "b": 0.0035552137274955133,
+      "se": 0.01289818916963383
+    },
+    "slope_at_0.75": {
+      "b": -0.0032649553775858427,
+      "se": 0.012351838850811788
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "deduplicate_reviews",
+    "outcome": "revenue",
+    "kind": "direct",
+    "n": 1062,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "ghost": {
+        "b": 0.010295442643615314,
+        "se": 0.057142219478795366,
+        "p": 0.8570539147286375,
+        "ci95": [
+          -0.1018372401097419,
+          0.12242812539697254
+        ]
+      }
+    },
+    "within_r2": 0.017330770901630155,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "deduplicate_reviews",
+    "outcome": "earnings",
+    "kind": "baseline",
+    "n": 1062,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": -0.008054714905852828,
+        "se": 0.004066056254071786,
+        "p": 0.047869372727411666,
+        "ci95": [
+          -0.016033715374400036,
+          -7.57144373056181e-05
+        ]
+      }
+    },
+    "within_r2": 0.031467183027861,
+    "holm_p_across_four_outcomes": 0.19147749090964666
+  },
+  {
+    "spec": "deduplicate_reviews",
+    "outcome": "earnings",
+    "kind": "interaction",
+    "n": 1062,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": -0.007109270932952236,
+        "se": 0.005653105301153234,
+        "p": 0.20883598648394397,
+        "ci95": [
+          -0.018202634380253324,
+          0.003984092514348851
+        ]
+      },
+      "ghost": {
+        "b": -0.009884357533673267,
+        "se": 0.01923685381355968,
+        "p": 0.6074890031913125,
+        "ci95": [
+          -0.04763377127498171,
+          0.027865056207635172
+        ]
+      },
+      "activity_x_ghost": {
+        "b": -0.006343982353397676,
+        "se": 0.03906565062411397,
+        "p": 0.8710294397278252,
+        "ci95": [
+          -0.08300440836565919,
+          0.07031644365886384
+        ]
+      }
+    },
+    "within_r2": 0.032473069809843325,
+    "interaction_effect_10pp_doubling_count": -0.0004397313481779646,
+    "ghost_percentiles": {
+      "0.25": 0.0707836642205867,
+      "0.5": 0.12200165425971878,
+      "0.75": 0.17702744992846925
+    },
+    "slope_at_0.25": {
+      "b": -0.007558321249676465,
+      "se": 0.004129715036740108
+    },
+    "slope_at_0.75": {
+      "b": -0.008232329951365436,
+      "se": 0.004836222701423088
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "deduplicate_reviews",
+    "outcome": "earnings",
+    "kind": "direct",
+    "n": 1062,
+    "firms": 172,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "ghost": {
+        "b": -0.012845010669983092,
+        "se": 0.01912504685018694,
+        "p": 0.501972861271249,
+        "ci95": [
+          -0.050374928665046524,
+          0.024684907325080337
+        ]
+      }
+    },
+    "within_r2": 0.025040392717715854,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "core_on_full_control_sample",
+    "outcome": "employment",
+    "kind": "baseline",
+    "n": 403,
+    "firms": 70,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": 7.390564748372135e-05,
+        "se": 6.610280232861278e-05,
+        "p": 0.2643097546160393,
+        "ci95": [
+          -5.609919714987885e-05,
+          0.00020391049211732155
+        ]
+      }
+    },
+    "within_r2": 0.006189697669805261,
+    "holm_p_across_four_outcomes": 0.7929292638481178
+  },
+  {
+    "spec": "core_on_full_control_sample",
+    "outcome": "employment",
+    "kind": "interaction",
+    "n": 403,
+    "firms": 70,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": 0.00011666150546375326,
+        "se": 0.00014068203832684514,
+        "p": 0.407522816449846,
+        "ci95": [
+          -0.00016002426892063688,
+          0.0003933472798481434
+        ]
+      },
+      "ghost": {
+        "b": 0.00019301350697035672,
+        "se": 0.00046792998841490484,
+        "p": 0.6802367258793679,
+        "ci95": [
+          -0.0007272857205789436,
+          0.001113312734519657
+        ]
+      },
+      "activity_x_ghost": {
+        "b": -0.0003568476426698394,
+        "se": 0.0008978509886038685,
+        "p": 0.6912798895257601,
+        "ci95": [
+          -0.0021226920888989587,
+          0.00140899680355928
+        ]
+      }
+    },
+    "within_r2": 0.0068047065444134525,
+    "interaction_effect_10pp_doubling_count": -2.47347937406062e-05,
+    "ghost_percentiles": {
+      "0.25": 0.074677667,
+      "0.5": 0.130793651,
+      "0.75": 0.1818180975
+    },
+    "slope_at_0.25": {
+      "b": 9.001295603472e-05,
+      "se": 8.753913028156112e-05
+    },
+    "slope_at_0.75": {
+      "b": 5.178014597616324e-05,
+      "se": 7.724057031457836e-05
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "core_on_full_control_sample",
+    "outcome": "employment",
+    "kind": "direct",
+    "n": 403,
+    "firms": 70,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "ghost": {
+        "b": 0.0002151654850583428,
+        "se": 0.0004720996406467837,
+        "p": 0.6488407442131032,
+        "ci95": [
+          -0.0007133161870007728,
+          0.0011436471571174584
+        ]
+      }
+    },
+    "within_r2": 0.0021151978587931053,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "core_on_full_control_sample",
+    "outcome": "sga",
+    "kind": "baseline",
+    "n": 402,
+    "firms": 70,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": 0.0004317725672504377,
+        "se": 0.00682530480696149,
+        "p": 0.9495949328388559,
+        "ci95": [
+          -0.012991733423464106,
+          0.013855278557964982
+        ]
+      }
+    },
+    "within_r2": 0.006433735678190722,
+    "holm_p_across_four_outcomes": 0.9495949328388559
+  },
+  {
+    "spec": "core_on_full_control_sample",
+    "outcome": "sga",
+    "kind": "interaction",
+    "n": 402,
+    "firms": 70,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": 0.00013393268677939924,
+        "se": 0.009902768361720117,
+        "p": 0.9892168279544393,
+        "ci95": [
+          -0.01934248555851715,
+          0.01961035093207595
+        ]
+      },
+      "ghost": {
+        "b": 0.007117757856645079,
+        "se": 0.030028092928327487,
+        "p": 0.812767052966301,
+        "ci95": [
+          -0.051940444417526946,
+          0.0661759601308171
+        ]
+      },
+      "activity_x_ghost": {
+        "b": 0.0017898743201780283,
+        "se": 0.0793755144077228,
+        "p": 0.9820225153280172,
+        "ci95": [
+          -0.15432310950123077,
+          0.1579028581415868
+        ]
+      }
+    },
+    "within_r2": 0.006941481004993144,
+    "interaction_effect_10pp_doubling_count": 0.00012406463385880492,
+    "ghost_percentiles": {
+      "0.25": 0.074605914,
+      "0.5": 0.130172095,
+      "0.75": 0.181474194
+    },
+    "slope_at_0.25": {
+      "b": 0.0002674678963814097,
+      "se": 0.006637962493753245
+    },
+    "slope_at_0.75": {
+      "b": 0.0004587486863950049,
+      "se": 0.009428573742294447
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "core_on_full_control_sample",
+    "outcome": "sga",
+    "kind": "direct",
+    "n": 402,
+    "firms": 70,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "ghost": {
+        "b": 0.007338805532330279,
+        "se": 0.029613853825685366,
+        "p": 0.8044207809531198,
+        "ci95": [
+          -0.05090353755420541,
+          0.06558114861886596
+        ]
+      }
+    },
+    "within_r2": 0.007109076833291428,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "core_on_full_control_sample",
+    "outcome": "revenue",
+    "kind": "baseline",
+    "n": 403,
+    "firms": 70,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": -0.016919019800838778,
+        "se": 0.01917726618301124,
+        "p": 0.3782454678549296,
+        "ci95": [
+          -0.05463508361044235,
+          0.020797044008764795
+        ]
+      }
+    },
+    "within_r2": 0.00397898433642585,
+    "holm_p_across_four_outcomes": 0.7929292638481178
+  },
+  {
+    "spec": "core_on_full_control_sample",
+    "outcome": "revenue",
+    "kind": "interaction",
+    "n": 403,
+    "firms": 70,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": -0.006977261127668731,
+        "se": 0.03128159708152444,
+        "p": 0.8236288029077588,
+        "ci95": [
+          -0.06850020332710996,
+          0.054545681071772496
+        ]
+      },
+      "ghost": {
+        "b": -0.020619487421053413,
+        "se": 0.10328221949266483,
+        "p": 0.8418760442281268,
+        "ci95": [
+          -0.22374933413307302,
+          0.1825103592909662
+        ]
+      },
+      "activity_x_ghost": {
+        "b": -0.0781490711847043,
+        "se": 0.19837699020980415,
+        "p": 0.6938629137272673,
+        "ci95": [
+          -0.4683061360739924,
+          0.3120079937045839
+        ]
+      }
+    },
+    "within_r2": 0.004042262506302463,
+    "interaction_effect_10pp_doubling_count": -0.0054168808355056245,
+    "ghost_percentiles": {
+      "0.25": 0.074677667,
+      "0.5": 0.130793651,
+      "0.75": 0.1818180975
+    },
+    "slope_at_0.25": {
+      "b": -0.012813251441959373,
+      "se": 0.021894583867043644
+    },
+    "slope_at_0.75": {
+      "b": -0.021186176571863738,
+      "se": 0.02301792857111519
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "core_on_full_control_sample",
+    "outcome": "revenue",
+    "kind": "direct",
+    "n": 403,
+    "firms": 70,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "ghost": {
+        "b": -0.029319379315726906,
+        "se": 0.09902952588850415,
+        "p": 0.7673529744780929,
+        "ci95": [
+          -0.22408144194769775,
+          0.16544268331624395
+        ]
+      }
+    },
+    "within_r2": 0.004660931619482556,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "core_on_full_control_sample",
+    "outcome": "earnings",
+    "kind": "baseline",
+    "n": 403,
+    "firms": 70,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": -0.015385266548341676,
+        "se": 0.00557574863426107,
+        "p": 0.006094164374276077,
+        "ci95": [
+          -0.026351130466025465,
+          -0.004419402630657886
+        ]
+      }
+    },
+    "within_r2": 0.06323345588481111,
+    "holm_p_across_four_outcomes": 0.02437665749710431
+  },
+  {
+    "spec": "core_on_full_control_sample",
+    "outcome": "earnings",
+    "kind": "interaction",
+    "n": 403,
+    "firms": 70,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity": {
+        "b": -0.009119362919298305,
+        "se": 0.010535522811927928,
+        "p": 0.38731045240042405,
+        "ci95": [
+          -0.029840055641920285,
+          0.011601329803323674
+        ]
+      },
+      "ghost": {
+        "b": -0.059314811475894354,
+        "se": 0.0333434592677943,
+        "p": 0.07612087511896008,
+        "ci95": [
+          -0.12489291197746763,
+          0.0062632890256789295
+        ]
+      },
+      "activity_x_ghost": {
+        "b": -0.04584116137348274,
+        "se": 0.0770355448261983,
+        "p": 0.552183410613051,
+        "ci95": [
+          -0.19735047719559212,
+          0.10566815444862665
+        ]
+      }
+    },
+    "within_r2": 0.06919222670302749,
+    "interaction_effect_10pp_doubling_count": -0.003177467175962303,
+    "ghost_percentiles": {
+      "0.25": 0.074677667,
+      "0.5": 0.130793651,
+      "0.75": 0.1818180975
+    },
+    "slope_at_0.25": {
+      "b": -0.012542673903240511,
+      "se": 0.006433998039342723
+    },
+    "slope_at_0.75": {
+      "b": -0.017454115667415424,
+      "se": 0.0075593343894208576
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "core_on_full_control_sample",
+    "outcome": "earnings",
+    "kind": "direct",
+    "n": 403,
+    "firms": 70,
+    "years": [
+      2011,
+      2023
+    ],
+    "measure": "ghost",
+    "activity": "activity",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "ghost": {
+        "b": -0.06651225663908128,
+        "se": 0.032026114067463515,
+        "p": 0.03854171677521831,
+        "ci95": [
+          -0.12949823963660312,
+          -0.003526273641559441
+        ]
+      }
+    },
+    "within_r2": 0.03071973947250728,
+    "holm_p_across_four_outcomes": 0.15416686710087324
+  },
+  {
+    "spec": "split_reviews_0",
+    "outcome": "employment",
+    "kind": "baseline",
+    "n": 639,
+    "firms": 160,
+    "years": [
+      2012,
+      2023
+    ],
+    "measure": "split_ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": -0.0001136883420967478,
+        "se": 7.618963017088342e-05,
+        "p": 0.13619764366824003,
+        "ci95": [
+          -0.00026333007885233134,
+          3.5953394658835776e-05
+        ]
+      }
+    },
+    "within_r2": -0.14444608289721272,
+    "holm_p_across_four_outcomes": 0.5447905746729601
+  },
+  {
+    "spec": "split_reviews_0",
+    "outcome": "employment",
+    "kind": "interaction",
+    "n": 639,
+    "firms": 160,
+    "years": [
+      2012,
+      2023
+    ],
+    "measure": "split_ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": -4.3579438242973856e-05,
+        "se": 0.0001179701034702604,
+        "p": 0.7119570278158094,
+        "ci95": [
+          -0.00027528261493312434,
+          0.00018812373844717664
+        ]
+      },
+      "split_ghost": {
+        "b": 0.00015981789246973917,
+        "se": 0.0002404176436993005,
+        "p": 0.5064752904195213,
+        "ci95": [
+          -0.00031238252220169263,
+          0.0006320183071411709
+        ]
+      },
+      "activity_x_ghost": {
+        "b": -0.000547368659440581,
+        "se": 0.0005910552931526982,
+        "p": 0.3547879107442989,
+        "ci95": [
+          -0.001708250823602898,
+          0.000613513504721736
+        ]
+      }
+    },
+    "within_r2": -0.14249459929087127,
+    "interaction_effect_10pp_doubling_count": -3.794070430181156e-05,
+    "ghost_percentiles": {
+      "0.25": 0.0,
+      "0.5": 0.125,
+      "0.75": 0.21428571428571427
+    },
+    "slope_at_0.25": {
+      "b": -4.3579438242973856e-05,
+      "se": 0.0001179701034702604
+    },
+    "slope_at_0.75": {
+      "b": -0.00016087272240881265,
+      "se": 8.33736923432299e-05
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "split_reviews_0",
+    "outcome": "employment",
+    "kind": "direct",
+    "n": 639,
+    "firms": 160,
+    "years": [
+      2012,
+      2023
+    ],
+    "measure": "split_ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "split_ghost": {
+        "b": 0.00012791346497466444,
+        "se": 0.00022532583120153025,
+        "p": 0.5704708264267047,
+        "ci95": [
+          -0.00031464215107527606,
+          0.000570469081024605
+        ]
+      }
+    },
+    "within_r2": -0.15366396550076145,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "split_reviews_0",
+    "outcome": "sga",
+    "kind": "baseline",
+    "n": 640,
+    "firms": 160,
+    "years": [
+      2012,
+      2023
+    ],
+    "measure": "split_ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": -0.0025609062653644326,
+        "se": 0.0032617027495656687,
+        "p": 0.432689747090978,
+        "ci95": [
+          -0.008967094357059866,
+          0.003845281826331001
+        ]
+      }
+    },
+    "within_r2": 0.05277400044068048,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "split_reviews_0",
+    "outcome": "sga",
+    "kind": "interaction",
+    "n": 640,
+    "firms": 160,
+    "years": [
+      2012,
+      2023
+    ],
+    "measure": "split_ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": -0.0004718428503329436,
+        "se": 0.00494964532887278,
+        "p": 0.9240868517507059,
+        "ci95": [
+          -0.010193326021665816,
+          0.00924964032099993
+        ]
+      },
+      "split_ghost": {
+        "b": 0.006085602992518217,
+        "se": 0.01181275909466821,
+        "p": 0.6066297802450028,
+        "ci95": [
+          -0.017115562164901087,
+          0.02928676814993752
+        ]
+      },
+      "activity_x_ghost": {
+        "b": -0.016326462095866502,
+        "se": 0.028293008035904475,
+        "p": 0.5641307906742127,
+        "ci95": [
+          -0.07189610056733053,
+          0.03924317637559754
+        ]
+      }
+    },
+    "within_r2": 0.05522614291397554,
+    "interaction_effect_10pp_doubling_count": -0.0011316641170268681,
+    "ghost_percentiles": {
+      "0.25": 0.0,
+      "0.5": 0.125,
+      "0.75": 0.2154017857142857
+    },
+    "slope_at_0.25": {
+      "b": -0.0004718428503329436,
+      "se": 0.00494964532887278
+    },
+    "slope_at_0.75": {
+      "b": -0.003988591940179188,
+      "se": 0.004043301843462257
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "split_reviews_0",
+    "outcome": "sga",
+    "kind": "direct",
+    "n": 640,
+    "firms": 160,
+    "years": [
+      2012,
+      2023
+    ],
+    "measure": "split_ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "split_ghost": {
+        "b": 0.005252131841045567,
+        "se": 0.011844922423766816,
+        "p": 0.6576360933804912,
+        "ci95": [
+          -0.018012036234446763,
+          0.028516299916537896
+        ]
+      }
+    },
+    "within_r2": 0.050910811183272675,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "split_reviews_0",
+    "outcome": "revenue",
+    "kind": "baseline",
+    "n": 640,
+    "firms": 160,
+    "years": [
+      2012,
+      2023
+    ],
+    "measure": "split_ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": -0.010607712667106356,
+        "se": 0.011135571702563315,
+        "p": 0.34119108689124367,
+        "ci95": [
+          -0.03247867158409565,
+          0.011263246249882937
+        ]
+      }
+    },
+    "within_r2": 0.051703745018704006,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "split_reviews_0",
+    "outcome": "revenue",
+    "kind": "interaction",
+    "n": 640,
+    "firms": 160,
+    "years": [
+      2012,
+      2023
+    ],
+    "measure": "split_ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": 0.00861105381901889,
+        "se": 0.01651587932814019,
+        "p": 0.6023015907150611,
+        "ci95": [
+          -0.02382740030853061,
+          0.041049507946568385
+        ]
+      },
+      "split_ghost": {
+        "b": 0.031383111923990833,
+        "se": 0.04834049315063173,
+        "p": 0.5164607922184486,
+        "ci95": [
+          -0.06356132539083828,
+          0.12632754923881995
+        ]
+      },
+      "activity_x_ghost": {
+        "b": -0.14877134747902704,
+        "se": 0.08782476646241154,
+        "p": 0.0908122520312266,
+        "ci95": [
+          -0.32126592688054,
+          0.023723231922485932
+        ]
+      }
+    },
+    "within_r2": 0.05582035272405783,
+    "interaction_effect_10pp_doubling_count": -0.010312044005319152,
+    "ghost_percentiles": {
+      "0.25": 0.0,
+      "0.5": 0.125,
+      "0.75": 0.2154017857142857
+    },
+    "slope_at_0.25": {
+      "b": 0.00861105381901889,
+      "se": 0.01651587932814019
+    },
+    "slope_at_0.75": {
+      "b": -0.02343456009108403,
+      "se": 0.013027712136786435
+    },
+    "holm_p_across_four_outcomes": 0.3632490081249064
+  },
+  {
+    "spec": "split_reviews_0",
+    "outcome": "revenue",
+    "kind": "direct",
+    "n": 640,
+    "firms": 160,
+    "years": [
+      2012,
+      2023
+    ],
+    "measure": "split_ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "split_ghost": {
+        "b": 0.024994766167624922,
+        "se": 0.04743285897949851,
+        "p": 0.5984294791594479,
+        "ci95": [
+          -0.06816633393262025,
+          0.11815586626787009
+        ]
+      }
+    },
+    "within_r2": 0.05120758930036129,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "split_reviews_0",
+    "outcome": "earnings",
+    "kind": "baseline",
+    "n": 640,
+    "firms": 160,
+    "years": [
+      2012,
+      2023
+    ],
+    "measure": "split_ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": -0.00451227322932151,
+        "se": 0.004752523940755923,
+        "p": 0.34278836686935715,
+        "ci95": [
+          -0.013846527332894315,
+          0.004821980874251295
+        ]
+      }
+    },
+    "within_r2": 0.07901692443792718,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "split_reviews_0",
+    "outcome": "earnings",
+    "kind": "interaction",
+    "n": 640,
+    "firms": 160,
+    "years": [
+      2012,
+      2023
+    ],
+    "measure": "split_ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": -0.006692770335324658,
+        "se": 0.005938568328883946,
+        "p": 0.2602098594245793,
+        "ci95": [
+          -0.018356574150577686,
+          0.004971033479928371
+        ]
+      },
+      "split_ghost": {
+        "b": 0.0037305087157248075,
+        "se": 0.013980362403260858,
+        "p": 0.7896881439476363,
+        "ci95": [
+          -0.02372799564207875,
+          0.031189013073528362
+        ]
+      },
+      "activity_x_ghost": {
+        "b": 0.016456117340700373,
+        "se": 0.03290194158379949,
+        "p": 0.617155305244927,
+        "ci95": [
+          -0.048165820224253836,
+          0.08107805490565459
+        ]
+      }
+    },
+    "within_r2": 0.07897554199822643,
+    "interaction_effect_10pp_doubling_count": 0.0011406511337670089,
+    "ghost_percentiles": {
+      "0.25": 0.0,
+      "0.5": 0.125,
+      "0.75": 0.2154017857142857
+    },
+    "slope_at_0.25": {
+      "b": -0.006692770335324658,
+      "se": 0.005938568328883946
+    },
+    "slope_at_0.75": {
+      "b": -0.0031480932742139747,
+      "se": 0.005820990581373066
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "split_reviews_0",
+    "outcome": "earnings",
+    "kind": "direct",
+    "n": 640,
+    "firms": 160,
+    "years": [
+      2012,
+      2023
+    ],
+    "measure": "split_ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "split_ghost": {
+        "b": 0.0039007254894757887,
+        "se": 0.014007022981936349,
+        "p": 0.780740445296559,
+        "ci95": [
+          -0.023609943236830938,
+          0.03141139421578251
+        ]
+      }
+    },
+    "within_r2": 0.0787485463136327,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "split_reviews_1",
+    "outcome": "employment",
+    "kind": "baseline",
+    "n": 647,
+    "firms": 160,
+    "years": [
+      2013,
+      2023
+    ],
+    "measure": "split_ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": 3.434592610576497e-05,
+        "se": 5.455522411233755e-05,
+        "p": 0.5292253652432566,
+        "ci95": [
+          -7.280089605518297e-05,
+          0.00014149274826671292
+        ]
+      }
+    },
+    "within_r2": -0.11099179763158884,
+    "holm_p_across_four_outcomes": 0.6491657456404257
+  },
+  {
+    "spec": "split_reviews_1",
+    "outcome": "employment",
+    "kind": "interaction",
+    "n": 647,
+    "firms": 160,
+    "years": [
+      2013,
+      2023
+    ],
+    "measure": "split_ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": -4.7353772100697456e-05,
+        "se": 0.00013176348137353678,
+        "p": 0.7194368228359582,
+        "ci95": [
+          -0.0003061399455367797,
+          0.00021143240133538482
+        ]
+      },
+      "split_ghost": {
+        "b": 5.6472922038646596e-05,
+        "se": 0.00019578400947718386,
+        "p": 0.7731081096196424,
+        "ci95": [
+          -0.0003280508785198731,
+          0.0004409967225971663
+        ]
+      },
+      "activity_x_ghost": {
+        "b": 0.0005522036242547162,
+        "se": 0.0008478472357820591,
+        "p": 0.5151076219354439,
+        "ci95": [
+          -0.0011129856946612698,
+          0.002217392943170702
+        ]
+      }
+    },
+    "within_r2": -0.106919618611103,
+    "interaction_effect_10pp_doubling_count": 3.8275838524713994e-05,
+    "ghost_percentiles": {
+      "0.25": 0.0,
+      "0.5": 0.125,
+      "0.75": 0.2
+    },
+    "slope_at_0.25": {
+      "b": -4.7353772100697456e-05,
+      "se": 0.00013176348137353678
+    },
+    "slope_at_0.75": {
+      "b": 6.308695275024579e-05,
+      "se": 7.382614741449417e-05
+    },
+    "holm_p_across_four_outcomes": 0.9194323505883085
+  },
+  {
+    "spec": "split_reviews_1",
+    "outcome": "employment",
+    "kind": "direct",
+    "n": 647,
+    "firms": 160,
+    "years": [
+      2013,
+      2023
+    ],
+    "measure": "split_ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "split_ghost": {
+        "b": 8.645642759338129e-05,
+        "se": 0.00019268733068361881,
+        "p": 0.6538222901554211,
+        "ci95": [
+          -0.0002919827684570747,
+          0.00046489562364383726
+        ]
+      }
+    },
+    "within_r2": -0.11336263780504052,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "split_reviews_1",
+    "outcome": "sga",
+    "kind": "baseline",
+    "n": 648,
+    "firms": 160,
+    "years": [
+      2013,
+      2023
+    ],
+    "measure": "split_ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": 0.00427668783235542,
+        "se": 0.004337814504354685,
+        "p": 0.32458287282021286,
+        "ci95": [
+          -0.004242778804854349,
+          0.01279615446956519
+        ]
+      }
+    },
+    "within_r2": 0.03214954446583085,
+    "holm_p_across_four_outcomes": 0.6491657456404257
+  },
+  {
+    "spec": "split_reviews_1",
+    "outcome": "sga",
+    "kind": "interaction",
+    "n": 648,
+    "firms": 160,
+    "years": [
+      2013,
+      2023
+    ],
+    "measure": "split_ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": -0.0029730979579803652,
+        "se": 0.004480503286283869,
+        "p": 0.5072303097370291,
+        "ci95": [
+          -0.011772867062577467,
+          0.005826671146616737
+        ]
+      },
+      "split_ghost": {
+        "b": 0.0007482101617757353,
+        "se": 0.013525822507269636,
+        "p": 0.9559046092815718,
+        "ci95": [
+          -0.025816688334806798,
+          0.027313108658358266
+        ]
+      },
+      "activity_x_ghost": {
+        "b": 0.049424816158585266,
+        "se": 0.03621841082546766,
+        "p": 0.1728914989106152,
+        "ci95": [
+          -0.02170863297317438,
+          0.12055826529034491
+        ]
+      }
+    },
+    "within_r2": 0.04023648137367042,
+    "interaction_effect_10pp_doubling_count": 0.0034258671970017005,
+    "ghost_percentiles": {
+      "0.25": 0.0,
+      "0.5": 0.125,
+      "0.75": 0.2
+    },
+    "slope_at_0.25": {
+      "b": -0.0029730979579803652,
+      "se": 0.004480503286283869
+    },
+    "slope_at_0.75": {
+      "b": 0.006911865273736688,
+      "se": 0.005478096897200773
+    },
+    "holm_p_across_four_outcomes": 0.6915659956424608
+  },
+  {
+    "spec": "split_reviews_1",
+    "outcome": "sga",
+    "kind": "direct",
+    "n": 648,
+    "firms": 160,
+    "years": [
+      2013,
+      2023
+    ],
+    "measure": "split_ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "split_ghost": {
+        "b": 0.003668932222568689,
+        "se": 0.014911288758695043,
+        "p": 0.8057287463184867,
+        "ci95": [
+          -0.02561683529237995,
+          0.03295469973751733
+        ]
+      }
+    },
+    "within_r2": 0.027472424749198088,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "split_reviews_1",
+    "outcome": "revenue",
+    "kind": "baseline",
+    "n": 648,
+    "firms": 160,
+    "years": [
+      2013,
+      2023
+    ],
+    "measure": "split_ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": -0.01905707238647262,
+        "se": 0.012436698076321294,
+        "p": 0.12597898974687335,
+        "ci95": [
+          -0.043482744399857255,
+          0.005368599626912017
+        ]
+      }
+    },
+    "within_r2": 0.020042312150904018,
+    "holm_p_across_four_outcomes": 0.37793696924062004
+  },
+  {
+    "spec": "split_reviews_1",
+    "outcome": "revenue",
+    "kind": "interaction",
+    "n": 648,
+    "firms": 160,
+    "years": [
+      2013,
+      2023
+    ],
+    "measure": "split_ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": -0.034290793114162825,
+        "se": 0.016977908815978462,
+        "p": 0.043865244730551374,
+        "ci95": [
+          -0.067635635850218,
+          -0.0009459503781076434
+        ]
+      },
+      "split_ghost": {
+        "b": -0.033440878143361503,
+        "se": 0.05090566566383173,
+        "p": 0.5114907271240248,
+        "ci95": [
+          -0.13342029459170263,
+          0.06653853830497963
+        ]
+      },
+      "activity_x_ghost": {
+        "b": 0.10741154619960781,
+        "se": 0.08712082082489218,
+        "p": 0.21810537190710783,
+        "ci95": [
+          -0.0636949252115269,
+          0.2785180176107425
+        ]
+      }
+    },
+    "within_r2": 0.027139530434113768,
+    "interaction_effect_10pp_doubling_count": 0.007445201040784246,
+    "ghost_percentiles": {
+      "0.25": 0.0,
+      "0.5": 0.125,
+      "0.75": 0.2
+    },
+    "slope_at_0.25": {
+      "b": -0.034290793114162825,
+      "se": 0.016977908815978462
+    },
+    "slope_at_0.75": {
+      "b": -0.012808483874241262,
+      "se": 0.01332530545357541
+    },
+    "holm_p_across_four_outcomes": 0.6915659956424608
+  },
+  {
+    "spec": "split_reviews_1",
+    "outcome": "revenue",
+    "kind": "direct",
+    "n": 648,
+    "firms": 160,
+    "years": [
+      2013,
+      2023
+    ],
+    "measure": "split_ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "split_ghost": {
+        "b": -0.03239179082679491,
+        "se": 0.050787553559165054,
+        "p": 0.5238582877242888,
+        "ci95": [
+          -0.13213853373118725,
+          0.06735495207759745
+        ]
+      }
+    },
+    "within_r2": 0.02432698662344568,
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "split_reviews_1",
+    "outcome": "earnings",
+    "kind": "baseline",
+    "n": 648,
+    "firms": 160,
+    "years": [
+      2013,
+      2023
+    ],
+    "measure": "split_ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": -0.010006482503536336,
+        "se": 0.004826836344442503,
+        "p": 0.03859782094017379,
+        "ci95": [
+          -0.01948638791638132,
+          -0.0005265770906913523
+        ]
+      }
+    },
+    "within_r2": 0.05942963021496772,
+    "holm_p_across_four_outcomes": 0.15439128376069516
+  },
+  {
+    "spec": "split_reviews_1",
+    "outcome": "earnings",
+    "kind": "interaction",
+    "n": 648,
+    "firms": 160,
+    "years": [
+      2013,
+      2023
+    ],
+    "measure": "split_ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "activity_raw": {
+        "b": -0.0066484126418433235,
+        "se": 0.006848425567650106,
+        "p": 0.33205055259823174,
+        "ci95": [
+          -0.02009881316042518,
+          0.006801987876738534
+        ]
+      },
+      "split_ghost": {
+        "b": -0.004571004551831475,
+        "se": 0.015123088260736115,
+        "p": 0.7625659779144156,
+        "ci95": [
+          -0.03427295460961106,
+          0.02513094550594811
+        ]
+      },
+      "activity_x_ghost": {
+        "b": -0.02246421134583699,
+        "se": 0.03036518528066741,
+        "p": 0.45971617529415426,
+        "ci95": [
+          -0.08210184627541764,
+          0.037173423583743655
+        ]
+      }
+    },
+    "within_r2": 0.06189893639371158,
+    "interaction_effect_10pp_doubling_count": -0.0015571004757869644,
+    "ghost_percentiles": {
+      "0.25": 0.0,
+      "0.5": 0.125,
+      "0.75": 0.2
+    },
+    "slope_at_0.25": {
+      "b": -0.0066484126418433235,
+      "se": 0.006848425567650106
+    },
+    "slope_at_0.75": {
+      "b": -0.011141254911010721,
+      "se": 0.0049274242312163045
+    },
+    "holm_p_across_four_outcomes": 0.9194323505883085
+  },
+  {
+    "spec": "split_reviews_1",
+    "outcome": "earnings",
+    "kind": "direct",
+    "n": 648,
+    "firms": 160,
+    "years": [
+      2013,
+      2023
+    ],
+    "measure": "split_ghost",
+    "activity": "activity_raw",
+    "effects": "industry and year",
+    "controls": [
+      "lagchange_oiadp",
+      "lagchange_sale",
+      "lagchange_xsga",
+      "lagchange_emp",
+      "lagchange_capx",
+      "btm"
+    ],
+    "terms": {
+      "split_ghost": {
+        "b": -0.00742153319369197,
+        "se": 0.015309364126781596,
+        "p": 0.6280191445313417,
+        "ci95": [
+          -0.03748912063526583,
+          0.02264605424788189
+        ]
+      }
+    },
+    "within_r2": 0.055633548257215004,
+    "holm_p_across_four_outcomes": 1.0
+  }
+]

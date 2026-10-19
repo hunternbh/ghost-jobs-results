@@ -86,5 +86,15 @@
     "baseline_and_interactions_estimated": false,
     "minimum_for_interview_check": "Monthly active-posting counts, observation dates, and employer identifiers matching the original panel. Gross hiring histories are not required for this interaction when annual employment outcomes are available.",
     "additional_for_broader_proxy": "Matched subsequent hires or a documented delivered posting-to-hire proxy with non-overlapping validation windows."
+  },
+  "interview_activity_adaptation": {
+    "status": "COMPLETED using original dataset; separate from the unestimated exact posting tests.",
+    "main_sample_firms": 168,
+    "main_company_years": "1007–1009",
+    "findings": "Inconsistent baseline activity signal; no clear weakening by the ghost measure; all four interaction Holm p-values equal 1.0.",
+    "scoring_reproducibility": "218717 original review scores and flags reproduced exactly.",
+    "human_validation": "200-review blinded sample prepared; human coding not completed.",
+    "results": "original_interview_results.json",
+    "methods": "original_interview_methods.json"
   }
 }

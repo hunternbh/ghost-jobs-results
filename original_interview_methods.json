@@ -1,0 +1,98 @@
+{
+  "source": "Previous interview dataset, original annual ghost measure and original Compustat links. No new classifications or Loujaina data.",
+  "primary_measure": "Existing original p_it_ebayes from ghost_compustat_merged2.csv; unchanged original labels and smoothing. Raw share sensitivity.",
+  "activity": "Consecutive-year change in log(1 + annual interview-review count annualized using original exposure adjustment). Not job-ad counts.",
+  "outcomes": {
+    "employment": "(emp[t+1]-emp[t])/at[t]",
+    "sga": "(xsga[t+1]-xsga[t])/at[t]",
+    "revenue": "(sale[t+1]-sale[t])/at[t]",
+    "earnings": "(oiadp[t+1]-oiadp[t])/at[t]"
+  },
+  "primary_sample": "Unique one-to-one folder/gvkey-year links; USD; fiscal year ends December; t and t-1 interior observed review years; >=5 reviews in both years; consecutive annual financial records t-1,t,t+1.",
+  "primary_models": [
+    "Baseline: activity + lagged outcome changes and financial controls + industry/year effects",
+    "Interaction: baseline + ghost share + activity*ghost share",
+    "Direct outcomes: ghost share + controls + industry/year effects"
+  ],
+  "controls": "Asset-scaled changes in operating earnings, sales, SG&A, employment, capex, R&D, advertising during t relative to t-1; book-to-market level. Missing R&D/advertising remain missing in full benchmark-control specification; a separately labeled core specification omits those two controls.",
+  "inference": "Firm-clustered standard errors, two-sided tests, 95% CIs. Holm adjustment across four outcome interaction p-values per specification. Estimate baseline and interaction on identical samples.",
+  "sensitivity": [
+    "Company and year effects",
+    "Raw ghost share",
+    "Unannualized counts",
+    "All fiscal year ends",
+    "Fewer than 250 collected reviews (not proof of uncensored counts)",
+    "Employment percentage growth",
+    "Rebuilt original-label annual counts",
+    "Explicit vacancy evidence only",
+    "Omit silence features",
+    "Deduplicated reviews",
+    "Core controls on full-control sample",
+    "Both directions of disjoint random review splits"
+  ],
+  "classification_checks": "Recompute deterministic score against stored flag; offer override consistency; conservative direct-evidence-only rule; blinded independent human review sample prepared, not completed.",
+  "interpretation": "Negative interaction is the proposed attenuation pattern, conditional on activity having a positive baseline signal. Standalone ghost association is supporting evidence, not proof of valid identification. Capped, selectively reported interview counts may not track actual recruiting.",
+  "output_policy": "Report all four outcomes and prespecified sensitivities. Preserve existing separate-sample tables and clearly label old-data checks. No claiming human validation or exact Lourie replication.",
+  "status": "Interview-activity adaptation estimated; exact posting benchmark remains unestimated; human classification review pending.",
+  "sample": {
+    "original_review_rows": 218717,
+    "original_review_firms": 1196,
+    "original_flagged_reviews": 23236,
+    "original_flagged_share": 0.10623774100778632,
+    "raw_collection_min": 3,
+    "raw_collection_max": 299,
+    "firms_collected_at_least_280": 123,
+    "firms_collected_299": 4,
+    "saved_firm_year_rows": 3432,
+    "unambiguous_linked_companies": 404,
+    "joined_financial_rows": 3432,
+    "primary_before_control_completeness_rows": 1377,
+    "primary_before_control_completeness_firms": 219,
+    "estimated_models": 180,
+    "model_errors": [],
+    "sample_rule": "Original panel; December year ends, USD, interior consecutive review years, at least five reviews in both years. Finances joined by gvkey and exact year.",
+    "cap_interpretation": "All original company collections are below 300 retained reviews; below-250 sensitivity is a lower-collection-size comparison, not proof of uncensored recruitment counts."
+  },
+  "classification_consistency": {
+    "reviews": 218717,
+    "firms": 1196,
+    "stored_flags": 23236,
+    "stored_score_mismatches": 0,
+    "stored_flag_mismatches": 0,
+    "offer_reviews_flagged": 0,
+    "exact_content_date_status_duplicates": 714,
+    "direct_evidence_flags": 7164,
+    "no_silence_flags": 10082,
+    "saved_vs_rebuilt_comparable_firm_years": 3388,
+    "saved_vs_rebuilt_review_count_differences": 340,
+    "saved_vs_rebuilt_ghost_count_differences": 202,
+    "interpretation": "Checks reproducibility of scoring, not classification accuracy. Saved panel vintage/date processing differs from reconstructing annual counts directly from original review years. Both are reported.",
+    "human_validation": "Not completed. A blinded original-data review sample is prepared separately."
+  },
+  "additional_safeguards": {
+    "timing": "After primary results, before these safeguard fits",
+    "purpose": [
+      "Use disjoint original reviews for activity and ghost share, reducing shared-review arithmetic.",
+      "Hold the full-control sample fixed while omitting R&D and advertising controls."
+    ],
+    "selection_rule": "Report both random split directions and all four outcomes, regardless of signs or p-values.",
+    "seed": 20261019
+  },
+  "units": "Employment in thousands, monetary variables in millions; future changes divided by current assets. Predictor years in the main sample: 2011â€“2023.",
+  "source_manifest": [
+    {
+      "file": "new_merged2.csv",
+      "sha256": "9bb815ce0f6fc4cdad4c02e7b474ce410d013f3e5facc9d863fb393d8af7780a"
+    },
+    {
+      "file": "ghost_compustat_merged2.csv",
+      "sha256": "5c9160a728a0c60dc6f9e3c78f1972fa993097a44d6a73c64434e3e7f2ad08a5"
+    },
+    {
+      "file": "compustat.csv",
+      "sha256": "7b9512b41455d111d0ce495c301cc1a6e84e6b1ccaef0451d14bb4b5d4f461ae"
+    }
+  ],
+  "fixed_effects": "Two-digit SIC industry and year; company and year effects in a separate sensitivity.",
+  "original_prior": "Retained original smoothing uses full-history firm review shares, including later reviews. The unsmoothed-share sensitivity avoids this prior. This is an association check, not an out-of-sample forecasting exercise."
+}
