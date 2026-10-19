@@ -1,0 +1,937 @@
+{
+  "summary": {
+    "status": "Completed independent reconstruction and fixed specification reruns.",
+    "original_scores_and_flags_unchanged": true,
+    "classification_scores_checked": 218717,
+    "classification_flags_checked": 218717,
+    "classification_mismatches": 0,
+    "financial_and_proxy_panel_match": true,
+    "original_primary_model_fits_reproduced": 12,
+    "direct_cv_candidate_fits": 800,
+    "max_cv_prediction_difference": 7.494005416219807e-16,
+    "new_specification_fits": 128,
+    "new_fit_failures": 0,
+    "review_counts_by_deduplication": {
+      "annual_text": 217947,
+      "exact_date_text": 218003,
+      "none": 218717
+    },
+    "base_company_years": 1498,
+    "base_years_missing_saved_current": 0,
+    "base_years_missing_saved_lag": 0,
+    "raw_vs_saved_lag_correlation": 0.9171096448620586,
+    "mean_absolute_raw_minus_saved_lag": 0.03161990563025211,
+    "negative_interactions_nominal05": 0,
+    "negative_interactions_holm05": 0,
+    "both_nominal_comparisons": 0,
+    "separate_review_results_reproduced": [
+      {
+        "fold": 0,
+        "rates": {
+          "low": {
+            "reports": 189,
+            "reviews": 5292,
+            "rate": 0.03571428571428571
+          },
+          "high": {
+            "reports": 346,
+            "reviews": 6180,
+            "rate": 0.05598705501618123
+          }
+        },
+        "company_years": 1995,
+        "gap_pp": 2.0272769301895517
+      },
+      {
+        "fold": 1,
+        "rates": {
+          "low": {
+            "reports": 192,
+            "reviews": 5226,
+            "rate": 0.03673938002296211
+          },
+          "high": {
+            "reports": 348,
+            "reviews": 6176,
+            "rate": 0.056347150259067356
+          }
+        },
+        "company_years": 1995,
+        "gap_pp": 1.9607770236105244
+      }
+    ],
+    "interpretation": "The classification rule reproduces exactly. Economic adaptations vary recruitment proxies, ghost-share timing/smoothing, sample, and controls; their results do not establish that the ghost measure is invalid. No exact posting-based Lourie test was possible from review counts.",
+    "api_calls": 0
+  },
+  "panel_verification": {
+    "source_rows": 218717,
+    "source_ghost_flags": 23236,
+    "score_mismatches": 0,
+    "flag_mismatches": 0,
+    "offer_reviews_flagged": 0,
+    "unambiguous_company_links": 404,
+    "panel_rows": 3403,
+    "base_rows": 1498,
+    "compared_columns": {
+      "reviews": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "ghost_n": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "offers": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "accepted": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "rounds": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "rounds_observed": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "ghost_raw": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "ghost_lag": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "offer_lag": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "base_ok": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "n_prev": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "btm": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "log_assets": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "industry": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "c_oiadp": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "c_sale": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "c_xsga": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "c_emp": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "c_capx": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "c_xrd": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "c_xad": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "y_employment": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "y_sga": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "y_revenue": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "y_earnings": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "raw_reviews_w1_log_level": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "raw_reviews_w1_log_change": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "raw_reviews_w1_asset_change": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "raw_reviews_w1_rank_change": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "raw_reviews_w1_employee_change": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "raw_reviews_w2_log_level": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "raw_reviews_w2_log_change": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "raw_reviews_w2_asset_change": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "raw_reviews_w2_rank_change": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "raw_reviews_w2_employee_change": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "raw_offers_w1_log_level": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "raw_offers_w1_log_change": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "raw_offers_w1_asset_change": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "raw_offers_w1_rank_change": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "raw_offers_w1_employee_change": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "raw_offers_w2_log_level": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "raw_offers_w2_log_change": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "raw_offers_w2_asset_change": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "raw_offers_w2_rank_change": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "raw_offers_w2_employee_change": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "raw_accepted_w1_log_level": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "raw_accepted_w1_log_change": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "raw_accepted_w1_asset_change": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "raw_accepted_w1_rank_change": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "raw_accepted_w1_employee_change": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "raw_accepted_w2_log_level": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "raw_accepted_w2_log_change": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "raw_accepted_w2_asset_change": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "raw_accepted_w2_rank_change": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "raw_accepted_w2_employee_change": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "raw_rounds_w1_log_level": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "raw_rounds_w1_log_change": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "raw_rounds_w1_asset_change": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "raw_rounds_w1_rank_change": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "raw_rounds_w1_employee_change": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "raw_rounds_w2_log_level": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "raw_rounds_w2_log_change": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "raw_rounds_w2_asset_change": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "raw_rounds_w2_rank_change": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      },
+      "raw_rounds_w2_employee_change": {
+        "mismatches": 0,
+        "max_absolute_difference": 0.0
+      }
+    },
+    "all_exact_year_joins_and_proxy_values_match": true,
+    "api_calls": 0
+  },
+  "original_primary_numerical_reproduction": [
+    {
+      "outcome": "employment",
+      "kind": "baseline",
+      "term": "activity",
+      "n": 1008,
+      "coefficient_abs_difference": 1.3769367590565906e-17,
+      "se_abs_difference": 1.0842021724855044e-18,
+      "p_abs_difference": 2.7734758933917192e-14
+    },
+    {
+      "outcome": "employment",
+      "kind": "interaction",
+      "term": "activity",
+      "n": 1008,
+      "coefficient_abs_difference": 1.3362791775883842e-17,
+      "se_abs_difference": 4.336808689942018e-19,
+      "p_abs_difference": 2.6728619317850644e-14
+    },
+    {
+      "outcome": "employment",
+      "kind": "interaction",
+      "term": "ghost",
+      "n": 1008,
+      "coefficient_abs_difference": 3.474867962816042e-17,
+      "se_abs_difference": 8.239936510889834e-18,
+      "p_abs_difference": 4.218847493575595e-14
+    },
+    {
+      "outcome": "employment",
+      "kind": "interaction",
+      "term": "activity_x_ghost",
+      "n": 1008,
+      "coefficient_abs_difference": 1.0169816377914032e-16,
+      "se_abs_difference": 4.7704895589362195e-18,
+      "p_abs_difference": 7.882583474838611e-14
+    },
+    {
+      "outcome": "employment",
+      "kind": "direct",
+      "term": "ghost",
+      "n": 1008,
+      "coefficient_abs_difference": 4.391018798566293e-17,
+      "se_abs_difference": 2.1250362580715887e-17,
+      "p_abs_difference": 6.430966870141219e-14
+    },
+    {
+      "outcome": "sga",
+      "kind": "baseline",
+      "term": "activity",
+      "n": 1007,
+      "coefficient_abs_difference": 9.0053832446646e-16,
+      "se_abs_difference": 1.3010426069826053e-18,
+      "p_abs_difference": 2.3170354523927017e-13
+    },
+    {
+      "outcome": "sga",
+      "kind": "interaction",
+      "term": "activity",
+      "n": 1007,
+      "coefficient_abs_difference": 4.3237982638721917e-16,
+      "se_abs_difference": 9.540979117872439e-18,
+      "p_abs_difference": 7.149836278586008e-14
+    },
+    {
+      "outcome": "sga",
+      "kind": "interaction",
+      "term": "ghost",
+      "n": 1007,
+      "coefficient_abs_difference": 2.0469737016526324e-16,
+      "se_abs_difference": 2.255140518769849e-16,
+      "p_abs_difference": 2.9976021664879227e-15
+    },
+    {
+      "outcome": "sga",
+      "kind": "interaction",
+      "term": "activity_x_ghost",
+      "n": 1007,
+      "coefficient_abs_difference": 1.1857919160473962e-15,
+      "se_abs_difference": 5.551115123125783e-17,
+      "p_abs_difference": 2.842170943040401e-14
+    },
+    {
+      "outcome": "sga",
+      "kind": "direct",
+      "term": "ghost",
+      "n": 1007,
+      "coefficient_abs_difference": 3.7643499428696714e-16,
+      "se_abs_difference": 1.1449174941446927e-16,
+      "p_abs_difference": 1.3766765505351941e-14
+    },
+    {
+      "outcome": "revenue",
+      "kind": "baseline",
+      "term": "activity",
+      "n": 1009,
+      "coefficient_abs_difference": 7.965524941033753e-15,
+      "se_abs_difference": 8.673617379884035e-17,
+      "p_abs_difference": 6.219469383950127e-13
+    },
+    {
+      "outcome": "revenue",
+      "kind": "interaction",
+      "term": "activity",
+      "n": 1009,
+      "coefficient_abs_difference": 2.7842311789427754e-15,
+      "se_abs_difference": 3.677613769070831e-16,
+      "p_abs_difference": 1.0547118733938987e-13
+    },
+    {
+      "outcome": "revenue",
+      "kind": "interaction",
+      "term": "ghost",
+      "n": 1009,
+      "coefficient_abs_difference": 4.9057979900624105e-15,
+      "se_abs_difference": 3.0531133177191805e-16,
+      "p_abs_difference": 6.17284001691587e-14
+    },
+    {
+      "outcome": "revenue",
+      "kind": "interaction",
+      "term": "activity_x_ghost",
+      "n": 1009,
+      "coefficient_abs_difference": 9.83935155574045e-15,
+      "se_abs_difference": 3.219646771412954e-15,
+      "p_abs_difference": 4.04121180963557e-14
+    },
+    {
+      "outcome": "revenue",
+      "kind": "direct",
+      "term": "ghost",
+      "n": 1009,
+      "coefficient_abs_difference": 6.852157730108388e-15,
+      "se_abs_difference": 1.797173521111972e-15,
+      "p_abs_difference": 9.803269307440132e-14
+    },
+    {
+      "outcome": "earnings",
+      "kind": "baseline",
+      "term": "activity",
+      "n": 1009,
+      "coefficient_abs_difference": 4.822531263215524e-16,
+      "se_abs_difference": 3.0357660829594124e-18,
+      "p_abs_difference": 5.870304242705515e-15
+    },
+    {
+      "outcome": "earnings",
+      "kind": "interaction",
+      "term": "activity",
+      "n": 1009,
+      "coefficient_abs_difference": 1.1796119636642288e-16,
+      "se_abs_difference": 1.474514954580286e-17,
+      "p_abs_difference": 9.43689570931383e-15
+    },
+    {
+      "outcome": "earnings",
+      "kind": "interaction",
+      "term": "ghost",
+      "n": 1009,
+      "coefficient_abs_difference": 3.8510861166685117e-16,
+      "se_abs_difference": 3.122502256758253e-17,
+      "p_abs_difference": 1.2378986724570495e-14
+    },
+    {
+      "outcome": "earnings",
+      "kind": "interaction",
+      "term": "activity_x_ghost",
+      "n": 1009,
+      "coefficient_abs_difference": 1.5404344466674047e-15,
+      "se_abs_difference": 1.249000902703301e-16,
+      "p_abs_difference": 2.5979218776228663e-14
+    },
+    {
+      "outcome": "earnings",
+      "kind": "direct",
+      "term": "ghost",
+      "n": 1009,
+      "coefficient_abs_difference": 4.85722573273506e-17,
+      "se_abs_difference": 2.0816681711721685e-17,
+      "p_abs_difference": 9.43689570931383e-16
+    }
+  ],
+  "direct_prediction_audit": {
+    "direct_candidate_fits": 800,
+    "outer_selected_and_augmented_fits": 20,
+    "max_absolute_prediction_difference": 7.494005416219807e-16,
+    "all_candidate_error_reductions_match": true,
+    "all_candidate_slope_sign_counts_match": true,
+    "firm_group_separation_verified": true
+  },
+  "separate_review_recalculation": [
+    {
+      "fold": 0,
+      "rates": {
+        "low": {
+          "reports": 189,
+          "reviews": 5292,
+          "rate": 0.03571428571428571
+        },
+        "high": {
+          "reports": 346,
+          "reviews": 6180,
+          "rate": 0.05598705501618123
+        }
+      },
+      "company_years": 1995,
+      "gap_pp": 2.0272769301895517
+    },
+    {
+      "fold": 1,
+      "rates": {
+        "low": {
+          "reports": 192,
+          "reviews": 5226,
+          "rate": 0.03673938002296211
+        },
+        "high": {
+          "reports": 348,
+          "reviews": 6176,
+          "rate": 0.056347150259067356
+        }
+      },
+      "company_years": 1995,
+      "gap_pp": 1.9607770236105244
+    }
+  ],
+  "fixed_rerun_recipes": [
+    {
+      "dedup": "annual_text",
+      "transform": "log_change",
+      "measure": "ghost_lag",
+      "controls": "original",
+      "common_measure_sample": true
+    },
+    {
+      "dedup": "annual_text",
+      "transform": "log_change",
+      "measure": "ghost_lag",
+      "controls": "expanded",
+      "common_measure_sample": true
+    },
+    {
+      "dedup": "annual_text",
+      "transform": "log_change",
+      "measure": "saved_lag",
+      "controls": "original",
+      "common_measure_sample": true
+    },
+    {
+      "dedup": "annual_text",
+      "transform": "log_change",
+      "measure": "saved_lag",
+      "controls": "expanded",
+      "common_measure_sample": true
+    },
+    {
+      "dedup": "annual_text",
+      "transform": "log_change",
+      "measure": "saved_current",
+      "controls": "original",
+      "common_measure_sample": true
+    },
+    {
+      "dedup": "annual_text",
+      "transform": "log_change",
+      "measure": "saved_current",
+      "controls": "expanded",
+      "common_measure_sample": true
+    },
+    {
+      "dedup": "annual_text",
+      "transform": "rank_change",
+      "measure": "ghost_lag",
+      "controls": "original",
+      "common_measure_sample": true
+    },
+    {
+      "dedup": "annual_text",
+      "transform": "rank_change",
+      "measure": "ghost_lag",
+      "controls": "expanded",
+      "common_measure_sample": true
+    },
+    {
+      "dedup": "annual_text",
+      "transform": "rank_change",
+      "measure": "saved_lag",
+      "controls": "original",
+      "common_measure_sample": true
+    },
+    {
+      "dedup": "annual_text",
+      "transform": "rank_change",
+      "measure": "saved_lag",
+      "controls": "expanded",
+      "common_measure_sample": true
+    },
+    {
+      "dedup": "annual_text",
+      "transform": "rank_change",
+      "measure": "saved_current",
+      "controls": "original",
+      "common_measure_sample": true
+    },
+    {
+      "dedup": "annual_text",
+      "transform": "rank_change",
+      "measure": "saved_current",
+      "controls": "expanded",
+      "common_measure_sample": true
+    },
+    {
+      "dedup": "exact_date_text",
+      "transform": "log_change",
+      "measure": "ghost_lag",
+      "controls": "original",
+      "common_measure_sample": false
+    },
+    {
+      "dedup": "exact_date_text",
+      "transform": "rank_change",
+      "measure": "ghost_lag",
+      "controls": "original",
+      "common_measure_sample": false
+    },
+    {
+      "dedup": "none",
+      "transform": "log_change",
+      "measure": "ghost_lag",
+      "controls": "original",
+      "common_measure_sample": false
+    },
+    {
+      "dedup": "none",
+      "transform": "rank_change",
+      "measure": "ghost_lag",
+      "controls": "original",
+      "common_measure_sample": false
+    }
+  ],
+  "specification_rerun_summary": [
+    {
+      "dedup": "annual_text",
+      "transform": "log_change",
+      "measure": "ghost_lag",
+      "controls": "original",
+      "common_measure_sample": true,
+      "n_range": [
+        1060,
+        1062
+      ],
+      "positive_baseline_nominal05": 0,
+      "negative_interaction_nominal05": 0,
+      "negative_interaction_holm05": 0,
+      "both_nominal_outcomes": []
+    },
+    {
+      "dedup": "annual_text",
+      "transform": "log_change",
+      "measure": "ghost_lag",
+      "controls": "expanded",
+      "common_measure_sample": true,
+      "n_range": [
+        1060,
+        1062
+      ],
+      "positive_baseline_nominal05": 0,
+      "negative_interaction_nominal05": 0,
+      "negative_interaction_holm05": 0,
+      "both_nominal_outcomes": []
+    },
+    {
+      "dedup": "annual_text",
+      "transform": "log_change",
+      "measure": "saved_lag",
+      "controls": "original",
+      "common_measure_sample": true,
+      "n_range": [
+        1060,
+        1062
+      ],
+      "positive_baseline_nominal05": 0,
+      "negative_interaction_nominal05": 0,
+      "negative_interaction_holm05": 0,
+      "both_nominal_outcomes": []
+    },
+    {
+      "dedup": "annual_text",
+      "transform": "log_change",
+      "measure": "saved_lag",
+      "controls": "expanded",
+      "common_measure_sample": true,
+      "n_range": [
+        1060,
+        1062
+      ],
+      "positive_baseline_nominal05": 0,
+      "negative_interaction_nominal05": 0,
+      "negative_interaction_holm05": 0,
+      "both_nominal_outcomes": []
+    },
+    {
+      "dedup": "annual_text",
+      "transform": "log_change",
+      "measure": "saved_current",
+      "controls": "original",
+      "common_measure_sample": true,
+      "n_range": [
+        1060,
+        1062
+      ],
+      "positive_baseline_nominal05": 0,
+      "negative_interaction_nominal05": 0,
+      "negative_interaction_holm05": 0,
+      "both_nominal_outcomes": []
+    },
+    {
+      "dedup": "annual_text",
+      "transform": "log_change",
+      "measure": "saved_current",
+      "controls": "expanded",
+      "common_measure_sample": true,
+      "n_range": [
+        1060,
+        1062
+      ],
+      "positive_baseline_nominal05": 0,
+      "negative_interaction_nominal05": 0,
+      "negative_interaction_holm05": 0,
+      "both_nominal_outcomes": []
+    },
+    {
+      "dedup": "annual_text",
+      "transform": "rank_change",
+      "measure": "ghost_lag",
+      "controls": "original",
+      "common_measure_sample": true,
+      "n_range": [
+        1060,
+        1062
+      ],
+      "positive_baseline_nominal05": 0,
+      "negative_interaction_nominal05": 0,
+      "negative_interaction_holm05": 0,
+      "both_nominal_outcomes": []
+    },
+    {
+      "dedup": "annual_text",
+      "transform": "rank_change",
+      "measure": "ghost_lag",
+      "controls": "expanded",
+      "common_measure_sample": true,
+      "n_range": [
+        1060,
+        1062
+      ],
+      "positive_baseline_nominal05": 0,
+      "negative_interaction_nominal05": 0,
+      "negative_interaction_holm05": 0,
+      "both_nominal_outcomes": []
+    },
+    {
+      "dedup": "annual_text",
+      "transform": "rank_change",
+      "measure": "saved_lag",
+      "controls": "original",
+      "common_measure_sample": true,
+      "n_range": [
+        1060,
+        1062
+      ],
+      "positive_baseline_nominal05": 0,
+      "negative_interaction_nominal05": 0,
+      "negative_interaction_holm05": 0,
+      "both_nominal_outcomes": []
+    },
+    {
+      "dedup": "annual_text",
+      "transform": "rank_change",
+      "measure": "saved_lag",
+      "controls": "expanded",
+      "common_measure_sample": true,
+      "n_range": [
+        1060,
+        1062
+      ],
+      "positive_baseline_nominal05": 0,
+      "negative_interaction_nominal05": 0,
+      "negative_interaction_holm05": 0,
+      "both_nominal_outcomes": []
+    },
+    {
+      "dedup": "annual_text",
+      "transform": "rank_change",
+      "measure": "saved_current",
+      "controls": "original",
+      "common_measure_sample": true,
+      "n_range": [
+        1060,
+        1062
+      ],
+      "positive_baseline_nominal05": 0,
+      "negative_interaction_nominal05": 0,
+      "negative_interaction_holm05": 0,
+      "both_nominal_outcomes": []
+    },
+    {
+      "dedup": "annual_text",
+      "transform": "rank_change",
+      "measure": "saved_current",
+      "controls": "expanded",
+      "common_measure_sample": true,
+      "n_range": [
+        1060,
+        1062
+      ],
+      "positive_baseline_nominal05": 0,
+      "negative_interaction_nominal05": 0,
+      "negative_interaction_holm05": 0,
+      "both_nominal_outcomes": []
+    },
+    {
+      "dedup": "exact_date_text",
+      "transform": "log_change",
+      "measure": "ghost_lag",
+      "controls": "original",
+      "common_measure_sample": false,
+      "n_range": [
+        1060,
+        1062
+      ],
+      "positive_baseline_nominal05": 0,
+      "negative_interaction_nominal05": 0,
+      "negative_interaction_holm05": 0,
+      "both_nominal_outcomes": []
+    },
+    {
+      "dedup": "exact_date_text",
+      "transform": "rank_change",
+      "measure": "ghost_lag",
+      "controls": "original",
+      "common_measure_sample": false,
+      "n_range": [
+        1060,
+        1062
+      ],
+      "positive_baseline_nominal05": 0,
+      "negative_interaction_nominal05": 0,
+      "negative_interaction_holm05": 0,
+      "both_nominal_outcomes": []
+    },
+    {
+      "dedup": "none",
+      "transform": "log_change",
+      "measure": "ghost_lag",
+      "controls": "original",
+      "common_measure_sample": false,
+      "n_range": [
+        1060,
+        1062
+      ],
+      "positive_baseline_nominal05": 0,
+      "negative_interaction_nominal05": 0,
+      "negative_interaction_holm05": 0,
+      "both_nominal_outcomes": []
+    },
+    {
+      "dedup": "none",
+      "transform": "rank_change",
+      "measure": "ghost_lag",
+      "controls": "original",
+      "common_measure_sample": false,
+      "n_range": [
+        1060,
+        1062
+      ],
+      "positive_baseline_nominal05": 0,
+      "negative_interaction_nominal05": 0,
+      "negative_interaction_holm05": 0,
+      "both_nominal_outcomes": []
+    }
+  ],
+  "design": {
+    "purpose": "Audit implementation and compare documented analysis choices. Original classifications and score weights remain unchanged.",
+    "checks": [
+      "Recompute every original ghost score and flag",
+      "Rebuild annual counts and all financial shifts through exact-year self-joins",
+      "Check all 40 raw proxy columns",
+      "Recalculate every outer-fold prediction with direct OLS, separately from residualization shortcut",
+      "Independently reproduce the 12 original primary coefficients and clustered standard errors",
+      "Reproduce held-out 5.6 versus 3.6 rates from raw reviews"
+    ],
+    "fixed_sensitivities": "Two pre-existing recruitment transformations: annual review log change and ranked asset-scaled change. Common observations across lagged rebuilt raw share, lagged saved smoothed share and current saved smoothed share; compare original financial controls to expanded controls. Additionally compare annual-text deduplication, exact-date-text deduplication and no deduplication under lagged raw share and original controls. All four outcomes, both baseline and interaction; report every fit.",
+    "inference": "Holm and BH across all new baseline tests, and separately across all new interaction tests. No sign/p-value stopping or selection.",
+    "public": "Aggregate audit and all coefficients only. Keep raw data and company-level panels private.",
+    "api_calls": 0
+  }
+}

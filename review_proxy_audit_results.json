@@ -1,0 +1,3202 @@
+[
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "employment",
+    "kind": "baseline",
+    "n": 1061,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 5.706961290615878e-05,
+        "se": 7.657024432090348e-05,
+        "p": 0.4562517620239911
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.8677839249730194
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "employment",
+    "kind": "interaction",
+    "n": 1061,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 6.30182458358778e-05,
+        "se": 0.00013898335369059718,
+        "p": 0.6503430622893731
+      },
+      "G": {
+        "b": 0.00019832420562422521,
+        "se": 0.0002883709205715166,
+        "p": 0.4917768347446574
+      },
+      "interaction": {
+        "b": -2.646488398999131e-05,
+        "se": 0.0006253329149157181,
+        "p": 0.9662510791853525
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "sga",
+    "kind": "baseline",
+    "n": 1060,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 0.0012716032076879834,
+        "se": 0.0029336971906732466,
+        "p": 0.6647836811244324
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.8677839249730194
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "sga",
+    "kind": "interaction",
+    "n": 1060,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.004812515123580626,
+        "se": 0.004307735065478421,
+        "p": 0.264187361056899
+      },
+      "G": {
+        "b": 0.002373055576599279,
+        "se": 0.009725627496700596,
+        "p": 0.8072809751706733
+      },
+      "interaction": {
+        "b": 0.048310042851951424,
+        "se": 0.030544420310891916,
+        "p": 0.11405164657877855
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.6001042212779778
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "revenue",
+    "kind": "baseline",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.00036099721436631105,
+        "se": 0.010461820666665966,
+        "p": 0.9724804336290077
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9774719762491573
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "revenue",
+    "kind": "interaction",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 0.005148342035535711,
+        "se": 0.014849465093667717,
+        "p": 0.7288883003352784
+      },
+      "G": {
+        "b": 0.005985749280954678,
+        "se": 0.041474799577732244,
+        "p": 0.8852749603368849
+      },
+      "interaction": {
+        "b": -0.04289494899123251,
+        "se": 0.09024067728753794,
+        "p": 0.6346493073391511
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "earnings",
+    "kind": "baseline",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.008273024970819455,
+        "se": 0.004192483406728891,
+        "p": 0.04873702780648273
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.28832215377463905
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "earnings",
+    "kind": "interaction",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.002912382331964153,
+        "se": 0.004914941112017947,
+        "p": 0.5536122232040737
+      },
+      "G": {
+        "b": 0.004636464158953967,
+        "se": 0.013958086071317368,
+        "p": 0.7398304229380674
+      },
+      "interaction": {
+        "b": -0.04186148114557661,
+        "se": 0.02827113829663732,
+        "p": 0.13899895263472545
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.6001042212779778
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "ghost_lag",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "employment",
+    "kind": "baseline",
+    "n": 1061,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 6.806166625356839e-05,
+        "se": 7.683281748739288e-05,
+        "p": 0.3759172023368305
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.8677839249730194
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "ghost_lag",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "employment",
+    "kind": "interaction",
+    "n": 1061,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 5.996504322348202e-05,
+        "se": 0.00013925664721547656,
+        "p": 0.6668467806656224
+      },
+      "G": {
+        "b": 0.0002868102458690906,
+        "se": 0.0002871912117489115,
+        "p": 0.3181961851153933
+      },
+      "interaction": {
+        "b": 7.243077647656693e-05,
+        "se": 0.0006246010199924939,
+        "p": 0.9077050984157065
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "ghost_lag",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "sga",
+    "kind": "baseline",
+    "n": 1060,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 0.0019303156052508826,
+        "se": 0.003042818314865948,
+        "p": 0.5259761437902171
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.8677839249730194
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "ghost_lag",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "sga",
+    "kind": "interaction",
+    "n": 1060,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.004889077766769704,
+        "se": 0.004301455614441402,
+        "p": 0.2559758186509808
+      },
+      "G": {
+        "b": 0.0018806270448223931,
+        "se": 0.013756396545299712,
+        "p": 0.8912883345335388
+      },
+      "interaction": {
+        "b": 0.05384906711290764,
+        "se": 0.030396614467650334,
+        "p": 0.07677654861744804
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.6001042212779778
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "ghost_lag",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "revenue",
+    "kind": "baseline",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 0.0009955559986846304,
+        "se": 0.010540757376408446,
+        "p": 0.9247720925998832
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9774719762491573
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "ghost_lag",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "revenue",
+    "kind": "interaction",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 0.004497638436659322,
+        "se": 0.01483040168393452,
+        "p": 0.7617464107676787
+      },
+      "G": {
+        "b": 0.040115010151007456,
+        "se": 0.050019055843200155,
+        "p": 0.42274779881235613
+      },
+      "interaction": {
+        "b": -0.026383444605547778,
+        "se": 0.09075521955686348,
+        "p": 0.7713338099440825
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "ghost_lag",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "earnings",
+    "kind": "baseline",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.0078095297407251504,
+        "se": 0.004141326499311857,
+        "p": 0.05961870157150512
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.28832215377463905
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "ghost_lag",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "earnings",
+    "kind": "interaction",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.003103224070632739,
+        "se": 0.004886631554398556,
+        "p": 0.5255461306873405
+      },
+      "G": {
+        "b": 0.013609788399592725,
+        "se": 0.020258260037671005,
+        "p": 0.5018580436423973
+      },
+      "interaction": {
+        "b": -0.03670881900846557,
+        "se": 0.028535487163343413,
+        "p": 0.19859364655013367
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.7943745862005347
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "saved_lag",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "employment",
+    "kind": "baseline",
+    "n": 1061,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 5.706961290615878e-05,
+        "se": 7.657024432090348e-05,
+        "p": 0.4562517620239911
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.8677839249730194
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "saved_lag",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "employment",
+    "kind": "interaction",
+    "n": 1061,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 5.698554605817431e-05,
+        "se": 0.00017830230591153593,
+        "p": 0.7493381163971091
+      },
+      "G": {
+        "b": 0.0004149572675034034,
+        "se": 0.0004813207494619565,
+        "p": 0.38882804441683805
+      },
+      "interaction": {
+        "b": 1.1899451108028537e-05,
+        "se": 0.0009125294792414106,
+        "p": 0.98959843595191
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "saved_lag",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "sga",
+    "kind": "baseline",
+    "n": 1060,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 0.0012716032076879834,
+        "se": 0.0029336971906732466,
+        "p": 0.6647836811244324
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.8677839249730194
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "saved_lag",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "sga",
+    "kind": "interaction",
+    "n": 1060,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.0059694827839837684,
+        "se": 0.005254424270120726,
+        "p": 0.25619401339881936
+      },
+      "G": {
+        "b": 0.008875452772431127,
+        "se": 0.01474562836262076,
+        "p": 0.5473752983890922
+      },
+      "interaction": {
+        "b": 0.05625753255575611,
+        "se": 0.0375990395381417,
+        "p": 0.13490615955006377
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.6001042212779778
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "saved_lag",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "revenue",
+    "kind": "baseline",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.00036099721436631105,
+        "se": 0.010461820666665966,
+        "p": 0.9724804336290077
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9774719762491573
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "saved_lag",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "revenue",
+    "kind": "interaction",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 0.01176684257595506,
+        "se": 0.019322370495216977,
+        "p": 0.5426798103739942
+      },
+      "G": {
+        "b": 0.02723318658589088,
+        "se": 0.06045202898564259,
+        "p": 0.6524533937581598
+      },
+      "interaction": {
+        "b": -0.09308737827215281,
+        "se": 0.13340890647316667,
+        "p": 0.48549024600089663
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "saved_lag",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "earnings",
+    "kind": "baseline",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.008273024970819455,
+        "se": 0.004192483406728891,
+        "p": 0.04873702780648273
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.28832215377463905
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "saved_lag",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "earnings",
+    "kind": "interaction",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.004002554286017817,
+        "se": 0.005801896735474474,
+        "p": 0.49043666965780774
+      },
+      "G": {
+        "b": 0.007408746384489921,
+        "se": 0.019857316650532968,
+        "p": 0.7091540989325555
+      },
+      "interaction": {
+        "b": -0.03283842706640501,
+        "se": 0.04320113765502602,
+        "p": 0.4473575134891543
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "saved_lag",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "employment",
+    "kind": "baseline",
+    "n": 1061,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 6.806166625356839e-05,
+        "se": 7.683281748739288e-05,
+        "p": 0.3759172023368305
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.8677839249730194
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "saved_lag",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "employment",
+    "kind": "interaction",
+    "n": 1061,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 5.089284693431608e-05,
+        "se": 0.00017843486811204942,
+        "p": 0.7755365620640873
+      },
+      "G": {
+        "b": 0.0005307403417906752,
+        "se": 0.0004966238043161141,
+        "p": 0.28546597034029536
+      },
+      "interaction": {
+        "b": 0.00011932959501222024,
+        "se": 0.0009184421590302381,
+        "p": 0.8966512188661303
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "saved_lag",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "sga",
+    "kind": "baseline",
+    "n": 1060,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 0.0019303156052508826,
+        "se": 0.003042818314865948,
+        "p": 0.5259761437902171
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.8677839249730194
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "saved_lag",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "sga",
+    "kind": "interaction",
+    "n": 1060,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.00599021682545344,
+        "se": 0.005363942163132436,
+        "p": 0.26436890182960276
+      },
+      "G": {
+        "b": 0.00591367484113601,
+        "se": 0.020707128383703175,
+        "p": 0.7752545185783822
+      },
+      "interaction": {
+        "b": 0.06116457447148515,
+        "se": 0.037519389534781206,
+        "p": 0.10337405925251318
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.6001042212779778
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "saved_lag",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "revenue",
+    "kind": "baseline",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 0.0009955559986846304,
+        "se": 0.010540757376408446,
+        "p": 0.9247720925998832
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9774719762491573
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "saved_lag",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "revenue",
+    "kind": "interaction",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 0.01004613338837982,
+        "se": 0.019584741966189805,
+        "p": 0.6080952728453524
+      },
+      "G": {
+        "b": 0.07297797025672724,
+        "se": 0.06815893095038268,
+        "p": 0.2845629132862738
+      },
+      "interaction": {
+        "b": -0.07192230901319946,
+        "se": 0.136114379862143,
+        "p": 0.5973423851883197
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "saved_lag",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "earnings",
+    "kind": "baseline",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.0078095297407251504,
+        "se": 0.004141326499311857,
+        "p": 0.05961870157150512
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.28832215377463905
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "saved_lag",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "earnings",
+    "kind": "interaction",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.004459620470747617,
+        "se": 0.005971471769921037,
+        "p": 0.4553482288865173
+      },
+      "G": {
+        "b": 0.018408631354650554,
+        "se": 0.029059318439585105,
+        "p": 0.5265629479496169
+      },
+      "interaction": {
+        "b": -0.026405976953080796,
+        "se": 0.04370333168273766,
+        "p": 0.5458421078923325
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "saved_current",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "employment",
+    "kind": "baseline",
+    "n": 1061,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 5.706961290615878e-05,
+        "se": 7.657024432090348e-05,
+        "p": 0.4562517620239911
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.8677839249730194
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "saved_current",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "employment",
+    "kind": "interaction",
+    "n": 1061,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 6.137915667943245e-05,
+        "se": 0.0001700047357932704,
+        "p": 0.7181433424129665
+      },
+      "G": {
+        "b": 0.0004069317024688557,
+        "se": 0.0003329135495804306,
+        "p": 0.22187064458725334
+      },
+      "interaction": {
+        "b": -6.717319598575939e-05,
+        "se": 0.0008513152499226228,
+        "p": 0.9371238963536506
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "saved_current",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "sga",
+    "kind": "baseline",
+    "n": 1060,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 0.0012716032076879834,
+        "se": 0.0029336971906732466,
+        "p": 0.6647836811244324
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.8677839249730194
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "saved_current",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "sga",
+    "kind": "interaction",
+    "n": 1060,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 0.0020931577124682793,
+        "se": 0.004791535510944867,
+        "p": 0.6623187336901507
+      },
+      "G": {
+        "b": 0.006732244996825575,
+        "se": 0.014428911029569657,
+        "p": 0.6409024560247958
+      },
+      "interaction": {
+        "b": -0.006825357324261455,
+        "se": 0.033355705993823107,
+        "p": 0.8379082771729656
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "saved_current",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "revenue",
+    "kind": "baseline",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.00036099721436631105,
+        "se": 0.010461820666665966,
+        "p": 0.9724804336290077
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9774719762491573
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "saved_current",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "revenue",
+    "kind": "interaction",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 0.00756927267738082,
+        "se": 0.019784028738888446,
+        "p": 0.7021016239559738
+      },
+      "G": {
+        "b": 0.018092258833265578,
+        "se": 0.05497069497985374,
+        "p": 0.7421300058544859
+      },
+      "interaction": {
+        "b": -0.06188986352148153,
+        "se": 0.1303632402787495,
+        "p": 0.6350697146599424
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "saved_current",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "earnings",
+    "kind": "baseline",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.008273024970819455,
+        "se": 0.004192483406728891,
+        "p": 0.04873702780648273
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.28832215377463905
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "saved_current",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "earnings",
+    "kind": "interaction",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.008275790124015345,
+        "se": 0.005241344465658698,
+        "p": 0.11466638753244285
+      },
+      "G": {
+        "b": -0.006572205035242702,
+        "se": 0.01786526473336041,
+        "p": 0.7130437375389386
+      },
+      "interaction": {
+        "b": 0.0005696919423810025,
+        "se": 0.039382353509793494,
+        "p": 0.9884613685730129
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "saved_current",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "employment",
+    "kind": "baseline",
+    "n": 1061,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 6.806166625356839e-05,
+        "se": 7.683281748739288e-05,
+        "p": 0.3759172023368305
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.8677839249730194
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "saved_current",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "employment",
+    "kind": "interaction",
+    "n": 1061,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 8.078058949054673e-05,
+        "se": 0.00017038045021507608,
+        "p": 0.6355193625902532
+      },
+      "G": {
+        "b": 0.00039112458248036707,
+        "se": 0.00034920671699426503,
+        "p": 0.2629686495977111
+      },
+      "interaction": {
+        "b": -0.0001399422518025145,
+        "se": 0.0008593352820246949,
+        "p": 0.8706701301864049
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "saved_current",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "sga",
+    "kind": "baseline",
+    "n": 1060,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 0.0019303156052508826,
+        "se": 0.003042818314865948,
+        "p": 0.5259761437902171
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.8677839249730194
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "saved_current",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "sga",
+    "kind": "interaction",
+    "n": 1060,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 0.0032525093003097816,
+        "se": 0.004805018001117822,
+        "p": 0.49862818780347523
+      },
+      "G": {
+        "b": 0.0036602534448964734,
+        "se": 0.015015032385262372,
+        "p": 0.807457347958146
+      },
+      "interaction": {
+        "b": -0.010457178737403747,
+        "se": 0.03308286415367092,
+        "p": 0.7520003190468932
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "saved_current",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "revenue",
+    "kind": "baseline",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 0.0009955559986846304,
+        "se": 0.010540757376408446,
+        "p": 0.9247720925998832
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9774719762491573
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "saved_current",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "revenue",
+    "kind": "interaction",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 0.011083580838239295,
+        "se": 0.01986781798819195,
+        "p": 0.5770614828895404
+      },
+      "G": {
+        "b": 0.026720808401222935,
+        "se": 0.05511252746740023,
+        "p": 0.6278960201163668
+      },
+      "interaction": {
+        "b": -0.07971082172589339,
+        "se": 0.1328663221576497,
+        "p": 0.5486879720567499
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "saved_current",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "earnings",
+    "kind": "baseline",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.0078095297407251504,
+        "se": 0.004141326499311857,
+        "p": 0.05961870157150512
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.28832215377463905
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "log_change",
+    "measure": "saved_current",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "earnings",
+    "kind": "interaction",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.007152402886914302,
+        "se": 0.005177449715652789,
+        "p": 0.16745018814575266
+      },
+      "G": {
+        "b": -0.005653478109035107,
+        "se": 0.018251711869251615,
+        "p": 0.7568155687639976
+      },
+      "interaction": {
+        "b": -0.00438598104314989,
+        "se": 0.03941250759116971,
+        "p": 0.9114136179134521
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "employment",
+    "kind": "baseline",
+    "n": 1061,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 4.4743372062462296e-05,
+        "se": 0.0001099652395636122,
+        "p": 0.6841786806660387
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.8677839249730194
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "employment",
+    "kind": "interaction",
+    "n": 1061,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 2.4044691190990353e-05,
+        "se": 0.00021449183519482135,
+        "p": 0.9107661492753732
+      },
+      "G": {
+        "b": 9.334727408779079e-05,
+        "se": 0.0007784257534843313,
+        "p": 0.9045722989019748
+      },
+      "interaction": {
+        "b": 0.00019590483455842432,
+        "se": 0.0011414549362099933,
+        "p": 0.8637654375101137
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "sga",
+    "kind": "baseline",
+    "n": 1060,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.0013895673686641081,
+        "se": 0.004005450152978881,
+        "p": 0.7287253423490356
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.8677839249730194
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "sga",
+    "kind": "interaction",
+    "n": 1060,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.011760495648838085,
+        "se": 0.006916101246042189,
+        "p": 0.08935881195480103
+      },
+      "G": {
+        "b": -0.037215853355757327,
+        "se": 0.019091170077509503,
+        "p": 0.051531578728178616
+      },
+      "interaction": {
+        "b": 0.0797729477813238,
+        "se": 0.03533985404988393,
+        "p": 0.02420517741058253
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.4043952502029838
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "revenue",
+    "kind": "baseline",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.007144401487860512,
+        "se": 0.01475587325548499,
+        "p": 0.6283690344057354
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.8677839249730194
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "revenue",
+    "kind": "interaction",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.007304669584016071,
+        "se": 0.022906595173567055,
+        "p": 0.7498772713368219
+      },
+      "G": {
+        "b": -0.0014041359533582968,
+        "se": 0.06675296700378923,
+        "p": 0.983222100831721
+      },
+      "interaction": {
+        "b": 0.001046807116948237,
+        "se": 0.11714727549025097,
+        "p": 0.9928721304905332
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "earnings",
+    "kind": "baseline",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.00834999419605,
+        "se": 0.0046375479969257526,
+        "p": 0.07208053844365976
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.28832215377463905
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "earnings",
+    "kind": "interaction",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.0057089537734954015,
+        "se": 0.006939226859475047,
+        "p": 0.410871286536721
+      },
+      "G": {
+        "b": 0.010178854854642585,
+        "se": 0.021575348078452686,
+        "p": 0.6371859324386369
+      },
+      "interaction": {
+        "b": -0.02011898968486247,
+        "se": 0.034147363509251336,
+        "p": 0.5558732340603639
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "ghost_lag",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "employment",
+    "kind": "baseline",
+    "n": 1061,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 4.5721901700441884e-05,
+        "se": 0.00010954016755772492,
+        "p": 0.6764769971136718
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.8677839249730194
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "ghost_lag",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "employment",
+    "kind": "interaction",
+    "n": 1061,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 8.269776461561222e-06,
+        "se": 0.00021632972672993577,
+        "p": 0.9695138614646232
+      },
+      "G": {
+        "b": 0.00012479384349374512,
+        "se": 0.0007812800667973483,
+        "p": 0.8731262729732615
+      },
+      "interaction": {
+        "b": 0.00032036579772224186,
+        "se": 0.0011454595459038043,
+        "p": 0.7797788097050306
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "ghost_lag",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "sga",
+    "kind": "baseline",
+    "n": 1060,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.0012688958527560922,
+        "se": 0.004140357926360893,
+        "p": 0.759310934351392
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.8677839249730194
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "ghost_lag",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "sga",
+    "kind": "interaction",
+    "n": 1060,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.01260561473013568,
+        "se": 0.006882786219410336,
+        "p": 0.06733021874890617
+      },
+      "G": {
+        "b": -0.0410133144169509,
+        "se": 0.018894519772838125,
+        "p": 0.03019453641022385
+      },
+      "interaction": {
+        "b": 0.08684335956678133,
+        "se": 0.03524147867447024,
+        "p": 0.013899172255450433
+      }
+    },
+    "holm_p_audit_family": 0.8895470243488277,
+    "fdr_q_audit_family": 0.4043952502029838
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "ghost_lag",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "revenue",
+    "kind": "baseline",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.007820420229607272,
+        "se": 0.014783764898638358,
+        "p": 0.5969322958950907
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.8677839249730194
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "ghost_lag",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "revenue",
+    "kind": "interaction",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.010249987935050912,
+        "se": 0.022804270872530594,
+        "p": 0.6531858176122912
+      },
+      "G": {
+        "b": 0.02219853298152401,
+        "se": 0.0671487442338382,
+        "p": 0.7410257855187288
+      },
+      "interaction": {
+        "b": 0.02265477155421294,
+        "se": 0.11697198904073557,
+        "p": 0.8464684546437099
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "ghost_lag",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "earnings",
+    "kind": "baseline",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.008485020386785069,
+        "se": 0.004565160262439174,
+        "p": 0.06337204068757807
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.28832215377463905
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "ghost_lag",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "earnings",
+    "kind": "interaction",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.006644576766424793,
+        "se": 0.006864014293806279,
+        "p": 0.3332644947507147
+      },
+      "G": {
+        "b": 0.014860251883065079,
+        "se": 0.02669672466303335,
+        "p": 0.5779041624518281
+      },
+      "interaction": {
+        "b": -0.012994239125158328,
+        "se": 0.03427531961927988,
+        "p": 0.7046844904951021
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "saved_lag",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "employment",
+    "kind": "baseline",
+    "n": 1061,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 4.4743372062462296e-05,
+        "se": 0.0001099652395636122,
+        "p": 0.6841786806660387
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.8677839249730194
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "saved_lag",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "employment",
+    "kind": "interaction",
+    "n": 1061,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 6.228596728003506e-05,
+        "se": 0.00026370041998038495,
+        "p": 0.8133263030198142
+      },
+      "G": {
+        "b": 0.0004713423648648816,
+        "se": 0.000961840862718349,
+        "p": 0.6242122504978624
+      },
+      "interaction": {
+        "b": -9.881858278836919e-05,
+        "se": 0.0014644923391425061,
+        "p": 0.9462160533483099
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "saved_lag",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "sga",
+    "kind": "baseline",
+    "n": 1060,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.0013895673686641081,
+        "se": 0.004005450152978881,
+        "p": 0.7287253423490356
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.8677839249730194
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "saved_lag",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "sga",
+    "kind": "interaction",
+    "n": 1060,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.01230756894743996,
+        "se": 0.008030178782749375,
+        "p": 0.1256767657651634
+      },
+      "G": {
+        "b": -0.03180242045306662,
+        "se": 0.024102866105776933,
+        "p": 0.18732401823690045
+      },
+      "interaction": {
+        "b": 0.08271987101112624,
+        "se": 0.04581737434486421,
+        "p": 0.07131053859976863
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.6001042212779778
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "saved_lag",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "revenue",
+    "kind": "baseline",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.007144401487860512,
+        "se": 0.01475587325548499,
+        "p": 0.6283690344057354
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.8677839249730194
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "saved_lag",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "revenue",
+    "kind": "interaction",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.0046931202258024066,
+        "se": 0.027049526167486893,
+        "p": 0.8622928848874232
+      },
+      "G": {
+        "b": 0.03258555756128577,
+        "se": 0.08348664537330587,
+        "p": 0.6963918059670781
+      },
+      "interaction": {
+        "b": -0.016469853286467846,
+        "se": 0.1604790503695106,
+        "p": 0.9182778427837325
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "saved_lag",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "earnings",
+    "kind": "baseline",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.00834999419605,
+        "se": 0.0046375479969257526,
+        "p": 0.07208053844365976
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.28832215377463905
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "saved_lag",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "earnings",
+    "kind": "interaction",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.007726084488550418,
+        "se": 0.007719689970728928,
+        "p": 0.3171528890433282
+      },
+      "G": {
+        "b": 0.007728946486727037,
+        "se": 0.02557860454134373,
+        "p": 0.7625897428111521
+      },
+      "interaction": {
+        "b": -0.0042381028386363805,
+        "se": 0.04591031969368644,
+        "p": 0.9264682091430908
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "saved_lag",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "employment",
+    "kind": "baseline",
+    "n": 1061,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 4.5721901700441884e-05,
+        "se": 0.00010954016755772492,
+        "p": 0.6764769971136718
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.8677839249730194
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "saved_lag",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "employment",
+    "kind": "interaction",
+    "n": 1061,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 4.207432949058631e-05,
+        "se": 0.0002659751643883011,
+        "p": 0.8743400807350407
+      },
+      "G": {
+        "b": 0.0005273850063606274,
+        "se": 0.0009741001949291354,
+        "p": 0.5883482846480559
+      },
+      "interaction": {
+        "b": 4.127549444536301e-05,
+        "se": 0.0014754637541119797,
+        "p": 0.9776880379370109
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "saved_lag",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "sga",
+    "kind": "baseline",
+    "n": 1060,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.0012688958527560922,
+        "se": 0.004140357926360893,
+        "p": 0.759310934351392
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.8677839249730194
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "saved_lag",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "sga",
+    "kind": "interaction",
+    "n": 1060,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.013140819659990295,
+        "se": 0.008178577867568424,
+        "p": 0.10843041506652286
+      },
+      "G": {
+        "b": -0.03727992535659917,
+        "se": 0.024826491104262185,
+        "p": 0.13351381668393125
+      },
+      "interaction": {
+        "b": 0.08937840695641883,
+        "se": 0.04622598078824657,
+        "p": 0.053457622071209666
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.6001042212779778
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "saved_lag",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "revenue",
+    "kind": "baseline",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.007820420229607272,
+        "se": 0.014783764898638358,
+        "p": 0.5969322958950907
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.8677839249730194
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "saved_lag",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "revenue",
+    "kind": "interaction",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.009164759330786367,
+        "se": 0.027352531471367184,
+        "p": 0.7376499654493667
+      },
+      "G": {
+        "b": 0.06563898993660484,
+        "se": 0.07901787459188543,
+        "p": 0.4063508874485786
+      },
+      "interaction": {
+        "b": 0.011980515520609395,
+        "se": 0.16274485694734403,
+        "p": 0.9413312874799762
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "saved_lag",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "earnings",
+    "kind": "baseline",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.008485020386785069,
+        "se": 0.004565160262439174,
+        "p": 0.06337204068757807
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.28832215377463905
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "saved_lag",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "earnings",
+    "kind": "interaction",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.009039302095054009,
+        "se": 0.0077099518282119995,
+        "p": 0.2413093599124035
+      },
+      "G": {
+        "b": 0.013698253361144242,
+        "se": 0.031368676251090015,
+        "p": 0.6624341175733469
+      },
+      "interaction": {
+        "b": 0.004581293662972293,
+        "se": 0.046009889880613906,
+        "p": 0.9207042548379893
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "saved_current",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "employment",
+    "kind": "baseline",
+    "n": 1061,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 4.4743372062462296e-05,
+        "se": 0.0001099652395636122,
+        "p": 0.6841786806660387
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.8677839249730194
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "saved_current",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "employment",
+    "kind": "interaction",
+    "n": 1061,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 0.0002129636590667206,
+        "se": 0.0002472938854068968,
+        "p": 0.38934836788836924
+      },
+      "G": {
+        "b": 0.001042739730597748,
+        "se": 0.0006499718088978827,
+        "p": 0.10896868552986029
+      },
+      "interaction": {
+        "b": -0.0012221067476094346,
+        "se": 0.0011473757427575874,
+        "p": 0.287074547971081
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "saved_current",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "sga",
+    "kind": "baseline",
+    "n": 1060,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.0013895673686641081,
+        "se": 0.004005450152978881,
+        "p": 0.7287253423490356
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.8677839249730194
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "saved_current",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "sga",
+    "kind": "interaction",
+    "n": 1060,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.0014814682621524108,
+        "se": 0.007523034017180968,
+        "p": 0.8439270284893138
+      },
+      "G": {
+        "b": 0.006766211166353506,
+        "se": 0.024753508880476824,
+        "p": 0.7846459495258993
+      },
+      "interaction": {
+        "b": 0.0004825632197085101,
+        "se": 0.038748070484615926,
+        "p": 0.9900660097053581
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "saved_current",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "revenue",
+    "kind": "baseline",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.007144401487860512,
+        "se": 0.01475587325548499,
+        "p": 0.6283690344057354
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.8677839249730194
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "saved_current",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "revenue",
+    "kind": "interaction",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 0.0014898237924830643,
+        "se": 0.027944395606272238,
+        "p": 0.9574925226807136
+      },
+      "G": {
+        "b": 0.04780492648946772,
+        "se": 0.0873239482905018,
+        "p": 0.5841967337627081
+      },
+      "interaction": {
+        "b": -0.06253381006558278,
+        "se": 0.1549583267219014,
+        "p": 0.6866284893824709
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "saved_current",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "earnings",
+    "kind": "baseline",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.00834999419605,
+        "se": 0.0046375479969257526,
+        "p": 0.07208053844365976
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.28832215377463905
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "saved_current",
+    "controls": "original",
+    "common_measure_sample": true,
+    "outcome": "earnings",
+    "kind": "interaction",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.010744853487070823,
+        "se": 0.007216727861180764,
+        "p": 0.13683509652619627
+      },
+      "G": {
+        "b": -0.01771236380947004,
+        "se": 0.02586997518617853,
+        "p": 0.49371225468644536
+      },
+      "interaction": {
+        "b": 0.017434997428100008,
+        "se": 0.04570601145312796,
+        "p": 0.7029435939189723
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "saved_current",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "employment",
+    "kind": "baseline",
+    "n": 1061,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 4.5721901700441884e-05,
+        "se": 0.00010954016755772492,
+        "p": 0.6764769971136718
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.8677839249730194
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "saved_current",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "employment",
+    "kind": "interaction",
+    "n": 1061,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 0.00021307114067144046,
+        "se": 0.0002489191953631864,
+        "p": 0.3922124802788084
+      },
+      "G": {
+        "b": 0.0010339181547885966,
+        "se": 0.0006707420478958581,
+        "p": 0.1235248732066087
+      },
+      "interaction": {
+        "b": -0.0012256152609671624,
+        "se": 0.0011568673085333048,
+        "p": 0.28966345723480735
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "saved_current",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "sga",
+    "kind": "baseline",
+    "n": 1060,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.0012688958527560922,
+        "se": 0.004140357926360893,
+        "p": 0.759310934351392
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.8677839249730194
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "saved_current",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "sga",
+    "kind": "interaction",
+    "n": 1060,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.0012975298878869247,
+        "se": 0.0075853626310370395,
+        "p": 0.8642137772763019
+      },
+      "G": {
+        "b": 0.004348368511168952,
+        "se": 0.024652666468722276,
+        "p": 0.8600272371375983
+      },
+      "interaction": {
+        "b": 1.314489833400462e-06,
+        "se": 0.03840174318229916,
+        "p": 0.9999726953317134
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "saved_current",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "revenue",
+    "kind": "baseline",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.007820420229607272,
+        "se": 0.014783764898638358,
+        "p": 0.5969322958950907
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.8677839249730194
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "saved_current",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "revenue",
+    "kind": "interaction",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 0.0009086764608361308,
+        "se": 0.028014897153916193,
+        "p": 0.9741312850075661
+      },
+      "G": {
+        "b": 0.05758650922256047,
+        "se": 0.08674721858905178,
+        "p": 0.5069449238806798
+      },
+      "interaction": {
+        "b": -0.06400298187750013,
+        "se": 0.15535686844319657,
+        "p": 0.6804473447371947
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "saved_current",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "earnings",
+    "kind": "baseline",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.008485020386785069,
+        "se": 0.004565160262439174,
+        "p": 0.06337204068757807
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.28832215377463905
+  },
+  {
+    "dedup": "annual_text",
+    "transform": "rank_change",
+    "measure": "saved_current",
+    "controls": "expanded",
+    "common_measure_sample": true,
+    "outcome": "earnings",
+    "kind": "interaction",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.010811059873654204,
+        "se": 0.0070350255096956775,
+        "p": 0.12467332095118903
+      },
+      "G": {
+        "b": -0.0168676307404779,
+        "se": 0.02534404375380602,
+        "p": 0.5058556399797536
+      },
+      "interaction": {
+        "b": 0.017119805775867226,
+        "se": 0.04507929696975305,
+        "p": 0.7041965991207281
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "exact_date_text",
+    "transform": "log_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": false,
+    "outcome": "employment",
+    "kind": "baseline",
+    "n": 1061,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 5.736143393036502e-05,
+        "se": 7.657826404178419e-05,
+        "p": 0.45399993605112426
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.8677839249730194
+  },
+  {
+    "dedup": "exact_date_text",
+    "transform": "log_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": false,
+    "outcome": "employment",
+    "kind": "interaction",
+    "n": 1061,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 6.359199809221217e-05,
+        "se": 0.00013898489232684448,
+        "p": 0.6473784505385579
+      },
+      "G": {
+        "b": 0.0001986269080324155,
+        "se": 0.00028835670594795794,
+        "p": 0.4910948535463195
+      },
+      "interaction": {
+        "b": -2.8649816241369623e-05,
+        "se": 0.0006253496562367978,
+        "p": 0.9634676330956502
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "exact_date_text",
+    "transform": "log_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": false,
+    "outcome": "sga",
+    "kind": "baseline",
+    "n": 1060,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 0.0013102148677936695,
+        "se": 0.002931409976776794,
+        "p": 0.655003116912555
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.8677839249730194
+  },
+  {
+    "dedup": "exact_date_text",
+    "transform": "log_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": false,
+    "outcome": "sga",
+    "kind": "interaction",
+    "n": 1060,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.004739558666497928,
+        "se": 0.004307908675397292,
+        "p": 0.27151160893497417
+      },
+      "G": {
+        "b": 0.0024188558856228694,
+        "se": 0.00972106952924841,
+        "p": 0.8035466974207054
+      },
+      "interaction": {
+        "b": 0.04805454669739208,
+        "se": 0.030546555131922313,
+        "p": 0.11600054232988743
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.6001042212779778
+  },
+  {
+    "dedup": "exact_date_text",
+    "transform": "log_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": false,
+    "outcome": "revenue",
+    "kind": "baseline",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.0002954425319894312,
+        "se": 0.010459800214443628,
+        "p": 0.9774719762491573
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9774719762491573
+  },
+  {
+    "dedup": "exact_date_text",
+    "transform": "log_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": false,
+    "outcome": "revenue",
+    "kind": "interaction",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 0.005265341243438311,
+        "se": 0.01483868527472875,
+        "p": 0.7227854805806905
+      },
+      "G": {
+        "b": 0.006064350754011082,
+        "se": 0.04145916225364895,
+        "p": 0.8837355791244587
+      },
+      "interaction": {
+        "b": -0.043302183288887096,
+        "se": 0.09020680295272898,
+        "p": 0.6313097937673653
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "exact_date_text",
+    "transform": "log_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": false,
+    "outcome": "earnings",
+    "kind": "baseline",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.00828662519749573,
+        "se": 0.004192346740115405,
+        "p": 0.04836094633043549
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.28832215377463905
+  },
+  {
+    "dedup": "exact_date_text",
+    "transform": "log_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": false,
+    "outcome": "earnings",
+    "kind": "interaction",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.00293963869727849,
+        "se": 0.004915470776521182,
+        "p": 0.5499504822967495
+      },
+      "G": {
+        "b": 0.004619943385808109,
+        "se": 0.013959877545239816,
+        "p": 0.7407560885269026
+      },
+      "interaction": {
+        "b": -0.04176419340993375,
+        "se": 0.028274438010851666,
+        "p": 0.13996474401117376
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.6001042212779778
+  },
+  {
+    "dedup": "exact_date_text",
+    "transform": "rank_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": false,
+    "outcome": "employment",
+    "kind": "baseline",
+    "n": 1061,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 4.491856270736127e-05,
+        "se": 0.00011002627998322491,
+        "p": 0.6831755768909928
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.8677839249730194
+  },
+  {
+    "dedup": "exact_date_text",
+    "transform": "rank_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": false,
+    "outcome": "employment",
+    "kind": "interaction",
+    "n": 1061,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 2.406615765267133e-05,
+        "se": 0.00021449808700796087,
+        "p": 0.910689409817784
+      },
+      "G": {
+        "b": 9.285685098391586e-05,
+        "se": 0.0007782012918192846,
+        "p": 0.9050440187921277
+      },
+      "interaction": {
+        "b": 0.0001964309314145571,
+        "se": 0.0011402411814460825,
+        "p": 0.8632592093231303
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "exact_date_text",
+    "transform": "rank_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": false,
+    "outcome": "sga",
+    "kind": "baseline",
+    "n": 1060,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.001392067252228815,
+        "se": 0.004003710427980767,
+        "p": 0.7281432491175945
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.8677839249730194
+  },
+  {
+    "dedup": "exact_date_text",
+    "transform": "rank_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": false,
+    "outcome": "sga",
+    "kind": "interaction",
+    "n": 1060,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.011762583637232678,
+        "se": 0.006916199333402149,
+        "p": 0.08930659347140009
+      },
+      "G": {
+        "b": -0.03718008308029804,
+        "se": 0.019088535820552158,
+        "p": 0.05172367841158526
+      },
+      "interaction": {
+        "b": 0.07968116685860908,
+        "se": 0.03529886643676091,
+        "p": 0.02420386221084461
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.4043952502029838
+  },
+  {
+    "dedup": "exact_date_text",
+    "transform": "rank_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": false,
+    "outcome": "revenue",
+    "kind": "baseline",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.007201643671735602,
+        "se": 0.014741383169629727,
+        "p": 0.6252800900279933
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.8677839249730194
+  },
+  {
+    "dedup": "exact_date_text",
+    "transform": "rank_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": false,
+    "outcome": "revenue",
+    "kind": "interaction",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.007322060041289184,
+        "se": 0.0229074361659517,
+        "p": 0.7493106912314762
+      },
+      "G": {
+        "b": -0.0012151562616610444,
+        "se": 0.06673845045688567,
+        "p": 0.9854767757869035
+      },
+      "interaction": {
+        "b": 0.0007521843308452547,
+        "se": 0.11699376938261365,
+        "p": 0.9948715089084655
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "exact_date_text",
+    "transform": "rank_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": false,
+    "outcome": "earnings",
+    "kind": "baseline",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.008398835545471533,
+        "se": 0.004628957046391276,
+        "p": 0.06991445624760945
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.28832215377463905
+  },
+  {
+    "dedup": "exact_date_text",
+    "transform": "rank_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": false,
+    "outcome": "earnings",
+    "kind": "interaction",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.005718954429350323,
+        "se": 0.006938282172849466,
+        "p": 0.40998869336042104
+      },
+      "G": {
+        "b": 0.010343646279156224,
+        "se": 0.021580638447073575,
+        "p": 0.6318289146529894
+      },
+      "interaction": {
+        "b": -0.020389119931685826,
+        "se": 0.03413255669376959,
+        "p": 0.5504087753521963
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "none",
+    "transform": "log_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": false,
+    "outcome": "employment",
+    "kind": "baseline",
+    "n": 1061,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 5.700800117451398e-05,
+        "se": 7.677388955102815e-05,
+        "p": 0.45793263072585033
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.8677839249730194
+  },
+  {
+    "dedup": "none",
+    "transform": "log_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": false,
+    "outcome": "employment",
+    "kind": "interaction",
+    "n": 1061,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 6.3545707552684e-05,
+        "se": 0.0001391407123935547,
+        "p": 0.6479856254033327
+      },
+      "G": {
+        "b": 0.00019842931700502674,
+        "se": 0.000288538562067698,
+        "p": 0.4917990522346597
+      },
+      "interaction": {
+        "b": -3.12109297354187e-05,
+        "se": 0.0006262835923930822,
+        "p": 0.96026376652048
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "none",
+    "transform": "log_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": false,
+    "outcome": "sga",
+    "kind": "baseline",
+    "n": 1060,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 0.0012150839720929786,
+        "se": 0.0029337412641591266,
+        "p": 0.6788347053953855
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.8677839249730194
+  },
+  {
+    "dedup": "none",
+    "transform": "log_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": false,
+    "outcome": "sga",
+    "kind": "interaction",
+    "n": 1060,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.004856350750276863,
+        "se": 0.00430973153432934,
+        "p": 0.26008474943943993
+      },
+      "G": {
+        "b": 0.0023372722685321722,
+        "se": 0.009719415246631675,
+        "p": 0.8100119563588595
+      },
+      "interaction": {
+        "b": 0.04825758936204125,
+        "se": 0.030605633339138707,
+        "p": 0.11517006273237132
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.6001042212779778
+  },
+  {
+    "dedup": "none",
+    "transform": "log_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": false,
+    "outcome": "revenue",
+    "kind": "baseline",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.000854124967601829,
+        "se": 0.010444404154652368,
+        "p": 0.9348394591501353
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9774719762491573
+  },
+  {
+    "dedup": "none",
+    "transform": "log_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": false,
+    "outcome": "revenue",
+    "kind": "interaction",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 0.0045466356468853416,
+        "se": 0.014752144282371907,
+        "p": 0.757993318062324
+      },
+      "G": {
+        "b": 0.005886084466133964,
+        "se": 0.041482317376426964,
+        "p": 0.8871925715350762
+      },
+      "interaction": {
+        "b": -0.042094852181467954,
+        "se": 0.09009285852172398,
+        "p": 0.6404314495458702
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "none",
+    "transform": "log_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": false,
+    "outcome": "earnings",
+    "kind": "baseline",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.008468128653050962,
+        "se": 0.004190583925767738,
+        "p": 0.04357214769501338
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.28832215377463905
+  },
+  {
+    "dedup": "none",
+    "transform": "log_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": false,
+    "outcome": "earnings",
+    "kind": "interaction",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.00314656034150256,
+        "se": 0.004897160286927481,
+        "p": 0.5206785853572623
+      },
+      "G": {
+        "b": 0.004624916970151632,
+        "se": 0.013951052094360325,
+        "p": 0.7403288282337125
+      },
+      "interaction": {
+        "b": -0.04160026542764075,
+        "se": 0.028212166708714004,
+        "p": 0.14064942686202606
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.6001042212779778
+  },
+  {
+    "dedup": "none",
+    "transform": "rank_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": false,
+    "outcome": "employment",
+    "kind": "baseline",
+    "n": 1061,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 4.5934101620771644e-05,
+        "se": 0.0001098448446434153,
+        "p": 0.6759109973395565
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.8677839249730194
+  },
+  {
+    "dedup": "none",
+    "transform": "rank_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": false,
+    "outcome": "employment",
+    "kind": "interaction",
+    "n": 1061,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": 2.6097103339888595e-05,
+        "se": 0.00021373683628548868,
+        "p": 0.9028450858772391
+      },
+      "G": {
+        "b": 9.716236008789642e-05,
+        "se": 0.0007759284628909772,
+        "p": 0.9003740688106924
+      },
+      "interaction": {
+        "b": 0.0001890867707553418,
+        "se": 0.00113720612523339,
+        "p": 0.8679758265380835
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "none",
+    "transform": "rank_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": false,
+    "outcome": "sga",
+    "kind": "baseline",
+    "n": 1060,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.0012634225444387713,
+        "se": 0.004001443221586323,
+        "p": 0.7522647093551452
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.8677839249730194
+  },
+  {
+    "dedup": "none",
+    "transform": "rank_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": false,
+    "outcome": "sga",
+    "kind": "interaction",
+    "n": 1060,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.011511250917103507,
+        "se": 0.0068971298555576205,
+        "p": 0.09543397003019624
+      },
+      "G": {
+        "b": -0.03664076621588978,
+        "se": 0.019016330543796624,
+        "p": 0.054288707236786006
+      },
+      "interaction": {
+        "b": 0.07884615026146005,
+        "se": 0.035190348034497394,
+        "p": 0.025274703137686486
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.4043952502029838
+  },
+  {
+    "dedup": "none",
+    "transform": "rank_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": false,
+    "outcome": "revenue",
+    "kind": "baseline",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.007017304405938934,
+        "se": 0.014728754528895448,
+        "p": 0.633868298482905
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.8677839249730194
+  },
+  {
+    "dedup": "none",
+    "transform": "rank_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": false,
+    "outcome": "revenue",
+    "kind": "interaction",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.007043853244003012,
+        "se": 0.022829208496675295,
+        "p": 0.757731681948419
+      },
+      "G": {
+        "b": -0.0007329470705110299,
+        "se": 0.06647689077255459,
+        "p": 0.9912052366333647
+      },
+      "interaction": {
+        "b": 6.391895305873326e-05,
+        "se": 0.11669086741285743,
+        "p": 0.9995630579771685
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  },
+  {
+    "dedup": "none",
+    "transform": "rank_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": false,
+    "outcome": "earnings",
+    "kind": "baseline",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.008436255594366468,
+        "se": 0.004623366092067369,
+        "p": 0.06834517063770384
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.28832215377463905
+  },
+  {
+    "dedup": "none",
+    "transform": "rank_change",
+    "measure": "ghost_lag",
+    "controls": "original",
+    "common_measure_sample": false,
+    "outcome": "earnings",
+    "kind": "interaction",
+    "n": 1062,
+    "firms": 172,
+    "terms": {
+      "proxy": {
+        "b": -0.005865651260571408,
+        "se": 0.006907619454295664,
+        "p": 0.3959981580160941
+      },
+      "G": {
+        "b": 0.009898417051158365,
+        "se": 0.021482903023333087,
+        "p": 0.6450729032524002
+      },
+      "interaction": {
+        "b": -0.019583768021928866,
+        "se": 0.034009723751884054,
+        "p": 0.5648611903910531
+      }
+    },
+    "holm_p_audit_family": 1.0,
+    "fdr_q_audit_family": 0.9999726953317134
+  }
+]

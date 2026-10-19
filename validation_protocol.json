@@ -130,5 +130,14 @@
     "methods": "proxy_multiverse_methods.json",
     "finding": "No robust positive recruitment signal paired with negative ghost interaction; held-out-company prediction does not rescue the proposed economic check.",
     "main_validation_unchanged": true
+  },
+  "independent_original_measure_audit": {
+    "status": "Completed",
+    "original_review_classifications_reproduced": 218717,
+    "classification_mismatches": 0,
+    "new_specification_fits": 128,
+    "all_results": "review_proxy_audit_results.json",
+    "methods_and_findings": "review_proxy_audit.json",
+    "interpretation": "Separate-review agreement reproduced. Review-based economic interaction remains inconclusive; these results do not establish that the ghost-job measure is invalid."
   }
 }
