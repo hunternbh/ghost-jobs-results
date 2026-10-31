@@ -1,0 +1,178 @@
+{
+  "date": "2026-10-31",
+  "design": {
+    "date": "2026-10-31",
+    "authority": "User instruction: tests 1 and 2, original ghost measure and Yen specifications. Source: saved Lourie validation protocol, original Table 3, original classifications and financial links.",
+    "tests": [
+      "Lourie Table 3 operating baseline",
+      "Same baseline plus original review ghost score and postings x ghost interaction"
+    ],
+    "main_sample": "Original linked firms, USD statements, December fiscal ends so the unchanged original calendar-year ghost measure ends at fiscal t. At least five original reviews in t. Fiscal t >= 2016 and consecutive financial t-1,t,t+1. Both first-quarter posting windows must be fully covered. Last outcome is constrained by original financial data (2024). Baseline and interaction share observations within outcome/specification.",
+    "postings": "Deduplicate globally by job_id. Count days active using post_date <= day < remove_date; missing remove_date right-censored at observation end 2026-10-10. Average active postings during first three calendar months of fiscal t+1 minus same months of fiscal t, divided by AT_t. Sign ranks: two equal-count negative groups, zero group, two equal-count positive groups, scores 0,.25,.5,.75,1; ties retain rank. Rank sample fixed before outcome/control completeness.",
+    "ghost": "Primary: unchanged saved p_it_ebayes in year t (original weights, threshold and offer overrides). This legacy smoother uses a full-history firm prior. Raw original p_it is a prespecified timing-safe sensitivity, with same labels. No new LLM classification.",
+    "outcomes": [
+      "(EMP[t+1]-EMP[t])/AT[t]",
+      "(XSGA[t+1]-XSGA[t])/AT[t]",
+      "(SALE[t+1]-SALE[t])/AT[t]",
+      "(OIADP[t+1]-OIADP[t])/AT[t]"
+    ],
+    "full_controls": [
+      "(OIADP[t]-OIADP[t-1])/AT[t-1]",
+      "(SALE[t]-SALE[t-1])/AT[t-1]",
+      "(XSGA[t]-XSGA[t-1])/AT[t-1]",
+      "(EMP[t]-EMP[t-1])/AT[t-1]",
+      "(CAPX[t]-CAPX[t-1])/AT[t-1]",
+      "(XRD[t]-XRD[t-1])/AT[t-1]",
+      "(XAD[t]-XAD[t-1])/AT[t-1]",
+      "book-to-market[t]"
+    ],
+    "effects": "Two-digit SIC industry and fiscal-year effects; firm-clustered standard errors. Firm/year effects reported as sensitivity.",
+    "missing_data": "No zero imputation of missing expenses or missing ghost years. A zero posting count is observed only after complete source scan and coverage check.",
+    "winsorization": "Continuous financial changes, book-to-market and asset-scaled posting change clipped at pooled 1st/99th percentiles before regression; bounds saved. Original financial series are reconstructed from source rather than re-winsorizing a previously clipped panel.",
+    "specifications": [
+      "Full Lourie controls; saved original ghost score (main)",
+      "Core controls excluding R&D and advertising",
+      "Core controls on full-control sample",
+      "Full controls with raw original ghost share",
+      "Core controls with raw original ghost share",
+      "Core controls with company/year effects"
+    ],
+    "inference": "Report every planned outcome and fit, 95% intervals and both ordinary and Holm-adjusted p-values across the four outcome tests separately for baseline posting and ghost-interaction families. Sensitivity findings are not selected for publication based on significance.",
+    "limits": "Indeed source is a different platform/sample than original career-site data, so this reproduces the design in a new dataset, not original numerical estimates. Current parent rollups may differ from historical ownership. Posting disappearance does not establish hiring. No posting-to-hire measure until independent position starts arrive.",
+    "api_calls": 0,
+    "inference_implementation": "Company-clustered covariance with finite-cluster correction; two-sided t tests and 95% intervals use number of companies minus one degrees of freedom. This implementation was fixed before estimating any posting regressions and independently checked with dummy-variable OLS."
+  },
+  "coverage_amendment": {
+    "timing": "Before any regressions estimated, after a 64-file raw posting-date coverage diagnostic",
+    "evidence": "Sampled 2017 February/March counts 3453/2099 versus 17888 in January. December 2020/January 2021 counts 130/136; February 2021 2687 versus March 2021 51557. Early 2016 ramp also present. These are source-wide recording anomalies, not firm-outcome-selected exclusions.",
+    "amendment": "Retain original full 2016-2023 benchmark and all originally planned sensitivities. Add coverage_full and coverage_core specifications restricted to t>=2018 and excluding t=2020,2021 because either Q1_t or Q1_t+1 then includes the thin Q1 2021. Report alongside the full window; do not treat the retained subset as provider-certified complete coverage. Rank cutoffs remain frozen from the original predictor sample.",
+    "models_added": 16,
+    "planned_total_models": 64
+  },
+  "sample": {
+    "original_firms_with_ghost_data": 404,
+    "original_firm_years": 3432,
+    "firms_with_eligible_postings": 337,
+    "eligible_before_controls_rows": 1215,
+    "eligible_before_controls_firms": 232,
+    "predictor_years": [
+      2016,
+      2023
+    ],
+    "outcome_years": [
+      2017,
+      2024
+    ],
+    "by_predictor_year": [
+      {
+        "year": 2016,
+        "firm_years": 124,
+        "mean_active_q1": 283.67591279688054,
+        "mean_active_next_q1": 258.94910394265236
+      },
+      {
+        "year": 2017,
+        "firm_years": 129,
+        "mean_active_q1": 248.85460809646855,
+        "mean_active_next_q1": 402.28225667527994
+      },
+      {
+        "year": 2018,
+        "firm_years": 136,
+        "mean_active_q1": 331.24044117647054,
+        "mean_active_next_q1": 300.09681372549016
+      },
+      {
+        "year": 2019,
+        "firm_years": 146,
+        "mean_active_q1": 294.86856925418573,
+        "mean_active_next_q1": 375.77758542827036
+      },
+      {
+        "year": 2020,
+        "firm_years": 137,
+        "mean_active_q1": 395.14237587230286,
+        "mean_active_next_q1": 124.49789132197891
+      },
+      {
+        "year": 2021,
+        "firm_years": 167,
+        "mean_active_q1": 153.29414504324686,
+        "mean_active_next_q1": 800.6538922155689
+      },
+      {
+        "year": 2022,
+        "firm_years": 184,
+        "mean_active_q1": 1046.2350845410626,
+        "mean_active_next_q1": 988.2367149758454
+      },
+      {
+        "year": 2023,
+        "firm_years": 192,
+        "mean_active_q1": 1001.6493634259259,
+        "mean_active_next_q1": 985.8508470695971
+      }
+    ],
+    "fraction_zero_first_quarter_counts": 0.01810699588477366,
+    "eligible_us_domiciled": 1109
+  },
+  "source_summary": {
+    "source_rows": 496085748,
+    "files": 6881,
+    "earliest_post_date": "2005-01-01",
+    "latest_post_date": "2026-10-10",
+    "invalid_post_dates": 0,
+    "invalid_remove_dates": 0,
+    "missing_remove_dates": 5520204,
+    "non_us_rows": 0
+  },
+  "deduplication": {
+    "raw": {
+      "n_rows": 23801054,
+      "ids": 23801054,
+      "firms": 350,
+      "same_day_removals": 1323226,
+      "negative_lifetimes": 0,
+      "missing_removal": 0,
+      "via_parent": 6873966,
+      "conflicting_parent": 39384
+    },
+    "cross_issuer_job_ids_excluded": 0,
+    "job_ids_with_different_observed_dates": 0,
+    "deduplicated": {
+      "jobs": 22477828,
+      "firms": 350,
+      "first_post": "2015-10-27 00:00:00",
+      "last_post": "2024-03-31 00:00:00"
+    },
+    "rule": "One job_id counted once; earliest opening and latest removal, with missing removal censored at 2026-10-11. Exclude job_ids mapped to multiple issuers and negative lifetimes. Same-day removals contribute zero days under the declared half-open interval [post_date,remove_date), so do not enter the daily-active stock. Dates after March 2024 are not required for the original financial outcome panel."
+  },
+  "verification": {
+    "planned_models": 64,
+    "completed_models": 64,
+    "original_classification_unchanged": true,
+    "baseline_interaction_samples_identical": true,
+    "additional_standalone_baselines": 8,
+    "total_models": 72
+  },
+  "interpretation": "The actual-posting tests are inconclusive. With full Lourie controls, 340 company-years from 68 firms do not show a statistically clear positive posting-to-growth relationship for employees, SG&A, revenue or operating earnings. None of the ghost-score interactions is significant, including before four-outcome adjustment. Core controls increase coverage to 864-865 company-years from 175 firms; raw ghost shares, company effects and the recording-coverage subset also do not establish the expected pattern. This does not establish that the review measure is wrong: the baseline recruitment-to-operations link needed for this check is itself unclear in the matched sample. The separate-review 5.6% versus 3.6% finding is unchanged. The standalone baseline, which does not require scored reviews, is also inconclusive: full controls give 455 company-years from 74 firms; core controls give 1,222-1,223 company-years from 185 firms. Eight standalone fits complete the broader baseline scope after the 64 paired fits; all are reported.",
+  "standalone_baseline_scope_completion": {
+    "timing": "After the 64 paired fits were observed and verified, before these eight standalone baseline fits.",
+    "reason": "Scope completion: Yen requested the posting replication for as many firms as available. A standalone posting baseline does not require observed ghost scores. Retain all paired common-sample results unchanged and additionally show the baseline on all original financially linked firms/years with posting coverage, without conditioning on review availability. This does not rescue or replace an inconclusive matched interaction.",
+    "sample": "Original unambiguous financial firms; USD; December fiscal end; fiscal t=2016-2023; consecutive financial records; positive assets; observed posting windows. No minimum review count and no ghost availability condition.",
+    "controls": "Both full Lourie controls and core controls excluding R&D and advertising; original no-imputation rules.",
+    "ranking": "Separate sign-rank cutoffs use the broader eligible predictor sample before control/outcome completeness.",
+    "models": 8,
+    "reporting": "All four outcomes for both control sets, regardless of sign or significance. Baseline only; no ghost effect can be estimated in unscored years."
+  },
+  "standalone_baseline_rank_and_sample": {
+    "eligible_predictor_rows": 1752,
+    "eligible_predictor_firms": 240,
+    "negative_median": -0.008701246044627155,
+    "positive_median": 0.011331214938497777,
+    "posting_winsor_bounds": [
+      -0.5544103166507283,
+      1.035055644314869
+    ]
+  }
+}

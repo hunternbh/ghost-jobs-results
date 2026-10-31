@@ -14,3 +14,6 @@ The acquisition-variable reference is Adams et al. (2025), *Post-Acquisition Acc
 
 
 The study’s primary focus is identification and validation. Gutiérrez, Lourie, Nekrasov, and Shevlin (2020), DOI 10.1287/mnsc.2019.3450, is the confirmed benchmark. The design distinguishes broader posting-to-hire and interview-stage ghost proxies. It replicates the positive Lourie posting/future-operations relation, then tests negative posting interactions with each ghost proxy. The broader measure and benchmark/interactions remain unestimated because posting and hiring histories are missing. Posting counts are not mechanically discounted with interview shares. See validation_protocol.json and classification_stability.json. Existing company-outcome tables remain supplementary.
+
+
+Actual Indeed posting tests were added on October 31, 2026. See `posting_test_results.json` and `posting_test_methods.json` for 64 paired fits and eight standalone baselines, the unchanged original ghost measure, complete-case sample rules, and source-coverage checks. Positions/hiring microdata remain unavailable; no posting-to-hire score is reported.
