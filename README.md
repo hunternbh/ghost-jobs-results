@@ -2,7 +2,7 @@
 
 [Read the plain-language report](https://hunternbh.github.io/ghost-jobs-results/).
 
-The report explains how applicants’ interview accounts are coded, how the company-year measure is calculated, and what the firm-level tests show. The same aggregate results are used in the local LaTeX manuscript.
+The report explains how applicantsâ€™ interview accounts are coded, how the company-year measure is calculated, and what the firm-level tests show. The same aggregate results are used in the local LaTeX manuscript.
 
 These are **provisional results based on automated coding**. Independent human validation is pending. The measure captures perceived recruitment experiences, not verified employer intent or national fake-vacancy prevalence. Confidence intervals condition on the automated labels.
 
@@ -13,7 +13,7 @@ Files include the HTML report, displayed tables, model coefficients and confiden
 The acquisition-variable reference is Adams et al. (2025), *Post-Acquisition Accounting Integration and M&A Outcomes*, [SSRN 5203945](https://doi.org/10.2139/ssrn.5203945), previously circulated under a longer title. This is cited as a working paper; a Management Science publication has not been established.
 
 
-The study’s primary focus is identification and validation. Gutiérrez, Lourie, Nekrasov, and Shevlin (2020), DOI 10.1287/mnsc.2019.3450, is the confirmed benchmark. The design distinguishes broader posting-to-hire and interview-stage ghost proxies. It replicates the positive Lourie posting/future-operations relation, then tests negative posting interactions with each ghost proxy. The broader measure and benchmark/interactions remain unestimated because posting and hiring histories are missing. Posting counts are not mechanically discounted with interview shares. See validation_protocol.json and classification_stability.json. Existing company-outcome tables remain supplementary.
+The studyâ€™s primary focus is identification and validation. GutiÃ©rrez, Lourie, Nekrasov, and Shevlin (2020), DOI 10.1287/mnsc.2019.3450, is the confirmed benchmark. The design distinguishes broader posting-to-hire and interview-stage ghost proxies. It replicates the positive Lourie posting/future-operations relation, then tests negative posting interactions with each ghost proxy. The broader measure and benchmark/interactions remain unestimated because posting and hiring histories are missing. Posting counts are not mechanically discounted with interview shares. See validation_protocol.json and classification_stability.json. Existing company-outcome tables remain supplementary.
 
 
-Actual Indeed posting tests were added on October 31, 2026. See `posting_test_results.json` and `posting_test_methods.json` for 64 paired fits and eight standalone baselines, the unchanged original ghost measure, complete-case sample rules, and source-coverage checks. Positions/hiring microdata remain unavailable; no posting-to-hire score is reported.
+Posting tests audited October 31, 2026: 96 corrected fits in `posting_test_results.json`; company links, fiscal timing and sample attrition in `posting_test_methods.json` and `posting_audit_results.json`. Broad employment, spending and sales relationships are positive; the primary original-review interactions remain inconclusive. All 72 earlier restricted-sample fits remain in `posting_test_results_initial.json`. Original review labels and scores are unchanged. Worker-start data are still needed for the posting-to-hiring measure.

@@ -35,7 +35,7 @@
     "standard_errors": "clustered by firm"
   },
   "our_proposed_extension": {
-    "status": "Actual posting baseline and original review-score interaction completed; alternative posting-to-hiring measure and joint comparison await worker-start data.",
+    "status": "Broad employment, SG&A and revenue posting benchmarks reproduced after company/sample/timing audit; primary original-review interactions remain inconclusive. Posting-to-hiring and joint comparison await worker-start records.",
     "measures": {
       "G_B": "Broader ghost-intensity proxy based on Revelio postings and subsequent hiring (research-plan label HJPR)",
       "G_I": "Interview-stage perceived ghost-intensity proxy (research-plan label HJPR_Int)"
@@ -57,10 +57,9 @@
   },
   "additional_external_check": "Matched hires per posting over six months by company, occupation/role, seniority and location, following the logic described in Revelio\u2019s article; separate common review-source evidence from independent worker-start evidence.",
   "data_needed": [
-    "Revelio posting histories and subsequent hiring evidence, with firm links, occupation/location information, coverage dates and the delivered broader ghost-proxy definition",
-    "Posting opening/closing dates, occupation/skills and geography for duration and composition checks",
-    "Worker position starts for independent hiring-conversion checks",
-    "Independent human labels of narratives for classification precision/recall"
+    "Matched worker position starts, including company, occupation/location and coverage details, to construct the broader posting-to-hiring measure.",
+    "Historical parent/subsidiary ownership links for expanded employer-scope comparisons.",
+    "Independent human labels of narratives for classification precision and recall."
   ],
   "data_currently_supplied": [
     "Interview reviews",
@@ -76,7 +75,7 @@
     "A significant or insignificant investment coefficient does not validate ghost-job identification"
   ],
   "design_basis": "Verified two-measure research specification: Lourie baseline, broader and interview-stage ghost proxies, and posting interactions.",
-  "requested_validation_source": "Original interview-based dataset and original financial links, per user instruction. Existing displayed supporting tables retain their separately reported sample.",
+  "requested_validation_source": "Original interview-based classifications and saved scores, with independently audited company identifiers; existing displayed supporting tables retain their separately reported samples.",
   "original_dataset_check": {
     "data_files_inspected": 117,
     "analyst_linked_companies": 410,
@@ -86,10 +85,11 @@
     "matched_hiring_history_found": false,
     "baseline_and_interactions_estimated": false,
     "minimum_for_interview_check": "Monthly active-posting counts, observation dates, and employer identifiers matching the original panel. Gross hiring histories are not required for this interaction when annual employment outcomes are available.",
-    "additional_for_broader_proxy": "Matched subsequent hires or a documented delivered posting-to-hire proxy with non-overlapping validation windows."
+    "additional_for_broader_proxy": "Matched subsequent hires or a documented delivered posting-to-hire proxy with non-overlapping validation windows.",
+    "scope": "Historical inventory of the original review-only delivery, before the Indeed archive was supplied; its found/estimated flags describe that stage, not current availability. See actual_posting_tests for current status."
   },
   "interview_activity_adaptation": {
-    "status": "COMPLETED using original dataset; separate from the unestimated exact posting tests.",
+    "status": "COMPLETED original-data interview adaptation; retained separately from the now-completed actual-posting tests.",
     "main_sample_firms": 168,
     "main_company_years": "1007\u20131009",
     "findings": "Inconsistent baseline activity signal; no clear weakening by the ghost measure; all four interaction Holm p-values equal 1.0.",
@@ -114,14 +114,14 @@
     ],
     "additional_tests": "cross_review_additional_results.json",
     "limitations": "Convergent evidence in automated review reports, not independent vacancy ground truth; adjusted associations remain inconclusive.",
-    "lourie_role": "Supplementary economic benchmark; exact posting-based tests still require posting histories."
+    "lourie_role": "Supplementary economic benchmark; actual-posting tests completed and audited, with three broad baseline relationships reproduced and primary original-review interactions inconclusive."
   },
   "ranked_interview_operating_check": {
     "status": "COMPLETED exploratory Lourie-motivated adaptation; not exact posting replication.",
     "fits": 48,
     "results": "ranked_lourie_results.json",
     "methods": "ranked_lourie_methods.json",
-    "finding": "Ranked interview counts do not reproduce a consistent positive growth signal; ghost interactions are inconclusive after correction. Exact posting-based test remains unestimated.",
+    "finding": "Ranked interview counts did not reproduce a consistent positive growth signal; ghost interactions were inconclusive after correction. These historical interview-adaptation estimates are retained alongside the current actual-posting tests.",
     "main_validation_unchanged": "Separate-review check remains the main validation section."
   },
   "review_proxy_multiverse": {
@@ -168,14 +168,17 @@
     "main_validation_unchanged": true
   },
   "actual_posting_tests": {
-    "status": "Completed",
+    "status": "Audited and corrected",
+    "date": "2026-10-31",
+    "fits": 96,
+    "standalone_baselines": 32,
+    "paired_fits": 64,
     "results": "posting_test_results.json",
     "methods": "posting_test_methods.json",
-    "fits": 72,
-    "paired_fits": 64,
-    "standalone_baselines": 8,
-    "plain_summary": "The actual-posting tests are inconclusive. With full Lourie controls, 340 company-years from 68 firms do not show a statistically clear positive posting-to-growth relationship for employees, SG&A, revenue or operating earnings. None of the ghost-score interactions is significant, including before four-outcome adjustment. Core controls increase coverage to 864-865 company-years from 175 firms; raw ghost shares, company effects and the recording-coverage subset also do not establish the expected pattern. This does not establish that the review measure is wrong: the baseline recruitment-to-operations link needed for this check is itself unclear in the matched sample. The separate-review 5.6% versus 3.6% finding is unchanged. The standalone baseline, which does not require scored reviews, is also inconclusive: full controls give 455 company-years from 74 firms; core controls give 1,222-1,223 company-years from 185 firms. Eight standalone fits complete the broader baseline scope after the 64 paired fits; all are reported.",
+    "audit": "posting_audit_results.json",
+    "superseded_initial_results": "posting_test_results_initial.json",
     "original_review_measure_unchanged": true,
-    "broader_hiring_measure_available": false
+    "broader_hiring_measure_available": false,
+    "plain_summary": "Employment, SG&A and revenue baseline relationships reproduced in broad later-period Indeed sample; earnings not reproduced. Primary original-review interactions remain inconclusive. Coverage-subset earnings interaction is conditional supplementary evidence, not primary validation."
   }
 }

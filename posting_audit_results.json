@@ -1,0 +1,281 @@
+{
+  "date": "2026-10-31",
+  "status": "Corrected posting and review-company audit completed",
+  "corrections": [
+    "Use broad annual Compustat source rather than review-linked financial subset for standalone baseline.",
+    "Use actual fiscal windows and allow all fiscal ends for standalone baseline; saved review scores retain December 31 alignment.",
+    "Corroborate company financial identifiers; correct legacy review ticker collisions and exclude unresolved entity-scope cases.",
+    "Do not use present-day parents as historical ownership; direct identifier links are primary.",
+    "Common equity is not reduced by preferred equity twice; optional missing tax fields do not automatically remove book-to-market.",
+    "No extra minimum-review cutoff for the primary saved-score panel; five-review sensitivity retained."
+  ],
+  "illustrative_matching_errors": [
+    "Danone ticker BN had been linked to Brookfield.",
+    "86,761 earlier Foot Locker ads had been assigned to Dick\u2019s using a current-parent fallback; they are retained under the direct Foot Locker issuer."
+  ],
+  "source_records": 496085748,
+  "source_files": 6881,
+  "candidate_unique_ads": 113495885,
+  "direct_financial_identifier_ads": 64263222,
+  "matched_duplicate_job_ids": 0,
+  "original_classifications_and_scores_unchanged": true,
+  "sga_before_after": {
+    "standalone_full": {
+      "before_rows": 455,
+      "before_firms": 74,
+      "after_rows": 6406,
+      "after_firms": 1107
+    },
+    "original_saved_full": {
+      "before_rows": 340,
+      "before_firms": 68,
+      "after_rows": 520,
+      "after_firms": 86
+    }
+  },
+  "sample_waterfalls": [
+    {
+      "population": "broad",
+      "stages": [
+        {
+          "step": "Eligible financial periods with company-linked posting windows",
+          "rows": 27855,
+          "firms": 4054
+        },
+        {
+          "step": "future_sga",
+          "rows": 23081,
+          "firms": 3503
+        },
+        {
+          "step": "industry",
+          "rows": 23081,
+          "firms": 3503
+        },
+        {
+          "step": "change_oiadp",
+          "rows": 22777,
+          "firms": 3474
+        },
+        {
+          "step": "change_sale",
+          "rows": 22777,
+          "firms": 3474
+        },
+        {
+          "step": "change_xsga",
+          "rows": 22602,
+          "firms": 3445
+        },
+        {
+          "step": "change_emp",
+          "rows": 21251,
+          "firms": 3298
+        },
+        {
+          "step": "change_capx",
+          "rows": 21181,
+          "firms": 3294
+        },
+        {
+          "step": "btm_common",
+          "rows": 20962,
+          "firms": 3270
+        },
+        {
+          "step": "change_xrd",
+          "rows": 13649,
+          "firms": 2237
+        },
+        {
+          "step": "change_xad",
+          "rows": 6406,
+          "firms": 1107
+        }
+      ],
+      "individual_missing": {
+        "future_sga": 4774,
+        "industry": 0,
+        "change_oiadp": 347,
+        "change_sale": 347,
+        "change_xsga": 5077,
+        "change_emp": 2027,
+        "change_capx": 458,
+        "change_xrd": 10977,
+        "change_xad": 17048,
+        "btm_common": 1505
+      }
+    },
+    {
+      "population": "original_saved",
+      "stages": [
+        {
+          "step": "Eligible financial periods with company-linked posting windows",
+          "rows": 1568,
+          "firms": 241
+        },
+        {
+          "step": "future_sga",
+          "rows": 1309,
+          "firms": 208
+        },
+        {
+          "step": "industry",
+          "rows": 1309,
+          "firms": 208
+        },
+        {
+          "step": "change_oiadp",
+          "rows": 1297,
+          "firms": 207
+        },
+        {
+          "step": "change_sale",
+          "rows": 1297,
+          "firms": 207
+        },
+        {
+          "step": "change_xsga",
+          "rows": 1296,
+          "firms": 207
+        },
+        {
+          "step": "change_emp",
+          "rows": 1276,
+          "firms": 206
+        },
+        {
+          "step": "change_capx",
+          "rows": 1270,
+          "firms": 205
+        },
+        {
+          "step": "btm_common",
+          "rows": 1266,
+          "firms": 203
+        },
+        {
+          "step": "change_xrd",
+          "rows": 877,
+          "firms": 138
+        },
+        {
+          "step": "change_xad",
+          "rows": 520,
+          "firms": 86
+        }
+      ],
+      "individual_missing": {
+        "future_sga": 259,
+        "industry": 0,
+        "change_oiadp": 12,
+        "change_sale": 12,
+        "change_xsga": 271,
+        "change_emp": 34,
+        "change_capx": 18,
+        "change_xrd": 631,
+        "change_xad": 831,
+        "btm_common": 47
+      }
+    },
+    {
+      "population": "original_fiscal_raw",
+      "stages": [
+        {
+          "step": "Eligible financial periods with company-linked posting windows",
+          "rows": 2059,
+          "firms": 346
+        },
+        {
+          "step": "future_sga",
+          "rows": 1797,
+          "firms": 311
+        },
+        {
+          "step": "industry",
+          "rows": 1797,
+          "firms": 311
+        },
+        {
+          "step": "change_oiadp",
+          "rows": 1783,
+          "firms": 310
+        },
+        {
+          "step": "change_sale",
+          "rows": 1783,
+          "firms": 310
+        },
+        {
+          "step": "change_xsga",
+          "rows": 1782,
+          "firms": 310
+        },
+        {
+          "step": "change_emp",
+          "rows": 1759,
+          "firms": 309
+        },
+        {
+          "step": "change_capx",
+          "rows": 1751,
+          "firms": 307
+        },
+        {
+          "step": "btm_common",
+          "rows": 1746,
+          "firms": 305
+        },
+        {
+          "step": "change_xrd",
+          "rows": 1285,
+          "firms": 221
+        },
+        {
+          "step": "change_xad",
+          "rows": 817,
+          "firms": 144
+        }
+      ],
+      "individual_missing": {
+        "future_sga": 262,
+        "industry": 0,
+        "change_oiadp": 14,
+        "change_sale": 14,
+        "change_xsga": 276,
+        "change_emp": 40,
+        "change_capx": 22,
+        "change_xrd": 704,
+        "change_xad": 973,
+        "btm_common": 52
+      }
+    }
+  ],
+  "coverage_rule": {
+    "rule": "Month count <10% of surrounding 13-month median, requiring at least 6 observed months. Each first-quarter window and its 180-day inventory lookback must avoid flagged months and pre-2016 coverage. Defined before corrected-universe regression estimates.",
+    "flagged_months": [
+      "2016-11-01",
+      "2017-04-01",
+      "2020-12-01",
+      "2021-01-01",
+      "2021-02-01"
+    ],
+    "sample_with_clean_windows": 19615
+  },
+  "interpretation": "Employment, SG&A and revenue baseline relationships reproduced in broad later-period Indeed sample; earnings not reproduced. Primary original-review interactions remain inconclusive. Coverage-subset earnings interaction is conditional supplementary evidence, not primary validation.",
+  "verification": {
+    "models": 96,
+    "independently_reestimated": 32,
+    "daily_counts_and_fiscal_windows_checked": true,
+    "original_source_hashes_unchanged": true,
+    "api_calls": 0
+  },
+  "not_an_exact_source_replication": "Original study uses 2007\u20132016 career-site postings; this delivery is later-period US Indeed data. Original author code and detailed missing-expense convention unavailable.",
+  "search_disclosure": "Corrected checks follow an already-observed exploratory search. All outcomes and variants retained; Holm adjustments apply within each four-outcome family, not the entire search.",
+  "sources": {
+    "original_paper": "https://doi.org/10.1287/mnsc.2019.3450",
+    "accepted_manuscript": "https://escholarship.org/content/qt24w173zx/qt24w173zx.pdf",
+    "book_equity_macro": "https://wrds-www.wharton.upenn.edu/pages/wrds-research/macros/wrds-macros-market-book-ratios/",
+    "ownership_chronology": "https://investors.dicks.com/news/press-releases/news-details/2025/DICKS-Sporting-Goods-Completes-Acquisition-of-Foot-Locker/"
+  }
+}
