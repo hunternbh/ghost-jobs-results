@@ -1,0 +1,248 @@
+{
+  "descriptive": [
+    {
+      "score": "ghost_flag",
+      "direction": "A_to_B",
+      "company_years": 4739,
+      "firms": 953,
+      "heldout_no_offer_reviews": 139551,
+      "higher_group_rate": 0.01503468835685762,
+      "lower_group_rate": 0.011900011735711771,
+      "gap_pp": 0.31346766211458493,
+      "company_bootstrap_ci95_pp": [
+        0.13893086558718884,
+        0.4736904542987993
+      ],
+      "training_median": 0.06060606060606061
+    },
+    {
+      "score": "ghost_flag",
+      "direction": "B_to_A",
+      "company_years": 4738,
+      "firms": 962,
+      "heldout_no_offer_reviews": 140322,
+      "higher_group_rate": 0.015197398978169996,
+      "lower_group_rate": 0.010832745644357608,
+      "gap_pp": 0.4364653333812387,
+      "company_bootstrap_ci95_pp": [
+        0.2564083440393016,
+        0.6066091407206623
+      ],
+      "training_median": 0.06060606060606061
+    },
+    {
+      "score": "comms_category",
+      "direction": "A_to_B",
+      "company_years": 4739,
+      "firms": 953,
+      "heldout_no_offer_reviews": 139551,
+      "higher_group_rate": 0.013999712457767235,
+      "lower_group_rate": 0.012537690538334109,
+      "gap_pp": 0.1462021919433126,
+      "company_bootstrap_ci95_pp": [
+        -0.04331356379653706,
+        0.3161871763457957
+      ],
+      "training_median": 0.05142857142857143
+    },
+    {
+      "score": "comms_category",
+      "direction": "B_to_A",
+      "company_years": 4738,
+      "firms": 962,
+      "heldout_no_offer_reviews": 140322,
+      "higher_group_rate": 0.014293616945341637,
+      "lower_group_rate": 0.01131900857824235,
+      "gap_pp": 0.2974608367099287,
+      "company_bootstrap_ci95_pp": [
+        0.11977132732424588,
+        0.4607687026567885
+      ],
+      "training_median": 0.05128205128205128
+    }
+  ],
+  "models": [
+    {
+      "score": "ghost_flag",
+      "direction": "A_to_B",
+      "kind": "raw",
+      "b_pp": 0.3134676621145845,
+      "se_pp": 0.08651618305919108,
+      "p": 0.0003063382145099232,
+      "ci95_pp": [
+        0.14368320146541053,
+        0.4832521227637585
+      ],
+      "n": 4739,
+      "firms": 953,
+      "holm_p_across_12_comparisons": 0.0027570439305893086
+    },
+    {
+      "score": "ghost_flag",
+      "direction": "A_to_B",
+      "kind": "industry_year",
+      "b_pp": 0.2872804038050061,
+      "se_pp": 0.0846645320737221,
+      "p": 0.0007193887695547303,
+      "ci95_pp": [
+        0.12112973226628414,
+        0.4534310753437281
+      ],
+      "n": 4739,
+      "firms": 953,
+      "holm_p_across_12_comparisons": 0.005317205535926699
+    },
+    {
+      "score": "ghost_flag",
+      "direction": "A_to_B",
+      "kind": "company_year",
+      "b_pp": -0.02059549060984232,
+      "se_pp": 0.10096572789312452,
+      "p": 0.8384088435503335,
+      "ci95_pp": [
+        -0.21873659032360596,
+        0.1775456091039213
+      ],
+      "n": 4739,
+      "firms": 953,
+      "holm_p_across_12_comparisons": 1.0
+    },
+    {
+      "score": "ghost_flag",
+      "direction": "B_to_A",
+      "kind": "raw",
+      "b_pp": 0.43646533338123855,
+      "se_pp": 0.08625953034494765,
+      "p": 5.024352431777184e-07,
+      "ci95_pp": [
+        0.2671865612175653,
+        0.6057441055449118
+      ],
+      "n": 4738,
+      "firms": 962,
+      "holm_p_across_12_comparisons": 5.526787674954903e-06
+    },
+    {
+      "score": "ghost_flag",
+      "direction": "B_to_A",
+      "kind": "industry_year",
+      "b_pp": 0.4355984157870162,
+      "se_pp": 0.07783464905197009,
+      "p": 2.853309754647312e-08,
+      "ci95_pp": [
+        0.28285293049839105,
+        0.5883439010756412
+      ],
+      "n": 4738,
+      "firms": 962,
+      "holm_p_across_12_comparisons": 3.4239717055767744e-07
+    },
+    {
+      "score": "ghost_flag",
+      "direction": "B_to_A",
+      "kind": "company_year",
+      "b_pp": 0.12242301241309991,
+      "se_pp": 0.10914856327064645,
+      "p": 0.26230499802919854,
+      "ci95_pp": [
+        -0.0917740125416764,
+        0.3366200373678762
+      ],
+      "n": 4738,
+      "firms": 962,
+      "holm_p_across_12_comparisons": 0.7869149940875957
+    },
+    {
+      "score": "comms_category",
+      "direction": "A_to_B",
+      "kind": "raw",
+      "b_pp": 0.14620219194331224,
+      "se_pp": 0.09449578018095994,
+      "p": 0.12215165376489356,
+      "ci95_pp": [
+        -0.039241900760945754,
+        0.33164628464757023
+      ],
+      "n": 4739,
+      "firms": 953,
+      "holm_p_across_12_comparisons": 0.5754595294609186
+    },
+    {
+      "score": "comms_category",
+      "direction": "A_to_B",
+      "kind": "industry_year",
+      "b_pp": 0.13184569499479706,
+      "se_pp": 0.08359713064636377,
+      "p": 0.11509190589218372,
+      "ci95_pp": [
+        -0.032210245023970956,
+        0.29590163501356503
+      ],
+      "n": 4739,
+      "firms": 953,
+      "holm_p_across_12_comparisons": 0.5754595294609186
+    },
+    {
+      "score": "comms_category",
+      "direction": "A_to_B",
+      "kind": "company_year",
+      "b_pp": -0.18054021198106493,
+      "se_pp": 0.10642885283645631,
+      "p": 0.09014719768415909,
+      "ci95_pp": [
+        -0.3894024703170026,
+        0.028322046354872767
+      ],
+      "n": 4739,
+      "firms": 953,
+      "holm_p_across_12_comparisons": 0.5408831861049546
+    },
+    {
+      "score": "comms_category",
+      "direction": "B_to_A",
+      "kind": "raw",
+      "b_pp": 0.2974608367099288,
+      "se_pp": 0.08710579234428997,
+      "p": 0.0006646506919908374,
+      "ci95_pp": [
+        0.1265213298818703,
+        0.46840034353798726
+      ],
+      "n": 4738,
+      "firms": 962,
+      "holm_p_across_12_comparisons": 0.005317205535926699
+    },
+    {
+      "score": "comms_category",
+      "direction": "B_to_A",
+      "kind": "industry_year",
+      "b_pp": 0.30188280381534666,
+      "se_pp": 0.07463544783045045,
+      "p": 5.6574600202934036e-05,
+      "ci95_pp": [
+        0.15541554485739725,
+        0.4483500627732961
+      ],
+      "n": 4738,
+      "firms": 962,
+      "holm_p_across_12_comparisons": 0.0005657460020293403
+    },
+    {
+      "score": "comms_category",
+      "direction": "B_to_A",
+      "kind": "company_year",
+      "b_pp": 0.015473347666495508,
+      "se_pp": 0.10438876826636058,
+      "p": 0.8821938601011455,
+      "ci95_pp": [
+        -0.18938288617970167,
+        0.2203295815126927
+      ],
+      "n": 4738,
+      "firms": 962,
+      "holm_p_across_12_comparisons": 1.0
+    }
+  ],
+  "no_new_api_calls": true,
+  "not_lourie_validation": "This tests agreement across separate applicants, not whether ghost scores attenuate corporate growth."
+}

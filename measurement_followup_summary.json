@@ -1,0 +1,135 @@
+{
+  "audit_scope": "Classification content, entity matching, date alignment, geography, fixed effects and influence; all existing primary results preserved.",
+  "original_measurement_sample_sga_reviews": 310920,
+  "flagged_sga_reviews": 17429,
+  "disjoint_flag_categories": {
+    "direct_unavailability": 2015,
+    "communication_only": 14594,
+    "internal_hire_without_direct_unavailability": 548,
+    "weak_process_only": 272
+  },
+  "communication_only_fraction": 0.8373400654082277,
+  "supplied_interview_date_share": 0.6275762253956002,
+  "review_delay_from_supplied_interview_month_quantiles_days": {
+    "0.0": -22.0,
+    "0.25": 36.0,
+    "0.5": 106.0,
+    "0.75": 468.0,
+    "0.9": 1125.0,
+    "0.99": 1663.0,
+    "1.0": 1830.0
+  },
+  "date_precision": "Almost every supplied interview date is the first day of the month. Delay figures are approximate, and month-midpoint sensitivities are retained.",
+  "sparse_company_years_below_ten_reviews": 2206,
+  "literal_negation_candidate_records": 49,
+  "confirmed_negation_false_positives_in_fixed_targeted_inspection": 5,
+  "text_inspection_limit": "Assistant reading of a fixed stratified sample; not independent human accuracy validation. Negation candidates include genuine ghosting accounts. Removing all candidates is a deliberately conservative bound.",
+  "company_matching": "Auxiliary CIK disagreements affect 5335 of 310920 main-sample reviews. Largest examples have corroborated issuer names/GVKEYs and SEC financial CIKs; an auxiliary-ID mismatch is not automatically a wrong company link. Excluding conflicts and matching root-employer posting/review scope did not establish attenuation. Current-root scope is not dated historical ownership.",
+  "influence": {
+    "main_sga_interaction": 0.04631228789123646,
+    "firms_omitted_one_at_a_time": 1025,
+    "minimum_after_single_omission": 0.03700949510994526,
+    "maximum_after_single_omission": 0.055584970141750845,
+    "negative_after_omission": 0,
+    "independent_omission_refits": 28,
+    "interpretation": "Fixed full-control model; no recalculation of clipping or ranks; coefficients only, not significance-selected deletion. All firms retained in primary."
+  },
+  "signal_accounting": [
+    {
+      "source": "smoothed",
+      "full_interaction_coefficient": 0.04631228789122961,
+      "additive_covariance_contributions": {
+        "direct": -0.0005968066215339676,
+        "comms": 0.056781545403047654,
+        "internal": 0.00039986899794867004,
+        "weak": 0.0031937819954220028,
+        "smoothing_prior": -0.013466101883644615
+      },
+      "interpretation": "Exact Frisch-Waugh-Lovell covariance accounting, conditional on the full model nuisance terms. Contributions are descriptive algebra, not causal effects or separately estimated component slopes."
+    },
+    {
+      "source": "raw",
+      "full_interaction_coefficient": 0.014436963789789476,
+      "additive_covariance_contributions": {
+        "direct": -0.004841667519851099,
+        "comms": 0.016070766275966354,
+        "internal": 0.0012441694602294835,
+        "weak": 0.0019636955734324986
+      },
+      "interpretation": "Exact Frisch-Waugh-Lovell covariance accounting, conditional on the full model nuisance terms. Contributions are descriptive algebra, not causal effects or separately estimated component slopes."
+    }
+  ],
+  "new_models": 288,
+  "interaction_terms": 148,
+  "negative_interactions_significant_at_five_percent": 0,
+  "broader_review_confirmation": [
+    {
+      "score": "ghost_flag",
+      "direction": "A_to_B",
+      "company_years": 4739,
+      "firms": 953,
+      "heldout_no_offer_reviews": 139551,
+      "higher_group_rate": 0.01503468835685762,
+      "lower_group_rate": 0.011900011735711771,
+      "gap_pp": 0.31346766211458493,
+      "company_bootstrap_ci95_pp": [
+        0.13893086558718884,
+        0.4736904542987993
+      ],
+      "training_median": 0.06060606060606061
+    },
+    {
+      "score": "ghost_flag",
+      "direction": "B_to_A",
+      "company_years": 4738,
+      "firms": 962,
+      "heldout_no_offer_reviews": 140322,
+      "higher_group_rate": 0.015197398978169996,
+      "lower_group_rate": 0.010832745644357608,
+      "gap_pp": 0.4364653333812387,
+      "company_bootstrap_ci95_pp": [
+        0.2564083440393016,
+        0.6066091407206623
+      ],
+      "training_median": 0.06060606060606061
+    },
+    {
+      "score": "comms_category",
+      "direction": "A_to_B",
+      "company_years": 4739,
+      "firms": 953,
+      "heldout_no_offer_reviews": 139551,
+      "higher_group_rate": 0.013999712457767235,
+      "lower_group_rate": 0.012537690538334109,
+      "gap_pp": 0.1462021919433126,
+      "company_bootstrap_ci95_pp": [
+        -0.04331356379653706,
+        0.3161871763457957
+      ],
+      "training_median": 0.05142857142857143
+    },
+    {
+      "score": "comms_category",
+      "direction": "B_to_A",
+      "company_years": 4738,
+      "firms": 962,
+      "heldout_no_offer_reviews": 140322,
+      "higher_group_rate": 0.014293616945341637,
+      "lower_group_rate": 0.01131900857824235,
+      "gap_pp": 0.2974608367099287,
+      "company_bootstrap_ci95_pp": [
+        0.11977132732424588,
+        0.4607687026567885
+      ],
+      "training_median": 0.05128205128205128
+    }
+  ],
+  "no_new_api_calls": true,
+  "original_primary_measure_and_results_unchanged": true,
+  "interpretation": "The measure has evidence of consistency across separate applicant accounts. It does not currently establish the expected corporate-growth attenuation. Communication reports dominate its content, and interview/publication timing is imperfect. These facts explain the conceptual mismatch but do not identify a causal reason for the null interaction.",
+  "sources": {
+    "sprouts_sec_identifier": "https://www.sec.gov/Archives/edgar/data/1575515/000157551526000060/R1.htm",
+    "pinterest_sec_identifier": "https://www.sec.gov/Archives/edgar/data/1506293/000150629326000153/pins-20260930.htm",
+    "posting_benchmark": "https://doi.org/10.1287/mnsc.2019.3450"
+  }
+}

@@ -114,7 +114,19 @@
     ],
     "additional_tests": "cross_review_additional_results.json",
     "limitations": "Convergent evidence in automated review reports, not independent vacancy ground truth; adjusted associations remain inconclusive.",
-    "lourie_role": "Supplementary economic benchmark; actual-posting tests completed and audited, with three broad baseline relationships reproduced and primary original-review interactions inconclusive."
+    "lourie_role": "Supplementary economic benchmark; actual-posting tests completed and audited, with three broad baseline relationships reproduced and primary original-review interactions inconclusive.",
+    "broader_review_confirmation": {
+      "results": "broader_review_agreement_results.json",
+      "higher_rates": [
+        0.01503468835685762,
+        0.015197398978169996
+      ],
+      "lower_rates": [
+        0.011900011735711771,
+        0.010832745644357608
+      ],
+      "finding": "Higher scores identify direct unavailability reports in separate reviews after industry/year adjustment and 12-test correction; within-company changes remain unclear. Not independent vacancy ground truth."
+    }
   },
   "ranked_interview_operating_check": {
     "status": "COMPLETED exploratory Lourie-motivated adaptation; not exact posting replication.",
@@ -189,5 +201,14 @@
     "classification": "loujaina_batch_summary.json",
     "plain_finding": "The main tests do not establish the expected weakening of the posting-to-growth relationship at higher ghost scores.",
     "original_review_tables_preserved": true
+  },
+  "measurement_followup": {
+    "status": "Completed exploratory audit",
+    "model_fits": 288,
+    "negative_significant_interactions": 0,
+    "results": "measurement_followup_results.json",
+    "summary": "measurement_followup_summary.json",
+    "methods": "measurement_followup_methods.json",
+    "additional_api_cost_usd": 0
   }
 }

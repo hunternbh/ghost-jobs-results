@@ -1,0 +1,426 @@
+{
+  "audit_plan": {
+    "purpose": "Explain the lack of posting-by-review attenuation through data-quality and economically motivated diagnostics; do not alter the primary model to obtain significance.",
+    "frozen_primary": "Completed 80-model Loujaina Batch results and original 96 posting-audit models remain intact.",
+    "data_checks": [
+      "Independently compare direct RCID/GVKEY links to full financial SEC identifiers and legal names; quantify root versus child employer scope.",
+      "Review feature prevalence, literal-ghost negation and evidence-quote alignment; inspect fixed stratified narratives without financial outcomes.",
+      "Compare review publication date with interview date, and pre-year ghost scores with the corresponding first-quarter recruiting period.",
+      "Quantify sparse-year shrinkage, post/ghost correlation, offer-rate composition and influential firms."
+    ],
+    "diagnostics_not_confirmatory": "New component, timing, entity and fixed-effect specifications are exploratory; report all outcomes and all fitted models with family and full-set adjustment. No winner selected as a new main model.",
+    "scoring_variants": [
+      "Unchanged broad raw and past-EB shares",
+      "Direct unavailability reports only: features 1,2,3,4",
+      "Communication-only cases, distinct from direct and internal-hire cases",
+      "Internal-hire and weak-process cases separately",
+      "Broad share conditional on no offer, labelled a different denominator"
+    ],
+    "timing_variants": [
+      "Prior fiscal-year publication-date measure, unchanged primary",
+      "Prior fiscal-year actual interview date, information available by fiscal end",
+      "Following first fiscal-quarter publication-date measure, available by quarter end",
+      "Following first fiscal-quarter interview date, with report available by quarter end"
+    ],
+    "model_checks": [
+      "Yen full controls main",
+      "Raw and components on a common full-control sample",
+      "Firm/year effects",
+      "Industry-by-year effects",
+      "US-domiciled firms",
+      "Stricter verified company-scope matches",
+      "Full leave-one-firm-out SG&A coefficient audit, with ranks and clipping fixed"
+    ],
+    "api_calls_authorized_for_this_audit": 0
+  },
+  "model_menu": {
+    "status": "Fixed before first diagnostic estimates. Coverage/metadata inspection determined available fields; no diagnostic p-values inspected before this menu.",
+    "specifications": [
+      {
+        "spec": "anchor_eb",
+        "measure": "ghost_lou_eb",
+        "mask": "all",
+        "fe": "industry_year_additive",
+        "controls": "full",
+        "rank": "post_rank_direct",
+        "offer_control": false,
+        "anchor": true
+      },
+      {
+        "spec": "anchor_raw",
+        "measure": "annual_broad",
+        "mask": "all",
+        "fe": "industry_year_additive",
+        "controls": "full",
+        "rank": "post_rank_direct",
+        "offer_control": false,
+        "anchor": true
+      },
+      {
+        "spec": "direct",
+        "measure": "annual_direct",
+        "mask": "all",
+        "fe": "industry_year_additive",
+        "controls": "full",
+        "rank": "post_rank_direct",
+        "offer_control": false,
+        "anchor": false
+      },
+      {
+        "spec": "communication_only",
+        "measure": "annual_comms_category",
+        "mask": "all",
+        "fe": "industry_year_additive",
+        "controls": "full",
+        "rank": "post_rank_direct",
+        "offer_control": false,
+        "anchor": false
+      },
+      {
+        "spec": "internal_only",
+        "measure": "annual_internal_category",
+        "mask": "all",
+        "fe": "industry_year_additive",
+        "controls": "full",
+        "rank": "post_rank_direct",
+        "offer_control": false,
+        "anchor": false
+      },
+      {
+        "spec": "weak_only",
+        "measure": "annual_weak_category",
+        "mask": "all",
+        "fe": "industry_year_additive",
+        "controls": "full",
+        "rank": "post_rank_direct",
+        "offer_control": false,
+        "anchor": false
+      },
+      {
+        "spec": "direct_core",
+        "measure": "annual_direct",
+        "mask": "all",
+        "fe": "industry_year_additive",
+        "controls": "core",
+        "rank": "post_rank_direct",
+        "offer_control": false,
+        "anchor": false
+      },
+      {
+        "spec": "direct_min5",
+        "measure": "annual_direct",
+        "mask": "annual_min5",
+        "fe": "industry_year_additive",
+        "controls": "full",
+        "rank": "post_rank_direct",
+        "offer_control": false,
+        "anchor": false
+      },
+      {
+        "spec": "direct_min10",
+        "measure": "annual_direct",
+        "mask": "annual_min10",
+        "fe": "industry_year_additive",
+        "controls": "full",
+        "rank": "post_rank_direct",
+        "offer_control": false,
+        "anchor": false
+      },
+      {
+        "spec": "conditional_no_offer",
+        "measure": "annual_conditional_no_offer",
+        "mask": "nooffer_min5",
+        "fe": "industry_year_additive",
+        "controls": "full",
+        "rank": "post_rank_direct",
+        "offer_control": false,
+        "anchor": false
+      },
+      {
+        "spec": "offer_mix_adjusted",
+        "measure": "annual_broad",
+        "mask": "all",
+        "fe": "industry_year_additive",
+        "controls": "full",
+        "rank": "post_rank_direct",
+        "offer_control": true,
+        "anchor": false
+      },
+      {
+        "spec": "interview_date_annual",
+        "measure": "interview_annual_broad",
+        "mask": "all",
+        "fe": "industry_year_additive",
+        "controls": "full",
+        "rank": "post_rank_direct",
+        "offer_control": false,
+        "anchor": false
+      },
+      {
+        "spec": "interview_date_direct",
+        "measure": "interview_annual_direct",
+        "mask": "all",
+        "fe": "industry_year_additive",
+        "controls": "full",
+        "rank": "post_rank_direct",
+        "offer_control": false,
+        "anchor": false
+      },
+      {
+        "spec": "first_quarter",
+        "measure": "quarter_broad",
+        "mask": "all",
+        "fe": "industry_year_additive",
+        "controls": "full",
+        "rank": "post_rank_direct",
+        "offer_control": false,
+        "anchor": false
+      },
+      {
+        "spec": "first_quarter_direct",
+        "measure": "quarter_direct",
+        "mask": "all",
+        "fe": "industry_year_additive",
+        "controls": "full",
+        "rank": "post_rank_direct",
+        "offer_control": false,
+        "anchor": false
+      },
+      {
+        "spec": "interview_quarter",
+        "measure": "interview_quarter_broad",
+        "mask": "all",
+        "fe": "industry_year_additive",
+        "controls": "full",
+        "rank": "post_rank_direct",
+        "offer_control": false,
+        "anchor": false
+      },
+      {
+        "spec": "interview_quarter_direct",
+        "measure": "interview_quarter_direct",
+        "mask": "all",
+        "fe": "industry_year_additive",
+        "controls": "full",
+        "rank": "post_rank_direct",
+        "offer_control": false,
+        "anchor": false
+      },
+      {
+        "spec": "dated_reviews_only",
+        "measure": "annual_dated_broad",
+        "mask": "all",
+        "fe": "industry_year_additive",
+        "controls": "full",
+        "rank": "post_rank_direct",
+        "offer_control": false,
+        "anchor": false
+      },
+      {
+        "spec": "recent_reviews",
+        "measure": "annual_recent_broad",
+        "mask": "all",
+        "fe": "industry_year_additive",
+        "controls": "full",
+        "rank": "post_rank_direct",
+        "offer_control": false,
+        "anchor": false
+      },
+      {
+        "spec": "recent_direct",
+        "measure": "annual_recent_direct",
+        "mask": "all",
+        "fe": "industry_year_additive",
+        "controls": "full",
+        "rank": "post_rank_direct",
+        "offer_control": false,
+        "anchor": false
+      },
+      {
+        "spec": "midmonth_annual",
+        "measure": "interview_mid_annual_broad",
+        "mask": "all",
+        "fe": "industry_year_additive",
+        "controls": "full",
+        "rank": "post_rank_direct",
+        "offer_control": false,
+        "anchor": false
+      },
+      {
+        "spec": "midmonth_quarter",
+        "measure": "interview_mid_quarter_broad",
+        "mask": "all",
+        "fe": "industry_year_additive",
+        "controls": "full",
+        "rank": "post_rank_direct",
+        "offer_control": false,
+        "anchor": false
+      },
+      {
+        "spec": "quarter_min5",
+        "measure": "quarter_broad",
+        "mask": "quarter_min5",
+        "fe": "industry_year_additive",
+        "controls": "full",
+        "rank": "post_rank_direct",
+        "offer_control": false,
+        "anchor": false
+      },
+      {
+        "spec": "quarter_direct_min5",
+        "measure": "quarter_direct",
+        "mask": "quarter_min5",
+        "fe": "industry_year_additive",
+        "controls": "full",
+        "rank": "post_rank_direct",
+        "offer_control": false,
+        "anchor": false
+      },
+      {
+        "spec": "interview_quarter_min5",
+        "measure": "interview_quarter_broad",
+        "mask": "interview_quarter_min5",
+        "fe": "industry_year_additive",
+        "controls": "full",
+        "rank": "post_rank_direct",
+        "offer_control": false,
+        "anchor": false
+      },
+      {
+        "spec": "company_year_effects",
+        "measure": "ghost_lou_eb",
+        "mask": "all",
+        "fe": "company_year",
+        "controls": "full",
+        "rank": "post_rank_direct",
+        "offer_control": false,
+        "anchor": false
+      },
+      {
+        "spec": "industry_by_year_effects",
+        "measure": "ghost_lou_eb",
+        "mask": "all",
+        "fe": "industry_by_year",
+        "controls": "full",
+        "rank": "post_rank_direct",
+        "offer_control": false,
+        "anchor": false
+      },
+      {
+        "spec": "us_domicile",
+        "measure": "ghost_lou_eb",
+        "mask": "us_domicile",
+        "fe": "industry_year_additive",
+        "controls": "full",
+        "rank": "post_rank_direct",
+        "offer_control": false,
+        "anchor": false
+      },
+      {
+        "spec": "us_review_locations",
+        "measure": "us_reviews_broad",
+        "mask": "us_review_min5",
+        "fe": "industry_year_additive",
+        "controls": "full",
+        "rank": "post_rank_direct",
+        "offer_control": false,
+        "anchor": false
+      },
+      {
+        "spec": "explicit_us_country_reviews",
+        "measure": "us_explicit_broad",
+        "mask": "explicit_us_min5",
+        "fe": "industry_year_additive",
+        "controls": "full",
+        "rank": "post_rank_direct",
+        "offer_control": false,
+        "anchor": false
+      },
+      {
+        "spec": "no_conflicting_cik",
+        "measure": "strict_issuer_broad",
+        "mask": "all",
+        "fe": "industry_year_additive",
+        "controls": "full",
+        "rank": "post_rank_direct",
+        "offer_control": false,
+        "anchor": false
+      },
+      {
+        "spec": "name_or_cik_corroborated",
+        "measure": "verified_names_broad",
+        "mask": "all",
+        "fe": "industry_year_additive",
+        "controls": "full",
+        "rank": "post_rank_direct",
+        "offer_control": false,
+        "anchor": false
+      },
+      {
+        "spec": "root_reviews_same_postings",
+        "measure": "strict_root_broad",
+        "mask": "all",
+        "fe": "industry_year_additive",
+        "controls": "full",
+        "rank": "post_rank_direct",
+        "offer_control": false,
+        "anchor": false
+      },
+      {
+        "spec": "root_reviews_root_postings",
+        "measure": "strict_root_broad",
+        "mask": "all",
+        "fe": "industry_year_additive",
+        "controls": "full",
+        "rank": "root_post_rank",
+        "offer_control": false,
+        "anchor": false
+      },
+      {
+        "spec": "negation_worst_case_bound",
+        "measure": "annual_negation_lower_bound",
+        "mask": "all",
+        "fe": "industry_year_additive",
+        "controls": "full",
+        "rank": "post_rank_direct",
+        "offer_control": false,
+        "anchor": false
+      }
+    ],
+    "planned_pair_fits": 280,
+    "joint_component_fits": 8,
+    "adjustment": "Four outcomes within each term/spec, and all non-anchor interaction terms in this follow-up family. Original and Batch primary estimates remain unchanged.",
+    "timing_interpretation": "Interview dates are month-precision in almost all available records. Midmonth is a boundary sensitivity. Following-first-quarter scores use reports available by that quarter end and are a timing adaptation, not the original lagged-score specification."
+  },
+  "separate_review_plan": {
+    "purpose": "Broader-data convergent check: can one set of reviews identify direct unavailability reports by different applicants? This is distinct from Lourie attenuation and not a replacement for its results.",
+    "data": "Same fully classified company-years and existing labels; no additional API calls.",
+    "split": "One fixed partition, seed 20261101; SHA256 of seed and normalized-text hash. Identical text stays in one group globally, including across companies. Both A-to-B and B-to-A directions retained.",
+    "scores": [
+      "Original broad raw share among all training reviews",
+      "Communication-only disjoint category share among all training reviews"
+    ],
+    "evaluation": "Company-years with >=10 training reviews and >=5 heldout no-offer reviews. Target is direct unavailable-role reports, features 1,2,3,4, in heldout no-offer reviews. Higher/lower groups split at training-score median within eligible company-years, never selected by target outcomes.",
+    "models": [
+      "Review-weighted unadjusted group gap",
+      "Year/industry-adjusted gap",
+      "Within-company/year gap"
+    ],
+    "uncertainty": "Company-clustered t inference; Holm across all 12 model comparisons. 1999 whole-company bootstrap draws for the raw gaps, fixed score-group assignments.",
+    "limits": "Automated common-platform narrative consistency, not independent vacancy status or classification accuracy. A single partition in an already explored dataset is not untouched confirmation."
+  },
+  "verification": {
+    "model_fits": 288,
+    "anchor_matches_original_models": 16,
+    "independent_interaction_refits": 40,
+    "root_posting_counts_are_verified_subsets": true,
+    "no_future_review_information_in_timing_variants": true,
+    "globally_identical_text_not_split_across_groups": true,
+    "independent_reviews_agreement_models": 12,
+    "all_288_models_retained": true,
+    "negative_interactions_at_five_percent": 0,
+    "new_api_calls": 0
+  },
+  "matching_notes": "Auxiliary CIK disagreements affect 5335 of 310920 main-sample reviews. Largest examples have corroborated issuer names/GVKEYs and SEC financial CIKs; an auxiliary-ID mismatch is not automatically a wrong company link. Excluding conflicts and matching root-employer posting/review scope did not establish attenuation. Current-root scope is not dated historical ownership.",
+  "interpretation": "The measure has evidence of consistency across separate applicant accounts. It does not currently establish the expected corporate-growth attenuation. Communication reports dominate its content, and interview/publication timing is imperfect. These facts explain the conceptual mismatch but do not identify a causal reason for the null interaction."
+}
