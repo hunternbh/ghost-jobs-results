@@ -1,0 +1,33 @@
+{
+  "model": "gpt-6-luna",
+  "processing": "Batch",
+  "new_unique_narratives": 196361,
+  "contradictory_cached_texts_revisited": 10,
+  "usage_based_additional_cost_upper_usd": 6.49639175,
+  "new_budget_usd": 15,
+  "all_previous_resolved_labels_unchanged": true,
+  "sample": {
+    "eligible_review_records": 730155,
+    "eligible_firms": 3678,
+    "eligible_company_years": 19280,
+    "reviews_with_resolved_flags": 730133,
+    "reviews_with_missing_feature_extraction": 0,
+    "reviews_with_contradictory_scored_features": 22,
+    "complete_company_years": 19258,
+    "complete_company_year_firms": 3678,
+    "reviews_in_complete_cohorts": 721301,
+    "full_control_sga_rows": 5172,
+    "full_control_sga_firms": 1025,
+    "core_control_sga_rows": 15028,
+    "core_control_sga_firms": 2930,
+    "unique_new_texts_completed": 196361,
+    "contradictory_prior_texts_revisited": 10,
+    "combined_unique_text_features": 367605,
+    "old_nonmissing_flags_unchanged": true
+  },
+  "plain_finding": "The main tests do not establish the expected weakening of the posting-to-growth relationship at higher ghost scores.",
+  "independent_refits": 32,
+  "source_cache_preserved": true,
+  "prompt_hash": "0a8c4de9c3b032c8e8013bfc717a2271ae425a88bc993455f4c581cf0ec2301d",
+  "baseline_finding": "Within this same review-linked sample, more job advertisements predict growth in employment, operating spending and sales, surviving adjustment across the four outcomes."
+}

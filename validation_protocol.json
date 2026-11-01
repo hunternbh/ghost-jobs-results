@@ -35,7 +35,7 @@
     "standard_errors": "clustered by firm"
   },
   "our_proposed_extension": {
-    "status": "Broad employment, SG&A and revenue posting benchmarks reproduced after company/sample/timing audit; primary original-review interactions remain inconclusive. Posting-to-hiring and joint comparison await worker-start records.",
+    "status": "Broad posting benchmarks and both original-scraped and Revelio-review posting interactions completed; worker-start data still needed for the posting-to-hiring measure and joint comparison.",
     "measures": {
       "G_B": "Broader ghost-intensity proxy based on Revelio postings and subsequent hiring (research-plan label HJPR)",
       "G_I": "Interview-stage perceived ghost-intensity proxy (research-plan label HJPR_Int)"
@@ -180,5 +180,14 @@
     "original_review_measure_unchanged": true,
     "broader_hiring_measure_available": false,
     "plain_summary": "Employment, SG&A and revenue baseline relationships reproduced in broad later-period Indeed sample; earnings not reproduced. Primary original-review interactions remain inconclusive. Coverage-subset earnings interaction is conditional supplementary evidence, not primary validation."
+  },
+  "loujaina_posting_tests": {
+    "status": "Completed after user-authorized Luna Batch classification",
+    "fits": 80,
+    "results": "loujaina_posting_results.json",
+    "methods": "loujaina_posting_methods.json",
+    "classification": "loujaina_batch_summary.json",
+    "plain_finding": "The main tests do not establish the expected weakening of the posting-to-growth relationship at higher ghost scores.",
+    "original_review_tables_preserved": true
   }
 }

@@ -1,0 +1,3690 @@
+[
+  {
+    "spec": "loujaina_eb_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "all",
+    "outcome": "employment",
+    "kind": "baseline",
+    "n": 976,
+    "firms": 146,
+    "review_count": 155839,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 145,
+    "terms": {
+      "post_rank": {
+        "b": 9.669063647824048e-05,
+        "se": 6.421110718954684e-05,
+        "p": 0.13428767113610926,
+        "ci95": [
+          -3.0220020353786695e-05,
+          0.00022360129331026765
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 0.537150684544437
+  },
+  {
+    "spec": "loujaina_eb_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "all",
+    "outcome": "employment",
+    "kind": "interaction",
+    "n": 976,
+    "firms": 146,
+    "review_count": 155839,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 145,
+    "terms": {
+      "post_rank": {
+        "b": 8.047160188914463e-05,
+        "se": 0.00012637436588782336,
+        "p": 0.5252776645887306,
+        "ci95": [
+          -0.00016930222204151508,
+          0.00033024542581980434
+        ]
+      },
+      "ghost_score": {
+        "b": 0.0002539268507080983,
+        "se": 0.0006465534611211321,
+        "p": 0.6950889153341159,
+        "ci95": [
+          -0.0010239599202781736,
+          0.0015318136216943704
+        ]
+      },
+      "post_x_ghost": {
+        "b": 0.00021301415767815455,
+        "se": 0.0010580412716016075,
+        "p": 0.8407236528233445,
+        "ci95": [
+          -0.0018781616312391353,
+          0.0023041899465954443
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 1.0,
+    "holm_p_across_40_interaction_tests": 1.0
+  },
+  {
+    "spec": "loujaina_eb_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "all",
+    "outcome": "sga",
+    "kind": "baseline",
+    "n": 976,
+    "firms": 146,
+    "review_count": 155839,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 145,
+    "terms": {
+      "post_rank": {
+        "b": 0.007392468643476622,
+        "se": 0.005293407125184642,
+        "p": 0.16468519013715197,
+        "ci95": [
+          -0.0030697364880037884,
+          0.01785467377495703
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 0.537150684544437
+  },
+  {
+    "spec": "loujaina_eb_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "all",
+    "outcome": "sga",
+    "kind": "interaction",
+    "n": 976,
+    "firms": 146,
+    "review_count": 155839,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 145,
+    "terms": {
+      "post_rank": {
+        "b": 0.002401193357368419,
+        "se": 0.009086991116953705,
+        "p": 0.7919662279242103,
+        "ci95": [
+          -0.015558877131295112,
+          0.02036126384603195
+        ]
+      },
+      "ghost_score": {
+        "b": 0.032250028227450676,
+        "se": 0.05603798789568316,
+        "p": 0.5658432231978502,
+        "ci95": [
+          -0.07850678881968001,
+          0.14300684527458135
+        ]
+      },
+      "post_x_ghost": {
+        "b": 0.06689600327709208,
+        "se": 0.08862544546018054,
+        "p": 0.45158294554842016,
+        "ci95": [
+          -0.10826860589528389,
+          0.24206061244946805
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 1.0,
+    "holm_p_across_40_interaction_tests": 1.0
+  },
+  {
+    "spec": "loujaina_eb_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "all",
+    "outcome": "revenue",
+    "kind": "baseline",
+    "n": 976,
+    "firms": 146,
+    "review_count": 155839,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 145,
+    "terms": {
+      "post_rank": {
+        "b": -9.657235641922352e-05,
+        "se": 0.013840713719032475,
+        "p": 0.9944424666385803,
+        "ci95": [
+          -0.027452183340065578,
+          0.02725903862722713
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "loujaina_eb_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "all",
+    "outcome": "revenue",
+    "kind": "interaction",
+    "n": 976,
+    "firms": 146,
+    "review_count": 155839,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 145,
+    "terms": {
+      "post_rank": {
+        "b": -0.02014897188662786,
+        "se": 0.024337850324697704,
+        "p": 0.40909543069494614,
+        "ci95": [
+          -0.0682517488948053,
+          0.027953805121549585
+        ]
+      },
+      "ghost_score": {
+        "b": -0.021080220700470085,
+        "se": 0.11345033484267147,
+        "p": 0.852853345562138,
+        "ci95": [
+          -0.24531021988417465,
+          0.20314977848323448
+        ]
+      },
+      "post_x_ghost": {
+        "b": 0.2731611794602045,
+        "se": 0.2071041926473553,
+        "p": 0.18926325056567483,
+        "ci95": [
+          -0.13617188255903095,
+          0.6824942414794399
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 0.7570530022626993,
+    "holm_p_across_40_interaction_tests": 1.0
+  },
+  {
+    "spec": "loujaina_eb_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "all",
+    "outcome": "earnings",
+    "kind": "baseline",
+    "n": 976,
+    "firms": 146,
+    "review_count": 155839,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 145,
+    "terms": {
+      "post_rank": {
+        "b": 0.0005638602364513949,
+        "se": 0.0071461416736089255,
+        "p": 0.9372176488798075,
+        "ci95": [
+          -0.013560199810282572,
+          0.01468792028318536
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "loujaina_eb_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "all",
+    "outcome": "earnings",
+    "kind": "interaction",
+    "n": 976,
+    "firms": 146,
+    "review_count": 155839,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 145,
+    "terms": {
+      "post_rank": {
+        "b": -0.005736727574757456,
+        "se": 0.009450544380995858,
+        "p": 0.5447829078688206,
+        "ci95": [
+          -0.02441534638866351,
+          0.012941891239148599
+        ]
+      },
+      "ghost_score": {
+        "b": -0.03525702152395294,
+        "se": 0.055510516038255325,
+        "p": 0.5263372621416101,
+        "ci95": [
+          -0.14497131177445063,
+          0.07445726872654476
+        ]
+      },
+      "post_x_ghost": {
+        "b": 0.08666661041803286,
+        "se": 0.09094350178057554,
+        "p": 0.3421901642944043,
+        "ci95": [
+          -0.09307954333550947,
+          0.2664127641715752
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 1.0,
+    "holm_p_across_40_interaction_tests": 1.0
+  },
+  {
+    "spec": "loujaina_eb_core",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "all",
+    "outcome": "employment",
+    "kind": "baseline",
+    "n": 2101,
+    "firms": 290,
+    "review_count": 269137,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 289,
+    "terms": {
+      "post_rank": {
+        "b": 8.580692668251754e-05,
+        "se": 5.2039843838506755e-05,
+        "p": 0.10026087957434171,
+        "ci95": [
+          -1.6618228863082547e-05,
+          0.00018823208222811764
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 0.40104351829736684
+  },
+  {
+    "spec": "loujaina_eb_core",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "all",
+    "outcome": "employment",
+    "kind": "interaction",
+    "n": 2101,
+    "firms": 290,
+    "review_count": 269137,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 289,
+    "terms": {
+      "post_rank": {
+        "b": 0.00011836040836010094,
+        "se": 7.787846557942238e-05,
+        "p": 0.12965219070514802,
+        "ci95": [
+          -3.4920488780536686e-05,
+          0.00027164130550073857
+        ]
+      },
+      "ghost_score": {
+        "b": 0.0001762665378744353,
+        "se": 0.0004875869731071278,
+        "p": 0.7179839604226583,
+        "ci95": [
+          -0.0007834052804631909,
+          0.0011359383562120615
+        ]
+      },
+      "post_x_ghost": {
+        "b": -0.000467438998834019,
+        "se": 0.0009002216386948444,
+        "p": 0.6039846750667742,
+        "ci95": [
+          -0.0022392610214936512,
+          0.0013043830238256135
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 1.0,
+    "holm_p_across_40_interaction_tests": 1.0
+  },
+  {
+    "spec": "loujaina_eb_core",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "all",
+    "outcome": "sga",
+    "kind": "baseline",
+    "n": 2100,
+    "firms": 290,
+    "review_count": 269131,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 289,
+    "terms": {
+      "post_rank": {
+        "b": 0.0039471783797643,
+        "se": 0.0033779564099333925,
+        "p": 0.24356379665963035,
+        "ci95": [
+          -0.0027013371651204024,
+          0.010595693924649003
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 0.5186774591743315
+  },
+  {
+    "spec": "loujaina_eb_core",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "all",
+    "outcome": "sga",
+    "kind": "interaction",
+    "n": 2100,
+    "firms": 290,
+    "review_count": 269131,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 289,
+    "terms": {
+      "post_rank": {
+        "b": -0.0022361532541709255,
+        "se": 0.005377433533730272,
+        "p": 0.6778355215146358,
+        "ci95": [
+          -0.012820052541756746,
+          0.008347746033414895
+        ]
+      },
+      "ghost_score": {
+        "b": 0.009887642800301947,
+        "se": 0.032375316224387524,
+        "p": 0.7602761714571125,
+        "ci95": [
+          -0.053833662944032,
+          0.0736089485446359
+        ]
+      },
+      "post_x_ghost": {
+        "b": 0.08937759583461552,
+        "se": 0.05695609150488059,
+        "p": 0.11768697417575719,
+        "ci95": [
+          -0.02272375000647571,
+          0.20147894167570674
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 0.35306092252727156,
+    "holm_p_across_40_interaction_tests": 1.0
+  },
+  {
+    "spec": "loujaina_eb_core",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "all",
+    "outcome": "revenue",
+    "kind": "baseline",
+    "n": 2101,
+    "firms": 290,
+    "review_count": 269137,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 289,
+    "terms": {
+      "post_rank": {
+        "b": 0.014880564279107986,
+        "se": 0.0108907717119433,
+        "p": 0.17289248639144383,
+        "ci95": [
+          -0.006554722691949573,
+          0.036315851250165544
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 0.5186774591743315
+  },
+  {
+    "spec": "loujaina_eb_core",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "all",
+    "outcome": "revenue",
+    "kind": "interaction",
+    "n": 2101,
+    "firms": 290,
+    "review_count": 269137,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 289,
+    "terms": {
+      "post_rank": {
+        "b": 0.007580168376879296,
+        "se": 0.015950314480475656,
+        "p": 0.6349775292323985,
+        "ci95": [
+          -0.023813343231914086,
+          0.03897367998567268
+        ]
+      },
+      "ghost_score": {
+        "b": -0.03549133639767989,
+        "se": 0.08351811381612255,
+        "p": 0.6711866037406483,
+        "ci95": [
+          -0.19987222549177264,
+          0.12888955269641283
+        ]
+      },
+      "post_x_ghost": {
+        "b": 0.10489579343020579,
+        "se": 0.15571830007423157,
+        "p": 0.5010879101651924,
+        "ci95": [
+          -0.20158996690172332,
+          0.41138155376213487
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 1.0,
+    "holm_p_across_40_interaction_tests": 1.0
+  },
+  {
+    "spec": "loujaina_eb_core",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "all",
+    "outcome": "earnings",
+    "kind": "baseline",
+    "n": 2101,
+    "firms": 290,
+    "review_count": 269137,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 289,
+    "terms": {
+      "post_rank": {
+        "b": 0.0017209227038954816,
+        "se": 0.004569490378005154,
+        "p": 0.7067386834940342,
+        "ci95": [
+          -0.007272777665070319,
+          0.010714623072861282
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 0.7067386834940342
+  },
+  {
+    "spec": "loujaina_eb_core",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "all",
+    "outcome": "earnings",
+    "kind": "interaction",
+    "n": 2101,
+    "firms": 290,
+    "review_count": 269137,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 289,
+    "terms": {
+      "post_rank": {
+        "b": -0.005563155236733811,
+        "se": 0.005721197218868442,
+        "p": 0.331676636657051,
+        "ci95": [
+          -0.016823652421701335,
+          0.005697341948233713
+        ]
+      },
+      "ghost_score": {
+        "b": -0.09309620907165327,
+        "se": 0.037303768577386286,
+        "p": 0.013131191279470057,
+        "ci95": [
+          -0.16651772645423685,
+          -0.01967469168906967
+        ]
+      },
+      "post_x_ghost": {
+        "b": 0.10368117736783487,
+        "se": 0.0565026222921597,
+        "p": 0.06753634700185163,
+        "ci95": [
+          -0.007527647450475933,
+          0.21489000218614568
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 0.2701453880074065,
+    "holm_p_across_40_interaction_tests": 1.0
+  },
+  {
+    "spec": "loujaina_raw_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_raw",
+    "mask": "all",
+    "outcome": "employment",
+    "kind": "baseline",
+    "n": 976,
+    "firms": 146,
+    "review_count": 155839,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 145,
+    "terms": {
+      "post_rank": {
+        "b": 9.669063647824048e-05,
+        "se": 6.421110718954684e-05,
+        "p": 0.13428767113610926,
+        "ci95": [
+          -3.0220020353786695e-05,
+          0.00022360129331026765
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 0.537150684544437
+  },
+  {
+    "spec": "loujaina_raw_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_raw",
+    "mask": "all",
+    "outcome": "employment",
+    "kind": "interaction",
+    "n": 976,
+    "firms": 146,
+    "review_count": 155839,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 145,
+    "terms": {
+      "post_rank": {
+        "b": 7.847060770543097e-05,
+        "se": 0.00011224658025678329,
+        "p": 0.4856148408432489,
+        "ci95": [
+          -0.00014338021921593168,
+          0.0003003214346267936
+        ]
+      },
+      "ghost_score": {
+        "b": 9.496882888002079e-05,
+        "se": 0.000530221910101758,
+        "p": 0.8581002038387513,
+        "ci95": [
+          -0.0009529933356580904,
+          0.001142930993418132
+        ]
+      },
+      "post_x_ghost": {
+        "b": 0.0002289318969111261,
+        "se": 0.0008452436179859846,
+        "p": 0.7868936990467676,
+        "ci95": [
+          -0.0014416579346117184,
+          0.0018995217284339704
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 1.0,
+    "holm_p_across_40_interaction_tests": 1.0
+  },
+  {
+    "spec": "loujaina_raw_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_raw",
+    "mask": "all",
+    "outcome": "sga",
+    "kind": "baseline",
+    "n": 976,
+    "firms": 146,
+    "review_count": 155839,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 145,
+    "terms": {
+      "post_rank": {
+        "b": 0.007392468643476622,
+        "se": 0.005293407125184642,
+        "p": 0.16468519013715197,
+        "ci95": [
+          -0.0030697364880037884,
+          0.01785467377495703
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 0.537150684544437
+  },
+  {
+    "spec": "loujaina_raw_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_raw",
+    "mask": "all",
+    "outcome": "sga",
+    "kind": "interaction",
+    "n": 976,
+    "firms": 146,
+    "review_count": 155839,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 145,
+    "terms": {
+      "post_rank": {
+        "b": 0.005827076124353745,
+        "se": 0.008360921325663906,
+        "p": 0.48695502319338696,
+        "ci95": [
+          -0.010697946782176176,
+          0.022352099030883664
+        ]
+      },
+      "ghost_score": {
+        "b": 0.0177807043787457,
+        "se": 0.04265834605227424,
+        "p": 0.677429005194039,
+        "ci95": [
+          -0.06653179160237592,
+          0.10209320035986731
+        ]
+      },
+      "post_x_ghost": {
+        "b": 0.01929729822680262,
+        "se": 0.07214367595765828,
+        "p": 0.7894764173178113,
+        "ci95": [
+          -0.1232917600032016,
+          0.16188635645680685
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 1.0,
+    "holm_p_across_40_interaction_tests": 1.0
+  },
+  {
+    "spec": "loujaina_raw_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_raw",
+    "mask": "all",
+    "outcome": "revenue",
+    "kind": "baseline",
+    "n": 976,
+    "firms": 146,
+    "review_count": 155839,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 145,
+    "terms": {
+      "post_rank": {
+        "b": -9.657235641922352e-05,
+        "se": 0.013840713719032475,
+        "p": 0.9944424666385803,
+        "ci95": [
+          -0.027452183340065578,
+          0.02725903862722713
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "loujaina_raw_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_raw",
+    "mask": "all",
+    "outcome": "revenue",
+    "kind": "interaction",
+    "n": 976,
+    "firms": 146,
+    "review_count": 155839,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 145,
+    "terms": {
+      "post_rank": {
+        "b": -0.015210082860471881,
+        "se": 0.022013968950969954,
+        "p": 0.49071496764228095,
+        "ci95": [
+          -0.05871980230512059,
+          0.028299636584176828
+        ]
+      },
+      "ghost_score": {
+        "b": -0.02551949248656897,
+        "se": 0.09242679853898327,
+        "p": 0.782860625521189,
+        "ci95": [
+          -0.20819732230248866,
+          0.1571583373293507
+        ]
+      },
+      "post_x_ghost": {
+        "b": 0.19392736295718918,
+        "se": 0.1652014039970731,
+        "p": 0.24236578681215015,
+        "ci95": [
+          -0.13258653173320986,
+          0.5204412576475882
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 0.9694631472486006,
+    "holm_p_across_40_interaction_tests": 1.0
+  },
+  {
+    "spec": "loujaina_raw_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_raw",
+    "mask": "all",
+    "outcome": "earnings",
+    "kind": "baseline",
+    "n": 976,
+    "firms": 146,
+    "review_count": 155839,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 145,
+    "terms": {
+      "post_rank": {
+        "b": 0.0005638602364513949,
+        "se": 0.0071461416736089255,
+        "p": 0.9372176488798075,
+        "ci95": [
+          -0.013560199810282572,
+          0.01468792028318536
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "loujaina_raw_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_raw",
+    "mask": "all",
+    "outcome": "earnings",
+    "kind": "interaction",
+    "n": 976,
+    "firms": 146,
+    "review_count": 155839,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 145,
+    "terms": {
+      "post_rank": {
+        "b": -0.005233447697599442,
+        "se": 0.008861727518405048,
+        "p": 0.5557296297537082,
+        "ci95": [
+          -0.02274829379279838,
+          0.012281398397599494
+        ]
+      },
+      "ghost_score": {
+        "b": -0.023887685981451297,
+        "se": 0.04066210096052736,
+        "p": 0.5578030987386429,
+        "ci95": [
+          -0.10425468426163076,
+          0.05647931229872816
+        ]
+      },
+      "post_x_ghost": {
+        "b": 0.07493208578193893,
+        "se": 0.07067732853553799,
+        "p": 0.29081653765158205,
+        "ci95": [
+          -0.06475879606347353,
+          0.2146229676273514
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 0.9694631472486006,
+    "holm_p_across_40_interaction_tests": 1.0
+  },
+  {
+    "spec": "loujaina_raw_core",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common"
+    ],
+    "ghost_measure": "ghost_lou_raw",
+    "mask": "all",
+    "outcome": "employment",
+    "kind": "baseline",
+    "n": 2101,
+    "firms": 290,
+    "review_count": 269137,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 289,
+    "terms": {
+      "post_rank": {
+        "b": 8.580692668251754e-05,
+        "se": 5.2039843838506755e-05,
+        "p": 0.10026087957434171,
+        "ci95": [
+          -1.6618228863082547e-05,
+          0.00018823208222811764
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 0.40104351829736684
+  },
+  {
+    "spec": "loujaina_raw_core",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common"
+    ],
+    "ghost_measure": "ghost_lou_raw",
+    "mask": "all",
+    "outcome": "employment",
+    "kind": "interaction",
+    "n": 2101,
+    "firms": 290,
+    "review_count": 269137,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 289,
+    "terms": {
+      "post_rank": {
+        "b": 8.585213566689915e-05,
+        "se": 6.968437138740507e-05,
+        "p": 0.21894522041659784,
+        "ci95": [
+          -5.130109255187971e-05,
+          0.00022300536388567802
+        ]
+      },
+      "ghost_score": {
+        "b": -0.00021507699270650882,
+        "se": 0.0003994492176920818,
+        "p": 0.590691997402743,
+        "ci95": [
+          -0.0010012755136253168,
+          0.0005711215282122992
+        ]
+      },
+      "post_x_ghost": {
+        "b": -2.4149136552177633e-06,
+        "se": 0.0006727909904856017,
+        "p": 0.9971385584483802,
+        "ci95": [
+          -0.0013266064708784503,
+          0.0013217766435680148
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 1.0,
+    "holm_p_across_40_interaction_tests": 1.0
+  },
+  {
+    "spec": "loujaina_raw_core",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common"
+    ],
+    "ghost_measure": "ghost_lou_raw",
+    "mask": "all",
+    "outcome": "sga",
+    "kind": "baseline",
+    "n": 2100,
+    "firms": 290,
+    "review_count": 269131,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 289,
+    "terms": {
+      "post_rank": {
+        "b": 0.0039471783797643,
+        "se": 0.0033779564099333925,
+        "p": 0.24356379665963035,
+        "ci95": [
+          -0.0027013371651204024,
+          0.010595693924649003
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 0.5186774591743315
+  },
+  {
+    "spec": "loujaina_raw_core",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common"
+    ],
+    "ghost_measure": "ghost_lou_raw",
+    "mask": "all",
+    "outcome": "sga",
+    "kind": "interaction",
+    "n": 2100,
+    "firms": 290,
+    "review_count": 269131,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 289,
+    "terms": {
+      "post_rank": {
+        "b": 0.00033373357261507516,
+        "se": 0.00458449720020859,
+        "p": 0.9420187201155291,
+        "ci95": [
+          -0.008689503320388002,
+          0.00935697046561815
+        ]
+      },
+      "ghost_score": {
+        "b": -0.006785425269372501,
+        "se": 0.021447620545422413,
+        "p": 0.7519486009649923,
+        "ci95": [
+          -0.048998770053132204,
+          0.0354279195143872
+        ]
+      },
+      "post_x_ghost": {
+        "b": 0.04807144527956328,
+        "se": 0.040531764171297856,
+        "p": 0.2365889332896401,
+        "ci95": [
+          -0.03170343380473735,
+          0.1278463243638639
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 0.7097667998689203,
+    "holm_p_across_40_interaction_tests": 1.0
+  },
+  {
+    "spec": "loujaina_raw_core",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common"
+    ],
+    "ghost_measure": "ghost_lou_raw",
+    "mask": "all",
+    "outcome": "revenue",
+    "kind": "baseline",
+    "n": 2101,
+    "firms": 290,
+    "review_count": 269137,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 289,
+    "terms": {
+      "post_rank": {
+        "b": 0.014880564279107986,
+        "se": 0.0108907717119433,
+        "p": 0.17289248639144383,
+        "ci95": [
+          -0.006554722691949573,
+          0.036315851250165544
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 0.5186774591743315
+  },
+  {
+    "spec": "loujaina_raw_core",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common"
+    ],
+    "ghost_measure": "ghost_lou_raw",
+    "mask": "all",
+    "outcome": "revenue",
+    "kind": "interaction",
+    "n": 2101,
+    "firms": 290,
+    "review_count": 269137,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 289,
+    "terms": {
+      "post_rank": {
+        "b": 0.009501122191133868,
+        "se": 0.014244622485620856,
+        "p": 0.5053061519522067,
+        "ci95": [
+          -0.018535235456397722,
+          0.03753747983866546
+        ]
+      },
+      "ghost_score": {
+        "b": -0.04322594604792161,
+        "se": 0.05914014744597158,
+        "p": 0.4654281293650479,
+        "ci95": [
+          -0.15962596484777003,
+          0.07317407275192682
+        ]
+      },
+      "post_x_ghost": {
+        "b": 0.0713898782261751,
+        "se": 0.11301349626207109,
+        "p": 0.5280865970129662,
+        "ci95": [
+          -0.1510440124157011,
+          0.2938237688680513
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 1.0,
+    "holm_p_across_40_interaction_tests": 1.0
+  },
+  {
+    "spec": "loujaina_raw_core",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common"
+    ],
+    "ghost_measure": "ghost_lou_raw",
+    "mask": "all",
+    "outcome": "earnings",
+    "kind": "baseline",
+    "n": 2101,
+    "firms": 290,
+    "review_count": 269137,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 289,
+    "terms": {
+      "post_rank": {
+        "b": 0.0017209227038954816,
+        "se": 0.004569490378005154,
+        "p": 0.7067386834940342,
+        "ci95": [
+          -0.007272777665070319,
+          0.010714623072861282
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 0.7067386834940342
+  },
+  {
+    "spec": "loujaina_raw_core",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common"
+    ],
+    "ghost_measure": "ghost_lou_raw",
+    "mask": "all",
+    "outcome": "earnings",
+    "kind": "interaction",
+    "n": 2101,
+    "firms": 290,
+    "review_count": 269137,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 289,
+    "terms": {
+      "post_rank": {
+        "b": -0.0037349135985699747,
+        "se": 0.0053176482573951975,
+        "p": 0.48301880123568564,
+        "ci95": [
+          -0.014201143120524685,
+          0.006731315923384737
+        ]
+      },
+      "ghost_score": {
+        "b": -0.060824032990195044,
+        "se": 0.024922206961079996,
+        "p": 0.015265296738260796,
+        "ci95": [
+          -0.10987608111796865,
+          -0.011771984862421446
+        ]
+      },
+      "post_x_ghost": {
+        "b": 0.07226061430362,
+        "se": 0.03984227984589601,
+        "p": 0.07076615627605136,
+        "ci95": [
+          -0.006157217294245204,
+          0.15067844590148521
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 0.28306462510420544,
+    "holm_p_across_40_interaction_tests": 1.0
+  },
+  {
+    "spec": "loujaina_coverage_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "coverage",
+    "outcome": "employment",
+    "kind": "baseline",
+    "n": 532,
+    "firms": 140,
+    "review_count": 81955,
+    "predictor_years": [
+      2018,
+      2024
+    ],
+    "cluster_df": 139,
+    "terms": {
+      "post_rank": {
+        "b": 0.0001310192521524195,
+        "se": 8.76160918035687e-05,
+        "p": 0.13708251792683565,
+        "ci95": [
+          -4.221333286849661e-05,
+          0.0003042518371733356
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 0.4112475537805069
+  },
+  {
+    "spec": "loujaina_coverage_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "coverage",
+    "outcome": "employment",
+    "kind": "interaction",
+    "n": 532,
+    "firms": 140,
+    "review_count": 81955,
+    "predictor_years": [
+      2018,
+      2024
+    ],
+    "cluster_df": 139,
+    "terms": {
+      "post_rank": {
+        "b": 0.00025814406668540343,
+        "se": 0.00019390207376515824,
+        "p": 0.18526585287165687,
+        "ci95": [
+          -0.00012523479429554893,
+          0.0006415229276663558
+        ]
+      },
+      "ghost_score": {
+        "b": 0.0011829019126494134,
+        "se": 0.0008689241399903286,
+        "p": 0.17560870945645204,
+        "ci95": [
+          -0.0005351155412113844,
+          0.002900919366510211
+        ]
+      },
+      "post_x_ghost": {
+        "b": -0.001693169008295862,
+        "se": 0.0016425807222077776,
+        "p": 0.3044257902556453,
+        "ci95": [
+          -0.004940843022922324,
+          0.0015545050063306002
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 0.9132773707669359,
+    "holm_p_across_40_interaction_tests": 1.0
+  },
+  {
+    "spec": "loujaina_coverage_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "coverage",
+    "outcome": "sga",
+    "kind": "baseline",
+    "n": 532,
+    "firms": 140,
+    "review_count": 81955,
+    "predictor_years": [
+      2018,
+      2024
+    ],
+    "cluster_df": 139,
+    "terms": {
+      "post_rank": {
+        "b": 0.012593792662069546,
+        "se": 0.006193248323123194,
+        "p": 0.04390792012250187,
+        "ci95": [
+          0.0003486400353532558,
+          0.024838945288785837
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 0.1756316804900075
+  },
+  {
+    "spec": "loujaina_coverage_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "coverage",
+    "outcome": "sga",
+    "kind": "interaction",
+    "n": 532,
+    "firms": 140,
+    "review_count": 81955,
+    "predictor_years": [
+      2018,
+      2024
+    ],
+    "cluster_df": 139,
+    "terms": {
+      "post_rank": {
+        "b": 0.011747326700324365,
+        "se": 0.010450541929250464,
+        "p": 0.2629133017243464,
+        "ci95": [
+          -0.008915252011041886,
+          0.032409905411690615
+        ]
+      },
+      "ghost_score": {
+        "b": -0.04389418599769323,
+        "se": 0.0608333597565092,
+        "p": 0.47178442167294815,
+        "ci95": [
+          -0.16417254981416993,
+          0.07638417781878346
+        ]
+      },
+      "post_x_ghost": {
+        "b": 0.012364135126257744,
+        "se": 0.09769736079814102,
+        "p": 0.8994751273532876,
+        "ci95": [
+          -0.1808009103853218,
+          0.20552918063783732
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 1.0,
+    "holm_p_across_40_interaction_tests": 1.0
+  },
+  {
+    "spec": "loujaina_coverage_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "coverage",
+    "outcome": "revenue",
+    "kind": "baseline",
+    "n": 532,
+    "firms": 140,
+    "review_count": 81955,
+    "predictor_years": [
+      2018,
+      2024
+    ],
+    "cluster_df": 139,
+    "terms": {
+      "post_rank": {
+        "b": -0.0012000421958141137,
+        "se": 0.01519577185551979,
+        "p": 0.9371683818592945,
+        "ci95": [
+          -0.031244783814984984,
+          0.028844699423356757
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 0.9371683818592945
+  },
+  {
+    "spec": "loujaina_coverage_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "coverage",
+    "outcome": "revenue",
+    "kind": "interaction",
+    "n": 532,
+    "firms": 140,
+    "review_count": 81955,
+    "predictor_years": [
+      2018,
+      2024
+    ],
+    "cluster_df": 139,
+    "terms": {
+      "post_rank": {
+        "b": 0.02249589138629106,
+        "se": 0.025471466037555884,
+        "p": 0.3786638988917814,
+        "ci95": [
+          -0.027865723873276495,
+          0.0728575066458586
+        ]
+      },
+      "ghost_score": {
+        "b": 0.09251997679150296,
+        "se": 0.13394604789312872,
+        "p": 0.49088977665020317,
+        "ci95": [
+          -0.17231516538630648,
+          0.35735511896931244
+        ]
+      },
+      "post_x_ghost": {
+        "b": -0.3117318144260324,
+        "se": 0.23039536881652173,
+        "p": 0.17824264556331168,
+        "ci95": [
+          -0.767264405475794,
+          0.14380077662372914
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 0.7129705822532467,
+    "holm_p_across_40_interaction_tests": 1.0
+  },
+  {
+    "spec": "loujaina_coverage_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "coverage",
+    "outcome": "earnings",
+    "kind": "baseline",
+    "n": 532,
+    "firms": 140,
+    "review_count": 81955,
+    "predictor_years": [
+      2018,
+      2024
+    ],
+    "cluster_df": 139,
+    "terms": {
+      "post_rank": {
+        "b": -0.0084899374816663,
+        "se": 0.007431982515743771,
+        "p": 0.25527180025514895,
+        "ci95": [
+          -0.023184287760596514,
+          0.006204412797263912
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 0.5105436005102979
+  },
+  {
+    "spec": "loujaina_coverage_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "coverage",
+    "outcome": "earnings",
+    "kind": "interaction",
+    "n": 532,
+    "firms": 140,
+    "review_count": 81955,
+    "predictor_years": [
+      2018,
+      2024
+    ],
+    "cluster_df": 139,
+    "terms": {
+      "post_rank": {
+        "b": -0.0050943816226921125,
+        "se": 0.01194023155776479,
+        "p": 0.6702893493433211,
+        "ci95": [
+          -0.02870234148396117,
+          0.018513578238576946
+        ]
+      },
+      "ghost_score": {
+        "b": 0.04371486263921744,
+        "se": 0.06844283849379804,
+        "p": 0.5240651222571227,
+        "ci95": [
+          -0.09160879303160954,
+          0.17903851831004444
+        ]
+      },
+      "post_x_ghost": {
+        "b": -0.04559202774203532,
+        "se": 0.11444078061413322,
+        "p": 0.6909542285021762,
+        "ci95": [
+          -0.2718617899455847,
+          0.18067773446151406
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 1.0,
+    "holm_p_across_40_interaction_tests": 1.0
+  },
+  {
+    "spec": "loujaina_december_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "december",
+    "outcome": "employment",
+    "kind": "baseline",
+    "n": 547,
+    "firms": 80,
+    "review_count": 74527,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 79,
+    "terms": {
+      "post_rank": {
+        "b": 5.7401653318395295e-05,
+        "se": 7.803812796400768e-05,
+        "p": 0.4641773362377258,
+        "ci95": [
+          -9.792935489352946e-05,
+          0.00021273266153032003
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "loujaina_december_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "december",
+    "outcome": "employment",
+    "kind": "interaction",
+    "n": 547,
+    "firms": 80,
+    "review_count": 74527,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 79,
+    "terms": {
+      "post_rank": {
+        "b": 2.296745025822441e-05,
+        "se": 0.00011209480490368117,
+        "p": 0.8381826517002078,
+        "ci95": [
+          -0.000200151677728013,
+          0.0002460865782444618
+        ]
+      },
+      "ghost_score": {
+        "b": 0.00018723941517268783,
+        "se": 0.0007599410174676578,
+        "p": 0.8060219216915332,
+        "ci95": [
+          -0.0013253853428083096,
+          0.0016998641731536851
+        ]
+      },
+      "post_x_ghost": {
+        "b": 0.0004869074542841343,
+        "se": 0.0010196348316677136,
+        "p": 0.6343024785808083,
+        "ci95": [
+          -0.0015426249107668279,
+          0.0025164398193350964
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 1.0,
+    "holm_p_across_40_interaction_tests": 1.0
+  },
+  {
+    "spec": "loujaina_december_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "december",
+    "outcome": "sga",
+    "kind": "baseline",
+    "n": 547,
+    "firms": 80,
+    "review_count": 74527,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 79,
+    "terms": {
+      "post_rank": {
+        "b": 0.006287727680329647,
+        "se": 0.008010821357981982,
+        "p": 0.4348572157188362,
+        "ci95": [
+          -0.009657413375781593,
+          0.022232868736440887
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "loujaina_december_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "december",
+    "outcome": "sga",
+    "kind": "interaction",
+    "n": 547,
+    "firms": 80,
+    "review_count": 74527,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 79,
+    "terms": {
+      "post_rank": {
+        "b": 0.005706274606712737,
+        "se": 0.014027951920392185,
+        "p": 0.6852703749580106,
+        "ci95": [
+          -0.022215665242330023,
+          0.0336282144557555
+        ]
+      },
+      "ghost_score": {
+        "b": 0.007087841049835055,
+        "se": 0.07665111731661577,
+        "p": 0.9265596274862233,
+        "ci95": [
+          -0.14548239152739703,
+          0.15965807362706716
+        ]
+      },
+      "post_x_ghost": {
+        "b": 0.008283421928437968,
+        "se": 0.13250607201695383,
+        "p": 0.9503117862043505,
+        "ci95": [
+          -0.25546331697447633,
+          0.27203016083135223
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 1.0,
+    "holm_p_across_40_interaction_tests": 1.0
+  },
+  {
+    "spec": "loujaina_december_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "december",
+    "outcome": "revenue",
+    "kind": "baseline",
+    "n": 547,
+    "firms": 80,
+    "review_count": 74527,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 79,
+    "terms": {
+      "post_rank": {
+        "b": -0.001365113587608891,
+        "se": 0.023345937773362076,
+        "p": 0.9535193001790645,
+        "ci95": [
+          -0.04783404033661694,
+          0.04510381316139915
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "loujaina_december_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "december",
+    "outcome": "revenue",
+    "kind": "interaction",
+    "n": 547,
+    "firms": 80,
+    "review_count": 74527,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 79,
+    "terms": {
+      "post_rank": {
+        "b": 0.005432293164699654,
+        "se": 0.04051497829935116,
+        "p": 0.893679433687222,
+        "ci95": [
+          -0.07521075390871297,
+          0.08607534023811227
+        ]
+      },
+      "ghost_score": {
+        "b": 0.10905370488477754,
+        "se": 0.1559005301737713,
+        "p": 0.4862890771245508,
+        "ci95": [
+          -0.20125853817459405,
+          0.41936594794414916
+        ]
+      },
+      "post_x_ghost": {
+        "b": -0.09382803970148482,
+        "se": 0.31807531653747034,
+        "p": 0.7687777555490137,
+        "ci95": [
+          -0.7269411203725072,
+          0.5392850409695377
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 1.0,
+    "holm_p_across_40_interaction_tests": 1.0
+  },
+  {
+    "spec": "loujaina_december_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "december",
+    "outcome": "earnings",
+    "kind": "baseline",
+    "n": 547,
+    "firms": 80,
+    "review_count": 74527,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 79,
+    "terms": {
+      "post_rank": {
+        "b": -0.001720307816584085,
+        "se": 0.011686136184436407,
+        "p": 0.8833418737125128,
+        "ci95": [
+          -0.024980980041673442,
+          0.02154036440850527
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "loujaina_december_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "december",
+    "outcome": "earnings",
+    "kind": "interaction",
+    "n": 547,
+    "firms": 80,
+    "review_count": 74527,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 79,
+    "terms": {
+      "post_rank": {
+        "b": 0.004328693540303655,
+        "se": 0.012696524109517139,
+        "p": 0.7340573319232694,
+        "ci95": [
+          -0.02094310554267663,
+          0.029600492623283937
+        ]
+      },
+      "ghost_score": {
+        "b": 0.05664656805987785,
+        "se": 0.07590576571503979,
+        "p": 0.4577164152617048,
+        "ci95": [
+          -0.09444007926530197,
+          0.20773321538505768
+        ]
+      },
+      "post_x_ghost": {
+        "b": -0.08413070710824112,
+        "se": 0.12315998556440406,
+        "p": 0.4965415121598972,
+        "ci95": [
+          -0.3292745262668488,
+          0.16101311205036656
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 1.0,
+    "holm_p_across_40_interaction_tests": 1.0
+  },
+  {
+    "spec": "loujaina_min5_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "min5",
+    "outcome": "employment",
+    "kind": "baseline",
+    "n": 967,
+    "firms": 145,
+    "review_count": 155819,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 144,
+    "terms": {
+      "post_rank": {
+        "b": 9.703319973463568e-05,
+        "se": 6.462083762368751e-05,
+        "p": 0.13539586793184935,
+        "ci95": [
+          -3.069473664542283e-05,
+          0.0002247611361146942
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 0.5415834717273974
+  },
+  {
+    "spec": "loujaina_min5_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "min5",
+    "outcome": "employment",
+    "kind": "interaction",
+    "n": 967,
+    "firms": 145,
+    "review_count": 155819,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 144,
+    "terms": {
+      "post_rank": {
+        "b": 7.69397542704499e-05,
+        "se": 0.00012703567741421463,
+        "p": 0.5456974853391253,
+        "ci95": [
+          -0.00017415579817736633,
+          0.00032803530671826614
+        ]
+      },
+      "ghost_score": {
+        "b": 0.00023351005205284557,
+        "se": 0.0006521283497591753,
+        "p": 0.7208124615885239,
+        "ci95": [
+          -0.0010554705838022945,
+          0.0015224906879079858
+        ]
+      },
+      "post_x_ghost": {
+        "b": 0.0002663367778235259,
+        "se": 0.0010649790641976548,
+        "p": 0.8028769654237059,
+        "ci95": [
+          -0.0018386742861009973,
+          0.002371347841748049
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 0.8805649488654523,
+    "holm_p_across_40_interaction_tests": 1.0
+  },
+  {
+    "spec": "loujaina_min5_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "min5",
+    "outcome": "sga",
+    "kind": "baseline",
+    "n": 967,
+    "firms": 145,
+    "review_count": 155819,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 144,
+    "terms": {
+      "post_rank": {
+        "b": 0.0073440027174241414,
+        "se": 0.005303916422538868,
+        "p": 0.1683049877271225,
+        "ci95": [
+          -0.003139586234614791,
+          0.017827591669463072
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 0.5415834717273974
+  },
+  {
+    "spec": "loujaina_min5_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "min5",
+    "outcome": "sga",
+    "kind": "interaction",
+    "n": 967,
+    "firms": 145,
+    "review_count": 155819,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 144,
+    "terms": {
+      "post_rank": {
+        "b": 0.002187567535505579,
+        "se": 0.009109863092728083,
+        "p": 0.8105696114391652,
+        "ci95": [
+          -0.015818760706709758,
+          0.020193895777720915
+        ]
+      },
+      "ghost_score": {
+        "b": 0.03151107835786432,
+        "se": 0.05609635258608423,
+        "p": 0.5751723309662627,
+        "ci95": [
+          -0.07936757344782287,
+          0.1423897301635515
+        ]
+      },
+      "post_x_ghost": {
+        "b": 0.06919308822745933,
+        "se": 0.0888625273059722,
+        "p": 0.4374616927233745,
+        "ci95": [
+          -0.10645036753220223,
+          0.2448365439871209
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 0.8805649488654523,
+    "holm_p_across_40_interaction_tests": 1.0
+  },
+  {
+    "spec": "loujaina_min5_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "min5",
+    "outcome": "revenue",
+    "kind": "baseline",
+    "n": 967,
+    "firms": 145,
+    "review_count": 155819,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 144,
+    "terms": {
+      "post_rank": {
+        "b": -9.686664023110786e-06,
+        "se": 0.013934356786202792,
+        "p": 0.9994463014844145,
+        "ci95": [
+          -0.027551988846016777,
+          0.02753261551797056
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "loujaina_min5_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "min5",
+    "outcome": "revenue",
+    "kind": "interaction",
+    "n": 967,
+    "firms": 145,
+    "review_count": 155819,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 144,
+    "terms": {
+      "post_rank": {
+        "b": -0.02117431247147606,
+        "se": 0.024414107554246098,
+        "p": 0.3872215756493203,
+        "ci95": [
+          -0.06943062871770156,
+          0.027082003774749445
+        ]
+      },
+      "ghost_score": {
+        "b": -0.030375483621456974,
+        "se": 0.11299202381133179,
+        "p": 0.7884463815244154,
+        "ci95": [
+          -0.2537127005246551,
+          0.19296173328174118
+        ]
+      },
+      "post_x_ghost": {
+        "b": 0.2887534682368704,
+        "se": 0.20553978500400769,
+        "p": 0.16221808138984437,
+        "ci95": [
+          -0.11751134583820122,
+          0.6950182823119421
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 0.6488723255593775,
+    "holm_p_across_40_interaction_tests": 1.0
+  },
+  {
+    "spec": "loujaina_min5_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "min5",
+    "outcome": "earnings",
+    "kind": "baseline",
+    "n": 967,
+    "firms": 145,
+    "review_count": 155819,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 144,
+    "terms": {
+      "post_rank": {
+        "b": 0.0007029302439707277,
+        "se": 0.007172468811552565,
+        "p": 0.9220654439646078,
+        "ci95": [
+          -0.013473992769390585,
+          0.014879853257332041
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "loujaina_min5_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "min5",
+    "outcome": "earnings",
+    "kind": "interaction",
+    "n": 967,
+    "firms": 145,
+    "review_count": 155819,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 144,
+    "terms": {
+      "post_rank": {
+        "b": -0.006234290426799193,
+        "se": 0.009458600890357742,
+        "p": 0.5108755836108165,
+        "ci95": [
+          -0.024929925104321935,
+          0.012461344250723549
+        ]
+      },
+      "ghost_score": {
+        "b": -0.043930420347522973,
+        "se": 0.05543658771080342,
+        "p": 0.4294051108873216,
+        "ci95": [
+          -0.1535049973514194,
+          0.06564415665637344
+        ]
+      },
+      "post_x_ghost": {
+        "b": 0.09565637470387185,
+        "se": 0.09073169186545844,
+        "p": 0.2935216496218174,
+        "ci95": [
+          -0.08368162511800416,
+          0.2749943745257479
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 0.8805649488654523,
+    "holm_p_across_40_interaction_tests": 1.0
+  },
+  {
+    "spec": "loujaina_min10_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "min10",
+    "outcome": "employment",
+    "kind": "baseline",
+    "n": 936,
+    "firms": 145,
+    "review_count": 155591,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 144,
+    "terms": {
+      "post_rank": {
+        "b": 8.784725978596084e-05,
+        "se": 5.474136402950588e-05,
+        "p": 0.11073551944905574,
+        "ci95": [
+          -2.0353155424308e-05,
+          0.00019604767499622968
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 0.37099372255306756
+  },
+  {
+    "spec": "loujaina_min10_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "min10",
+    "outcome": "employment",
+    "kind": "interaction",
+    "n": 936,
+    "firms": 145,
+    "review_count": 155591,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 144,
+    "terms": {
+      "post_rank": {
+        "b": 4.41952040794318e-05,
+        "se": 9.971332981624553e-05,
+        "p": 0.6582698758030797,
+        "ci95": [
+          -0.00015289567736628644,
+          0.00024128608552515
+        ]
+      },
+      "ghost_score": {
+        "b": -0.00010505723673833222,
+        "se": 0.0005782510287300693,
+        "p": 0.8560885518972615,
+        "ci95": [
+          -0.0012480138019169906,
+          0.001037899328440326
+        ]
+      },
+      "post_x_ghost": {
+        "b": 0.0005851693512271418,
+        "se": 0.0008686512999394627,
+        "p": 0.5016119374568954,
+        "ci95": [
+          -0.0011317851491344016,
+          0.0023021238515886855
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 1.0,
+    "holm_p_across_40_interaction_tests": 1.0
+  },
+  {
+    "spec": "loujaina_min10_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "min10",
+    "outcome": "sga",
+    "kind": "baseline",
+    "n": 936,
+    "firms": 145,
+    "review_count": 155591,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 144,
+    "terms": {
+      "post_rank": {
+        "b": 0.009153789067336741,
+        "se": 0.005409031511344074,
+        "p": 0.09274843063826689,
+        "ci95": [
+          -0.001537567748277114,
+          0.019845145882950596
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 0.37099372255306756
+  },
+  {
+    "spec": "loujaina_min10_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "min10",
+    "outcome": "sga",
+    "kind": "interaction",
+    "n": 936,
+    "firms": 145,
+    "review_count": 155591,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 144,
+    "terms": {
+      "post_rank": {
+        "b": 0.0032814404038322333,
+        "se": 0.00934368228072853,
+        "p": 0.7259564943355284,
+        "ci95": [
+          -0.015187049015297506,
+          0.02174992982296197
+        ]
+      },
+      "ghost_score": {
+        "b": 0.02568417706570124,
+        "se": 0.05636630538959048,
+        "p": 0.6493169532561325,
+        "ci95": [
+          -0.08572805672034745,
+          0.13709641085174992
+        ]
+      },
+      "post_x_ghost": {
+        "b": 0.07724950330279398,
+        "se": 0.09182618706863288,
+        "p": 0.40159831104875027,
+        "ci95": [
+          -0.10425184844734767,
+          0.2587508550529356
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 1.0,
+    "holm_p_across_40_interaction_tests": 1.0
+  },
+  {
+    "spec": "loujaina_min10_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "min10",
+    "outcome": "revenue",
+    "kind": "baseline",
+    "n": 936,
+    "firms": 145,
+    "review_count": 155591,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 144,
+    "terms": {
+      "post_rank": {
+        "b": 0.002393333120096935,
+        "se": 0.014360855179456442,
+        "p": 0.8678739425896358,
+        "ci95": [
+          -0.025991975151618642,
+          0.030778641391812515
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "loujaina_min10_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "min10",
+    "outcome": "revenue",
+    "kind": "interaction",
+    "n": 936,
+    "firms": 145,
+    "review_count": 155591,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 144,
+    "terms": {
+      "post_rank": {
+        "b": -0.019042775981227358,
+        "se": 0.02577499770479409,
+        "p": 0.4612260665586545,
+        "ci95": [
+          -0.06998899376636025,
+          0.031903441803905544
+        ]
+      },
+      "ghost_score": {
+        "b": -0.03306874303794971,
+        "se": 0.11585662725951655,
+        "p": 0.7757262830079301,
+        "ci95": [
+          -0.26206806369032176,
+          0.19593057761442234
+        ]
+      },
+      "post_x_ghost": {
+        "b": 0.28667336796371223,
+        "se": 0.2130849001523386,
+        "p": 0.18062756716619463,
+        "ci95": [
+          -0.1345049325823699,
+          0.7078516685097944
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 0.7225102686647785,
+    "holm_p_across_40_interaction_tests": 1.0
+  },
+  {
+    "spec": "loujaina_min10_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "min10",
+    "outcome": "earnings",
+    "kind": "baseline",
+    "n": 936,
+    "firms": 145,
+    "review_count": 155591,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 144,
+    "terms": {
+      "post_rank": {
+        "b": 0.0009372115907864023,
+        "se": 0.007407534921133072,
+        "p": 0.8994957099938897,
+        "ci95": [
+          -0.013704337233593506,
+          0.015578760415166312
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "loujaina_min10_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_eb",
+    "mask": "min10",
+    "outcome": "earnings",
+    "kind": "interaction",
+    "n": 936,
+    "firms": 145,
+    "review_count": 155591,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 144,
+    "terms": {
+      "post_rank": {
+        "b": -0.0053855562622321,
+        "se": 0.010102267541977409,
+        "p": 0.5947835911582523,
+        "ci95": [
+          -0.025353446394052848,
+          0.014582333869588647
+        ]
+      },
+      "ghost_score": {
+        "b": -0.0386377765664695,
+        "se": 0.05954487900510568,
+        "p": 0.5174462602895021,
+        "ci95": [
+          -0.15633269970585204,
+          0.07905714657291305
+        ]
+      },
+      "post_x_ghost": {
+        "b": 0.08562401002578887,
+        "se": 0.09487171394854065,
+        "p": 0.368285701902077,
+        "ci95": [
+          -0.10189705421749484,
+          0.2731450742690726
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 1.0,
+    "holm_p_across_40_interaction_tests": 1.0
+  },
+  {
+    "spec": "loujaina_full_prior_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_full_prior",
+    "mask": "all",
+    "outcome": "employment",
+    "kind": "baseline",
+    "n": 976,
+    "firms": 146,
+    "review_count": 155839,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 145,
+    "terms": {
+      "post_rank": {
+        "b": 9.669063647824048e-05,
+        "se": 6.421110718954684e-05,
+        "p": 0.13428767113610926,
+        "ci95": [
+          -3.0220020353786695e-05,
+          0.00022360129331026765
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 0.537150684544437
+  },
+  {
+    "spec": "loujaina_full_prior_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_full_prior",
+    "mask": "all",
+    "outcome": "employment",
+    "kind": "interaction",
+    "n": 976,
+    "firms": 146,
+    "review_count": 155839,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 145,
+    "terms": {
+      "post_rank": {
+        "b": 7.748499400455368e-05,
+        "se": 0.0001290480062474958,
+        "p": 0.5491533986458307,
+        "ci95": [
+          -0.00017757317198202193,
+          0.0003325431599911293
+        ]
+      },
+      "ghost_score": {
+        "b": 0.00021890947242667277,
+        "se": 0.0006583908889537441,
+        "p": 0.7399982352840719,
+        "ci95": [
+          -0.0010823734959963423,
+          0.001520192440849688
+        ]
+      },
+      "post_x_ghost": {
+        "b": 0.00024556045092741853,
+        "se": 0.0010723789039686056,
+        "p": 0.8192019490391114,
+        "ci95": [
+          -0.0018739530885871398,
+          0.002365073990441977
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 0.9723679632833317,
+    "holm_p_across_40_interaction_tests": 1.0
+  },
+  {
+    "spec": "loujaina_full_prior_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_full_prior",
+    "mask": "all",
+    "outcome": "sga",
+    "kind": "baseline",
+    "n": 976,
+    "firms": 146,
+    "review_count": 155839,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 145,
+    "terms": {
+      "post_rank": {
+        "b": 0.007392468643476622,
+        "se": 0.005293407125184642,
+        "p": 0.16468519013715197,
+        "ci95": [
+          -0.0030697364880037884,
+          0.01785467377495703
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 0.537150684544437
+  },
+  {
+    "spec": "loujaina_full_prior_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_full_prior",
+    "mask": "all",
+    "outcome": "sga",
+    "kind": "interaction",
+    "n": 976,
+    "firms": 146,
+    "review_count": 155839,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 145,
+    "terms": {
+      "post_rank": {
+        "b": 0.0028434047943191572,
+        "se": 0.008987760620912298,
+        "p": 0.7521811351642508,
+        "ci95": [
+          -0.01492054063153853,
+          0.020607350220176842
+        ]
+      },
+      "ghost_score": {
+        "b": 0.03249037459119789,
+        "se": 0.05335831497393734,
+        "p": 0.5435373498329168,
+        "ci95": [
+          -0.07297017728501978,
+          0.13795092646741555
+        ]
+      },
+      "post_x_ghost": {
+        "b": 0.058774426967059416,
+        "se": 0.08418257072967156,
+        "p": 0.4861839816416659,
+        "ci95": [
+          -0.1076090199586219,
+          0.22515787389274075
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 0.9723679632833317,
+    "holm_p_across_40_interaction_tests": 1.0
+  },
+  {
+    "spec": "loujaina_full_prior_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_full_prior",
+    "mask": "all",
+    "outcome": "revenue",
+    "kind": "baseline",
+    "n": 976,
+    "firms": 146,
+    "review_count": 155839,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 145,
+    "terms": {
+      "post_rank": {
+        "b": -9.657235641922352e-05,
+        "se": 0.013840713719032475,
+        "p": 0.9944424666385803,
+        "ci95": [
+          -0.027452183340065578,
+          0.02725903862722713
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "loujaina_full_prior_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_full_prior",
+    "mask": "all",
+    "outcome": "revenue",
+    "kind": "interaction",
+    "n": 976,
+    "firms": 146,
+    "review_count": 155839,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 145,
+    "terms": {
+      "post_rank": {
+        "b": -0.021818223205194304,
+        "se": 0.02438327972743929,
+        "p": 0.3723755194085213,
+        "ci95": [
+          -0.07001078959084506,
+          0.02637434318045645
+        ]
+      },
+      "ghost_score": {
+        "b": -0.03514050627993135,
+        "se": 0.11276661840232288,
+        "p": 0.7557757744743594,
+        "ci95": [
+          -0.2580191675669796,
+          0.1877381550071169
+        ]
+      },
+      "post_x_ghost": {
+        "b": 0.2866491191172367,
+        "se": 0.20048860512412112,
+        "p": 0.15493911803534213,
+        "ci95": [
+          -0.10960850167926756,
+          0.682906739913741
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 0.6197564721413685,
+    "holm_p_across_40_interaction_tests": 1.0
+  },
+  {
+    "spec": "loujaina_full_prior_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_full_prior",
+    "mask": "all",
+    "outcome": "earnings",
+    "kind": "baseline",
+    "n": 976,
+    "firms": 146,
+    "review_count": 155839,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 145,
+    "terms": {
+      "post_rank": {
+        "b": 0.0005638602364513949,
+        "se": 0.0071461416736089255,
+        "p": 0.9372176488798075,
+        "ci95": [
+          -0.013560199810282572,
+          0.01468792028318536
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "loujaina_full_prior_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_full_prior",
+    "mask": "all",
+    "outcome": "earnings",
+    "kind": "interaction",
+    "n": 976,
+    "firms": 146,
+    "review_count": 155839,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 145,
+    "terms": {
+      "post_rank": {
+        "b": -0.006639747707836332,
+        "se": 0.00960385886239913,
+        "p": 0.49044320072353137,
+        "ci95": [
+          -0.02562138639460199,
+          0.012341890978929324
+        ]
+      },
+      "ghost_score": {
+        "b": -0.038820558521278546,
+        "se": 0.05390502085170438,
+        "p": 0.4725821490306654,
+        "ci95": [
+          -0.1453616524575565,
+          0.06772053541499942
+        ]
+      },
+      "post_x_ghost": {
+        "b": 0.09591924369570307,
+        "se": 0.08732758436502798,
+        "p": 0.2738572432413896,
+        "ci95": [
+          -0.07668019550418939,
+          0.26851868289559555
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 0.8215717297241688,
+    "holm_p_across_40_interaction_tests": 1.0
+  },
+  {
+    "spec": "loujaina_language80_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_hi",
+    "mask": "all",
+    "outcome": "employment",
+    "kind": "baseline",
+    "n": 976,
+    "firms": 146,
+    "review_count": 155839,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 145,
+    "terms": {
+      "post_rank": {
+        "b": 9.669063647824048e-05,
+        "se": 6.421110718954684e-05,
+        "p": 0.13428767113610926,
+        "ci95": [
+          -3.0220020353786695e-05,
+          0.00022360129331026765
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 0.537150684544437
+  },
+  {
+    "spec": "loujaina_language80_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_hi",
+    "mask": "all",
+    "outcome": "employment",
+    "kind": "interaction",
+    "n": 976,
+    "firms": 146,
+    "review_count": 155839,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 145,
+    "terms": {
+      "post_rank": {
+        "b": 7.961112823797472e-05,
+        "se": 0.0001124574309525445,
+        "p": 0.48012986335418706,
+        "ci95": [
+          -0.00014265643655731293,
+          0.0003018786930332624
+        ]
+      },
+      "ghost_score": {
+        "b": 0.0001011614033430343,
+        "se": 0.0005297498722762342,
+        "p": 0.8488235070884877,
+        "ci95": [
+          -0.0009458677975208959,
+          0.0011481906042069645
+        ]
+      },
+      "post_x_ghost": {
+        "b": 0.0002132315787919292,
+        "se": 0.0008443195070469308,
+        "p": 0.8009748275148618,
+        "ci95": [
+          -0.0014555317848284884,
+          0.0018819949424123468
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 1.0,
+    "holm_p_across_40_interaction_tests": 1.0
+  },
+  {
+    "spec": "loujaina_language80_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_hi",
+    "mask": "all",
+    "outcome": "sga",
+    "kind": "baseline",
+    "n": 976,
+    "firms": 146,
+    "review_count": 155839,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 145,
+    "terms": {
+      "post_rank": {
+        "b": 0.007392468643476622,
+        "se": 0.005293407125184642,
+        "p": 0.16468519013715197,
+        "ci95": [
+          -0.0030697364880037884,
+          0.01785467377495703
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 0.537150684544437
+  },
+  {
+    "spec": "loujaina_language80_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_hi",
+    "mask": "all",
+    "outcome": "sga",
+    "kind": "interaction",
+    "n": 976,
+    "firms": 146,
+    "review_count": 155839,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 145,
+    "terms": {
+      "post_rank": {
+        "b": 0.0057588666406897665,
+        "se": 0.00838431764522401,
+        "p": 0.4932669107466232,
+        "ci95": [
+          -0.010812398145365137,
+          0.02233013142674467
+        ]
+      },
+      "ghost_score": {
+        "b": 0.017183993864103783,
+        "se": 0.04262791988335198,
+        "p": 0.6874567069395057,
+        "ci95": [
+          -0.06706836602449714,
+          0.10143635375270471
+        ]
+      },
+      "post_x_ghost": {
+        "b": 0.020105614500805856,
+        "se": 0.07209736481726216,
+        "p": 0.7807438095071507,
+        "ci95": [
+          -0.12239191163290603,
+          0.16260314063451775
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 1.0,
+    "holm_p_across_40_interaction_tests": 1.0
+  },
+  {
+    "spec": "loujaina_language80_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_hi",
+    "mask": "all",
+    "outcome": "revenue",
+    "kind": "baseline",
+    "n": 976,
+    "firms": 146,
+    "review_count": 155839,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 145,
+    "terms": {
+      "post_rank": {
+        "b": -9.657235641922352e-05,
+        "se": 0.013840713719032475,
+        "p": 0.9944424666385803,
+        "ci95": [
+          -0.027452183340065578,
+          0.02725903862722713
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "loujaina_language80_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_hi",
+    "mask": "all",
+    "outcome": "revenue",
+    "kind": "interaction",
+    "n": 976,
+    "firms": 146,
+    "review_count": 155839,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 145,
+    "terms": {
+      "post_rank": {
+        "b": -0.015230636522979174,
+        "se": 0.022043275100238676,
+        "p": 0.4907062921098733,
+        "ci95": [
+          -0.058798278386593995,
+          0.02833700534063565
+        ]
+      },
+      "ghost_score": {
+        "b": -0.02571865000752971,
+        "se": 0.09218969491182892,
+        "p": 0.780661252283721,
+        "ci95": [
+          -0.20792785409222525,
+          0.15649055407716583
+        ]
+      },
+      "post_x_ghost": {
+        "b": 0.19338862600642703,
+        "se": 0.16500139865057295,
+        "p": 0.24310217783383112,
+        "ci95": [
+          -0.1327299662043041,
+          0.5195072182171582
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 0.9724087113353245,
+    "holm_p_across_40_interaction_tests": 1.0
+  },
+  {
+    "spec": "loujaina_language80_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_hi",
+    "mask": "all",
+    "outcome": "earnings",
+    "kind": "baseline",
+    "n": 976,
+    "firms": 146,
+    "review_count": 155839,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 145,
+    "terms": {
+      "post_rank": {
+        "b": 0.0005638602364513949,
+        "se": 0.0071461416736089255,
+        "p": 0.9372176488798075,
+        "ci95": [
+          -0.013560199810282572,
+          0.01468792028318536
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 1.0
+  },
+  {
+    "spec": "loujaina_language80_full",
+    "controls": [
+      "change_oiadp",
+      "change_sale",
+      "change_xsga",
+      "change_emp",
+      "change_capx",
+      "btm_common",
+      "change_xrd",
+      "change_xad"
+    ],
+    "ghost_measure": "ghost_lou_hi",
+    "mask": "all",
+    "outcome": "earnings",
+    "kind": "interaction",
+    "n": 976,
+    "firms": 146,
+    "review_count": 155839,
+    "predictor_years": [
+      2016,
+      2024
+    ],
+    "cluster_df": 145,
+    "terms": {
+      "post_rank": {
+        "b": -0.005134275605385261,
+        "se": 0.008875542096727897,
+        "p": 0.5638411560643983,
+        "ci95": [
+          -0.022676425656014132,
+          0.012407874445243612
+        ]
+      },
+      "ghost_score": {
+        "b": -0.023169142326063777,
+        "se": 0.040507533876445956,
+        "p": 0.5682271541547279,
+        "ci95": [
+          -0.10323064501484226,
+          0.05689236036271471
+        ]
+      },
+      "post_x_ghost": {
+        "b": 0.07333253824210328,
+        "se": 0.07061205920974445,
+        "p": 0.30075341148527074,
+        "ci95": [
+          -0.06622934142019793,
+          0.2128944179044045
+        ]
+      }
+    },
+    "holm_p_across_four_outcomes": 0.9724087113353245,
+    "holm_p_across_40_interaction_tests": 1.0
+  }
+]
