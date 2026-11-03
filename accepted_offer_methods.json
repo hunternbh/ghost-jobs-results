@@ -1,0 +1,228 @@
+{
+  "plan": {
+    "purpose": "Separate-review accepted-offer corroboration using existing labels; no claim of verified worker starts.",
+    "split": "Reuse original deterministic global text-hash partitions: original-convergence-20261019|hash for primary Glassdoor, 20261101:hash for Revelio. All identical narrative hashes stay in one group, even across companies. Report A-to-B and B-to-A.",
+    "data": "Unchanged original ghost_two labels, and existing complete classified Revelio cohorts. All known offer statuses eligible. Normalize original interview+application text as in existing check; >=20 chars. Deduplicate company/year/narrative hash/outcome in each collection before splitting. No new classification or paid API.",
+    "sample": "At least ten scoring reviews and five comparison reviews in each company-year; test minimum counts include offers. All three offer statuses known. Source dates: original calendar years, Revelio issuer fiscal years.",
+    "predictors": "Broad raw ghost-flag share in scoring reviews; conditional ghost share among scoring no-offer reviews as fixed sensitivity. Do not alter feature weights, offer-zero convention or labels.",
+    "outcomes": "Primary: accepted-offer count divided by all comparison reviews. Secondary: accepted-plus-declined offer count divided by all comparison reviews. Never use scoring-review offer outcomes as the comparison outcome.",
+    "descriptive": "Primary collection uses bottom/top scoring quartiles including ties, as its existing separate-review check; Revelio uses above-median versus at-or-below-median scores. Groups determined solely by scoring reviews. Company-year records weighted by comparison review counts for rates.",
+    "continuous_models": [
+      "broad score + time/industry effects",
+      "broad score + scoring offer share + log scoring count + log mean scoring narrative length + time/industry effects (primary)",
+      "broad score + same scoring controls + company/year effects",
+      "ghost share among scoring no-offer reviews + same scoring controls + time/industry effects"
+    ],
+    "effects": "Original: Year FE because no verified industry link for every source folder. Revelio: SIC2 industry and Year FE. Company/year sensitivity uses source employer in primary and linked GVKEY in Revelio.",
+    "inference": "WLS weighted by comparison review counts; firm-cluster finite-sample covariance and t(G-1). Primary four adjusted continuous accepted-offer tests (two collections x two directions) receive Holm adjustment. Secondary any-offer tests receive separate Holm-four adjustment. Also report Holm across all 32 model terms. Direction reversals reuse observations, not independent replications.",
+    "bootstrap": "1999 whole-company bootstrap draws for raw high-minus-low rate gaps, with fixed scoring groups and paired company weights across directions within collection. Both accepted and any-offer outcomes retained.",
+    "interpretation": "Expected sign is negative. Cross-review separation removes direct outcome reuse but does not eliminate persistent company offer rates, review selection or applicant acceptance choices. Accepted offers do not prove a job start. Repeated same-year applicants are not a six-month posting match.",
+    "fixed_before_estimation": true,
+    "new_api_calls": 0,
+    "new_paid_api_cost_usd": 0
+  },
+  "input_inventory": [
+    {
+      "collection": "original",
+      "rows_before_dedup": 218524,
+      "rows": 217755,
+      "duplicates_removed": 769,
+      "firms": 1196,
+      "years": [
+        2009,
+        2024
+      ],
+      "accepted": 114549,
+      "declined": 20938
+    },
+    {
+      "collection": "revelio",
+      "rows_before_dedup": 721301,
+      "rows": 720932,
+      "duplicates_removed": 369,
+      "firms": 3678,
+      "years": [
+        2016,
+        2024
+      ],
+      "accepted": 329513,
+      "declined": 71631
+    }
+  ],
+  "independent_verification": {
+    "checks": [
+      {
+        "collection": "original",
+        "direction": "A_to_B",
+        "outcome": "accepted_rate",
+        "spec": "basic",
+        "max_error": 2.7755575615628914e-17
+      },
+      {
+        "collection": "original",
+        "direction": "A_to_B",
+        "outcome": "accepted_rate",
+        "spec": "composition",
+        "max_error": 3.896188927043909e-15
+      },
+      {
+        "collection": "original",
+        "direction": "A_to_B",
+        "outcome": "accepted_rate",
+        "spec": "conditional_no_offer",
+        "max_error": 5.000166947155549e-14
+      },
+      {
+        "collection": "original",
+        "direction": "A_to_B",
+        "outcome": "any_offer_rate",
+        "spec": "basic",
+        "max_error": 6.938893903907228e-17
+      },
+      {
+        "collection": "original",
+        "direction": "A_to_B",
+        "outcome": "any_offer_rate",
+        "spec": "composition",
+        "max_error": 2.9819896552041314e-15
+      },
+      {
+        "collection": "original",
+        "direction": "A_to_B",
+        "outcome": "any_offer_rate",
+        "spec": "conditional_no_offer",
+        "max_error": 1.0103029524088925e-14
+      },
+      {
+        "collection": "original",
+        "direction": "B_to_A",
+        "outcome": "accepted_rate",
+        "spec": "basic",
+        "max_error": 1.4432899320127035e-15
+      },
+      {
+        "collection": "original",
+        "direction": "B_to_A",
+        "outcome": "accepted_rate",
+        "spec": "composition",
+        "max_error": 7.424616477180734e-15
+      },
+      {
+        "collection": "original",
+        "direction": "B_to_A",
+        "outcome": "accepted_rate",
+        "spec": "conditional_no_offer",
+        "max_error": 8.626779846032662e-15
+      },
+      {
+        "collection": "original",
+        "direction": "B_to_A",
+        "outcome": "any_offer_rate",
+        "spec": "basic",
+        "max_error": 1.887379141862766e-15
+      },
+      {
+        "collection": "original",
+        "direction": "B_to_A",
+        "outcome": "any_offer_rate",
+        "spec": "composition",
+        "max_error": 2.983724378680108e-16
+      },
+      {
+        "collection": "original",
+        "direction": "B_to_A",
+        "outcome": "any_offer_rate",
+        "spec": "conditional_no_offer",
+        "max_error": 2.7885679876327174e-16
+      },
+      {
+        "collection": "revelio",
+        "direction": "A_to_B",
+        "outcome": "accepted_rate",
+        "spec": "basic",
+        "max_error": 1.2240208846492351e-14
+      },
+      {
+        "collection": "revelio",
+        "direction": "A_to_B",
+        "outcome": "accepted_rate",
+        "spec": "composition",
+        "max_error": 1.5942108744226857e-15
+      },
+      {
+        "collection": "revelio",
+        "direction": "A_to_B",
+        "outcome": "accepted_rate",
+        "spec": "conditional_no_offer",
+        "max_error": 3.490263633665336e-15
+      },
+      {
+        "collection": "revelio",
+        "direction": "A_to_B",
+        "outcome": "any_offer_rate",
+        "spec": "basic",
+        "max_error": 1.504352198367087e-14
+      },
+      {
+        "collection": "revelio",
+        "direction": "A_to_B",
+        "outcome": "any_offer_rate",
+        "spec": "composition",
+        "max_error": 7.188694084447889e-15
+      },
+      {
+        "collection": "revelio",
+        "direction": "A_to_B",
+        "outcome": "any_offer_rate",
+        "spec": "conditional_no_offer",
+        "max_error": 1.892097589717423e-13
+      },
+      {
+        "collection": "revelio",
+        "direction": "B_to_A",
+        "outcome": "accepted_rate",
+        "spec": "basic",
+        "max_error": 8.691658504034194e-14
+      },
+      {
+        "collection": "revelio",
+        "direction": "B_to_A",
+        "outcome": "accepted_rate",
+        "spec": "composition",
+        "max_error": 2.4064084058750268e-14
+      },
+      {
+        "collection": "revelio",
+        "direction": "B_to_A",
+        "outcome": "accepted_rate",
+        "spec": "conditional_no_offer",
+        "max_error": 3.434752482434078e-15
+      },
+      {
+        "collection": "revelio",
+        "direction": "B_to_A",
+        "outcome": "any_offer_rate",
+        "spec": "basic",
+        "max_error": 1.0652589921278377e-13
+      },
+      {
+        "collection": "revelio",
+        "direction": "B_to_A",
+        "outcome": "any_offer_rate",
+        "spec": "composition",
+        "max_error": 2.858824288409778e-14
+      },
+      {
+        "collection": "revelio",
+        "direction": "B_to_A",
+        "outcome": "any_offer_rate",
+        "spec": "conditional_no_offer",
+        "max_error": 2.0539125955565396e-15
+      }
+    ],
+    "max_error": 1.892097589717423e-13,
+    "models": 32,
+    "independent_refits": 24,
+    "new_paid_api_cost_usd": 0
+  }
+}

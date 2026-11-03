@@ -1,0 +1,1121 @@
+{
+  "descriptive": [
+    {
+      "collection": "original",
+      "direction": "A_to_B",
+      "outcome": "accepted_rate",
+      "low_rate": 0.619872813990461,
+      "high_rate": 0.37921793153855526,
+      "gap_pp": -24.065488245190576,
+      "low_reviews": 12580,
+      "high_reviews": 16418,
+      "comparison_reviews": 64229,
+      "scoring_reviews": 68888,
+      "n": 3697,
+      "firms": 1046,
+      "training_score_quartiles": [
+        0.0,
+        0.09090909090909091,
+        0.16666666666666666
+      ],
+      "low_company_years": 931,
+      "high_company_years": 988,
+      "bootstrap_ci95_gap_pp": [
+        -26.655651931364417,
+        -21.310648358590512
+      ],
+      "bootstrap_draws": 1999
+    },
+    {
+      "collection": "original",
+      "direction": "A_to_B",
+      "outcome": "any_offer_rate",
+      "low_rate": 0.7212241653418124,
+      "high_rate": 0.46723108783043,
+      "gap_pp": -25.399307751138245,
+      "low_reviews": 12580,
+      "high_reviews": 16418,
+      "comparison_reviews": 64229,
+      "scoring_reviews": 68888,
+      "n": 3697,
+      "firms": 1046,
+      "training_score_quartiles": [
+        0.0,
+        0.09090909090909091,
+        0.16666666666666666
+      ],
+      "low_company_years": 931,
+      "high_company_years": 988,
+      "bootstrap_ci95_gap_pp": [
+        -27.8853584755876,
+        -22.940065916323697
+      ],
+      "bootstrap_draws": 1999
+    },
+    {
+      "collection": "original",
+      "direction": "B_to_A",
+      "outcome": "accepted_rate",
+      "low_rate": 0.622216995923487,
+      "high_rate": 0.3823563152460709,
+      "gap_pp": -23.986068067741613,
+      "low_reviews": 12756,
+      "high_reviews": 17434,
+      "comparison_reviews": 64781,
+      "scoring_reviews": 69023,
+      "n": 3733,
+      "firms": 1035,
+      "training_score_quartiles": [
+        0.0,
+        0.09090909090909091,
+        0.16666666666666666
+      ],
+      "low_company_years": 945,
+      "high_company_years": 1038,
+      "bootstrap_ci95_gap_pp": [
+        -26.579356396922453,
+        -21.365288775296605
+      ],
+      "bootstrap_draws": 1999
+    },
+    {
+      "collection": "original",
+      "direction": "B_to_A",
+      "outcome": "any_offer_rate",
+      "low_rate": 0.7153496393853873,
+      "high_rate": 0.470976253298153,
+      "gap_pp": -24.43733860872343,
+      "low_reviews": 12756,
+      "high_reviews": 17434,
+      "comparison_reviews": 64781,
+      "scoring_reviews": 69023,
+      "n": 3733,
+      "firms": 1035,
+      "training_score_quartiles": [
+        0.0,
+        0.09090909090909091,
+        0.16666666666666666
+      ],
+      "low_company_years": 945,
+      "high_company_years": 1038,
+      "bootstrap_ci95_gap_pp": [
+        -26.93190686568058,
+        -21.833565140739132
+      ],
+      "bootstrap_draws": 1999
+    },
+    {
+      "collection": "revelio",
+      "direction": "A_to_B",
+      "outcome": "accepted_rate",
+      "low_rate": 0.4938537329741339,
+      "high_rate": 0.3881823750445698,
+      "gap_pp": -10.567135792956407,
+      "low_reviews": 212324,
+      "high_reviews": 109379,
+      "comparison_reviews": 321703,
+      "scoring_reviews": 324643,
+      "n": 5773,
+      "firms": 1129,
+      "training_score_quartiles": [
+        0.02,
+        0.058823529411764705,
+        0.1
+      ],
+      "low_company_years": 2897,
+      "high_company_years": 2876,
+      "bootstrap_ci95_gap_pp": [
+        -13.417198508964354,
+        -7.255110231938805
+      ],
+      "bootstrap_draws": 1999
+    },
+    {
+      "collection": "revelio",
+      "direction": "A_to_B",
+      "outcome": "any_offer_rate",
+      "low_rate": 0.5999981160867354,
+      "high_rate": 0.47481692098117556,
+      "gap_pp": -12.51811951055598,
+      "low_reviews": 212324,
+      "high_reviews": 109379,
+      "comparison_reviews": 321703,
+      "scoring_reviews": 324643,
+      "n": 5773,
+      "firms": 1129,
+      "training_score_quartiles": [
+        0.02,
+        0.058823529411764705,
+        0.1
+      ],
+      "low_company_years": 2897,
+      "high_company_years": 2876,
+      "bootstrap_ci95_gap_pp": [
+        -15.834342032906605,
+        -8.775312203407331
+      ],
+      "bootstrap_draws": 1999
+    },
+    {
+      "collection": "revelio",
+      "direction": "B_to_A",
+      "outcome": "accepted_rate",
+      "low_rate": 0.49133074875052546,
+      "high_rate": 0.38348167734246985,
+      "gap_pp": -10.784907140805561,
+      "low_reviews": 214090,
+      "high_reviews": 107408,
+      "comparison_reviews": 321498,
+      "scoring_reviews": 324273,
+      "n": 5747,
+      "firms": 1126,
+      "training_score_quartiles": [
+        0.018662564578858766,
+        0.058823529411764705,
+        0.1
+      ],
+      "low_company_years": 2893,
+      "high_company_years": 2854,
+      "bootstrap_ci95_gap_pp": [
+        -13.793581475046897,
+        -7.387865241466317
+      ],
+      "bootstrap_draws": 1999
+    },
+    {
+      "collection": "revelio",
+      "direction": "B_to_A",
+      "outcome": "any_offer_rate",
+      "low_rate": 0.5978420290532019,
+      "high_rate": 0.4711660211529867,
+      "gap_pp": -12.667600790021522,
+      "low_reviews": 214090,
+      "high_reviews": 107408,
+      "comparison_reviews": 321498,
+      "scoring_reviews": 324273,
+      "n": 5747,
+      "firms": 1126,
+      "training_score_quartiles": [
+        0.018662564578858766,
+        0.058823529411764705,
+        0.1
+      ],
+      "low_company_years": 2893,
+      "high_company_years": 2854,
+      "bootstrap_ci95_gap_pp": [
+        -16.14567288954184,
+        -8.851946085052532
+      ],
+      "bootstrap_draws": 1999
+    }
+  ],
+  "models": [
+    {
+      "collection": "original",
+      "direction": "A_to_B",
+      "outcome": "accepted_rate",
+      "spec": "basic",
+      "predictor": "score",
+      "controls": [],
+      "company_effects": false,
+      "industry_effects": false,
+      "year_effects": true,
+      "b": -0.7324177810970086,
+      "se": 0.04015775299458351,
+      "p": 9.746169356972422e-65,
+      "effect_pp_per_10pp_score": -7.324177810970086,
+      "se_pp_per_10pp_score": 0.4015775299458351,
+      "ci95_pp_per_10pp_score": [
+        -8.112167973080313,
+        -6.536187648859859
+      ],
+      "n": 3697,
+      "firms": 1046,
+      "comparison_reviews": 64229,
+      "scoring_reviews": 68888,
+      "holm_p_all_32_models": 3.0213125006614505e-63
+    },
+    {
+      "collection": "original",
+      "direction": "A_to_B",
+      "outcome": "accepted_rate",
+      "spec": "composition",
+      "predictor": "score",
+      "controls": [
+        "training_offer_share",
+        "log_training_n",
+        "log_training_length"
+      ],
+      "company_effects": false,
+      "industry_effects": false,
+      "year_effects": true,
+      "b": 0.09952064762067167,
+      "se": 0.034555207568869616,
+      "p": 0.004057326682737139,
+      "effect_pp_per_10pp_score": 0.9952064762067168,
+      "se_pp_per_10pp_score": 0.34555207568869617,
+      "ci95_pp_per_10pp_score": [
+        0.3171515158701964,
+        1.6732614365432368
+      ],
+      "n": 3697,
+      "firms": 1046,
+      "comparison_reviews": 64229,
+      "scoring_reviews": 68888,
+      "holm_p_four_primary_or_secondary": 0.009825777228445971,
+      "holm_p_all_32_models": 0.06491722692379423
+    },
+    {
+      "collection": "original",
+      "direction": "A_to_B",
+      "outcome": "accepted_rate",
+      "spec": "company_year",
+      "predictor": "score",
+      "controls": [
+        "training_offer_share",
+        "log_training_n",
+        "log_training_length"
+      ],
+      "company_effects": true,
+      "industry_effects": false,
+      "year_effects": true,
+      "b": -0.006021591200518846,
+      "se": 0.04230575336483427,
+      "p": 0.8868428052754921,
+      "effect_pp_per_10pp_score": -0.06021591200518846,
+      "se_pp_per_10pp_score": 0.4230575336483427,
+      "ci95_pp_per_10pp_score": [
+        -0.8903549254267678,
+        0.7699231014163909
+      ],
+      "n": 3697,
+      "firms": 1046,
+      "comparison_reviews": 64229,
+      "scoring_reviews": 68888,
+      "holm_p_all_32_models": 1.0
+    },
+    {
+      "collection": "original",
+      "direction": "A_to_B",
+      "outcome": "accepted_rate",
+      "spec": "conditional_no_offer",
+      "predictor": "conditional_score",
+      "controls": [
+        "training_offer_share",
+        "log_training_n",
+        "log_training_length"
+      ],
+      "company_effects": false,
+      "industry_effects": false,
+      "year_effects": true,
+      "b": 0.019430099741368674,
+      "se": 0.012375641397780473,
+      "p": 0.11671343063840534,
+      "effect_pp_per_10pp_score": 0.19430099741368673,
+      "se_pp_per_10pp_score": 0.12375641397780474,
+      "ci95_pp_per_10pp_score": [
+        -0.04854027732894322,
+        0.43714227215631674
+      ],
+      "n": 3582,
+      "firms": 1039,
+      "comparison_reviews": 62851,
+      "scoring_reviews": 67454,
+      "holm_p_all_32_models": 1.0
+    },
+    {
+      "collection": "original",
+      "direction": "A_to_B",
+      "outcome": "any_offer_rate",
+      "spec": "basic",
+      "predictor": "score",
+      "controls": [],
+      "company_effects": false,
+      "industry_effects": false,
+      "year_effects": true,
+      "b": -0.837177713969276,
+      "se": 0.04032200206682798,
+      "p": 1.940550784970922e-80,
+      "effect_pp_per_10pp_score": -8.37177713969276,
+      "se_pp_per_10pp_score": 0.40322002066827983,
+      "ci95_pp_per_10pp_score": [
+        -9.162990257357343,
+        -7.5805640220281765
+      ],
+      "n": 3697,
+      "firms": 1046,
+      "comparison_reviews": 64229,
+      "scoring_reviews": 68888,
+      "holm_p_all_32_models": 6.209762511906951e-79
+    },
+    {
+      "collection": "original",
+      "direction": "A_to_B",
+      "outcome": "any_offer_rate",
+      "spec": "composition",
+      "predictor": "score",
+      "controls": [
+        "training_offer_share",
+        "log_training_n",
+        "log_training_length"
+      ],
+      "company_effects": false,
+      "industry_effects": false,
+      "year_effects": true,
+      "b": 0.09427057242126793,
+      "se": 0.03462102390393985,
+      "p": 0.006578365081317978,
+      "effect_pp_per_10pp_score": 0.9427057242126793,
+      "se_pp_per_10pp_score": 0.34621023903939846,
+      "ci95_pp_per_10pp_score": [
+        0.26335929160308424,
+        1.6220521568222745
+      ],
+      "n": 3697,
+      "firms": 1046,
+      "comparison_reviews": 64229,
+      "scoring_reviews": 68888,
+      "holm_p_four_primary_or_secondary": 0.006578365081317978,
+      "holm_p_all_32_models": 0.09867547621976966
+    },
+    {
+      "collection": "original",
+      "direction": "A_to_B",
+      "outcome": "any_offer_rate",
+      "spec": "company_year",
+      "predictor": "score",
+      "controls": [
+        "training_offer_share",
+        "log_training_n",
+        "log_training_length"
+      ],
+      "company_effects": true,
+      "industry_effects": false,
+      "year_effects": true,
+      "b": -0.021551751932126453,
+      "se": 0.043139619995936435,
+      "p": 0.6174750202248586,
+      "effect_pp_per_10pp_score": -0.21551751932126453,
+      "se_pp_per_10pp_score": 0.43139619995936435,
+      "ci95_pp_per_10pp_score": [
+        -1.0620189697026292,
+        0.6309839310601001
+      ],
+      "n": 3697,
+      "firms": 1046,
+      "comparison_reviews": 64229,
+      "scoring_reviews": 68888,
+      "holm_p_all_32_models": 1.0
+    },
+    {
+      "collection": "original",
+      "direction": "A_to_B",
+      "outcome": "any_offer_rate",
+      "spec": "conditional_no_offer",
+      "predictor": "conditional_score",
+      "controls": [
+        "training_offer_share",
+        "log_training_n",
+        "log_training_length"
+      ],
+      "company_effects": false,
+      "industry_effects": false,
+      "year_effects": true,
+      "b": 0.008098722472700768,
+      "se": 0.010399730491761345,
+      "p": 0.43630831677657467,
+      "effect_pp_per_10pp_score": 0.08098722472700769,
+      "se_pp_per_10pp_score": 0.10399730491761344,
+      "ci95_pp_per_10pp_score": [
+        -0.12308169812106863,
+        0.285056147575084
+      ],
+      "n": 3582,
+      "firms": 1039,
+      "comparison_reviews": 62851,
+      "scoring_reviews": 67454,
+      "holm_p_all_32_models": 1.0
+    },
+    {
+      "collection": "original",
+      "direction": "B_to_A",
+      "outcome": "accepted_rate",
+      "spec": "basic",
+      "predictor": "score",
+      "controls": [],
+      "company_effects": false,
+      "industry_effects": false,
+      "year_effects": true,
+      "b": -0.7348469187478596,
+      "se": 0.043588377789652445,
+      "p": 1.5843897431503547e-56,
+      "effect_pp_per_10pp_score": -7.348469187478596,
+      "se_pp_per_10pp_score": 0.43588377789652444,
+      "ci95_pp_per_10pp_score": [
+        -8.203786878722811,
+        -6.493151496234381
+      ],
+      "n": 3733,
+      "firms": 1035,
+      "comparison_reviews": 64781,
+      "scoring_reviews": 69023,
+      "holm_p_all_32_models": 4.5947302551360285e-55
+    },
+    {
+      "collection": "original",
+      "direction": "B_to_A",
+      "outcome": "accepted_rate",
+      "spec": "composition",
+      "predictor": "score",
+      "controls": [
+        "training_offer_share",
+        "log_training_n",
+        "log_training_length"
+      ],
+      "company_effects": false,
+      "industry_effects": false,
+      "year_effects": true,
+      "b": 0.10265511125517865,
+      "se": 0.03482759158035404,
+      "p": 0.0032752590761486572,
+      "effect_pp_per_10pp_score": 1.0265511125517865,
+      "se_pp_per_10pp_score": 0.3482759158035404,
+      "ci95_pp_per_10pp_score": [
+        0.3431429030089092,
+        1.7099593220946638
+      ],
+      "n": 3733,
+      "firms": 1035,
+      "comparison_reviews": 64781,
+      "scoring_reviews": 69023,
+      "holm_p_four_primary_or_secondary": 0.009825777228445971,
+      "holm_p_all_32_models": 0.05895466337067583
+    },
+    {
+      "collection": "original",
+      "direction": "B_to_A",
+      "outcome": "accepted_rate",
+      "spec": "company_year",
+      "predictor": "score",
+      "controls": [
+        "training_offer_share",
+        "log_training_n",
+        "log_training_length"
+      ],
+      "company_effects": true,
+      "industry_effects": false,
+      "year_effects": true,
+      "b": -0.028674054344226856,
+      "se": 0.04509466577643315,
+      "p": 0.5250060688023637,
+      "effect_pp_per_10pp_score": -0.28674054344226857,
+      "se_pp_per_10pp_score": 0.4509466577643315,
+      "ci95_pp_per_10pp_score": [
+        -1.1716155347865125,
+        0.5981344479019755
+      ],
+      "n": 3733,
+      "firms": 1035,
+      "comparison_reviews": 64781,
+      "scoring_reviews": 69023,
+      "holm_p_all_32_models": 1.0
+    },
+    {
+      "collection": "original",
+      "direction": "B_to_A",
+      "outcome": "accepted_rate",
+      "spec": "conditional_no_offer",
+      "predictor": "conditional_score",
+      "controls": [
+        "training_offer_share",
+        "log_training_n",
+        "log_training_length"
+      ],
+      "company_effects": false,
+      "industry_effects": false,
+      "year_effects": true,
+      "b": 0.03254248021373491,
+      "se": 0.01234645550067058,
+      "p": 0.008521824527769305,
+      "effect_pp_per_10pp_score": 0.3254248021373491,
+      "se_pp_per_10pp_score": 0.1234645550067058,
+      "ci95_pp_per_10pp_score": [
+        0.08315151916878996,
+        0.5676980851059082
+      ],
+      "n": 3623,
+      "firms": 1022,
+      "comparison_reviews": 63463,
+      "scoring_reviews": 67654,
+      "holm_p_all_32_models": 0.11078371886100097
+    },
+    {
+      "collection": "original",
+      "direction": "B_to_A",
+      "outcome": "any_offer_rate",
+      "spec": "basic",
+      "predictor": "score",
+      "controls": [],
+      "company_effects": false,
+      "industry_effects": false,
+      "year_effects": true,
+      "b": -0.8329429608472151,
+      "se": 0.04576020627663254,
+      "p": 1.9534621711431503e-64,
+      "effect_pp_per_10pp_score": -8.32942960847215,
+      "se_pp_per_10pp_score": 0.4576020627663254,
+      "ci95_pp_per_10pp_score": [
+        -9.227364240778652,
+        -7.43149497616565
+      ],
+      "n": 3733,
+      "firms": 1035,
+      "comparison_reviews": 64781,
+      "scoring_reviews": 69023,
+      "holm_p_all_32_models": 5.86038651342945e-63
+    },
+    {
+      "collection": "original",
+      "direction": "B_to_A",
+      "outcome": "any_offer_rate",
+      "spec": "composition",
+      "predictor": "score",
+      "controls": [
+        "training_offer_share",
+        "log_training_n",
+        "log_training_length"
+      ],
+      "company_effects": false,
+      "industry_effects": false,
+      "year_effects": true,
+      "b": 0.11531221487136777,
+      "se": 0.03488246292648945,
+      "p": 0.000979829980208843,
+      "effect_pp_per_10pp_score": 1.1531221487136776,
+      "se_pp_per_10pp_score": 0.3488246292648945,
+      "ci95_pp_per_10pp_score": [
+        0.46863722020414167,
+        1.8376070772232136
+      ],
+      "n": 3733,
+      "firms": 1035,
+      "comparison_reviews": 64781,
+      "scoring_reviews": 69023,
+      "holm_p_four_primary_or_secondary": 0.002939489940626529,
+      "holm_p_all_32_models": 0.019596599604176857
+    },
+    {
+      "collection": "original",
+      "direction": "B_to_A",
+      "outcome": "any_offer_rate",
+      "spec": "company_year",
+      "predictor": "score",
+      "controls": [
+        "training_offer_share",
+        "log_training_n",
+        "log_training_length"
+      ],
+      "company_effects": true,
+      "industry_effects": false,
+      "year_effects": true,
+      "b": 0.012853735408459549,
+      "se": 0.044651180311017426,
+      "p": 0.7735039369712795,
+      "effect_pp_per_10pp_score": 0.1285373540845955,
+      "se_pp_per_10pp_score": 0.44651180311017424,
+      "ci95_pp_per_10pp_score": [
+        -0.7476352954058116,
+        1.0047100035750025
+      ],
+      "n": 3733,
+      "firms": 1035,
+      "comparison_reviews": 64781,
+      "scoring_reviews": 69023,
+      "holm_p_all_32_models": 1.0
+    },
+    {
+      "collection": "original",
+      "direction": "B_to_A",
+      "outcome": "any_offer_rate",
+      "spec": "conditional_no_offer",
+      "predictor": "conditional_score",
+      "controls": [
+        "training_offer_share",
+        "log_training_n",
+        "log_training_length"
+      ],
+      "company_effects": false,
+      "industry_effects": false,
+      "year_effects": true,
+      "b": 0.03183121752029738,
+      "se": 0.010828528623285226,
+      "p": 0.0033607062078636622,
+      "effect_pp_per_10pp_score": 0.3183121752029738,
+      "se_pp_per_10pp_score": 0.10828528623285226,
+      "ci95_pp_per_10pp_score": [
+        0.1058250221783803,
+        0.5307993282275671
+      ],
+      "n": 3623,
+      "firms": 1022,
+      "comparison_reviews": 63463,
+      "scoring_reviews": 67654,
+      "holm_p_all_32_models": 0.05895466337067583
+    },
+    {
+      "collection": "revelio",
+      "direction": "A_to_B",
+      "outcome": "accepted_rate",
+      "spec": "basic",
+      "predictor": "score",
+      "controls": [],
+      "company_effects": false,
+      "industry_effects": true,
+      "year_effects": true,
+      "b": -0.9549338253795624,
+      "se": 0.10881018687960596,
+      "p": 6.1497324797247055e-18,
+      "effect_pp_per_10pp_score": -9.549338253795623,
+      "se_pp_per_10pp_score": 1.0881018687960595,
+      "ci95_pp_per_10pp_score": [
+        -11.684269506170363,
+        -7.414407001420883
+      ],
+      "n": 5773,
+      "firms": 1129,
+      "comparison_reviews": 321703,
+      "scoring_reviews": 324643,
+      "holm_p_all_32_models": 1.7219250943229175e-16
+    },
+    {
+      "collection": "revelio",
+      "direction": "A_to_B",
+      "outcome": "accepted_rate",
+      "spec": "composition",
+      "predictor": "score",
+      "controls": [
+        "training_offer_share",
+        "log_training_n",
+        "log_training_length"
+      ],
+      "company_effects": false,
+      "industry_effects": true,
+      "year_effects": true,
+      "b": 0.09028421670724429,
+      "se": 0.033534764578179194,
+      "p": 0.00720209994759995,
+      "effect_pp_per_10pp_score": 0.9028421670724429,
+      "se_pp_per_10pp_score": 0.33534764578179194,
+      "ci95_pp_per_10pp_score": [
+        0.24486685251664211,
+        1.5608174816282439
+      ],
+      "n": 5773,
+      "firms": 1129,
+      "comparison_reviews": 321703,
+      "scoring_reviews": 324643,
+      "holm_p_four_primary_or_secondary": 0.009825777228445971,
+      "holm_p_all_32_models": 0.1008293992663993
+    },
+    {
+      "collection": "revelio",
+      "direction": "A_to_B",
+      "outcome": "accepted_rate",
+      "spec": "company_year",
+      "predictor": "score",
+      "controls": [
+        "training_offer_share",
+        "log_training_n",
+        "log_training_length"
+      ],
+      "company_effects": true,
+      "industry_effects": false,
+      "year_effects": true,
+      "b": 0.05706996621050548,
+      "se": 0.039821412604132155,
+      "p": 0.15209272491119447,
+      "effect_pp_per_10pp_score": 0.5706996621050549,
+      "se_pp_per_10pp_score": 0.39821412604132156,
+      "ci95_pp_per_10pp_score": [
+        -0.21062404223099107,
+        1.3520233664411008
+      ],
+      "n": 5773,
+      "firms": 1129,
+      "comparison_reviews": 321703,
+      "scoring_reviews": 324643,
+      "holm_p_all_32_models": 1.0
+    },
+    {
+      "collection": "revelio",
+      "direction": "A_to_B",
+      "outcome": "accepted_rate",
+      "spec": "conditional_no_offer",
+      "predictor": "conditional_score",
+      "controls": [
+        "training_offer_share",
+        "log_training_n",
+        "log_training_length"
+      ],
+      "company_effects": false,
+      "industry_effects": true,
+      "year_effects": true,
+      "b": 0.05066015120214567,
+      "se": 0.01481879074135008,
+      "p": 0.0006518793921022891,
+      "effect_pp_per_10pp_score": 0.5066015120214566,
+      "se_pp_per_10pp_score": 0.1481879074135008,
+      "ci95_pp_per_10pp_score": [
+        0.21584573810604452,
+        0.7973572859368688
+      ],
+      "n": 5735,
+      "firms": 1126,
+      "comparison_reviews": 320962,
+      "scoring_reviews": 323985,
+      "holm_p_all_32_models": 0.013689467234148071
+    },
+    {
+      "collection": "revelio",
+      "direction": "A_to_B",
+      "outcome": "any_offer_rate",
+      "spec": "basic",
+      "predictor": "score",
+      "controls": [],
+      "company_effects": false,
+      "industry_effects": true,
+      "year_effects": true,
+      "b": -1.1095830753348903,
+      "se": 0.13600991755694672,
+      "p": 9.006353250727896e-16,
+      "effect_pp_per_10pp_score": -11.095830753348903,
+      "se_pp_per_10pp_score": 1.3600991755694671,
+      "ci95_pp_per_10pp_score": [
+        -13.76443956611128,
+        -8.427221940586527
+      ],
+      "n": 5773,
+      "firms": 1129,
+      "comparison_reviews": 321703,
+      "scoring_reviews": 324643,
+      "holm_p_all_32_models": 2.341651845189253e-14
+    },
+    {
+      "collection": "revelio",
+      "direction": "A_to_B",
+      "outcome": "any_offer_rate",
+      "spec": "composition",
+      "predictor": "score",
+      "controls": [
+        "training_offer_share",
+        "log_training_n",
+        "log_training_length"
+      ],
+      "company_effects": false,
+      "industry_effects": true,
+      "year_effects": true,
+      "b": 0.10693220576255491,
+      "se": 0.03364982671334567,
+      "p": 0.001524318341057266,
+      "effect_pp_per_10pp_score": 1.069322057625549,
+      "se_pp_per_10pp_score": 0.33649826713345665,
+      "ci95_pp_per_10pp_score": [
+        0.4090891442605149,
+        1.7295549709905833
+      ],
+      "n": 5773,
+      "firms": 1129,
+      "comparison_reviews": 321703,
+      "scoring_reviews": 324643,
+      "holm_p_four_primary_or_secondary": 0.003048636682114532,
+      "holm_p_all_32_models": 0.028962048480088053
+    },
+    {
+      "collection": "revelio",
+      "direction": "A_to_B",
+      "outcome": "any_offer_rate",
+      "spec": "company_year",
+      "predictor": "score",
+      "controls": [
+        "training_offer_share",
+        "log_training_n",
+        "log_training_length"
+      ],
+      "company_effects": true,
+      "industry_effects": false,
+      "year_effects": true,
+      "b": 0.035420093364871244,
+      "se": 0.03831228286451619,
+      "p": 0.3554185119180624,
+      "effect_pp_per_10pp_score": 0.3542009336487124,
+      "se_pp_per_10pp_score": 0.3831228286451619,
+      "ci95_pp_per_10pp_score": [
+        -0.39751259964186714,
+        1.105914466939292
+      ],
+      "n": 5773,
+      "firms": 1129,
+      "comparison_reviews": 321703,
+      "scoring_reviews": 324643,
+      "holm_p_all_32_models": 1.0
+    },
+    {
+      "collection": "revelio",
+      "direction": "A_to_B",
+      "outcome": "any_offer_rate",
+      "spec": "conditional_no_offer",
+      "predictor": "conditional_score",
+      "controls": [
+        "training_offer_share",
+        "log_training_n",
+        "log_training_length"
+      ],
+      "company_effects": false,
+      "industry_effects": true,
+      "year_effects": true,
+      "b": 0.019357430974623016,
+      "se": 0.0123639321297134,
+      "p": 0.11771482220389501,
+      "effect_pp_per_10pp_score": 0.19357430974623016,
+      "se_pp_per_10pp_score": 0.12363932129713401,
+      "ci95_pp_per_10pp_score": [
+        -0.04901529947075878,
+        0.4361639189632191
+      ],
+      "n": 5735,
+      "firms": 1126,
+      "comparison_reviews": 320962,
+      "scoring_reviews": 323985,
+      "holm_p_all_32_models": 1.0
+    },
+    {
+      "collection": "revelio",
+      "direction": "B_to_A",
+      "outcome": "accepted_rate",
+      "spec": "basic",
+      "predictor": "score",
+      "controls": [],
+      "company_effects": false,
+      "industry_effects": true,
+      "year_effects": true,
+      "b": -0.8805461840849181,
+      "se": 0.10459228555961693,
+      "p": 1.1444183637278497e-16,
+      "effect_pp_per_10pp_score": -8.805461840849182,
+      "se_pp_per_10pp_score": 1.0459228555961693,
+      "ci95_pp_per_10pp_score": [
+        -10.857640825238944,
+        -6.753282856459419
+      ],
+      "n": 5747,
+      "firms": 1126,
+      "comparison_reviews": 321498,
+      "scoring_reviews": 324273,
+      "holm_p_all_32_models": 3.0899295820651942e-15
+    },
+    {
+      "collection": "revelio",
+      "direction": "B_to_A",
+      "outcome": "accepted_rate",
+      "spec": "composition",
+      "predictor": "score",
+      "controls": [
+        "training_offer_share",
+        "log_training_n",
+        "log_training_length"
+      ],
+      "company_effects": false,
+      "industry_effects": true,
+      "year_effects": true,
+      "b": 0.15661240304370708,
+      "se": 0.03239458418265826,
+      "p": 1.5197126033713578e-06,
+      "effect_pp_per_10pp_score": 1.5661240304370707,
+      "se_pp_per_10pp_score": 0.3239458418265826,
+      "ci95_pp_per_10pp_score": [
+        0.9305180245830025,
+        2.201730036291139
+      ],
+      "n": 5747,
+      "firms": 1126,
+      "comparison_reviews": 321498,
+      "scoring_reviews": 324273,
+      "holm_p_four_primary_or_secondary": 6.078850413485431e-06,
+      "holm_p_all_32_models": 3.6473102480912585e-05
+    },
+    {
+      "collection": "revelio",
+      "direction": "B_to_A",
+      "outcome": "accepted_rate",
+      "spec": "company_year",
+      "predictor": "score",
+      "controls": [
+        "training_offer_share",
+        "log_training_n",
+        "log_training_length"
+      ],
+      "company_effects": true,
+      "industry_effects": false,
+      "year_effects": true,
+      "b": 0.08111975068059331,
+      "se": 0.04116288152537008,
+      "p": 0.04900289695381781,
+      "effect_pp_per_10pp_score": 0.811197506805933,
+      "se_pp_per_10pp_score": 0.41162881525370076,
+      "ci95_pp_per_10pp_score": [
+        0.003550939458089458,
+        1.6188440741537768
+      ],
+      "n": 5747,
+      "firms": 1126,
+      "comparison_reviews": 321498,
+      "scoring_reviews": 324273,
+      "holm_p_all_32_models": 0.5390318664919959
+    },
+    {
+      "collection": "revelio",
+      "direction": "B_to_A",
+      "outcome": "accepted_rate",
+      "spec": "conditional_no_offer",
+      "predictor": "conditional_score",
+      "controls": [
+        "training_offer_share",
+        "log_training_n",
+        "log_training_length"
+      ],
+      "company_effects": false,
+      "industry_effects": true,
+      "year_effects": true,
+      "b": 0.06834364178931718,
+      "se": 0.017336431623328746,
+      "p": 8.57448222594712e-05,
+      "effect_pp_per_10pp_score": 0.6834364178931718,
+      "se_pp_per_10pp_score": 0.17336431623328746,
+      "ci95_pp_per_10pp_score": [
+        0.343281008633543,
+        1.0235918271528006
+      ],
+      "n": 5713,
+      "firms": 1121,
+      "comparison_reviews": 320963,
+      "scoring_reviews": 323743,
+      "holm_p_all_32_models": 0.0018863860897083665
+    },
+    {
+      "collection": "revelio",
+      "direction": "B_to_A",
+      "outcome": "any_offer_rate",
+      "spec": "basic",
+      "predictor": "score",
+      "controls": [],
+      "company_effects": false,
+      "industry_effects": true,
+      "year_effects": true,
+      "b": -1.0556284527262645,
+      "se": 0.1323943877828858,
+      "p": 3.7714236076038226e-15,
+      "effect_pp_per_10pp_score": -10.556284527262644,
+      "se_pp_per_10pp_score": 1.323943877828858,
+      "ci95_pp_per_10pp_score": [
+        -13.153961581602578,
+        -7.958607472922711
+      ],
+      "n": 5747,
+      "firms": 1126,
+      "comparison_reviews": 321498,
+      "scoring_reviews": 324273,
+      "holm_p_all_32_models": 9.428559019009557e-14
+    },
+    {
+      "collection": "revelio",
+      "direction": "B_to_A",
+      "outcome": "any_offer_rate",
+      "spec": "composition",
+      "predictor": "score",
+      "controls": [
+        "training_offer_share",
+        "log_training_n",
+        "log_training_length"
+      ],
+      "company_effects": false,
+      "industry_effects": true,
+      "year_effects": true,
+      "b": 0.1427368038755174,
+      "se": 0.032405472077778,
+      "p": 1.1602599137895744e-05,
+      "effect_pp_per_10pp_score": 1.4273680387551742,
+      "se_pp_per_10pp_score": 0.32405472077777997,
+      "ci95_pp_per_10pp_score": [
+        0.7915484042436056,
+        2.0631876732667425
+      ],
+      "n": 5747,
+      "firms": 1126,
+      "comparison_reviews": 321498,
+      "scoring_reviews": 324273,
+      "holm_p_four_primary_or_secondary": 4.641039655158298e-05,
+      "holm_p_all_32_models": 0.0002668597801716021
+    },
+    {
+      "collection": "revelio",
+      "direction": "B_to_A",
+      "outcome": "any_offer_rate",
+      "spec": "company_year",
+      "predictor": "score",
+      "controls": [
+        "training_offer_share",
+        "log_training_n",
+        "log_training_length"
+      ],
+      "company_effects": true,
+      "industry_effects": false,
+      "year_effects": true,
+      "b": 0.027295212151928608,
+      "se": 0.03914073997864279,
+      "p": 0.48572120212137504,
+      "effect_pp_per_10pp_score": 0.27295212151928605,
+      "se_pp_per_10pp_score": 0.3914073997864279,
+      "ci95_pp_per_10pp_score": [
+        -0.4950185140573775,
+        1.0409227570959496
+      ],
+      "n": 5747,
+      "firms": 1126,
+      "comparison_reviews": 321498,
+      "scoring_reviews": 324273,
+      "holm_p_all_32_models": 1.0
+    },
+    {
+      "collection": "revelio",
+      "direction": "B_to_A",
+      "outcome": "any_offer_rate",
+      "spec": "conditional_no_offer",
+      "predictor": "conditional_score",
+      "controls": [
+        "training_offer_share",
+        "log_training_n",
+        "log_training_length"
+      ],
+      "company_effects": false,
+      "industry_effects": true,
+      "year_effects": true,
+      "b": 0.02564077034983572,
+      "se": 0.012470673855509408,
+      "p": 0.040005624269552856,
+      "effect_pp_per_10pp_score": 0.2564077034983572,
+      "se_pp_per_10pp_score": 0.12470673855509408,
+      "ci95_pp_per_10pp_score": [
+        0.011722565216730763,
+        0.5010928417799836
+      ],
+      "n": 5713,
+      "firms": 1121,
+      "comparison_reviews": 320963,
+      "scoring_reviews": 323743,
+      "holm_p_all_32_models": 0.48006749123463427
+    }
+  ],
+  "interpretation": "Raw separate-review acceptance is lower at higher scores in both collections and directions. Controlling scoring-group offer share, review count and text length reverses the relationship; adjusted accepted-offer slopes are positive. Within-company/year adjusted results do not show a consistent negative association. This corroborates overall offer experiences but does not establish incremental low acceptance beyond scoring offer composition or actual worker starts.",
+  "new_api_calls": 0,
+  "new_paid_api_cost_usd": 0
+}

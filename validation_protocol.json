@@ -220,5 +220,13 @@
     "methods": "current_study_methods.json",
     "finding": "Original broad-score earnings attenuation outside 2020/2021 with full controls; raw score, company effects and resampling checks reported. Expanded core-control estimate less precise. Financial determinants do not show a common clear pattern; management applicants report more unavailable roles and future hiring within company-year.",
     "new_paid_api_cost_usd": 0
+  },
+  "accepted_offer_check": {
+    "date": "2026-11-03",
+    "results": "accepted_offer_results.json",
+    "methods": "accepted_offer_methods.json",
+    "models": 32,
+    "additional_api_cost_usd": 0,
+    "finding": "Raw separate-review acceptance is lower at higher scores in both collections and directions. Controlling scoring-group offer share, review count and text length reverses the relationship; adjusted accepted-offer slopes are positive. Within-company/year adjusted results do not show a consistent negative association. This corroborates overall offer experiences but does not establish incremental low acceptance beyond scoring offer composition or actual worker starts."
   }
 }

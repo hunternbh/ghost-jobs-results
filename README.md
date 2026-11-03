@@ -28,3 +28,6 @@ A measurement follow-up retains 288 additional diagnostic fits in `measurement_f
 ## November 3 update
 
 The current page reports original-score posting/earnings comparisons and the first determinant analysis. The previous report and all its tables are preserved in `report-before-2026-11-03.html`; previous JSON files remain unchanged. New aggregate outputs are `first_score_comparison.json`, `first_score_stability.json`, `determinants_results.json`, `recruitment_role_results.json`, and `current_study_methods.json`. `study_framework.svg` maps identification, operating checks, three potential determinants and the worker-start extension. No new paid API calls.
+
+
+The separate-review accepted-offer check is in `accepted_offer_results.json` and `accepted_offer_methods.json`: all 32 fixed-menu models are retained. Raw accepted-offer rates decline at higher scores; adding scoring-review offer composition reverses the relationship. Accepted outcomes do not verify worker starts. No paid API calls.
