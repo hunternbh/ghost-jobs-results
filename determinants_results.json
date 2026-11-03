@@ -1,0 +1,1712 @@
+[
+  {
+    "outcome": "broad_share",
+    "spec": "single_lag_profit_deterioration",
+    "minimum_reviews": 5,
+    "abnormal": false,
+    "weighted": false,
+    "n": 11001,
+    "firms": 2095,
+    "reviews": 680195,
+    "years": [
+      2016,
+      2024
+    ],
+    "terms": {
+      "lag_profit_deterioration": {
+        "b": 0.0008266146920188412,
+        "se": 0.0016501175928358405,
+        "p": 0.616463960222882,
+        "effect_pp_per_sd": 0.08266146920188412
+      }
+    }
+  },
+  {
+    "outcome": "broad_share",
+    "spec": "single_lag_sales_decline",
+    "minimum_reviews": 5,
+    "abnormal": false,
+    "weighted": false,
+    "n": 11001,
+    "firms": 2095,
+    "reviews": 680195,
+    "years": [
+      2016,
+      2024
+    ],
+    "terms": {
+      "lag_sales_decline": {
+        "b": 0.0013407373474305854,
+        "se": 0.001321663434904347,
+        "p": 0.31049397758569475,
+        "effect_pp_per_sd": 0.13407373474305853
+      }
+    }
+  },
+  {
+    "outcome": "broad_share",
+    "spec": "single_lag_operating_uncertainty",
+    "minimum_reviews": 5,
+    "abnormal": false,
+    "weighted": false,
+    "n": 10666,
+    "firms": 2035,
+    "reviews": 667943,
+    "years": [
+      2016,
+      2024
+    ],
+    "terms": {
+      "lag_operating_uncertainty": {
+        "b": -0.00128221633054007,
+        "se": 0.0030356325263839416,
+        "p": 0.6727861000387189,
+        "effect_pp_per_sd": -0.128221633054007
+      }
+    }
+  },
+  {
+    "outcome": "broad_share",
+    "spec": "single_lag_competition",
+    "minimum_reviews": 5,
+    "abnormal": false,
+    "weighted": false,
+    "n": 11280,
+    "firms": 2148,
+    "reviews": 686579,
+    "years": [
+      2016,
+      2024
+    ],
+    "terms": {
+      "lag_competition": {
+        "b": 0.002187166403423309,
+        "se": 0.002423583560994257,
+        "p": 0.3669183526677344,
+        "effect_pp_per_sd": 0.2187166403423309
+      }
+    }
+  },
+  {
+    "outcome": "broad_share",
+    "spec": "single_lag_industry_decline",
+    "minimum_reviews": 5,
+    "abnormal": false,
+    "weighted": false,
+    "n": 11348,
+    "firms": 2155,
+    "reviews": 691567,
+    "years": [
+      2016,
+      2024
+    ],
+    "terms": {
+      "lag_industry_decline": {
+        "b": -0.0011263337689803733,
+        "se": 0.0009377257635593966,
+        "p": 0.2298315018693788,
+        "effect_pp_per_sd": -0.11263337689803733
+      }
+    }
+  },
+  {
+    "outcome": "broad_share",
+    "spec": "single_lag_stock_pressure",
+    "minimum_reviews": 5,
+    "abnormal": false,
+    "weighted": false,
+    "n": 8273,
+    "firms": 1618,
+    "reviews": 531414,
+    "years": [
+      2016,
+      2024
+    ],
+    "terms": {
+      "lag_stock_pressure": {
+        "b": -6.396545697178276e-05,
+        "se": 0.001567188324547248,
+        "p": 0.9674480812529669,
+        "effect_pp_per_sd": -0.006396545697178276
+      }
+    }
+  },
+  {
+    "outcome": "broad_share",
+    "spec": "single_lag_stock_volatility",
+    "minimum_reviews": 5,
+    "abnormal": false,
+    "weighted": false,
+    "n": 8273,
+    "firms": 1618,
+    "reviews": 531414,
+    "years": [
+      2016,
+      2024
+    ],
+    "terms": {
+      "lag_stock_volatility": {
+        "b": 6.415806795623705e-05,
+        "se": 0.0021752431389630397,
+        "p": 0.9764737134286169,
+        "effect_pp_per_sd": 0.006415806795623705
+      }
+    }
+  },
+  {
+    "outcome": "broad_share",
+    "spec": "joint_financial",
+    "minimum_reviews": 1,
+    "abnormal": false,
+    "weighted": false,
+    "n": 17614,
+    "firms": 3430,
+    "reviews": 678246,
+    "years": [
+      2016,
+      2024
+    ],
+    "terms": {
+      "lag_profit_deterioration": {
+        "b": -0.0018013012052891404,
+        "se": 0.0027175879978388866,
+        "p": 0.5074834338069062,
+        "effect_pp_per_sd": -0.18013012052891406
+      },
+      "lag_sales_decline": {
+        "b": 0.004940884496099888,
+        "se": 0.002083068112436233,
+        "p": 0.01775051477157105,
+        "effect_pp_per_sd": 0.4940884496099888
+      },
+      "lag_operating_uncertainty": {
+        "b": -0.0003752474406907085,
+        "se": 0.003910389496427872,
+        "p": 0.9235566358673648,
+        "effect_pp_per_sd": -0.037524744069070845
+      },
+      "lag_competition": {
+        "b": 0.0023640902601914145,
+        "se": 0.003984385857659719,
+        "p": 0.5529936477929606,
+        "effect_pp_per_sd": 0.23640902601914146
+      },
+      "lag_industry_decline": {
+        "b": 0.0034846847211229275,
+        "se": 0.001689767981625652,
+        "p": 0.03926132280012926,
+        "effect_pp_per_sd": 0.34846847211229276
+      }
+    }
+  },
+  {
+    "outcome": "broad_share",
+    "spec": "joint_market",
+    "minimum_reviews": 1,
+    "abnormal": false,
+    "weighted": false,
+    "n": 13253,
+    "firms": 2597,
+    "reviews": 537522,
+    "years": [
+      2016,
+      2024
+    ],
+    "terms": {
+      "lag_profit_deterioration": {
+        "b": 0.0003023112040346044,
+        "se": 0.0034015652873079067,
+        "p": 0.9291887874959693,
+        "effect_pp_per_sd": 0.030231120403460442
+      },
+      "lag_sales_decline": {
+        "b": 0.0043546033418896905,
+        "se": 0.002345440008059694,
+        "p": 0.06347768656792054,
+        "effect_pp_per_sd": 0.43546033418896907
+      },
+      "lag_operating_uncertainty": {
+        "b": -0.0029515100498819272,
+        "se": 0.004457440576631567,
+        "p": 0.5079316016890921,
+        "effect_pp_per_sd": -0.29515100498819274
+      },
+      "lag_competition": {
+        "b": 0.0002024877411796297,
+        "se": 0.004636215669635244,
+        "p": 0.9651666505676391,
+        "effect_pp_per_sd": 0.02024877411796297
+      },
+      "lag_industry_decline": {
+        "b": 0.002462951219079125,
+        "se": 0.0019294077655125851,
+        "p": 0.20188161783965636,
+        "effect_pp_per_sd": 0.24629512190791253
+      },
+      "lag_stock_pressure": {
+        "b": -0.0019416044359457927,
+        "se": 0.0022350131961595358,
+        "p": 0.38507968046209107,
+        "effect_pp_per_sd": -0.19416044359457926
+      },
+      "lag_stock_volatility": {
+        "b": 0.007049069122851033,
+        "se": 0.003321765476097601,
+        "p": 0.03392504475633113,
+        "effect_pp_per_sd": 0.7049069122851033
+      }
+    }
+  },
+  {
+    "outcome": "broad_share",
+    "spec": "joint_financial",
+    "minimum_reviews": 5,
+    "abnormal": false,
+    "weighted": false,
+    "n": 10595,
+    "firms": 2028,
+    "reviews": 664218,
+    "years": [
+      2016,
+      2024
+    ],
+    "terms": {
+      "lag_profit_deterioration": {
+        "b": -0.000889278262929096,
+        "se": 0.0019871555017912526,
+        "p": 0.6545523970893363,
+        "effect_pp_per_sd": -0.0889278262929096,
+        "holm_p_main_determinants": 1.0
+      },
+      "lag_sales_decline": {
+        "b": 0.002042980562237839,
+        "se": 0.0014362111288530992,
+        "p": 0.15504102904933284,
+        "effect_pp_per_sd": 0.20429805622378389,
+        "holm_p_main_determinants": 1.0
+      },
+      "lag_operating_uncertainty": {
+        "b": -0.0010722886237659387,
+        "se": 0.0030317890065845125,
+        "p": 0.7236141379107661,
+        "effect_pp_per_sd": -0.10722886237659386,
+        "holm_p_main_determinants": 1.0
+      },
+      "lag_competition": {
+        "b": 0.003530402592737217,
+        "se": 0.0022660008445202057,
+        "p": 0.119392151127519,
+        "effect_pp_per_sd": 0.35304025927372173,
+        "holm_p_main_determinants": 1.0
+      },
+      "lag_industry_decline": {
+        "b": -0.001079031941371322,
+        "se": 0.0010353241263299708,
+        "p": 0.29743557596668735,
+        "effect_pp_per_sd": -0.1079031941371322,
+        "holm_p_main_determinants": 1.0
+      }
+    }
+  },
+  {
+    "outcome": "broad_share",
+    "spec": "joint_market",
+    "minimum_reviews": 5,
+    "abnormal": false,
+    "weighted": false,
+    "n": 8176,
+    "firms": 1595,
+    "reviews": 527245,
+    "years": [
+      2016,
+      2024
+    ],
+    "terms": {
+      "lag_profit_deterioration": {
+        "b": -0.0005941272391229399,
+        "se": 0.002502041215293691,
+        "p": 0.8123327778902243,
+        "effect_pp_per_sd": -0.05941272391229399,
+        "holm_p_main_determinants": 1.0
+      },
+      "lag_sales_decline": {
+        "b": 0.001743767555115906,
+        "se": 0.0016468868000520285,
+        "p": 0.289839177704519,
+        "effect_pp_per_sd": 0.1743767555115906,
+        "holm_p_main_determinants": 1.0
+      },
+      "lag_operating_uncertainty": {
+        "b": -0.00042215306211453236,
+        "se": 0.003947296688998683,
+        "p": 0.9148441783311582,
+        "effect_pp_per_sd": -0.04221530621145324,
+        "holm_p_main_determinants": 1.0
+      },
+      "lag_competition": {
+        "b": 0.0033745949847584786,
+        "se": 0.002554913907506628,
+        "p": 0.1867492027342335,
+        "effect_pp_per_sd": 0.3374594984758479,
+        "holm_p_main_determinants": 1.0
+      },
+      "lag_industry_decline": {
+        "b": -0.00023067498214577627,
+        "se": 0.001214104431407437,
+        "p": 0.8493364587200095,
+        "effect_pp_per_sd": -0.023067498214577625,
+        "holm_p_main_determinants": 1.0
+      },
+      "lag_stock_pressure": {
+        "b": -0.0003300089076303491,
+        "se": 0.0016769470682739475,
+        "p": 0.8440158003952437,
+        "effect_pp_per_sd": -0.03300089076303491,
+        "holm_p_main_determinants": 1.0
+      },
+      "lag_stock_volatility": {
+        "b": 0.0006568283354090514,
+        "se": 0.0022867375801722866,
+        "p": 0.7739706380171986,
+        "effect_pp_per_sd": 0.06568283354090514,
+        "holm_p_main_determinants": 1.0
+      }
+    }
+  },
+  {
+    "outcome": "broad_share",
+    "spec": "joint_financial",
+    "minimum_reviews": 10,
+    "abnormal": false,
+    "weighted": false,
+    "n": 7784,
+    "firms": 1502,
+    "reviews": 645540,
+    "years": [
+      2016,
+      2024
+    ],
+    "terms": {
+      "lag_profit_deterioration": {
+        "b": -0.0001712040448989894,
+        "se": 0.0018401129281534524,
+        "p": 0.925884226770652,
+        "effect_pp_per_sd": -0.01712040448989894
+      },
+      "lag_sales_decline": {
+        "b": 0.0006282512607701005,
+        "se": 0.0012447996641126629,
+        "p": 0.6138431538178302,
+        "effect_pp_per_sd": 0.06282512607701005
+      },
+      "lag_operating_uncertainty": {
+        "b": -0.0008434157123483032,
+        "se": 0.002278822556017431,
+        "p": 0.7113525192079696,
+        "effect_pp_per_sd": -0.08434157123483033
+      },
+      "lag_competition": {
+        "b": 0.0029543332215092753,
+        "se": 0.0021464416715418337,
+        "p": 0.16890730879639682,
+        "effect_pp_per_sd": 0.29543332215092755
+      },
+      "lag_industry_decline": {
+        "b": -0.001603506896568913,
+        "se": 0.0009893617631887505,
+        "p": 0.10528156091355324,
+        "effect_pp_per_sd": -0.1603506896568913
+      }
+    }
+  },
+  {
+    "outcome": "broad_share",
+    "spec": "joint_market",
+    "minimum_reviews": 10,
+    "abnormal": false,
+    "weighted": false,
+    "n": 6003,
+    "firms": 1187,
+    "reviews": 512802,
+    "years": [
+      2016,
+      2024
+    ],
+    "terms": {
+      "lag_profit_deterioration": {
+        "b": -0.0014282360417538014,
+        "se": 0.002256208041472466,
+        "p": 0.5268393688889189,
+        "effect_pp_per_sd": -0.14282360417538015
+      },
+      "lag_sales_decline": {
+        "b": 0.0009134182032560266,
+        "se": 0.0014183840004259429,
+        "p": 0.519709592069898,
+        "effect_pp_per_sd": 0.09134182032560266
+      },
+      "lag_operating_uncertainty": {
+        "b": 0.0008503336617142247,
+        "se": 0.0027035710633733175,
+        "p": 0.7531796259053029,
+        "effect_pp_per_sd": 0.08503336617142247
+      },
+      "lag_competition": {
+        "b": 0.0036758243468486404,
+        "se": 0.0024722828422425285,
+        "p": 0.1373297733659822,
+        "effect_pp_per_sd": 0.367582434684864
+      },
+      "lag_industry_decline": {
+        "b": -0.0006660048677405613,
+        "se": 0.0012220878407736445,
+        "p": 0.5858745534556478,
+        "effect_pp_per_sd": -0.06660048677405613
+      },
+      "lag_stock_pressure": {
+        "b": -0.0020073438747334965,
+        "se": 0.001303592574844182,
+        "p": 0.12386238726890854,
+        "effect_pp_per_sd": -0.20073438747334965
+      },
+      "lag_stock_volatility": {
+        "b": -0.0024792993775933536,
+        "se": 0.001916450235589921,
+        "p": 0.19602316928993413,
+        "effect_pp_per_sd": -0.24792993775933536
+      }
+    }
+  },
+  {
+    "outcome": "broad_share",
+    "spec": "joint_financial",
+    "minimum_reviews": 5,
+    "abnormal": true,
+    "weighted": false,
+    "n": 7601,
+    "firms": 1655,
+    "reviews": 513650,
+    "years": [
+      2018,
+      2024
+    ],
+    "terms": {
+      "lag_profit_deterioration": {
+        "b": 0.0030686638790387724,
+        "se": 0.0027066479179446564,
+        "p": 0.25706344885157667,
+        "effect_pp_per_sd": 0.30686638790387727
+      },
+      "lag_sales_decline": {
+        "b": 0.0026536204601414473,
+        "se": 0.0020541967504590763,
+        "p": 0.19660535535801632,
+        "effect_pp_per_sd": 0.2653620460141447
+      },
+      "lag_operating_uncertainty": {
+        "b": 0.005242211800824852,
+        "se": 0.004715694316469178,
+        "p": 0.2664492914166026,
+        "effect_pp_per_sd": 0.5242211800824852
+      },
+      "lag_competition": {
+        "b": 0.0003714070020656986,
+        "se": 0.003570535923034158,
+        "p": 0.9171661201978555,
+        "effect_pp_per_sd": 0.037140700206569864
+      },
+      "lag_industry_decline": {
+        "b": -0.003556575307874475,
+        "se": 0.0013480730212792153,
+        "p": 0.008411285252210781,
+        "effect_pp_per_sd": -0.3556575307874475
+      }
+    }
+  },
+  {
+    "outcome": "broad_share",
+    "spec": "joint_financial_precision",
+    "minimum_reviews": 5,
+    "abnormal": false,
+    "weighted": true,
+    "n": 10595,
+    "firms": 2028,
+    "reviews": 664218,
+    "years": [
+      2016,
+      2024
+    ],
+    "terms": {
+      "lag_profit_deterioration": {
+        "b": -0.00022912943302916836,
+        "se": 0.0013472825846026538,
+        "p": 0.8649737601338693,
+        "effect_pp_per_sd": -0.022912943302916836
+      },
+      "lag_sales_decline": {
+        "b": 0.0003201854977239099,
+        "se": 0.0009612930120641913,
+        "p": 0.7391098960520622,
+        "effect_pp_per_sd": 0.03201854977239099
+      },
+      "lag_operating_uncertainty": {
+        "b": -0.0009303346976241094,
+        "se": 0.0017701403339323097,
+        "p": 0.5992436905037087,
+        "effect_pp_per_sd": -0.09303346976241095
+      },
+      "lag_competition": {
+        "b": 0.002934259098749324,
+        "se": 0.0017557694770957493,
+        "p": 0.09483461330537175,
+        "effect_pp_per_sd": 0.2934259098749324
+      },
+      "lag_industry_decline": {
+        "b": -0.0008390730083617827,
+        "se": 0.0006976800887165866,
+        "p": 0.22924778527780937,
+        "effect_pp_per_sd": -0.08390730083617827
+      }
+    }
+  },
+  {
+    "outcome": "strict_share",
+    "spec": "single_lag_profit_deterioration",
+    "minimum_reviews": 5,
+    "abnormal": false,
+    "weighted": false,
+    "n": 11001,
+    "firms": 2095,
+    "reviews": 680195,
+    "years": [
+      2016,
+      2024
+    ],
+    "terms": {
+      "lag_profit_deterioration": {
+        "b": 0.0005122432170482769,
+        "se": 0.0004365745779384317,
+        "p": 0.24079953938615248,
+        "effect_pp_per_sd": 0.05122432170482769
+      }
+    }
+  },
+  {
+    "outcome": "strict_share",
+    "spec": "single_lag_sales_decline",
+    "minimum_reviews": 5,
+    "abnormal": false,
+    "weighted": false,
+    "n": 11001,
+    "firms": 2095,
+    "reviews": 680195,
+    "years": [
+      2016,
+      2024
+    ],
+    "terms": {
+      "lag_sales_decline": {
+        "b": 0.0002746910769495898,
+        "se": 0.00032004721617527625,
+        "p": 0.3908344565602167,
+        "effect_pp_per_sd": 0.02746910769495898
+      }
+    }
+  },
+  {
+    "outcome": "strict_share",
+    "spec": "single_lag_operating_uncertainty",
+    "minimum_reviews": 5,
+    "abnormal": false,
+    "weighted": false,
+    "n": 10666,
+    "firms": 2035,
+    "reviews": 667943,
+    "years": [
+      2016,
+      2024
+    ],
+    "terms": {
+      "lag_operating_uncertainty": {
+        "b": 0.0007325756347154664,
+        "se": 0.0007583928140676953,
+        "p": 0.33418001246937246,
+        "effect_pp_per_sd": 0.07325756347154665
+      }
+    }
+  },
+  {
+    "outcome": "strict_share",
+    "spec": "single_lag_competition",
+    "minimum_reviews": 5,
+    "abnormal": false,
+    "weighted": false,
+    "n": 11280,
+    "firms": 2148,
+    "reviews": 686579,
+    "years": [
+      2016,
+      2024
+    ],
+    "terms": {
+      "lag_competition": {
+        "b": 0.0002824780248473766,
+        "se": 0.0006134551977489131,
+        "p": 0.6452251703550568,
+        "effect_pp_per_sd": 0.028247802484737662
+      }
+    }
+  },
+  {
+    "outcome": "strict_share",
+    "spec": "single_lag_industry_decline",
+    "minimum_reviews": 5,
+    "abnormal": false,
+    "weighted": false,
+    "n": 11348,
+    "firms": 2155,
+    "reviews": 691567,
+    "years": [
+      2016,
+      2024
+    ],
+    "terms": {
+      "lag_industry_decline": {
+        "b": 0.00014523301220623785,
+        "se": 0.00022858285006712077,
+        "p": 0.5252593910396004,
+        "effect_pp_per_sd": 0.014523301220623785
+      }
+    }
+  },
+  {
+    "outcome": "strict_share",
+    "spec": "single_lag_stock_pressure",
+    "minimum_reviews": 5,
+    "abnormal": false,
+    "weighted": false,
+    "n": 8273,
+    "firms": 1618,
+    "reviews": 531414,
+    "years": [
+      2016,
+      2024
+    ],
+    "terms": {
+      "lag_stock_pressure": {
+        "b": 0.0006272040480572182,
+        "se": 0.0003805442862971915,
+        "p": 0.09951078197755014,
+        "effect_pp_per_sd": 0.06272040480572182
+      }
+    }
+  },
+  {
+    "outcome": "strict_share",
+    "spec": "single_lag_stock_volatility",
+    "minimum_reviews": 5,
+    "abnormal": false,
+    "weighted": false,
+    "n": 8273,
+    "firms": 1618,
+    "reviews": 531414,
+    "years": [
+      2016,
+      2024
+    ],
+    "terms": {
+      "lag_stock_volatility": {
+        "b": -0.00017471918613706325,
+        "se": 0.00047804919428849195,
+        "p": 0.7147981774267342,
+        "effect_pp_per_sd": -0.017471918613706325
+      }
+    }
+  },
+  {
+    "outcome": "strict_share",
+    "spec": "joint_financial",
+    "minimum_reviews": 1,
+    "abnormal": false,
+    "weighted": false,
+    "n": 17614,
+    "firms": 3430,
+    "reviews": 678246,
+    "years": [
+      2016,
+      2024
+    ],
+    "terms": {
+      "lag_profit_deterioration": {
+        "b": 2.9792878657170787e-05,
+        "se": 0.0007898725292932356,
+        "p": 0.9699142489262201,
+        "effect_pp_per_sd": 0.0029792878657170785
+      },
+      "lag_sales_decline": {
+        "b": 0.0005907472905798026,
+        "se": 0.0005308560383824204,
+        "p": 0.26586368999475046,
+        "effect_pp_per_sd": 0.05907472905798026
+      },
+      "lag_operating_uncertainty": {
+        "b": 0.0013930529118851124,
+        "se": 0.0006703354406649803,
+        "p": 0.0377704034897349,
+        "effect_pp_per_sd": 0.13930529118851123
+      },
+      "lag_competition": {
+        "b": -0.0008884132693222909,
+        "se": 0.0008835841155219394,
+        "p": 0.31474374025753676,
+        "effect_pp_per_sd": -0.0888413269322291
+      },
+      "lag_industry_decline": {
+        "b": 9.625546471509053e-05,
+        "se": 0.0004282226313103046,
+        "p": 0.8221645789732984,
+        "effect_pp_per_sd": 0.009625546471509053
+      }
+    }
+  },
+  {
+    "outcome": "strict_share",
+    "spec": "joint_market",
+    "minimum_reviews": 1,
+    "abnormal": false,
+    "weighted": false,
+    "n": 13253,
+    "firms": 2597,
+    "reviews": 537522,
+    "years": [
+      2016,
+      2024
+    ],
+    "terms": {
+      "lag_profit_deterioration": {
+        "b": 0.00019204873828124997,
+        "se": 0.0010166241118180195,
+        "p": 0.850179450664864,
+        "effect_pp_per_sd": 0.019204873828124996
+      },
+      "lag_sales_decline": {
+        "b": 0.0007413340502578856,
+        "se": 0.0006598503834390932,
+        "p": 0.2613341374108119,
+        "effect_pp_per_sd": 0.07413340502578857
+      },
+      "lag_operating_uncertainty": {
+        "b": 0.0021755007754713355,
+        "se": 0.0008919810439578212,
+        "p": 0.01479641793319215,
+        "effect_pp_per_sd": 0.21755007754713354
+      },
+      "lag_competition": {
+        "b": -0.00128538932018657,
+        "se": 0.0010677292054095554,
+        "p": 0.22875604502020763,
+        "effect_pp_per_sd": -0.12853893201865702
+      },
+      "lag_industry_decline": {
+        "b": 0.00025768255390478555,
+        "se": 0.0005247961621461602,
+        "p": 0.6234576578983322,
+        "effect_pp_per_sd": 0.025768255390478556
+      },
+      "lag_stock_pressure": {
+        "b": -0.00027192973082296374,
+        "se": 0.0005951785999974834,
+        "p": 0.6477900533155803,
+        "effect_pp_per_sd": -0.027192973082296373
+      },
+      "lag_stock_volatility": {
+        "b": 0.0013855464065917133,
+        "se": 0.00085003588518317,
+        "p": 0.1032258187240215,
+        "effect_pp_per_sd": 0.13855464065917134
+      }
+    }
+  },
+  {
+    "outcome": "strict_share",
+    "spec": "joint_financial",
+    "minimum_reviews": 5,
+    "abnormal": false,
+    "weighted": false,
+    "n": 10595,
+    "firms": 2028,
+    "reviews": 664218,
+    "years": [
+      2016,
+      2024
+    ],
+    "terms": {
+      "lag_profit_deterioration": {
+        "b": 0.0003513792570199334,
+        "se": 0.0005252415988817114,
+        "p": 0.5035806140590219,
+        "effect_pp_per_sd": 0.03513792570199334,
+        "holm_p_main_determinants": 1.0
+      },
+      "lag_sales_decline": {
+        "b": 0.00014503524913388888,
+        "se": 0.00033355142101298377,
+        "p": 0.6637384587987994,
+        "effect_pp_per_sd": 0.014503524913388887,
+        "holm_p_main_determinants": 1.0
+      },
+      "lag_operating_uncertainty": {
+        "b": 0.000828613743372774,
+        "se": 0.0007949210501514158,
+        "p": 0.2973575432472299,
+        "effect_pp_per_sd": 0.0828613743372774,
+        "holm_p_main_determinants": 1.0
+      },
+      "lag_competition": {
+        "b": -0.00015936108291160538,
+        "se": 0.0005380765117727399,
+        "p": 0.7671320698900014,
+        "effect_pp_per_sd": -0.015936108291160538,
+        "holm_p_main_determinants": 1.0
+      },
+      "lag_industry_decline": {
+        "b": 0.00020100776546600117,
+        "se": 0.00025413441413524003,
+        "p": 0.42906535671991747,
+        "effect_pp_per_sd": 0.020100776546600117,
+        "holm_p_main_determinants": 1.0
+      }
+    }
+  },
+  {
+    "outcome": "strict_share",
+    "spec": "joint_market",
+    "minimum_reviews": 5,
+    "abnormal": false,
+    "weighted": false,
+    "n": 8176,
+    "firms": 1595,
+    "reviews": 527245,
+    "years": [
+      2016,
+      2024
+    ],
+    "terms": {
+      "lag_profit_deterioration": {
+        "b": -1.6779467360535563e-07,
+        "se": 0.0006998883654641339,
+        "p": 0.9998087412381576,
+        "effect_pp_per_sd": -1.6779467360535563e-05,
+        "holm_p_main_determinants": 1.0
+      },
+      "lag_sales_decline": {
+        "b": 2.2451697036489646e-05,
+        "se": 0.00040112848223684925,
+        "p": 0.9553716565307554,
+        "effect_pp_per_sd": 0.0022451697036489646,
+        "holm_p_main_determinants": 1.0
+      },
+      "lag_operating_uncertainty": {
+        "b": 0.001771346485221854,
+        "se": 0.0011218667772251241,
+        "p": 0.11455106038348475,
+        "effect_pp_per_sd": 0.1771346485221854,
+        "holm_p_main_determinants": 1.0
+      },
+      "lag_competition": {
+        "b": -0.00013518088494587148,
+        "se": 0.0006153339395588037,
+        "p": 0.8261430361337236,
+        "effect_pp_per_sd": -0.013518088494587148,
+        "holm_p_main_determinants": 1.0
+      },
+      "lag_industry_decline": {
+        "b": 0.0002943555927239823,
+        "se": 0.00032858905816324035,
+        "p": 0.3704858831176511,
+        "effect_pp_per_sd": 0.02943555927239823,
+        "holm_p_main_determinants": 1.0
+      },
+      "lag_stock_pressure": {
+        "b": 0.0006758754498758395,
+        "se": 0.00040014566814105553,
+        "p": 0.09140091531915003,
+        "effect_pp_per_sd": 0.06758754498758396,
+        "holm_p_main_determinants": 1.0
+      },
+      "lag_stock_volatility": {
+        "b": -0.00020608832777281187,
+        "se": 0.00047529986050057573,
+        "p": 0.664640191943604,
+        "effect_pp_per_sd": -0.020608832777281188,
+        "holm_p_main_determinants": 1.0
+      }
+    }
+  },
+  {
+    "outcome": "strict_share",
+    "spec": "joint_financial",
+    "minimum_reviews": 10,
+    "abnormal": false,
+    "weighted": false,
+    "n": 7784,
+    "firms": 1502,
+    "reviews": 645540,
+    "years": [
+      2016,
+      2024
+    ],
+    "terms": {
+      "lag_profit_deterioration": {
+        "b": 0.0004489040870748172,
+        "se": 0.00047660492122401465,
+        "p": 0.3464062398180788,
+        "effect_pp_per_sd": 0.04489040870748172
+      },
+      "lag_sales_decline": {
+        "b": 0.0003133990299147879,
+        "se": 0.00030713105354860396,
+        "p": 0.30769936463426023,
+        "effect_pp_per_sd": 0.03133990299147879
+      },
+      "lag_operating_uncertainty": {
+        "b": 0.00014217569271078028,
+        "se": 0.0006896932083915707,
+        "p": 0.8367068661885946,
+        "effect_pp_per_sd": 0.01421756927107803
+      },
+      "lag_competition": {
+        "b": -8.848452522728785e-05,
+        "se": 0.0005553251526619399,
+        "p": 0.8734238413830621,
+        "effect_pp_per_sd": -0.008848452522728785
+      },
+      "lag_industry_decline": {
+        "b": 1.6430445733099326e-05,
+        "se": 0.00022508597681420448,
+        "p": 0.9418187794630045,
+        "effect_pp_per_sd": 0.0016430445733099325
+      }
+    }
+  },
+  {
+    "outcome": "strict_share",
+    "spec": "joint_market",
+    "minimum_reviews": 10,
+    "abnormal": false,
+    "weighted": false,
+    "n": 6003,
+    "firms": 1187,
+    "reviews": 512802,
+    "years": [
+      2016,
+      2024
+    ],
+    "terms": {
+      "lag_profit_deterioration": {
+        "b": 0.00021540860680266494,
+        "se": 0.0006345745272712882,
+        "p": 0.7343281461667618,
+        "effect_pp_per_sd": 0.021540860680266494
+      },
+      "lag_sales_decline": {
+        "b": 0.00031517389905558673,
+        "se": 0.0003796952354676276,
+        "p": 0.40666584837142217,
+        "effect_pp_per_sd": 0.031517389905558676
+      },
+      "lag_operating_uncertainty": {
+        "b": 0.0008539144140355539,
+        "se": 0.001021364706372375,
+        "p": 0.4032938303559805,
+        "effect_pp_per_sd": 0.08539144140355538
+      },
+      "lag_competition": {
+        "b": 1.911132785629829e-06,
+        "se": 0.0006446542902595621,
+        "p": 0.9976351049929437,
+        "effect_pp_per_sd": 0.00019111327856298293
+      },
+      "lag_industry_decline": {
+        "b": 0.00020269553226186555,
+        "se": 0.00028712954338209063,
+        "p": 0.48036560227410846,
+        "effect_pp_per_sd": 0.020269553226186555
+      },
+      "lag_stock_pressure": {
+        "b": 0.0007691444706430855,
+        "se": 0.0003246681736821309,
+        "p": 0.017994893562958355,
+        "effect_pp_per_sd": 0.07691444706430856
+      },
+      "lag_stock_volatility": {
+        "b": -0.00023258463385285896,
+        "se": 0.0005354663961857716,
+        "p": 0.6641067956277037,
+        "effect_pp_per_sd": -0.023258463385285897
+      }
+    }
+  },
+  {
+    "outcome": "strict_share",
+    "spec": "joint_financial",
+    "minimum_reviews": 5,
+    "abnormal": true,
+    "weighted": false,
+    "n": 7601,
+    "firms": 1655,
+    "reviews": 513650,
+    "years": [
+      2018,
+      2024
+    ],
+    "terms": {
+      "lag_profit_deterioration": {
+        "b": 0.0003271332939404666,
+        "se": 0.0007092459448190693,
+        "p": 0.6446863707499438,
+        "effect_pp_per_sd": 0.03271332939404666
+      },
+      "lag_sales_decline": {
+        "b": 0.00026932135622226766,
+        "se": 0.0005268893335397569,
+        "p": 0.6093117602283731,
+        "effect_pp_per_sd": 0.026932135622226766
+      },
+      "lag_operating_uncertainty": {
+        "b": 0.0007472447191222479,
+        "se": 0.0014671988167063983,
+        "p": 0.6106097229236895,
+        "effect_pp_per_sd": 0.07472447191222478
+      },
+      "lag_competition": {
+        "b": -0.0006032386737937789,
+        "se": 0.0006300774912757506,
+        "p": 0.33850332669064337,
+        "effect_pp_per_sd": -0.060323867379377887
+      },
+      "lag_industry_decline": {
+        "b": -0.00017742283315806416,
+        "se": 0.00031182631617571416,
+        "p": 0.56944719000389,
+        "effect_pp_per_sd": -0.017742283315806417
+      }
+    }
+  },
+  {
+    "outcome": "strict_share",
+    "spec": "joint_financial_precision",
+    "minimum_reviews": 5,
+    "abnormal": false,
+    "weighted": true,
+    "n": 10595,
+    "firms": 2028,
+    "reviews": 664218,
+    "years": [
+      2016,
+      2024
+    ],
+    "terms": {
+      "lag_profit_deterioration": {
+        "b": 0.0004426190287055952,
+        "se": 0.0003342632055543056,
+        "p": 0.18559814838091424,
+        "effect_pp_per_sd": 0.04426190287055952
+      },
+      "lag_sales_decline": {
+        "b": 0.00019974457189469167,
+        "se": 0.00024939137136942985,
+        "p": 0.42326710475956153,
+        "effect_pp_per_sd": 0.019974457189469167
+      },
+      "lag_operating_uncertainty": {
+        "b": 0.0003285410338291789,
+        "se": 0.0004719712625529397,
+        "p": 0.48644357417210554,
+        "effect_pp_per_sd": 0.03285410338291789
+      },
+      "lag_competition": {
+        "b": 0.00022602405946184112,
+        "se": 0.00048462417355463243,
+        "p": 0.6409862028938281,
+        "effect_pp_per_sd": 0.022602405946184113
+      },
+      "lag_industry_decline": {
+        "b": 1.8787767515376102e-05,
+        "se": 0.00016956539430934496,
+        "p": 0.9117862800375047,
+        "effect_pp_per_sd": 0.0018787767515376101
+      }
+    }
+  },
+  {
+    "outcome": "pipeline_share",
+    "spec": "single_lag_profit_deterioration",
+    "minimum_reviews": 5,
+    "abnormal": false,
+    "weighted": false,
+    "n": 11001,
+    "firms": 2095,
+    "reviews": 680195,
+    "years": [
+      2016,
+      2024
+    ],
+    "terms": {
+      "lag_profit_deterioration": {
+        "b": 0.0001711246216315026,
+        "se": 0.00022242601727857572,
+        "p": 0.4417692242455938,
+        "effect_pp_per_sd": 0.01711246216315026
+      }
+    }
+  },
+  {
+    "outcome": "pipeline_share",
+    "spec": "single_lag_sales_decline",
+    "minimum_reviews": 5,
+    "abnormal": false,
+    "weighted": false,
+    "n": 11001,
+    "firms": 2095,
+    "reviews": 680195,
+    "years": [
+      2016,
+      2024
+    ],
+    "terms": {
+      "lag_sales_decline": {
+        "b": 4.9448516613245575e-05,
+        "se": 0.00014950186599677488,
+        "p": 0.7408625094642292,
+        "effect_pp_per_sd": 0.004944851661324558
+      }
+    }
+  },
+  {
+    "outcome": "pipeline_share",
+    "spec": "single_lag_operating_uncertainty",
+    "minimum_reviews": 5,
+    "abnormal": false,
+    "weighted": false,
+    "n": 10666,
+    "firms": 2035,
+    "reviews": 667943,
+    "years": [
+      2016,
+      2024
+    ],
+    "terms": {
+      "lag_operating_uncertainty": {
+        "b": 0.0007412715893248301,
+        "se": 0.0005219412628475054,
+        "p": 0.15569680630133112,
+        "effect_pp_per_sd": 0.074127158932483
+      }
+    }
+  },
+  {
+    "outcome": "pipeline_share",
+    "spec": "single_lag_competition",
+    "minimum_reviews": 5,
+    "abnormal": false,
+    "weighted": false,
+    "n": 11280,
+    "firms": 2148,
+    "reviews": 686579,
+    "years": [
+      2016,
+      2024
+    ],
+    "terms": {
+      "lag_competition": {
+        "b": -0.0001251977449071823,
+        "se": 0.00028027753782729724,
+        "p": 0.655142482176215,
+        "effect_pp_per_sd": -0.01251977449071823
+      }
+    }
+  },
+  {
+    "outcome": "pipeline_share",
+    "spec": "single_lag_industry_decline",
+    "minimum_reviews": 5,
+    "abnormal": false,
+    "weighted": false,
+    "n": 11348,
+    "firms": 2155,
+    "reviews": 691567,
+    "years": [
+      2016,
+      2024
+    ],
+    "terms": {
+      "lag_industry_decline": {
+        "b": 3.5213806114499686e-05,
+        "se": 0.00010913890459064467,
+        "p": 0.7469906755423259,
+        "effect_pp_per_sd": 0.0035213806114499685
+      }
+    }
+  },
+  {
+    "outcome": "pipeline_share",
+    "spec": "single_lag_stock_pressure",
+    "minimum_reviews": 5,
+    "abnormal": false,
+    "weighted": false,
+    "n": 8273,
+    "firms": 1618,
+    "reviews": 531414,
+    "years": [
+      2016,
+      2024
+    ],
+    "terms": {
+      "lag_stock_pressure": {
+        "b": -2.282625823294919e-05,
+        "se": 0.0002673516576120547,
+        "p": 0.9319705353033342,
+        "effect_pp_per_sd": -0.0022826258232949187
+      }
+    }
+  },
+  {
+    "outcome": "pipeline_share",
+    "spec": "single_lag_stock_volatility",
+    "minimum_reviews": 5,
+    "abnormal": false,
+    "weighted": false,
+    "n": 8273,
+    "firms": 1618,
+    "reviews": 531414,
+    "years": [
+      2016,
+      2024
+    ],
+    "terms": {
+      "lag_stock_volatility": {
+        "b": -0.00028293568026625945,
+        "se": 0.0002753140615424758,
+        "p": 0.30425249762751705,
+        "effect_pp_per_sd": -0.028293568026625946
+      }
+    }
+  },
+  {
+    "outcome": "pipeline_share",
+    "spec": "joint_financial",
+    "minimum_reviews": 1,
+    "abnormal": false,
+    "weighted": false,
+    "n": 17614,
+    "firms": 3430,
+    "reviews": 678246,
+    "years": [
+      2016,
+      2024
+    ],
+    "terms": {
+      "lag_profit_deterioration": {
+        "b": 0.00029326972361162437,
+        "se": 0.0005227139877442246,
+        "p": 0.5747987550231759,
+        "effect_pp_per_sd": 0.029326972361162437
+      },
+      "lag_sales_decline": {
+        "b": 0.00013538855753393152,
+        "se": 0.00037447494482133984,
+        "p": 0.7177163154692207,
+        "effect_pp_per_sd": 0.013538855753393152
+      },
+      "lag_operating_uncertainty": {
+        "b": 0.0006141165784797149,
+        "se": 0.0003049237263700997,
+        "p": 0.04408742621891377,
+        "effect_pp_per_sd": 0.06141165784797149
+      },
+      "lag_competition": {
+        "b": -0.0004754728826011581,
+        "se": 0.0005911488541103776,
+        "p": 0.421267913058865,
+        "effect_pp_per_sd": -0.04754728826011581
+      },
+      "lag_industry_decline": {
+        "b": -0.00011497369149939661,
+        "se": 0.00027150058543219067,
+        "p": 0.671975344960415,
+        "effect_pp_per_sd": -0.011497369149939662
+      }
+    }
+  },
+  {
+    "outcome": "pipeline_share",
+    "spec": "joint_market",
+    "minimum_reviews": 1,
+    "abnormal": false,
+    "weighted": false,
+    "n": 13253,
+    "firms": 2597,
+    "reviews": 537522,
+    "years": [
+      2016,
+      2024
+    ],
+    "terms": {
+      "lag_profit_deterioration": {
+        "b": 0.00034886343043332823,
+        "se": 0.0005455083711777531,
+        "p": 0.5225412343455477,
+        "effect_pp_per_sd": 0.034886343043332824
+      },
+      "lag_sales_decline": {
+        "b": 4.148161447250185e-05,
+        "se": 0.0004624638682134693,
+        "p": 0.9285349315621839,
+        "effect_pp_per_sd": 0.004148161447250185
+      },
+      "lag_operating_uncertainty": {
+        "b": 0.0009724699462853133,
+        "se": 0.0003960091773566243,
+        "p": 0.01412712132085438,
+        "effect_pp_per_sd": 0.09724699462853134
+      },
+      "lag_competition": {
+        "b": -0.0008967057165863687,
+        "se": 0.0006938417272650418,
+        "p": 0.19634132778170088,
+        "effect_pp_per_sd": -0.08967057165863687
+      },
+      "lag_industry_decline": {
+        "b": 3.2806775341747515e-05,
+        "se": 0.0002751605493875687,
+        "p": 0.9051041411249949,
+        "effect_pp_per_sd": 0.0032806775341747514
+      },
+      "lag_stock_pressure": {
+        "b": -4.899053956959003e-05,
+        "se": 0.00032420558445084025,
+        "p": 0.879901089508957,
+        "effect_pp_per_sd": -0.004899053956959003
+      },
+      "lag_stock_volatility": {
+        "b": 0.0002446077182680146,
+        "se": 0.0003393828646723757,
+        "p": 0.4711327381345295,
+        "effect_pp_per_sd": 0.02446077182680146
+      }
+    }
+  },
+  {
+    "outcome": "pipeline_share",
+    "spec": "joint_financial",
+    "minimum_reviews": 5,
+    "abnormal": false,
+    "weighted": false,
+    "n": 10595,
+    "firms": 2028,
+    "reviews": 664218,
+    "years": [
+      2016,
+      2024
+    ],
+    "terms": {
+      "lag_profit_deterioration": {
+        "b": 0.00017210585845694822,
+        "se": 0.00029714002610961186,
+        "p": 0.5625132426343371,
+        "effect_pp_per_sd": 0.017210585845694824,
+        "holm_p_main_determinants": 1.0
+      },
+      "lag_sales_decline": {
+        "b": 7.608543459043261e-05,
+        "se": 0.00016363363090502996,
+        "p": 0.6419997977752716,
+        "effect_pp_per_sd": 0.0076085434590432615,
+        "holm_p_main_determinants": 1.0
+      },
+      "lag_operating_uncertainty": {
+        "b": 0.0007846481336628405,
+        "se": 0.0005394984767074181,
+        "p": 0.14598946644556418,
+        "effect_pp_per_sd": 0.07846481336628405,
+        "holm_p_main_determinants": 1.0
+      },
+      "lag_competition": {
+        "b": -0.0001521353177311119,
+        "se": 0.00030651667366691105,
+        "p": 0.6197110540313684,
+        "effect_pp_per_sd": -0.015213531773111189,
+        "holm_p_main_determinants": 1.0
+      },
+      "lag_industry_decline": {
+        "b": 1.8612761315832554e-05,
+        "se": 0.00012840170197509046,
+        "p": 0.8847590134379555,
+        "effect_pp_per_sd": 0.0018612761315832554,
+        "holm_p_main_determinants": 1.0
+      }
+    }
+  },
+  {
+    "outcome": "pipeline_share",
+    "spec": "joint_market",
+    "minimum_reviews": 5,
+    "abnormal": false,
+    "weighted": false,
+    "n": 8176,
+    "firms": 1595,
+    "reviews": 527245,
+    "years": [
+      2016,
+      2024
+    ],
+    "terms": {
+      "lag_profit_deterioration": {
+        "b": 0.0004420710596266332,
+        "se": 0.00033672448478863463,
+        "p": 0.1894201520996896,
+        "effect_pp_per_sd": 0.04420710596266332,
+        "holm_p_main_determinants": 1.0
+      },
+      "lag_sales_decline": {
+        "b": 4.7171820883788034e-07,
+        "se": 0.0002019570289716965,
+        "p": 0.9981366466430015,
+        "effect_pp_per_sd": 4.7171820883788034e-05,
+        "holm_p_main_determinants": 1.0
+      },
+      "lag_operating_uncertainty": {
+        "b": 0.0012204170086898153,
+        "se": 0.000749294767035074,
+        "p": 0.10356266308028081,
+        "effect_pp_per_sd": 0.12204170086898153,
+        "holm_p_main_determinants": 1.0
+      },
+      "lag_competition": {
+        "b": -0.00035300891253085283,
+        "se": 0.00030603933755550723,
+        "p": 0.2488881481436117,
+        "effect_pp_per_sd": -0.03530089125308528,
+        "holm_p_main_determinants": 1.0
+      },
+      "lag_industry_decline": {
+        "b": 1.0328094028114508e-05,
+        "se": 0.00015755436496875193,
+        "p": 0.947742269111284,
+        "effect_pp_per_sd": 0.0010328094028114508,
+        "holm_p_main_determinants": 1.0
+      },
+      "lag_stock_pressure": {
+        "b": -8.337696655765529e-05,
+        "se": 0.00027812848154957636,
+        "p": 0.7643851259128477,
+        "effect_pp_per_sd": -0.008337696655765529,
+        "holm_p_main_determinants": 1.0
+      },
+      "lag_stock_volatility": {
+        "b": -0.000325493010548971,
+        "se": 0.0002877633668205101,
+        "p": 0.25817749806777124,
+        "effect_pp_per_sd": -0.032549301054897097,
+        "holm_p_main_determinants": 1.0
+      }
+    }
+  },
+  {
+    "outcome": "pipeline_share",
+    "spec": "joint_financial",
+    "minimum_reviews": 10,
+    "abnormal": false,
+    "weighted": false,
+    "n": 7784,
+    "firms": 1502,
+    "reviews": 645540,
+    "years": [
+      2016,
+      2024
+    ],
+    "terms": {
+      "lag_profit_deterioration": {
+        "b": 0.00018123647408893045,
+        "se": 0.0002615489533236334,
+        "p": 0.4884574201027953,
+        "effect_pp_per_sd": 0.018123647408893044
+      },
+      "lag_sales_decline": {
+        "b": 6.40591578363647e-05,
+        "se": 0.00016220544272718237,
+        "p": 0.6929535618693616,
+        "effect_pp_per_sd": 0.00640591578363647
+      },
+      "lag_operating_uncertainty": {
+        "b": 0.00015625142836079618,
+        "se": 0.0003678418134755387,
+        "p": 0.6710587664598313,
+        "effect_pp_per_sd": 0.015625142836079617
+      },
+      "lag_competition": {
+        "b": -6.881548735999187e-05,
+        "se": 0.00032842218425946324,
+        "p": 0.8340601314417007,
+        "effect_pp_per_sd": -0.006881548735999186
+      },
+      "lag_industry_decline": {
+        "b": -0.000127131433596558,
+        "se": 0.0001226302102934527,
+        "p": 0.3000400326913236,
+        "effect_pp_per_sd": -0.0127131433596558
+      }
+    }
+  },
+  {
+    "outcome": "pipeline_share",
+    "spec": "joint_market",
+    "minimum_reviews": 10,
+    "abnormal": false,
+    "weighted": false,
+    "n": 6003,
+    "firms": 1187,
+    "reviews": 512802,
+    "years": [
+      2016,
+      2024
+    ],
+    "terms": {
+      "lag_profit_deterioration": {
+        "b": 0.00021419284377205647,
+        "se": 0.00031654706980772013,
+        "p": 0.4987574463919587,
+        "effect_pp_per_sd": 0.021419284377205645
+      },
+      "lag_sales_decline": {
+        "b": 5.4904466977331486e-05,
+        "se": 0.00020421495442447698,
+        "p": 0.7880870652724663,
+        "effect_pp_per_sd": 0.0054904466977331486
+      },
+      "lag_operating_uncertainty": {
+        "b": 0.00040963758453914237,
+        "se": 0.0004577078205287446,
+        "p": 0.37098142943897555,
+        "effect_pp_per_sd": 0.040963758453914235
+      },
+      "lag_competition": {
+        "b": -0.00018833134408599995,
+        "se": 0.0003177176264385449,
+        "p": 0.5534525846409646,
+        "effect_pp_per_sd": -0.018833134408599995
+      },
+      "lag_industry_decline": {
+        "b": -0.0001629179227436353,
+        "se": 0.00013774389931507693,
+        "p": 0.23714147468632896,
+        "effect_pp_per_sd": -0.01629179227436353
+      },
+      "lag_stock_pressure": {
+        "b": 0.00019713645044820114,
+        "se": 0.00015950764420130314,
+        "p": 0.21673824356916532,
+        "effect_pp_per_sd": 0.019713645044820115
+      },
+      "lag_stock_volatility": {
+        "b": -0.00023245412474576729,
+        "se": 0.0002591358879472527,
+        "p": 0.36988195268154306,
+        "effect_pp_per_sd": -0.02324541247457673
+      }
+    }
+  },
+  {
+    "outcome": "pipeline_share",
+    "spec": "joint_financial",
+    "minimum_reviews": 5,
+    "abnormal": true,
+    "weighted": false,
+    "n": 7601,
+    "firms": 1655,
+    "reviews": 513650,
+    "years": [
+      2018,
+      2024
+    ],
+    "terms": {
+      "lag_profit_deterioration": {
+        "b": 0.00012926731507794395,
+        "se": 0.00034727093391630513,
+        "p": 0.7097636056227633,
+        "effect_pp_per_sd": 0.012926731507794395
+      },
+      "lag_sales_decline": {
+        "b": 0.00016857421611558618,
+        "se": 0.00024561119423718896,
+        "p": 0.4925912636264162,
+        "effect_pp_per_sd": 0.016857421611558617
+      },
+      "lag_operating_uncertainty": {
+        "b": 0.0007113926474834986,
+        "se": 0.0009220784293402712,
+        "p": 0.44051495521865286,
+        "effect_pp_per_sd": 0.07113926474834986
+      },
+      "lag_competition": {
+        "b": -0.0003709537169203368,
+        "se": 0.0004851709123886498,
+        "p": 0.4446286115463717,
+        "effect_pp_per_sd": -0.037095371692033675
+      },
+      "lag_industry_decline": {
+        "b": -0.00012494211653951264,
+        "se": 0.00017170259676717943,
+        "p": 0.46692114816581676,
+        "effect_pp_per_sd": -0.012494211653951265
+      }
+    }
+  },
+  {
+    "outcome": "pipeline_share",
+    "spec": "joint_financial_precision",
+    "minimum_reviews": 5,
+    "abnormal": false,
+    "weighted": true,
+    "n": 10595,
+    "firms": 2028,
+    "reviews": 664218,
+    "years": [
+      2016,
+      2024
+    ],
+    "terms": {
+      "lag_profit_deterioration": {
+        "b": 0.00014853921214723586,
+        "se": 0.00018701167357479848,
+        "p": 0.4271267299042857,
+        "effect_pp_per_sd": 0.014853921214723587
+      },
+      "lag_sales_decline": {
+        "b": 8.90821352929927e-05,
+        "se": 0.00013059549548838237,
+        "p": 0.4952393844367109,
+        "effect_pp_per_sd": 0.00890821352929927
+      },
+      "lag_operating_uncertainty": {
+        "b": 0.00033811977274836904,
+        "se": 0.00029301356911986555,
+        "p": 0.24866123141270502,
+        "effect_pp_per_sd": 0.0338119772748369
+      },
+      "lag_competition": {
+        "b": 0.00010324140044425975,
+        "se": 0.00023080832009592212,
+        "p": 0.6547036357574196,
+        "effect_pp_per_sd": 0.010324140044425976
+      },
+      "lag_industry_decline": {
+        "b": -9.708525870359627e-05,
+        "se": 9.451367875564909e-05,
+        "p": 0.3044448346192383,
+        "effect_pp_per_sd": -0.009708525870359627
+      }
+    }
+  }
+]

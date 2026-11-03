@@ -1,0 +1,133 @@
+{
+  "design": {
+    "purpose": "Explain original-score operating results without repeating completed specifications; start determinants using existing classifications. No paid API.",
+    "original_score": "Reuse all saved full-period estimates. Only add original saved score and original raw share excluding predictor years 2020/2021, full and core controls, four outcomes; paired baselines. No new winsorization search or label changes.",
+    "determinants_population": "Complete classified fiscal cohorts in existing linked review panel, without requiring future outcomes or R&D/advertising disclosure. At least five current reviews primary; all and ten-review sensitivities.",
+    "outcomes": [
+      "broad raw flagged share",
+      "strict explicit unavailable-role share (features 1/2/3)",
+      "future-hiring statement share (feature 2)"
+    ],
+    "past_normal": "Current share minus review-weighted share in preceding three fiscal years, requiring >=10 prior reviews and >=2 distinct prior years. No future information.",
+    "determinants": "Previous-fiscal-year operating ROA deterioration, sales decline, firm operating uncertainty (3 annual ROAs), public-US-firm SIC2 sales competition (1-HHI), industry sales decline; previous-fiscal-year stock return and monthly volatility from dated CCM/CRSP links. Predictors lagged; no causal intent claim.",
+    "financial_universe": "USD INDL STD C annual statements, one unique issuer/fiscal year. Exclude ambiguous duplicates. HHI uses full US-incorporated positive-sales public-firm universe, minimum five firms; not only review companies.",
+    "main_estimation": "Unweighted company-year OLS, company and year effects, company-clustered finite-sample SE and t(G-1). Controls lag log assets, leverage, ROA, CAPX/assets and log(1+current reviews). Continuous financial predictors capped at 1/99 in review-linked determinant population before any estimation. Predictors standardized using that fixed population.",
+    "specifications": "Each determinant separately with common controls; joint financial model; joint financial+market model. Three outcomes; all/min5/min10; level and deviation for main joint model. All estimates retained and Holm p-values reported by outcome across main determinant tests.",
+    "roles": "Fixed transparent title groups: management, professional/technical, sales/customer, operations/service, other. Review-level comparisons descriptive, not evidence of employer intent. Future-role flag describes pipeline language, not proven recurring hires.",
+    "new_api_calls": 0,
+    "fixed_before_estimation": true
+  },
+  "bounds_and_scales": {
+    "caps": {
+      "lag_log_assets": [
+        2.9186352217106277,
+        13.124239738139066
+      ],
+      "lag_leverage": [
+        0.0,
+        1.2243215622539323
+      ],
+      "lag_roa": [
+        -0.8647680142276412,
+        0.3364853051429098
+      ],
+      "lag_investment": [
+        0.0,
+        0.1888967437616649
+      ],
+      "lag_profit_deterioration": [
+        -0.4916566855360135,
+        0.38345123565198946
+      ],
+      "lag_sales_decline": [
+        -1.0782646802634908,
+        0.4708139394087271
+      ],
+      "lag_operating_uncertainty": [
+        0.0006879778900217981,
+        0.4897711240798735
+      ],
+      "lag_competition": [
+        0.5534319082198795,
+        0.989874875841606
+      ],
+      "lag_industry_decline": [
+        -0.5449052154509533,
+        0.27661774303881864
+      ],
+      "lag_stock_pressure": [
+        -2.4834747316753445,
+        0.8269682529598824
+      ],
+      "lag_stock_volatility": [
+        0.11622541877674623,
+        1.5793142216863292
+      ]
+    },
+    "standardization": {
+      "lag_profit_deterioration": {
+        "mean": -0.001815313579758485,
+        "sd": 0.09860288653794841
+      },
+      "lag_sales_decline": {
+        "mean": -0.07130110450851602,
+        "sd": 0.20777756300975622
+      },
+      "lag_operating_uncertainty": {
+        "mean": 0.04588482838856746,
+        "sd": 0.07665492228000134
+      },
+      "lag_competition": {
+        "mean": 0.9059576346916286,
+        "sd": 0.08378964237664487
+      },
+      "lag_industry_decline": {
+        "mean": -0.05325254102404596,
+        "sd": 0.12006850869063555
+      },
+      "lag_stock_pressure": {
+        "mean": -0.11587409136468475,
+        "sd": 0.5225216462358758
+      },
+      "lag_stock_volatility": {
+        "mean": 0.4351037740919246,
+        "sd": 0.2658971282865365
+      }
+    }
+  },
+  "independent_determinant_verification": [
+    {
+      "outcome": "broad_share",
+      "max_coefficient_error": 4.85722573273506e-16,
+      "max_se_error": 1.4849232954361469e-15,
+      "iterations": 20
+    },
+    {
+      "outcome": "strict_share",
+      "max_coefficient_error": 6.765421556309548e-17,
+      "max_se_error": 3.469446951953614e-16,
+      "iterations": 20
+    },
+    {
+      "outcome": "pipeline_share",
+      "max_coefficient_error": 6.071532165918825e-17,
+      "max_se_error": 2.2724877535296173e-16,
+      "iterations": 20
+    }
+  ],
+  "review_population": {
+    "cohorts": 19258,
+    "firms": 3678,
+    "reviews": 721301
+  },
+  "stock_link_coverage": {
+    "matched_cohorts": 13507,
+    "matched_firms": 2644,
+    "minimum_months": 9,
+    "history": "Dated LC/LU P/C CCM links; P first then largest observed class; 10/11 share codes; no future months; returns compound; volatility annualized monthly standard deviation. Delisting returns not separately added; source monthly RET."
+  },
+  "inherited_universe": "Existing reviewed financial/posting-linked cohorts, 2016\u20132024; determinant comparisons do not represent all 6.3 million supplied reviews. No future-outcome complete-case screen is additionally imposed in these determinant fits.",
+  "paper_tables": "Original five main tables and four appendix tables preserved; added main role table and two appendix tables; revised Figure 1.",
+  "cost_usd": 0,
+  "classification_labels_unchanged": true
+}

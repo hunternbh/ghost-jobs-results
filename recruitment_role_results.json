@@ -1,0 +1,200 @@
+{
+  "descriptives": [
+    {
+      "population": "all_reviews",
+      "role_group": "Management",
+      "reviews": 94239,
+      "firms": 2810,
+      "broad_percent": 10.618745954435001,
+      "strict_percent": 0.7682594255032418,
+      "pipeline_percent": 0.21753201965216099,
+      "pipeline_reports": 205
+    },
+    {
+      "population": "all_reviews",
+      "role_group": "Operations / service",
+      "reviews": 41595,
+      "firms": 1351,
+      "broad_percent": 1.7261690106984011,
+      "strict_percent": 0.15146051208077893,
+      "pipeline_percent": 0.021637216011539846,
+      "pipeline_reports": 9
+    },
+    {
+      "population": "all_reviews",
+      "role_group": "Other / unclassified",
+      "reviews": 227081,
+      "firms": 3191,
+      "broad_percent": 5.251870477935186,
+      "strict_percent": 0.3522971979161621,
+      "pipeline_percent": 0.09379912894517815,
+      "pipeline_reports": 213
+    },
+    {
+      "population": "all_reviews",
+      "role_group": "Professional / technical",
+      "reviews": 288661,
+      "firms": 3133,
+      "broad_percent": 5.922864536601758,
+      "strict_percent": 0.4759908681810151,
+      "pipeline_percent": 0.1333744426853645,
+      "pipeline_reports": 385
+    },
+    {
+      "population": "all_reviews",
+      "role_group": "Sales / customer",
+      "reviews": 69725,
+      "firms": 2007,
+      "broad_percent": 3.8752240946575833,
+      "strict_percent": 0.33416995338831124,
+      "pipeline_percent": 0.11330225887414844,
+      "pipeline_reports": 79
+    },
+    {
+      "population": "no_offer",
+      "role_group": "Management",
+      "reviews": 47119,
+      "firms": 2433,
+      "broad_percent": 21.23771726904221,
+      "strict_percent": 1.5365351556696873,
+      "pipeline_percent": 0.43506865595619604,
+      "pipeline_reports": 205
+    },
+    {
+      "population": "no_offer",
+      "role_group": "Operations / service",
+      "reviews": 7507,
+      "firms": 763,
+      "broad_percent": 9.564406553883043,
+      "strict_percent": 0.8392167310510191,
+      "pipeline_percent": 0.11988810443585986,
+      "pipeline_reports": 9
+    },
+    {
+      "population": "no_offer",
+      "role_group": "Other / unclassified",
+      "reviews": 96250,
+      "firms": 2724,
+      "broad_percent": 12.390649350649351,
+      "strict_percent": 0.8311688311688312,
+      "pipeline_percent": 0.2212987012987013,
+      "pipeline_reports": 213
+    },
+    {
+      "population": "no_offer",
+      "role_group": "Professional / technical",
+      "reviews": 147815,
+      "firms": 2727,
+      "broad_percent": 11.566485133443832,
+      "strict_percent": 0.9295403037580761,
+      "pipeline_percent": 0.26046071102391505,
+      "pipeline_reports": 385
+    },
+    {
+      "population": "no_offer",
+      "role_group": "Sales / customer",
+      "reviews": 21274,
+      "firms": 1509,
+      "broad_percent": 12.700949515840932,
+      "strict_percent": 1.095233618501457,
+      "pipeline_percent": 0.3713453041271035,
+      "pipeline_reports": 79
+    }
+  ],
+  "within_company_year": [
+    {
+      "outcome": "ghost_flag",
+      "n": 319965,
+      "firms": 3309,
+      "cohorts": 16043,
+      "reference": "Operations / service",
+      "terms": {
+        "Management": {
+          "b": 0.10091239316445583,
+          "se": 0.007749821622103176,
+          "p": 7.764598728439295e-38
+        },
+        "Other / unclassified": {
+          "b": 0.02391938306060354,
+          "se": 0.006711889552728794,
+          "p": 0.0003707831536735552
+        },
+        "Professional / technical": {
+          "b": 0.023097564136708805,
+          "se": 0.006696284144596202,
+          "p": 0.000569045508203915
+        },
+        "Sales / customer": {
+          "b": 0.016501681611005795,
+          "se": 0.007274380895137986,
+          "p": 0.02336503093434875
+        }
+      }
+    },
+    {
+      "outcome": "strict_flag",
+      "n": 319965,
+      "firms": 3309,
+      "cohorts": 16043,
+      "reference": "Operations / service",
+      "terms": {
+        "Management": {
+          "b": 0.0074964657390826665,
+          "se": 0.001721793097472892,
+          "p": 1.378079916908685e-05
+        },
+        "Other / unclassified": {
+          "b": 0.001614692406947219,
+          "se": 0.0016029308028576313,
+          "p": 0.3138462613094141
+        },
+        "Professional / technical": {
+          "b": 0.0023300873998944186,
+          "se": 0.001651670214118036,
+          "p": 0.1584135069340922
+        },
+        "Sales / customer": {
+          "b": 0.001151049940403019,
+          "se": 0.0019332995049274162,
+          "p": 0.55162949916503
+        }
+      }
+    },
+    {
+      "outcome": "pipeline_flag",
+      "n": 319965,
+      "firms": 3309,
+      "cohorts": 16043,
+      "reference": "Operations / service",
+      "terms": {
+        "Management": {
+          "b": 0.0024234237523555967,
+          "se": 0.0006127308720923344,
+          "p": 7.809990370446868e-05
+        },
+        "Other / unclassified": {
+          "b": 0.0007376277247067968,
+          "se": 0.0005698561740856583,
+          "p": 0.19561407025910907
+        },
+        "Professional / technical": {
+          "b": 0.0009287313389723209,
+          "se": 0.0005875713261164901,
+          "p": 0.11405886026254111
+        },
+        "Sales / customer": {
+          "b": 0.0017410116184751587,
+          "se": 0.000777618341344218,
+          "p": 0.025228498016191148
+        }
+      }
+    }
+  ],
+  "title_coverage": {
+    "reviews": 721301,
+    "missing_title": 0,
+    "conflicting_titles": 0,
+    "unclassified_titles": 227081,
+    "method": "Fixed English title regex dictionary, management overrides professional, professional overrides sales, sales overrides operations. Group comparisons among same-company-year no-offer accounts; classifications and offer flags unchanged. Coarse occupation proxy, not qualifications or realized hiring."
+  }
+}

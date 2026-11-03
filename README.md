@@ -23,3 +23,8 @@ Revelio interview-review posting interactions now use the completed user-authori
 
 
 A measurement follow-up retains 288 additional diagnostic fits in `measurement_followup_results.json`, with no significant negative interactions. A fixed separate-review check in the broader Revelio data shows higher direct-unavailability report rates at higher training scores in both directions; all 12 adjusted comparisons, including inconclusive within-company estimates, are in `broader_review_agreement_results.json`. This supports recurring applicant reports and does not establish the Lourie attenuation prediction. No additional API calls were made.
+
+
+## November 3 update
+
+The current page reports original-score posting/earnings comparisons and the first determinant analysis. The previous report and all its tables are preserved in `report-before-2026-11-03.html`; previous JSON files remain unchanged. New aggregate outputs are `first_score_comparison.json`, `first_score_stability.json`, `determinants_results.json`, `recruitment_role_results.json`, and `current_study_methods.json`. `study_framework.svg` maps identification, operating checks, three potential determinants and the worker-start extension. No new paid API calls.

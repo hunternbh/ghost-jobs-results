@@ -210,5 +210,15 @@
     "summary": "measurement_followup_summary.json",
     "methods": "measurement_followup_methods.json",
     "additional_api_cost_usd": 0
+  },
+  "current_update": {
+    "date": "2026-11-03",
+    "original_score": "first_score_comparison.json",
+    "stability": "first_score_stability.json",
+    "determinants": "determinants_results.json",
+    "roles": "recruitment_role_results.json",
+    "methods": "current_study_methods.json",
+    "finding": "Original broad-score earnings attenuation outside 2020/2021 with full controls; raw score, company effects and resampling checks reported. Expanded core-control estimate less precise. Financial determinants do not show a common clear pattern; management applicants report more unavailable roles and future hiring within company-year.",
+    "new_paid_api_cost_usd": 0
   }
 }

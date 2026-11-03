@@ -1,0 +1,187 @@
+{
+  "resampling_and_omissions": [
+    {
+      "spec": "original_saved_nonpandemic_full",
+      "n": 411,
+      "firms": 86,
+      "reviews": 9730,
+      "b": -0.18964569277977547,
+      "se": 0.05995415116557288,
+      "p": 0.0021647526575324827,
+      "wild_cluster_p": 0.0078,
+      "bootstrap_draws": 4999,
+      "seed": 20261103,
+      "negative_after_single_firm_omission": 86,
+      "omission_range": [
+        -0.21122281473942617,
+        -0.16466360040568573
+      ]
+    },
+    {
+      "spec": "original_raw_nonpandemic_full",
+      "n": 411,
+      "firms": 86,
+      "reviews": 9730,
+      "b": -0.13761913623606084,
+      "se": 0.0527775555290916,
+      "p": 0.010770166808537426,
+      "wild_cluster_p": 0.0154,
+      "bootstrap_draws": 4999,
+      "seed": 20261103,
+      "negative_after_single_firm_omission": 86,
+      "omission_range": [
+        -0.15346993800663553,
+        -0.1143177373328591
+      ]
+    },
+    {
+      "spec": "original_coverage_full",
+      "n": 310,
+      "firms": 83,
+      "reviews": 7962,
+      "b": -0.2751779723184834,
+      "se": 0.0808765600876145,
+      "p": 0.0010349730423454583,
+      "wild_cluster_p": 0.0042,
+      "bootstrap_draws": 4999,
+      "seed": 20261103,
+      "negative_after_single_firm_omission": 83,
+      "omission_range": [
+        -0.2951234251588376,
+        -0.21506385202503298
+      ]
+    }
+  ],
+  "control_and_fe_checks": [
+    {
+      "spec": "original_saved_nonpandemic_full_core_same_rows",
+      "n": 411,
+      "firms": 86,
+      "b": -0.17271961196143854,
+      "se": 0.059026551646664364,
+      "p": 0.004400993832865058
+    },
+    {
+      "spec": "original_saved_nonpandemic_full_company_year",
+      "n": 411,
+      "firms": 86,
+      "b": -0.13928585564900536,
+      "se": 0.06287302567866093,
+      "p": 0.029409627175964903
+    },
+    {
+      "spec": "original_raw_nonpandemic_full_core_same_rows",
+      "n": 411,
+      "firms": 86,
+      "b": -0.12458529644937585,
+      "se": 0.05138220368307186,
+      "p": 0.017440355821916734
+    },
+    {
+      "spec": "original_raw_nonpandemic_full_company_year",
+      "n": 411,
+      "firms": 86,
+      "b": -0.09916236502481546,
+      "se": 0.056776505385731875,
+      "p": 0.08432986223031205
+    },
+    {
+      "spec": "original_coverage_full_core_same_rows",
+      "n": 310,
+      "firms": 83,
+      "b": -0.2516159625983108,
+      "se": 0.0798735753004651,
+      "p": 0.002277599382134452
+    },
+    {
+      "spec": "original_coverage_full_company_year",
+      "n": 310,
+      "firms": 83,
+      "b": -0.16543959006746065,
+      "se": 0.09923220383582282,
+      "p": 0.09929045997179359
+    }
+  ],
+  "independent_refits": [
+    {
+      "spec": "original_saved_nonpandemic_full",
+      "outcome": "employment",
+      "max_error": 1.2988742026376343e-16
+    },
+    {
+      "spec": "original_saved_nonpandemic_full",
+      "outcome": "sga",
+      "max_error": 6.772360450213455e-15
+    },
+    {
+      "spec": "original_saved_nonpandemic_full",
+      "outcome": "revenue",
+      "max_error": 2.4730217873525362e-14
+    },
+    {
+      "spec": "original_saved_nonpandemic_full",
+      "outcome": "earnings",
+      "max_error": 4.884981308350689e-15
+    },
+    {
+      "spec": "original_saved_nonpandemic_core",
+      "outcome": "employment",
+      "max_error": 4.87890977618477e-17
+    },
+    {
+      "spec": "original_saved_nonpandemic_core",
+      "outcome": "sga",
+      "max_error": 1.5404344466674047e-15
+    },
+    {
+      "spec": "original_saved_nonpandemic_core",
+      "outcome": "revenue",
+      "max_error": 6.203371150093062e-15
+    },
+    {
+      "spec": "original_saved_nonpandemic_core",
+      "outcome": "earnings",
+      "max_error": 5.273559366969494e-16
+    },
+    {
+      "spec": "original_raw_nonpandemic_full",
+      "outcome": "employment",
+      "max_error": 1.431146867680866e-17
+    },
+    {
+      "spec": "original_raw_nonpandemic_full",
+      "outcome": "sga",
+      "max_error": 1.0269562977782698e-15
+    },
+    {
+      "spec": "original_raw_nonpandemic_full",
+      "outcome": "revenue",
+      "max_error": 3.649858193455202e-15
+    },
+    {
+      "spec": "original_raw_nonpandemic_full",
+      "outcome": "earnings",
+      "max_error": 3.191891195797325e-16
+    },
+    {
+      "spec": "original_raw_nonpandemic_core",
+      "outcome": "employment",
+      "max_error": 7.112366251504909e-17
+    },
+    {
+      "spec": "original_raw_nonpandemic_core",
+      "outcome": "sga",
+      "max_error": 1.817990202823694e-15
+    },
+    {
+      "spec": "original_raw_nonpandemic_core",
+      "outcome": "revenue",
+      "max_error": 8.81239525796218e-15
+    },
+    {
+      "spec": "original_raw_nonpandemic_core",
+      "outcome": "earnings",
+      "max_error": 1.1310397063368782e-15
+    }
+  ]
+}
